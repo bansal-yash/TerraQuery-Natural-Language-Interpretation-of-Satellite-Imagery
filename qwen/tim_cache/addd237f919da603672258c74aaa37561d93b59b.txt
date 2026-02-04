@@ -1,0 +1,1 @@
+RGB:Forest-covered terrain with winding rivers and scattered settlements. || SAR:SAR image shows textured, high-contrast terrain with speckle noise and shadowed regions.

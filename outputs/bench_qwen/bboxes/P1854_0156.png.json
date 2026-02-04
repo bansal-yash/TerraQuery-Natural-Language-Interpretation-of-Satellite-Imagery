@@ -1,0 +1,68 @@
+{
+  "image": "P1854_0156.png",
+  "boxes": [
+    {
+      "label": "large vehicle",
+      "x1": 70,
+      "y1": 372,
+      "x2": 141,
+      "y2": 505
+    },
+    {
+      "label": "small vehicles",
+      "x1": 5,
+      "y1": 224,
+      "x2": 83,
+      "y2": 365
+    },
+    {
+      "label": "small vehicles",
+      "x1": 111,
+      "y1": 264,
+      "x2": 212,
+      "y2": 436
+    },
+    {
+      "label": "small vehicles",
+      "x1": 357,
+      "y1": 224,
+      "x2": 472,
+      "y2": 310
+    },
+    {
+      "label": "small vehicles",
+      "x1": 296,
+      "y1": 384,
+      "x2": 317,
+      "y2": 413
+    },
+    {
+      "label": "small vehicles",
+      "x1": 170,
+      "y1": 365,
+      "x2": 212,
+      "y2": 436
+    },
+    {
+      "label": "small vehicles",
+      "x1": 116,
+      "y1": 298,
+      "x2": 156,
+      "y2": 339
+    },
+    {
+      "label": "small vehicles",
+      "x1": 116,
+      "y1": 264,
+      "x2": 156,
+      "y2": 298
+    },
+    {
+      "label": "small vehicles",
+      "x1": 116,
+      "y1": 264,
+      "x2": 156,
+      "y2": 298
+    }
+  ]
+}

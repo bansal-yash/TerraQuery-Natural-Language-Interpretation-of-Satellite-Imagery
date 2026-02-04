@@ -1,0 +1,19 @@
+{
+  "image": "P2168_0010.png",
+  "boxes": [
+    {
+      "label": "tennis courts",
+      "x1": 146,
+      "y1": 179,
+      "x2": 274,
+      "y2": 313
+    },
+    {
+      "label": "four basketball courts",
+      "x1": 304,
+      "y1": 244,
+      "x2": 454,
+      "y2": 464
+    }
+  ]
+}

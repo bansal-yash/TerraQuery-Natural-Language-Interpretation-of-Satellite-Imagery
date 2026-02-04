@@ -1,0 +1,12 @@
+{
+  "image": "09675_0000.png",
+  "boxes": [
+    {
+      "label": "Aerial view captured by GoogleEarth showing a predominantly dry landscape with dirt roads weaving through scattered shrubbery. There is a prominent circular storage tank in the bottom-right of the image.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    }
+  ]
+}

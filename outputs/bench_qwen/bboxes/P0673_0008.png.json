@@ -1,0 +1,26 @@
+{
+  "image": "P0673_0008.png",
+  "boxes": [
+    {
+      "label": "two basketball courts",
+      "x1": 0,
+      "y1": 0,
+      "x2": 342,
+      "y2": 241
+    },
+    {
+      "label": "row of trees",
+      "x1": 0,
+      "y1": 164,
+      "x2": 397,
+      "y2": 373
+    },
+    {
+      "label": "large structure covered with solar panels",
+      "x1": 0,
+      "y1": 241,
+      "x2": 454,
+      "y2": 512
+    }
+  ]
+}

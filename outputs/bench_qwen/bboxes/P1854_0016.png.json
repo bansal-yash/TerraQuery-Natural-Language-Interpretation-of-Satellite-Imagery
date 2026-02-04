@@ -1,0 +1,68 @@
+{
+  "image": "P1854_0016.png",
+  "boxes": [
+    {
+      "label": "small airplane",
+      "x1": 0,
+      "y1": 114,
+      "x2": 87,
+      "y2": 358
+    },
+    {
+      "label": "large service vehicle",
+      "x1": 195,
+      "y1": 454,
+      "x2": 269,
+      "y2": 512
+    },
+    {
+      "label": "service vehicles",
+      "x1": 97,
+      "y1": 208,
+      "x2": 121,
+      "y2": 256
+    },
+    {
+      "label": "service vehicles",
+      "x1": 56,
+      "y1": 369,
+      "x2": 72,
+      "y2": 396
+    },
+    {
+      "label": "service vehicles",
+      "x1": 56,
+      "y1": 298,
+      "x2": 70,
+      "y2": 329
+    },
+    {
+      "label": "service vehicles",
+      "x1": 39,
+      "y1": 298,
+      "x2": 54,
+      "y2": 329
+    },
+    {
+      "label": "service vehicles",
+      "x1": 12,
+      "y1": 298,
+      "x2": 26,
+      "y2": 329
+    },
+    {
+      "label": "service vehicles",
+      "x1": 0,
+      "y1": 340,
+      "x2": 26,
+      "y2": 366
+    },
+    {
+      "label": "service vehicles",
+      "x1": 56,
+      "y1": 369,
+      "x2": 72,
+      "y2": 396
+    }
+  ]
+}

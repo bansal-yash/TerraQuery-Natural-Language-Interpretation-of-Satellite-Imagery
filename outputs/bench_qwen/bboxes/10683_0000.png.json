@@ -1,0 +1,12 @@
+{
+  "image": "10683_0000.png",
+  "boxes": [
+    {
+      "label": "Aerial view of a basketball court located at the bottom-right corner of the image. The court has a distinctive rectangular shape outlined by the bordering lines.",
+      "x1": 413,
+      "y1": 405,
+      "x2": 512,
+      "y2": 510
+    }
+  ]
+}

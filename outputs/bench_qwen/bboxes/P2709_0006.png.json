@@ -1,0 +1,26 @@
+{
+  "image": "P2709_0006.png",
+  "boxes": [
+    {
+      "label": "small storage tank",
+      "x1": 381,
+      "y1": 54,
+      "x2": 421,
+      "y2": 107
+    },
+    {
+      "label": "cluster of small vehicles",
+      "x1": 251,
+      "y1": 180,
+      "x2": 307,
+      "y2": 210
+    },
+    {
+      "label": "two small vehicles",
+      "x1": 392,
+      "y1": 397,
+      "x2": 424,
+      "y2": 424
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "image": "P1581_0019.png",
+  "boxes": [
+    {
+      "label": "standalone storage-tank",
+      "x1": 139,
+      "y1": 315,
+      "x2": 157,
+      "y2": 334
+    }
+  ]
+}

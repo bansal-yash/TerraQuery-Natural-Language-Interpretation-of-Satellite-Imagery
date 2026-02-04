@@ -1,0 +1,12 @@
+{
+  "image": "P2789_0062.png",
+  "boxes": [
+    {
+      "label": "A high-resolution satellite image from GoogleEarth features two ships docked at the bottom-right corner of the frame.",
+      "x1": 397,
+      "y1": 300,
+      "x2": 512,
+      "y2": 483
+    }
+  ]
+}

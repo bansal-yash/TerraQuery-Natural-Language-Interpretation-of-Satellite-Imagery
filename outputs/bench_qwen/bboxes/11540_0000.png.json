@@ -1,0 +1,12 @@
+{
+  "image": "11540_0000.png",
+  "boxes": [
+    {
+      "label": "The image from Google Earth shows a small, white vehicle positioned on a multi-lane road with a divider featuring vegetation.",
+      "x1": 259,
+      "y1": 171,
+      "x2": 340,
+      "y2": 210
+    }
+  ]
+}

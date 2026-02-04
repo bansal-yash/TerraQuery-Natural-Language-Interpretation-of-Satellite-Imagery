@@ -1,0 +1,47 @@
+{
+  "image": "P2385_0018.png",
+  "boxes": [
+    {
+      "label": "body of water",
+      "x1": 0,
+      "y1": 290,
+      "x2": 512,
+      "y2": 505
+    },
+    {
+      "label": "bridge",
+      "x1": 0,
+      "y1": 0,
+      "x2": 129,
+      "y2": 505
+    },
+    {
+      "label": "agricultural zone",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 230
+    },
+    {
+      "label": "solar panels",
+      "x1": 0,
+      "y1": 44,
+      "x2": 59,
+      "y2": 152
+    },
+    {
+      "label": "solar panels",
+      "x1": 131,
+      "y1": 120,
+      "x2": 244,
+      "y2": 201
+    },
+    {
+      "label": "solar panels",
+      "x1": 248,
+      "y1": 70,
+      "x2": 352,
+      "y2": 172
+    }
+  ]
+}

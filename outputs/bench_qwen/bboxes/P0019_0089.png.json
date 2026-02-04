@@ -1,0 +1,26 @@
+{
+  "image": "P0019_0089.png",
+  "boxes": [
+    {
+      "label": "large building with a white rooftop",
+      "x1": 408,
+      "y1": 187,
+      "x2": 512,
+      "y2": 469
+    },
+    {
+      "label": "body of water",
+      "x1": 0,
+      "y1": 164,
+      "x2": 87,
+      "y2": 510
+    },
+    {
+      "label": "small ship",
+      "x1": 45,
+      "y1": 149,
+      "x2": 62,
+      "y2": 176
+    }
+  ]
+}

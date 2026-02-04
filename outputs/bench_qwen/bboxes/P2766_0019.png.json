@@ -1,0 +1,12 @@
+{
+  "image": "P2766_0019.png",
+  "boxes": [
+    {
+      "label": "one large vehicle",
+      "x1": 182,
+      "y1": 351,
+      "x2": 242,
+      "y2": 433
+    }
+  ]
+}

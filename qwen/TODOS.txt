@@ -1,0 +1,4 @@
+1. Extract the mean of the BERT-BLEU score of the 20000_train.json(Tested on Earthmind-Bench/rgb) and 2000_other
+2. Check  created VRSBench_EVAL_vqa.json and find the mean(Trained on SAR of pair_data/train).
+3. Check if ./wait_and_run.sh works or not. (Currently the model is being trained on pair_data sar images and will be tested on VRSBench).
+3. Infer bbscore_all.py on the script.

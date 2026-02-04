@@ -1,0 +1,30 @@
+{
+	"input_image": {
+    "image_id": "sample2.png",
+    "image_url": "https://bit.ly/4oYfvr0",
+    "metadata": {
+        "width": 512,
+        "height": 512,
+        "spatial_resolution_m": 1.57
+}
+    },
+    "queries": {
+        "caption_query": {
+            "instruction": "Generate a detailed caption describing all visible elements in the satellite image, including object types, counts, relative locations, and overall scene context."
+        },
+        "grounding_query": {
+            "instruction": "Locate and return oriented bounding boxes for the ground track field seen in the image."
+        },
+        "attribute_query": {
+            "binary": {
+                "instruction": "Is there any aeroplane in the scene?"
+            },
+            "numeric": {
+                "instruction": "What is the area of the blue region in the larger swimming pool in meters square?"
+            },
+            "semantic": {
+                "instruction": "What is the color of the building on the top right side of the larger swimming pool?"
+            }
+        }
+    }
+}

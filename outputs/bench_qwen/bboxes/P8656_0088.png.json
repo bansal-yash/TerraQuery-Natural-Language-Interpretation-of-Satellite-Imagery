@@ -1,0 +1,54 @@
+{
+  "image": "P8656_0088.png",
+  "boxes": [
+    {
+      "label": "building",
+      "x1": 0,
+      "y1": 0,
+      "x2": 510,
+      "y2": 510
+    },
+    {
+      "label": "skylight",
+      "x1": 0,
+      "y1": 0,
+      "x2": 438,
+      "y2": 368
+    },
+    {
+      "label": "protruding structure",
+      "x1": 159,
+      "y1": 343,
+      "x2": 236,
+      "y2": 422
+    },
+    {
+      "label": "protruding structure",
+      "x1": 347,
+      "y1": 172,
+      "x2": 426,
+      "y2": 251
+    },
+    {
+      "label": "protruding structure",
+      "x1": 89,
+      "y1": 448,
+      "x2": 144,
+      "y2": 503
+    },
+    {
+      "label": "protruding structure",
+      "x1": 454,
+      "y1": 116,
+      "x2": 510,
+      "y2": 172
+    },
+    {
+      "label": "small vehicle",
+      "x1": 392,
+      "y1": 431,
+      "x2": 452,
+      "y2": 510
+    }
+  ]
+}

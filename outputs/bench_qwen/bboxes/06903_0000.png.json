@@ -1,0 +1,12 @@
+{
+  "image": "06903_0000.png",
+  "boxes": [
+    {
+      "label": "industrial structure with a large chimney emitting smoke",
+      "x1": 234,
+      "y1": 29,
+      "x2": 484,
+      "y2": 340
+    }
+  ]
+}

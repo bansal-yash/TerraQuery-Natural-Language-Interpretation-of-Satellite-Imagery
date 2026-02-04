@@ -1,0 +1,12 @@
+{
+  "image": "07362_0000.png",
+  "boxes": [
+    {
+      "label": "An aerial view of an urban area captured by GoogleEarth. The image is colored and presents a dense pattern of residential and commercial buildings, intersected by roads that run in various directions.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    }
+  ]
+}

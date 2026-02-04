@@ -1,0 +1,12 @@
+{
+  "image": "P0331_0007.png",
+  "boxes": [
+    {
+      "label": "house with a backyard swimming pool with blue water and irregular shape",
+      "x1": 80,
+      "y1": 307,
+      "x2": 205,
+      "y2": 397
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "image": "P3810_0000.png",
+  "boxes": [
+    {
+      "label": "An aerial view of a densely populated urban area from GoogleEarth, featuring a network of streets interspersed with green spaces and buildings. The town layout includes two small roundabouts facilitating traffic flow: one located at the top central part of the image and another towards the top-right quadrant.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 510
+    }
+  ]
+}

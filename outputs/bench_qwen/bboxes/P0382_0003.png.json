@@ -1,0 +1,33 @@
+{
+  "image": "P0382_0003.png",
+  "boxes": [
+    {
+      "label": "green grass",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    },
+    {
+      "label": "sports ground boundaries",
+      "x1": 223,
+      "y1": 310,
+      "x2": 512,
+      "y2": 344
+    },
+    {
+      "label": "sports ground boundaries",
+      "x1": 413,
+      "y1": 61,
+      "x2": 512,
+      "y2": 256
+    },
+    {
+      "label": "three small vehicles",
+      "x1": 109,
+      "y1": 13,
+      "x2": 152,
+      "y2": 58
+    }
+  ]
+}

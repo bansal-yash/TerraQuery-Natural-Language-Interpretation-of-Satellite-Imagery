@@ -1,0 +1,12 @@
+{
+  "image": "06579_0000.png",
+  "boxes": [
+    {
+      "label": "pair of circular storage tanks",
+      "x1": 22,
+      "y1": 251,
+      "x2": 454,
+      "y2": 512
+    }
+  ]
+}

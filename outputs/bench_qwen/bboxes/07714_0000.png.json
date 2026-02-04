@@ -1,0 +1,33 @@
+{
+  "image": "07714_0000.png",
+  "boxes": [
+    {
+      "label": "two parallel tennis courts adjacent to a dry grass field",
+      "x1": 218,
+      "y1": 272,
+      "x2": 512,
+      "y2": 510
+    },
+    {
+      "label": "three vehicles are visible near the edges of the image",
+      "x1": 13,
+      "y1": 70,
+      "x2": 36,
+      "y2": 95
+    },
+    {
+      "label": "three vehicles are visible near the edges of the image",
+      "x1": 9,
+      "y1": 421,
+      "x2": 33,
+      "y2": 446
+    },
+    {
+      "label": "three vehicles are visible near the edges of the image",
+      "x1": 99,
+      "y1": 479,
+      "x2": 129,
+      "y2": 505
+    }
+  ]
+}

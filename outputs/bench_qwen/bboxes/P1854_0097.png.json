@@ -1,0 +1,12 @@
+{
+  "image": "P1854_0097.png",
+  "boxes": [
+    {
+      "label": "small single-aisle plane",
+      "x1": 294,
+      "y1": 64,
+      "x2": 512,
+      "y2": 268
+    }
+  ]
+}

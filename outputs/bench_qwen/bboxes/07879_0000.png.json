@@ -1,0 +1,26 @@
+{
+  "image": "07879_0000.png",
+  "boxes": [
+    {
+      "label": "small ground track field with a red running track and inner grass area",
+      "x1": 159,
+      "y1": 362,
+      "x2": 326,
+      "y2": 505
+    },
+    {
+      "label": "four basketball courts",
+      "x1": 192,
+      "y1": 223,
+      "x2": 274,
+      "y2": 351
+    },
+    {
+      "label": "small golf field characterized by well-maintained greenery and sand traps",
+      "x1": 402,
+      "y1": 203,
+      "x2": 512,
+      "y2": 505
+    }
+  ]
+}

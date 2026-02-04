@@ -1,0 +1,45 @@
+{
+  "image": "P0007_0005.png",
+  "answers": [
+    {
+      "question_id": 14,
+      "question": "How many large vehicles are visible?",
+      "answer": "system You"
+    },
+    {
+      "question_id": 15,
+      "question": "Is there a small vehicle present?",
+      "answer": "system You"
+    },
+    {
+      "question_id": 16,
+      "question": "Where is the small vehicle located?",
+      "answer": "system You"
+    },
+    {
+      "question_id": 17,
+      "question": "What color is the parking lot?",
+      "answer": "system You"
+    },
+    {
+      "question_id": 14,
+      "question": "How many large vehicles are visible?",
+      "answer": "3"
+    },
+    {
+      "question_id": 15,
+      "question": "Is there a small vehicle present?",
+      "answer": "yes"
+    },
+    {
+      "question_id": 16,
+      "question": "Where is the small vehicle located?",
+      "answer": "top right"
+    },
+    {
+      "question_id": 17,
+      "question": "What color is the parking lot?",
+      "answer": "gray"
+    }
+  ]
+}

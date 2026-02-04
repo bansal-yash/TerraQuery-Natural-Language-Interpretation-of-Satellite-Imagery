@@ -1,0 +1,1 @@
+RGB:Aerial view of urban grid intersecting with agricultural fields and waterways. || SAR:SAR image shows urban layout with streets, buildings, and water bodies in grayscale.

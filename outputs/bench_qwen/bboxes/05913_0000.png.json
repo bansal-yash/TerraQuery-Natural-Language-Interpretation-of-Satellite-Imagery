@@ -1,0 +1,12 @@
+{
+  "image": "05913_0000.png",
+  "boxes": [
+    {
+      "label": "Aerial view of a recreational area captured via Google Earth featuring green spaces and recreational facilities. There is a tennis court located in the lower right quadrant of the image with well-defined boundary lines and a playing surface.",
+      "x1": 207,
+      "y1": 233,
+      "x2": 512,
+      "y2": 506
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "image": "P0795_0002.png",
+  "boxes": [
+    {
+      "label": "small ships",
+      "x1": 284,
+      "y1": 334,
+      "x2": 349,
+      "y2": 371
+    },
+    {
+      "label": "small peninsular land form",
+      "x1": 170,
+      "y1": 86,
+      "x2": 320,
+      "y2": 208
+    }
+  ]
+}

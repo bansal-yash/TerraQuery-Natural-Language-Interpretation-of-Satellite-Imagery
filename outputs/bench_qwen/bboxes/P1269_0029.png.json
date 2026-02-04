@@ -1,0 +1,33 @@
+{
+  "image": "P1269_0029.png",
+  "boxes": [
+    {
+      "label": "smoke plume",
+      "x1": 111,
+      "y1": 0,
+      "x2": 223,
+      "y2": 147
+    },
+    {
+      "label": "rectangular tanks or ponds",
+      "x1": 213,
+      "y1": 364,
+      "x2": 510,
+      "y2": 510
+    },
+    {
+      "label": "infrastructure buildings",
+      "x1": 198,
+      "y1": 254,
+      "x2": 256,
+      "y2": 340
+    },
+    {
+      "label": "small bridge",
+      "x1": 294,
+      "y1": 223,
+      "x2": 351,
+      "y2": 254
+    }
+  ]
+}

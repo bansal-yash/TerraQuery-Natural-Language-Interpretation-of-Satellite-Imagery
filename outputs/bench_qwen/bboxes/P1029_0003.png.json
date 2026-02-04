@@ -1,0 +1,12 @@
+{
+  "image": "P1029_0003.png",
+  "boxes": [
+    {
+      "label": "High resolution image from GoogleEarth presenting a coastal region with residential buildings and harbors. There is a long pier projecting into the water on the right side of the image. A small-vehicle is noticeable within the residential area near the middle-right of the image.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    }
+  ]
+}

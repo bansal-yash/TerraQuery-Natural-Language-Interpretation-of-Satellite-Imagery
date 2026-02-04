@@ -1,0 +1,12 @@
+{
+  "image": "P6687_0118.png",
+  "boxes": [
+    {
+      "label": "two white large vehicles are parked adjacent to each other towards the left side",
+      "x1": 7,
+      "y1": 109,
+      "x2": 128,
+      "y2": 228
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "image": "P1088_0002.png",
+  "boxes": [
+    {
+      "label": "small, white vehicle oriented diagonally relative to the image frame.",
+      "x1": 187,
+      "y1": 75,
+      "x2": 204,
+      "y2": 113
+    }
+  ]
+}

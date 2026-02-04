@@ -1,0 +1,68 @@
+{
+  "image": "P2781_0010.png",
+  "boxes": [
+    {
+      "label": "large vehicle",
+      "x1": 54,
+      "y1": 421,
+      "x2": 146,
+      "y2": 510
+    },
+    {
+      "label": "large vehicle",
+      "x1": 166,
+      "y1": 330,
+      "x2": 223,
+      "y2": 391
+    },
+    {
+      "label": "large vehicle",
+      "x1": 304,
+      "y1": 346,
+      "x2": 374,
+      "y2": 421
+    },
+    {
+      "label": "large vehicle",
+      "x1": 374,
+      "y1": 315,
+      "x2": 409,
+      "y2": 358
+    },
+    {
+      "label": "large vehicle",
+      "x1": 384,
+      "y1": 358,
+      "x2": 428,
+      "y2": 397
+    },
+    {
+      "label": "large vehicle",
+      "x1": 384,
+      "y1": 397,
+      "x2": 510,
+      "y2": 510
+    },
+    {
+      "label": "large vehicle",
+      "x1": 290,
+      "y1": 298,
+      "x2": 317,
+      "y2": 326
+    },
+    {
+      "label": "large vehicle",
+      "x1": 264,
+      "y1": 170,
+      "x2": 298,
+      "y2": 207
+    },
+    {
+      "label": "large vehicle",
+      "x1": 290,
+      "y1": 156,
+      "x2": 317,
+      "y2": 187
+    }
+  ]
+}

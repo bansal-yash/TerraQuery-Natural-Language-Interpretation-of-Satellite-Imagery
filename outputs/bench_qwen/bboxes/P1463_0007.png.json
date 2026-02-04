@@ -1,0 +1,12 @@
+{
+  "image": "P1463_0007.png",
+  "boxes": [
+    {
+      "label": "A high-resolution Google Earth image capturing a portion of a basketball court located at the bottom right of the frame. The visible part of the basketball court shows painted markings on the surface that are typical for the sport.",
+      "x1": 330,
+      "y1": 351,
+      "x2": 510,
+      "y2": 510
+    }
+  ]
+}

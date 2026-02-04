@@ -1,0 +1,12 @@
+{
+  "image": "11113_0000.png",
+  "boxes": [
+    {
+      "label": "two basketball courts",
+      "x1": 308,
+      "y1": 75,
+      "x2": 512,
+      "y2": 510
+    }
+  ]
+}

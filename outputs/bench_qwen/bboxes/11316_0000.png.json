@@ -1,0 +1,12 @@
+{
+  "image": "11316_0000.png",
+  "boxes": [
+    {
+      "label": "A satellite image captured by GoogleEarth displaying a small airplane positioned on a distinctly textured surface, with no visible surrounding structures.",
+      "x1": 216,
+      "y1": 248,
+      "x2": 412,
+      "y2": 457
+    }
+  ]
+}

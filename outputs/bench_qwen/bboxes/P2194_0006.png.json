@@ -1,0 +1,19 @@
+{
+  "image": "P2194_0006.png",
+  "boxes": [
+    {
+      "label": "building complex",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 510
+    },
+    {
+      "label": "small vehicle",
+      "x1": 13,
+      "y1": 454,
+      "x2": 28,
+      "y2": 476
+    }
+  ]
+}

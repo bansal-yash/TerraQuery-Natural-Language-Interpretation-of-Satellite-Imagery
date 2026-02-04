@@ -1,0 +1,26 @@
+{
+  "image": "P1506_0006.png",
+  "boxes": [
+    {
+      "label": "green area with dense tree coverage, surrounded by paths",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 399
+    },
+    {
+      "label": "small tennis court with visible court lines and a surrounding fence",
+      "x1": 234,
+      "y1": 420,
+      "x2": 339,
+      "y2": 512
+    },
+    {
+      "label": "small tennis court with visible court lines and a surrounding fence",
+      "x1": 359,
+      "y1": 403,
+      "x2": 467,
+      "y2": 512
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "image": "P2721_0007.png",
+  "boxes": [
+    {
+      "label": "small soccer-ball field and a small ground-track field",
+      "x1": 409,
+      "y1": 239,
+      "x2": 479,
+      "y2": 310
+    }
+  ]
+}

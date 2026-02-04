@@ -1,0 +1,12 @@
+{
+  "image": "P0056_0002.png",
+  "boxes": [
+    {
+      "label": "large white vehicles parking parallel to the road",
+      "x1": 0,
+      "y1": 326,
+      "x2": 176,
+      "y2": 448
+    }
+  ]
+}

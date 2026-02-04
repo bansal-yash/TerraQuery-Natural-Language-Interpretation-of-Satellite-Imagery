@@ -1,0 +1,12 @@
+{
+  "image": "P1586_0001.png",
+  "boxes": [
+    {
+      "label": "compound with several small storage tanks",
+      "x1": 168,
+      "y1": 321,
+      "x2": 313,
+      "y2": 510
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "image": "08353_0000.png",
+  "boxes": [
+    {
+      "label": "stadium with a vivid green field, surrounded by spectator seating",
+      "x1": 285,
+      "y1": 256,
+      "x2": 512,
+      "y2": 510
+    },
+    {
+      "label": "smaller ground track and field area",
+      "x1": 256,
+      "y1": 170,
+      "x2": 335,
+      "y2": 269
+    }
+  ]
+}

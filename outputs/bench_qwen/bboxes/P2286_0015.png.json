@@ -1,0 +1,12 @@
+{
+  "image": "P2286_0015.png",
+  "boxes": [
+    {
+      "label": "baseball diamond",
+      "x1": 346,
+      "y1": 132,
+      "x2": 457,
+      "y2": 249
+    }
+  ]
+}

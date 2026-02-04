@@ -1,0 +1,12 @@
+{
+  "image": "P1463_0028.png",
+  "boxes": [
+    {
+      "label": "basketball court",
+      "x1": 121,
+      "y1": 0,
+      "x2": 512,
+      "y2": 510
+    }
+  ]
+}

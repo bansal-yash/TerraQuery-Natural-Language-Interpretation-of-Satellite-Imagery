@@ -1,0 +1,12 @@
+{
+  "image": "P1384_0013.png",
+  "boxes": [
+    {
+      "label": "High-resolution aerial image sourced from GoogleEarth showcasing a suburban area with houses, streets, and greenery. The image captures several residential properties with distinctively colored rooftops and well-defined yards. Two swimming pools are visible within the scene.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 510,
+      "y2": 510
+    }
+  ]
+}

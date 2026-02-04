@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: qwen-mtmd
+Version: 0.1.0
+Summary: Patched Qwen3-VL MTMD pybind11 binding
+Author: facebookresearch
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Multimedia :: Graphics :: Image Processing
+Requires-Python: >=3.10
+Dynamic: author
+Dynamic: classifier
+Dynamic: requires-python
+Dynamic: summary

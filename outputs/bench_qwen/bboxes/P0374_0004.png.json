@@ -1,0 +1,19 @@
+{
+  "image": "P0374_0004.png",
+  "boxes": [
+    {
+      "label": "baseball diamond",
+      "x1": 384,
+      "y1": 193,
+      "x2": 512,
+      "y2": 351
+    },
+    {
+      "label": "small red vehicle",
+      "x1": 209,
+      "y1": 397,
+      "x2": 227,
+      "y2": 437
+    }
+  ]
+}

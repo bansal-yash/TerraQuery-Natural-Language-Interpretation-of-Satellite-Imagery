@@ -1,0 +1,12 @@
+{
+  "image": "P6687_0106.png",
+  "boxes": [
+    {
+      "label": "three small vehicles on top",
+      "x1": 231,
+      "y1": 0,
+      "x2": 367,
+      "y2": 93
+    }
+  ]
+}

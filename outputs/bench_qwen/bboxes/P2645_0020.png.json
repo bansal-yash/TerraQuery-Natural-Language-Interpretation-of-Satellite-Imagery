@@ -1,0 +1,26 @@
+{
+  "image": "P2645_0020.png",
+  "boxes": [
+    {
+      "label": "parking lot dotted with cars",
+      "x1": 116,
+      "y1": 331,
+      "x2": 170,
+      "y2": 368
+    },
+    {
+      "label": "expanse of undeveloped land with patches of exposed soil and vegetation",
+      "x1": 147,
+      "y1": 0,
+      "x2": 512,
+      "y2": 310
+    },
+    {
+      "label": "large vehicle",
+      "x1": 293,
+      "y1": 359,
+      "x2": 315,
+      "y2": 388
+    }
+  ]
+}

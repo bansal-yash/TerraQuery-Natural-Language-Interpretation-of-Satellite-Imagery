@@ -1,0 +1,40 @@
+{
+  "image": "P0060_0000.png",
+  "boxes": [
+    {
+      "label": "residential houses with backyard swimming pool",
+      "x1": 151,
+      "y1": 321,
+      "x2": 496,
+      "y2": 510
+    },
+    {
+      "label": "small swimming pool",
+      "x1": 192,
+      "y1": 321,
+      "x2": 234,
+      "y2": 349
+    },
+    {
+      "label": "another swimming pool",
+      "x1": 156,
+      "y1": 372,
+      "x2": 186,
+      "y2": 412
+    },
+    {
+      "label": "roads with lane markings",
+      "x1": 69,
+      "y1": 234,
+      "x2": 510,
+      "y2": 510
+    },
+    {
+      "label": "sandy lot",
+      "x1": 151,
+      "y1": 0,
+      "x2": 510,
+      "y2": 256
+    }
+  ]
+}

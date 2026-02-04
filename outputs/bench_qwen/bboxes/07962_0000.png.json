@@ -1,0 +1,19 @@
+{
+  "image": "07962_0000.png",
+  "boxes": [
+    {
+      "label": "building with red-brown roof",
+      "x1": 297,
+      "y1": 210,
+      "x2": 441,
+      "y2": 332
+    },
+    {
+      "label": "vehicle",
+      "x1": 438,
+      "y1": 466,
+      "x2": 481,
+      "y2": 510
+    }
+  ]
+}

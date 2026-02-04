@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanitizer Stream API &mdash; compute-sanitizer 12.6 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/omni-style.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/api-styles.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/mermaid-init.js"></script>
+        <script src="../_static/design-tabs.js"></script>
+        <script src="../_static/version.js"></script>
+        <script src="../_static/social-media.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Structs" href="structs.html" />
+    <link rel="prev" title="Sanitizer Result Codes" href="group__SANITIZER__RESULT__API.html" />
+ 
+
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+
+<a href="../index.html">
+  <img src="../_static/Logo_and_CUDA.png" class="logo" alt="Logo"/>
+</a>
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../ReleaseNotes/index.html">Release Notes</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tools</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ComputeSanitizer/index.html">Compute Sanitizer</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Interfaces</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../SanitizerApiGuide/index.html">Compute Sanitizer API Reference Manual</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../SanitizerApi/table-of-contents.html">Sanitizer API</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="modules.html">Modules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="group__SANITIZER__BARRIER__API.html">Sanitizer Barrier API</a></li>
+<li class="toctree-l3"><a class="reference internal" href="group__SANITIZER__CALLBACK__API.html">Sanitizer Callback API</a></li>
+<li class="toctree-l3"><a class="reference internal" href="group__SANITIZER__MEMORY__API.html">Sanitizer Memory API</a></li>
+<li class="toctree-l3"><a class="reference internal" href="group__SANITIZER__PATCHING__API.html">Sanitizer Patching API</a></li>
+<li class="toctree-l3"><a class="reference internal" href="group__SANITIZER__RESULT__API.html">Sanitizer Result Codes</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Sanitizer Stream API</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#functions">Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#typedefs">Typedefs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="structs.html">Structs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../SanitizerNvtxGuide/index.html">NVTX API for Compute Sanitizer Reference Manual</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Copyright And Licenses</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../CopyrightAndLicenses/index.html">Copyright and Licenses</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">compute-sanitizer</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+
+
+  
+
+<li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+  
+    <li><a href="../SanitizerApi/table-of-contents.html">Sanitizer API</a> &raquo;</li>
+    <li><a href="modules.html">Modules</a> &raquo;</li>
+<li>Sanitizer Stream API</li>
+
+      <li class="wy-breadcrumbs-aside">
+      </li>
+<li class="wy-breadcrumbs-aside">
+
+
+  <span>v2024.3.0</span>
+
+
+  <span>&nbsp;</span>
+</li>
+
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="sanitizer-stream-api">
+<h1>Sanitizer Stream API<a class="headerlink" href="#sanitizer-stream-api" title="Permalink to this headline"></a></h1>
+<p id="group__sanitizer__stream__api">Functions, types, and enums that implement the Sanitizer Stream API. </p>
+<p class="rubric-h2 rubric">Functions</p>
+<div class="dl-as-table docutils container">
+<dl class="simple">
+<dt><span class="tag-as-table-cell">SanitizerResult</span> <a class="reference internal" href="#group__sanitizer__stream__api_1gacf7d648ebab00cb6cdeac009c8521723"><span class="std std-ref">sanitizerGetStream</span></a>(Sanitizer_StreamHandle hStream, CUstream *stream)</dt><dd><p>Retrieve a CUstream handle from a Sanitizer_StreamHandle handle.</p>
+</dd>
+<dt><span class="tag-as-table-cell">SanitizerResult</span> <a class="reference internal" href="#group__sanitizer__stream__api_1ga4d3a864c0bcdbeec09732aa7d1fa5ce8"><span class="std std-ref">sanitizerGetStreamHandle</span></a>(CUcontext ctx, CUstream stream, Sanitizer_StreamHandle *hStream)</dt><dd><p>Retrieve a Sanitizer_StreamHandle handle from a CUstream handle.</p>
+</dd>
+<dt><span class="tag-as-table-cell">SanitizerResult</span> <a class="reference internal" href="#group__sanitizer__stream__api_1gacb643e3eabde34487111d31a643aaba4"><span class="std std-ref">sanitizerStreamSynchronize</span></a>(Sanitizer_StreamHandle stream)</dt><dd><p>Synchronize a given stream.</p>
+</dd>
+</dl>
+</div>
+<p class="rubric-h2 rubric">Typedefs</p>
+<div class="dl-as-table docutils container">
+<dl class="simple">
+<dt><a class="reference internal" href="#group__sanitizer__stream__api_1ga2ef75b467edc7b0d22f36b628c519c35"><span class="std std-ref">Sanitizer_StreamHandle</span></a></dt><dd><p></p>
+</dd>
+</dl>
+</div>
+<section id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline"></a></h2>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv418sanitizerGetStream22Sanitizer_StreamHandleP8CUstream">
+<span id="_CPPv318sanitizerGetStream22Sanitizer_StreamHandleP8CUstream"></span><span id="_CPPv218sanitizerGetStream22Sanitizer_StreamHandleP8CUstream"></span><span id="sanitizerGetStream__Sanitizer_StreamHandle.CUstreamP"></span><span class="target" id="group__sanitizer__stream__api_1gacf7d648ebab00cb6cdeac009c8521723"></span><a class="reference internal" href="group__SANITIZER__RESULT__API.html#_CPPv415SanitizerResult" title="SanitizerResult"><span class="n"><span class="pre">SanitizerResult</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sanitizerGetStream</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv422Sanitizer_StreamHandle" title="Sanitizer_StreamHandle"><span class="n"><span class="pre">Sanitizer_StreamHandle</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">hStream</span></span>, <span class="n"><span class="pre">CUstream</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">stream</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv418sanitizerGetStream22Sanitizer_StreamHandleP8CUstream" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Retrieve a CUstream handle from a Sanitizer_StreamHandle handle. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Thread-safety</strong>: this function is thread safe.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>hStream</strong> – <strong>[in]</strong> Sanitizer Stream handle. </p></li>
+<li><p><strong>stream</strong> – <strong>[out]</strong> Output CUstream handle.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return values</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>SANITIZER_SUCCESS</strong> – on success </p></li>
+<li><p><strong>SANITIZER_ERROR_INVALID_PARAMETER</strong> – if <code class="docutils literal notranslate"><span class="pre">hStream</span></code> is not a valid Sanitizer stream handle or if <code class="docutils literal notranslate"><span class="pre">stream</span></code> is NULL. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv424sanitizerGetStreamHandle9CUcontext8CUstreamP22Sanitizer_StreamHandle">
+<span id="_CPPv324sanitizerGetStreamHandle9CUcontext8CUstreamP22Sanitizer_StreamHandle"></span><span id="_CPPv224sanitizerGetStreamHandle9CUcontext8CUstreamP22Sanitizer_StreamHandle"></span><span id="sanitizerGetStreamHandle__CUcontext.CUstream.Sanitizer_StreamHandleP"></span><span class="target" id="group__sanitizer__stream__api_1ga4d3a864c0bcdbeec09732aa7d1fa5ce8"></span><a class="reference internal" href="group__SANITIZER__RESULT__API.html#_CPPv415SanitizerResult" title="SanitizerResult"><span class="n"><span class="pre">SanitizerResult</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sanitizerGetStreamHandle</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">CUcontext</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">ctx</span></span>, <span class="n"><span class="pre">CUstream</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">stream</span></span>, <a class="reference internal" href="#_CPPv422Sanitizer_StreamHandle" title="Sanitizer_StreamHandle"><span class="n"><span class="pre">Sanitizer_StreamHandle</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">hStream</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv424sanitizerGetStreamHandle9CUcontext8CUstreamP22Sanitizer_StreamHandle" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Retrieve a Sanitizer_StreamHandle handle from a CUstream handle. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Thread-safety</strong>: this function is thread safe.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ctx</strong> – <strong>[in]</strong> Context owning the stream. If NULL, the current context will be used. </p></li>
+<li><p><strong>stream</strong> – <strong>[in]</strong> CUstream handle. If NULL, the NULL stream will be used. </p></li>
+<li><p><strong>hStream</strong> – <strong>[out]</strong> Output Sanitizer Stream handle.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return values</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>SANITIZER_SUCCESS</strong> – on success </p></li>
+<li><p><strong>SANITIZER_ERROR_INVALID_PARAMETER</strong> – if <code class="docutils literal notranslate"><span class="pre">stream</span></code> is not a valid CUstream handle or if <code class="docutils literal notranslate"><span class="pre">hStream</span></code> is NULL. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv426sanitizerStreamSynchronize22Sanitizer_StreamHandle">
+<span id="_CPPv326sanitizerStreamSynchronize22Sanitizer_StreamHandle"></span><span id="_CPPv226sanitizerStreamSynchronize22Sanitizer_StreamHandle"></span><span id="sanitizerStreamSynchronize__Sanitizer_StreamHandle"></span><span class="target" id="group__sanitizer__stream__api_1gacb643e3eabde34487111d31a643aaba4"></span><a class="reference internal" href="group__SANITIZER__RESULT__API.html#_CPPv415SanitizerResult" title="SanitizerResult"><span class="n"><span class="pre">SanitizerResult</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sanitizerStreamSynchronize</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv422Sanitizer_StreamHandle" title="Sanitizer_StreamHandle"><span class="n"><span class="pre">Sanitizer_StreamHandle</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">stream</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv426sanitizerStreamSynchronize22Sanitizer_StreamHandle" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Synchronize a given stream. </p>
+<p>Equivalent of cudaStreamSynchronize that can be called with a sanitizer stream handle </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Thread-safety</strong>: this function is thread safe.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>stream</strong> – Stream handle. If NULL, the NULL stream will be used. </p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="typedefs">
+<h2>Typedefs<a class="headerlink" href="#typedefs" title="Permalink to this headline"></a></h2>
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv422Sanitizer_StreamHandle">
+<span id="_CPPv322Sanitizer_StreamHandle"></span><span id="_CPPv222Sanitizer_StreamHandle"></span><span id="Sanitizer_StreamHandle"></span><span class="target" id="group__sanitizer__stream__api_1ga2ef75b467edc7b0d22f36b628c519c35"></span><span class="k"><span class="pre">typedef</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">Sanitizer_Stream_st</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">Sanitizer_StreamHandle</span></span></span><a class="headerlink" href="#_CPPv422Sanitizer_StreamHandle" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+<img src="../_static/NVIDIA-LogoBlack.svg" class="only-light"/>
+<img src="../_static/NVIDIA-LogoWhite.svg" class="only-dark"/>
+
+<p class="notices">
+<a href="https://www.nvidia.com/en-us/about-nvidia/privacy-policy/" target="_blank">Privacy Policy</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/privacy-center/" target="_blank">Manage My Privacy</a>
+|
+<a href="https://www.nvidia.com/en-us/preferences/start/" target="_blank">Do Not Sell or Share My Data</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/terms-of-service/" target="_blank">Terms of Service</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/accessibility/" target="_blank">Accessibility</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/company-policies/" target="_blank">Corporate Policies</a>
+|
+<a href="https://www.nvidia.com/en-us/product-security/" target="_blank">Product Security</a>
+|
+<a href="https://www.nvidia.com/en-us/contact/" target="_blank">Contact</a>
+</p>
+
+<p>
+  Copyright &#169; 2019-2024, NVIDIA Corporation &amp; Affiliates. All rights reserved.
+</p>
+
+    <p>
+      <span class="lastupdated">Last updated on Jul 11, 2024.
+      </span></p>
+
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+ 
+
+
+
+</body>
+</html>

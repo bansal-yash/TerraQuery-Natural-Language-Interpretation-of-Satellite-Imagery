@@ -1,0 +1,12 @@
+{
+  "image": "09498_0000.png",
+  "boxes": [
+    {
+      "label": "Aerial view of an airport captured by GoogleEarth, displaying part of a tarmac with an airplane on the right side of the image. The aircraft is surrounded by various airport ground support equipment. On the tarmac is a section with yellow ground markings.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    }
+  ]
+}

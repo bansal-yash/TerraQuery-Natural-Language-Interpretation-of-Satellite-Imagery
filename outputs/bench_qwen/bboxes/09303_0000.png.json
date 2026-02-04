@@ -1,0 +1,40 @@
+{
+  "image": "09303_0000.png",
+  "boxes": [
+    {
+      "label": "basketball court",
+      "x1": 282,
+      "y1": 351,
+      "x2": 512,
+      "y2": 506
+    },
+    {
+      "label": "hexagonal pavilion",
+      "x1": 315,
+      "y1": 149,
+      "x2": 418,
+      "y2": 251
+    },
+    {
+      "label": "playground equipment",
+      "x1": 176,
+      "y1": 129,
+      "x2": 217,
+      "y2": 187
+    },
+    {
+      "label": "playground equipment",
+      "x1": 271,
+      "y1": 208,
+      "x2": 291,
+      "y2": 267
+    },
+    {
+      "label": "playground equipment",
+      "x1": 432,
+      "y1": 213,
+      "x2": 487,
+      "y2": 264
+    }
+  ]
+}

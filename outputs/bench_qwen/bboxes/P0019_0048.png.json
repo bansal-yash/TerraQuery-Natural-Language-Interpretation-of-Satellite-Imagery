@@ -1,0 +1,12 @@
+{
+  "image": "P0019_0048.png",
+  "boxes": [
+    {
+      "label": "A high-resolution image from Google Earth shows a residential area with houses surrounded by greenery. One small vehicle is visible on a driveway next to a dark-roofed house.",
+      "x1": 215,
+      "y1": 121,
+      "x2": 241,
+      "y2": 185
+    }
+  ]
+}

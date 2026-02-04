@@ -1,0 +1,26 @@
+{
+  "image": "P1982_0001.png",
+  "boxes": [
+    {
+      "label": "multi-lane highway",
+      "x1": 0,
+      "y1": 0,
+      "x2": 362,
+      "y2": 468
+    },
+    {
+      "label": "five large vehicles",
+      "x1": 330,
+      "y1": 377,
+      "x2": 512,
+      "y2": 512
+    },
+    {
+      "label": "small vehicle",
+      "x1": 198,
+      "y1": 110,
+      "x2": 234,
+      "y2": 153
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "image": "06486_0000.png",
+  "boxes": [
+    {
+      "label": "storage tank",
+      "x1": 231,
+      "y1": 159,
+      "x2": 359,
+      "y2": 277
+    },
+    {
+      "label": "storage tank",
+      "x1": 352,
+      "y1": 285,
+      "x2": 480,
+      "y2": 407
+    },
+    {
+      "label": "rectangular building",
+      "x1": 35,
+      "y1": 344,
+      "x2": 213,
+      "y2": 510
+    }
+  ]
+}

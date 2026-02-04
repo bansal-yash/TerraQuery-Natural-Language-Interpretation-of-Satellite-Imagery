@@ -1,0 +1,26 @@
+{
+  "image": "P2721_0037.png",
+  "boxes": [
+    {
+      "label": "building",
+      "x1": 0,
+      "y1": 126,
+      "x2": 510,
+      "y2": 510
+    },
+    {
+      "label": "soccer ball field",
+      "x1": 179,
+      "y1": 322,
+      "x2": 211,
+      "y2": 369
+    },
+    {
+      "label": "ground track field",
+      "x1": 179,
+      "y1": 322,
+      "x2": 211,
+      "y2": 369
+    }
+  ]
+}

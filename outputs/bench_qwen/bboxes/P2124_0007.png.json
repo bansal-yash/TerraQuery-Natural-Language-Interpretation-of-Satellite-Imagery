@@ -1,0 +1,33 @@
+{
+  "image": "P2124_0007.png",
+  "boxes": [
+    {
+      "label": "warehouse",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    },
+    {
+      "label": "large vehicle",
+      "x1": 0,
+      "y1": 142,
+      "x2": 62,
+      "y2": 198
+    },
+    {
+      "label": "large vehicle",
+      "x1": 0,
+      "y1": 230,
+      "x2": 46,
+      "y2": 295
+    },
+    {
+      "label": "large vehicle",
+      "x1": 0,
+      "y1": 176,
+      "x2": 62,
+      "y2": 230
+    }
+  ]
+}

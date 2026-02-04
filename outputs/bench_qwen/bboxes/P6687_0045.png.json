@@ -1,0 +1,26 @@
+{
+  "image": "P6687_0045.png",
+  "boxes": [
+    {
+      "label": "small vehicle toward top",
+      "x1": 125,
+      "y1": 115,
+      "x2": 182,
+      "y2": 176
+    },
+    {
+      "label": "small vehicle at bottom-right",
+      "x1": 350,
+      "y1": 466,
+      "x2": 409,
+      "y2": 512
+    },
+    {
+      "label": "large vehicle in center",
+      "x1": 168,
+      "y1": 165,
+      "x2": 241,
+      "y2": 237
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "image": "P0027_0003.png",
+  "boxes": [
+    {
+      "label": "building with dark rooftops",
+      "x1": 228,
+      "y1": 261,
+      "x2": 307,
+      "y2": 335
+    },
+    {
+      "label": "building with dark rooftops",
+      "x1": 290,
+      "y1": 213,
+      "x2": 358,
+      "y2": 276
+    },
+    {
+      "label": "building with dark rooftops",
+      "x1": 394,
+      "y1": 231,
+      "x2": 463,
+      "y2": 307
+    },
+    {
+      "label": "small vehicle",
+      "x1": 387,
+      "y1": 298,
+      "x2": 422,
+      "y2": 321
+    }
+  ]
+}

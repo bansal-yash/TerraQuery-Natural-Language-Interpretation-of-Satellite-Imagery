@@ -1,0 +1,12 @@
+{
+  "image": "P8287_0117.png",
+  "boxes": [
+    {
+      "label": "Three small vehicles are visible.",
+      "x1": 0,
+      "y1": 307,
+      "x2": 256,
+      "y2": 333
+    }
+  ]
+}

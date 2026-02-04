@@ -1,0 +1,40 @@
+{
+  "image": "06080_0000.png",
+  "boxes": [
+    {
+      "label": "residential neighborhoods",
+      "x1": 0,
+      "y1": 0,
+      "x2": 510,
+      "y2": 510
+    },
+    {
+      "label": "green fields",
+      "x1": 0,
+      "y1": 0,
+      "x2": 510,
+      "y2": 510
+    },
+    {
+      "label": "recreational areas",
+      "x1": 454,
+      "y1": 210,
+      "x2": 490,
+      "y2": 249
+    },
+    {
+      "label": "ground track and field",
+      "x1": 454,
+      "y1": 210,
+      "x2": 490,
+      "y2": 249
+    },
+    {
+      "label": "golf field",
+      "x1": 285,
+      "y1": 51,
+      "x2": 372,
+      "y2": 128
+    }
+  ]
+}

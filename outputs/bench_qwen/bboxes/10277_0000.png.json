@@ -1,0 +1,12 @@
+{
+  "image": "10277_0000.png",
+  "boxes": [
+    {
+      "label": "Aerial view of an expressway service area taken from GoogleEarth. The image shows a building with a large white roof adjacent to a green space and next to parallel lanes of an expressway.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    }
+  ]
+}

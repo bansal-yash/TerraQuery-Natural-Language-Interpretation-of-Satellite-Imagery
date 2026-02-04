@@ -1,0 +1,33 @@
+{
+  "image": "P1384_0124.png",
+  "boxes": [
+    {
+      "label": "highway",
+      "x1": 162,
+      "y1": 0,
+      "x2": 256,
+      "y2": 506
+    },
+    {
+      "label": "industrial buildings",
+      "x1": 290,
+      "y1": 27,
+      "x2": 503,
+      "y2": 317
+    },
+    {
+      "label": "open field",
+      "x1": 0,
+      "y1": 0,
+      "x2": 193,
+      "y2": 506
+    },
+    {
+      "label": "roundabout",
+      "x1": 460,
+      "y1": 13,
+      "x2": 510,
+      "y2": 65
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "image": "P2718_0018.png",
+  "boxes": [
+    {
+      "label": "houses",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 510
+    },
+    {
+      "label": "roads",
+      "x1": 334,
+      "y1": 0,
+      "x2": 512,
+      "y2": 369
+    },
+    {
+      "label": "small ground track field",
+      "x1": 447,
+      "y1": 95,
+      "x2": 492,
+      "y2": 182
+    },
+    {
+      "label": "small soccer ball field",
+      "x1": 274,
+      "y1": 182,
+      "x2": 324,
+      "y2": 218
+    }
+  ]
+}

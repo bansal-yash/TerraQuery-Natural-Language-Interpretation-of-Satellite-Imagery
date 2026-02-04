@@ -1,0 +1,1 @@
+RGB:Aerial view of patchwork farmland with roads and scattered vegetation. || SAR:SAR image shows textured ground with linear features and speckle noise.

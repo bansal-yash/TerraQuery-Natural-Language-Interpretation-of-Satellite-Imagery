@@ -1,0 +1,19 @@
+{
+  "image": "11445_0000.png",
+  "boxes": [
+    {
+      "label": "urban area with terracotta rooftops",
+      "x1": 0,
+      "y1": 0,
+      "x2": 365,
+      "y2": 510
+    },
+    {
+      "label": "train station with multiple parallel train tracks and platforms",
+      "x1": 361,
+      "y1": 0,
+      "x2": 438,
+      "y2": 510
+    }
+  ]
+}

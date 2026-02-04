@@ -1,0 +1,33 @@
+{
+  "image": "P2337_0022.png",
+  "boxes": [
+    {
+      "label": "storage tanks",
+      "x1": 73,
+      "y1": 0,
+      "x2": 201,
+      "y2": 87
+    },
+    {
+      "label": "storage tanks",
+      "x1": 244,
+      "y1": 0,
+      "x2": 351,
+      "y2": 49
+    },
+    {
+      "label": "large-vehicles",
+      "x1": 157,
+      "y1": 471,
+      "x2": 176,
+      "y2": 502
+    },
+    {
+      "label": "large-vehicles",
+      "x1": 182,
+      "y1": 462,
+      "x2": 203,
+      "y2": 482
+    }
+  ]
+}

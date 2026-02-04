@@ -1,0 +1,26 @@
+{
+  "image": "P0583_0004.png",
+  "boxes": [
+    {
+      "label": "small ship",
+      "x1": 362,
+      "y1": 452,
+      "x2": 390,
+      "y2": 505
+    },
+    {
+      "label": "left-most harbor",
+      "x1": 42,
+      "y1": 216,
+      "x2": 93,
+      "y2": 438
+    },
+    {
+      "label": "bottom-most harbor",
+      "x1": 321,
+      "y1": 198,
+      "x2": 417,
+      "y2": 505
+    }
+  ]
+}

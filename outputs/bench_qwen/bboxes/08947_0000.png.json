@@ -1,0 +1,26 @@
+{
+  "image": "08947_0000.png",
+  "boxes": [
+    {
+      "label": "storage tank with a rusted dome-like top",
+      "x1": 284,
+      "y1": 172,
+      "x2": 415,
+      "y2": 304
+    },
+    {
+      "label": "fully enclosed rectangular structure",
+      "x1": 0,
+      "y1": 116,
+      "x2": 125,
+      "y2": 408
+    },
+    {
+      "label": "storage tank with a rusted conical roof",
+      "x1": 268,
+      "y1": 367,
+      "x2": 399,
+      "y2": 503
+    }
+  ]
+}

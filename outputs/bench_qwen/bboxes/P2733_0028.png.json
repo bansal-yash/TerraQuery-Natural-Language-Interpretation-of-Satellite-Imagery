@@ -1,0 +1,33 @@
+{
+  "image": "P2733_0028.png",
+  "boxes": [
+    {
+      "label": "container crane",
+      "x1": 357,
+      "y1": 86,
+      "x2": 448,
+      "y2": 116
+    },
+    {
+      "label": "container crane",
+      "x1": 381,
+      "y1": 29,
+      "x2": 429,
+      "y2": 66
+    },
+    {
+      "label": "container crane",
+      "x1": 119,
+      "y1": 362,
+      "x2": 198,
+      "y2": 436
+    },
+    {
+      "label": "container crane",
+      "x1": 61,
+      "y1": 461,
+      "x2": 141,
+      "y2": 512
+    }
+  ]
+}

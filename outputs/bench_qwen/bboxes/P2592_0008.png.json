@@ -1,0 +1,26 @@
+{
+  "image": "P2592_0008.png",
+  "boxes": [
+    {
+      "label": "building with a triangular rooftop",
+      "x1": 256,
+      "y1": 157,
+      "x2": 415,
+      "y2": 275
+    },
+    {
+      "label": "vehicle parked next to a building on the right side of the image",
+      "x1": 348,
+      "y1": 227,
+      "x2": 384,
+      "y2": 262
+    },
+    {
+      "label": "two vehicles situated on a dirt area towards the top",
+      "x1": 207,
+      "y1": 75,
+      "x2": 246,
+      "y2": 129
+    }
+  ]
+}

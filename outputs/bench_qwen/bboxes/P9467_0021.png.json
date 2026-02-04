@@ -1,0 +1,12 @@
+{
+  "image": "P9467_0021.png",
+  "boxes": [
+    {
+      "label": "Aerial view of a coastal area captured via GoogleEarth, showcasing clear blue waters with varying depths and a tan sandy beach. There is a small storage tank located at the top-left corner of the beach.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    }
+  ]
+}

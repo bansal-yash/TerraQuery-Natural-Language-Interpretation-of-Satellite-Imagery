@@ -1,0 +1,1 @@
+RGB:Aerial view of urban area with roads, buildings, green spaces, and a soccer field. || SAR:SAR image shows textured, grainy terrain with faint linear features and speckle noise.

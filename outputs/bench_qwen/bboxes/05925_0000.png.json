@@ -1,0 +1,26 @@
+{
+  "image": "05925_0000.png",
+  "boxes": [
+    {
+      "label": "large storage tanks with distinctive white circular structures",
+      "x1": 28,
+      "y1": 13,
+      "x2": 196,
+      "y2": 249
+    },
+    {
+      "label": "large storage tanks with distinctive white circular structures",
+      "x1": 221,
+      "y1": 115,
+      "x2": 394,
+      "y2": 350
+    },
+    {
+      "label": "large storage tanks with distinctive white circular structures",
+      "x1": 168,
+      "y1": 359,
+      "x2": 345,
+      "y2": 512
+    }
+  ]
+}

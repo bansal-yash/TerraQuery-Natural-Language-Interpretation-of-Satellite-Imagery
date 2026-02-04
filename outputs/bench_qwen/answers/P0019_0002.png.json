@@ -1,0 +1,20 @@
+{
+  "image": "P0019_0002.png",
+  "answers": [
+    {
+      "question_id": 36,
+      "question": "How many harbors are visible in the image?",
+      "answer": "3"
+    },
+    {
+      "question_id": 37,
+      "question": "Is there a harbor located at the top right corner of the image?",
+      "answer": "yes"
+    },
+    {
+      "question_id": 38,
+      "question": "What object class do all these structures belong to?",
+      "answer": "harbor"
+    }
+  ]
+}

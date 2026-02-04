@@ -1,0 +1,12 @@
+{
+  "image": "P2342_0008.png",
+  "boxes": [
+    {
+      "label": "High-resolution aerial image from GoogleEarth showcasing a roadway flanked by green areas with trees and several structures, including buildings with red roofs. Visible on the roadway is a lineup of small vehicles.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 511,
+      "y2": 511
+    }
+  ]
+}

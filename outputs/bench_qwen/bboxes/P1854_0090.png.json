@@ -1,0 +1,26 @@
+{
+  "image": "P1854_0090.png",
+  "boxes": [
+    {
+      "label": "service vehicle",
+      "x1": 172,
+      "y1": 375,
+      "x2": 231,
+      "y2": 505
+    },
+    {
+      "label": "marked parking",
+      "x1": 231,
+      "y1": 369,
+      "x2": 348,
+      "y2": 413
+    },
+    {
+      "label": "green grassy area",
+      "x1": 7,
+      "y1": 104,
+      "x2": 510,
+      "y2": 264
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "image": "10164_0000.png",
+  "boxes": [
+    {
+      "label": "Aerial view of an airplane on a tarmac captured from Google Earth. The airplane is centrally located in the image and positioned such that its body runs vertically within the frame.",
+      "x1": 185,
+      "y1": 300,
+      "x2": 390,
+      "y2": 510
+    }
+  ]
+}

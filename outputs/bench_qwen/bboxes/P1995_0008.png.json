@@ -1,0 +1,26 @@
+{
+  "image": "P1995_0008.png",
+  "boxes": [
+    {
+      "label": "small white vehicle",
+      "x1": 73,
+      "y1": 298,
+      "x2": 98,
+      "y2": 312
+    },
+    {
+      "label": "two large vehicles",
+      "x1": 414,
+      "y1": 83,
+      "x2": 436,
+      "y2": 144
+    },
+    {
+      "label": "two large vehicles",
+      "x1": 500,
+      "y1": 83,
+      "x2": 512,
+      "y2": 144
+    }
+  ]
+}

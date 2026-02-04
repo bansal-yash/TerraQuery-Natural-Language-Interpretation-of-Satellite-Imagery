@@ -1,0 +1,12 @@
+{
+  "image": "07664_0000.png",
+  "boxes": [
+    {
+      "label": "top-most baseball field",
+      "x1": 230,
+      "y1": 134,
+      "x2": 448,
+      "y2": 309
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+import re
+import torch
+from PIL import Image, ImageDraw
+from transformers import AutoProcessor, Qwen3VLForConditionalGeneration
+from peft import PeftModel
+
+# =====================================================================
+# CONFIG – EDIT THESE PATHS
+# =====================================================================
+BASE_MODEL_DIR = "/home/spandan/scratch/interiit/qwen/small_spandan"
+LORA_DIR = "/home/spandan/scratch/interiit/qwen/checkpoints_tim/checkpoint-100"
+
+IMAGE_PATH = "/home/spandan/scratch/interiit/sample_dataset_inter_iit_v1_2/sample1.png"
+OUTPUT_PATH = "bbox_output.png"
+
+QUESTION = "Give ."
+
+USE_4BIT = False   # set True only if your LoRA was trained with 4-bit
+
+
+# =====================================================================
+# 1. Load ONLY fine-tuned model (base + LoRA)
+# =====================================================================
+def load_model_only_lora():
+    print("\nLoading base model...")
+    if USE_4BIT:
+        model = Qwen3VLForConditionalGeneration.from_pretrained(
+            BASE_MODEL_DIR,
+            device_map="auto",
+            load_in_4bit=True,
+            torch_dtype=torch.bfloat16,
+        )
+    else:
+        model = Qwen3VLForConditionalGeneration.from_pretrained(
+            BASE_MODEL_DIR,
+            device_map="auto",
+            torch_dtype=torch.bfloat16,
+        )
+
+    print("Loading LoRA adapter...")
+    model = PeftModel.from_pretrained(model, LORA_DIR)
+    model.eval()
+
+    processor = AutoProcessor.from_pretrained(BASE_MODEL_DIR)
+
+    print("Model + LoRA loaded successfully.")
+    return model, processor
+
+
+# =====================================================================
+# 2. Ask the model for bounding boxes
+# =====================================================================
+def ask(model, processor, image, question):
+    system_prompt = (
+        "You output ONLY bounding boxes in the format: "
+        "<ref>label</ref><box>(x1,y1),(x2,y2)</box>"
+    )
+
+    user_prompt = f"""
+{question}
+
+Follow EXACT format:
+<ref>label</ref><box>(x1,y1),(x2,y2)</box>
+Coordinates MUST be integers in [0,1000].
+One object per line.
+No extra text.
+""".strip()
+
+    messages = [
+        {"role": "system", "content": [{"type": "text", "text": system_prompt}]},
+        {"role": "user", "content": [
+            {"type": "image", "image": image},
+            {"type": "text", "text": user_prompt},
+        ]}
+    ]
+
+    prompt = processor.apply_chat_template(
+        messages,
+        tokenize=False,
+        add_generation_prompt=True,
+    )
+
+    inputs = processor(
+        images=[image],
+        text=[prompt],
+        return_tensors="pt"
+    ).to(model.device)
+
+    with torch.no_grad():
+        out = model.generate(
+            **inputs,
+            max_new_tokens=200,
+            do_sample=False,
+            num_beams=1
+        )
+
+    # remove prompt tokens
+    trimmed = out[:, inputs["input_ids"].shape[-1]:]
+    text = processor.batch_decode(trimmed, skip_special_tokens=True)[0]
+
+    print("\nRaw model output:")
+    print(text)
+    return text
+
+
+# =====================================================================
+# 3. Parse bounding boxes
+# =====================================================================
+BOX_RE = re.compile(
+    r"<ref>(.*?)</ref>\s*<box>\((\d+),(\d+)\),\((\d+),(\d+)\)</box>",
+    re.IGNORECASE
+)
+
+def parse_boxes(output_text):
+    boxes = []
+    for m in BOX_RE.finditer(output_text):
+        label = m.group(1)
+        x1, y1, x2, y2 = map(int, m.groups()[1:])
+        boxes.append(dict(label=label, x1=x1, y1=y1, x2=x2, y2=y2))
+    return boxes
+
+
+# =====================================================================
+# 4. Draw bounding boxes on the image
+# =====================================================================
+def draw(image, boxes, save_path):
+    w, h = image.size
+    img = image.copy()
+    d = ImageDraw.Draw(img)
+
+    for b in boxes:
+        # convert from [0–1000] to pixel coords
+        x1 = int(b["x1"] / 1000 * w)
+        y1 = int(b["y1"] / 1000 * h)
+        x2 = int(b["x2"] / 1000 * w)
+        y2 = int(b["x2"] / 1000 * h)
+
+        d.rectangle([x1, y1, x2, y2], outline="red", width=3)
+        d.text((x1, max(0, y1 - 12)), b["label"], fill="red")
+
+    img.save(save_path)
+    print(f"\nSaved annotated image to: {save_path}")
+
+
+# =====================================================================
+# MAIN
+# =====================================================================
+def main():
+    model, processor = load_model_only_lora()
+    image = Image.open(IMAGE_PATH).convert("RGB")
+
+    out_text = ask(model, processor, image, QUESTION)
+    boxes = parse_boxes(out_text)
+
+    print("\nParsed boxes:")
+    for b in boxes:
+        print(b)
+
+    if not boxes:
+        print("\nNo valid bounding boxes detected.")
+        return
+
+    draw(image, boxes, OUTPUT_PATH)
+
+
+if __name__ == "__main__":
+    main()

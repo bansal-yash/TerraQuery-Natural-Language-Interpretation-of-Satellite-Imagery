@@ -1,0 +1,12 @@
+{
+  "image": "P2779_0011.png",
+  "boxes": [
+    {
+      "label": "High-resolution image from GoogleEarth showing a terrain with sparse greenery and patches of bare ground. On the top-left edge of the image, several large vehicles are parked in a group.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 223,
+      "y2": 146
+    }
+  ]
+}

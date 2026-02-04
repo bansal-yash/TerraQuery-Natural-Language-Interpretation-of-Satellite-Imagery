@@ -1,0 +1,33 @@
+{
+  "image": "P4151_0049.png",
+  "boxes": [
+    {
+      "label": "vehicle at the top left corner",
+      "x1": 8,
+      "y1": 24,
+      "x2": 75,
+      "y2": 75
+    },
+    {
+      "label": "vehicle to the far right",
+      "x1": 403,
+      "y1": 466,
+      "x2": 484,
+      "y2": 512
+    },
+    {
+      "label": "vehicle in the bottom middle area",
+      "x1": 212,
+      "y1": 403,
+      "x2": 281,
+      "y2": 448
+    },
+    {
+      "label": "vehicle near the building",
+      "x1": 106,
+      "y1": 0,
+      "x2": 203,
+      "y2": 41
+    }
+  ]
+}

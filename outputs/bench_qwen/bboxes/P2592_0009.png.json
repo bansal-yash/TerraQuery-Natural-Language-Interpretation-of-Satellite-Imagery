@@ -1,0 +1,26 @@
+{
+  "image": "P2592_0009.png",
+  "boxes": [
+    {
+      "label": "building with large gray roof",
+      "x1": 221,
+      "y1": 24,
+      "x2": 361,
+      "y2": 201
+    },
+    {
+      "label": "small vehicles",
+      "x1": 264,
+      "y1": 0,
+      "x2": 388,
+      "y2": 83
+    },
+    {
+      "label": "small vehicle farthest to the right",
+      "x1": 407,
+      "y1": 377,
+      "x2": 448,
+      "y2": 403
+    }
+  ]
+}

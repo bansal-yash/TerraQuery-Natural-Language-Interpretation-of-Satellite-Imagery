@@ -1,0 +1,19 @@
+{
+  "image": "06921_0000.png",
+  "boxes": [
+    {
+      "label": "vehicle on the right side of the highway",
+      "x1": 301,
+      "y1": 241,
+      "x2": 359,
+      "y2": 350
+    },
+    {
+      "label": "vehicle at the top of the overpass",
+      "x1": 358,
+      "y1": 28,
+      "x2": 371,
+      "y2": 44
+    }
+  ]
+}

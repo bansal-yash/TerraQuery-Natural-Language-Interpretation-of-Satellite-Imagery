@@ -1,0 +1,12 @@
+{
+  "image": "P4151_0067.png",
+  "boxes": [
+    {
+      "label": "A high-resolution aerial image captures a segment of a building with a gray roof and multiple white balconies. Beside the building, there are two visible small vehicles parked on the side of the road that runs adjacent to the building. One vehicle is located towards the bottom-middle of the image and appears to be the bottom-most among the vehicles, while the second one is situated on the right side of the road.",
+      "x1": 231,
+      "y1": 349,
+      "x2": 298,
+      "y2": 395
+    }
+  ]
+}

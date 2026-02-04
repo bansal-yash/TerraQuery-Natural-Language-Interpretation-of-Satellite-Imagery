@@ -1,0 +1,26 @@
+{
+  "image": "P2608_0010.png",
+  "boxes": [
+    {
+      "label": "large red vehicle",
+      "x1": 132,
+      "y1": 243,
+      "x2": 221,
+      "y2": 279
+    },
+    {
+      "label": "small vehicles on top left",
+      "x1": 100,
+      "y1": 44,
+      "x2": 143,
+      "y2": 99
+    },
+    {
+      "label": "small vehicles clustered middle right",
+      "x1": 342,
+      "y1": 215,
+      "x2": 424,
+      "y2": 274
+    }
+  ]
+}

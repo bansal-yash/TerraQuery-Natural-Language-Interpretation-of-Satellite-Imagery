@@ -1,0 +1,19 @@
+{
+  "image": "06567_0000.png",
+  "boxes": [
+    {
+      "label": "residential buildings",
+      "x1": 0,
+      "y1": 0,
+      "x2": 510,
+      "y2": 510
+    },
+    {
+      "label": "ground track field",
+      "x1": 159,
+      "y1": 159,
+      "x2": 282,
+      "y2": 231
+    }
+  ]
+}

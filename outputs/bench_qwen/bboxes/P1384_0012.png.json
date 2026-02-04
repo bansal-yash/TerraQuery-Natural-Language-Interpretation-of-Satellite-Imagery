@@ -1,0 +1,12 @@
+{
+  "image": "P1384_0012.png",
+  "boxes": [
+    {
+      "label": "High-resolution satellite image provided by GoogleEarth displaying a dense residential area with an array of houses, featuring various rooftop colors and surrounded by greenery. Two swimming pools are visible, situated among the houses.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 510,
+      "y2": 512
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "image": "11351_0000.png",
+  "boxes": [
+    {
+      "label": "two distinct white storage tanks",
+      "x1": 287,
+      "y1": 392,
+      "x2": 438,
+      "y2": 489
+    }
+  ]
+}

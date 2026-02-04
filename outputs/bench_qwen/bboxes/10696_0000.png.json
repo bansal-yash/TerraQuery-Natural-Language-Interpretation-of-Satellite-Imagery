@@ -1,0 +1,19 @@
+{
+  "image": "10696_0000.png",
+  "boxes": [
+    {
+      "label": "large circular storage tank",
+      "x1": 321,
+      "y1": 342,
+      "x2": 394,
+      "y2": 415
+    },
+    {
+      "label": "vehicle",
+      "x1": 18,
+      "y1": 462,
+      "x2": 34,
+      "y2": 478
+    }
+  ]
+}

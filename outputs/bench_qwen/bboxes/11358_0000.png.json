@@ -1,0 +1,26 @@
+{
+  "image": "11358_0000.png",
+  "boxes": [
+    {
+      "label": "dry landscape",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    },
+    {
+      "label": "vehicle tracks",
+      "x1": 146,
+      "y1": 0,
+      "x2": 256,
+      "y2": 512
+    },
+    {
+      "label": "small basketball court",
+      "x1": 340,
+      "y1": 330,
+      "x2": 512,
+      "y2": 512
+    }
+  ]
+}

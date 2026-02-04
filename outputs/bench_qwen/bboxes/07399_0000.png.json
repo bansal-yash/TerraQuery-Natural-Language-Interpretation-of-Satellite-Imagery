@@ -1,0 +1,19 @@
+{
+  "image": "07399_0000.png",
+  "boxes": [
+    {
+      "label": "service area on the left",
+      "x1": 24,
+      "y1": 94,
+      "x2": 166,
+      "y2": 244
+    },
+    {
+      "label": "service area on the right",
+      "x1": 313,
+      "y1": 0,
+      "x2": 512,
+      "y2": 244
+    }
+  ]
+}

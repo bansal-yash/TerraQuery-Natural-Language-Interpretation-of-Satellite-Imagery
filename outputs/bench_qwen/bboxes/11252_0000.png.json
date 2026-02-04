@@ -1,0 +1,26 @@
+{
+  "image": "11252_0000.png",
+  "boxes": [
+    {
+      "label": "large building complex with a flat rooftop",
+      "x1": 213,
+      "y1": 7,
+      "x2": 474,
+      "y2": 362
+    },
+    {
+      "label": "open field or sports track",
+      "x1": 103,
+      "y1": 374,
+      "x2": 512,
+      "y2": 510
+    },
+    {
+      "label": "single small vehicle",
+      "x1": 309,
+      "y1": 42,
+      "x2": 322,
+      "y2": 62
+    }
+  ]
+}

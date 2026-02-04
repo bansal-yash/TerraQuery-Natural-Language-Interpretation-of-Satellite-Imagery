@@ -1,0 +1,1 @@
+RGB:Aerial view of suburban neighborhood nestled among dense green forests and open fields. || SAR:Gray-scale SAR image with speckle noise and faint linear artifacts.

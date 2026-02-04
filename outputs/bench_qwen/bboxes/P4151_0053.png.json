@@ -1,0 +1,19 @@
+{
+  "image": "P4151_0053.png",
+  "boxes": [
+    {
+      "label": "multi-story residential building",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 347
+    },
+    {
+      "label": "trees",
+      "x1": 0,
+      "y1": 140,
+      "x2": 512,
+      "y2": 510
+    }
+  ]
+}

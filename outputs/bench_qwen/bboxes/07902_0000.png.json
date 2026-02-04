@@ -1,0 +1,12 @@
+{
+  "image": "07902_0000.png",
+  "boxes": [
+    {
+      "label": "Aerial view of a rural landscape featuring an expressway service area. The terrain is characterized by discontinuous vegetation and agricultural plots, with fields and some pathways intersecting the area. A river cuts through the scene.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 510,
+      "y2": 510
+    }
+  ]
+}

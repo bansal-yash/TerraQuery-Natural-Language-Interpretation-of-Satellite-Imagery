@@ -1,0 +1,12 @@
+{
+  "image": "08169_0000.png",
+  "boxes": [
+    {
+      "label": "The image, sourced from GoogleEarth, features a distinct chimney structure with a tapering shape and a circular base, surrounded by greenery.",
+      "x1": 73,
+      "y1": 146,
+      "x2": 391,
+      "y2": 413
+    }
+  ]
+}

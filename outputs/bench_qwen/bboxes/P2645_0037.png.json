@@ -1,0 +1,12 @@
+{
+  "image": "P2645_0037.png",
+  "boxes": [
+    {
+      "label": "harbor infrastructure",
+      "x1": 0,
+      "y1": 269,
+      "x2": 198,
+      "y2": 512
+    }
+  ]
+}

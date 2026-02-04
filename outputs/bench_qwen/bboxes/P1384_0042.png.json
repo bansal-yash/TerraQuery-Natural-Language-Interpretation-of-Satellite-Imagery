@@ -1,0 +1,33 @@
+{
+  "image": "P1384_0042.png",
+  "boxes": [
+    {
+      "label": "residential houses",
+      "x1": 0,
+      "y1": 162,
+      "x2": 512,
+      "y2": 506
+    },
+    {
+      "label": "large industrial building",
+      "x1": 1,
+      "y1": 34,
+      "x2": 303,
+      "y2": 172
+    },
+    {
+      "label": "swimming pool",
+      "x1": 284,
+      "y1": 451,
+      "x2": 303,
+      "y2": 466
+    },
+    {
+      "label": "swimming pool",
+      "x1": 495,
+      "y1": 390,
+      "x2": 510,
+      "y2": 404
+    }
+  ]
+}

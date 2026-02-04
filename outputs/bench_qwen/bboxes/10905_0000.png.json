@@ -1,0 +1,12 @@
+{
+  "image": "10905_0000.png",
+  "boxes": [
+    {
+      "label": "An aerial view from GoogleEarth shows a section of a school complex, including buildings with gray roofs and a prominent green ground track field with marked lanes. The field is labeled with text, and a track surrounds the field.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 506
+    }
+  ]
+}

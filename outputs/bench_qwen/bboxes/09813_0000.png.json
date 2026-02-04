@@ -1,0 +1,12 @@
+{
+  "image": "09813_0000.png",
+  "boxes": [
+    {
+      "label": "multi-lane highway",
+      "x1": 0,
+      "y1": 265,
+      "x2": 512,
+      "y2": 510
+    }
+  ]
+}

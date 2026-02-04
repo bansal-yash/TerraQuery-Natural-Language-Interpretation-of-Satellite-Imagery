@@ -1,0 +1,11 @@
+This README only contains the base directory structure: 
+- frontend: Contains the Code and Deployment Script for Frontend as asked.
+- backend: Contains the Code and Deployment Script for the Backend as asked.
+- ft: Contains the training script for fine tuning
+- vqa: backend service and checkpoints for running qwens endpoints
+- sam3: backend service and checkpoints for running sam3 endpoints
+- deployment_script.sh: Run this once to install our solution
+- installation: has some installation info
+- environment_specifications.md: Has environment specifications as asked. Packages are installed by script.
+- Team_27.pdf: report as asked
+- User_Guide.pdf: User guide as asked

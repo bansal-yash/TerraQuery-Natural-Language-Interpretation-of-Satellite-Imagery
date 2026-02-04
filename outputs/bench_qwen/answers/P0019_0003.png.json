@@ -1,0 +1,25 @@
+{
+  "image": "P0019_0003.png",
+  "answers": [
+    {
+      "question_id": 39,
+      "question": "What is the primary natural feature shown in the image?",
+      "answer": "water"
+    },
+    {
+      "question_id": 40,
+      "question": "How many harbors are visible in the image?",
+      "answer": "1"
+    },
+    {
+      "question_id": 41,
+      "question": "Is the small ship closer to the top or bottom of the image?",
+      "answer": "top"
+    },
+    {
+      "question_id": 42,
+      "question": "Which side of the image has no harbors?",
+      "answer": "right"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "image": "P1854_0064.png",
+  "boxes": [
+    {
+      "label": "ground support vehicle",
+      "x1": 59,
+      "y1": 237,
+      "x2": 92,
+      "y2": 263
+    }
+  ]
+}

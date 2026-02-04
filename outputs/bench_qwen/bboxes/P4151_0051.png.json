@@ -1,0 +1,19 @@
+{
+  "image": "P4151_0051.png",
+  "boxes": [
+    {
+      "label": "yellow ship",
+      "x1": 35,
+      "y1": 56,
+      "x2": 128,
+      "y2": 93
+    },
+    {
+      "label": "tree with bare branches",
+      "x1": 128,
+      "y1": 198,
+      "x2": 256,
+      "y2": 330
+    }
+  ]
+}

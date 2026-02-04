@@ -1,0 +1,12 @@
+{
+  "image": "P1476_0013.png",
+  "boxes": [
+    {
+      "label": "long yellow-colored large vehicle",
+      "x1": 216,
+      "y1": 182,
+      "x2": 290,
+      "y2": 234
+    }
+  ]
+}

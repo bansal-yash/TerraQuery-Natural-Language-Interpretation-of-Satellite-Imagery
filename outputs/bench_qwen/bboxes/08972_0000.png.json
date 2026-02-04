@@ -1,0 +1,26 @@
+{
+  "image": "08972_0000.png",
+  "boxes": [
+    {
+      "label": "baseball field",
+      "x1": 151,
+      "y1": 116,
+      "x2": 236,
+      "y2": 197
+    },
+    {
+      "label": "baseball field",
+      "x1": 335,
+      "y1": 193,
+      "x2": 423,
+      "y2": 280
+    },
+    {
+      "label": "baseball field",
+      "x1": 303,
+      "y1": 385,
+      "x2": 454,
+      "y2": 510
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "image": "P0019_0024.png",
+  "boxes": [
+    {
+      "label": "house with a red roof",
+      "x1": 197,
+      "y1": 49,
+      "x2": 413,
+      "y2": 322
+    },
+    {
+      "label": "adjacent building",
+      "x1": 0,
+      "y1": 152,
+      "x2": 151,
+      "y2": 307
+    },
+    {
+      "label": "yard with lush grass",
+      "x1": 0,
+      "y1": 159,
+      "x2": 510,
+      "y2": 510
+    },
+    {
+      "label": "trees providing abundant shade",
+      "x1": 384,
+      "y1": 0,
+      "x2": 510,
+      "y2": 510
+    },
+    {
+      "label": "vehicle on the left bottom side of the yard",
+      "x1": 96,
+      "y1": 141,
+      "x2": 146,
+      "y2": 182
+    },
+    {
+      "label": "vehicle situated on the top side near a structure",
+      "x1": 111,
+      "y1": 51,
+      "x2": 168,
+      "y2": 86
+    }
+  ]
+}

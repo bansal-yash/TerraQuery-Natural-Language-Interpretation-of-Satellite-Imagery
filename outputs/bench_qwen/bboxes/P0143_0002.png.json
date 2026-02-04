@@ -1,0 +1,19 @@
+{
+  "image": "P0143_0002.png",
+  "boxes": [
+    {
+      "label": "swimming-pool",
+      "x1": 0,
+      "y1": 0,
+      "x2": 241,
+      "y2": 234
+    },
+    {
+      "label": "soccer-ball-field",
+      "x1": 120,
+      "y1": 272,
+      "x2": 203,
+      "y2": 438
+    }
+  ]
+}

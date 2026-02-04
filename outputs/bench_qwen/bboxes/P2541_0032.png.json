@@ -1,0 +1,26 @@
+{
+  "image": "P2541_0032.png",
+  "boxes": [
+    {
+      "label": "residential areas",
+      "x1": 146,
+      "y1": 0,
+      "x2": 510,
+      "y2": 510
+    },
+    {
+      "label": "cultivated fields",
+      "x1": 0,
+      "y1": 0,
+      "x2": 162,
+      "y2": 319
+    },
+    {
+      "label": "small soccer ball fields",
+      "x1": 0,
+      "y1": 282,
+      "x2": 73,
+      "y2": 384
+    }
+  ]
+}

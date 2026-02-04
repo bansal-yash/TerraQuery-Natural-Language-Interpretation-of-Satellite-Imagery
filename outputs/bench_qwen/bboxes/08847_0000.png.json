@@ -1,0 +1,19 @@
+{
+  "image": "08847_0000.png",
+  "boxes": [
+    {
+      "label": "houses with various rooftop colors and driveways",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 264
+    },
+    {
+      "label": "ground track and field",
+      "x1": 26,
+      "y1": 298,
+      "x2": 512,
+      "y2": 506
+    }
+  ]
+}

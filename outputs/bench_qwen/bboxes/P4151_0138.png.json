@@ -1,0 +1,19 @@
+{
+  "image": "P4151_0138.png",
+  "boxes": [
+    {
+      "label": "blue small vehicle",
+      "x1": 208,
+      "y1": 73,
+      "x2": 273,
+      "y2": 157
+    },
+    {
+      "label": "large, dark small vehicle",
+      "x1": 352,
+      "y1": 298,
+      "x2": 415,
+      "y2": 369
+    }
+  ]
+}

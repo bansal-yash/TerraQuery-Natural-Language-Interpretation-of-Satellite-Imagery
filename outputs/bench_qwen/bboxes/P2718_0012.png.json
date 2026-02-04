@@ -1,0 +1,12 @@
+{
+  "image": "P2718_0012.png",
+  "boxes": [
+    {
+      "label": "recreational field",
+      "x1": 42,
+      "y1": 324,
+      "x2": 79,
+      "y2": 369
+    }
+  ]
+}

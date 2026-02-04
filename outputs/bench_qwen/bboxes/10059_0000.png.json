@@ -1,0 +1,33 @@
+{
+  "image": "10059_0000.png",
+  "boxes": [
+    {
+      "label": "tennis court",
+      "x1": 422,
+      "y1": 230,
+      "x2": 499,
+      "y2": 378
+    },
+    {
+      "label": "basketball court",
+      "x1": 100,
+      "y1": 310,
+      "x2": 212,
+      "y2": 510
+    },
+    {
+      "label": "basketball court",
+      "x1": 212,
+      "y1": 438,
+      "x2": 289,
+      "y2": 510
+    },
+    {
+      "label": "building with a large white roof</ref><ref>building with a large white roof",
+      "x1": 79,
+      "y1": 0,
+      "x2": 294,
+      "y2": 128
+    }
+  ]
+}

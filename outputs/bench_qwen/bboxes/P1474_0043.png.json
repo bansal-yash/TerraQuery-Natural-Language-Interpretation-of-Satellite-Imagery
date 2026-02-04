@@ -1,0 +1,26 @@
+{
+  "image": "P1474_0043.png",
+  "boxes": [
+    {
+      "label": "soccer-ball field",
+      "x1": 167,
+      "y1": 349,
+      "x2": 320,
+      "y2": 510
+    },
+    {
+      "label": "ground-track field",
+      "x1": 121,
+      "y1": 129,
+      "x2": 249,
+      "y2": 349
+    },
+    {
+      "label": "basketball court",
+      "x1": 322,
+      "y1": 320,
+      "x2": 379,
+      "y2": 392
+    }
+  ]
+}

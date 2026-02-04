@@ -1,0 +1,12 @@
+{
+  "image": "09451_0000.png",
+  "boxes": [
+    {
+      "label": "An aerial view of a recreation area from GoogleEarth featuring three tennis courts aligned horizontally. The courts are surrounded by green surfaces and trees.",
+      "x1": 60,
+      "y1": 279,
+      "x2": 503,
+      "y2": 503
+    }
+  ]
+}

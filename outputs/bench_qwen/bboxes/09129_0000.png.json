@@ -1,0 +1,26 @@
+{
+  "image": "09129_0000.png",
+  "boxes": [
+    {
+      "label": "large circular storage tank",
+      "x1": 231,
+      "y1": 217,
+      "x2": 387,
+      "y2": 398
+    },
+    {
+      "label": "vegetation",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 510
+    },
+    {
+      "label": "railway",
+      "x1": 0,
+      "y1": 0,
+      "x2": 69,
+      "y2": 510
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "image": "P5789_1190.png",
+  "boxes": [
+    {
+      "label": "small unique harbor",
+      "x1": 0,
+      "y1": 37,
+      "x2": 281,
+      "y2": 510
+    },
+    {
+      "label": "distinct small unique storage tank",
+      "x1": 390,
+      "y1": 368,
+      "x2": 469,
+      "y2": 443
+    },
+    {
+      "label": "large ship moored at the bottom",
+      "x1": 38,
+      "y1": 376,
+      "x2": 152,
+      "y2": 510
+    },
+    {
+      "label": "ships docked or moored",
+      "x1": 119,
+      "y1": 226,
+      "x2": 168,
+      "y2": 293
+    },
+    {
+      "label": "ships docked or moored",
+      "x1": 156,
+      "y1": 305,
+      "x2": 204,
+      "y2": 379
+    },
+    {
+      "label": "ships docked or moored",
+      "x1": 198,
+      "y1": 376,
+      "x2": 247,
+      "y2": 435
+    }
+  ]
+}

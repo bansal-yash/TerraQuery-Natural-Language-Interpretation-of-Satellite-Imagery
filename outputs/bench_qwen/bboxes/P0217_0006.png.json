@@ -1,0 +1,33 @@
+{
+  "image": "P0217_0006.png",
+  "boxes": [
+    {
+      "label": "large vehicle",
+      "x1": 11,
+      "y1": 51,
+      "x2": 46,
+      "y2": 87
+    },
+    {
+      "label": "small plane",
+      "x1": 232,
+      "y1": 377,
+      "x2": 281,
+      "y2": 426
+    },
+    {
+      "label": "small vehicles",
+      "x1": 0,
+      "y1": 159,
+      "x2": 29,
+      "y2": 189
+    },
+    {
+      "label": "small vehicles",
+      "x1": 69,
+      "y1": 254,
+      "x2": 89,
+      "y2": 280
+    }
+  ]
+}

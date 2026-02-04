@@ -1,0 +1,19 @@
+{
+  "image": "06719_0000.png",
+  "boxes": [
+    {
+      "label": "buildings with blue roofs",
+      "x1": 152,
+      "y1": 397,
+      "x2": 244,
+      "y2": 466
+    },
+    {
+      "label": "vehicles",
+      "x1": 426,
+      "y1": 249,
+      "x2": 448,
+      "y2": 269
+    }
+  ]
+}

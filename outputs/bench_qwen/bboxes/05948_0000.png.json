@@ -1,0 +1,12 @@
+{
+  "image": "05948_0000.png",
+  "boxes": [
+    {
+      "label": "A satellite overview from Google Earth displaying a ground track and field with visible lane lines and markings. The field is surrounded by buildings on its sides and there is a running track. No resolution details are provided for the image.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "image": "P2003_0006.png",
+  "boxes": [
+    {
+      "label": "vehicles",
+      "x1": 0,
+      "y1": 6,
+      "x2": 216,
+      "y2": 272
+    },
+    {
+      "label": "smaller vehicles",
+      "x1": 24,
+      "y1": 359,
+      "x2": 77,
+      "y2": 394
+    },
+    {
+      "label": "green patch of trees or shrubbery",
+      "x1": 100,
+      "y1": 6,
+      "x2": 510,
+      "y2": 504
+    },
+    {
+      "label": "building's rooftop",
+      "x1": 0,
+      "y1": 414,
+      "x2": 89,
+      "y2": 512
+    }
+  ]
+}

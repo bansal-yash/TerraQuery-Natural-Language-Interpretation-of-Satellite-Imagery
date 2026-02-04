@@ -1,0 +1,30 @@
+{
+  "input_image": {
+    "image_id": "string",
+    "image_url": "string",
+    "metadata": {
+      "width": "integer",
+      "height": "integer",
+      "spatial_resolution_m": "float"
+    }
+  },
+  "queries": {
+    "caption_query": {
+      "instruction": "Detailed description of visible elements, including object types, counts, and locations. (Answer type: Text)"
+    },
+    "grounding_query": {
+      "instruction": "Locate and return oriented bounding boxes for objects in the image. (Answer type: JSON style with object IDs (integer) and 5-parameter oriented bounding box coordinates)"
+    },
+    "attribute_query": {
+      "binary": {
+        "instruction": "Yes/No question regarding the scene details. (Answer type: Binary - Yes/No)"
+      },
+      "numeric": {
+        "instruction": "Question requiring a count or numerical value. (Answer type: Numeric - FLoat Positive)"
+      },
+      "semantic": {
+        "instruction": "Question about scene features. (Answer type: Text)"
+      }
+    }
+  }
+}

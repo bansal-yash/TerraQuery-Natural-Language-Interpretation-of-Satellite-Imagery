@@ -1,0 +1,33 @@
+{
+  "image": "P1377_0062.png",
+  "boxes": [
+    {
+      "label": "swimming pool",
+      "x1": 88,
+      "y1": 476,
+      "x2": 123,
+      "y2": 505
+    },
+    {
+      "label": "small vehicle",
+      "x1": 362,
+      "y1": 470,
+      "x2": 381,
+      "y2": 489
+    },
+    {
+      "label": "large vehicle",
+      "x1": 113,
+      "y1": 97,
+      "x2": 147,
+      "y2": 132
+    },
+    {
+      "label": "small vehicle",
+      "x1": 247,
+      "y1": 295,
+      "x2": 264,
+      "y2": 314
+    }
+  ]
+}

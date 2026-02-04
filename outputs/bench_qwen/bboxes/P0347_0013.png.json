@@ -1,0 +1,19 @@
+{
+  "image": "P0347_0013.png",
+  "boxes": [
+    {
+      "label": "residential structures with gray roofs",
+      "x1": 192,
+      "y1": 281,
+      "x2": 350,
+      "y2": 462
+    },
+    {
+      "label": "residential structures with gray roofs",
+      "x1": 256,
+      "y1": 0,
+      "x2": 401,
+      "y2": 147
+    }
+  ]
+}

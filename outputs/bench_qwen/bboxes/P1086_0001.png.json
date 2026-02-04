@@ -1,0 +1,12 @@
+{
+  "image": "P1086_0001.png",
+  "boxes": [
+    {
+      "label": "A high-resolution aerial image from Google Earth shows a group of three tennis courts surrounded by greenery.",
+      "x1": 90,
+      "y1": 117,
+      "x2": 422,
+      "y2": 403
+    }
+  ]
+}

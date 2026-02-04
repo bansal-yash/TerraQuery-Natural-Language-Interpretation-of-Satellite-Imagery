@@ -1,0 +1,48 @@
+{
+    "input_image": {
+    "image_id": "sample1.png",
+        "image_url": "https://bit.ly/4ouV45l",
+        "metadata": {
+            "width": 512,
+            "height": 512,
+            "spatial_resolution_m": 1.57
+    }    
+    },
+        "queries": {
+            "caption_query": {
+                "instruction": "Describe key features in this image?",
+                "response": "The scene shows an satellite view of an airport runway with two airplanes parked on the tarmac. Apart from the runway, the scene includes storage tanks,airport infrastructure, and roads leading to the runway."
+            },
+            "grounding_query": {
+                "instruction": "For each instance of the airplane in the image, provide the oriented bounding box.",
+                "response": [
+                   {
+                       "object-id": "1",
+                       "obbox": [ 0.441, 0.164, 0.504, 0.115, 0.551, 0.178, 0.488, 0.225 ]
+    
+                   },
+    
+                   {
+                       "object-id": "2",
+                       "obbox": [ 0.352, 0.148, 0.352, 0.055, 0.441, 0.055, 0.441, 0.148 ]
+    
+                   }
+    
+                ]
+            },
+            "attribute_query": {
+                "binary": {
+                    "instruction": "Is there any digit present in the bottom right corner of the scene?",
+                    "response": "Yes"
+                },
+                "numeric": {
+                    "instruction": "How many storage tanks are present in the scene?",
+                    "response": 2.0
+                },
+                "semantic": {
+                    "instruction": "What is the color of the digit painted on the landing strip?",
+                    "response": "White"
+                }
+            }
+        }
+    }

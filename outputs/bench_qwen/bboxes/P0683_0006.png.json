@@ -1,0 +1,12 @@
+{
+  "image": "P0683_0006.png",
+  "boxes": [
+    {
+      "label": "A high-resolution GoogleEarth image shows a segment of a harbor with dark water and a pier. Visible on the pier is a small vehicle located towards the top-left corner of the image.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 146
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "image": "P2617_0003.png",
+  "boxes": [
+    {
+      "label": "trucks and trailers",
+      "x1": 164,
+      "y1": 8,
+      "x2": 295,
+      "y2": 226
+    }
+  ]
+}

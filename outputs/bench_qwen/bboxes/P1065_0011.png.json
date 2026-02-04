@@ -1,0 +1,12 @@
+{
+  "image": "P1065_0011.png",
+  "boxes": [
+    {
+      "label": "small ships of various sizes anchored near the harbor",
+      "x1": 150,
+      "y1": 26,
+      "x2": 364,
+      "y2": 69
+    }
+  ]
+}

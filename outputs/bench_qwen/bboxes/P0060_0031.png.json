@@ -1,0 +1,12 @@
+{
+  "image": "P0060_0031.png",
+  "boxes": [
+    {
+      "label": "High-resolution satellite image from GoogleEarth displaying a suburban area with homes. The homes are characterized by similar achitecture with tan-colored roofs and small swimming pools. Small vehicles are parked near to the homes. Straight road runs vertically through the image, north-south, and a secondary road forms a cul-de-sac among the houses.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 510,
+      "y2": 512
+    }
+  ]
+}

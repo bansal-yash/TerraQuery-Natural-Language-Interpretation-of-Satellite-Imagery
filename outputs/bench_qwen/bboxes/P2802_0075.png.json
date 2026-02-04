@@ -1,0 +1,12 @@
+{
+  "image": "P2802_0075.png",
+  "boxes": [
+    {
+      "label": "High-resolution satellite image from GoogleEarth showing an airport tarmac with a small plane.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 511,
+      "y2": 512
+    }
+  ]
+}

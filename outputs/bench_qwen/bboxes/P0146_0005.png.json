@@ -1,0 +1,26 @@
+{
+  "image": "P0146_0005.png",
+  "boxes": [
+    {
+      "label": "tennis courts",
+      "x1": 15,
+      "y1": 134,
+      "x2": 198,
+      "y2": 281
+    },
+    {
+      "label": "baseball diamond",
+      "x1": 265,
+      "y1": 298,
+      "x2": 339,
+      "y2": 432
+    },
+    {
+      "label": "vehicles",
+      "x1": 0,
+      "y1": 12,
+      "x2": 24,
+      "y2": 56
+    }
+  ]
+}

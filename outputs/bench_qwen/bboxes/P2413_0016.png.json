@@ -1,0 +1,26 @@
+{
+  "image": "P2413_0016.png",
+  "boxes": [
+    {
+      "label": "industrial facilities",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 505
+    },
+    {
+      "label": "small roundabouts",
+      "x1": 131,
+      "y1": 416,
+      "x2": 156,
+      "y2": 452
+    },
+    {
+      "label": "small roundabouts",
+      "x1": 131,
+      "y1": 416,
+      "x2": 156,
+      "y2": 452
+    }
+  ]
+}

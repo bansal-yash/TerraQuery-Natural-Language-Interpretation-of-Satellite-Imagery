@@ -1,0 +1,12 @@
+{
+  "image": "P1786_0014.png",
+  "boxes": [
+    {
+      "label": "storage structures",
+      "x1": 331,
+      "y1": 137,
+      "x2": 443,
+      "y2": 218
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "image": "P0683_0004.png",
+  "boxes": [
+    {
+      "label": "elongated structure extending into the water",
+      "x1": 13,
+      "y1": 0,
+      "x2": 216,
+      "y2": 505
+    },
+    {
+      "label": "docking area",
+      "x1": 313,
+      "y1": 274,
+      "x2": 512,
+      "y2": 438
+    },
+    {
+      "label": "one small vehicle positioned at the bottom-right portion near the dock",
+      "x1": 447,
+      "y1": 344,
+      "x2": 474,
+      "y2": 361
+    }
+  ]
+}

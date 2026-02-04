@@ -1,0 +1,12 @@
+{
+  "image": "P1751_0059.png",
+  "boxes": [
+    {
+      "label": "small roundabout",
+      "x1": 80,
+      "y1": 274,
+      "x2": 98,
+      "y2": 294
+    }
+  ]
+}

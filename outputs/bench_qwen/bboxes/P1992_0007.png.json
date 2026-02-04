@@ -1,0 +1,54 @@
+{
+  "image": "P1992_0007.png",
+  "boxes": [
+    {
+      "label": "warehouse",
+      "x1": 0,
+      "y1": 0,
+      "x2": 334,
+      "y2": 283
+    },
+    {
+      "label": "loading dock",
+      "x1": 247,
+      "y1": 280,
+      "x2": 292,
+      "y2": 312
+    },
+    {
+      "label": "large vehicles",
+      "x1": 357,
+      "y1": 334,
+      "x2": 403,
+      "y2": 403
+    },
+    {
+      "label": "parking lot",
+      "x1": 0,
+      "y1": 280,
+      "x2": 151,
+      "y2": 361
+    },
+    {
+      "label": "vehicles parked in designated spaces",
+      "x1": 38,
+      "y1": 280,
+      "x2": 64,
+      "y2": 329
+    },
+    {
+      "label": "two large vehicles at the bottom left",
+      "x1": 47,
+      "y1": 379,
+      "x2": 103,
+      "y2": 397
+    },
+    {
+      "label": "another large vehicle right-most",
+      "x1": 357,
+      "y1": 334,
+      "x2": 403,
+      "y2": 403
+    }
+  ]
+}

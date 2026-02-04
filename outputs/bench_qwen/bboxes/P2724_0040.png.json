@@ -1,0 +1,12 @@
+{
+  "image": "P2724_0040.png",
+  "boxes": [
+    {
+      "label": "A satellite image from Google Earth with medium resolution showing a section of an urban area with diverse infrastructure. The focal point of the image is a roundabout located towards the bottom of the frame.",
+      "x1": 157,
+      "y1": 354,
+      "x2": 198,
+      "y2": 402
+    }
+  ]
+}

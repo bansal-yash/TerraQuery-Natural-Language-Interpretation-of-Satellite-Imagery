@@ -1,0 +1,12 @@
+{
+  "image": "11430_0000.png",
+  "boxes": [
+    {
+      "label": "facility with a chimney",
+      "x1": 79,
+      "y1": 0,
+      "x2": 512,
+      "y2": 511
+    }
+  ]
+}

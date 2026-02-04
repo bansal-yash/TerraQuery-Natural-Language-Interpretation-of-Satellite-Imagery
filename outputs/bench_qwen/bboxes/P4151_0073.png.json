@@ -1,0 +1,54 @@
+{
+  "image": "P4151_0073.png",
+  "boxes": [
+    {
+      "label": "multi-lane road",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 432
+    },
+    {
+      "label": "dedicated bike lane",
+      "x1": 0,
+      "y1": 307,
+      "x2": 510,
+      "y2": 510
+    },
+    {
+      "label": "pedestrian sidewalk",
+      "x1": 0,
+      "y1": 307,
+      "x2": 510,
+      "y2": 510
+    },
+    {
+      "label": "trees",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 510
+    },
+    {
+      "label": "lamp posts",
+      "x1": 254,
+      "y1": 22,
+      "x2": 335,
+      "y2": 213
+    },
+    {
+      "label": "small vehicles",
+      "x1": 182,
+      "y1": 63,
+      "x2": 241,
+      "y2": 106
+    },
+    {
+      "label": "small vehicles",
+      "x1": 246,
+      "y1": 38,
+      "x2": 303,
+      "y2": 78
+    }
+  ]
+}

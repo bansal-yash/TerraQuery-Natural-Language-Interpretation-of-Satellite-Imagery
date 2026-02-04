@@ -1,0 +1,12 @@
+{
+  "image": "06463_0000.png",
+  "boxes": [
+    {
+      "label": "Aerial view from Google Earth featuring two adjacent tennis courts. The courts are oriented vertically within the frame. There is a clear contrast between the rich greenery surrounding the courts and the uniform surface of the courts themselves.",
+      "x1": 281,
+      "y1": 134,
+      "x2": 512,
+      "y2": 510
+    }
+  ]
+}

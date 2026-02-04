@@ -1,0 +1,19 @@
+{
+  "image": "P4151_0029.png",
+  "boxes": [
+    {
+      "label": "building rooftop",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 510
+    },
+    {
+      "label": "small vehicles",
+      "x1": 21,
+      "y1": 301,
+      "x2": 394,
+      "y2": 463
+    }
+  ]
+}

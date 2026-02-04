@@ -1,0 +1,26 @@
+{
+  "image": "10228_0000.png",
+  "boxes": [
+    {
+      "label": "service area",
+      "x1": 128,
+      "y1": 96,
+      "x2": 379,
+      "y2": 312
+    },
+    {
+      "label": "blue rooftop structure",
+      "x1": 151,
+      "y1": 239,
+      "x2": 190,
+      "y2": 284
+    },
+    {
+      "label": "expressway",
+      "x1": 0,
+      "y1": 251,
+      "x2": 512,
+      "y2": 510
+    }
+  ]
+}

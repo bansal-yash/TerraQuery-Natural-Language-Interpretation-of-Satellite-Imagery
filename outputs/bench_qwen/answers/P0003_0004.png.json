@@ -1,0 +1,55 @@
+{
+  "image": "P0003_0004.png",
+  "answers": [
+    {
+      "question_id": 4,
+      "question": "How many vehicles are visible in the image?",
+      "answer": "system You"
+    },
+    {
+      "question_id": 5,
+      "question": "What is the position of the large vehicle in the image?",
+      "answer": "system You"
+    },
+    {
+      "question_id": 6,
+      "question": "Is the large vehicle located near greenery?",
+      "answer": "system You"
+    },
+    {
+      "question_id": 7,
+      "question": "What object class is the top-most vehicle?",
+      "answer": "system You"
+    },
+    {
+      "question_id": 8,
+      "question": "What object class is the bottom-most vehicle?",
+      "answer": "system You"
+    },
+    {
+      "question_id": 4,
+      "question": "How many vehicles are visible in the image?",
+      "answer": "4"
+    },
+    {
+      "question_id": 5,
+      "question": "What is the position of the large vehicle in the image?",
+      "answer": "parking lot"
+    },
+    {
+      "question_id": 6,
+      "question": "Is the large vehicle located near greenery?",
+      "answer": "yes"
+    },
+    {
+      "question_id": 7,
+      "question": "What object class is the top-most vehicle?",
+      "answer": "vehicle"
+    },
+    {
+      "question_id": 8,
+      "question": "What object class is the bottom-most vehicle?",
+      "answer": "car"
+    }
+  ]
+}

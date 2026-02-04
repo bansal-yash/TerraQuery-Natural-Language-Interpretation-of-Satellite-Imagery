@@ -1,0 +1,21 @@
+{
+  "bbox": {
+    "raw": "<|image_description_1|>\n[248,395,345,601]\n\n<|combined_summary|>\nThe images depict a series of close-up shots focusing on hands interacting with various objects\u2014such as holding a smartphone, adjusting a camera, and manipulating small tools\u2014emphasizing precision, technology, and human engagement with digital and mechanical devices.",
+    "boxes": []
+  },
+  "caption": {
+    "caption": "<|image_description_1|>\nThis aerial view shows a paved lot with several yellow school buses parked in rows, adjacent to a multi-lane road with moving vehicles. The ground is mostly asphalt, with patches of grass and dirt near the lot\u2019s edge. Lighting suggests daytime, casting soft shadows. Depth is evident from the perspective, with buses in the foreground and road vehicles receding into the distance. Two cars are visible on the road: one moving away\n\n<|combined_summary|>\nAn aerial daytime view captures a paved lot with parked yellow school buses beside a multi-lane road where cars are moving, with depth and soft shadows enhancing the scene\u2019s perspective."
+  },
+  "features": {
+    "features": [
+      "<|image_description_1|>",
+      "vehicles",
+      "<|combined_summary|>",
+      "the images depict various vehicles",
+      "including cars",
+      "trucks",
+      "and possibly motorcycles or scooters",
+      "showcasing different models and styles in motion or stationary settings"
+    ]
+  }
+}

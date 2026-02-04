@@ -1,0 +1,19 @@
+{
+  "image": "06445_0000.png",
+  "boxes": [
+    {
+      "label": "ground track field",
+      "x1": 227,
+      "y1": 134,
+      "x2": 267,
+      "y2": 187
+    },
+    {
+      "label": "ground track field",
+      "x1": 361,
+      "y1": 220,
+      "x2": 394,
+      "y2": 269
+    }
+  ]
+}

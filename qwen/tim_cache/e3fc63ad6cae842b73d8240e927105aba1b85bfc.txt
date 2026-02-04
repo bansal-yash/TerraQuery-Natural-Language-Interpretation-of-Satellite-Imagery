@@ -1,0 +1,1 @@
+RGB:Mountainous terrain with winding rivers and sparse vegetation. || SAR:SAR image shows textured, high-contrast terrain with distorted, wavy patterns.

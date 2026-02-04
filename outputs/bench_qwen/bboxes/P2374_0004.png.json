@@ -1,0 +1,47 @@
+{
+  "image": "P2374_0004.png",
+  "boxes": [
+    {
+      "label": "bridge",
+      "x1": 0,
+      "y1": 144,
+      "x2": 168,
+      "y2": 214
+    },
+    {
+      "label": "highway",
+      "x1": 221,
+      "y1": 0,
+      "x2": 384,
+      "y2": 510
+    },
+    {
+      "label": "arable fields",
+      "x1": 0,
+      "y1": 0,
+      "x2": 510,
+      "y2": 510
+    },
+    {
+      "label": "large buildings with gray roofing",
+      "x1": 126,
+      "y1": 237,
+      "x2": 231,
+      "y2": 351
+    },
+    {
+      "label": "large buildings with gray roofing",
+      "x1": 333,
+      "y1": 254,
+      "x2": 510,
+      "y2": 407
+    },
+    {
+      "label": "large buildings with gray roofing",
+      "x1": 342,
+      "y1": 177,
+      "x2": 372,
+      "y2": 251
+    }
+  ]
+}

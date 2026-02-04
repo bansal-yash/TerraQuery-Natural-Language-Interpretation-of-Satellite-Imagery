@@ -1,0 +1,26 @@
+{
+  "image": "08652_0000.png",
+  "boxes": [
+    {
+      "label": "vehicle on the left",
+      "x1": 86,
+      "y1": 317,
+      "x2": 170,
+      "y2": 364
+    },
+    {
+      "label": "vehicle on the right",
+      "x1": 331,
+      "y1": 324,
+      "x2": 396,
+      "y2": 354
+    },
+    {
+      "label": "vehicle at bottom-middle",
+      "x1": 214,
+      "y1": 382,
+      "x2": 292,
+      "y2": 415
+    }
+  ]
+}

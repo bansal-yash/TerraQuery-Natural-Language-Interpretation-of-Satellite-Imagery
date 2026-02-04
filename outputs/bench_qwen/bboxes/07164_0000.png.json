@@ -1,0 +1,12 @@
+{
+  "image": "07164_0000.png",
+  "boxes": [
+    {
+      "label": "An aerial image from Google Earth showing part of an industrial facility with structures including tanks and buildings. A distinguishable feature in the image is a chimney extending from the center bottom towards the top right portion of the image.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    }
+  ]
+}

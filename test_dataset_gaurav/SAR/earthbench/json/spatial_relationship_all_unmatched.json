@@ -1,0 +1,2594 @@
+[
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the ship relative to the storage tank?",
+    "answer": "A",
+    "candidate": [
+      "A.Above",
+      "B.Below",
+      "C.North",
+      "D.East"
+    ],
+    "file_name": "SPACE6_20190822133333_20190822133635_tile_7760.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the boat relative to the house?",
+    "answer": "B",
+    "candidate": [
+      "A.Left side",
+      "B.Right side",
+      "C.In front",
+      "D.Behind"
+    ],
+    "file_name": "SPACE6_20190822083256_20190822083600_tile_10916.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the forest relative to the container?",
+    "answer": "B",
+    "candidate": [
+      "A.Behind",
+      "B.Left side",
+      "C.In front",
+      "D.Right side"
+    ],
+    "file_name": "SPACE6_20190822155502_20190822155747_tile_4660.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the ship relative to the car?",
+    "answer": "C",
+    "candidate": [
+      "A.Behind",
+      "B.Right side",
+      "C.Left side",
+      "D.In front"
+    ],
+    "file_name": "SPACE6_20190804130928_20190804131204_tile_5135.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the lane relative to the container?",
+    "answer": "A",
+    "candidate": [
+      "A.Above",
+      "B.To the right",
+      "C.Below",
+      "D.To the left"
+    ],
+    "file_name": "SPACE6_20190823130736_20190823131054_tile_4274.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the land relative to the sea?",
+    "answer": "D",
+    "candidate": [
+      "A.Beside",
+      "B.Below",
+      "C.Within",
+      "D.Above"
+    ],
+    "file_name": "SPACE6_20190822094025_20190822094322_tile_5862.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the red house relative to the sea?",
+    "answer": "B",
+    "candidate": [
+      "A.Left side",
+      "B.Right side",
+      "C.Behind",
+      "D.In front"
+    ],
+    "file_name": "SPACE6_20190823071743_20190823072036_tile_2637.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the lawn relative to the house?",
+    "answer": "D",
+    "candidate": [
+      "A.Below",
+      "B.To the right",
+      "C.To the left",
+      "D.Above"
+    ],
+    "file_name": "SPACE6_20190823085011_20190823085317_tile_6936.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the boat relative to the lane?",
+    "answer": "B",
+    "candidate": [
+      "A.Right side",
+      "B.Left side",
+      "C.Behind",
+      "D.In front"
+    ],
+    "file_name": "SPACE6_20190822145832_20190822150114_tile_9606.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the storage tank relative to the track?",
+    "answer": "D",
+    "candidate": [
+      "A.Behind",
+      "B.Below",
+      "C.Beside",
+      "D.Above"
+    ],
+    "file_name": "SPACE6_20190822072404_20190822072642_tile_6775.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the storage tank relative to the track?",
+    "answer": "B",
+    "candidate": [
+      "A.Left side",
+      "B.Right side",
+      "C.In front",
+      "D.Behind"
+    ],
+    "file_name": "SPACE6_20190822153558_20190822153835_tile_2529.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the red house relative to the other buildings?",
+    "answer": "D",
+    "candidate": [
+      "A.Behind",
+      "B.Right side",
+      "C.In front",
+      "D.Left side"
+    ],
+    "file_name": "SPACE6_20190822075657_20190822080002_tile_10713.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the red building relative to the gray building?",
+    "answer": "A",
+    "candidate": [
+      "A.Left side",
+      "B.In front",
+      "C.Behind",
+      "D.Right side"
+    ],
+    "file_name": "SPACE6_20190822074720_20190822075013_tile_10031.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the forest relative to the factory building?",
+    "answer": "A",
+    "candidate": [
+      "A.Above",
+      "B.To the right",
+      "C.Below",
+      "D.To the left"
+    ],
+    "file_name": "SPACE6_20190823083559_20190823083940_tile_5942.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the storage tank relative to the striped factory building?",
+    "answer": "D",
+    "candidate": [
+      "A.Behind",
+      "B.In front",
+      "C.Left side",
+      "D.Right side"
+    ],
+    "file_name": "SPACE6_20190822071924_20190822072224_tile_8630.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the lake relative to the driveway?",
+    "answer": "C",
+    "candidate": [
+      "A.In front",
+      "B.Right side",
+      "C.Left side",
+      "D.Behind"
+    ],
+    "file_name": "SPACE6_20190822095638_20190822095937_tile_7438.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the ship relative to the container?",
+    "answer": "D",
+    "candidate": [
+      "A.Behind",
+      "B.Below",
+      "C.To the left",
+      "D.Above"
+    ],
+    "file_name": "SPACE6_20190804142149_20190804142420_tile_9114.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the forest relative to the highway?",
+    "answer": "A",
+    "candidate": [
+      "A.Below",
+      "B.To the left",
+      "C.To the right",
+      "D.Above"
+    ],
+    "file_name": "SPACE6_20190804130422_20190804130643_tile_3170.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the forest relative to the storage tank?",
+    "answer": "D",
+    "candidate": [
+      "A.In front",
+      "B.Right side",
+      "C.Behind",
+      "D.Left side"
+    ],
+    "file_name": "SPACE6_20190822092149_20190822092450_tile_1705.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the lawn relative to the house building?",
+    "answer": "B",
+    "candidate": [
+      "A.Front",
+      "B.Left side",
+      "C.Behind",
+      "D.Right side"
+    ],
+    "file_name": "SPACE6_20190804134228_20190804134450_tile_1865.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the forest relative to the black house?",
+    "answer": "C",
+    "candidate": [
+      "A.Below",
+      "B.To the right",
+      "C.Above",
+      "D.To the left"
+    ],
+    "file_name": "SPACE6_20190822084703_20190822085003_tile_1377.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the storage tank relative to the factory?",
+    "answer": "D",
+    "candidate": [
+      "A.In front",
+      "B.Behind",
+      "C.Right side",
+      "D.Left side"
+    ],
+    "file_name": "SPACE6_20190823133754_20190823134101_tile_280.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the house relative to the forest?",
+    "answer": "A",
+    "candidate": [
+      "A.Above",
+      "B.To the left",
+      "C.Below",
+      "D.To the right"
+    ],
+    "file_name": "SPACE6_20190823162315_20190823162606_tile_7877.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the storage tank relative to the ship?",
+    "answer": "A",
+    "candidate": [
+      "A.Below",
+      "B.To the left",
+      "C.To the right",
+      "D.Above"
+    ],
+    "file_name": "SPACE6_20190804141038_20190804141312_tile_9052.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the lawn relative to the house building?",
+    "answer": "B",
+    "candidate": [
+      "A.Left side",
+      "B.Right side",
+      "C.Behind",
+      "D.In front"
+    ],
+    "file_name": "SPACE6_20190823085444_20190823085754_tile_937.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the straight lane relative to the curved lane?",
+    "answer": "D",
+    "candidate": [
+      "A.To the left",
+      "B.Below",
+      "C.To the right",
+      "D.Above"
+    ],
+    "file_name": "SPACE6_20190823161251_20190823161546_tile_8295.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the forest relative to the building?",
+    "answer": "D",
+    "candidate": [
+      "A.In front",
+      "B.Right side",
+      "C.Behind",
+      "D.Left side"
+    ],
+    "file_name": "SPACE6_20190822075219_20190822075510_tile_8139.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the factory building relative to the lawn?",
+    "answer": "A",
+    "candidate": [
+      "A.Left side",
+      "B.Behind",
+      "C.Right side",
+      "D.In front"
+    ],
+    "file_name": "SPACE6_20190823081159_20190823081456_tile_5224.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the track relative to the grassland?",
+    "answer": "B",
+    "candidate": [
+      "A.To the left",
+      "B.Above",
+      "C.Below",
+      "D.To the right"
+    ],
+    "file_name": "SPACE6_20190823154802_20190823155103_tile_9767.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the storage tank relative to the parking lot?",
+    "answer": "C",
+    "candidate": [
+      "A.In front",
+      "B.Behind",
+      "C.Right side",
+      "D.Left side"
+    ],
+    "file_name": "SPACE6_20190823075755_20190823080053_tile_10756.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the ship relative to the storage tank?",
+    "answer": "D",
+    "candidate": [
+      "A.Behind",
+      "B.In front",
+      "C.Left side",
+      "D.Right side"
+    ],
+    "file_name": "SPACE6_20190823075755_20190823080053_tile_10757.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the ship relative to the container?",
+    "answer": "C",
+    "candidate": [
+      "A.Left side",
+      "B.Behind",
+      "C.Right side",
+      "D.In front"
+    ],
+    "file_name": "SPACE6_20190822083256_20190822083600_tile_10921.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the lake relative to the highway?",
+    "answer": "D",
+    "candidate": [
+      "A.Left side",
+      "B.Directly across",
+      "C.Below",
+      "D.Right side"
+    ],
+    "file_name": "SPACE6_20190823100628_20190823100943_tile_5435.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the lawn relative to the lake?",
+    "answer": "D",
+    "candidate": [
+      "A.Below",
+      "B.To the right",
+      "C.To the left",
+      "D.Above"
+    ],
+    "file_name": "SPACE6_20190823072627_20190823072925_tile_10485.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the boat relative to the factory building?",
+    "answer": "D",
+    "candidate": [
+      "A.To the left",
+      "B.To the right",
+      "C.Above",
+      "D.Below"
+    ],
+    "file_name": "SPACE6_20190822142505_20190822142747_tile_6839.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the container relative to the track?",
+    "answer": "B",
+    "candidate": [
+      "A.Below",
+      "B.Above",
+      "C.Behind",
+      "D.Beside"
+    ],
+    "file_name": "SPACE6_20190822095638_20190822095937_tile_7439.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the forest relative to the road?",
+    "answer": "B",
+    "candidate": [
+      "A.To the left",
+      "B.Below",
+      "C.Above",
+      "D.To the right"
+    ],
+    "file_name": "SPACE6_20190823094552_20190823094850_tile_10596.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the storage tank relative to the purple house?",
+    "answer": "A",
+    "candidate": [
+      "A.Right",
+      "B.In front",
+      "C.Left",
+      "D.Behind"
+    ],
+    "file_name": "SPACE6_20190823123151_20190823123459_tile_2307.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the track relative to the storage tank?",
+    "answer": "A",
+    "candidate": [
+      "A.Right side",
+      "B.In front",
+      "C.Left side",
+      "D.Behind"
+    ],
+    "file_name": "SPACE6_20190823144405_20190823144711_tile_3333.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the sea relative to the building?",
+    "answer": "D",
+    "candidate": [
+      "A.Right side",
+      "B.In front",
+      "C.Behind",
+      "D.Left side"
+    ],
+    "file_name": "SPACE6_20190822153558_20190822153835_tile_2528.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the reservoir relative to the storage tank?",
+    "answer": "C",
+    "candidate": [
+      "A.Behind",
+      "B.In front",
+      "C.Right side",
+      "D.Left side"
+    ],
+    "file_name": "SPACE6_20190804133131_20190804133356_tile_782.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the ship relative to the container?",
+    "answer": "A",
+    "candidate": [
+      "A.up",
+      "B.down",
+      "C.left",
+      "D.right"
+    ],
+    "file_name": "SPACE6_20190822101929_20190822102224_tile_10381.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the storage tank relative to the factory building?",
+    "answer": "B",
+    "candidate": [
+      "A.Left side",
+      "B.Right side",
+      "C.Behind",
+      "D.In front"
+    ],
+    "file_name": "SPACE6_20190823090554_20190823090904_tile_5015.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the factory building relative to the ship?",
+    "answer": "C",
+    "candidate": [
+      "A.Behind",
+      "B.Right side",
+      "C.Left side",
+      "D.In front"
+    ],
+    "file_name": "SPACE6_20190823071743_20190823072036_tile_2636.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the grassland relative to the city?",
+    "answer": "C",
+    "candidate": [
+      "A.Behind",
+      "B.Left side",
+      "C.Right side",
+      "D.In front"
+    ],
+    "file_name": "SPACE6_20190823140636_20190823140937_tile_10432.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the road relative to the forest?",
+    "answer": "C",
+    "candidate": [
+      "A.To the right",
+      "B.Below",
+      "C.Above",
+      "D.To the left"
+    ],
+    "file_name": "SPACE6_20190804125251_20190804125541_tile_6883.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the forest relative to the sea?",
+    "answer": "D",
+    "candidate": [
+      "A.In front",
+      "B.Behind",
+      "C.Left side",
+      "D.Right side"
+    ],
+    "file_name": "SPACE6_20190823135139_20190823135448_tile_1424.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the container relative to the sea?",
+    "answer": "D",
+    "candidate": [
+      "A.Beside",
+      "B.Behind",
+      "C.Below",
+      "D.Above"
+    ],
+    "file_name": "SPACE6_20190823125228_20190823125530_tile_8568.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the container relative to the forest?",
+    "answer": "D",
+    "candidate": [
+      "A.In front",
+      "B.Right side",
+      "C.Behind",
+      "D.Left side"
+    ],
+    "file_name": "SPACE6_20190822141103_20190822141406_tile_4959.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the forest relative to the house?",
+    "answer": "C",
+    "candidate": [
+      "A.Right side",
+      "B.In front",
+      "C.Left side",
+      "D.Behind"
+    ],
+    "file_name": "SPACE6_20190822160239_20190822160529_tile_3894.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the storage tank relative to the lawn?",
+    "answer": "C",
+    "candidate": [
+      "A.Behind",
+      "B.In front",
+      "C.Left side",
+      "D.Right side"
+    ],
+    "file_name": "SPACE6_20190822085151_20190822085445_tile_562.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the ship relative to the storage tank?",
+    "answer": "A",
+    "candidate": [
+      "A.Above",
+      "B.East",
+      "C.North",
+      "D.Below"
+    ],
+    "file_name": "SPACE6_20190822092149_20190822092450_tile_1708.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the ship relative to the container?",
+    "answer": "D",
+    "candidate": [
+      "A.Behind",
+      "B.In front",
+      "C.Left side",
+      "D.Right side"
+    ],
+    "file_name": "SPACE6_20190823143102_20190823143400_tile_5991.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the lake relative to the house building?",
+    "answer": "B",
+    "candidate": [
+      "A.Left side",
+      "B.Right side",
+      "C.Behind",
+      "D.In front"
+    ],
+    "file_name": "SPACE6_20190804144353_20190804144627_tile_9925.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the ship relative to the storage tank?",
+    "answer": "B",
+    "candidate": [
+      "A.North",
+      "B.Above",
+      "C.East",
+      "D.Below"
+    ],
+    "file_name": "SPACE6_20190822094025_20190822094322_tile_5868.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the lawn relative to the gray house?",
+    "answer": "A",
+    "candidate": [
+      "A.Left side",
+      "B.In front",
+      "C.Right side",
+      "D.Behind"
+    ],
+    "file_name": "SPACE6_20190804125251_20190804125541_tile_6888.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the red house relative to the speedboat?",
+    "answer": "D",
+    "candidate": [
+      "A.Right side",
+      "B.In front",
+      "C.Behind",
+      "D.Left side"
+    ],
+    "file_name": "SPACE6_20190823161806_20190823162129_tile_2729.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the park relative to the forest?",
+    "answer": "B",
+    "candidate": [
+      "A.Left side",
+      "B.Right side",
+      "C.Behind",
+      "D.In front"
+    ],
+    "file_name": "SPACE6_20190804140510_20190804140727_tile_4701.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the container relative to the black house?",
+    "answer": "B",
+    "candidate": [
+      "A.Behind",
+      "B.Right side",
+      "C.In front",
+      "D.Left side"
+    ],
+    "file_name": "SPACE6_20190822153149_20190822153444_tile_1050.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the boat relative to the bridge?",
+    "answer": "A",
+    "candidate": [
+      "A.Left side",
+      "B.Above",
+      "C.Below",
+      "D.Right side"
+    ],
+    "file_name": "SPACE6_20190822065725_20190822065959_tile_7266.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the red boat relative to the white boat?",
+    "answer": "B",
+    "candidate": [
+      "A.To the left",
+      "B.Below",
+      "C.To the right",
+      "D.Above"
+    ],
+    "file_name": "SPACE6_20190804135937_20190804140208_tile_6565.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the storage tank relative to the ship?",
+    "answer": "D",
+    "candidate": [
+      "A.Right side",
+      "B.In front",
+      "C.Behind",
+      "D.Left side"
+    ],
+    "file_name": "SPACE6_20190823130239_20190823130540_tile_3617.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the container relative to the ship?",
+    "answer": "D",
+    "candidate": [
+      "A.Below",
+      "B.Beside",
+      "C.Behind",
+      "D.Above"
+    ],
+    "file_name": "SPACE6_20190823125228_20190823125530_tile_8579.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the storage tank relative to the open space?",
+    "answer": "C",
+    "candidate": [
+      "A.To the right",
+      "B.Above",
+      "C.Below",
+      "D.To the left"
+    ],
+    "file_name": "SPACE6_20190804142736_20190804142950_tile_1157.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the red house relative to the lawn?",
+    "answer": "A",
+    "candidate": [
+      "A.Above",
+      "B.To the left",
+      "C.Below",
+      "D.To the right"
+    ],
+    "file_name": "SPACE6_20190822073746_20190822074042_tile_5386.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the track relative to the yellow container?",
+    "answer": "D",
+    "candidate": [
+      "A.To the right",
+      "B.Above",
+      "C.To the left",
+      "D.Below"
+    ],
+    "file_name": "SPACE6_20190804130422_20190804130643_tile_3183.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the ship relative to the storage tank?",
+    "answer": "D",
+    "candidate": [
+      "A.To the left",
+      "B.Above",
+      "C.To the right",
+      "D.Below"
+    ],
+    "file_name": "SPACE6_20190822163834_20190822164115_tile_7705.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the storage tank relative to the ship?",
+    "answer": "D",
+    "candidate": [
+      "A.Below",
+      "B.Behind",
+      "C.Beside",
+      "D.Above"
+    ],
+    "file_name": "SPACE6_20190823065021_20190823065333_tile_9165.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the lawn relative to the red house?",
+    "answer": "A",
+    "candidate": [
+      "A.Right side",
+      "B.Left side",
+      "C.In front",
+      "D.Behind"
+    ],
+    "file_name": "SPACE6_20190804124148_20190804124417_tile_1330.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the lake relative to the house?",
+    "answer": "C",
+    "candidate": [
+      "A.To the left",
+      "B.To the right",
+      "C.Above",
+      "D.Below"
+    ],
+    "file_name": "SPACE6_20190823094036_20190823094408_tile_10265.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the boat relative to the forest?",
+    "answer": "D",
+    "candidate": [
+      "A.In front",
+      "B.Right side",
+      "C.Behind",
+      "D.Left side"
+    ],
+    "file_name": "SPACE6_20190804123547_20190804123823_tile_6161.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the forest relative to the neighborhood?",
+    "answer": "A",
+    "candidate": [
+      "A.Above",
+      "B.To the left",
+      "C.To the right",
+      "D.Below"
+    ],
+    "file_name": "SPACE6_20190823100116_20190823100432_tile_2371.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the parking lot relative to the black-roofed factory building?",
+    "answer": "B",
+    "candidate": [
+      "A.Above",
+      "B.Below",
+      "C.To the right",
+      "D.To the left"
+    ],
+    "file_name": "SPACE6_20190804141038_20190804141312_tile_9062.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the forest relative to the house?",
+    "answer": "D",
+    "candidate": [
+      "A.To the left",
+      "B.To the right",
+      "C.Above",
+      "D.Below"
+    ],
+    "file_name": "SPACE6_20190823092528_20190823092835_tile_1204.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the roundabout intersection relative to the red house?",
+    "answer": "C",
+    "candidate": [
+      "A.Above",
+      "B.To the right",
+      "C.Below",
+      "D.To the left"
+    ],
+    "file_name": "SPACE6_20190804121331_20190804121610_tile_1661.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the forest relative to the house?",
+    "answer": "B",
+    "candidate": [
+      "A.Behind",
+      "B.Left side",
+      "C.In front",
+      "D.Right side"
+    ],
+    "file_name": "SPACE6_20190822151108_20190822151351_tile_8075.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the river relative to the building?",
+    "answer": "A",
+    "candidate": [
+      "A.Right side",
+      "B.Left side",
+      "C.In front",
+      "D.Behind"
+    ],
+    "file_name": "SPACE6_20190822075657_20190822080002_tile_10715.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the lawn relative to the house building?",
+    "answer": "B",
+    "candidate": [
+      "A.Right side",
+      "B.Left side",
+      "C.Behind",
+      "D.Front"
+    ],
+    "file_name": "SPACE6_20190804135937_20190804140208_tile_6569.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the sea relative to the storage tank?",
+    "answer": "B",
+    "candidate": [
+      "A.Below",
+      "B.Above",
+      "C.East",
+      "D.North"
+    ],
+    "file_name": "SPACE6_20190823141123_20190823141407_tile_3117.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the lawn relative to the building?",
+    "answer": "B",
+    "candidate": [
+      "A.To the right",
+      "B.Below",
+      "C.Above",
+      "D.To the left"
+    ],
+    "file_name": "SPACE6_20190822082538_20190822082826_tile_4158.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the storage tank relative to the ship?",
+    "answer": "B",
+    "candidate": [
+      "A.Beside",
+      "B.Above",
+      "C.North",
+      "D.Below"
+    ],
+    "file_name": "SPACE6_20190823071743_20190823072036_tile_2626.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the forest relative to the sea?",
+    "answer": "C",
+    "candidate": [
+      "A.In front",
+      "B.Behind",
+      "C.Right side",
+      "D.Left side"
+    ],
+    "file_name": "SPACE6_20190822070610_20190822070846_tile_3718.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the road relative to the forest?",
+    "answer": "D",
+    "candidate": [
+      "A.Below",
+      "B.To the left",
+      "C.To the right",
+      "D.Above"
+    ],
+    "file_name": "SPACE6_20190822072404_20190822072642_tile_6772.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the forest relative to the house?",
+    "answer": "D",
+    "candidate": [
+      "A.To the left",
+      "B.Above",
+      "C.To the right",
+      "D.Below"
+    ],
+    "file_name": "SPACE6_20190804133131_20190804133356_tile_784.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the red boat relative to the green boat?",
+    "answer": "C",
+    "candidate": [
+      "A.To the left",
+      "B.To the right",
+      "C.Above",
+      "D.Below"
+    ],
+    "file_name": "SPACE6_20190823153025_20190823153316_tile_5077.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the large storage tank relative to the small storage tank?",
+    "answer": "A",
+    "candidate": [
+      "A.Right side",
+      "B.Behind",
+      "C.In front",
+      "D.Left side"
+    ],
+    "file_name": "SPACE6_20190822101929_20190822102224_tile_10368.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the speedboat relative to the bridge?",
+    "answer": "C",
+    "candidate": [
+      "A.Left side",
+      "B.Above",
+      "C.Right side",
+      "D.Below"
+    ],
+    "file_name": "SPACE6_20190823150417_20190823150712_tile_10309.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the lake relative to the blue house?",
+    "answer": "A",
+    "candidate": [
+      "A.Right side",
+      "B.Left side",
+      "C.Behind",
+      "D.In front"
+    ],
+    "file_name": "SPACE6_20190822073257_20190822073557_tile_2418.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the storage tank relative to the ship?",
+    "answer": "D",
+    "candidate": [
+      "A.Beside",
+      "B.North",
+      "C.Below",
+      "D.Above"
+    ],
+    "file_name": "SPACE6_20190822145832_20190822150114_tile_9601.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the lawn relative to the house building?",
+    "answer": "D",
+    "candidate": [
+      "A.To the right",
+      "B.To the left",
+      "C.Below",
+      "D.Above"
+    ],
+    "file_name": "SPACE6_20190804125251_20190804125541_tile_6885.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the container relative to the track?",
+    "answer": "A",
+    "candidate": [
+      "A.Above",
+      "B.Behind",
+      "C.Beside",
+      "D.Below"
+    ],
+    "file_name": "SPACE6_20190822141600_20190822141831_tile_8907.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the forest relative to the house building?",
+    "answer": "D",
+    "candidate": [
+      "A.To the left",
+      "B.Below",
+      "C.To the right",
+      "D.Above"
+    ],
+    "file_name": "SPACE6_20190823084527_20190823084841_tile_10545.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the forest relative to the cylinder?",
+    "answer": "C",
+    "candidate": [
+      "A.Right side",
+      "B.In front",
+      "C.Left side",
+      "D.Behind"
+    ],
+    "file_name": "SPACE6_20190804111224_20190804111453_tile_8695.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the forest relative to the building?",
+    "answer": "C",
+    "candidate": [
+      "A.Below",
+      "B.To the left",
+      "C.Above",
+      "D.To the right"
+    ],
+    "file_name": "SPACE6_20190822145028_20190822145325_tile_9230.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the ship relative to the storage tank?",
+    "answer": "C",
+    "candidate": [
+      "A.In front",
+      "B.Behind",
+      "C.Left side",
+      "D.Right side"
+    ],
+    "file_name": "SPACE6_20190823065938_20190823070236_tile_2138.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the orientation of the track relative to the storage tank?",
+    "answer": "D",
+    "candidate": [
+      "A.Left side",
+      "B.Behind",
+      "C.In front",
+      "D.Right side"
+    ],
+    "file_name": "SPACE6_20190822142505_20190822142747_tile_6833.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the track relative to the storage tank?",
+    "answer": "B",
+    "candidate": [
+      "A.Behind",
+      "B.Right side",
+      "C.In front",
+      "D.Left side"
+    ],
+    "file_name": "SPACE6_20190823145306_20190823145612_tile_7211.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the boat relative to the track?",
+    "answer": "C",
+    "candidate": [
+      "A.In front",
+      "B.Behind",
+      "C.Right side",
+      "D.Left side"
+    ],
+    "file_name": "SPACE6_20190822134328_20190822134645_tile_7057.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the driveway relative to the house building?",
+    "answer": "B",
+    "candidate": [
+      "A.Below",
+      "B.Above",
+      "C.To the right",
+      "D.To the left"
+    ],
+    "file_name": "SPACE6_20190804125251_20190804125541_tile_6893.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the storage tank relative to the ship?",
+    "answer": "A",
+    "candidate": [
+      "A.Right side",
+      "B.In front",
+      "C.Behind",
+      "D.Left side"
+    ],
+    "file_name": "SPACE6_20190823151153_20190823151440_tile_6041.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the storage tank relative to the ship?",
+    "answer": "C",
+    "candidate": [
+      "A.In front",
+      "B.Behind",
+      "C.Left side",
+      "D.Right side"
+    ],
+    "file_name": "SPACE6_20190822154325_20190822154559_tile_9323.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the ship relative to the industrial area?",
+    "answer": "D",
+    "candidate": [
+      "A.Above",
+      "B.To the left",
+      "C.To the right",
+      "D.Below"
+    ],
+    "file_name": "SPACE6_20190804111224_20190804111453_tile_8683.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the square lake relative to the highway?",
+    "answer": "B",
+    "candidate": [
+      "A.To the right",
+      "B.Above",
+      "C.Below",
+      "D.To the left"
+    ],
+    "file_name": "SPACE6_20190804115720_20190804115941_tile_9554.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the sea relative to the storage tank?",
+    "answer": "C",
+    "candidate": [
+      "A.East",
+      "B.North",
+      "C.Above",
+      "D.Below"
+    ],
+    "file_name": "SPACE6_20190823160819_20190823161113_tile_11033.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the forest relative to the house?",
+    "answer": "C",
+    "candidate": [
+      "A.To the left",
+      "B.Above",
+      "C.Below",
+      "D.To the right"
+    ],
+    "file_name": "SPACE6_20190823065505_20190823065800_tile_392.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the road lane relative to the lawn?",
+    "answer": "C",
+    "candidate": [
+      "A.Above",
+      "B.To the right",
+      "C.Below",
+      "D.To the left"
+    ],
+    "file_name": "SPACE6_20190804141608_20190804141830_tile_5324.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the boat relative to the lake?",
+    "answer": "D",
+    "candidate": [
+      "A.Beside",
+      "B.Above",
+      "C.Behind",
+      "D.Below"
+    ],
+    "file_name": "SPACE6_20190822083256_20190822083600_tile_10927.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the forest relative to the blue factory?",
+    "answer": "D",
+    "candidate": [
+      "A.Below",
+      "B.To the right",
+      "C.To the left",
+      "D.Above"
+    ],
+    "file_name": "SPACE6_20190823100628_20190823100943_tile_5448.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the building relative to the lawn?",
+    "answer": "A",
+    "candidate": [
+      "A.Right side",
+      "B.In front",
+      "C.Behind",
+      "D.Left side"
+    ],
+    "file_name": "SPACE6_20190822144546_20190822144829_tile_7601.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the forest relative to the road?",
+    "answer": "A",
+    "candidate": [
+      "A.Above",
+      "B.To the right",
+      "C.Below",
+      "D.To the left"
+    ],
+    "file_name": "SPACE6_20190823091132_20190823091448_tile_7927.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the large storage tank relative to the small storage tank?",
+    "answer": "B",
+    "candidate": [
+      "A.Below",
+      "B.Above",
+      "C.To the left",
+      "D.To the right"
+    ],
+    "file_name": "SPACE6_20190823091635_20190823091951_tile_8786.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the storage tank relative to the driveway?",
+    "answer": "B",
+    "candidate": [
+      "A.Below",
+      "B.Above",
+      "C.To the left",
+      "D.To the right"
+    ],
+    "file_name": "SPACE6_20190823130736_20190823131054_tile_4269.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the container relative to the lake?",
+    "answer": "C",
+    "candidate": [
+      "A.In front",
+      "B.Left side",
+      "C.Right side",
+      "D.Behind"
+    ],
+    "file_name": "SPACE6_20190822071924_20190822072224_tile_8640.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the road relative to the forest?",
+    "answer": "B",
+    "candidate": [
+      "A.To the right",
+      "B.Above",
+      "C.Below",
+      "D.To the left"
+    ],
+    "file_name": "SPACE6_20190822084226_20190822084526_tile_3228.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the boat relative to the red container?",
+    "answer": "A",
+    "candidate": [
+      "A.Right side",
+      "B.Left side",
+      "C.Behind",
+      "D.In front"
+    ],
+    "file_name": "SPACE6_20190822071924_20190822072224_tile_8638.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the lake relative to the road?",
+    "answer": "B",
+    "candidate": [
+      "A.Left side",
+      "B.Right side",
+      "C.Behind",
+      "D.In front"
+    ],
+    "file_name": "SPACE6_20190822153558_20190822153835_tile_2537.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the forest relative to the building?",
+    "answer": "C",
+    "candidate": [
+      "A.In front",
+      "B.Behind",
+      "C.Left side",
+      "D.Right side"
+    ],
+    "file_name": "SPACE6_20190823142603_20190823142913_tile_3556.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the lawn relative to the driveway?",
+    "answer": "B",
+    "candidate": [
+      "A.In front",
+      "B.Right side",
+      "C.Left side",
+      "D.Behind"
+    ],
+    "file_name": "SPACE6_20190822162621_20190822162906_tile_5660.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the sea relative to the storage tank?",
+    "answer": "D",
+    "candidate": [
+      "A.Left side",
+      "B.Behind",
+      "C.In front",
+      "D.Right side"
+    ],
+    "file_name": "SPACE6_20190822155502_20190822155747_tile_4644.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the forest relative to the red house?",
+    "answer": "A",
+    "candidate": [
+      "A.Below",
+      "B.To the right",
+      "C.To the left",
+      "D.Above"
+    ],
+    "file_name": "SPACE6_20190822085638_20190822085935_tile_10658.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the driveway relative to the house?",
+    "answer": "B",
+    "candidate": [
+      "A.To the right",
+      "B.Above",
+      "C.To the left",
+      "D.Below"
+    ],
+    "file_name": "SPACE6_20190804140510_20190804140727_tile_4703.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the forest relative to the house?",
+    "answer": "A",
+    "candidate": [
+      "A.Above",
+      "B.To the right",
+      "C.To the left",
+      "D.Below"
+    ],
+    "file_name": "SPACE6_20190804121331_20190804121610_tile_1655.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the boat relative to the lane?",
+    "answer": "B",
+    "candidate": [
+      "A.Behind",
+      "B.Left side",
+      "C.Right side",
+      "D.In front"
+    ],
+    "file_name": "SPACE6_20190823075755_20190823080053_tile_10768.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the ship relative to the factory building?",
+    "answer": "A",
+    "candidate": [
+      "A.Above",
+      "B.East",
+      "C.North",
+      "D.Below"
+    ],
+    "file_name": "SPACE6_20190823090554_20190823090904_tile_5026.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the factory building relative to the sea?",
+    "answer": "D",
+    "candidate": [
+      "A.East",
+      "B.North",
+      "C.Below",
+      "D.Above"
+    ],
+    "file_name": "SPACE6_20190823081648_20190823081959_tile_4850.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the river relative to the house building?",
+    "answer": "D",
+    "candidate": [
+      "A.Left side",
+      "B.In front",
+      "C.Behind",
+      "D.Right side"
+    ],
+    "file_name": "SPACE6_20190804132547_20190804132826_tile_10872.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the storage tank relative to the factory building?",
+    "answer": "A",
+    "candidate": [
+      "A.Right side",
+      "B.Behind",
+      "C.Left side",
+      "D.In front"
+    ],
+    "file_name": "SPACE6_20190823151153_20190823151440_tile_6039.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the road relative to the forest?",
+    "answer": "C",
+    "candidate": [
+      "A.Right",
+      "B.Left",
+      "C.Up",
+      "D.Down"
+    ],
+    "file_name": "SPACE6_20190822084226_20190822084526_tile_3224.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the circular intersection relative to the house?",
+    "answer": "A",
+    "candidate": [
+      "A.Above",
+      "B.To the left",
+      "C.To the right",
+      "D.Below"
+    ],
+    "file_name": "SPACE6_20190823090045_20190823090358_tile_998.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the lane relative to the sea?",
+    "answer": "D",
+    "candidate": [
+      "A.Behind",
+      "B.In front",
+      "C.Left side",
+      "D.Right side"
+    ],
+    "file_name": "SPACE6_20190823130239_20190823130540_tile_3619.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the forest relative to the house?",
+    "answer": "C",
+    "candidate": [
+      "A.Right side",
+      "B.Behind",
+      "C.Left side",
+      "D.In front"
+    ],
+    "file_name": "SPACE6_20190822152355_20190822152652_tile_3985.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the forest relative to the house building?",
+    "answer": "D",
+    "candidate": [
+      "A.To the left",
+      "B.To the right",
+      "C.Above",
+      "D.Below"
+    ],
+    "file_name": "SPACE6_20190822070610_20190822070846_tile_3721.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the track relative to the container?",
+    "answer": "A",
+    "candidate": [
+      "A.Below",
+      "B.To the left",
+      "C.Above",
+      "D.To the right"
+    ],
+    "file_name": "SPACE6_20190804130422_20190804130643_tile_3181.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the strip of greenery relative to the roundabout intersection?",
+    "answer": "B",
+    "candidate": [
+      "A.To the right",
+      "B.Below",
+      "C.To the left",
+      "D.Above"
+    ],
+    "file_name": "SPACE6_20190804121331_20190804121610_tile_1659.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the red house relative to the circular intersection?",
+    "answer": "B",
+    "candidate": [
+      "A.To the right",
+      "B.Above",
+      "C.Below",
+      "D.To the left"
+    ],
+    "file_name": "SPACE6_20190804145216_20190804145445_tile_6521.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the forest relative to the gray house?",
+    "answer": "C",
+    "candidate": [
+      "A.In front",
+      "B.Right side",
+      "C.Left side",
+      "D.Behind"
+    ],
+    "file_name": "SPACE6_20190822094509_20190822094813_tile_167.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the forest relative to the house building?",
+    "answer": "C",
+    "candidate": [
+      "A.Right side",
+      "B.Behind",
+      "C.Left side",
+      "D.In front"
+    ],
+    "file_name": "SPACE6_20190804135332_20190804135556_tile_7172.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the factory relative to the ship?",
+    "answer": "C",
+    "candidate": [
+      "A.Below",
+      "B.East",
+      "C.Above",
+      "D.North"
+    ],
+    "file_name": "SPACE6_20190822085151_20190822085445_tile_567.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the storage tank relative to the cargo ship?",
+    "answer": "A",
+    "candidate": [
+      "A.Above",
+      "B.North",
+      "C.Below",
+      "D.Beside"
+    ],
+    "file_name": "SPACE6_20190823135623_20190823135909_tile_1105.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the boat relative to the dock?",
+    "answer": "C",
+    "candidate": [
+      "A.Behind",
+      "B.Beside",
+      "C.Above",
+      "D.Below"
+    ],
+    "file_name": "SPACE6_20190822161045_20190822161339_tile_2480.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the ocean relative to the pier?",
+    "answer": "B",
+    "candidate": [
+      "A.To the left",
+      "B.Below",
+      "C.Above",
+      "D.To the right"
+    ],
+    "file_name": "SPACE6_20190804124749_20190804125033_tile_3664.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the storage tank relative to the open space?",
+    "answer": "D",
+    "candidate": [
+      "A.Behind",
+      "B.Right side",
+      "C.In front",
+      "D.Left side"
+    ],
+    "file_name": "SPACE6_20190804142736_20190804142950_tile_1155.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the storage tank relative to the ship?",
+    "answer": "B",
+    "candidate": [
+      "A.Right side",
+      "B.Left side",
+      "C.In front",
+      "D.Behind"
+    ],
+    "file_name": "SPACE6_20190822094025_20190822094322_tile_5870.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the container relative to the ship?",
+    "answer": "B",
+    "candidate": [
+      "A.Beside",
+      "B.Above",
+      "C.Behind",
+      "D.Below"
+    ],
+    "file_name": "SPACE6_20190823142111_20190823142355_tile_3945.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the forest relative to the container?",
+    "answer": "C",
+    "candidate": [
+      "A.In front",
+      "B.Behind",
+      "C.Left side",
+      "D.Right side"
+    ],
+    "file_name": "SPACE6_20190804125251_20190804125541_tile_6891.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the orientation of the track relative to the storage tank?",
+    "answer": "D",
+    "candidate": [
+      "A.Behind",
+      "B.In front",
+      "C.Left side",
+      "D.Right side"
+    ],
+    "file_name": "SPACE6_20190822073257_20190822073557_tile_2420.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the driveway relative to the house?",
+    "answer": "B",
+    "candidate": [
+      "A.Below",
+      "B.Above",
+      "C.To the left",
+      "D.To the right"
+    ],
+    "file_name": "SPACE6_20190823123717_20190823124038_tile_2690.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the container relative to the lake?",
+    "answer": "D",
+    "candidate": [
+      "A.In front",
+      "B.Right side",
+      "C.Behind",
+      "D.Left side"
+    ],
+    "file_name": "SPACE6_20190822085151_20190822085445_tile_566.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the ship relative to the storage tank?",
+    "answer": "D",
+    "candidate": [
+      "A.North",
+      "B.East",
+      "C.Below",
+      "D.Above"
+    ],
+    "file_name": "SPACE6_20190823145306_20190823145612_tile_7213.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the lawn relative to the building?",
+    "answer": "D",
+    "candidate": [
+      "A.To the left",
+      "B.Below",
+      "C.To the right",
+      "D.Above"
+    ],
+    "file_name": "SPACE6_20190822093552_20190822093843_tile_9664.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the storage tank relative to the ship?",
+    "answer": "B",
+    "candidate": [
+      "A.Beside",
+      "B.Above",
+      "C.Below",
+      "D.Behind"
+    ],
+    "file_name": "SPACE6_20190804130928_20190804131204_tile_5130.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the river relative to the forest?",
+    "answer": "C",
+    "candidate": [
+      "A.Behind",
+      "B.In front",
+      "C.Left side",
+      "D.Right side"
+    ],
+    "file_name": "SPACE6_20190822163425_20190822163708_tile_6300.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the boat relative to the bridge?",
+    "answer": "A",
+    "candidate": [
+      "A.Above",
+      "B.Beside",
+      "C.Below",
+      "D.Behind"
+    ],
+    "file_name": "SPACE6_20190823140636_20190823140937_tile_10420.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the forest relative to the house?",
+    "answer": "D",
+    "candidate": [
+      "A.To the left",
+      "B.Below",
+      "C.To the right",
+      "D.Above"
+    ],
+    "file_name": "SPACE6_20190823094552_20190823094850_tile_10592.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the storage tank relative to the sea?",
+    "answer": "D",
+    "candidate": [
+      "A.Left side",
+      "B.In front",
+      "C.Behind",
+      "D.Right side"
+    ],
+    "file_name": "SPACE6_20190822092149_20190822092450_tile_1700.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the intersection relative to the large green belt?",
+    "answer": "B",
+    "candidate": [
+      "A.To the left",
+      "B.Above",
+      "C.Below",
+      "D.To the right"
+    ],
+    "file_name": "SPACE6_20190804124148_20190804124417_tile_1313.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the river relative to the storage tank?",
+    "answer": "D",
+    "candidate": [
+      "A.Behind",
+      "B.In front",
+      "C.Left side",
+      "D.Right side"
+    ],
+    "file_name": "SPACE6_20190823145306_20190823145612_tile_7209.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the storage tank relative to the house?",
+    "answer": "C",
+    "candidate": [
+      "A.Right side",
+      "B.Behind",
+      "C.Left side",
+      "D.In front"
+    ],
+    "file_name": "SPACE6_20190804120805_20190804121023_tile_6205.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the ship relative to the storage tank?",
+    "answer": "D",
+    "candidate": [
+      "A.Behind",
+      "B.In front",
+      "C.Left side",
+      "D.Right side"
+    ],
+    "file_name": "SPACE6_20190823160819_20190823161113_tile_11027.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the islands relative to the storage tank?",
+    "answer": "C",
+    "candidate": [
+      "A.Right side",
+      "B.Behind",
+      "C.Left side",
+      "D.In front"
+    ],
+    "file_name": "SPACE6_20190822101929_20190822102224_tile_10366.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the storage tank relative to the highway lane?",
+    "answer": "B",
+    "candidate": [
+      "A.Below",
+      "B.Left side",
+      "C.Right side",
+      "D.Above"
+    ],
+    "file_name": "SPACE6_20190804132031_20190804132301_tile_9494.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the circular turntable relative to the three parallel buildings?",
+    "answer": "B",
+    "candidate": [
+      "A.Beside",
+      "B.Above",
+      "C.Below",
+      "D.Between"
+    ],
+    "file_name": "SPACE6_20190804113605_20190804113825_tile_9003.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the open space relative to the driveway?",
+    "answer": "B",
+    "candidate": [
+      "A.Behind",
+      "B.Left side",
+      "C.Front",
+      "D.Right side"
+    ],
+    "file_name": "SPACE6_20190804145216_20190804145445_tile_6516.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the large storage tank relative to the house building?",
+    "answer": "A",
+    "candidate": [
+      "A.Left side",
+      "B.Behind",
+      "C.Right side",
+      "D.In front"
+    ],
+    "file_name": "SPACE6_20190804133131_20190804133356_tile_778.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the storage tank relative to the house?",
+    "answer": "D",
+    "candidate": [
+      "A.North",
+      "B.East",
+      "C.Below",
+      "D.Above"
+    ],
+    "file_name": "SPACE6_20190804132031_20190804132301_tile_9489.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the lake relative to the house?",
+    "answer": "D",
+    "candidate": [
+      "A.To the left",
+      "B.Below",
+      "C.To the right",
+      "D.Above"
+    ],
+    "file_name": "SPACE6_20190823084056_20190823084400_tile_3441.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the boat relative to the road?",
+    "answer": "A",
+    "candidate": [
+      "A.Right side",
+      "B.Left side",
+      "C.In front",
+      "D.Behind"
+    ],
+    "file_name": "SPACE6_20190822070143_20190822070439_tile_7113.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the track relative to the ship?",
+    "answer": "B",
+    "candidate": [
+      "A.In front",
+      "B.Right side",
+      "C.Left side",
+      "D.Behind"
+    ],
+    "file_name": "SPACE6_20190823151153_20190823151440_tile_6052.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the riverbank relative to the river?",
+    "answer": "A",
+    "candidate": [
+      "A.Left side",
+      "B.Above",
+      "C.Right side",
+      "D.Below"
+    ],
+    "file_name": "SPACE6_20190804125251_20190804125541_tile_6880.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the forest relative to the road?",
+    "answer": "C",
+    "candidate": [
+      "A.Above",
+      "B.To the left",
+      "C.Below",
+      "D.To the right"
+    ],
+    "file_name": "SPACE6_20190804140510_20190804140727_tile_4709.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the storage tank relative to the driveway?",
+    "answer": "C",
+    "candidate": [
+      "A.Below",
+      "B.To the left",
+      "C.Above",
+      "D.To the right"
+    ],
+    "file_name": "SPACE6_20190804115720_20190804115941_tile_9547.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the ocean relative to the pier?",
+    "answer": "D",
+    "candidate": [
+      "A.Below",
+      "B.East",
+      "C.North",
+      "D.Above"
+    ],
+    "file_name": "SPACE6_20190804123547_20190804123823_tile_6149.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the river relative to the lawn?",
+    "answer": "D",
+    "candidate": [
+      "A.Left side",
+      "B.In front",
+      "C.Behind",
+      "D.Right side"
+    ],
+    "file_name": "SPACE6_20190804114647_20190804114904_tile_6264.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the large storage tank relative to the green shed?",
+    "answer": "B",
+    "candidate": [
+      "A.Behind",
+      "B.Left side",
+      "C.Right side",
+      "D.In front"
+    ],
+    "file_name": "SPACE6_20190822163021_20190822163304_tile_8467.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the forest relative to the house?",
+    "answer": "A",
+    "candidate": [
+      "A.Above",
+      "B.To the left",
+      "C.To the right",
+      "D.Below"
+    ],
+    "file_name": "SPACE6_20190823093548_20190823093858_tile_5495.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the storage tank relative to the building?",
+    "answer": "B",
+    "candidate": [
+      "A.In front",
+      "B.Right side",
+      "C.Left side",
+      "D.Behind"
+    ],
+    "file_name": "SPACE6_20190822075657_20190822080002_tile_10697.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the crane relative to the sea?",
+    "answer": "D",
+    "candidate": [
+      "A.Behind",
+      "B.Below",
+      "C.Beside",
+      "D.Above"
+    ],
+    "file_name": "SPACE6_20190823142111_20190823142355_tile_3943.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the storage tank relative to the ship?",
+    "answer": "A",
+    "candidate": [
+      "A.Right side",
+      "B.Left side",
+      "C.In front",
+      "D.Behind"
+    ],
+    "file_name": "SPACE6_20190822154325_20190822154559_tile_9326.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the lawn relative to the gray house?",
+    "answer": "A",
+    "candidate": [
+      "A.Left side",
+      "B.Right side",
+      "C.In front",
+      "D.Behind"
+    ],
+    "file_name": "SPACE6_20190804141608_20190804141830_tile_5340.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the storage tank relative to the ship?",
+    "answer": "C",
+    "candidate": [
+      "A.Beside",
+      "B.Below",
+      "C.Above",
+      "D.Behind"
+    ],
+    "file_name": "SPACE6_20190804135937_20190804140208_tile_6561.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the ship relative to the storage tank?",
+    "answer": "A",
+    "candidate": [
+      "A.Below",
+      "B.To the left",
+      "C.Above",
+      "D.To the right"
+    ],
+    "file_name": "SPACE6_20190823074026_20190823074323_tile_2205.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the sea relative to the factory building?",
+    "answer": "D",
+    "candidate": [
+      "A.To the right",
+      "B.Above",
+      "C.To the left",
+      "D.Below"
+    ],
+    "file_name": "SPACE6_20190823070853_20190823071152_tile_2039.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the lane relative to the park?",
+    "answer": "A",
+    "candidate": [
+      "A.Right side",
+      "B.Behind",
+      "C.Left side",
+      "D.In front"
+    ],
+    "file_name": "SPACE6_20190804132031_20190804132301_tile_9493.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the lawn relative to the river?",
+    "answer": "D",
+    "candidate": [
+      "A.To the left",
+      "B.Above",
+      "C.To the right",
+      "D.Below"
+    ],
+    "file_name": "SPACE6_20190823091132_20190823091448_tile_7918.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the forest relative to the container?",
+    "answer": "A",
+    "candidate": [
+      "A.Above",
+      "B.Below",
+      "C.To the right",
+      "D.To the left"
+    ],
+    "file_name": "SPACE6_20190823131240_20190823131533_tile_7541.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the red house relative to the forest?",
+    "answer": "C",
+    "candidate": [
+      "A.Right side",
+      "B.Behind",
+      "C.Left side",
+      "D.In front"
+    ],
+    "file_name": "SPACE6_20190804121331_20190804121610_tile_1645.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the sea relative to the storage tank?",
+    "answer": "D",
+    "candidate": [
+      "A.Behind",
+      "B.In front",
+      "C.Left side",
+      "D.Right side"
+    ],
+    "file_name": "SPACE6_20190823152057_20190823152354_tile_1263.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the track relative to the curved lane?",
+    "answer": "C",
+    "candidate": [
+      "A.To the right",
+      "B.Below",
+      "C.Above",
+      "D.To the left"
+    ],
+    "file_name": "SPACE6_20190823143529_20190823143813_tile_4439.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the boat relative to the storage tank?",
+    "answer": "D",
+    "candidate": [
+      "A.Behind",
+      "B.In front",
+      "C.Left side",
+      "D.Right side"
+    ],
+    "file_name": "SPACE6_20190822065241_20190822065541_tile_2568.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the lawn relative to the sea?",
+    "answer": "C",
+    "candidate": [
+      "A.To the right",
+      "B.To the left",
+      "C.Above",
+      "D.Below"
+    ],
+    "file_name": "SPACE6_20190822151523_20190822151826_tile_2911.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the forest relative to the highway?",
+    "answer": "D",
+    "candidate": [
+      "A.To the left",
+      "B.To the right",
+      "C.Below",
+      "D.Above"
+    ],
+    "file_name": "SPACE6_20190823151559_20190823151919_tile_5609.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the storage tank relative to the sea?",
+    "answer": "D",
+    "candidate": [
+      "A.East",
+      "B.Above",
+      "C.North",
+      "D.Below"
+    ],
+    "file_name": "SPACE6_20190804113009_20190804113242_tile_4799.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the road relative to the lake?",
+    "answer": "A",
+    "candidate": [
+      "A.Left side",
+      "B.Behind",
+      "C.Right side",
+      "D.In front"
+    ],
+    "file_name": "SPACE6_20190822083256_20190822083600_tile_10923.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the ship relative to the container?",
+    "answer": "C",
+    "candidate": [
+      "A.Behind",
+      "B.Left side",
+      "C.Right side",
+      "D.In front"
+    ],
+    "file_name": "SPACE6_20190822072817_20190822073109_tile_10146.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the lawn relative to the city?",
+    "answer": "B",
+    "candidate": [
+      "A.Behind",
+      "B.Right side",
+      "C.In front",
+      "D.Left side"
+    ],
+    "file_name": "SPACE6_20190823065505_20190823065800_tile_396.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the forest relative to the grassland?",
+    "answer": "B",
+    "candidate": [
+      "A.Behind",
+      "B.Right side",
+      "C.In front",
+      "D.Left side"
+    ],
+    "file_name": "SPACE6_20190804113605_20190804113825_tile_9013.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the house relative to the woods?",
+    "answer": "C",
+    "candidate": [
+      "A.Below",
+      "B.To the right",
+      "C.Above",
+      "D.To the left"
+    ],
+    "file_name": "SPACE6_20190804120223_20190804120456_tile_67.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the red house relative to the forest?",
+    "answer": "C",
+    "candidate": [
+      "A.Right",
+      "B.Down",
+      "C.Up",
+      "D.Left"
+    ],
+    "file_name": "SPACE6_20190822090458_20190822090745_tile_6620.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the storage tank relative to the house?",
+    "answer": "B",
+    "candidate": [
+      "A.In front",
+      "B.Right side",
+      "C.Behind",
+      "D.Left side"
+    ],
+    "file_name": "SPACE6_20190823075755_20190823080053_tile_10755.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the ship relative to the storage tank?",
+    "answer": "C",
+    "candidate": [
+      "A.East",
+      "B.Below",
+      "C.Above",
+      "D.North"
+    ],
+    "file_name": "SPACE6_20190823160819_20190823161113_tile_11037.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the factory building relative to the sea?",
+    "answer": "D",
+    "candidate": [
+      "A.North",
+      "B.Below",
+      "C.East",
+      "D.Above"
+    ],
+    "file_name": "SPACE6_20190822094025_20190822094322_tile_5877.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the lane relative to the boat?",
+    "answer": "D",
+    "candidate": [
+      "A.Right side",
+      "B.Behind",
+      "C.In front",
+      "D.Left side"
+    ],
+    "file_name": "SPACE6_20190823080717_20190823081024_tile_3069.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the boat relative to the river?",
+    "answer": "C",
+    "candidate": [
+      "A.Behind",
+      "B.In front",
+      "C.Left side",
+      "D.Right side"
+    ],
+    "file_name": "SPACE6_20190804143251_20190804143533_tile_333.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the farmland relative to the house?",
+    "answer": "B",
+    "candidate": [
+      "A.Behind",
+      "B.Right side",
+      "C.In front",
+      "D.Left side"
+    ],
+    "file_name": "SPACE6_20190822164803_20190822165101_tile_4217.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the lawn relative to the open space?",
+    "answer": "A",
+    "candidate": [
+      "A.Right side",
+      "B.Left side",
+      "C.Behind",
+      "D.In front"
+    ],
+    "file_name": "SPACE6_20190804130422_20190804130643_tile_3169.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the forest relative to the lake?",
+    "answer": "A",
+    "candidate": [
+      "A.Right side",
+      "B.In front",
+      "C.Left side",
+      "D.Behind"
+    ],
+    "file_name": "SPACE6_20190822082538_20190822082826_tile_4166.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the red house relative to the other buildings?",
+    "answer": "C",
+    "candidate": [
+      "A.In front",
+      "B.Behind",
+      "C.Left side",
+      "D.Right side"
+    ],
+    "file_name": "SPACE6_20190822072817_20190822073109_tile_10131.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the straight lane relative to the circular lane?",
+    "answer": "B",
+    "candidate": [
+      "A.To the right",
+      "B.Above",
+      "C.Below",
+      "D.To the left"
+    ],
+    "file_name": "SPACE6_20190823143529_20190823143813_tile_4435.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the orientation of the track relative to the storage tank?",
+    "answer": "B",
+    "candidate": [
+      "A.In front",
+      "B.Left side",
+      "C.Right side",
+      "D.Behind"
+    ],
+    "file_name": "SPACE6_20190822163834_20190822164115_tile_7700.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the container relative to the lane?",
+    "answer": "D",
+    "candidate": [
+      "A.Below",
+      "B.Behind",
+      "C.Beside",
+      "D.Above"
+    ],
+    "file_name": "SPACE6_20190822084226_20190822084526_tile_3235.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the red house relative to the gray house?",
+    "answer": "B",
+    "candidate": [
+      "A.In front",
+      "B.Right side",
+      "C.Behind",
+      "D.Left side"
+    ],
+    "file_name": "SPACE6_20190804114647_20190804114904_tile_6249.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the red container relative to the forest?",
+    "answer": "C",
+    "candidate": [
+      "A.To the left",
+      "B.Below",
+      "C.Above",
+      "D.To the right"
+    ],
+    "file_name": "SPACE6_20190823082145_20190823082444_tile_7815.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the river relative to the forest?",
+    "answer": "B",
+    "candidate": [
+      "A.In front",
+      "B.Left side",
+      "C.Behind",
+      "D.Right side"
+    ],
+    "file_name": "dfc2025_TrainArea_005.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the White House relative to the Red House?",
+    "answer": "B",
+    "candidate": [
+      "A.To the left",
+      "B.Below",
+      "C.To the right",
+      "D.Above"
+    ],
+    "file_name": "dfc2025_TrainArea_015.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the seawater relative to the bridge?",
+    "answer": "C",
+    "candidate": [
+      "A.Below",
+      "B.Above",
+      "C.Left side",
+      "D.Right side"
+    ],
+    "file_name": "dfc2025_TrainArea_083.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the direction of the coastline relative to the seawater?",
+    "answer": "A",
+    "candidate": [
+      "A.Left side",
+      "B.Front",
+      "C.Right side",
+      "D.Behind"
+    ],
+    "file_name": "dfc2025_TrainArea_026.json"
+  }
+]

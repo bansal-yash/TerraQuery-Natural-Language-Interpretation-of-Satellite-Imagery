@@ -1,0 +1,12 @@
+{
+  "image": "P2462_0017.png",
+  "boxes": [
+    {
+      "label": "High-resolution Google Earth image displays a rural area with various dirt paths and a clear boundary separating it from adjacent fields. One large vehicle is visible in the bottom-left corner of the image.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    }
+  ]
+}

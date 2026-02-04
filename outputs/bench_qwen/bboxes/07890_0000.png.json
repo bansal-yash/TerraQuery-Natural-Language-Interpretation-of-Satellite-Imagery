@@ -1,0 +1,26 @@
+{
+  "image": "07890_0000.png",
+  "boxes": [
+    {
+      "label": " basketball court",
+      "x1": 198,
+      "y1": 163,
+      "x2": 512,
+      "y2": 474
+    },
+    {
+      "label": " white-covered area",
+      "x1": 5,
+      "y1": 0,
+      "x2": 192,
+      "y2": 215
+    },
+    {
+      "label": " hexagonal-shaped structure with a reddish roof",
+      "x1": 418,
+      "y1": 0,
+      "x2": 512,
+      "y2": 131
+    }
+  ]
+}

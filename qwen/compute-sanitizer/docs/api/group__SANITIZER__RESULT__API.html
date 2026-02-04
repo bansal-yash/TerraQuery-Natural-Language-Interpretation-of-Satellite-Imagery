@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanitizer Result Codes &mdash; compute-sanitizer 12.6 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/omni-style.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/api-styles.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/mermaid-init.js"></script>
+        <script src="../_static/design-tabs.js"></script>
+        <script src="../_static/version.js"></script>
+        <script src="../_static/social-media.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Sanitizer Stream API" href="group__SANITIZER__STREAM__API.html" />
+    <link rel="prev" title="Sanitizer Patching API" href="group__SANITIZER__PATCHING__API.html" />
+ 
+
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+
+<a href="../index.html">
+  <img src="../_static/Logo_and_CUDA.png" class="logo" alt="Logo"/>
+</a>
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../ReleaseNotes/index.html">Release Notes</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tools</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ComputeSanitizer/index.html">Compute Sanitizer</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Interfaces</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../SanitizerApiGuide/index.html">Compute Sanitizer API Reference Manual</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../SanitizerApi/table-of-contents.html">Sanitizer API</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="modules.html">Modules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="group__SANITIZER__BARRIER__API.html">Sanitizer Barrier API</a></li>
+<li class="toctree-l3"><a class="reference internal" href="group__SANITIZER__CALLBACK__API.html">Sanitizer Callback API</a></li>
+<li class="toctree-l3"><a class="reference internal" href="group__SANITIZER__MEMORY__API.html">Sanitizer Memory API</a></li>
+<li class="toctree-l3"><a class="reference internal" href="group__SANITIZER__PATCHING__API.html">Sanitizer Patching API</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Sanitizer Result Codes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#enumerations">Enumerations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#functions">Functions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="group__SANITIZER__STREAM__API.html">Sanitizer Stream API</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="structs.html">Structs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../SanitizerNvtxGuide/index.html">NVTX API for Compute Sanitizer Reference Manual</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Copyright And Licenses</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../CopyrightAndLicenses/index.html">Copyright and Licenses</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">compute-sanitizer</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+
+
+  
+
+<li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+  
+    <li><a href="../SanitizerApi/table-of-contents.html">Sanitizer API</a> &raquo;</li>
+    <li><a href="modules.html">Modules</a> &raquo;</li>
+<li>Sanitizer Result Codes</li>
+
+      <li class="wy-breadcrumbs-aside">
+      </li>
+<li class="wy-breadcrumbs-aside">
+
+
+  <span>v2024.3.0</span>
+
+
+  <span>&nbsp;</span>
+</li>
+
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="sanitizer-result-codes">
+<h1>Sanitizer Result Codes<a class="headerlink" href="#sanitizer-result-codes" title="Permalink to this headline"></a></h1>
+<p id="group__sanitizer__result__api">Error and result codes returned by Sanitizer functions. </p>
+<p class="rubric-h2 rubric">Enumerations</p>
+<div class="dl-as-table docutils container">
+<dl class="simple">
+<dt><a class="reference internal" href="#group__sanitizer__result__api_1ga8edf13e06b1b4001d7577b07ddd575d8"><span class="std std-ref">SanitizerResult</span></a></dt><dd><p>Sanitizer result codes.</p>
+</dd>
+</dl>
+</div>
+<p class="rubric-h2 rubric">Functions</p>
+<div class="dl-as-table docutils container">
+<dl class="simple">
+<dt><span class="tag-as-table-cell">SanitizerResult</span> <a class="reference internal" href="#group__sanitizer__result__api_1ga2be8c36d2401abdfafe8802f71d68223"><span class="std std-ref">sanitizerGetResultString</span></a>(SanitizerResult result, const char **str)</dt><dd><p>Get the descriptive string for a SanitizerResult.</p>
+</dd>
+</dl>
+</div>
+<section id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Permalink to this headline"></a></h2>
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv415SanitizerResult">
+<span id="_CPPv315SanitizerResult"></span><span id="_CPPv215SanitizerResult"></span><span class="target" id="group__sanitizer__result__api_1ga8edf13e06b1b4001d7577b07ddd575d8"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SanitizerResult</span></span></span><a class="headerlink" href="#_CPPv415SanitizerResult" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Sanitizer result codes. </p>
+<p>Error and result codes returned by Sanitizer functions. </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N15SanitizerResult17SANITIZER_SUCCESSE">
+<span id="_CPPv3N15SanitizerResult17SANITIZER_SUCCESSE"></span><span id="_CPPv2N15SanitizerResult17SANITIZER_SUCCESSE"></span><span class="target" id="group__sanitizer__result__api_1gga8edf13e06b1b4001d7577b07ddd575d8a0d35805bafd1be61967646e8fd225e6c"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_SUCCESS</span></span></span><a class="headerlink" href="#_CPPv4N15SanitizerResult17SANITIZER_SUCCESSE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>No error. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N15SanitizerResult33SANITIZER_ERROR_INVALID_PARAMETERE">
+<span id="_CPPv3N15SanitizerResult33SANITIZER_ERROR_INVALID_PARAMETERE"></span><span id="_CPPv2N15SanitizerResult33SANITIZER_ERROR_INVALID_PARAMETERE"></span><span class="target" id="group__sanitizer__result__api_1gga8edf13e06b1b4001d7577b07ddd575d8acd4d5554b11e3a1a7319819984077edb"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_ERROR_INVALID_PARAMETER</span></span></span><a class="headerlink" href="#_CPPv4N15SanitizerResult33SANITIZER_ERROR_INVALID_PARAMETERE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>One or more of the parameters is invalid. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N15SanitizerResult30SANITIZER_ERROR_INVALID_DEVICEE">
+<span id="_CPPv3N15SanitizerResult30SANITIZER_ERROR_INVALID_DEVICEE"></span><span id="_CPPv2N15SanitizerResult30SANITIZER_ERROR_INVALID_DEVICEE"></span><span class="target" id="group__sanitizer__result__api_1gga8edf13e06b1b4001d7577b07ddd575d8aba2cb91f407560b1014cd67c4c24502b"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_ERROR_INVALID_DEVICE</span></span></span><a class="headerlink" href="#_CPPv4N15SanitizerResult30SANITIZER_ERROR_INVALID_DEVICEE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The device does not correspond to a valid CUDA device. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N15SanitizerResult31SANITIZER_ERROR_INVALID_CONTEXTE">
+<span id="_CPPv3N15SanitizerResult31SANITIZER_ERROR_INVALID_CONTEXTE"></span><span id="_CPPv2N15SanitizerResult31SANITIZER_ERROR_INVALID_CONTEXTE"></span><span class="target" id="group__sanitizer__result__api_1gga8edf13e06b1b4001d7577b07ddd575d8a099362bd6bf2807f3785cc2adeb0738f"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_ERROR_INVALID_CONTEXT</span></span></span><a class="headerlink" href="#_CPPv4N15SanitizerResult31SANITIZER_ERROR_INVALID_CONTEXTE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The context is NULL or not valid. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N15SanitizerResult33SANITIZER_ERROR_INVALID_DOMAIN_IDE">
+<span id="_CPPv3N15SanitizerResult33SANITIZER_ERROR_INVALID_DOMAIN_IDE"></span><span id="_CPPv2N15SanitizerResult33SANITIZER_ERROR_INVALID_DOMAIN_IDE"></span><span class="target" id="group__sanitizer__result__api_1gga8edf13e06b1b4001d7577b07ddd575d8a05198bb6cc6d272e8557b8f872fe7519"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_ERROR_INVALID_DOMAIN_ID</span></span></span><a class="headerlink" href="#_CPPv4N15SanitizerResult33SANITIZER_ERROR_INVALID_DOMAIN_IDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The domain ID is invalid. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N15SanitizerResult35SANITIZER_ERROR_INVALID_CALLBACK_IDE">
+<span id="_CPPv3N15SanitizerResult35SANITIZER_ERROR_INVALID_CALLBACK_IDE"></span><span id="_CPPv2N15SanitizerResult35SANITIZER_ERROR_INVALID_CALLBACK_IDE"></span><span class="target" id="group__sanitizer__result__api_1gga8edf13e06b1b4001d7577b07ddd575d8a8036a4af0fc5e632471bb0dd25376748"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_ERROR_INVALID_CALLBACK_ID</span></span></span><a class="headerlink" href="#_CPPv4N15SanitizerResult35SANITIZER_ERROR_INVALID_CALLBACK_IDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The callback ID is invalid. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N15SanitizerResult33SANITIZER_ERROR_INVALID_OPERATIONE">
+<span id="_CPPv3N15SanitizerResult33SANITIZER_ERROR_INVALID_OPERATIONE"></span><span id="_CPPv2N15SanitizerResult33SANITIZER_ERROR_INVALID_OPERATIONE"></span><span class="target" id="group__sanitizer__result__api_1gga8edf13e06b1b4001d7577b07ddd575d8a6d773b203970ec61a9d11926e3a430f5"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_ERROR_INVALID_OPERATION</span></span></span><a class="headerlink" href="#_CPPv4N15SanitizerResult33SANITIZER_ERROR_INVALID_OPERATIONE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The current operation cannot be performed due to dependency on other factors. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N15SanitizerResult29SANITIZER_ERROR_OUT_OF_MEMORYE">
+<span id="_CPPv3N15SanitizerResult29SANITIZER_ERROR_OUT_OF_MEMORYE"></span><span id="_CPPv2N15SanitizerResult29SANITIZER_ERROR_OUT_OF_MEMORYE"></span><span class="target" id="group__sanitizer__result__api_1gga8edf13e06b1b4001d7577b07ddd575d8a03d40e5d6c13e7f2e076373523d94db9"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_ERROR_OUT_OF_MEMORY</span></span></span><a class="headerlink" href="#_CPPv4N15SanitizerResult29SANITIZER_ERROR_OUT_OF_MEMORYE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Unable to allocate enough memory to perform the requested operation. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N15SanitizerResult45SANITIZER_ERROR_PARAMETER_SIZE_NOT_SUFFICIENTE">
+<span id="_CPPv3N15SanitizerResult45SANITIZER_ERROR_PARAMETER_SIZE_NOT_SUFFICIENTE"></span><span id="_CPPv2N15SanitizerResult45SANITIZER_ERROR_PARAMETER_SIZE_NOT_SUFFICIENTE"></span><span class="target" id="group__sanitizer__result__api_1gga8edf13e06b1b4001d7577b07ddd575d8a81fd28c0b2fa0e100db9197e472a9273"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_ERROR_PARAMETER_SIZE_NOT_SUFFICIENT</span></span></span><a class="headerlink" href="#_CPPv4N15SanitizerResult45SANITIZER_ERROR_PARAMETER_SIZE_NOT_SUFFICIENTE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The output buffer size is not sufficient to return all requested data. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N15SanitizerResult35SANITIZER_ERROR_API_NOT_IMPLEMENTEDE">
+<span id="_CPPv3N15SanitizerResult35SANITIZER_ERROR_API_NOT_IMPLEMENTEDE"></span><span id="_CPPv2N15SanitizerResult35SANITIZER_ERROR_API_NOT_IMPLEMENTEDE"></span><span class="target" id="group__sanitizer__result__api_1gga8edf13e06b1b4001d7577b07ddd575d8a6f85fe9b42de6be2a8e252503f4bb610"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_ERROR_API_NOT_IMPLEMENTED</span></span></span><a class="headerlink" href="#_CPPv4N15SanitizerResult35SANITIZER_ERROR_API_NOT_IMPLEMENTEDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>API is not implemented. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N15SanitizerResult33SANITIZER_ERROR_MAX_LIMIT_REACHEDE">
+<span id="_CPPv3N15SanitizerResult33SANITIZER_ERROR_MAX_LIMIT_REACHEDE"></span><span id="_CPPv2N15SanitizerResult33SANITIZER_ERROR_MAX_LIMIT_REACHEDE"></span><span class="target" id="group__sanitizer__result__api_1gga8edf13e06b1b4001d7577b07ddd575d8a9fa172f3d65a626b00de9aba23d2c28f"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_ERROR_MAX_LIMIT_REACHED</span></span></span><a class="headerlink" href="#_CPPv4N15SanitizerResult33SANITIZER_ERROR_MAX_LIMIT_REACHEDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The maximum limit is reached. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N15SanitizerResult25SANITIZER_ERROR_NOT_READYE">
+<span id="_CPPv3N15SanitizerResult25SANITIZER_ERROR_NOT_READYE"></span><span id="_CPPv2N15SanitizerResult25SANITIZER_ERROR_NOT_READYE"></span><span class="target" id="group__sanitizer__result__api_1gga8edf13e06b1b4001d7577b07ddd575d8a5fbbbe4e2fb2e3f0c00ea1a295fa8b2a"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_ERROR_NOT_READY</span></span></span><a class="headerlink" href="#_CPPv4N15SanitizerResult25SANITIZER_ERROR_NOT_READYE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The object is not ready to perform the requested operation. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N15SanitizerResult30SANITIZER_ERROR_NOT_COMPATIBLEE">
+<span id="_CPPv3N15SanitizerResult30SANITIZER_ERROR_NOT_COMPATIBLEE"></span><span id="_CPPv2N15SanitizerResult30SANITIZER_ERROR_NOT_COMPATIBLEE"></span><span class="target" id="group__sanitizer__result__api_1gga8edf13e06b1b4001d7577b07ddd575d8a1a5d801b3160f678426b169f6810290f"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_ERROR_NOT_COMPATIBLE</span></span></span><a class="headerlink" href="#_CPPv4N15SanitizerResult30SANITIZER_ERROR_NOT_COMPATIBLEE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The current operation is not compatible with the current state of the object. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N15SanitizerResult31SANITIZER_ERROR_NOT_INITIALIZEDE">
+<span id="_CPPv3N15SanitizerResult31SANITIZER_ERROR_NOT_INITIALIZEDE"></span><span id="_CPPv2N15SanitizerResult31SANITIZER_ERROR_NOT_INITIALIZEDE"></span><span class="target" id="group__sanitizer__result__api_1gga8edf13e06b1b4001d7577b07ddd575d8a4f2507a514257be5dd447f8c659594c1"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_ERROR_NOT_INITIALIZED</span></span></span><a class="headerlink" href="#_CPPv4N15SanitizerResult31SANITIZER_ERROR_NOT_INITIALIZEDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Sanitizer is unable to initialize its connection to the CUDA driver. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N15SanitizerResult29SANITIZER_ERROR_NOT_SUPPORTEDE">
+<span id="_CPPv3N15SanitizerResult29SANITIZER_ERROR_NOT_SUPPORTEDE"></span><span id="_CPPv2N15SanitizerResult29SANITIZER_ERROR_NOT_SUPPORTEDE"></span><span class="target" id="group__sanitizer__result__api_1gga8edf13e06b1b4001d7577b07ddd575d8ae5c22c74893c834db40403e82703776e"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_ERROR_NOT_SUPPORTED</span></span></span><a class="headerlink" href="#_CPPv4N15SanitizerResult29SANITIZER_ERROR_NOT_SUPPORTEDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The attempted operation is not supported on the current system or device. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N15SanitizerResult44SANITIZER_ERROR_ADDRESS_NOT_IN_DEVICE_MEMORYE">
+<span id="_CPPv3N15SanitizerResult44SANITIZER_ERROR_ADDRESS_NOT_IN_DEVICE_MEMORYE"></span><span id="_CPPv2N15SanitizerResult44SANITIZER_ERROR_ADDRESS_NOT_IN_DEVICE_MEMORYE"></span><span class="target" id="group__sanitizer__result__api_1gga8edf13e06b1b4001d7577b07ddd575d8a53c91ef50d49c3a7e9432d5a572c461b"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_ERROR_ADDRESS_NOT_IN_DEVICE_MEMORY</span></span></span><a class="headerlink" href="#_CPPv4N15SanitizerResult44SANITIZER_ERROR_ADDRESS_NOT_IN_DEVICE_MEMORYE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The attempted device operation has a parameter not in device memory. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N15SanitizerResult23SANITIZER_ERROR_UNKNOWNE">
+<span id="_CPPv3N15SanitizerResult23SANITIZER_ERROR_UNKNOWNE"></span><span id="_CPPv2N15SanitizerResult23SANITIZER_ERROR_UNKNOWNE"></span><span class="target" id="group__sanitizer__result__api_1gga8edf13e06b1b4001d7577b07ddd575d8adb0b62151593c6aff67023f6719ef6fd"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_ERROR_UNKNOWN</span></span></span><a class="headerlink" href="#_CPPv4N15SanitizerResult23SANITIZER_ERROR_UNKNOWNE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>An unknown internal error has occurred. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N15SanitizerResult25SANITIZER_ERROR_FORCE_INTE">
+<span id="_CPPv3N15SanitizerResult25SANITIZER_ERROR_FORCE_INTE"></span><span id="_CPPv2N15SanitizerResult25SANITIZER_ERROR_FORCE_INTE"></span><span class="target" id="group__sanitizer__result__api_1gga8edf13e06b1b4001d7577b07ddd575d8a2c43abc37b2b089d7db321de77aee044"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_ERROR_FORCE_INT</span></span></span><a class="headerlink" href="#_CPPv4N15SanitizerResult25SANITIZER_ERROR_FORCE_INTE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline"></a></h2>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv424sanitizerGetResultString15SanitizerResultPPKc">
+<span id="_CPPv324sanitizerGetResultString15SanitizerResultPPKc"></span><span id="_CPPv224sanitizerGetResultString15SanitizerResultPPKc"></span><span id="sanitizerGetResultString__SanitizerResult.cCPP"></span><span class="target" id="group__sanitizer__result__api_1ga2be8c36d2401abdfafe8802f71d68223"></span><a class="reference internal" href="#_CPPv415SanitizerResult" title="SanitizerResult"><span class="n"><span class="pre">SanitizerResult</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sanitizerGetResultString</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv415SanitizerResult" title="SanitizerResult"><span class="n"><span class="pre">SanitizerResult</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">result</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">str</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv424sanitizerGetResultString15SanitizerResultPPKc" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Get the descriptive string for a SanitizerResult. </p>
+<p>Return the descriptive string for a SanitizerResult in <code class="docutils literal notranslate"><span class="pre">*str</span></code>. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Thread-safety</strong>: this function is thread-safe.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>result</strong> – The result to get the string for </p></li>
+<li><p><strong>str</strong> – Returns the string</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return values</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>SANITIZER_SUCCESS</strong> – on success </p></li>
+<li><p><strong>SANITIZER_ERROR_INVALID_PARAMETER</strong> – if <code class="docutils literal notranslate"><span class="pre">str</span></code> is NULL or <code class="docutils literal notranslate"><span class="pre">result</span></code> is not a valid SanitizerResult. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+<img src="../_static/NVIDIA-LogoBlack.svg" class="only-light"/>
+<img src="../_static/NVIDIA-LogoWhite.svg" class="only-dark"/>
+
+<p class="notices">
+<a href="https://www.nvidia.com/en-us/about-nvidia/privacy-policy/" target="_blank">Privacy Policy</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/privacy-center/" target="_blank">Manage My Privacy</a>
+|
+<a href="https://www.nvidia.com/en-us/preferences/start/" target="_blank">Do Not Sell or Share My Data</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/terms-of-service/" target="_blank">Terms of Service</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/accessibility/" target="_blank">Accessibility</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/company-policies/" target="_blank">Corporate Policies</a>
+|
+<a href="https://www.nvidia.com/en-us/product-security/" target="_blank">Product Security</a>
+|
+<a href="https://www.nvidia.com/en-us/contact/" target="_blank">Contact</a>
+</p>
+
+<p>
+  Copyright &#169; 2019-2024, NVIDIA Corporation &amp; Affiliates. All rights reserved.
+</p>
+
+    <p>
+      <span class="lastupdated">Last updated on Jul 11, 2024.
+      </span></p>
+
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+ 
+
+
+
+</body>
+</html>

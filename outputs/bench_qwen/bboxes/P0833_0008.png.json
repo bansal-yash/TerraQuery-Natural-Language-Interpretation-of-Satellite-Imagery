@@ -1,0 +1,40 @@
+{
+  "image": "P0833_0008.png",
+  "boxes": [
+    {
+      "label": "athletic field",
+      "x1": 0,
+      "y1": 313,
+      "x2": 424,
+      "y2": 512
+    },
+    {
+      "label": "running track",
+      "x1": 0,
+      "y1": 182,
+      "x2": 424,
+      "y2": 512
+    },
+    {
+      "label": "red inner field",
+      "x1": 0,
+      "y1": 259,
+      "x2": 249,
+      "y2": 489
+    },
+    {
+      "label": "grey outer path",
+      "x1": 0,
+      "y1": 182,
+      "x2": 424,
+      "y2": 512
+    },
+    {
+      "label": "basketball court",
+      "x1": 350,
+      "y1": 9,
+      "x2": 510,
+      "y2": 163
+    }
+  ]
+}

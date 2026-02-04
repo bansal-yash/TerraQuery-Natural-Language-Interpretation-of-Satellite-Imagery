@@ -1,0 +1,68 @@
+{
+  "image": "P1384_0099.png",
+  "boxes": [
+    {
+      "label": "warehouse",
+      "x1": 0,
+      "y1": 18,
+      "x2": 210,
+      "y2": 172
+    },
+    {
+      "label": "warehouse",
+      "x1": 0,
+      "y1": 198,
+      "x2": 181,
+      "y2": 354
+    },
+    {
+      "label": "warehouse",
+      "x1": 181,
+      "y1": 251,
+      "x2": 402,
+      "y2": 413
+    },
+    {
+      "label": "warehouse",
+      "x1": 224,
+      "y1": 61,
+      "x2": 431,
+      "y2": 198
+    },
+    {
+      "label": "small, circular storage tank",
+      "x1": 233,
+      "y1": 192,
+      "x2": 262,
+      "y2": 217
+    },
+    {
+      "label": "small roundabout",
+      "x1": 402,
+      "y1": 438,
+      "x2": 474,
+      "y2": 510
+    },
+    {
+      "label": "parking lot",
+      "x1": 0,
+      "y1": 326,
+      "x2": 121,
+      "y2": 510
+    },
+    {
+      "label": "parking lot",
+      "x1": 303,
+      "y1": 198,
+      "x2": 448,
+      "y2": 249
+    },
+    {
+      "label": "parking lot",
+      "x1": 397,
+      "y1": 123,
+      "x2": 457,
+      "y2": 198
+    }
+  ]
+}

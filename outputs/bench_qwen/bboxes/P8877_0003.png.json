@@ -1,0 +1,33 @@
+{
+  "image": "P8877_0003.png",
+  "boxes": [
+    {
+      "label": "small vehicle parked by the side of the road",
+      "x1": 58,
+      "y1": 375,
+      "x2": 80,
+      "y2": 413
+    },
+    {
+      "label": "another small vehicle in a parking space",
+      "x1": 153,
+      "y1": 72,
+      "x2": 168,
+      "y2": 94
+    },
+    {
+      "label": "smaller swimming pool",
+      "x1": 223,
+      "y1": 331,
+      "x2": 265,
+      "y2": 371
+    },
+    {
+      "label": "slightly larger swimming pool",
+      "x1": 296,
+      "y1": 180,
+      "x2": 344,
+      "y2": 218
+    }
+  ]
+}

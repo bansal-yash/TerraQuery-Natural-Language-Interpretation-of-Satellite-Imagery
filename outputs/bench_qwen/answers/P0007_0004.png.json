@@ -1,0 +1,45 @@
+{
+  "image": "P0007_0004.png",
+  "answers": [
+    {
+      "question_id": 10,
+      "question": "What is the predominant color of the large vehicles?",
+      "answer": "system You"
+    },
+    {
+      "question_id": 11,
+      "question": "How are the large vehicles predominantly arranged in the parking lot?",
+      "answer": "system You"
+    },
+    {
+      "question_id": 12,
+      "question": "Are there any large vehicles that are positioned away from the main cluster?",
+      "answer": "system You"
+    },
+    {
+      "question_id": 13,
+      "question": "What is the orientation of the large vehicles in the parking lot?",
+      "answer": "system You"
+    },
+    {
+      "question_id": 10,
+      "question": "What is the predominant color of the large vehicles?",
+      "answer": "white"
+    },
+    {
+      "question_id": 11,
+      "question": "How are the large vehicles predominantly arranged in the parking lot?",
+      "answer": "parallel"
+    },
+    {
+      "question_id": 12,
+      "question": "Are there any large vehicles that are positioned away from the main cluster?",
+      "answer": "yes"
+    },
+    {
+      "question_id": 13,
+      "question": "What is the orientation of the large vehicles in the parking lot?",
+      "answer": "vertical"
+    }
+  ]
+}

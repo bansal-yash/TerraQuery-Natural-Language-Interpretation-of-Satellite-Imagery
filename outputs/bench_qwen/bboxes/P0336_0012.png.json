@@ -1,0 +1,19 @@
+{
+  "image": "P0336_0012.png",
+  "boxes": [
+    {
+      "label": "house with a dark rooftop surrounded by greenery",
+      "x1": 123,
+      "y1": 136,
+      "x2": 291,
+      "y2": 281
+    },
+    {
+      "label": "small dark vehicle parked on a driveway to the top right of the house",
+      "x1": 388,
+      "y1": 56,
+      "x2": 412,
+      "y2": 111
+    }
+  ]
+}

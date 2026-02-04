@@ -1,0 +1,40 @@
+{
+  "image": "P0402_0002.png",
+  "boxes": [
+    {
+      "label": "baseball diamond",
+      "x1": 284,
+      "y1": 8,
+      "x2": 510,
+      "y2": 213
+    },
+    {
+      "label": "tennis courts",
+      "x1": 0,
+      "y1": 65,
+      "x2": 156,
+      "y2": 187
+    },
+    {
+      "label": "tennis courts",
+      "x1": 0,
+      "y1": 182,
+      "x2": 193,
+      "y2": 315
+    },
+    {
+      "label": "tennis courts",
+      "x1": 0,
+      "y1": 303,
+      "x2": 231,
+      "y2": 436
+    },
+    {
+      "label": "tennis courts",
+      "x1": 68,
+      "y1": 421,
+      "x2": 266,
+      "y2": 512
+    }
+  ]
+}

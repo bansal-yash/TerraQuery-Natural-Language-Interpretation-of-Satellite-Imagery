@@ -1,0 +1,54 @@
+{
+  "image": "P1384_0030.png",
+  "boxes": [
+    {
+      "label": "houses",
+      "x1": 0,
+      "y1": 70,
+      "x2": 510,
+      "y2": 510
+    },
+    {
+      "label": "well-maintained lawns",
+      "x1": 0,
+      "y1": 349,
+      "x2": 216,
+      "y2": 510
+    },
+    {
+      "label": "rooftops",
+      "x1": 0,
+      "y1": 70,
+      "x2": 510,
+      "y2": 510
+    },
+    {
+      "label": "curving residential streets",
+      "x1": 0,
+      "y1": 70,
+      "x2": 510,
+      "y2": 510
+    },
+    {
+      "label": "roundabout",
+      "x1": 361,
+      "y1": 208,
+      "x2": 387,
+      "y2": 227
+    },
+    {
+      "label": "small swimming pool",
+      "x1": 167,
+      "y1": 256,
+      "x2": 185,
+      "y2": 274
+    },
+    {
+      "label": "swimming pool",
+      "x1": 413,
+      "y1": 489,
+      "x2": 431,
+      "y2": 505
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "image": "06646_0000.png",
+  "boxes": [
+    {
+      "label": "river",
+      "x1": 265,
+      "y1": 80,
+      "x2": 438,
+      "y2": 510
+    },
+    {
+      "label": "expressway service area",
+      "x1": 131,
+      "y1": 73,
+      "x2": 251,
+      "y2": 198
+    },
+    {
+      "label": "expressway service area",
+      "x1": 374,
+      "y1": 256,
+      "x2": 432,
+      "y2": 384
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+conda create -n qwen python=3.10 -y
+pip install torch==2.7.0 torchvision==0.22.0 torchaudio==2.7.0
+pip install transformers==4.57.0
+pip install pydantic fastapi uvicorn
+pip install opencv-python
+pip install langchain==1.1.0 langgraph==1.0.4
+

@@ -1,0 +1,12 @@
+{
+  "image": "08589_0000.png",
+  "boxes": [
+    {
+      "label": "blue-colored rectangular covered area",
+      "x1": 170,
+      "y1": 208,
+      "x2": 247,
+      "y2": 282
+    }
+  ]
+}

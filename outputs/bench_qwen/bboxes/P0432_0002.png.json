@@ -1,0 +1,33 @@
+{
+  "image": "P0432_0002.png",
+  "boxes": [
+    {
+      "label": "two small ships",
+      "x1": 101,
+      "y1": 411,
+      "x2": 146,
+      "y2": 448
+    },
+    {
+      "label": "small-sized swimming pool",
+      "x1": 425,
+      "y1": 160,
+      "x2": 450,
+      "y2": 179
+    },
+    {
+      "label": "two harbors",
+      "x1": 22,
+      "y1": 324,
+      "x2": 63,
+      "y2": 367
+    },
+    {
+      "label": "two harbors",
+      "x1": 258,
+      "y1": 310,
+      "x2": 324,
+      "y2": 369
+    }
+  ]
+}

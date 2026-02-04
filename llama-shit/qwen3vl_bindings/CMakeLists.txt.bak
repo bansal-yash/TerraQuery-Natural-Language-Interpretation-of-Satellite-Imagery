@@ -1,0 +1,46 @@
+cmake_minimum_required(VERSION 3.18)
+project(qwen3vl_native)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+
+# Find Python + PyBind11
+find_package(Python REQUIRED COMPONENTS Development)
+find_package(pybind11 REQUIRED)
+
+# Path to llama.cpp
+set(LLAMA_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../llama.cpp")
+set(LLAMA_INCLUDE "${LLAMA_DIR}/include")
+set(MTMD_INCLUDE "${LLAMA_DIR}/tools/mtmd")
+set(LLAMA_LIB_DIR "${LLAMA_DIR}/build/bin")
+
+include_directories(
+    ${LLAMA_INCLUDE}
+    ${MTMD_INCLUDE}
+)
+
+# Native libraries from llama.cpp build
+find_library(LLAMA_LIB NAMES llama libllama PATHS ${LLAMA_LIB_DIR} REQUIRED)
+find_library(MTMD_LIB  NAMES mtmd  libmtmd  PATHS ${LLAMA_LIB_DIR} REQUIRED)
+find_library(GGML_LIB  NAMES ggml  libggml  PATHS ${LLAMA_LIB_DIR} REQUIRED)
+find_library(GGML_CUDA_LIB NAMES ggml-cuda libggml-cuda PATHS ${LLAMA_LIB_DIR})
+
+# Image loader library (your file is std_image.*)
+add_library(std_image STATIC std_image.c)
+target_include_directories(std_image PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+
+# Build python extension
+pybind11_add_module(qwen3vl py_qwen3vl.cpp)
+
+target_link_libraries(qwen3vl
+    PRIVATE
+    ${LLAMA_LIB}
+    ${MTMD_LIB}
+    ${GGML_LIB}
+    std_image
+)
+
+# Optional: CUDA backend if available
+if (GGML_CUDA_LIB)
+    target_link_libraries(qwen3vl PRIVATE ${GGML_CUDA_LIB})
+endif

@@ -1,0 +1,12 @@
+{
+  "image": "08122_0000.png",
+  "boxes": [
+    {
+      "label": "Aerial view of a recreational area from GoogleEarth featuring a single large baseball field with a diamond-shaped infield and an adjacent grassy outfield.",
+      "x1": 82,
+      "y1": 280,
+      "x2": 338,
+      "y2": 510
+    }
+  ]
+}

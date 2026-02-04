@@ -1,0 +1,277 @@
+// py_qwen3vl_patched.cpp
+// Patched pybind11 wrapper for qwen3vl mtmd helper functions.
+// - safer capsule lifetime (no automatic double-free)
+// - free_handle(handle) that disables capsule destructor and prevents double free
+// - reset_context(handle): reinitialize only the llama_context (faster than reloading model)
+// - optional verbose flag to control logging
+// - defensive gpu layer handling and KV offload enabled
+
+#include <pybind11/pybind11.h>
+#include <pybind11/stl.h>
+#include <cstdio>
+#include <cstdlib>
+#include <cstring>
+#include <iostream>
+#include <memory>
+#include <vector>
+#include <string>
+
+extern "C" {
+#include "../llama.cpp/include/llama.h"
+}
+#include "../llama.cpp/tools/mtmd/mtmd.h"
+#include "../llama.cpp/tools/mtmd/mtmd-helper.h"
+
+namespace py = pybind11;
+
+struct QwenHandle {
+    llama_model *model = nullptr;
+    llama_context *ctx = nullptr;
+    mtmd_context *vctx = nullptr;
+    // keep model/mmproj paths for debugging
+    std::string model_path;
+    std::string mmproj_path;
+    // saved params to re-create ctx quickly
+    llama_context_params cp_saved;
+    llama_model_params mp_saved;
+    bool verbose = false;
+};
+
+static void free_handle(QwenHandle *h) {
+    if (!h) return;
+    if (h->vctx) mtmd_free(h->vctx);
+    if (h->ctx) llama_free(h->ctx);
+    if (h->model) llama_model_free(h->model);
+    delete h;
+}
+
+static QwenHandle* load_model_and_mmproj(const std::string &model_path,
+                                         const std::string &mmproj_path,
+                                         int n_gpu_layers = -1,
+                                         int n_threads = 8,
+                                         bool verbose = false) {
+    // initialize backend once per process
+    llama_backend_init();
+
+    // model params (follow gpu_test pattern)
+    llama_model_params mp = llama_model_default_params();
+    // if user passed negative, request all available layers for GPU offload
+    mp.n_gpu_layers = (n_gpu_layers < 0 ? 9999 : n_gpu_layers);
+    mp.use_extra_bufts = true;
+    mp.split_mode = LLAMA_SPLIT_MODE_ROW;
+    mp.no_host = false; // ensure hybrid host buffers allowed
+
+    // set a default tensor split across devices if available
+    size_t ndev = llama_max_devices();
+    std::vector<float> tensor_split;
+    if (ndev > 0) {
+        tensor_split.assign(ndev, 1.0f);
+        mp.tensor_split = tensor_split.data();
+    } else {
+        mp.tensor_split = nullptr;
+    }
+
+    QwenHandle *h = new QwenHandle();
+    h->model_path = model_path;
+    h->mmproj_path = mmproj_path;
+    h->verbose = verbose;
+    h->mp_saved = mp; // copy
+
+    // load model
+    h->model = llama_model_load_from_file(model_path.c_str(), mp);
+    if (!h->model) {
+        delete h;
+        throw std::runtime_error("Failed to load model");
+    }
+
+    // context params
+    llama_context_params cp = llama_context_default_params();
+    cp.n_threads = n_threads;
+    cp.n_threads_batch = n_threads;
+    // enable KV offload where helpful for large models
+    cp.offload_kqv = true;
+    cp.kv_unified = true;
+    cp.flash_attn_type = LLAMA_FLASH_ATTN_TYPE_AUTO;
+    // ensure context will try to use GPU layers according to model params
+    // some llama.cpp versions don't have cp.n_gpu_layers; it's OK — model mp controls most behavior
+#ifdef LLAMA_HAVE_CP_N_GPU_LAYERS
+    cp.n_gpu_layers = mp.n_gpu_layers;
+#endif
+
+    h->ctx = llama_init_from_model(h->model, cp);
+    if (!h->ctx) {
+        llama_model_free(h->model);
+        delete h;
+        throw std::runtime_error("Failed to init llama context");
+    }
+
+    // save context params so we can recreate ctx quickly later
+    h->cp_saved = cp;
+
+    // mtmd params
+    mtmd_context_params vparams = mtmd_context_params_default();
+    vparams.use_gpu = true;
+    vparams.n_threads = n_threads;
+    vparams.media_marker = mtmd_default_marker();
+
+    h->vctx = mtmd_init_from_file(mmproj_path.c_str(), h->model, vparams);
+    if (!h->vctx) {
+        llama_free(h->ctx);
+        llama_model_free(h->model);
+        delete h;
+        throw std::runtime_error("Failed to init mtmd context (mmproj)");
+    }
+
+    return h;
+}
+
+static std::string infer_with_retries(QwenHandle *h,
+                                      const std::string &image_path,
+                                      const std::string &prompt,
+                                      int requested_n_batch,
+                                      int max_new_tokens) {
+    if (!h) throw std::runtime_error("Handle is null");
+
+    // load image using helper (same as CLI) -- returns mtmd_bitmap*
+    mtmd_bitmap *bmp = mtmd_helper_bitmap_init_from_file(h->vctx, image_path.c_str());
+    if (!bmp) {
+        // fallback: small grey patch
+        std::vector<unsigned char> grey(32 * 32 * 3, 128);
+        bmp = mtmd_bitmap_init(32, 32, grey.data());
+        if (!bmp) throw std::runtime_error("Failed to create fallback bitmap");
+    }
+
+    // prepare prompt with marker
+    std::string marker = mtmd_default_marker();
+    std::string prompt_full;
+    prompt_full += "<|im_start|>user\n";
+    prompt_full += marker + "\n";
+    prompt_full += prompt + "\n";
+    prompt_full += "<|im_end|>\n";
+    prompt_full += "<|im_start|>assistant\n";
+
+    mtmd_input_chunks *chunks = mtmd_input_chunks_init();
+    if (!chunks) {
+        mtmd_bitmap_free(bmp);
+        throw std::runtime_error("mtmd_input_chunks_init failed");
+    }
+
+    mtmd_input_text txt;
+    txt.text = prompt_full.c_str();
+    txt.add_special = true;
+    txt.parse_special = true;
+
+    const mtmd_bitmap *bmps[1] = { bmp };
+
+    int32_t rc = mtmd_tokenize(h->vctx, chunks, &txt, bmps, 1);
+    if (rc != 0) {
+        mtmd_input_chunks_free(chunks);
+        mtmd_bitmap_free(bmp);
+        throw std::runtime_error(std::string("mtmd_tokenize failed: ") + std::to_string(rc));
+    }
+
+    // choose initial batch
+    size_t total_tokens = mtmd_helper_get_n_tokens(chunks);
+    int n_batch = requested_n_batch;
+    if (n_batch <= 0) n_batch = 64; // safe default
+    if ((size_t)n_batch > total_tokens) n_batch = (int)std::max<size_t>(1, total_tokens);
+
+    // Retry loop: if eval fails due to memory/slot, halve the batch and retry.
+    llama_pos new_n_past = 0;
+    int last_rc = -1;
+    while (n_batch >= 1) {
+        rc = mtmd_helper_eval_chunks(h->vctx, h->ctx, chunks,
+                                     0 /* n_past */,
+                                     0 /* seq_id */,
+                                     n_batch /* n_batch */,
+                                     true /* logits_last */,
+                                     &new_n_past);
+        last_rc = rc;
+        if (rc == 0) break;
+        // if failed due to memory slot, reduce batch and retry.
+        if (h->verbose) std::cerr << "[warn] mtmd_helper_eval_chunks failed: " << rc << ", retrying with n_batch=" << std::max(1, n_batch/2) << "\n";
+        if (n_batch == 1) break;
+        int new_batch = std::max(1, n_batch / 2);
+        n_batch = new_batch;
+    }
+
+    if (last_rc != 0) {
+        mtmd_input_chunks_free(chunks);
+        mtmd_bitmap_free(bmp);
+        throw std::runtime_error(std::string("mtmd_helper_eval_chunks failed after retries: ") + std::to_string(last_rc));
+    }
+
+    // Sampling: simple greedy/topk chain like CLI, produce up to max_new_tokens
+    auto sparams = llama_sampler_chain_default_params();
+    struct llama_sampler *sampler = llama_sampler_chain_init(sparams);
+    llama_sampler_chain_add(sampler, llama_sampler_init_top_k(40));
+    llama_sampler_chain_add(sampler, llama_sampler_init_top_p(0.9f, 1));
+    llama_sampler_chain_add(sampler, llama_sampler_init_temp(0.8f));
+    llama_sampler_chain_add(sampler, llama_sampler_init_greedy());
+
+    const struct llama_vocab *vocab = llama_model_get_vocab(h->model);
+    std::string output;
+    for (int step = 0; step < max_new_tokens; ++step) {
+        llama_token tok = llama_sampler_sample(sampler, h->ctx, -1);
+        if (llama_vocab_is_eog(vocab, tok)) break;
+        char piece[1024];
+        int32_t piece_len = llama_token_to_piece(vocab, tok, piece, (int32_t)sizeof(piece), 0, true);
+        if (piece_len > 0) output.append(piece, piece_len);
+        struct llama_batch b = llama_batch_get_one(&tok, 1);
+        if (llama_decode(h->ctx, b) != 0) {
+            llama_batch_free(b);
+            break;
+        }
+    }
+
+    if (sampler) llama_sampler_free(sampler);
+    mtmd_input_chunks_free(chunks);
+    mtmd_bitmap_free(bmp);
+
+    return output;
+}
+
+PYBIND11_MODULE(qwen_mtmd, m) {
+    m.doc() = "Qwen3-VL mtmd binding (patched)";
+
+    py::class_<QwenHandle>(m, "QwenHandle")
+        .def(py::init<>());
+
+    // load returns a capsule WITHOUT a destructor; Python must call free_handle(handle)
+    m.def("load", [](const std::string &model_path, const std::string &mmproj_path, int n_gpu_layers, int n_threads, bool verbose) {
+        QwenHandle *h = load_model_and_mmproj(model_path, mmproj_path, n_gpu_layers, n_threads, verbose);
+        // return as a capsule WITHOUT destructor to avoid double-free by both user and capsule
+        return py::capsule(h);
+    }, py::arg("model_path"), py::arg("mmproj_path"), py::arg("n_gpu_layers") = -1, py::arg("n_threads") = 8, py::arg("verbose") = false,
+       "Load model and mmproj, returning a capsule handle (call free_handle(handle) when done)");
+
+    m.def("infer", [](py::capsule handle,
+                      const std::string &image_path,
+                      const std::string &prompt,
+                      int n_batch,
+                      int max_new_tokens) {
+        QwenHandle *h = reinterpret_cast<QwenHandle*>(handle.get_pointer());
+        if (!h) throw std::runtime_error("Invalid handle");
+        return infer_with_retries(h, image_path, prompt, n_batch, max_new_tokens);
+    }, py::arg("handle"), py::arg("image_path"), py::arg("prompt"), py::arg("n_batch") = 64, py::arg("max_new_tokens") = 128,
+       "Run inference with fallback/halving on batch-memory failures");
+
+    // safe free_handle: free resources and null out capsule pointer
+    m.def("free_handle", [](py::capsule handle) {
+        QwenHandle *h = reinterpret_cast<QwenHandle*>(handle.get_pointer());
+        if (!h) return;
+        free_handle(h);
+        // null out the capsule so future calls are safe
+        handle.set_pointer(nullptr);
+    }, py::arg("handle"), "Safely free the QwenHandle (do this once)");
+
+    // reset_context: free and recreate h->ctx using saved params (faster than reloading model)
+    m.def("reset_context", [](py::capsule handle) {
+        QwenHandle *h = reinterpret_cast<QwenHandle*>(handle.get_pointer());
+        if (!h) throw std::runtime_error("Invalid handle");
+        if (h->ctx) llama_free(h->ctx);
+        h->ctx = llama_init_from_model(h->model, h->cp_saved);
+        if (!h->ctx) throw std::runtime_error("Failed to re-init llama context");
+    }, py::arg("handle"), "Reset only the llama context (clears KV cache)");
+
+}

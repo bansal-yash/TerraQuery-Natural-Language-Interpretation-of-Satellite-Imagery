@@ -1,0 +1,33 @@
+{
+  "image": "P0382_0007.png",
+  "boxes": [
+    {
+      "label": "tennis court",
+      "x1": 0,
+      "y1": 80,
+      "x2": 151,
+      "y2": 413
+    },
+    {
+      "label": "baseball diamond",
+      "x1": 230,
+      "y1": 19,
+      "x2": 453,
+      "y2": 234
+    },
+    {
+      "label": "seating areas",
+      "x1": 136,
+      "y1": 86,
+      "x2": 166,
+      "y2": 141
+    },
+    {
+      "label": "buildings",
+      "x1": 0,
+      "y1": 415,
+      "x2": 182,
+      "y2": 512
+    }
+  ]
+}

@@ -1,0 +1,1184 @@
+[
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable, no rivers and mostly sandy land.",
+    "file_name": "multires-sar_Low-Resolution_066.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable, no rivers.",
+    "file_name": "multires-sar_Low-Resolution_089.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable, no rivers.",
+    "file_name": "multires-sar_Low-Resolution_031.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, close to infrastructure.",
+    "file_name": "multires-sar_Low-Resolution_027.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, close to infrastructure.",
+    "file_name": "multires-sar_Low-Resolution_070.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, many plains",
+    "file_name": "multires-sar_Low-Resolution_085.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, close to infrastructure.",
+    "file_name": "multires-sar_Low-Resolution_093.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, located near a river, and close to infrastructure.",
+    "file_name": "multires-sar_Low-Resolution_007.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable, too sandy.",
+    "file_name": "multires-sar_Low-Resolution_050.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable, sandy and without rivers.",
+    "file_name": "multires-sar_Low-Resolution_046.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, the area is a plain region.",
+    "file_name": "multires-sar_Low-Resolution_011.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, close to infrastructure.",
+    "file_name": "multires-sar_Low-Resolution_010.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, with a river and close to infrastructure.",
+    "file_name": "multires-sar_Low-Resolution_047.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, many plains",
+    "file_name": "multires-sar_Low-Resolution_051.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, this area is a plain and has well-developed infrastructure.",
+    "file_name": "multires-sar_Low-Resolution_006.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, many plains",
+    "file_name": "multires-sar_Low-Resolution_092.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, many plains",
+    "file_name": "multires-sar_Low-Resolution_084.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable, no rivers.",
+    "file_name": "multires-sar_Low-Resolution_071.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable, mountainous area",
+    "file_name": "multires-sar_Low-Resolution_026.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable, mountainous area",
+    "file_name": "multires-sar_Low-Resolution_030.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable, with few plains, mostly forests and mountains.",
+    "file_name": "multires-sar_Low-Resolution_067.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable, no river water.",
+    "file_name": "multires-sar_Low-Resolution_088.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, many plains",
+    "file_name": "multires-sar_Low-Resolution_083.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, mostly flat land.",
+    "file_name": "multires-sar_Low-Resolution_095.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not very suitable, the climate in this area is dry and there are relatively few rivers.",
+    "file_name": "multires-sar_Low-Resolution_001.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, mostly for flat plains areas.",
+    "file_name": "multires-sar_Low-Resolution_056.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable, no rivers.",
+    "file_name": "multires-sar_Low-Resolution_040.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, located in a plain area.",
+    "file_name": "multires-sar_Low-Resolution_017.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, mostly flat with rivers.",
+    "file_name": "multires-sar_Low-Resolution_060.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable, mostly for mountainous areas.",
+    "file_name": "multires-sar_Low-Resolution_037.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, mostly for flat plains areas.",
+    "file_name": "multires-sar_Low-Resolution_021.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, close to infrastructure.",
+    "file_name": "multires-sar_Low-Resolution_076.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, mostly flat land",
+    "file_name": "multires-sar_Low-Resolution_077.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable, mountainous area",
+    "file_name": "multires-sar_Low-Resolution_098.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable, mountainous area.",
+    "file_name": "multires-sar_Low-Resolution_020.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, away from the basic infrastructure.",
+    "file_name": "multires-sar_Low-Resolution_036.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable, mostly mountainous and without rivers.",
+    "file_name": "multires-sar_Low-Resolution_061.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable, not close to infrastructure, and mostly mountainous.",
+    "file_name": "multires-sar_Low-Resolution_016.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, with rivers and plains.",
+    "file_name": "multires-sar_Low-Resolution_041.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable, mostly forests and deserts.",
+    "file_name": "multires-sar_Low-Resolution_057.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable, too mountainous.",
+    "file_name": "multires-sar_Low-Resolution_094.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, many plains",
+    "file_name": "multires-sar_Low-Resolution_082.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable, not close to infrastructure.",
+    "file_name": "multires-sar_Low-Resolution_015.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, close to infrastructure.",
+    "file_name": "multires-sar_Low-Resolution_042.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, there is a river.",
+    "file_name": "multires-sar_Low-Resolution_054.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, this area is a plain and has well-developed infrastructure.",
+    "file_name": "multires-sar_Low-Resolution_003.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable, no rivers.",
+    "file_name": "multires-sar_Low-Resolution_097.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, mostly flat terrain",
+    "file_name": "multires-sar_Low-Resolution_078.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable, mountainous and forested.",
+    "file_name": "multires-sar_Low-Resolution_039.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, mostly flat, and close to infrastructure.",
+    "file_name": "multires-sar_Low-Resolution_081.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, with a river, and close to infrastructure.",
+    "file_name": "multires-sar_Low-Resolution_058.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable, mountainous area",
+    "file_name": "multires-sar_Low-Resolution_074.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable, not close to infrastructure.",
+    "file_name": "multires-sar_Low-Resolution_023.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, mostly flat land.",
+    "file_name": "multires-sar_Low-Resolution_035.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable, mountainous and without rivers.",
+    "file_name": "multires-sar_Low-Resolution_062.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, mostly flatlands.",
+    "file_name": "multires-sar_Low-Resolution_063.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable, mountainous and without rivers.",
+    "file_name": "multires-sar_Low-Resolution_034.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, mostly for flat areas.",
+    "file_name": "multires-sar_Low-Resolution_022.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, mostly flat ground",
+    "file_name": "multires-sar_Low-Resolution_075.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable, no rivers.",
+    "file_name": "multires-sar_Low-Resolution_059.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, located in a plain area.",
+    "file_name": "multires-sar_Low-Resolution_018.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable, no rivers.",
+    "file_name": "multires-sar_Low-Resolution_080.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable, mountainous area",
+    "file_name": "multires-sar_Low-Resolution_038.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, flat terrain and close to infrastructure.",
+    "file_name": "multires-sar_Low-Resolution_096.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, flat and close to infrastructure.",
+    "file_name": "multires-sar_Low-Resolution_079.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Yes, the area has a flat terrain and is suitable for urban development, relying on rivers.",
+    "file_name": "multires-sar_Low-Resolution_002.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable, too mountainous.",
+    "file_name": "multires-sar_Low-Resolution_055.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, many plains",
+    "file_name": "multires-sar_Low-Resolution_043.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, close to infrastructure.",
+    "file_name": "multires-sar_Low-Resolution_014.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, with rivers and plenty of flat land.",
+    "file_name": "multires-sar_Low-Resolution_048.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, there is a river.",
+    "file_name": "multires-sar_Low-Resolution_009.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, mostly flat terrain.",
+    "file_name": "multires-sar_Low-Resolution_072.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, mostly for flat areas.",
+    "file_name": "multires-sar_Low-Resolution_025.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable, infrastructure is far.",
+    "file_name": "multires-sar_Low-Resolution_033.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable, no rivers and far from infrastructure.",
+    "file_name": "multires-sar_Low-Resolution_064.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable, not close to infrastructure.",
+    "file_name": "multires-sar_Low-Resolution_013.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable, no rivers.",
+    "file_name": "multires-sar_Low-Resolution_044.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, there is a river.",
+    "file_name": "multires-sar_Low-Resolution_052.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, this area is a plain and has well-developed infrastructure.",
+    "file_name": "multires-sar_Low-Resolution_005.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, close to infrastructure.",
+    "file_name": "multires-sar_Low-Resolution_091.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, many plains",
+    "file_name": "multires-sar_Low-Resolution_029.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, with a river, and plenty of flat land.",
+    "file_name": "multires-sar_Low-Resolution_087.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, many plains",
+    "file_name": "multires-sar_Low-Resolution_086.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, close to infrastructure, and with a river.",
+    "file_name": "multires-sar_Low-Resolution_069.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable, infrastructure is too far.",
+    "file_name": "multires-sar_Low-Resolution_028.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, close to infrastructure.",
+    "file_name": "multires-sar_Low-Resolution_090.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, this area is a plain.",
+    "file_name": "multires-sar_Low-Resolution_004.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable, too mountainous.",
+    "file_name": "multires-sar_Low-Resolution_053.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable, too mountainous.",
+    "file_name": "multires-sar_Low-Resolution_045.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, mostly flat land",
+    "file_name": "multires-sar_Low-Resolution_100.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable, the area is mountainous.",
+    "file_name": "multires-sar_Low-Resolution_012.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, with rivers and mostly plains.",
+    "file_name": "multires-sar_Low-Resolution_065.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, with river water.",
+    "file_name": "multires-sar_Low-Resolution_032.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable, mostly mountainous.",
+    "file_name": "multires-sar_Low-Resolution_024.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable, no river water.",
+    "file_name": "multires-sar_Low-Resolution_073.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, located near a river, and close to infrastructure.",
+    "file_name": "multires-sar_Low-Resolution_008.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, with many plains and rivers.",
+    "file_name": "multires-sar_Low-Resolution_049.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, 1. The village itself has good infrastructure and a large area, making transportation convenient; 2. There are plenty of rivers to meet the city's water needs.",
+    "file_name": "wuhan_NH49E006024_patch4.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable: The tidal changes of the sea easily flood the village.",
+    "file_name": "wuhan_NH50E010004_patch4.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable, 1. Adjacent to mountains, large lakes, and blocked transportation; 2. Easily affected by landslides and floods.",
+    "file_name": "wuhan_NH50E012008_patch2.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable: 1. The area is covered by a large desert, and sandstorms disrupt urban order; 2. Water resources are severely lacking.",
+    "file_name": "wuhan_NH49E014022_patch2.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable: 1. The terrain in this area is steep and undulating; 2. The area lacks water resources and has few roads.",
+    "file_name": "wuhan_NH50E016002_patch3.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable: 1. The area has many mountains and steep terrain, making it difficult to build roads; 2. Water resources are extremely scarce.",
+    "file_name": "wuhan_NI49E022014_patch4.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable: 1. Flat terrain, easy for urban development; 2. The river passes through, abundant water resources.",
+    "file_name": "wuhan_NH49E014024_patch4.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable: 1. The village has well-built infrastructure such as roads; 2. Abundant water resources.",
+    "file_name": "wuhan_NH50E012001_patch2.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable: 1. The terrain in this area is rugged and undulating, making it inconvenient for the city to communicate with the outside world. 2. The water resources in this area are not abundant enough to meet the city's water needs.",
+    "file_name": "wuhan_NH49E005011_patch1.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable: 1. The village has formed a relatively complete urban structure; 2. The terrain is flat, and there is abundant water resources.",
+    "file_name": "wuhan_NH49E011024_patch3.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable: 1. The construction of roads and other infrastructure is good; 2. The village has already formed a relatively complete urban structure.",
+    "file_name": "wuhan_NI49E023017_patch2.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, 1. The village itself is well-built, with good infrastructure; 2. Although the terrain is flat, there are many rivers and lakes in the area, which can act as reservoirs when floods come.",
+    "file_name": "wuhan_NH49E006022_patch2.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, 1. The area has rivers passing through, providing the city with water resources; 2. The appropriate mountainous terrain in the area helps prevent flooding.",
+    "file_name": "wuhan_NH49E008013_patch4.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable: 1. The village has formed a relatively complete urban structure; 2. The terrain is flat and abundant in water resources.",
+    "file_name": "wuhan_NH49E012022_patch3.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable: 1. The village has formed a relatively complete urban structure; 2. The terrain is flat, and water resources are abundant.",
+    "file_name": "wuhan_NH49E012022_patch2.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable, 1. The ground is rough and uneven, with large undulations; 2. Prone to mudslides and landslides, the urban structure is unsafe.",
+    "file_name": "wuhan_NH49E014007_patch1.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "1. The area is covered by a large forest, making it difficult to build roads and houses. 2. The terrain is complex, with large and undulating mountains, which is not conducive to large-scale urban development.",
+    "file_name": "wuhan_NH49E001013_patch4.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable: 1. The construction of basic infrastructure such as village bridges, roads, etc. is good; 2. The terrain is flat, and the planning is neat and orderly.",
+    "file_name": "wuhan_NH50E010001_patch4.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable. 1. The area is deep in the mountains and requires crossing a very open road to reach, making transportation inconvenient. 2. It is prone to landslides and mudslides at the foot of the mountain.",
+    "file_name": "wuhan_NH49E002014_patch1.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable: 1. The area has abundant water resources, although there is a risk of flooding, it can be prevented by building reservoirs; 2. The area has flat terrain, making it convenient for urban development.",
+    "file_name": "wuhan_NH49E008017_patch1.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable: 1. The village has many rivers, and the water resources can meet the needs of the city; 2. The village has formed a relatively complete urban structure, which is conducive to further development of the city.",
+    "file_name": "wuhan_NH49E007024_patch4.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, 1. The terrain in this area is flat, making it easy to build roads and cities; 2. The area is close to rivers, with abundant water resources.",
+    "file_name": "wuhan_NH49E002016_patch3.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable: 1. The village has well-built infrastructure such as roads; 2. Abundant water resources.",
+    "file_name": "wuhan_NH50E012001_patch4.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, 1. The village is built along the river, with abundant water resources; 2. The area has flat terrain, making it convenient for urban development.",
+    "file_name": "wuhan_NH49E008014_patch1.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable: 1. Good infrastructure construction such as roads; 2. The village has formed a relatively complete urban structure.",
+    "file_name": "wuhan_NI49E023017_patch4.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, 1. The village itself has good infrastructure and a large area, making transportation convenient; 2. Although the terrain is flat, there are many rivers and lakes in the area, which can act as reservoirs when floods come.",
+    "file_name": "wuhan_NH49E006022_patch4.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable, the village farmland planning is better, changing it to a city will cause farmers to lose their jobs.",
+    "file_name": "wuhan_NH49E009023_patch1.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable for: abundant water resources, can meet the needs of urban water supply; 2. The village itself has good development and has good resources for urbanization construction.",
+    "file_name": "wuhan_NH49E005024_patch4.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable: 1. The village is built on both sides of the river, with abundant water resources; 2. The terrain is flat.",
+    "file_name": "wuhan_NH50E011004_patch3.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable: 1. The area does not contain mountains, making it convenient for road construction and urban resources; 2. The area is surrounded by a large river, with abundant water resources.",
+    "file_name": "wuhan_NH49E006019_patch4.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable: 1. The construction of village infrastructure such as roads is good; 2. Abundant water resources, with small lakes.",
+    "file_name": "wuhan_NH50E013005_patch1.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable 1. The urbanization level of this area is relatively high, the infrastructure is relatively complete, especially the road network is clear, indicating that this area already has a certain development potential. 2. The water resources are abundant, rivers and lakes provide abundant water resources for this area, giving it a significant advantage in aspects such as urban water supply and irrigation.",
+    "file_name": "wuhan_NH49E002016_patch4.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable: 1. Good construction of artificial waterways, roads, and other infrastructure; 2. Flat terrain, easy for construction.",
+    "file_name": "wuhan_NH49E010015_patch3.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable: 1. Flat terrain; 2. Abundant water resources",
+    "file_name": "wuhan_NH50E009004_patch4.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable: 1. Fire prevention and protection for forests during dry weather to avoid wildfires; 2. Flat terrain, clear village planning.",
+    "file_name": "wuhan_NH50E012008_patch4.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable: 1. The village has formed a relatively complete urban structure, making it easy for the city to further develop; 2. The infrastructure such as roads is relatively complete.",
+    "file_name": "wuhan_NH49E010022_patch2.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable: 1. The village has formed a relatively complete urban structure; 2. But water conservancy projects can be built to store water.",
+    "file_name": "wuhan_NI49E024017_patch4.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable: 1. The region has abundant water resources, although there is a risk of flooding, it can be prevented by building reservoirs; 2. The region has well-developed infrastructure (such as roads), making transportation convenient.",
+    "file_name": "wuhan_NI49E021012_patch2.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "1. The village has formed a relatively complete urban structure; 2. The terrain is flat and abundant in water resources.",
+    "file_name": "wuhan_NH50E010001_patch2.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "1. The area has abundant water resources. Although there is a risk of flooding, it can be prevented by building reservoirs. 2. The area has well-developed infrastructure such as roads, making transportation convenient.",
+    "file_name": "wuhan_NI49E024020_patch4.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "1. The village has formed a relatively complete urban structure, with well-built infrastructure such as village bridges and roads; 2. The terrain is flat, and the water resources are abundant.",
+    "file_name": "wuhan_NH50E012005_patch1.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable: 1. Flat terrain, abundant water resources; 2. The village is clean and tidy, with good infrastructure.",
+    "file_name": "wuhan_NH50E011004_patch2.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "1. The village has formed a relatively complete urban structure; 2. The terrain is flat, and water resources are abundant.",
+    "file_name": "wuhan_NI49E024018_patch3.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable: 1. The construction of basic infrastructure such as village bridges, roads, etc. is good; 2. The terrain is flat, and the planning is neat and orderly.",
+    "file_name": "wuhan_NH49E009024_patch3.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, hilly terrain can provide some resistance to flooding, but faces challenges in transportation development and disaster risks (such as landslides, mudslides, etc.) during development.",
+    "file_name": "wuhan_NH49E008013_patch3.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "No, 1. This area is a typical mountainous region, with rugged terrain, high construction costs in mountainous areas, and difficulties in infrastructure construction. 2. The shape and location of the white areas may indicate that these areas are prone to waterlogging during the rainy season, and may have experienced heavy rainfall or water erosion.",
+    "file_name": "wuhan_NH49E002012_patch1.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable: 1. Large areas of water are prone to causing floods; 2. The flat terrain is unable to resist flooding disasters.",
+    "file_name": "wuhan_NH50E013001_patch4.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable: 1. The area has many mountains and steep terrain, making it difficult to build roads; 2. Water resources are scarce.",
+    "file_name": "wuhan_NI49E022010_patch4.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable. 1. The terrain in this area is rugged, making it difficult to build roads and urban structures. 2. Even if there are roads, both sides are prone to landslides.",
+    "file_name": "wuhan_NH49E005014_patch4.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable: 1. The village has formed a relatively complete urban structure; 2. The terrain is flat, and water resources are abundant.",
+    "file_name": "wuhan_NH49E012018_patch2.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable, the village farmland planning is better, changing to a city will cause farmers to lose their jobs.",
+    "file_name": "wuhan_NH49E009023_patch3.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, 1. The region has abundant water resources, although there is a risk of flooding, it can be prevented by building reservoirs; 2. The region has well-developed infrastructure (such as bridges) and convenient transportation.",
+    "file_name": "wuhan_NH49E008014_patch3.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable: 1. The mountains are continuous and the terrain is rugged and uneven; 2. There are few roads, and traffic is blocked.",
+    "file_name": "wuhan_NI49E024013_patch2.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "No, the terrain in this area is very rugged, typical of mountainous regions, with no flat land to develop villages.",
+    "file_name": "wuhan_NH49E002012_patch2.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable: 1. The village has formed a relatively complete urban structure; 2. The terrain is flat, and there is abundant water resources.",
+    "file_name": "wuhan_NH49E012017_patch4.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable: 1. The terrain in this area is rugged, making it difficult to build roads and develop agriculture; 2. It is not easy for villages in this area to communicate with the outside world.",
+    "file_name": "wuhan_NH49E004011_patch4.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable: 1. The region has many mountains and steep terrain, making it difficult to build roads; 2. The water resources are extremely scarce.",
+    "file_name": "wuhan_NI49E022013_patch3.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable: 1. The road facilities in this area are good, which is convenient for urban development; 2. There are many large and small lakes in this area, and the water resources are abundant.",
+    "file_name": "wuhan_NH49E008017_patch4.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable: 1. There are many rivers and lakes, abundant water resources; 2. The terrain is flat, easy to build.",
+    "file_name": "wuhan_NH49E010015_patch1.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable: 1. The terrain in this area is flat, with abundant water resources and artificial waterways have been developed; 2. The village is well managed and neatly planned.",
+    "file_name": "wuhan_NH49E007023_patch2.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable: 1. The village has formed a relatively complete urban structure; 2. The terrain is flat, and drought can be prevented by building reservoirs.",
+    "file_name": "wuhan_NH49E013023_patch3.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable: 1. The village has formed a relatively complete urban structure; 2. The terrain is flat and abundant in water resources.",
+    "file_name": "wuhan_NI49E024018_patch1.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable: 1. The ground shows obvious undulations, with many winding roads; 2. Severe lack of water resources.",
+    "file_name": "wuhan_NI49E021010_patch3.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, 1. The village has formed a relatively complete urban structure, with good road facilities; 2. The village has abundant water resources.",
+    "file_name": "wuhan_NH49E009017_patch4.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable: 1. Flat terrain, convenient for urban construction; 2. Abundant water resources, with lakes.",
+    "file_name": "wuhan_NI49E022014_patch1.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable: 1. The mountain top has many winding roads, which are not convenient for travel together; 2. Major accidents such as landslides are prone to occur.",
+    "file_name": "wuhan_NI49E022013_patch2.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable: 1. Flat terrain, easy for urban construction; 2. Prevent drought by building reservoirs and other water conservancy projects.",
+    "file_name": "wuhan_NH49E014024_patch1.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable: 1. The terrain in this area is rugged and undulating, making it inconvenient for the city to communicate with the outside world. 2. The water resources in this area are not abundant enough to meet the city's water needs.",
+    "file_name": "wuhan_NH49E005011_patch4.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable: 1. The village has formed a relatively complete urban structure; 2. The terrain is flat, and there is abundant water resources.",
+    "file_name": "wuhan_NH49E013018_patch2.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable: 1. The village has formed a relatively complete urban structure; 2. The terrain is flat and abundant in water resources.",
+    "file_name": "wuhan_NH50E003001_patch1.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, 1. The village farmland is well planned, mostly located on the outskirts, without affecting urbanization; 2. Abundant water resources.",
+    "file_name": "wuhan_NH49E009023_patch2.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable: 1. The farmland and residential areas in the village are well planned and easy to urbanize; 2. The village has convenient transportation, with a complex network of roads.",
+    "file_name": "wuhan_NH49E009024_patch1.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable: 1. The village has formed a relatively complete urban structure; 2. The terrain is flat, and water resources are abundant.",
+    "file_name": "wuhan_NH49E012018_patch3.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable: 1. Abundant water resources to meet the city's water needs; 2. The village has a large agricultural scale and is well-developed, making it easy to carry out urbanization construction.",
+    "file_name": "wuhan_NH49E005019_patch1.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "1. The village has formed a relatively complete urban structure, with good infrastructure such as roads; 2. The terrain is flat, and there is abundant water resources.",
+    "file_name": "wuhan_NI49E024020_patch1.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "1. Most of the area is flat plain, with a flat terrain; 2. Compared to mountainous or complex water areas, the flood risk in this area is relatively low, with lower development difficulty, but still requires appropriate flood management and prevention measures.",
+    "file_name": "wuhan_NH49E003024_patch1.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, 1. The region has abundant water resources to meet the city's water demand. 2. The region has flat terrain, making it convenient for urban development.",
+    "file_name": "wuhan_NH49E008017_patch2.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable, 1. Steep terrain, large undulations; 2. Water resources are scarce, prone to drought disasters.",
+    "file_name": "wuhan_NH49E009012_patch2.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable: 1. The village has formed a relatively complete urban structure; 2. The terrain is flat, and water resources are abundant.",
+    "file_name": "wuhan_NH50E009003_patch3.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable: 1. The terrain of this place is flat, suitable for building roads and communicating with the outside world; 2. The water resources in this place are abundant, meeting the water needs of the city.",
+    "file_name": "wuhan_NH49E006014_patch4.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable: 1. The region has many mountains and steep terrain, making it difficult to build roads; 2. Water resources are scarce.",
+    "file_name": "wuhan_NI49E022010_patch2.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable: Although the upper right corner of the area is flat and has a water source, there are many large mountains in front that isolate it, making it difficult to communicate with the outside world.",
+    "file_name": "wuhan_NH49E005014_patch2.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "1. The village has formed a relatively complete urban structure; 2. The terrain is flat, and water resources are abundant.",
+    "file_name": "wuhan_NI49E024019_patch3.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable: 1. The mountains are continuous, with rugged and uneven terrain; 2. There are few roads, and traffic is blocked.",
+    "file_name": "wuhan_NI49E024013_patch4.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable: 1. The village has formed a relatively complete urban structure; 2. The terrain is flat, and water resources are abundant.",
+    "file_name": "wuhan_NH49E011024_patch1.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, 1. The area is at the foot of the mountain, with relatively flat terrain; 2. The area has abundant river resources.",
+    "file_name": "wuhan_NH49E002012_patch4.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable: 1. The village has formed a relatively complete urban structure; 2. The terrain is flat, and water resources are abundant.",
+    "file_name": "wuhan_NH49E012017_patch2.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable 1. The terrain in this area is rugged, making it inconvenient for the construction of roads and houses; 2. There is no water source in this area, making it prone to drought.",
+    "file_name": "wuhan_NH49E004011_patch2.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, 1. The terrain of the area is flat, making it easy to build roads and urban structures. Although flooding is common, it can be prevented through proper management; 2. The area has abundant water resources, meeting the city's water needs.",
+    "file_name": "wuhan_NH49E004021_patch1.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable: 1. Flat terrain; 2. Abundant water resources.",
+    "file_name": "wuhan_NH49E012009_patch1.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable: 1. The terrain in this area is steep and uneven; 2. The road conditions are poor, with only one winding road.",
+    "file_name": "wuhan_NH49E011011_patch3.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Not suitable: The village is located at the foot of the mountain, making it vulnerable to landslides.",
+    "file_name": "wuhan_NH49E007017_patch3.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable: 1. The village has well-built infrastructure such as roads; 2. Abundant water resources.",
+    "file_name": "wuhan_NH50E012001_patch1.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable: 1. The village has formed a relatively complete urban structure; 2. The construction of basic infrastructure such as village bridges and roads is good.",
+    "file_name": "wuhan_NH49E012020_patch2.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable, 1. Abundant water resources, convenient for agricultural irrigation and domestic water use; 2. The overall terrain of the village is flat, convenient for further urban construction.",
+    "file_name": "wuhan_NH49E004013_patch1.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable: 1. Flat terrain, easy for construction; 2. Building water conservancy projects to prevent drought.",
+    "file_name": "wuhan_NH50E007003_patch3.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable for: abundant water resources, can meet the water needs of the city; 2. The village itself has good development, with good resources for urbanization construction.",
+    "file_name": "wuhan_NH49E005023_patch2.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable: 1. The village has formed a relatively complete urban structure; 2. The terrain is flat, and water resources are abundant.",
+    "file_name": "wuhan_NH50E009003_patch2.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "1. The village has formed a relatively complete urban structure; 2. The terrain is flat, and water resources are abundant.",
+    "file_name": "wuhan_NI49E024017_patch1.json"
+  },
+  {
+    "task_type": "urban assessment",
+    "question": "Is this area suitable for urban development",
+    "answer": "Suitable: 1. The area has flat terrain; 2. There are multires-sarple rivers running through it.",
+    "file_name": "wuhan_NH50E009006_patch3.json"
+  }
+]

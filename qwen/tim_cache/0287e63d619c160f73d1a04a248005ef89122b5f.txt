@@ -1,0 +1,1 @@
+RGB:Aerial view of urban area with roads, parking lots, trees, and residential buildings. || SAR:SAR image shows textured, grainy patterns with bright speckles and dark regions.

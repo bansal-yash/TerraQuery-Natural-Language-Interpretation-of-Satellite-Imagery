@@ -1,0 +1,47 @@
+{
+  "image": "P2194_0016.png",
+  "boxes": [
+    {
+      "label": "highway",
+      "x1": 360,
+      "y1": 0,
+      "x2": 500,
+      "y2": 369
+    },
+    {
+      "label": "trees",
+      "x1": 0,
+      "y1": 0,
+      "x2": 500,
+      "y2": 505
+    },
+    {
+      "label": "baseball diamond's infield",
+      "x1": 0,
+      "y1": 438,
+      "x2": 205,
+      "y2": 510
+    },
+    {
+      "label": "small vehicle",
+      "x1": 431,
+      "y1": 11,
+      "x2": 443,
+      "y2": 29
+    },
+    {
+      "label": "small vehicle",
+      "x1": 472,
+      "y1": 124,
+      "x2": 483,
+      "y2": 144
+    },
+    {
+      "label": "large vehicle",
+      "x1": 387,
+      "y1": 44,
+      "x2": 404,
+      "y2": 68
+    }
+  ]
+}

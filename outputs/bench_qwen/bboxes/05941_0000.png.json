@@ -1,0 +1,12 @@
+{
+  "image": "05941_0000.png",
+  "boxes": [
+    {
+      "label": "A satellite image from GoogleEarth depicts an airport tarmac with a single airplane centrally positioned. The airplane is oriented vertically across the frame.",
+      "x1": 221,
+      "y1": 101,
+      "x2": 376,
+      "y2": 269
+    }
+  ]
+}

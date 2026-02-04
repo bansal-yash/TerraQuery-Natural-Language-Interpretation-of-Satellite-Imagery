@@ -1,0 +1,33 @@
+{
+  "image": "P2587_0027.png",
+  "boxes": [
+    {
+      "label": "tennis court",
+      "x1": 0,
+      "y1": 0,
+      "x2": 368,
+      "y2": 253
+    },
+    {
+      "label": "building with blue solar panels",
+      "x1": 0,
+      "y1": 228,
+      "x2": 129,
+      "y2": 474
+    },
+    {
+      "label": "trees",
+      "x1": 112,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    },
+    {
+      "label": "green spaces",
+      "x1": 112,
+      "y1": 228,
+      "x2": 512,
+      "y2": 512
+    }
+  ]
+}

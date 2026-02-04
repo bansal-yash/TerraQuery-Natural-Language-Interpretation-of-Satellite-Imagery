@@ -1,0 +1,19 @@
+{
+  "image": "P2197_0004.png",
+  "boxes": [
+    {
+      "label": "soccer ball field",
+      "x1": 203,
+      "y1": 247,
+      "x2": 415,
+      "y2": 506
+    },
+    {
+      "label": "ground track field",
+      "x1": 158,
+      "y1": 98,
+      "x2": 454,
+      "y2": 510
+    }
+  ]
+}

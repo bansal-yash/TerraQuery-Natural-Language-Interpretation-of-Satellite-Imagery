@@ -1,0 +1,1992 @@
+[
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a river?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_066.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain rivers?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_089.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_031.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a river?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_027.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain mountains?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_070.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_085.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_093.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain rivers?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_007.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_050.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_046.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_011.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a river?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_010.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a river?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_047.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_051.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a bridge?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_006.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain mountains?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_092.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_084.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a river?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_071.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain rivers?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_026.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_030.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a forest?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_067.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_088.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a bridge?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_083.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a bridge?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_095.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain mountains?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_056.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a river?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_040.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a bridge?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_017.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain mountains?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_060.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_037.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_021.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a river?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_076.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_099.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a bridge?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_077.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain bridges?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_098.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a bridge?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_020.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a bridge?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_036.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a bridge?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_061.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain mountains?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_016.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a river?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_041.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_057.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain mountains?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_094.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain mountains?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_082.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a bridge?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_015.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_042.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain rivers?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_054.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a river?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_003.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain rivers?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_097.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_078.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain mountains?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_039.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_081.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_019.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a river?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_058.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain mountains?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_074.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a river?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_023.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_035.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a bridge?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_062.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain mountains?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_063.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain rivers?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_034.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a bridge?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_022.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_075.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain bridges?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_059.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_018.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain mountains?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_080.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain river water?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_038.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain mountains?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_096.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_079.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain rivers?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_002.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_055.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_043.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a bridge?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_014.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a river?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_048.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain mountains?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_009.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a bridge?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_072.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_025.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a bridge?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_033.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_064.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_013.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_044.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a bridge?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_052.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_005.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain rivers?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_091.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain rivers?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_029.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain rivers?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_087.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a bridge?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_068.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain mountains?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_086.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a forest?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_069.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_028.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_090.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain rivers?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_004.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_053.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a bridge?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_045.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_100.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain mountains?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_012.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain rivers?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_065.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a river?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_032.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a river?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_024.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_073.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a bridge?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_008.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a river?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "multires-sar_Low-Resolution_049.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain rivers?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E006024_patch4.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain mountains?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH50E010004_patch4.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain mountains?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH50E012008_patch2.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a desert?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E014022_patch2.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a river?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH50E016002_patch3.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain mountains?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NI49E022014_patch4.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain bridges?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E014024_patch4.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a desert?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH50E012001_patch2.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain wetlands?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E005011_patch1.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a desert?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E011024_patch3.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NI49E023017_patch2.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a desert?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E006022_patch2.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain hills?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E008013_patch4.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a forest?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E012022_patch3.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain mountains?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E012022_patch2.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain mountains?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E014007_patch1.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain mountains?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E001013_patch4.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH50E010001_patch4.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a river?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E002014_patch1.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a forest?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E008017_patch1.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain mountains?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E007024_patch4.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain mountains?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E002016_patch3.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain smoke?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH50E012001_patch4.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E008014_patch1.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a desert?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NI49E023017_patch4.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a bridge?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E006022_patch4.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain farmland?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E009023_patch1.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a desert?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E005024_patch4.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a river?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH50E011004_patch3.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain bridges?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E006019_patch4.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a desert?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH50E013005_patch1.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E002016_patch4.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain an artificial waterway?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E010015_patch3.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain river water?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH50E009004_patch4.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain forests?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH50E012008_patch4.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain mountains?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E010022_patch2.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NI49E024017_patch4.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NI49E021012_patch2.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain lakes?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH50E010001_patch2.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain mountains?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NI49E024020_patch4.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a bridge?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH50E012005_patch1.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain mountains?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH50E011004_patch2.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain mountains?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NI49E024018_patch3.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a bridge?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E009024_patch3.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a bridge?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E008013_patch3.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain mountains?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E002012_patch1.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain mountains?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH50E013001_patch4.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NI49E022010_patch4.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain roads?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E005014_patch4.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain an artificial waterway?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E012018_patch2.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain forests?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E009023_patch3.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a bridge?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E008014_patch3.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a bridge?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NI49E024013_patch2.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a bridge?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E002012_patch2.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a forest?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E012017_patch4.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a bridge?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E004011_patch4.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NI49E022013_patch3.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E008017_patch4.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain mountains?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E010015_patch1.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain an artificial waterway?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E007023_patch2.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a forest?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E013023_patch3.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain farmland?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NI49E024018_patch1.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NI49E021010_patch3.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain mountains?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E009017_patch4.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NI49E022014_patch1.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain mountains?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NI49E022013_patch2.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain mountains?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E014024_patch1.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a desert?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E005011_patch4.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E013018_patch2.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain lakes?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH50E003001_patch1.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a river?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E009023_patch2.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a desert?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E009024_patch1.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a forest?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E012018_patch3.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a bridge?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E005019_patch1.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a river?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NI49E024020_patch1.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain roads?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E003024_patch1.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a forest?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E008017_patch2.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a desert?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E009012_patch2.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a forest?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH50E009003_patch3.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain mountains?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E006014_patch4.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain mountains?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NI49E022010_patch2.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain mountains?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E005014_patch2.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a desert?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NI49E024019_patch3.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NI49E024013_patch4.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E011024_patch1.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E002012_patch4.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E012017_patch2.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain mountains?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E004011_patch2.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain mountains?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E004021_patch1.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a river?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E012009_patch1.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a village?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E011011_patch3.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain farmland?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E007017_patch3.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a forest?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH50E012001_patch1.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a bridge?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E012020_patch2.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a desert?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E004013_patch1.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain mountains?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH50E007003_patch3.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain roads?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH49E005023_patch2.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain a river?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH50E009003_patch2.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain mountains?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NI49E024017_patch1.json"
+  },
+  {
+    "task_type": "object existence",
+    "question": "Does the image contain mountains?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "wuhan_NH50E009006_patch3.json"
+  }
+]

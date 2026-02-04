@@ -1,0 +1,19 @@
+{
+  "image": "09798_0000.png",
+  "boxes": [
+    {
+      "label": "cluster of buildings",
+      "x1": 79,
+      "y1": 354,
+      "x2": 176,
+      "y2": 503
+    },
+    {
+      "label": "small windmill",
+      "x1": 367,
+      "y1": 111,
+      "x2": 407,
+      "y2": 159
+    }
+  ]
+}

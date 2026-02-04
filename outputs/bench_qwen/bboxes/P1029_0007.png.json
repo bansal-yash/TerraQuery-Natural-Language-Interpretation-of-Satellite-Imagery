@@ -1,0 +1,12 @@
+{
+  "image": "P1029_0007.png",
+  "boxes": [
+    {
+      "label": "The image is a high-resolution satellite view from Google Earth featuring a waterside residential area with docks extending into the water. Notably, there are small harbors with docks that stand out against the water's edge.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    }
+  ]
+}

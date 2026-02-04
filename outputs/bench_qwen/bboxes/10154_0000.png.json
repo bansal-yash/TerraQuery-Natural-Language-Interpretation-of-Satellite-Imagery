@@ -1,0 +1,26 @@
+{
+  "image": "10154_0000.png",
+  "boxes": [
+    {
+      "label": "agricultural fields",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    },
+    {
+      "label": "unpaved access paths",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    },
+    {
+      "label": "small golf course",
+      "x1": 102,
+      "y1": 184,
+      "x2": 384,
+      "y2": 510
+    }
+  ]
+}

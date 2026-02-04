@@ -1,0 +1,12 @@
+{
+  "image": "P0964_0006.png",
+  "boxes": [
+    {
+      "label": "The image captured from Google Earth features a high-resolution view of a marine area with a solitary small ship on the left side.",
+      "x1": 0,
+      "y1": 330,
+      "x2": 84,
+      "y2": 394
+    }
+  ]
+}

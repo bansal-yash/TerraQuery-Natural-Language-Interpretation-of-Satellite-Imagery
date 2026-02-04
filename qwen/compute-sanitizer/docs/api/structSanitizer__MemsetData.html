@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanitizer_MemsetData &mdash; compute-sanitizer 12.6 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/omni-style.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/api-styles.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/mermaid-init.js"></script>
+        <script src="../_static/design-tabs.js"></script>
+        <script src="../_static/version.js"></script>
+        <script src="../_static/social-media.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Sanitizer_ResourceArrayData" href="structSanitizer__ResourceArrayData.html" />
+    <link rel="prev" title="Sanitizer_MemcpyData" href="structSanitizer__MemcpyData.html" />
+ 
+
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+
+<a href="../index.html">
+  <img src="../_static/Logo_and_CUDA.png" class="logo" alt="Logo"/>
+</a>
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../ReleaseNotes/index.html">Release Notes</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tools</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ComputeSanitizer/index.html">Compute Sanitizer</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Interfaces</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../SanitizerApiGuide/index.html">Compute Sanitizer API Reference Manual</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../SanitizerApi/table-of-contents.html">Sanitizer API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="modules.html">Modules</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="structs.html">Structs</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__BatchMemopData.html">Sanitizer_BatchMemopData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__CallbackData.html">Sanitizer_CallbackData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__EventData.html">Sanitizer_EventData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__ExternalMemoryData.html">Sanitizer_ExternalMemoryData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__GraphExecData.html">Sanitizer_GraphExecData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__GraphLaunchData.html">Sanitizer_GraphLaunchData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__GraphNodeLaunchData.html">Sanitizer_GraphNodeLaunchData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__LaunchData.html">Sanitizer_LaunchData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__MemcpyData.html">Sanitizer_MemcpyData</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Sanitizer_MemsetData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__ResourceArrayData.html">Sanitizer_ResourceArrayData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__ResourceContextData.html">Sanitizer_ResourceContextData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__ResourceFunctionsLazyLoadedData.html">Sanitizer_ResourceFunctionsLazyLoadedData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__ResourceMemoryData.html">Sanitizer_ResourceMemoryData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__ResourceMempoolData.html">Sanitizer_ResourceMempoolData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__ResourceModuleData.html">Sanitizer_ResourceModuleData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__ResourceStreamData.html">Sanitizer_ResourceStreamData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__ResourceVirtualRange.html">Sanitizer_ResourceVirtualRange</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__SynchronizeData.html">Sanitizer_SynchronizeData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__UvmData.html">Sanitizer_UvmData</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../SanitizerNvtxGuide/index.html">NVTX API for Compute Sanitizer Reference Manual</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Copyright And Licenses</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../CopyrightAndLicenses/index.html">Copyright and Licenses</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">compute-sanitizer</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+
+
+  
+
+<li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+  
+    <li><a href="../SanitizerApi/table-of-contents.html">Sanitizer API</a> &raquo;</li>
+    <li><a href="structs.html">Structs</a> &raquo;</li>
+<li>Sanitizer_MemsetData</li>
+
+      <li class="wy-breadcrumbs-aside">
+      </li>
+<li class="wy-breadcrumbs-aside">
+
+
+  <span>v2024.3.0</span>
+
+
+  <span>&nbsp;</span>
+</li>
+
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="sanitizer-memsetdata">
+<h1>Sanitizer_MemsetData<a class="headerlink" href="#sanitizer-memsetdata" title="Permalink to this headline"></a></h1>
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv420Sanitizer_MemsetData">
+<span id="_CPPv320Sanitizer_MemsetData"></span><span id="_CPPv220Sanitizer_MemsetData"></span><span id="Sanitizer_MemsetData"></span><span class="target" id="structsanitizer__memsetdata"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Sanitizer_MemsetData</span></span></span><a class="headerlink" href="#_CPPv420Sanitizer_MemsetData" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Data passed into a memset callback function. </p>
+<p>Data passed into a launch callback function as the <code class="docutils literal notranslate"><span class="pre">cbdata</span></code> argument to <a class="reference internal" href="group__SANITIZER__CALLBACK__API.html#group__sanitizer__callback__api_1gac1ae37612d036530e060f1bca8c3ccd8"><span class="std std-ref">Sanitizer_CallbackFunc</span></a>. The <code class="docutils literal notranslate"><span class="pre">cbdata</span></code> will be this type for <code class="docutils literal notranslate"><span class="pre">domain</span></code> equal to SANITIZER_CB_DOMAIN_MEMSET. The callback data is only valid within the invocation of the callback function that is passed the data. If you need to retain some data for use outside of the callback, you must make a copy of it. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric-h3 rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N20Sanitizer_MemsetData7addressE">
+<span id="_CPPv3N20Sanitizer_MemsetData7addressE"></span><span id="_CPPv2N20Sanitizer_MemsetData7addressE"></span><span id="Sanitizer_MemsetData::address__uint64_t"></span><span class="target" id="structsanitizer__memsetdata_1a86864b17ab8ef4bcbdf9cf27ea86b6a9"></span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">address</span></span></span><a class="headerlink" href="#_CPPv4N20Sanitizer_MemsetData7addressE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The address of the memset start. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N20Sanitizer_MemsetData7contextE">
+<span id="_CPPv3N20Sanitizer_MemsetData7contextE"></span><span id="_CPPv2N20Sanitizer_MemsetData7contextE"></span><span id="Sanitizer_MemsetData::context__CUcontext"></span><span class="target" id="structsanitizer__memsetdata_1a7581f56f720dccbc68fedddacb839992"></span><span class="n"><span class="pre">CUcontext</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">context</span></span></span><a class="headerlink" href="#_CPPv4N20Sanitizer_MemsetData7contextE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The context where the allocation is located. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N20Sanitizer_MemsetData11elementSizeE">
+<span id="_CPPv3N20Sanitizer_MemsetData11elementSizeE"></span><span id="_CPPv2N20Sanitizer_MemsetData11elementSizeE"></span><span id="Sanitizer_MemsetData::elementSize__uint32_t"></span><span class="target" id="structsanitizer__memsetdata_1a8147fb8ffd9aa407f7c2514568b583e1"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">elementSize</span></span></span><a class="headerlink" href="#_CPPv4N20Sanitizer_MemsetData11elementSizeE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N20Sanitizer_MemsetData6heightE">
+<span id="_CPPv3N20Sanitizer_MemsetData6heightE"></span><span id="_CPPv2N20Sanitizer_MemsetData6heightE"></span><span id="Sanitizer_MemsetData::height__uint64_t"></span><span class="target" id="structsanitizer__memsetdata_1a97d199dd47c048093e53adfd4de60982"></span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">height</span></span></span><a class="headerlink" href="#_CPPv4N20Sanitizer_MemsetData6heightE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N20Sanitizer_MemsetData7hStreamE">
+<span id="_CPPv3N20Sanitizer_MemsetData7hStreamE"></span><span id="_CPPv2N20Sanitizer_MemsetData7hStreamE"></span><span id="Sanitizer_MemsetData::hStream__Sanitizer_StreamHandle"></span><span class="target" id="structsanitizer__memsetdata_1a0246494f29ba1644b2a3abb5ac2d6cee"></span><a class="reference internal" href="group__SANITIZER__STREAM__API.html#_CPPv422Sanitizer_StreamHandle" title="Sanitizer_StreamHandle"><span class="n"><span class="pre">Sanitizer_StreamHandle</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">hStream</span></span></span><a class="headerlink" href="#_CPPv4N20Sanitizer_MemsetData7hStreamE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Unique handle for the stream. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N20Sanitizer_MemsetData7isAsyncE">
+<span id="_CPPv3N20Sanitizer_MemsetData7isAsyncE"></span><span id="_CPPv2N20Sanitizer_MemsetData7isAsyncE"></span><span id="Sanitizer_MemsetData::isAsync__uint32_t"></span><span class="target" id="structsanitizer__memsetdata_1a25e97b753473f3e78a76cbe75d66758c"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isAsync</span></span></span><a class="headerlink" href="#_CPPv4N20Sanitizer_MemsetData7isAsyncE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Boolean value indicating if the transfer is asynchronous. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N20Sanitizer_MemsetData5pitchE">
+<span id="_CPPv3N20Sanitizer_MemsetData5pitchE"></span><span id="_CPPv2N20Sanitizer_MemsetData5pitchE"></span><span id="Sanitizer_MemsetData::pitch__uint64_t"></span><span class="target" id="structsanitizer__memsetdata_1a2905a896ba66740a62cb4c206e3f94d2"></span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pitch</span></span></span><a class="headerlink" href="#_CPPv4N20Sanitizer_MemsetData5pitchE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N20Sanitizer_MemsetData6streamE">
+<span id="_CPPv3N20Sanitizer_MemsetData6streamE"></span><span id="_CPPv2N20Sanitizer_MemsetData6streamE"></span><span id="Sanitizer_MemsetData::stream__CUstream"></span><span class="target" id="structsanitizer__memsetdata_1a568656a07f80c2747dfd6eaf3ac6fa95"></span><span class="n"><span class="pre">CUstream</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">stream</span></span></span><a class="headerlink" href="#_CPPv4N20Sanitizer_MemsetData6streamE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The stream where the memset is executed. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N20Sanitizer_MemsetData5valueE">
+<span id="_CPPv3N20Sanitizer_MemsetData5valueE"></span><span id="_CPPv2N20Sanitizer_MemsetData5valueE"></span><span id="Sanitizer_MemsetData::value__uint32_t"></span><span class="target" id="structsanitizer__memsetdata_1a5fc409e9d272bef19b26b754103152f2"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">value</span></span></span><a class="headerlink" href="#_CPPv4N20Sanitizer_MemsetData5valueE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Value to be written. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N20Sanitizer_MemsetData5widthE">
+<span id="_CPPv3N20Sanitizer_MemsetData5widthE"></span><span id="_CPPv2N20Sanitizer_MemsetData5widthE"></span><span id="Sanitizer_MemsetData::width__uint64_t"></span><span class="target" id="structsanitizer__memsetdata_1adf48f929e8ccaf649688cdfac51b63a2"></span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">width</span></span></span><a class="headerlink" href="#_CPPv4N20Sanitizer_MemsetData5widthE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Memset size configuration. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+<img src="../_static/NVIDIA-LogoBlack.svg" class="only-light"/>
+<img src="../_static/NVIDIA-LogoWhite.svg" class="only-dark"/>
+
+<p class="notices">
+<a href="https://www.nvidia.com/en-us/about-nvidia/privacy-policy/" target="_blank">Privacy Policy</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/privacy-center/" target="_blank">Manage My Privacy</a>
+|
+<a href="https://www.nvidia.com/en-us/preferences/start/" target="_blank">Do Not Sell or Share My Data</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/terms-of-service/" target="_blank">Terms of Service</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/accessibility/" target="_blank">Accessibility</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/company-policies/" target="_blank">Corporate Policies</a>
+|
+<a href="https://www.nvidia.com/en-us/product-security/" target="_blank">Product Security</a>
+|
+<a href="https://www.nvidia.com/en-us/contact/" target="_blank">Contact</a>
+</p>
+
+<p>
+  Copyright &#169; 2019-2024, NVIDIA Corporation &amp; Affiliates. All rights reserved.
+</p>
+
+    <p>
+      <span class="lastupdated">Last updated on Jul 11, 2024.
+      </span></p>
+
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+ 
+
+
+
+</body>
+</html>

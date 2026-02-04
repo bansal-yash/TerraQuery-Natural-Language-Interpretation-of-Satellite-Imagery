@@ -1,0 +1,12 @@
+{
+  "image": "P0998_0006.png",
+  "boxes": [
+    {
+      "label": "A high-resolution Google Earth image depicting a coastal area with structures and vegetation. Visible in the image is a small harbor located at the bottom of the frame, with its docks extending into the water, accompanied by adjacent greenery and buildings. A distinctive feature at the top right of the image is a small, lone vehicle positioned close to a building, discernible from its surrounding residential space.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    }
+  ]
+}

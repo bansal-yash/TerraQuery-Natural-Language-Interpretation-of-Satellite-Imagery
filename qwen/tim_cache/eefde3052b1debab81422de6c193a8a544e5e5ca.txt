@@ -1,0 +1,1 @@
+RGB:Beige textured surface with subtle variations and faint horizontal lines. || SAR:SAR image shows textured ground with faint curved streaks and speckle noise.

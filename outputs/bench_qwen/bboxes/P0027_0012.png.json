@@ -1,0 +1,19 @@
+{
+  "image": "P0027_0012.png",
+  "boxes": [
+    {
+      "label": "small white vehicle at the bottom-middle near the treeline",
+      "x1": 258,
+      "y1": 385,
+      "x2": 276,
+      "y2": 407
+    },
+    {
+      "label": "small white vehicle at the bottom-left on the edge of a parking lot adjacent to a building",
+      "x1": 152,
+      "y1": 435,
+      "x2": 167,
+      "y2": 458
+    }
+  ]
+}

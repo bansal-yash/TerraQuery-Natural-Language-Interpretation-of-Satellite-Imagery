@@ -1,0 +1,19 @@
+{
+  "image": "P0228_0005.png",
+  "boxes": [
+    {
+      "label": "left tennis court",
+      "x1": 13,
+      "y1": 182,
+      "x2": 123,
+      "y2": 388
+    },
+    {
+      "label": "right tennis court",
+      "x1": 129,
+      "y1": 168,
+      "x2": 243,
+      "y2": 373
+    }
+  ]
+}

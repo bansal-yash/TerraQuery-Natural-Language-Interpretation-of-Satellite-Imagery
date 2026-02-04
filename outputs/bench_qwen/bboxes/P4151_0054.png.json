@@ -1,0 +1,54 @@
+{
+  "image": "P4151_0054.png",
+  "boxes": [
+    {
+      "label": "intersection",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    },
+    {
+      "label": "crosswalk",
+      "x1": 73,
+      "y1": 176,
+      "x2": 159,
+      "y2": 244
+    },
+    {
+      "label": "small vehicles",
+      "x1": 138,
+      "y1": 18,
+      "x2": 198,
+      "y2": 60
+    },
+    {
+      "label": "small vehicles",
+      "x1": 146,
+      "y1": 187,
+      "x2": 208,
+      "y2": 228
+    },
+    {
+      "label": "small vehicles",
+      "x1": 381,
+      "y1": 218,
+      "x2": 432,
+      "y2": 268
+    },
+    {
+      "label": "small vehicles",
+      "x1": 418,
+      "y1": 281,
+      "x2": 476,
+      "y2": 336
+    },
+    {
+      "label": "small vehicles",
+      "x1": 469,
+      "y1": 349,
+      "x2": 510,
+      "y2": 398
+    }
+  ]
+}

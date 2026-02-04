@@ -1,0 +1,47 @@
+{
+  "image": "P1809_0039.png",
+  "boxes": [
+    {
+      "label": "buildings",
+      "x1": 213,
+      "y1": 77,
+      "x2": 510,
+      "y2": 377
+    },
+    {
+      "label": "warehouses",
+      "x1": 213,
+      "y1": 77,
+      "x2": 510,
+      "y2": 377
+    },
+    {
+      "label": "curved road",
+      "x1": 0,
+      "y1": 111,
+      "x2": 413,
+      "y2": 512
+    },
+    {
+      "label": "greenery",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 510
+    },
+    {
+      "label": "small vehicles",
+      "x1": 23,
+      "y1": 362,
+      "x2": 213,
+      "y2": 443
+    },
+    {
+      "label": "distinctive vehicle",
+      "x1": 23,
+      "y1": 362,
+      "x2": 57,
+      "y2": 385
+    }
+  ]
+}

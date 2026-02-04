@@ -1,0 +1,1 @@
+RGB:Granular, speckled texture with earthy brown and beige tones. || SAR:SAR image shows uniform speckle noise across entire frame.

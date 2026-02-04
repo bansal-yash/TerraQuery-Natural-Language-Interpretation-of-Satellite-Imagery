@@ -1,0 +1,19 @@
+{
+  "image": "10359_0000.png",
+  "boxes": [
+    {
+      "label": "expressway toll station",
+      "x1": 198,
+      "y1": 56,
+      "x2": 326,
+      "y2": 128
+    },
+    {
+      "label": "ground track and field",
+      "x1": 101,
+      "y1": 51,
+      "x2": 198,
+      "y2": 128
+    }
+  ]
+}

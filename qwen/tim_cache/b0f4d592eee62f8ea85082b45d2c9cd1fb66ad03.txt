@@ -1,0 +1,1 @@
+RGB:Aerial view of residential area with trees, roads, and buildings. || SAR:SAR image shows urban area with roads and buildings in grayscale.

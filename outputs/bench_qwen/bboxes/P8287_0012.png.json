@@ -1,0 +1,61 @@
+{
+  "image": "P8287_0012.png",
+  "boxes": [
+    {
+      "label": "buildings with distinctive rooftops",
+      "x1": 0,
+      "y1": 0,
+      "x2": 448,
+      "y2": 266
+    },
+    {
+      "label": "small vehicles",
+      "x1": 27,
+      "y1": 303,
+      "x2": 89,
+      "y2": 340
+    },
+    {
+      "label": "small vehicles",
+      "x1": 112,
+      "y1": 285,
+      "x2": 166,
+      "y2": 322
+    },
+    {
+      "label": "small vehicles",
+      "x1": 182,
+      "y1": 275,
+      "x2": 231,
+      "y2": 308
+    },
+    {
+      "label": "small vehicles",
+      "x1": 239,
+      "y1": 266,
+      "x2": 294,
+      "y2": 299
+    },
+    {
+      "label": "small vehicles",
+      "x1": 313,
+      "y1": 252,
+      "x2": 358,
+      "y2": 285
+    },
+    {
+      "label": "small vehicles",
+      "x1": 427,
+      "y1": 280,
+      "x2": 478,
+      "y2": 308
+    },
+    {
+      "label": "uniquely positioned large vehicle",
+      "x1": 42,
+      "y1": 423,
+      "x2": 131,
+      "y2": 466
+    }
+  ]
+}

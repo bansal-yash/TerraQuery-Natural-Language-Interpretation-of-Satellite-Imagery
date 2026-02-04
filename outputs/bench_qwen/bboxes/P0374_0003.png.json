@@ -1,0 +1,19 @@
+{
+  "image": "P0374_0003.png",
+  "boxes": [
+    {
+      "label": "parking area",
+      "x1": 0,
+      "y1": 0,
+      "x2": 256,
+      "y2": 320
+    },
+    {
+      "label": "two small basketball courts",
+      "x1": 106,
+      "y1": 313,
+      "x2": 396,
+      "y2": 512
+    }
+  ]
+}

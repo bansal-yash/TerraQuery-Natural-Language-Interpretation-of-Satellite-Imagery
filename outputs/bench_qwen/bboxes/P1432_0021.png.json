@@ -1,0 +1,61 @@
+{
+  "image": "P1432_0021.png",
+  "boxes": [
+    {
+      "label": "building with blue rooftop",
+      "x1": 87,
+      "y1": 15,
+      "x2": 112,
+      "y2": 54
+    },
+    {
+      "label": "building with blue rooftop",
+      "x1": 111,
+      "y1": 59,
+      "x2": 159,
+      "y2": 103
+    },
+    {
+      "label": "building with blue rooftop",
+      "x1": 132,
+      "y1": 157,
+      "x2": 183,
+      "y2": 202
+    },
+    {
+      "label": "building with blue rooftop",
+      "x1": 168,
+      "y1": 15,
+      "x2": 210,
+      "y2": 59
+    },
+    {
+      "label": "building with blue rooftop",
+      "x1": 198,
+      "y1": 164,
+      "x2": 244,
+      "y2": 208
+    },
+    {
+      "label": "building with blue rooftop",
+      "x1": 227,
+      "y1": 256,
+      "x2": 278,
+      "y2": 300
+    },
+    {
+      "label": "building with blue rooftop",
+      "x1": 249,
+      "y1": 317,
+      "x2": 295,
+      "y2": 362
+    },
+    {
+      "label": "building with blue rooftop",
+      "x1": 362,
+      "y1": 311,
+      "x2": 475,
+      "y2": 362
+    }
+  ]
+}

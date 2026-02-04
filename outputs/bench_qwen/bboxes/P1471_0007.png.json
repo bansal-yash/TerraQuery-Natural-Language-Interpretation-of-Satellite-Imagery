@@ -1,0 +1,26 @@
+{
+  "image": "P1471_0007.png",
+  "boxes": [
+    {
+      "label": "large commercial vehicle",
+      "x1": 13,
+      "y1": 0,
+      "x2": 87,
+      "y2": 79
+    },
+    {
+      "label": "small vehicle at bottom center",
+      "x1": 181,
+      "y1": 454,
+      "x2": 236,
+      "y2": 489
+    },
+    {
+      "label": "small vehicle in top-right",
+      "x1": 388,
+      "y1": 116,
+      "x2": 432,
+      "y2": 142
+    }
+  ]
+}

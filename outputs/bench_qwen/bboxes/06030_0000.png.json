@@ -1,0 +1,19 @@
+{
+  "image": "06030_0000.png",
+  "boxes": [
+    {
+      "label": "building with a terracotta colored roof",
+      "x1": 203,
+      "y1": 134,
+      "x2": 287,
+      "y2": 365
+    },
+    {
+      "label": "small vehicle",
+      "x1": 469,
+      "y1": 385,
+      "x2": 479,
+      "y2": 402
+    }
+  ]
+}

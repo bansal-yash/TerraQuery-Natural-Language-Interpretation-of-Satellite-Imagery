@@ -1,0 +1,2024 @@
+[
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, sandstorms are easily triggered in desert areas.",
+    "file_name": "multires-sar_Low-Resolution_066.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, forest fires are common in forested areas.",
+    "file_name": "multires-sar_Low-Resolution_089.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "multires-sar_Low-Resolution_031.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, it is easy for tidal waves to occur near the mouth of the river.",
+    "file_name": "multires-sar_Low-Resolution_027.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, the plains are prone to flooding disasters.",
+    "file_name": "multires-sar_Low-Resolution_085.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "multires-sar_Low-Resolution_093.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, the village is built next to the river, making it prone to flooding.",
+    "file_name": "multires-sar_Low-Resolution_007.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, sandstorms are easily triggered.",
+    "file_name": "multires-sar_Low-Resolution_050.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, sandstorms are common in deserts.",
+    "file_name": "multires-sar_Low-Resolution_046.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, this area is a plain region, prone to flooding disasters.",
+    "file_name": "multires-sar_Low-Resolution_011.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, villages near rivers are prone to flooding.",
+    "file_name": "multires-sar_Low-Resolution_047.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "multires-sar_Low-Resolution_051.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, this area is located on a plain and is prone to flooding disasters.",
+    "file_name": "multires-sar_Low-Resolution_006.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "multires-sar_Low-Resolution_092.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "multires-sar_Low-Resolution_084.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, mountainous areas are prone to mudslides.",
+    "file_name": "multires-sar_Low-Resolution_026.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, mountainous areas are prone to mudslides.",
+    "file_name": "multires-sar_Low-Resolution_030.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, forest areas are prone to forest fires.",
+    "file_name": "multires-sar_Low-Resolution_067.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, the plain areas are prone to flooding disasters.",
+    "file_name": "multires-sar_Low-Resolution_088.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, the plain areas are prone to flooding disasters.",
+    "file_name": "multires-sar_Low-Resolution_083.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "multires-sar_Low-Resolution_095.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, this area is prone to sandstorms as it is located in a desert region.",
+    "file_name": "multires-sar_Low-Resolution_001.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "multires-sar_Low-Resolution_056.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, forest areas are prone to forest fires, while plains are prone to flooding disasters.",
+    "file_name": "multires-sar_Low-Resolution_040.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "multires-sar_Low-Resolution_017.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "multires-sar_Low-Resolution_060.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, mountainous areas are prone to mudslides.",
+    "file_name": "multires-sar_Low-Resolution_037.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "multires-sar_Low-Resolution_021.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, forest areas are prone to forest fires.",
+    "file_name": "multires-sar_Low-Resolution_099.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "multires-sar_Low-Resolution_077.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, mountainous areas are prone to mudslides.",
+    "file_name": "multires-sar_Low-Resolution_098.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, forest areas are prone to wildfires.",
+    "file_name": "multires-sar_Low-Resolution_020.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, the village is built by the river, making it prone to flooding.",
+    "file_name": "multires-sar_Low-Resolution_036.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, mountainous areas are prone to mudslides.",
+    "file_name": "multires-sar_Low-Resolution_061.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, located at the mouth of the river, it is prone to tidal surges.",
+    "file_name": "multires-sar_Low-Resolution_016.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "multires-sar_Low-Resolution_041.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, forest areas are prone to forest fires.",
+    "file_name": "multires-sar_Low-Resolution_057.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, mudslides are prone to occur at the foot of the mountain.",
+    "file_name": "multires-sar_Low-Resolution_094.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, the plain areas are prone to flooding disasters.",
+    "file_name": "multires-sar_Low-Resolution_082.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, located at the mouth of the river, it is prone to tidal surges.",
+    "file_name": "multires-sar_Low-Resolution_015.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, forest areas are prone to forest fires.",
+    "file_name": "multires-sar_Low-Resolution_054.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, this area is located on a plain, making it prone to flooding disasters.",
+    "file_name": "multires-sar_Low-Resolution_003.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, the village is built at the foot of the mountain, making it prone to mudslides.",
+    "file_name": "multires-sar_Low-Resolution_097.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "multires-sar_Low-Resolution_078.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, forest areas are prone to forest fires, and mountainous areas are prone to mudslides.",
+    "file_name": "multires-sar_Low-Resolution_039.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "multires-sar_Low-Resolution_081.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, forest fires are prone to occur in forested areas.",
+    "file_name": "multires-sar_Low-Resolution_019.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, the village is built by the river and is prone to flooding.",
+    "file_name": "multires-sar_Low-Resolution_058.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, forest areas are prone to forest fires.",
+    "file_name": "multires-sar_Low-Resolution_074.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, forest areas are prone to forest fires.",
+    "file_name": "multires-sar_Low-Resolution_023.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "multires-sar_Low-Resolution_035.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, mountainous areas are prone to mudslides, and forested areas are prone to forest fires.",
+    "file_name": "multires-sar_Low-Resolution_062.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, floods are prone to occur in plains.",
+    "file_name": "multires-sar_Low-Resolution_063.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, forest areas are prone to wildfires.",
+    "file_name": "multires-sar_Low-Resolution_034.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "multires-sar_Low-Resolution_022.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "multires-sar_Low-Resolution_075.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "multires-sar_Low-Resolution_018.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, deserts are prone to sandstorms.",
+    "file_name": "multires-sar_Low-Resolution_080.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, mountainous areas are prone to mudslides.",
+    "file_name": "multires-sar_Low-Resolution_038.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "multires-sar_Low-Resolution_096.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, the plain areas are prone to flooding disasters.",
+    "file_name": "multires-sar_Low-Resolution_079.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, this area is located in a river plain area, prone to flooding disasters.",
+    "file_name": "multires-sar_Low-Resolution_002.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, mountainous areas are prone to mudslides.",
+    "file_name": "multires-sar_Low-Resolution_055.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "multires-sar_Low-Resolution_043.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "multires-sar_Low-Resolution_048.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, the village is built at the mouth of the sea where tidal surges are prone to occur.",
+    "file_name": "multires-sar_Low-Resolution_009.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, the plain areas are prone to flooding disasters.",
+    "file_name": "multires-sar_Low-Resolution_072.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "multires-sar_Low-Resolution_025.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, mountainous areas are prone to mudslides, and forested areas are prone to forest fires.",
+    "file_name": "multires-sar_Low-Resolution_033.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, sandstorms are easily triggered in sandy areas.",
+    "file_name": "multires-sar_Low-Resolution_064.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, tidal surges are prone to occur at the mouth of the river.",
+    "file_name": "multires-sar_Low-Resolution_013.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "multires-sar_Low-Resolution_044.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, forest areas are prone to forest fires.",
+    "file_name": "multires-sar_Low-Resolution_052.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, this area is located on a plain and is prone to flooding disasters.",
+    "file_name": "multires-sar_Low-Resolution_005.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "multires-sar_Low-Resolution_029.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, the plain areas are prone to flooding disasters.",
+    "file_name": "multires-sar_Low-Resolution_087.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, forest areas are prone to forest fires.",
+    "file_name": "multires-sar_Low-Resolution_068.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, the plains are prone to flooding disasters.",
+    "file_name": "multires-sar_Low-Resolution_086.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, the village is built by the river, making it prone to flooding.",
+    "file_name": "multires-sar_Low-Resolution_069.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, it is easy for tidal waves to occur near the mouth of the river.",
+    "file_name": "multires-sar_Low-Resolution_028.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "multires-sar_Low-Resolution_090.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, the village is built next to the river, making it prone to flooding.",
+    "file_name": "multires-sar_Low-Resolution_004.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, forest areas are prone to forest fires.",
+    "file_name": "multires-sar_Low-Resolution_053.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, mountainous areas are prone to mudslides.",
+    "file_name": "multires-sar_Low-Resolution_045.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "multires-sar_Low-Resolution_100.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, mountainous areas are prone to mudslides.",
+    "file_name": "multires-sar_Low-Resolution_012.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "multires-sar_Low-Resolution_065.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, the village is built next to the river, making it prone to flooding.",
+    "file_name": "multires-sar_Low-Resolution_032.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, mountainous areas are prone to mudslides.",
+    "file_name": "multires-sar_Low-Resolution_024.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, forest areas are prone to forest fires.",
+    "file_name": "multires-sar_Low-Resolution_073.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, the village is built next to the river, making it prone to flooding.",
+    "file_name": "multires-sar_Low-Resolution_008.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "multires-sar_Low-Resolution_049.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, forest areas are prone to forest fires.",
+    "file_name": "dfc2025_TrainArea_012.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, forest areas are prone to forest fires.",
+    "file_name": "dfc2025_TrainArea_157.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, the sea is prone to flooding.",
+    "file_name": "dfc2025_TrainArea_053.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, the sea can easily produce floods.",
+    "file_name": "dfc2025_TrainArea_287.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, sandstorms are prone to occur in the desert.",
+    "file_name": "dfc2025_TrainArea_213.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, sandstorms are prone to occur in the desert.",
+    "file_name": "dfc2025_TrainArea_244.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, the sea is prone to flooding.",
+    "file_name": "dfc2025_TrainArea_317.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, forest areas are prone to forest fires.",
+    "file_name": "dfc2025_TrainArea_252.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, sandstorms are prone to occur in sandy areas.",
+    "file_name": "dfc2025_TrainArea_086.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, floods are prone to occur by the river.",
+    "file_name": "dfc2025_TrainArea_272.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, sandstorms are prone to occur in the desert.",
+    "file_name": "dfc2025_TrainArea_225.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, the sea is prone to flooding.",
+    "file_name": "dfc2025_TrainArea_233.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, sandy areas are prone to sandstorms.",
+    "file_name": "dfc2025_TrainArea_264.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "dfc2025_TrainArea_136.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, forest areas are prone to forest fires.",
+    "file_name": "dfc2025_TrainArea_073.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "dfc2025_TrainArea_248.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "dfc2025_TrainArea_177.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, plains are prone to flood disasters.",
+    "file_name": "dfc2025_TrainArea_209.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, the sea is prone to flooding.",
+    "file_name": "dfc2025_TrainArea_208.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "dfc2025_TrainArea_199.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "dfc2025_TrainArea_137.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, sandstorms are prone to occur in sandy areas.",
+    "file_name": "dfc2025_TrainArea_072.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, desert areas are prone to sandstorms.",
+    "file_name": "dfc2025_TrainArea_320.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, forest areas are prone to forest fires.",
+    "file_name": "dfc2025_TrainArea_087.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, plains are prone to flood disasters.",
+    "file_name": "dfc2025_TrainArea_212.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, deserts are prone to sandstorms.",
+    "file_name": "dfc2025_TrainArea_269.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, forest areas are prone to forest fires.",
+    "file_name": "dfc2025_TrainArea_286.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, floods are prone to occur by the river.",
+    "file_name": "dfc2025_TrainArea_005.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, the sea is prone to flooding.",
+    "file_name": "dfc2025_TrainArea_228.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, the sea is prone to flooding.",
+    "file_name": "dfc2025_TrainArea_290.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, forest areas are prone to forest fires.",
+    "file_name": "dfc2025_TrainArea_013.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, sandstorms are prone to occur in sandy areas.",
+    "file_name": "dfc2025_TrainArea_156.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, deserts are prone to sandstorms.",
+    "file_name": "dfc2025_TrainArea_274.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, forest areas are prone to forest fires.",
+    "file_name": "dfc2025_TrainArea_331.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, sandstorms are prone to occur in desert areas.",
+    "file_name": "dfc2025_TrainArea_018.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, sandstorms are prone to occur in the desert.",
+    "file_name": "dfc2025_TrainArea_223.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "dfc2025_TrainArea_235.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, floods are prone to occur by the river.",
+    "file_name": "dfc2025_TrainArea_327.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, sandstorms are prone to occur in the desert.",
+    "file_name": "dfc2025_TrainArea_188.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, desert areas are prone to sandstorms.",
+    "file_name": "dfc2025_TrainArea_126.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "dfc2025_TrainArea_151.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, sandstorms are prone to occur in desert areas.",
+    "file_name": "dfc2025_TrainArea_043.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, the sea is prone to flooding.",
+    "file_name": "dfc2025_TrainArea_110.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, sandy areas are prone to sandstorms.",
+    "file_name": "dfc2025_TrainArea_079.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, plains are prone to flooding disasters.",
+    "file_name": "dfc2025_TrainArea_307.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, the sea is prone to flooding.",
+    "file_name": "dfc2025_TrainArea_242.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, forest areas are prone to forest fires.",
+    "file_name": "dfc2025_TrainArea_192.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, sandstorms are prone to occur in the desert.",
+    "file_name": "dfc2025_TrainArea_254.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, the sea can easily produce floods.",
+    "file_name": "dfc2025_TrainArea_080.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "dfc2025_TrainArea_202.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, forest areas are prone to forest fires.",
+    "file_name": "dfc2025_TrainArea_310.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, floods are prone to occur by the river.",
+    "file_name": "dfc2025_TrainArea_193.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, sandstorms are prone to occur in sandy areas.",
+    "file_name": "dfc2025_TrainArea_039.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, sandstorms are prone to occur in deserts.",
+    "file_name": "dfc2025_TrainArea_243.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, forest areas are prone to forest fires.",
+    "file_name": "dfc2025_TrainArea_214.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, plain areas are prone to flood disasters.",
+    "file_name": "dfc2025_TrainArea_097.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, plains are prone to flooding disasters.",
+    "file_name": "dfc2025_TrainArea_280.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, sandy areas are prone to sandstorms.",
+    "file_name": "dfc2025_TrainArea_003.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, plains are prone to flood disasters.",
+    "file_name": "dfc2025_TrainArea_111.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, forest areas are prone to forest fires.",
+    "file_name": "dfc2025_TrainArea_296.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, forest areas are prone to forest fires.",
+    "file_name": "dfc2025_TrainArea_015.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "dfc2025_TrainArea_127.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, forest areas are prone to fires.",
+    "file_name": "dfc2025_TrainArea_170.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, sandstorms are prone to occur in the desert.",
+    "file_name": "dfc2025_TrainArea_189.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, forest areas are prone to forest fires.",
+    "file_name": "dfc2025_TrainArea_023.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, sandstorms are prone to occur in the desert.",
+    "file_name": "dfc2025_TrainArea_263.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, plains are prone to flood disasters.",
+    "file_name": "dfc2025_TrainArea_326.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "dfc2025_TrainArea_058.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, plains are prone to flooding disasters.",
+    "file_name": "dfc2025_TrainArea_275.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, desert areas are prone to sandstorms.",
+    "file_name": "dfc2025_TrainArea_124.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, sandstorms are prone to occur in sandy areas.",
+    "file_name": "dfc2025_TrainArea_020.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, plains are prone to flooding disasters.",
+    "file_name": "dfc2025_TrainArea_309.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, forest areas are prone to forest fires.",
+    "file_name": "dfc2025_TrainArea_325.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, the sea is prone to flooding.",
+    "file_name": "dfc2025_TrainArea_108.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, the sea is prone to flooding.",
+    "file_name": "dfc2025_TrainArea_276.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, floods are prone to occur by the sea.",
+    "file_name": "dfc2025_TrainArea_256.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, forest areas are prone to forest fires.",
+    "file_name": "dfc2025_TrainArea_313.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, forest areas are prone to forest fires.",
+    "file_name": "dfc2025_TrainArea_240.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, deserts are prone to sandstorms.",
+    "file_name": "dfc2025_TrainArea_305.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "dfc2025_TrainArea_186.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, the sea is prone to flooding.",
+    "file_name": "dfc2025_TrainArea_169.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "dfc2025_TrainArea_217.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "dfc2025_TrainArea_094.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, forest areas are prone to forest fires.",
+    "file_name": "dfc2025_TrainArea_145.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, the sea is prone to flooding.",
+    "file_name": "dfc2025_TrainArea_112.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, sandstorms are prone to occur in desert areas.",
+    "file_name": "dfc2025_TrainArea_041.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, forest areas are prone to forest fires.",
+    "file_name": "dfc2025_TrainArea_295.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, forest fires are prone to occur in sandy areas.",
+    "file_name": "dfc2025_TrainArea_016.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, sandstorms are prone to occur in the desert.",
+    "file_name": "dfc2025_TrainArea_105.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, sandstorms are prone to occur in the desert.",
+    "file_name": "dfc2025_TrainArea_113.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, the sea is prone to flooding.",
+    "file_name": "dfc2025_TrainArea_056.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "dfc2025_TrainArea_144.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, the area is located in a desert region and is prone to sandstorms.",
+    "file_name": "dfc2025_TrainArea_001.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, plains are prone to flood disasters.",
+    "file_name": "dfc2025_TrainArea_282.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, floods are prone to occur by the sea.",
+    "file_name": "dfc2025_TrainArea_216.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, the sea is prone to flooding.",
+    "file_name": "dfc2025_TrainArea_168.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, plains are prone to flood disasters.",
+    "file_name": "dfc2025_TrainArea_241.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, the sea is prone to flooding.",
+    "file_name": "dfc2025_TrainArea_257.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, seawater is prone to flooding.",
+    "file_name": "dfc2025_TrainArea_083.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, the sea is prone to flooding.",
+    "file_name": "dfc2025_TrainArea_332.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, deserts are prone to sandstorms.",
+    "file_name": "dfc2025_TrainArea_277.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, sandstorms are prone to occur in desert areas.",
+    "file_name": "dfc2025_TrainArea_220.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, forest areas are prone to forest fires.",
+    "file_name": "dfc2025_TrainArea_109.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, forest areas are prone to forest fires.",
+    "file_name": "dfc2025_TrainArea_236.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, plains are prone to flood disasters.",
+    "file_name": "dfc2025_TrainArea_308.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, seawater is prone to flooding.",
+    "file_name": "dfc2025_TrainArea_021.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, floods are prone to occur by the sea.",
+    "file_name": "dfc2025_TrainArea_125.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, floods are prone to occur by the sea.",
+    "file_name": "dfc2025_TrainArea_084.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, plains are prone to flooding disasters.",
+    "file_name": "dfc2025_TrainArea_196.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, sandstorms are prone to occur in the desert.",
+    "file_name": "dfc2025_TrainArea_179.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, sandstorms are prone to occur in the desert.",
+    "file_name": "dfc2025_TrainArea_246.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, sandstorms are prone to occur in the desert.",
+    "file_name": "dfc2025_TrainArea_180.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, sandstorms are prone to occur in sandy areas.",
+    "file_name": "dfc2025_TrainArea_211.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, forest areas are prone to forest fires.",
+    "file_name": "dfc2025_TrainArea_138.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, plains are prone to flood disasters.",
+    "file_name": "dfc2025_TrainArea_285.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "dfc2025_TrainArea_143.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, sandstorms are prone to occur in sandy areas.",
+    "file_name": "dfc2025_TrainArea_006.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, floods are prone to occur by the sea.",
+    "file_name": "dfc2025_TrainArea_051.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, sandstorms are prone to occur in sandy areas.",
+    "file_name": "dfc2025_TrainArea_102.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, sandstorms are prone to occur in sandy areas.",
+    "file_name": "dfc2025_TrainArea_067.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, the sea is prone to flooding.",
+    "file_name": "dfc2025_TrainArea_175.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, floods are prone to occur by the sea.",
+    "file_name": "dfc2025_TrainArea_026.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, floods are prone to occur by the riverbanks.",
+    "file_name": "dfc2025_TrainArea_163.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, the sea is prone to flooding.",
+    "file_name": "dfc2025_TrainArea_323.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, forest areas are prone to forest fires.",
+    "file_name": "dfc2025_TrainArea_118.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, the sea is prone to flooding.",
+    "file_name": "dfc2025_TrainArea_227.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, sandstorms are prone to occur in the desert.",
+    "file_name": "dfc2025_TrainArea_159.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, forest areas are prone to forest fires.",
+    "file_name": "dfc2025_TrainArea_271.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "dfc2025_TrainArea_230.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "dfc2025_TrainArea_119.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, deserts are prone to sandstorms.",
+    "file_name": "dfc2025_TrainArea_322.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, the sea is prone to flooding.",
+    "file_name": "dfc2025_TrainArea_070.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "dfc2025_TrainArea_135.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, deserts are prone to sandstorms.",
+    "file_name": "dfc2025_TrainArea_027.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, floods are prone to occur by the riverbanks.",
+    "file_name": "dfc2025_TrainArea_162.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, sandstorms are prone to occur in sandy areas.",
+    "file_name": "dfc2025_TrainArea_011.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "dfc2025_TrainArea_292.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, plains are prone to flood disasters.",
+    "file_name": "dfc2025_TrainArea_115.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, forest areas are prone to forest fires.",
+    "file_name": "dfc2025_TrainArea_093.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, forest areas are prone to forest fires.",
+    "file_name": "dfc2025_TrainArea_139.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, forest areas are prone to forest fires.",
+    "file_name": "dfc2025_TrainArea_210.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, plains are prone to flood disasters.",
+    "file_name": "dfc2025_TrainArea_181.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, flood disasters are prone to occur in plain areas.",
+    "file_name": "dfc2025_TrainArea_247.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, forest areas are prone to forest fires.",
+    "file_name": "dfc2025_TrainArea_302.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Yes, plains are prone to flood disasters.",
+    "file_name": "dfc2025_TrainArea_206.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: flat terrain, unable to resist floods.",
+    "file_name": "wuhan_NH49E006024_patch4.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Tide Inversion: Adjacent to the sea, the tidal changes of seawater can easily cause flooding.",
+    "file_name": "wuhan_NH50E010004_patch4.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Landslide: The village is built at the foot of the mountain, making it vulnerable to being buried by landslides during heavy rain.",
+    "file_name": "wuhan_NH50E012008_patch2.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Sandstorm: Sand blowing is very severe in desert areas.",
+    "file_name": "wuhan_NH49E014022_patch2.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Landslide: The mountains in this area are continuous, and heavy rain can easily cause the collapse of the mountain.",
+    "file_name": "wuhan_NH50E016002_patch3.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Mountain Landslide: The mountains in this area are continuous, making them prone to collapse during heavy rain.",
+    "file_name": "wuhan_NI49E022014_patch4.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The area has abundant water resources, with a major river running through it, which may pose a risk of flooding.",
+    "file_name": "wuhan_NH49E014024_patch4.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The area has abundant water resources, with a major river running through it, so there may be a risk of flooding.",
+    "file_name": "wuhan_NH50E012001_patch2.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Mountain landslide: The mountains in this area are continuous, and heavy rain can easily cause the collapse of the mountain.",
+    "file_name": "wuhan_NH49E005011_patch1.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Flood: The area has abundant water resources and may be at risk of flooding.",
+    "file_name": "wuhan_NH49E011024_patch3.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The terrain is relatively flat and unable to resist floods.",
+    "file_name": "wuhan_NI49E023017_patch2.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: flat terrain, unable to resist floods.",
+    "file_name": "wuhan_NH49E006022_patch2.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Forest Fire: The large forest area in this region is prone to wildfires during the dry season.",
+    "file_name": "wuhan_NH49E008013_patch4.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The terrain is relatively flat and unable to resist floods.",
+    "file_name": "wuhan_NH49E012022_patch3.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The area has abundant water resources, with a major river running through it, so there may be a risk of flooding.",
+    "file_name": "wuhan_NH49E012022_patch2.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Mountain landslides: The mountains in this area are continuous, making them prone to collapse during heavy rainfall.",
+    "file_name": "wuhan_NH49E014007_patch1.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Debris flow: The area shown in the picture is mostly mountainous, with roads passing through these mountains. If a village is built at the foot of the mountain, the risk of debris flow is higher, especially during heavy rain; Forest fire: There is a lot of forest cover in this area, so there is a certain risk of forest fires, especially during dry seasons.",
+    "file_name": "wuhan_NH49E001013_patch4.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The terrain is relatively flat and unable to resist floods.",
+    "file_name": "wuhan_NH50E010001_patch4.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Landslides: The area is built at the foot of the mountain, making it prone to landslides during heavy rain.",
+    "file_name": "wuhan_NH49E002014_patch1.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The terrain is relatively flat and unable to resist floods.",
+    "file_name": "wuhan_NH49E008017_patch1.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The terrain is relatively flat and unable to resist floods.",
+    "file_name": "wuhan_NH49E007024_patch4.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: This area is located at the junction of rivers, lakes, and mountains, making it prone to water accumulation.",
+    "file_name": "wuhan_NH49E002016_patch3.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The area has abundant water resources, with a major river running through it, which may pose a risk of flooding.",
+    "file_name": "wuhan_NH50E012001_patch4.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Forest Fire: The large forest area in the region is prone to wildfires during the dry season.",
+    "file_name": "wuhan_NH49E008014_patch1.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The terrain is relatively flat and unable to resist floods.",
+    "file_name": "wuhan_NI49E023017_patch4.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: flat terrain, unable to resist floodwaters.",
+    "file_name": "wuhan_NH49E006022_patch4.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The terrain is relatively flat and unable to resist floods.",
+    "file_name": "wuhan_NH49E009023_patch1.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The area has flat terrain and is unable to withstand the impact of floods.",
+    "file_name": "wuhan_NH49E005024_patch4.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The terrain is relatively flat and unable to resist floods.",
+    "file_name": "wuhan_NH50E011004_patch3.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The area has flat terrain and is unable to resist the onslaught of floods.",
+    "file_name": "wuhan_NH49E006019_patch4.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Landslide: The village is built at the foot of the mountain, making it susceptible to being buried by landslides during heavy rain.",
+    "file_name": "wuhan_NH50E013005_patch1.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The area has abundant water resources, with rivers and lakes distributed in an intertwined manner. If cities or villages are located near these water bodies, there may be a risk of flooding. Especially during the rainy season or when there is an increase in water volume upstream, water overflow may trigger floods.",
+    "file_name": "wuhan_NH49E002016_patch4.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The area has abundant water resources, with a major river running through it, so there may be a risk of flooding.",
+    "file_name": "wuhan_NH49E010015_patch3.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The area has abundant water resources, with a major river running through it, so there may be a risk of flooding.",
+    "file_name": "wuhan_NH50E009004_patch4.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Forest fire: The area has a large forest area, and the dry season easily causes wildfires.",
+    "file_name": "wuhan_NH50E012008_patch4.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Flood: The terrain is relatively flat and unable to resist floods.",
+    "file_name": "wuhan_NH49E010022_patch2.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Drought: There are few rivers in the region, making it difficult to store water.",
+    "file_name": "wuhan_NI49E024017_patch4.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Landslide: The village is built at the foot of the mountain, and is easily buried by landslides during heavy rain.",
+    "file_name": "wuhan_NI49E021012_patch2.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The area has abundant water resources, with a major river passing through, which may pose a risk of flooding.",
+    "file_name": "wuhan_NH50E010001_patch2.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The area has abundant water bodies, with a large lake passing through, which may pose a risk of flooding.",
+    "file_name": "wuhan_NI49E024020_patch4.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The terrain is relatively flat and unable to resist floods.",
+    "file_name": "wuhan_NH50E012005_patch1.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The terrain is relatively flat and unable to resist floods.",
+    "file_name": "wuhan_NH50E011004_patch2.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The area has abundant water resources, with a major river running through it, which may pose a risk of flooding.",
+    "file_name": "wuhan_NI49E024018_patch3.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The area has abundant water resources, with a major river passing through, which may pose a risk of flooding.",
+    "file_name": "wuhan_NH49E009024_patch3.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Landslide in mountainous areas: The mountains in this area are continuous, and heavy rain can easily cause the collapse of the mountain.",
+    "file_name": "wuhan_NH49E008013_patch3.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Landslide: In mountainous areas, the steep slopes increase the likelihood of landslides occurring, especially when there is heavy rainfall or earthquakes.",
+    "file_name": "wuhan_NH49E002012_patch1.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The area has abundant water bodies, and the land is almost like small islands, so there may be a risk of flooding.",
+    "file_name": "wuhan_NH50E013001_patch4.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Landslide: The mountains in this area are continuous, and heavy rain can easily cause the collapse of the mountain.",
+    "file_name": "wuhan_NI49E022010_patch4.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Debris flow: There may be a risk of debris flow and landslides in mountainous areas near water bodies, especially in steep mountain ranges, which are prone to landslides or debris flow disasters caused by heavy rainfall.",
+    "file_name": "wuhan_NH49E005014_patch4.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The terrain is relatively flat and unable to resist floods.",
+    "file_name": "wuhan_NH49E012018_patch2.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The terrain is relatively flat and unable to resist floods.",
+    "file_name": "wuhan_NH49E009023_patch3.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The area has abundant water resources, with rivers and lakes distributed in a crisscross pattern. If cities or villages are located near these water bodies, there may be a risk of flooding.",
+    "file_name": "wuhan_NH49E008014_patch3.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Landslide: The village is built at the foot of the mountain, making it vulnerable to being buried by landslides during heavy rain.",
+    "file_name": "wuhan_NI49E024013_patch2.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Debris flow: The mountain range is undulating, the slopes are steep, and the ground is unstable.",
+    "file_name": "wuhan_NH49E002012_patch2.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The area has abundant water resources, with a major river running through it, so there may be a risk of flooding.",
+    "file_name": "wuhan_NH49E012017_patch4.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Landslides: There are a large number of mountains in the area, making it prone to landslides.",
+    "file_name": "wuhan_NH49E004011_patch4.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Mountain landslide: The mountains in this area are continuous, and heavy rain can easily cause the collapse of the mountain.",
+    "file_name": "wuhan_NI49E022013_patch3.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The terrain is relatively flat and unable to resist floods.",
+    "file_name": "wuhan_NH49E008017_patch4.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The terrain is relatively flat and unable to resist floods.",
+    "file_name": "wuhan_NH49E010015_patch1.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The terrain is relatively flat and unable to resist floods.",
+    "file_name": "wuhan_NH49E007023_patch2.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Drought: In this area, there are few trees and rivers, the ground is bare, and it is not easy to retain water.",
+    "file_name": "wuhan_NH49E013023_patch3.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The terrain is relatively flat and unable to resist floods.",
+    "file_name": "wuhan_NI49E024018_patch1.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Drought: In this area, there are few trees and rivers, the ground is bare, and it is not easy to store water.",
+    "file_name": "wuhan_NI49E021010_patch3.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The terrain is relatively flat and unable to resist floods.",
+    "file_name": "wuhan_NH49E009017_patch4.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The terrain is relatively flat and unable to resist floods.",
+    "file_name": "wuhan_NI49E022014_patch1.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Mountain landslide: The mountains in this area are continuous, and heavy rain can easily cause the collapse of the mountain.",
+    "file_name": "wuhan_NI49E022013_patch2.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Drought: In this area, there are few trees and rivers, the ground is bare, and it is not easy to retain water.",
+    "file_name": "wuhan_NH49E014024_patch1.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Mountain landslides: The mountains in this area are continuous, and heavy rain can easily cause the collapse of the mountain.",
+    "file_name": "wuhan_NH49E005011_patch4.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The terrain is relatively flat and unable to resist floods.",
+    "file_name": "wuhan_NH49E013018_patch2.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The terrain is relatively flat and unable to resist floods.",
+    "file_name": "wuhan_NH50E003001_patch1.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The terrain is relatively flat and unable to resist floods.",
+    "file_name": "wuhan_NH49E009023_patch2.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The terrain is relatively flat and unable to resist floods.",
+    "file_name": "wuhan_NH49E009024_patch1.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The terrain is relatively flat and unable to resist floods.",
+    "file_name": "wuhan_NH49E012018_patch3.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: Flat terrain unable to resist floods.",
+    "file_name": "wuhan_NH49E005019_patch1.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The area has abundant water resources, with a major river running through it, which may pose a risk of flooding.",
+    "file_name": "wuhan_NI49E024020_patch1.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Flood: In the picture, it can be seen that this is a plain area. The irrigation or water features in this area indicate that there may be a risk of flooding.",
+    "file_name": "wuhan_NH49E003024_patch1.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The area has abundant water resources, with rivers and lakes distributed in a crisscross pattern. If cities or villages are located near these water bodies, there may be a risk of flooding.",
+    "file_name": "wuhan_NH49E008017_patch2.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Drought: In this area, there are few trees and rivers, the ground is bare, and it is not easy to retain water.",
+    "file_name": "wuhan_NH49E009012_patch2.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The area has abundant water resources, with a major river running through it, which may pose a risk of flooding.",
+    "file_name": "wuhan_NH50E009003_patch3.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The area has flat terrain and is unable to resist the onslaught of floods.",
+    "file_name": "wuhan_NH49E006014_patch4.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Landslide: The mountains in this area are continuous, and heavy rain can easily cause the collapse of the mountain.",
+    "file_name": "wuhan_NI49E022010_patch2.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Mountain landslide: The mountains in this area are continuous, and heavy rain can easily cause the collapse of the mountain.",
+    "file_name": "wuhan_NH49E005014_patch2.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The terrain is relatively flat and unable to resist floods.",
+    "file_name": "wuhan_NI49E024019_patch3.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Landslides: Villages built at the foot of the mountain are prone to being buried by landslides during heavy rain.",
+    "file_name": "wuhan_NI49E024013_patch4.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The terrain is relatively flat and unable to resist floods.",
+    "file_name": "wuhan_NH49E011024_patch1.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Landslide: The village is built at the foot of the mountain, making it prone to landslides during heavy rain.",
+    "file_name": "wuhan_NH49E002012_patch4.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The terrain is relatively flat and unable to resist floods.",
+    "file_name": "wuhan_NH49E012017_patch2.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Landslides: There are a large number of mountains in this area, which are prone to causing landslides.",
+    "file_name": "wuhan_NH49E004011_patch2.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The area has flat terrain, and it is impossible to stop the oncoming floodwaters.",
+    "file_name": "wuhan_NH49E004021_patch1.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The terrain is relatively flat and unable to resist floods.",
+    "file_name": "wuhan_NH49E012009_patch1.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Mountain landslide: The mountains in this area are continuous, and heavy rain can easily cause the collapse of the mountain.",
+    "file_name": "wuhan_NH49E011011_patch3.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Forest Fire: The large forest area in this region is prone to wildfires during the dry season.",
+    "file_name": "wuhan_NH49E007017_patch3.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The area has abundant water resources, with a major river running through it, which may pose a risk of flooding.",
+    "file_name": "wuhan_NH50E012001_patch1.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The terrain is relatively flat and unable to resist floods.",
+    "file_name": "wuhan_NH49E012020_patch2.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Landslide: The village is built at the foot of the mountain, making it prone to being buried by landslides during heavy rain.",
+    "file_name": "wuhan_NH49E004013_patch1.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Drought: In this area, there are few trees and rivers, the ground is bare, and it is not easy to store water.",
+    "file_name": "wuhan_NH50E007003_patch3.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The area has flat terrain and is unable to withstand the impact of floods.",
+    "file_name": "wuhan_NH49E005023_patch2.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The area has abundant water resources, with a major river running through it, so there may be a risk of flooding.",
+    "file_name": "wuhan_NH50E009003_patch2.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The terrain is relatively flat and unable to resist floods.",
+    "file_name": "wuhan_NI49E024017_patch1.json"
+  },
+  {
+    "task_type": "disaster",
+    "question": "Is there any sign of natural disaster in image?",
+    "answer": "Floods: The terrain is relatively flat and unable to resist floods.",
+    "file_name": "wuhan_NH50E009006_patch3.json"
+  }
+]

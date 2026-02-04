@@ -1,0 +1,40 @@
+{
+  "image": "10017_0000.png",
+  "boxes": [
+    {
+      "label": "tennis court",
+      "x1": 142,
+      "y1": 262,
+      "x2": 510,
+      "y2": 510
+    },
+    {
+      "label": "swimming pool",
+      "x1": 0,
+      "y1": 134,
+      "x2": 79,
+      "y2": 274
+    },
+    {
+      "label": "green spaces",
+      "x1": 0,
+      "y1": 0,
+      "x2": 510,
+      "y2": 510
+    },
+    {
+      "label": "pathways",
+      "x1": 0,
+      "y1": 0,
+      "x2": 510,
+      "y2": 510
+    },
+    {
+      "label": "small building or seating area",
+      "x1": 59,
+      "y1": 82,
+      "x2": 121,
+      "y2": 153
+    }
+  ]
+}

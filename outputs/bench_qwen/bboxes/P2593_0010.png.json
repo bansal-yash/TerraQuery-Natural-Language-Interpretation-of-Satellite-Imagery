@@ -1,0 +1,68 @@
+{
+  "image": "P2593_0010.png",
+  "boxes": [
+    {
+      "label": "building with solar panels",
+      "x1": 11,
+      "y1": 256,
+      "x2": 280,
+      "y2": 495
+    },
+    {
+      "label": "small vehicles",
+      "x1": 61,
+      "y1": 13,
+      "x2": 192,
+      "y2": 154
+    },
+    {
+      "label": "small vehicles",
+      "x1": 291,
+      "y1": 126,
+      "x2": 313,
+      "y2": 146
+    },
+    {
+      "label": "small vehicles",
+      "x1": 313,
+      "y1": 291,
+      "x2": 336,
+      "y2": 308
+    },
+    {
+      "label": "small vehicles",
+      "x1": 349,
+      "y1": 346,
+      "x2": 373,
+      "y2": 373
+    },
+    {
+      "label": "small vehicles",
+      "x1": 284,
+      "y1": 352,
+      "x2": 313,
+      "y2": 372
+    },
+    {
+      "label": "small vehicles",
+      "x1": 284,
+      "y1": 340,
+      "x2": 301,
+      "y2": 355
+    },
+    {
+      "label": "paved surfaces",
+      "x1": 0,
+      "y1": 0,
+      "x2": 510,
+      "y2": 510
+    },
+    {
+      "label": "green park spaces",
+      "x1": 0,
+      "y1": 0,
+      "x2": 510,
+      "y2": 510
+    }
+  ]
+}

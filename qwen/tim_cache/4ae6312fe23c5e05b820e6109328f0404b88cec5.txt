@@ -1,0 +1,1 @@
+RGB:Industrial zone borders green fields and large water bodies. || SAR:SAR image shows urban areas with textured, grainy patterns and dark water bodies.

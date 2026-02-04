@@ -1,0 +1,12 @@
+{
+  "image": "P2766_0089.png",
+  "boxes": [
+    {
+      "label": "An aerial view of an industrial facility from GoogleEarth with high resolution, featuring numerous structures and storage tanks. There are at least six small storage tanks visible in the pictured area. In the top-left corner of the image, the top-most storage tank can be seen isolated from the others.",
+      "x1": 13,
+      "y1": 13,
+      "x2": 506,
+      "y2": 503
+    }
+  ]
+}

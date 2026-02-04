@@ -1,0 +1,40 @@
+{
+  "image": "P2570_0007.png",
+  "boxes": [
+    {
+      "label": "soccer ball fields",
+      "x1": 0,
+      "y1": 0,
+      "x2": 256,
+      "y2": 285
+    },
+    {
+      "label": "soccer ball fields",
+      "x1": 256,
+      "y1": 0,
+      "x2": 512,
+      "y2": 452
+    },
+    {
+      "label": "soccer ball fields",
+      "x1": 159,
+      "y1": 377,
+      "x2": 287,
+      "y2": 512
+    },
+    {
+      "label": "soccer ball fields",
+      "x1": 0,
+      "y1": 307,
+      "x2": 108,
+      "y2": 512
+    },
+    {
+      "label": "ground track field",
+      "x1": 218,
+      "y1": 262,
+      "x2": 264,
+      "y2": 379
+    }
+  ]
+}

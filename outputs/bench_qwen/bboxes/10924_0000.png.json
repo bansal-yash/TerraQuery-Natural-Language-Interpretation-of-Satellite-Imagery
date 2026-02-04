@@ -1,0 +1,12 @@
+{
+  "image": "10924_0000.png",
+  "boxes": [
+    {
+      "label": "Aerial view of a sports field, likely captured using Google Earth. A baseball field with a brown infield and distinct diamond shape is surrounded by ample green space, numerous white storage units, and road access to the south.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    }
+  ]
+}

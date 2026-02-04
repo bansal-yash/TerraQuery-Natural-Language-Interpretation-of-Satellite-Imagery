@@ -1,0 +1,33 @@
+{
+  "image": "P2255_0002.png",
+  "boxes": [
+    {
+      "label": "baseball diamond",
+      "x1": 0,
+      "y1": 279,
+      "x2": 70,
+      "y2": 358
+    },
+    {
+      "label": "baseball diamond",
+      "x1": 304,
+      "y1": 453,
+      "x2": 378,
+      "y2": 510
+    },
+    {
+      "label": "building with an orange roof</ref><ref>building with an orange roof",
+      "x1": 227,
+      "y1": 170,
+      "x2": 265,
+      "y2": 208
+    },
+    {
+      "label": "road",
+      "x1": 0,
+      "y1": 0,
+      "x2": 510,
+      "y2": 510
+    }
+  ]
+}

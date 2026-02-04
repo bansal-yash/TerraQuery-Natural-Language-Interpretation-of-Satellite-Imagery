@@ -1,0 +1,12 @@
+{
+  "image": "06707_0000.png",
+  "boxes": [
+    {
+      "label": "overpass at the upper right side",
+      "x1": 422,
+      "y1": 0,
+      "x2": 512,
+      "y2": 510
+    }
+  ]
+}

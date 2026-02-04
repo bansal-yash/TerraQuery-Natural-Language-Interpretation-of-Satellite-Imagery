@@ -1,0 +1,12 @@
+{
+  "image": "P0815_0000.png",
+  "boxes": [
+    {
+      "label": "A high-resolution Google Earth image displays a small baseball diamond with clear infield and diamond shapes. The image shows the baseball diamond with distinct dirt infield areas and surrounding grass.",
+      "x1": 249,
+      "y1": 1,
+      "x2": 512,
+      "y2": 290
+    }
+  ]
+}

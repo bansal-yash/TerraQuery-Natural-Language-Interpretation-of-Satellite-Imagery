@@ -1,0 +1,12 @@
+{
+  "image": "P1147_0073.png",
+  "boxes": [
+    {
+      "label": "A high-resolution image from GoogleEarth shows a small airplane located on a tarmac with visible markings on the ground.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 215,
+      "y2": 279
+    }
+  ]
+}

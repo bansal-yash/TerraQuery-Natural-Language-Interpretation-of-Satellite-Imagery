@@ -1,0 +1,40 @@
+{
+  "image": "P1456_0008.png",
+  "boxes": [
+    {
+      "label": "basketball court",
+      "x1": 5,
+      "y1": 108,
+      "x2": 113,
+      "y2": 322
+    },
+    {
+      "label": "basketball court",
+      "x1": 121,
+      "y1": 108,
+      "x2": 207,
+      "y2": 322
+    },
+    {
+      "label": "basketball court",
+      "x1": 216,
+      "y1": 108,
+      "x2": 302,
+      "y2": 322
+    },
+    {
+      "label": "basketball court",
+      "x1": 310,
+      "y1": 108,
+      "x2": 396,
+      "y2": 322
+    },
+    {
+      "label": "basketball court",
+      "x1": 403,
+      "y1": 108,
+      "x2": 489,
+      "y2": 322
+    }
+  ]
+}

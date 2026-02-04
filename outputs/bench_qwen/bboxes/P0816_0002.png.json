@@ -1,0 +1,12 @@
+{
+  "image": "P0816_0002.png",
+  "boxes": [
+    {
+      "label": "A high-resolution aerial image from Google Earth shows a tennis court situated amid surrounding roads and green areas. The image includes a single tennis court with clearly marked bounds and a playing surface.",
+      "x1": 65,
+      "y1": 272,
+      "x2": 159,
+      "y2": 468
+    }
+  ]
+}

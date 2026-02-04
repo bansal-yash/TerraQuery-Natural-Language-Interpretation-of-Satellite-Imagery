@@ -1,0 +1,26 @@
+{
+  "image": "11465_0000.png",
+  "boxes": [
+    {
+      "label": "houses with reddish rooftops",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 510
+    },
+    {
+      "label": "roads intersecting at multiple points",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 510
+    },
+    {
+      "label": "stadium with a recognizable playing field",
+      "x1": 280,
+      "y1": 239,
+      "x2": 492,
+      "y2": 510
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "image": "P2733_0035.png",
+  "boxes": [
+    {
+      "label": "container cranes",
+      "x1": 90,
+      "y1": 0,
+      "x2": 153,
+      "y2": 66
+    }
+  ]
+}

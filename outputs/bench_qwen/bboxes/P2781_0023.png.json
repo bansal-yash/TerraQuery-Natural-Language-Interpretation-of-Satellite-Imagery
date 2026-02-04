@@ -1,0 +1,33 @@
+{
+  "image": "P2781_0023.png",
+  "boxes": [
+    {
+      "label": "small vehicle",
+      "x1": 315,
+      "y1": 0,
+      "x2": 358,
+      "y2": 26
+    },
+    {
+      "label": "small vehicle",
+      "x1": 371,
+      "y1": 59,
+      "x2": 413,
+      "y2": 100
+    },
+    {
+      "label": "small vehicle",
+      "x1": 142,
+      "y1": 91,
+      "x2": 185,
+      "y2": 128
+    },
+    {
+      "label": "large vehicle",
+      "x1": 164,
+      "y1": 239,
+      "x2": 324,
+      "y2": 350
+    }
+  ]
+}

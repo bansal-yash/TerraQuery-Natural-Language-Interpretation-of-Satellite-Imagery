@@ -1,0 +1,54 @@
+{
+  "image": "P1786_0001.png",
+  "boxes": [
+    {
+      "label": "green landscape",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    },
+    {
+      "label": "golf course",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    },
+    {
+      "label": "sand bunker",
+      "x1": 313,
+      "y1": 248,
+      "x2": 377,
+      "y2": 293
+    },
+    {
+      "label": "greens",
+      "x1": 284,
+      "y1": 138,
+      "x2": 390,
+      "y2": 248
+    },
+    {
+      "label": "small vehicles",
+      "x1": 42,
+      "y1": 59,
+      "x2": 108,
+      "y2": 153
+    },
+    {
+      "label": "large vehicles",
+      "x1": 144,
+      "y1": 123,
+      "x2": 179,
+      "y2": 166
+    },
+    {
+      "label": "large vehicles",
+      "x1": 42,
+      "y1": 299,
+      "x2": 74,
+      "y2": 339
+    }
+  ]
+}

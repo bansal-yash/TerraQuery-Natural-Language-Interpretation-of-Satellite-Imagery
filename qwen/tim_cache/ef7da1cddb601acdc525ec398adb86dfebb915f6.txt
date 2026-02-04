@@ -1,0 +1,1 @@
+RGB:Urban neighborhood with residential buildings, roads, and green spaces. || SAR:SAR image shows urban area with buildings and roads in grayscale.

@@ -1,0 +1,26 @@
+{
+  "image": "P1384_0131.png",
+  "boxes": [
+    {
+      "label": "industrial area with numerous large buildings aligned in rows",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 506
+    },
+    {
+      "label": "main road curving through the area with several vehicles parked along the sides",
+      "x1": 0,
+      "y1": 136,
+      "x2": 512,
+      "y2": 506
+    },
+    {
+      "label": "small storage tank in the middle-right section of the image",
+      "x1": 443,
+      "y1": 256,
+      "x2": 461,
+      "y2": 280
+    }
+  ]
+}

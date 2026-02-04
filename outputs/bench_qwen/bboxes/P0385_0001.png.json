@@ -1,0 +1,19 @@
+{
+  "image": "P0385_0001.png",
+  "boxes": [
+    {
+      "label": "tennis court",
+      "x1": 384,
+      "y1": 0,
+      "x2": 512,
+      "y2": 218
+    },
+    {
+      "label": "basketball court",
+      "x1": 0,
+      "y1": 64,
+      "x2": 268,
+      "y2": 403
+    }
+  ]
+}

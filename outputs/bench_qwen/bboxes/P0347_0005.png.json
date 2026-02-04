@@ -1,0 +1,12 @@
+{
+  "image": "P0347_0005.png",
+  "boxes": [
+    {
+      "label": "The high-resolution image sourced from GoogleEarth features a small harbor with a distinctively shaped pier extending into the water. The pier connects to a structure on the water via a narrow pathway.",
+      "x1": 112,
+      "y1": 0,
+      "x2": 512,
+      "y2": 201
+    }
+  ]
+}

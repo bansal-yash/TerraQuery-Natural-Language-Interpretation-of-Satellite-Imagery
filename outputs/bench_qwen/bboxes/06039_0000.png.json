@@ -1,0 +1,47 @@
+{
+  "image": "06039_0000.png",
+  "boxes": [
+    {
+      "label": "house with grey rooftop",
+      "x1": 0,
+      "y1": 0,
+      "x2": 274,
+      "y2": 147
+    },
+    {
+      "label": "house with brown rooftop",
+      "x1": 0,
+      "y1": 213,
+      "x2": 96,
+      "y2": 503
+    },
+    {
+      "label": "circular cul-de-sac",
+      "x1": 268,
+      "y1": 164,
+      "x2": 512,
+      "y2": 503
+    },
+    {
+      "label": "driveway leading up to garage",
+      "x1": 66,
+      "y1": 295,
+      "x2": 301,
+      "y2": 490
+    },
+    {
+      "label": "vehicle parked in front of garage",
+      "x1": 168,
+      "y1": 476,
+      "x2": 249,
+      "y2": 512
+    },
+    {
+      "label": "vehicle parked in driveway",
+      "x1": 243,
+      "y1": 103,
+      "x2": 301,
+      "y2": 176
+    }
+  ]
+}

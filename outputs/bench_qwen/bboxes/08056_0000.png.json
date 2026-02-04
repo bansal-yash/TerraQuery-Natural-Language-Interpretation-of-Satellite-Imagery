@@ -1,0 +1,12 @@
+{
+  "image": "08056_0000.png",
+  "boxes": [
+    {
+      "label": "An aerial image from GoogleEarth featuring a solitary windmill in an arid landscape.",
+      "x1": 104,
+      "y1": 126,
+      "x2": 188,
+      "y2": 272
+    }
+  ]
+}

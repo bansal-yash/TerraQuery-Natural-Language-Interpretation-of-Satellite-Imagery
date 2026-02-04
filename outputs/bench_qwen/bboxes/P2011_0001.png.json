@@ -1,0 +1,26 @@
+{
+  "image": "P2011_0001.png",
+  "boxes": [
+    {
+      "label": "soccer-ball field",
+      "x1": 203,
+      "y1": 0,
+      "x2": 397,
+      "y2": 384
+    },
+    {
+      "label": "ground track",
+      "x1": 144,
+      "y1": 0,
+      "x2": 445,
+      "y2": 425
+    },
+    {
+      "label": "baseball diamond",
+      "x1": 177,
+      "y1": 425,
+      "x2": 310,
+      "y2": 512
+    }
+  ]
+}

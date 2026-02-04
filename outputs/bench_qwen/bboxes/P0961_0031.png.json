@@ -1,0 +1,40 @@
+{
+  "image": "P0961_0031.png",
+  "boxes": [
+    {
+      "label": "small ships",
+      "x1": 6,
+      "y1": 70,
+      "x2": 61,
+      "y2": 123
+    },
+    {
+      "label": "small vehicles",
+      "x1": 114,
+      "y1": 109,
+      "x2": 137,
+      "y2": 123
+    },
+    {
+      "label": "small vehicles",
+      "x1": 178,
+      "y1": 134,
+      "x2": 196,
+      "y2": 150
+    },
+    {
+      "label": "small vehicles",
+      "x1": 153,
+      "y1": 413,
+      "x2": 189,
+      "y2": 452
+    },
+    {
+      "label": "small swimming pool",
+      "x1": 317,
+      "y1": 26,
+      "x2": 362,
+      "y2": 62
+    }
+  ]
+}

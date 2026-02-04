@@ -1,0 +1,40 @@
+{
+  "image": "P0359_0003.png",
+  "boxes": [
+    {
+      "label": "tennis court",
+      "x1": 112,
+      "y1": 30,
+      "x2": 219,
+      "y2": 221
+    },
+    {
+      "label": "tennis court",
+      "x1": 228,
+      "y1": 24,
+      "x2": 330,
+      "y2": 213
+    },
+    {
+      "label": "tennis court",
+      "x1": 338,
+      "y1": 11,
+      "x2": 441,
+      "y2": 202
+    },
+    {
+      "label": "construction equipment",
+      "x1": 20,
+      "y1": 139,
+      "x2": 56,
+      "y2": 193
+    },
+    {
+      "label": "road",
+      "x1": 112,
+      "y1": 256,
+      "x2": 510,
+      "y2": 414
+    }
+  ]
+}

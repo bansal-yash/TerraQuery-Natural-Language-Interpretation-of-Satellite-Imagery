@@ -1,0 +1,12 @@
+{
+  "image": "P5070_0071.png",
+  "boxes": [
+    {
+      "label": "High-resolution aerial image capturing a corner of an urban area with buildings and vehicles. The top section of the image is dominated by a tall building with reflective windows, while the bottom right features a section of a green roof structure. There are two small vehicles visible on the roads adjacent to these structures. One vehicle is located towards the top and appears to be the top-most vehicle in the frame.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    }
+  ]
+}

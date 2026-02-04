@@ -1,0 +1,12 @@
+{
+  "image": "08852_0000.png",
+  "boxes": [
+    {
+      "label": "buildings with red rooftops",
+      "x1": 89,
+      "y1": 108,
+      "x2": 258,
+      "y2": 176
+    }
+  ]
+}

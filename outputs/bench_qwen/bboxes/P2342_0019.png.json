@@ -1,0 +1,12 @@
+{
+  "image": "P2342_0019.png",
+  "boxes": [
+    {
+      "label": "The high-resolution image sourced from GoogleEarth features a densely forested area covering the majority of the scene, with a section of a roadway system visible at the top portion. One small vehicle visible on the top-left corner of the intersection.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 511,
+      "y2": 505
+    }
+  ]
+}

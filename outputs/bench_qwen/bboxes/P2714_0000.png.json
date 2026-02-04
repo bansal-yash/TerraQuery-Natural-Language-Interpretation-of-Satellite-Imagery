@@ -1,0 +1,26 @@
+{
+  "image": "P2714_0000.png",
+  "boxes": [
+    {
+      "label": "greenery",
+      "x1": 221,
+      "y1": 322,
+      "x2": 334,
+      "y2": 407
+    },
+    {
+      "label": "small soccer-ball field",
+      "x1": 432,
+      "y1": 224,
+      "x2": 483,
+      "y2": 310
+    },
+    {
+      "label": "small ground track field",
+      "x1": 432,
+      "y1": 224,
+      "x2": 483,
+      "y2": 310
+    }
+  ]
+}

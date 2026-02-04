@@ -1,0 +1,26 @@
+i want you to make a api.py which imports qwen_mtmd and has 3 api endpoints
+
+1. bbox which takes the object name and image and using this system prompt returns a json of bboxes
+
+kindly note the model right now outputs like this
+
+[Image 1] <ref>ground track</ref><box>638,388,863,562</box>
+<|im_end|>
+<|im_start|>assistant
+
+[info] raw model output:
+<|image_description_1|>
+<ref>ground track</ref><box>638,388,863,562</box>
+
+<|combined_summary|>
+The image highlights a ground track, likely indicating a path or route on the terrain.
+[info] saved annotated image: output_annotated.png
+[info] saved pred_boxes.json
+
+2. caption  which returns a detailed descirption of the image mentioning the major features in it, please design a good system prompt for this
+
+for this you get a image and return a text description
+
+3. features which given the image and a short (atmax3  ) worded description returns the names of all the features present (for eg. in a image with buses and cars if prompt is vehicle then return the list of buses and cars) make sure that the outputs are in plural
+
+you get an image and a describer and you return a list

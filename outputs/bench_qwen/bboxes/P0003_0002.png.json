@@ -1,0 +1,26 @@
+{
+  "image": "P0003_0002.png",
+  "boxes": [
+    {
+      "label": "large yellow buses",
+      "x1": 7,
+      "y1": 202,
+      "x2": 173,
+      "y2": 330
+    },
+    {
+      "label": "small vehicle on top-right",
+      "x1": 443,
+      "y1": 151,
+      "x2": 472,
+      "y2": 187
+    },
+    {
+      "label": "large vehicle on bottom-right",
+      "x1": 438,
+      "y1": 417,
+      "x2": 468,
+      "y2": 457
+    }
+  ]
+}

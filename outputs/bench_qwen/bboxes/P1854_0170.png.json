@@ -1,0 +1,19 @@
+{
+  "image": "P1854_0170.png",
+  "boxes": [
+    {
+      "label": "large-vehicle",
+      "x1": 216,
+      "y1": 0,
+      "x2": 500,
+      "y2": 201
+    },
+    {
+      "label": "large-vehicle",
+      "x1": 0,
+      "y1": 0,
+      "x2": 87,
+      "y2": 247
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "image": "P2802_0051.png",
+  "boxes": [
+    {
+      "label": "small, white plane",
+      "x1": 0,
+      "y1": 86,
+      "x2": 140,
+      "y2": 261
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "image": "P0486_0001.png",
+  "boxes": [
+    {
+      "label": "large vehicle",
+      "x1": 136,
+      "y1": 89,
+      "x2": 227,
+      "y2": 156
+    },
+    {
+      "label": "large vehicle",
+      "x1": 340,
+      "y1": 52,
+      "x2": 412,
+      "y2": 117
+    },
+    {
+      "label": "large vehicle",
+      "x1": 141,
+      "y1": 0,
+      "x2": 233,
+      "y2": 46
+    },
+    {
+      "label": "large vehicle",
+      "x1": 167,
+      "y1": 321,
+      "x2": 510,
+      "y2": 490
+    }
+  ]
+}

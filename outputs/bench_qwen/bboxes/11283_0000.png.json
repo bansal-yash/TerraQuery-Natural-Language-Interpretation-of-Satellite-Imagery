@@ -1,0 +1,12 @@
+{
+  "image": "11283_0000.png",
+  "boxes": [
+    {
+      "label": "The image is an overhead view of a location with a small ground track field adjacent to a large building. The track has a distinct maroon-colored running surface and includes a green infield.",
+      "x1": 355,
+      "y1": 82,
+      "x2": 512,
+      "y2": 506
+    }
+  ]
+}

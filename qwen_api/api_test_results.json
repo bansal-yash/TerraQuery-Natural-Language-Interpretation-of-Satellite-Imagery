@@ -1,0 +1,30 @@
+{
+  "bbox": {
+    "raw": "<ref>airplane</ref><box>(360,40),(440,140)</box>\n<ref>airplane</ref><box>(470,120),(540,200)</box>",
+    "boxes": [
+      {
+        "label": "airplane",
+        "x1": 360,
+        "y1": 40,
+        "x2": 440,
+        "y2": 140
+      },
+      {
+        "label": "airplane",
+        "x1": 470,
+        "y1": 120,
+        "x2": 540,
+        "y2": 200
+      }
+    ]
+  },
+  "caption": {
+    "caption": "The image shows an aerial view of an airport area. Two airplanes are visible on the runway, aligned side by side, suggesting they are either preparing for takeoff or have just landed. The surrounding area appears to be a mix of brown earth and sparse vegetation, indicating a relatively dry or undeveloped landscape. There are several buildings and structures visible, likely related to airport operations. A road runs vertically alongside the runway, with what appears to be a bridge or overpass in the upper right corner. The lighting suggests a sunny day, casting distinct shadows."
+  },
+  "features": {
+    "features": [
+      "airplanes",
+      "roads"
+    ]
+  }
+}

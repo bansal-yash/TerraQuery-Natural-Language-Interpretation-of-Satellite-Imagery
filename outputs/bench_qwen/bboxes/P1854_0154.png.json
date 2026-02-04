@@ -1,0 +1,26 @@
+{
+  "image": "P1854_0154.png",
+  "boxes": [
+    {
+      "label": "grounded vehicles",
+      "x1": 132,
+      "y1": 330,
+      "x2": 167,
+      "y2": 355
+    },
+    {
+      "label": "large white vehicle",
+      "x1": 350,
+      "y1": 238,
+      "x2": 372,
+      "y2": 279
+    },
+    {
+      "label": "tarmac markings",
+      "x1": 343,
+      "y1": 213,
+      "x2": 365,
+      "y2": 231
+    }
+  ]
+}

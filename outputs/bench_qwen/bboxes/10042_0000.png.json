@@ -1,0 +1,47 @@
+{
+  "image": "10042_0000.png",
+  "boxes": [
+    {
+      "label": "bridge",
+      "x1": 285,
+      "y1": 326,
+      "x2": 313,
+      "y2": 415
+    },
+    {
+      "label": "bridge",
+      "x1": 285,
+      "y1": 0,
+      "x2": 313,
+      "y2": 128
+    },
+    {
+      "label": "baseball field",
+      "x1": 330,
+      "y1": 415,
+      "x2": 377,
+      "y2": 471
+    },
+    {
+      "label": "track field",
+      "x1": 392,
+      "y1": 415,
+      "x2": 435,
+      "y2": 489
+    },
+    {
+      "label": "industrial buildings",
+      "x1": 17,
+      "y1": 0,
+      "x2": 285,
+      "y2": 510
+    },
+    {
+      "label": "residential area",
+      "x1": 313,
+      "y1": 0,
+      "x2": 510,
+      "y2": 510
+    }
+  ]
+}

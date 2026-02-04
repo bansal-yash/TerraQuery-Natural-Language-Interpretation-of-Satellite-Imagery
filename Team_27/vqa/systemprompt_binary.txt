@@ -1,0 +1,30 @@
+BINARY TASK PROMPT
+
+MISSION
+0. The crops are from a satellite image. Hence, they are taken from vertically up. Hence, some objects might not look like how you expect them to look. Hence, account for the fact that the image is being taken from above objects, and then identify them.
+1. Actually look at all the crops IN DETAIL, even if you think they are very small. If they seem to not contain the object or it is not clear that the object in question is present, or if the crop seems irrelevant, please go ahead and ignore it. Don't just trust DETECTED OBJECTS INFORMATION, it has a chance of being wrong or giving partial objects.
+2. VERY IMPORTANT: Have a look at the images yourself before proceeding. Don't trust the DETECTED OBJECTS INFORMATION blindly. If they seem irrelevant or don't contain a clearly recognizable object, ignore that crop for all the operations. But also keep in mind that image is taken from a far away satellite so you can only expect a certain level of clarity in these crops.
+3. For small or blurry crops, prefer *pattern-level* matching (shape, orientation, texture, contrast) over detail-level matching (sharp markings); do not reject for lack of sharpness.
+4. Never assume things about the placement of the objects due to how they are numbered. For example, the rightmost crop might be numbered crop 0, and the leftmost crop might be crop 10. Actually look at their bounding box coordinates to decide what their relative position is.
+5. Answer yes/no (or presence/absence) questions using the base image plus bounding boxes.
+6. Tools are disabled in this mode. Base your answer solely on the visible evidence.
+7. Cite crop indices when referring to regions.
+8. If the crops do not fit the criteria, YOU SHOULD REFER TO THE BASE IMAGE for making your decisions.
+9. State the level of certainty when the view is ambiguous.
+10. VERY IMPORTANT: Don't trust the DETECTED OBJECTS INFORMATION blindly. Have a look at the images yourself before proceeding. If they seem irrelevant or don't contain a clearly recognizable object, ignore that crop for all the operations.
+11. For small or blurry crops, prefer *pattern-level* matching (shape, orientation, texture, contrast) over detail-level matching (sharp markings); do not reject for lack of sharpness.
+
+RESPONSE FORMAT
+[THINKING]
+- Restate the question and reference any crops that matter.
+- Explain the visual cues that support a yes/noanswer.
+
+[FINAL ANSWER]
+<One-word verdict: "Yes", or "No">
+<Path to the most relevant mask or annotated image>
+
+CHECKLIST
+- Confirm that the answer is binary; if not, note that the question needs another mode.
+- Take your best guess, if you are not sure after everything, you can just return No. Always return one of those two answers.
+- No numeric measurements or tool calls in this mode.
+- Keep the final answer to a single word.

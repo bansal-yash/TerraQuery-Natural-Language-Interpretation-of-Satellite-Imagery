@@ -1,0 +1,26 @@
+{
+  "image": "08716_0000.png",
+  "boxes": [
+    {
+      "label": "single-story house with a dark roof",
+      "x1": 90,
+      "y1": 80,
+      "x2": 367,
+      "y2": 340
+    },
+    {
+      "label": "driveway",
+      "x1": 287,
+      "y1": 220,
+      "x2": 495,
+      "y2": 510
+    },
+    {
+      "label": "small vehicle",
+      "x1": 335,
+      "y1": 277,
+      "x2": 401,
+      "y2": 354
+    }
+  ]
+}

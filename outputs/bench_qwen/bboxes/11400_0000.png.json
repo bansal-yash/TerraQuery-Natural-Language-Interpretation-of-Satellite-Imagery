@@ -1,0 +1,26 @@
+{
+  "image": "11400_0000.png",
+  "boxes": [
+    {
+      "label": "expressway service area with a large parking lot and adjacent building with a bright red roof",
+      "x1": 231,
+      "y1": 93,
+      "x2": 512,
+      "y2": 438
+    },
+    {
+      "label": "cluster of buildings with red rooftops",
+      "x1": 0,
+      "y1": 244,
+      "x2": 256,
+      "y2": 489
+    },
+    {
+      "label": "expressway with vehicles",
+      "x1": 254,
+      "y1": 340,
+      "x2": 512,
+      "y2": 510
+    }
+  ]
+}

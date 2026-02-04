@@ -1,0 +1,19 @@
+{
+  "image": "P0998_0027.png",
+  "boxes": [
+    {
+      "label": "house with a dark roof",
+      "x1": 236,
+      "y1": 6,
+      "x2": 328,
+      "y2": 197
+    },
+    {
+      "label": "small ship",
+      "x1": 0,
+      "y1": 400,
+      "x2": 41,
+      "y2": 425
+    }
+  ]
+}

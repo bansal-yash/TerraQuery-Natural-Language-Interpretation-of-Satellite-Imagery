@@ -1,0 +1,26 @@
+{
+  "image": "P4151_0024.png",
+  "boxes": [
+    {
+      "label": "multi-story residential building with a yellow roof",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 403
+    },
+    {
+      "label": "row of trees along the street in front of the building",
+      "x1": 0,
+      "y1": 223,
+      "x2": 468,
+      "y2": 510
+    },
+    {
+      "label": "several small vehicles",
+      "x1": 273,
+      "y1": 381,
+      "x2": 510,
+      "y2": 495
+    }
+  ]
+}

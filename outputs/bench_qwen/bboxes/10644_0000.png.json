@@ -1,0 +1,12 @@
+{
+  "image": "10644_0000.png",
+  "boxes": [
+    {
+      "label": "Aerial view of a sports complex sourced from GoogleEarth, where a small baseball field is visible with its diamond and outfield grass clearly demarcated. The field is surrounded by grassy areas.",
+      "x1": 1,
+      "y1": 1,
+      "x2": 512,
+      "y2": 504
+    }
+  ]
+}

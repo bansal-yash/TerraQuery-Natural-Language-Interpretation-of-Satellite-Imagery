@@ -1,0 +1,33 @@
+{
+  "image": "P1809_0159.png",
+  "boxes": [
+    {
+      "label": "large vehicle",
+      "x1": 193,
+      "y1": 317,
+      "x2": 249,
+      "y2": 379
+    },
+    {
+      "label": "large vehicle",
+      "x1": 181,
+      "y1": 330,
+      "x2": 249,
+      "y2": 388
+    },
+    {
+      "label": "large vehicle",
+      "x1": 181,
+      "y1": 317,
+      "x2": 249,
+      "y2": 375
+    },
+    {
+      "label": "small vehicle",
+      "x1": 72,
+      "y1": 379,
+      "x2": 128,
+      "y2": 409
+    }
+  ]
+}

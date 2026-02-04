@@ -1,0 +1,47 @@
+{
+  "image": "10735_0000.png",
+  "boxes": [
+    {
+      "label": "residential property",
+      "x1": 136,
+      "y1": 60,
+      "x2": 358,
+      "y2": 403
+    },
+    {
+      "label": "tennis court",
+      "x1": 432,
+      "y1": 358,
+      "x2": 512,
+      "y2": 505
+    },
+    {
+      "label": "large house",
+      "x1": 185,
+      "y1": 193,
+      "x2": 310,
+      "y2": 403
+    },
+    {
+      "label": "blue swimming pool",
+      "x1": 166,
+      "y1": 132,
+      "x2": 194,
+      "y2": 193
+    },
+    {
+      "label": "large patio area",
+      "x1": 138,
+      "y1": 87,
+      "x2": 256,
+      "y2": 193
+    },
+    {
+      "label": "curved driveway",
+      "x1": 249,
+      "y1": 111,
+      "x2": 432,
+      "y2": 505
+    }
+  ]
+}

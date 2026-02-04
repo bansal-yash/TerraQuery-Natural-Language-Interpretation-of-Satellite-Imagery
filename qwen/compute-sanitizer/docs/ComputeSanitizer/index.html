@@ -1,0 +1,2058 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compute Sanitizer &mdash; compute-sanitizer 12.6 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/omni-style.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/api-styles.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/mermaid-init.js"></script>
+        <script src="../_static/design-tabs.js"></script>
+        <script src="../_static/version.js"></script>
+        <script src="../_static/social-media.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Compute Sanitizer API Reference Manual" href="../SanitizerApiGuide/index.html" />
+    <link rel="prev" title="Release Notes" href="../ReleaseNotes/index.html" />
+ 
+
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+
+<a href="../index.html">
+  <img src="../_static/Logo_and_CUDA.png" class="logo" alt="Logo"/>
+</a>
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../ReleaseNotes/index.html">Release Notes</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tools</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Compute Sanitizer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">Compute Sanitizer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#about-compute-sanitizer">About Compute Sanitizer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#why-compute-sanitizer">Why Compute Sanitizer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-to-get-compute-sanitizer">How to Get Compute Sanitizer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#compute-sanitizer-tools">Compute Sanitizer Tools</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">Compute Sanitizer</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#command-line-options">Command Line Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#compilation-options">Compilation Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#environment-variables">Environment Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#memcheck-tool">Memcheck Tool</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#what-is-memcheck">What is Memcheck?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#supported-error-detection">Supported Error Detection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#using-memcheck">Using Memcheck</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#understanding-memcheck-errors">Understanding Memcheck Errors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cuda-api-error-checking">CUDA API Error Checking</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#device-side-allocation-checking">Device Side Allocation Checking</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#leak-checking">Leak Checking</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#padding">Padding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#stream-ordered-race-detection">Stream-ordered race detection</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#racecheck-tool">Racecheck Tool</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#what-is-racecheck">What is Racecheck?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#what-are-hazards">What are Hazards?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#using-racecheck">Using Racecheck</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#racecheck-report-modes">Racecheck Report Modes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#understanding-racecheck-analysis-reports">Understanding Racecheck Analysis Reports</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#understanding-racecheck-hazard-reports">Understanding Racecheck Hazard Reports</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#racecheck-severity-levels">Racecheck Severity Levels</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#racecheck-support-for-cuda-barrier">Racecheck support for <code class="docutils literal notranslate"><span class="pre">cuda::barrier</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#racecheck-support-for-asynchronous-copy">Racecheck support for asynchronous copy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#racecheck-cluster-entry-and-exit-race-detection">Racecheck cluster entry and exit race detection</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#initcheck-tool">Initcheck Tool</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#what-is-initcheck">What is Initcheck?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#using-initcheck">Using Initcheck</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#unused-memory-detection">Unused memory detection</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#synccheck-tool">Synccheck Tool</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#what-is-synccheck">What is Synccheck?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#using-synccheck">Using Synccheck</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#understanding-synccheck-reports">Understanding Synccheck Reports</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#synccheck-support-for-cuda-barrier">Synccheck support for <code class="docutils literal notranslate"><span class="pre">cuda::barrier</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#synccheck-support-for-wgmma">Synccheck support for <code class="docutils literal notranslate"><span class="pre">wgmma</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#compute-sanitizer-features">Compute Sanitizer Features</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#nonblocking-mode">Nonblocking Mode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#stack-backtraces">Stack Backtraces</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#name-demangling">Name Demangling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dynamic-parallelism">Dynamic Parallelism</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#error-actions">Error Actions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#escape-sequences">Escape Sequences</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#specifying-filters">Specifying Filters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#coredump-support">Coredump support</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#error-suppression">Error suppression</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#optix-support">OptiX support</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#usage-guide">Usage Guide</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#memory-footprint">Memory Footprint</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#operating-system-specific-behavior">Operating System Specific Behavior</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#windows-specific-behavior">Windows Specific Behavior</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#using-the-compute-sanitizer-on-jetson-and-tegra-devices">Using the Compute Sanitizer on Jetson and Tegra devices</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#cuda-fortran-support">CUDA Fortran Support</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#cuda-fortran-specific-behavior">CUDA Fortran Specific Behavior</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#compute-sanitizer-tool-examples">Compute Sanitizer Tool Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#example-use-of-memcheck">Example Use of Memcheck</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#memcheck-demo-output"><code class="docutils literal notranslate"><span class="pre">memcheck_demo</span></code> Output</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#memcheck-demo-output-with-memcheck-release-build"><code class="docutils literal notranslate"><span class="pre">memcheck_demo</span></code> Output with Memcheck (Release Build)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#memcheck-demo-output-with-memcheck-debug-build"><code class="docutils literal notranslate"><span class="pre">memcheck_demo</span></code> Output with Memcheck (Debug Build)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#leak-checking-in-compute-sanitizer">Leak Checking in Compute Sanitizer</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#example-use-of-racecheck">Example Use of Racecheck</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#block-level-hazards">Block-level Hazards</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#warp-level-hazards">Warp-level Hazards</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#example-use-of-initcheck">Example Use of Initcheck</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#memset-error">Memset Error</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#example-use-of-synccheck">Example Use of Synccheck</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#divergent-threads">Divergent Threads</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#illegal-syncwarp">Illegal Syncwarp</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#example-use-of-suppressions">Example Use of Suppressions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#api-error-suppression">API error suppression</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#initcheck-error-suppression">Initcheck error suppression</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Interfaces</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../SanitizerApiGuide/index.html">Compute Sanitizer API Reference Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SanitizerApi/table-of-contents.html">Sanitizer API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SanitizerNvtxGuide/index.html">NVTX API for Compute Sanitizer Reference Manual</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Copyright And Licenses</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../CopyrightAndLicenses/index.html">Copyright and Licenses</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">compute-sanitizer</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+
+
+  
+
+<li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+  
+<li>Compute Sanitizer</li>
+
+      <li class="wy-breadcrumbs-aside">
+      </li>
+<li class="wy-breadcrumbs-aside">
+
+
+  <span>v2024.3.0</span>
+
+
+  <span>&nbsp;</span>
+</li>
+
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="compute-sanitizer">
+<h1>Compute Sanitizer<a class="headerlink" href="#compute-sanitizer" title="Permalink to this headline"></a></h1>
+<section id="id1">
+<h2>Compute Sanitizer<a class="headerlink" href="#id1" title="Permalink to this headline"></a></h2>
+<p>The user manual for Compute Sanitizer.</p>
+</section>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline"></a></h2>
+<section id="about-compute-sanitizer">
+<h3>About Compute Sanitizer<a class="headerlink" href="#about-compute-sanitizer" title="Permalink to this headline"></a></h3>
+<p>Compute Sanitizer is a functional correctness checking suite included in the CUDA toolkit. This suite contains multiple tools that can perform different type of checks. The memcheck tool is capable of precisely detecting and attributing out of bounds and misaligned memory access errors in CUDA applications. The tool can also report hardware exceptions encountered by the GPU. The racecheck tool can report shared memory data access hazards that can cause data races. The initcheck tool can report cases where the GPU performs uninitialized accesses to global memory. The synccheck tool can report cases where the application is attempting invalid usages of synchronization primitives. This document describes the usage of these tools.</p>
+</section>
+<section id="why-compute-sanitizer">
+<h3>Why Compute Sanitizer<a class="headerlink" href="#why-compute-sanitizer" title="Permalink to this headline"></a></h3>
+<p>NVIDIA allows developers to easily harness the power of GPUs to solve problems in parallel using CUDA. CUDA applications often run thousands of threads in parallel. Every programmer invariably encounters memory access errors and thread ordering, hazards that are hard to detect and time consuming to debug. The number of such errors increases substantially when dealing with thousands of threads. The Compute Sanitizer suite is designed to detect those problems in your CUDA application.</p>
+</section>
+<section id="how-to-get-compute-sanitizer">
+<h3>How to Get Compute Sanitizer<a class="headerlink" href="#how-to-get-compute-sanitizer" title="Permalink to this headline"></a></h3>
+<p>Compute Sanitizer is installed as part of the CUDA toolkit.</p>
+</section>
+<section id="compute-sanitizer-tools">
+<h3>Compute Sanitizer Tools<a class="headerlink" href="#compute-sanitizer-tools" title="Permalink to this headline"></a></h3>
+<p>Compute Sanitizer provides different checking mechanisms through different tools. Currently the supported tools are:</p>
+<ul class="simple">
+<li><p>Memcheck – The memory access error and leak detection tool. See <a class="reference external" href="index.html#memcheck-tool">Memcheck Tool</a></p></li>
+<li><p>Racecheck – The shared memory data access hazard detection tool. See <a class="reference external" href="index.html#racecheck-tool">Racecheck Tool</a></p></li>
+<li><p>Initcheck – The uninitialized device global memory access detection tool. See <a class="reference external" href="index.html#initcheck-tool">Initcheck Tool</a></p></li>
+<li><p>Synccheck – The thread synchronization hazard detection tool. See <a class="reference external" href="index.html#synccheck-tool">Synccheck Tool</a></p></li>
+</ul>
+</section>
+</section>
+<section id="id2">
+<h2>Compute Sanitizer<a class="headerlink" href="#id2" title="Permalink to this headline"></a></h2>
+<p>Compute Sanitizer tools can be invoked by running the <code class="docutils literal notranslate"><span class="pre">compute-sanitizer</span></code> executable as follows:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>compute-sanitizer [options] app_name [app_options]
+</pre></div>
+</div>
+<p>For a full list of options that can be specified to compute-sanitizer and their default values, see <a class="reference external" href="index.html#command-line-options">Command Line Options</a></p>
+<section id="command-line-options">
+<h3>Command Line Options<a class="headerlink" href="#command-line-options" title="Permalink to this headline"></a></h3>
+<p>Command line options can be specified to <code class="docutils literal notranslate"><span class="pre">compute-sanitizer</span></code>. With some exceptions, the options are usually of the form <code class="docutils literal notranslate"><span class="pre">--option</span> <span class="pre">value</span></code>. The option list can be terminated by specifying <code class="docutils literal notranslate"><span class="pre">--</span></code>. All subsequent words are treated as the application being run and its arguments.</p>
+<p>The table below describes the supported options in detail. The first column is the option name passed to <code class="docutils literal notranslate"><span class="pre">compute-sanitizer</span></code>. Some options have a one character short form, which is given in parentheses. These options can be invoked using a single hyphen. For example, the help option can be invoked as <code class="docutils literal notranslate"><span class="pre">-h</span></code>. The options that have a short form do not take a value.</p>
+<p>The second column contains the permissible values for the option. In case the value is user defined, it is shown below in braces <code class="docutils literal notranslate"><span class="pre">{}</span></code>. An option that can accept any numerical value is represented as {number}.</p>
+<p>The third column contains the default value of the option. Some options have different default values depending on the architecture they are being run on.</p>
+<table class="table-no-stripes docutils align-default" id="id4">
+<caption><span class="caption-text">Table 1. Compute Sanitizer command line options</span><a class="headerlink" href="#id4" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 76%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Option</p></th>
+<th class="head"><p>Values</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>check-device-heap</p></td>
+<td><p>yes,no</p></td>
+<td><p>yes</p></td>
+<td><p>Enables checking of device heap allocations. This applies to both error checking and leak checking.</p></td>
+</tr>
+<tr class="row-odd"><td><p>check-bulk-copy</p></td>
+<td><p>yes,no</p></td>
+<td><p>yes</p></td>
+<td><p>Enables checks related to the PTX cp.async.bulk instructions on Hopper.</p></td>
+</tr>
+<tr class="row-even"><td><p>check-exit-code</p></td>
+<td><p>yes, no</p></td>
+<td><p>yes</p></td>
+<td><p>Checks the application exit code and print an error if it is different than 0.</p></td>
+</tr>
+<tr class="row-odd"><td><p>check-optix-leaks</p></td>
+<td><p>N/A</p></td>
+<td><p>disabled</p></td>
+<td><p>Detects and reports OptiX resources that were created and were not destroyed at OptixDeviceContextDestroy time. For more information, see <a class="reference external" href="index.html#optix">OptiX support</a>.</p></td>
+</tr>
+<tr class="row-even"><td><p>check-warpgroup-mma</p></td>
+<td><p>yes,no</p></td>
+<td><p>yes</p></td>
+<td><p>Enables memcheck and synccheck support for PTX <code class="docutils literal notranslate"><span class="pre">wgmma</span></code> instructions (requires sm_90a). For memcheck, the tool checks that the matrices loaded by <code class="docutils literal notranslate"><span class="pre">wgmma.mma_async</span></code> are in shared memory range. For synccheck, see <a class="reference external" href="index.html#synccheck-wgmma">Synccheck support for wgmma</a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>coredump-behavior</p></td>
+<td><p>full, exit</p></td>
+<td><p>full</p></td>
+<td><p>Controls the behavior of the target application after generating a CUDA coredump.</p>
+<ul class="simple">
+<li><p><strong>full:</strong> Abort the target application and generate a CPU coredump.</p></li>
+<li><p><strong>exit:</strong> Exit the target application without generating a CPU coredump.</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p>coredump-name</p></td>
+<td><p>{filename}</p></td>
+<td><p>N/A</p></td>
+<td><p>Name to use for the generated coredump file.</p></td>
+</tr>
+<tr class="row-odd"><td><p>demangle</p></td>
+<td><p>full, simple, no</p></td>
+<td><p>full</p></td>
+<td><p>Enables the demangling of device function names. For more information, see <a class="reference external" href="index.html#name-demangling">Name Demangling</a>.</p></td>
+</tr>
+<tr class="row-even"><td><p>destroy-on-device-error</p></td>
+<td><p>context,kernel</p></td>
+<td><p>context</p></td>
+<td><p>This controls how the application proceeds on hitting a memory access error. For more information, see <a class="reference external" href="index.html#error-actions">Error Actions</a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>error-exitcode</p></td>
+<td><p>{number}</p></td>
+<td><p>0</p></td>
+<td><p>The exit code Compute Sanitizer will return if the original application succeeded but the tool detected that errors were present. This is meant to allow Compute Sanitizer to be integrated into automated test suites.</p></td>
+</tr>
+<tr class="row-even"><td><p>force-blocking-launches</p></td>
+<td><p>N/A</p></td>
+<td><p>disabled</p></td>
+<td><p>This forces all host kernel launches to be sequential. When enabled, the number and precision of reported errors will decrease.</p></td>
+</tr>
+<tr class="row-odd"><td><p>force-synchronization-limit</p></td>
+<td><p>{number}</p></td>
+<td><p>0</p></td>
+<td><p>This forces a synchronization after a stream reaches the given number of launches without synchronizing. This is meant to reduce the memory usage of the Compute Sanitizer tools, but it can affect performances.</p></td>
+</tr>
+<tr class="row-even"><td><p>generate-coredump</p></td>
+<td><p>N/A</p></td>
+<td><p>disabled</p></td>
+<td><p>When this is set, a coredump will be generated for the first error encountered and program execution will be stopped. For more information, see <a class="reference external" href="index.html#coredump">Coredump support</a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>help (h)</p></td>
+<td><p>N/A</p></td>
+<td><p>N/A</p></td>
+<td><p>Displays the help message</p></td>
+</tr>
+<tr class="row-even"><td><p>injection-path</p></td>
+<td><p>N/A</p></td>
+<td><p>N/A</p></td>
+<td><p>Sets the path to injection libraries.</p></td>
+</tr>
+<tr class="row-odd"><td><p>injection-path32</p></td>
+<td><p>N/A</p></td>
+<td><p>N/A</p></td>
+<td><p>Sets the path to 32bit injection libraries.</p></td>
+</tr>
+<tr class="row-even"><td><p>kernel-name</p></td>
+<td><p>{key1=val1}[{,key2=val2}]</p></td>
+<td><p>N/A</p></td>
+<td><p>Controls which application kernels will be checked by the running the Compute Sanitizer tool. For more information, see <a class="reference external" href="index.html#specifying-filters">Specifying Filters</a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>kernel-name-exclude</p></td>
+<td><p>{key1=val1}[{,key2=val2}]</p></td>
+<td><p>N/A</p></td>
+<td><p>Controls which application kernels will be checked by the running the Compute Sanitizer tool. For more information, see <a class="reference external" href="index.html#specifying-filters">Specifying Filters</a>.</p></td>
+</tr>
+<tr class="row-even"><td><p>language</p></td>
+<td><p>c,fortran</p></td>
+<td><p>c</p></td>
+<td><p>This controls the application source language specific behavior in Compute Sanitizer tools. For fortran specific behavior, see <a class="reference external" href="index.html#cuda-fortran-specific-behavior">CUDA Fortran Specific Behavior</a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>c,launch-count</p></td>
+<td><p>{number}</p></td>
+<td><p>0</p></td>
+<td><p>Limit the number of kernel launches to check. The count is only incremented for launches that match the kernel filters. Use 0 for unlimited.</p></td>
+</tr>
+<tr class="row-even"><td><p>s,launch-skip</p></td>
+<td><p>{number}</p></td>
+<td><p>0</p></td>
+<td><p>Set the number of kernel launches to skip before starting to check. The count is only incremented for launches that match the kernel filters.</p></td>
+</tr>
+<tr class="row-odd"><td><p>launch-timeout</p></td>
+<td><p>{number}</p></td>
+<td><p>10 for single process, 60 for multi-process</p></td>
+<td><p>Timeout in seconds for the connection to the target process. A value of zero forces compute-sanitizer to wait infinitely.</p></td>
+</tr>
+<tr class="row-even"><td><p>log-file</p></td>
+<td><p>{filename}</p></td>
+<td><p>N/A</p></td>
+<td><p>This is the file Compute Sanitizer will write all of its text output to. By default, Compute Sanitizer will print all output to stdout. For more information, see <a class="reference external" href="index.html#escape-sequences">Escape Sequences</a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>max-connections</p></td>
+<td><p>{number}</p></td>
+<td><p>10</p></td>
+<td><p>Maximum number of ports for connecting to the target application.</p></td>
+</tr>
+<tr class="row-even"><td><p>kill</p></td>
+<td><p>N/A</p></td>
+<td><p>disabled</p></td>
+<td><p>Makes the compute-sanitizer kill the target application when a communication error is met. By default, the compute-sanitizer will instead await for the normal completion of the program without reporting potential errors.</p></td>
+</tr>
+<tr class="row-odd"><td><p>mode</p></td>
+<td><p>launch-and-attach,launch,attach</p></td>
+<td><p>launch-and-attach</p></td>
+<td><p>Select the mode of interaction with the target application</p>
+<ul class="simple">
+<li><p><strong>launch-and-attach:</strong> Launch the target application and immediately attach.</p></li>
+<li><p><strong>launch:</strong> Launch the target application and suspend it, waiting for tool to attach.</p></li>
+<li><p><strong>attach:</strong> Attach to a previously launched application to which no other tool is attached.</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p>num-callers-device</p></td>
+<td><p>{number}</p></td>
+<td><p>0</p></td>
+<td><p>Set the number of callers to print in device stack traces. Use 0 for unlimited.</p></td>
+</tr>
+<tr class="row-odd"><td><p>num-callers-host</p></td>
+<td><p>{number}</p></td>
+<td><p>0</p></td>
+<td><p>Set the number of callers to print in host stack traces. Use 0 for unlimited.</p></td>
+</tr>
+<tr class="row-even"><td><p>num-cuda-barriers</p></td>
+<td><p>{number}</p></td>
+<td><p>0</p></td>
+<td><p>Set the number of cuda::barriers that the target application will use per block. Use 0 for automatic detection.</p></td>
+</tr>
+<tr class="row-odd"><td><p>nvtx</p></td>
+<td><p>true,false</p></td>
+<td><p>true</p></td>
+<td><p>Enable NVTX support.</p></td>
+</tr>
+<tr class="row-even"><td><p>port</p></td>
+<td><p>{number}</p></td>
+<td><p>49152</p></td>
+<td><p>Base port for connecting to the target application.</p></td>
+</tr>
+<tr class="row-odd"><td><p>prefix</p></td>
+<td><p>{string}</p></td>
+<td><p><cite>========</cite></p></td>
+<td><p>The string prepended to Compute Sanitizer output lines.</p></td>
+</tr>
+<tr class="row-even"><td><p>print-level</p></td>
+<td><p>info,warn,error,fatal</p></td>
+<td><p>warn</p></td>
+<td><p>The minimum print level of messages from Compute Sanitizer.</p></td>
+</tr>
+<tr class="row-odd"><td><p>print-limit</p></td>
+<td><p>{number}</p></td>
+<td><p>100</p></td>
+<td><p>When this option is set, Compute Sanitizer will stop printing errors after reaching the given number of errors. Use 0 for unlimited printing.</p></td>
+</tr>
+<tr class="row-even"><td><p>print-session-details</p></td>
+<td><p>N/A</p></td>
+<td><p>disabled</p></td>
+<td><p>Print details about the sanitizer session for each target application such as process ID, command line, target system etc.</p></td>
+</tr>
+<tr class="row-odd"><td><p>quiet,q</p></td>
+<td><p>N/A</p></td>
+<td><p>disabled</p></td>
+<td><p>Controls whether to run silently and only print error messages.</p></td>
+</tr>
+<tr class="row-even"><td><p>read</p></td>
+<td><p>{filename}</p></td>
+<td><p>N/A</p></td>
+<td><p>The input Compute Sanitizer file to read data from. This can be used in conjunction with the –save option to allow processing records after a run.</p></td>
+</tr>
+<tr class="row-odd"><td><p>require-cuda-init</p></td>
+<td><p>yes, no</p></td>
+<td><p>yes</p></td>
+<td><p>Controls whether Compute Sanitizer should return an error if the target application does not use CUDA.</p></td>
+</tr>
+<tr class="row-even"><td><p>save</p></td>
+<td><p>{filename}</p></td>
+<td><p>N/A</p></td>
+<td><p>Filename where Compute Sanitizer will save the output from the current run. For more information, see <a class="reference external" href="index.html#escape-sequences">Escape Sequences</a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>save-session-details</p></td>
+<td><p>N/A</p></td>
+<td><p>disabled</p></td>
+<td><p>Save details about the sanitizer session for each target application in the file specified by <code class="docutils literal notranslate"><span class="pre">--save</span></code>. This option has no effect if the <code class="docutils literal notranslate"><span class="pre">--save</span></code> option is not used.</p></td>
+</tr>
+<tr class="row-even"><td><p>show-backtrace</p></td>
+<td><p>yes,host,device,no</p></td>
+<td><p>yes</p></td>
+<td><p>Displays a backtrace for most types of errors. “no” disables all backtraces, “yes” enables all backtraces. “host” enables only host side backtraces. “device” enables only device side backtraces. For more information, see <a class="reference external" href="index.html#stack-backtraces">Stack Backtraces</a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>support-32bit</p></td>
+<td><p>N/A</p></td>
+<td><p>disabled</p></td>
+<td><p>This option only exists on Linux x86_64. Enables the support for tracking application that includes 32-bit processes. On Windows, the support is always enabled if the 32bit injection libraries are found. Note: Only the 64bit processes are supported for actual checking, the purpose of the option is to allow tracking of the children process of a 32bit process.</p></td>
+</tr>
+<tr class="row-even"><td><p>suppressions</p></td>
+<td><p>{filename}</p></td>
+<td><p>N/A</p></td>
+<td><p>Input XML file containing a list of reports that should be filtered out by the tool if detected. For more information, see <a class="reference external" href="index.html#error-suppression">Error suppression</a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>target-processes</p></td>
+<td><p>application-only,all</p></td>
+<td><p>all</p></td>
+<td><p>Select which processes are to be tracked by compute-sanitizer: The root application process, or the root application and all its child processes.</p></td>
+</tr>
+<tr class="row-even"><td><p>target-processes-filter</p></td>
+<td><p>{string}</p></td>
+<td><p>N/A</p></td>
+<td><p>Set the comma separated expressions to filter which processes are tracked.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">&lt;process</span> <span class="pre">name&gt;</span></code> Set the process name to filter by. Only exactly matched processes are tracked.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">regex:&lt;expression&gt;</span></code> Set the regex to filter matching process name profiling. On shells that recognize regular expression symbols as special characters (e.g. Linux bash), the expression needs to be escaped with quotes, e.g. <code class="docutils literal notranslate"><span class="pre">--target-processes-filter</span> <span class="pre">regex:&quot;.*Process&quot;</span></code>.</p></li>
+</ul>
+<p>The executable name will be considered as process name to match. If the process name or the provided expression match, the process will be tracked.
+<strong>Examples</strong></p>
+<p><code class="docutils literal notranslate"><span class="pre">--target-processes-filter</span> <span class="pre">MatrixMul</span></code> Filter all processes having executable name exactly as “MatrixMul”.</p>
+<p><code class="docutils literal notranslate"><span class="pre">--target-processes-filter</span> <span class="pre">regex:Matrix</span></code>Filter all processes that include the string “Matrix” in their executable name, e.g. “MatrixMul” and “MatrixAdd”.</p>
+<p><code class="docutils literal notranslate"><span class="pre">--target-processes-filter</span> <span class="pre">MatrixMul,MatrixAdd</span></code>Filter all processes having executable name exactly as “MatrixMul” or “MatrixAdd”.</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p>tool</p></td>
+<td><p>memcheck, racecheck, initcheck, synccheck</p></td>
+<td><p>memcheck</p></td>
+<td><p>Controls which Compute Sanitizer tool is actively running.</p></td>
+</tr>
+<tr class="row-even"><td><p>version (V)</p></td>
+<td><p>N/A</p></td>
+<td><p>N/A</p></td>
+<td><p>Prints the version of Compute Sanitizer.</p></td>
+</tr>
+<tr class="row-odd"><td><p>xml</p></td>
+<td><p>N/A</p></td>
+<td><p>disabled</p></td>
+<td><p>Emit error output to file in XML format. When used, –save must also be set to specify the file to save to.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="table-no-stripes docutils align-default" id="id5">
+<caption><span class="caption-text">Table 2. Memcheck tool command line options</span><a class="headerlink" href="#id5" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 12%" />
+<col style="width: 3%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Option</p></th>
+<th class="head"><p>Values</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>check-cache-control</p></td>
+<td><p>N/A</p></td>
+<td><p>disabled</p></td>
+<td><p>Check cache control memory accesses.</p></td>
+</tr>
+<tr class="row-odd"><td><p>detect-missing-module-unload</p></td>
+<td><p>N/A</p></td>
+<td><p>disabled</p></td>
+<td><p>Detect leaks caused by missing module unload calls. This option can report false positives if the application uses the CUDA runtime as it depends on the destruction order between runtime and driver when the application exits which is not guaranteed.</p></td>
+</tr>
+<tr class="row-even"><td><p>ignore-getprocaddress-notfound</p></td>
+<td><p>N/A</p></td>
+<td><p>disabled</p></td>
+<td><p>Ignore CUDA_ERROR_NOT_FOUND API errors for cuGetProcAddress.</p></td>
+</tr>
+<tr class="row-odd"><td><p>leak-check</p></td>
+<td><p>full,no</p></td>
+<td><p>no</p></td>
+<td><p>Prints information about all allocations that have not been freed via cudaFree at the point when the context was destroyed. For more information, see <a class="reference external" href="index.html#leak-checking">Leak Checking</a>.</p></td>
+</tr>
+<tr class="row-even"><td><p>padding</p></td>
+<td><p>{number}</p></td>
+<td><p>0</p></td>
+<td><p>Makes the compute-sanitizer allocate padding buffers after every CUDA allocation. number is the size in bytes of a padding buffer. Fore more information, see <a class="reference external" href="index.html#padding">Padding</a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>report-api-errors</p></td>
+<td><p>all, explicit, no</p></td>
+<td><p>explicit</p></td>
+<td><p>Reports errors if any CUDA API call fails. For more information, see <a class="reference external" href="index.html#api-error-checking">CUDA API Error Checking</a>.</p></td>
+</tr>
+<tr class="row-even"><td><p>track-stream-ordered-races arg</p></td>
+<td><p>all,use-before-alloc,use-after-free,no</p></td>
+<td><p>no</p></td>
+<td><p>Track CUDA stream-ordered allocations races. For more information, see <a class="reference external" href="index.html#stream-ordered-races">Stream-ordered race detection</a>.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="table-no-stripes docutils align-default" id="id6">
+<caption><span class="caption-text">Table 3. Racecheck tool command line options</span><a class="headerlink" href="#id6" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 8%" />
+<col style="width: 4%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Option</p></th>
+<th class="head"><p>Values</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>racecheck-detect-level</p></td>
+<td><p>{info,warn,error}</p></td>
+<td><p>warn</p></td>
+<td><p>Set the minimum level of race conditions to detect.</p></td>
+</tr>
+<tr class="row-odd"><td><p>racecheck-memcpy-async</p></td>
+<td><p>yes,no</p></td>
+<td><p>yes</p></td>
+<td><p>Enables check for asynchronous memory copy operations. For more information, see <a class="reference external" href="index.html#racecheck-asynchronous-copy">Racecheck support for asynchronous copy</a>.</p></td>
+</tr>
+<tr class="row-even"><td><p>racecheck-indirect-barrier-dependency</p></td>
+<td><p>yes,no</p></td>
+<td><p>yes</p></td>
+<td><p>Enables tracking of indirect <code class="docutils literal notranslate"><span class="pre">cuda::barrier</span></code> dependency in racecheck. Avoids false positives when the target application is relying on chains of arrive-waits on multiple
+different barriers to synchronize shared memory accesses between threads that would not have participated in the same barrier. Using this option may have a performance impact.</p></td>
+</tr>
+<tr class="row-odd"><td><p>racecheck-num-workers</p></td>
+<td><p>{number}</p></td>
+<td><p>0</p></td>
+<td><p>Number of CPU worker threads used by the tool. Use 0 for automatic.</p></td>
+</tr>
+<tr class="row-even"><td><p>racecheck-report</p></td>
+<td><p>hazard,analysis,all</p></td>
+<td><p>analysis</p></td>
+<td><p>Controls how racecheck reports information. For more information, see <a class="reference external" href="index.html#racecheck-report-modes">Racecheck Report Modes</a>.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="table-no-stripes docutils align-default" id="id7">
+<caption><span class="caption-text">Table 4. Initcheck tool command line options</span><a class="headerlink" href="#id7" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Option</p></th>
+<th class="head"><p>Values</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>check-api-memory-access</p></td>
+<td><p>yes,no</p></td>
+<td><p>yes</p></td>
+<td><p>Enables checking of cudaMemcpy/cudaMemset</p></td>
+</tr>
+<tr class="row-odd"><td><p>check-optix</p></td>
+<td><p>N/A</p></td>
+<td><p>disabled</p></td>
+<td><p>Check OptiX kernel launches with initcheck. For more information, see <a class="reference external" href="index.html#optix">OptiX support</a>.</p></td>
+</tr>
+<tr class="row-even"><td><p>track-unused-memory</p></td>
+<td><p>N/A</p></td>
+<td><p>disabled</p></td>
+<td><p>Check for unused memory allocations.</p></td>
+</tr>
+<tr class="row-odd"><td><p>unused-memory-threshold</p></td>
+<td><p>{number}</p></td>
+<td><p>0</p></td>
+<td><p>Threshold in percentage under which unused memory reports are silenced. The value needs to be a number between 0 and 100.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="table-no-stripes docutils align-default" id="id8">
+<caption><span class="caption-text">Table 5. Synccheck tool command line options</span><a class="headerlink" href="#id8" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 6%" />
+<col style="width: 7%" />
+<col style="width: 63%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Option</p></th>
+<th class="head"><p>Values</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>missing-barrier-init-is-fatal</p></td>
+<td><p>yes,no</p></td>
+<td><p>yes</p></td>
+<td><p>Controls whether a missing <code class="docutils literal notranslate"><span class="pre">cuda::barrier</span></code> initialization will exit the warp.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="compilation-options">
+<h3>Compilation Options<a class="headerlink" href="#compilation-options" title="Permalink to this headline"></a></h3>
+<p>The Compute Sanitizer tools do not need any special compilation flags to function.</p>
+<p>The output displayed by the Compute Sanitizer tools is more useful with some extra compiler flags. The <code class="docutils literal notranslate"><span class="pre">-G</span></code> option to nvcc forces the compiler to generate debug information for the CUDA application. To generate line number information for applications without affecting the optimization level of the output, the <code class="docutils literal notranslate"><span class="pre">-lineinfo</span></code> nvcc option can be used. The Compute Sanitizer tools fully support both of these options and can display source attribution of errors for applications compiled with line information.</p>
+<p>The stack backtrace feature of the Compute Sanitizer tools is more useful when the application contains function symbol names. For the host backtrace, this varies based on the host OS. On Linux, the host compiler must be given the <code class="docutils literal notranslate"><span class="pre">-rdynamic</span></code> option to retain function symbols. On Windows, the application must be compiled for debugging, i.e. the <code class="docutils literal notranslate"><span class="pre">/Zi</span></code> option. When using nvcc, flags to the host compiler can be specified using the <code class="docutils literal notranslate"><span class="pre">-Xcompiler</span></code> option. For the device backtrace, the full frame information is only available when the application is compiled with device debug information. The compiler can skip generation of frame information when building with optimizations.</p>
+<p>Sample command line to build with function symbols and device side line information on Linux:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>nvcc -Xcompiler -rdynamic -lineinfo  -o out in.cu
+</pre></div>
+</div>
+</section>
+<section id="environment-variables">
+<h3>Environment Variables<a class="headerlink" href="#environment-variables" title="Permalink to this headline"></a></h3>
+<p>The following environment variables can be set before launching the compute-sanitizer tool.</p>
+<table class="table-no-stripes docutils align-default" id="id9">
+<caption><span class="caption-text">Table 6. Environment Variables</span><a class="headerlink" href="#id9" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 48%" />
+<col style="width: 42%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Default/Values</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>NV_COMPUTE_SANITIZER_BINARY_PATCHING</p></td>
+<td><p>Controls whether compute-sanitizer will instrument user kernel code.</p>
+<p>This option is intended for debugging and should not be used by normal users.</p>
+</td>
+<td><p>Default if unset: enabled.</p>
+<p>Valid values: any positive value between 0 and <code class="docutils literal notranslate"><span class="pre">INT_MAX</span></code>.</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p>NV_COMPUTE_SANITIZER_LOCAL_CONNECTION_OVERRIDE</p></td>
+<td><p>Override the default local connection mechanism between frontend and target processes. The default mechanism is platform-dependent. This should only be used if there are connection problems between frontend and target processes in a local launch.</p></td>
+<td><p>Default: unset (use default mechanism)</p>
+<ul class="simple">
+<li><p>Set to “uds” to use Unix Domain Socket connections (available on Posix platforms, only).</p></li>
+<li><p>Set to “tcp” to use TCP (available on all platforms).</p></li>
+<li><p>Set to “named-pipes” to use Windows Named Pipes (available on Windows, only).</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p>NV_COMPUTE_SANITIZER_MAX_RACECHECK_CLUSTER_RECORDS</p></td>
+<td><p>Override the maximum number of racecheck cluster access records for early exit race detection. This option can be used to either increase the number of races the tool can detect, or to suppress early exit races (0 will display no early exit race).</p></td>
+<td><p>Default if unset: 100.</p>
+<p>Valid values: any positive value between 0 and <code class="docutils literal notranslate"><span class="pre">INT_MAX</span></code>.</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p>NV_COMPUTE_SANITIZER_MAX_RACECHECK_HAZARDS</p></td>
+<td><p>Override the maximum number of racecheck hazards tool will process. This option can be used to either increase the number of races the tool can detect, or to reduce it and save host memory.</p></td>
+<td><p>Default if unset: 10,000,000.</p>
+<p>Valid values: any positive value between 0 and <code class="docutils literal notranslate"><span class="pre">INT_MAX</span></code>.</p>
+</td>
+</tr>
+<tr class="row-even"><td><p>NV_COMPUTE_SANITIZER_SHARED_ADDRESSING_SUPPORT</p></td>
+<td><p>Override shared memory addressing support.</p></td>
+<td><p>Default if unset: <code class="docutils literal notranslate"><span class="pre">auto</span></code>.</p>
+<ul class="simple">
+<li><p>Set to <code class="docutils literal notranslate"><span class="pre">none</span></code> to disable shared addressing support.</p></li>
+<li><p>Set to <code class="docutils literal notranslate"><span class="pre">force</span></code> to force shared addressing support.</p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="memcheck-tool">
+<h2>Memcheck Tool<a class="headerlink" href="#memcheck-tool" title="Permalink to this headline"></a></h2>
+<section id="what-is-memcheck">
+<h3>What is Memcheck?<a class="headerlink" href="#what-is-memcheck" title="Permalink to this headline"></a></h3>
+<p>The memcheck tool is a run time error detection tool for CUDA applications. The tool can precisely detect and report out of bounds and misaligned memory accesses to global, local and shared memory in CUDA applications. It can also detect and report hardware reported error information. In addition, the memcheck tool can detect and report memory leaks in the user application.</p>
+</section>
+<section id="supported-error-detection">
+<h3>Supported Error Detection<a class="headerlink" href="#supported-error-detection" title="Permalink to this headline"></a></h3>
+<p>The errors that can be reported by the memcheck tool are summarized in the table below. The location column indicates whether the report originates from the host or from the device. The precision of an error is explained in the paragraph below.</p>
+<table class="table-no-stripes docutils align-default" id="id10">
+<caption><span class="caption-text">Table 7. Memcheck reported error types</span><a class="headerlink" href="#id10" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 47%" />
+<col style="width: 4%" />
+<col style="width: 5%" />
+<col style="width: 34%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Location</p></th>
+<th class="head"><p>Precision</p></th>
+<th class="head"><p>See also</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Memory access error</p></td>
+<td><p>Errors due to out of bounds or misaligned accesses to memory by a global, local, shared or global atomic access.</p></td>
+<td><p>Device</p></td>
+<td><p>Precise</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Hardware exception</p></td>
+<td><p>Errors that are reported by the hardware error reporting mechanism.</p></td>
+<td><p>Device</p></td>
+<td><p>Imprecise</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Malloc/Free errors</p></td>
+<td><p>Errors that occur due to incorrect use of <code class="docutils literal notranslate"><span class="pre">malloc()/free()</span></code> in CUDA kernels.</p></td>
+<td><p>Device</p></td>
+<td><p>Precise</p></td>
+<td><p><a class="reference external" href="index.html#device-side-allocation-checking">Device Side Allocation Checking</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>CUDA API errors</p></td>
+<td><p>Reported when a CUDA API call in the application returns a failure.</p></td>
+<td><p>Host</p></td>
+<td><p>Precise</p></td>
+<td><p><a class="reference external" href="index.html#api-error-checking">CUDA API Error Checking</a></p></td>
+</tr>
+<tr class="row-even"><td><p>cudaMalloc memory leaks</p></td>
+<td><p>Allocations of device memory using <code class="docutils literal notranslate"><span class="pre">cudaMalloc()</span></code> that have not been freed by the application.</p></td>
+<td><p>Host</p></td>
+<td><p>Precise</p></td>
+<td><p><a class="reference external" href="index.html#leak-checking">Leak Checking</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Device Heap Memory Leaks</p></td>
+<td><p>Allocations of device memory using <code class="docutils literal notranslate"><span class="pre">malloc()</span></code> in device code that have not been freed by the application.</p></td>
+<td><p>Device</p></td>
+<td><p>Imprecise</p></td>
+<td><p><a class="reference external" href="index.html#device-side-allocation-checking">Device Side Allocation Checking</a></p></td>
+</tr>
+</tbody>
+</table>
+<p>The memcheck tool reports two classes of errors precise and imprecise.</p>
+<p>Precise errors in memcheck are those that the tool can uniquely identify and gather all information for. For these errors, memcheck can report the block and thread coordinates of the thread causing the failure, the program counter (PC) of the instruction performing the access, as well as the address being accessed and its size and type. If the CUDA application contains line number information (by either being compiled with device side debugging information, or with line information), then the tool will also print the source file and line number of the erroneous access.</p>
+<p>Imprecise errors are errors reported by the hardware error reporting mechanism that could not be precisely attributed to a particular thread. The precision of the error varies based on the type of the error and in many cases, memcheck may not be able to attribute the cause of the error back to the source file and line.</p>
+</section>
+<section id="using-memcheck">
+<h3>Using Memcheck<a class="headerlink" href="#using-memcheck" title="Permalink to this headline"></a></h3>
+<p>The memcheck tool is enabled by default when running the Compute Sanitizer application. It can also be explicitly enabled by using the <code class="docutils literal notranslate"><span class="pre">--tool</span> <span class="pre">memcheck</span></code> option.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>compute-sanitizer --tool memcheck [sanitizer_options] app_name [app_options]
+</pre></div>
+</div>
+<p>When run in this way, the memcheck tool will look for precise, imprecise, malloc/free and CUDA API errors. The reporting of device leaks must be explicitly enabled. Errors identified by the memcheck tool are displayed on the screen after the application has completed execution. See <a class="reference external" href="index.html#understanding-memcheck-errors">Understanding Memcheck Errors</a> for more information about how to interpret the messages printed by the tool.</p>
+</section>
+<section id="understanding-memcheck-errors">
+<h3>Understanding Memcheck Errors<a class="headerlink" href="#understanding-memcheck-errors" title="Permalink to this headline"></a></h3>
+<p>The memcheck tool can produce a variety of different errors. This is a short guide showing some samples of errors and explaining how the information in each error report can be interpreted.</p>
+<ol class="arabic">
+<li><p>Memory access error: Memory access errors are generated for errors that the memcheck tool can correctly attribute and identify the erroneous instruction. Below is an example of a precise memory access error.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>========= Invalid __global__ write of size 4 bytes
+=========     at unaligned_kernel():0x160 in memcheck_demo.cu:6
+=========     by thread (0,0,0) in block (0,0,0)
+=========     Address 0x7f6510c00001 is misaligned
+</pre></div>
+</div>
+<p>Let us examine this error line by line:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Invalid __global__ write of size 4 bytes
+</pre></div>
+</div>
+<p>The first line shows the memory segment, type and size being accessed. The memory segment is one of:</p>
+<ul class="simple">
+<li><p>__global__ : for device global memory</p></li>
+<li><p>__shared__ : for per block shared memory</p></li>
+<li><p>__local__ : for per thread local memory</p></li>
+</ul>
+<p>In this case, the access was to device global memory. The next field contains information about the type of access, whether it was a read or a write. In this case, the access is a write. Finally, the last item is the size of the access in bytes. In this example, the access was 4 bytes in size.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>at unaligned_kernel():0x160 in memcheck_demo.cu:6
+</pre></div>
+</div>
+<p>The second line contains the CUDA kernel name, offset of the instruction, the source file and line number (if available). In this example, the instruction causing the access was at offset 0x160 inside the <code class="docutils literal notranslate"><span class="pre">unaligned_kernel</span></code> CUDA kernel. Additionally, since the application was compiled with line number information, this instruction corresponds to line 6 in the memcheck_demo.cu source file.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>by thread (0,0,0) in block (0,0,0)
+</pre></div>
+</div>
+<p>The third line contains the thread indices and block indices of the thread on which the error was hit. In this example, the thread doing the erroneous access belonged to the first thread in the first block.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Address 0x7f6510c00001 is misaligned
+</pre></div>
+</div>
+<p>The fourth line contains the memory address being accessed and the type of access error. The type of access error can either be out of bounds access or misaligned access. In this example, the access was to address 0x7f6510c00001 and the access error was because this address was not aligned correctly.</p>
+</li>
+<li><p>Hardware exception: Imprecise errors are generated for errors that the hardware reports to the memcheck tool. Hardware exceptions have a variety of formats and messages. Typically, the first line will provide some information about the type of error encountered.</p>
+<p>Malloc/free error: Malloc/free errors refer to the errors in the invocation of device side <code class="docutils literal notranslate"><span class="pre">malloc()/free()</span></code> in CUDA kernels. An example of a malloc/free error:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>========= Malloc/Free error encountered : Double free
+=========     at 0x79d8
+=========     by thread (0,0,0) in block (0,0,0)
+=========     Address 0x400aff920
+</pre></div>
+</div>
+<p>We can examine this line by line.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Malloc/Free error encountered : Double free
+</pre></div>
+</div>
+<p>The first line indicates that this is a malloc/free error, and contains the type of error. This type can be:</p>
+<ul class="simple">
+<li><p>Double free – This indicates that the thread called <code class="docutils literal notranslate"><span class="pre">free()</span></code> on an allocation that has already been freed.</p></li>
+<li><p>Invalid pointer to free – This indicates that <code class="docutils literal notranslate"><span class="pre">free</span></code> was called on a pointer that was not returned by <code class="docutils literal notranslate"><span class="pre">malloc()</span></code>.</p></li>
+<li><p>Heap corruption : This indicates generalized heap corruption, or cases where the state of the heap was modified in a way that memcheck did not expect.</p></li>
+</ul>
+<p>In this example, the error is due to calling <code class="docutils literal notranslate"><span class="pre">free()</span></code> on a pointer which had already been freed.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>at 0x79d8
+</pre></div>
+</div>
+<p>The second line gives the PC on GPU where the error was reported. This PC is usually inside of system code, and is not interesting to the user. The device frame backtrace will contain the location in user code where the <code class="docutils literal notranslate"><span class="pre">malloc()/free()</span></code> call was made.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>by thread (0,0,0) in block (0,0,0)
+</pre></div>
+</div>
+<p>The third line contains the thread and block indices of the thread that caused this error. In this example, the thread has threadIdx = (0,0,0) and blockIdx = (0,0,0)</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Address 0x400aff920
+</pre></div>
+</div>
+<p>This line contains the value of the pointer passed to <code class="docutils literal notranslate"><span class="pre">free()</span></code> or returned by <code class="docutils literal notranslate"><span class="pre">malloc()</span></code></p>
+</li>
+<li><p>Leak errors: Errors are reported for allocations created using cudaMalloc and for allocations on the device heap that were not freed before their associated CUDA context was destroyed (i.e. program exit, <code class="docutils literal notranslate"><span class="pre">cudaDeviceReset()</span></code> or CUDA driver API call to <code class="docutils literal notranslate"><span class="pre">cuCtxDestroy()</span></code>). An example of a cudaMalloc allocation leak report is the following:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>========= Leaked 64 bytes at 0x400200200
+</pre></div>
+</div>
+<p>The error message reports information about the size of the allocation that was leaked as well as the address of the allocation on the device.</p>
+<p>A device heap leak message will be explicitly identified as such:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>========= Leaked 16 bytes at 0x4012ffff6 on the device heap
+</pre></div>
+</div>
+</li>
+<li><p>CUDA API error: CUDA API errors are reported for CUDA API calls that return an error value. An example of a CUDA API error:</p></li>
+</ol>
+<blockquote>
+<div><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>========= Program hit invalid copy direction for memcpy (error 21) on CUDA API call to cudaMemcpy.
+</pre></div>
+</div>
+<p>The message contains the returned value of the CUDA API call, as well as the name of the API function that was called.</p>
+</div></blockquote>
+</section>
+<section id="cuda-api-error-checking">
+<h3>CUDA API Error Checking<a class="headerlink" href="#cuda-api-error-checking" title="Permalink to this headline"></a></h3>
+<p>The memcheck tool supports reporting an error if a CUDA API call made by the user program returned an error. The tool supports this detection for both CUDA run time and CUDA driver API calls. In all cases, if the API function call has a nonzero return value, Compute Sanitizer will print an error message containing the name of the API call that failed and the return value of the API call.</p>
+<p>CUDA API error reports do not terminate the application, they merely provide extra information. It is up to the application to check the return status of CUDA API calls and handle error conditions appropriately.</p>
+<p>The following API errors are not reported:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">cudaErrorNotReady</span></code> for <code class="docutils literal notranslate"><span class="pre">cudaEventQuery</span></code> and <code class="docutils literal notranslate"><span class="pre">cudaStreamQuery</span></code> APIs.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cudaErrorPeerAccessAlreadyEnabled</span></code> for <code class="docutils literal notranslate"><span class="pre">cudaDeviceEnablePeerAccess</span></code> API.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cudaErrorPeerAccessNotEnabled</span></code> for <code class="docutils literal notranslate"><span class="pre">cudaDeviceDisablePeerAccess</span></code> API.</p></li>
+</ul>
+</section>
+<section id="device-side-allocation-checking">
+<h3>Device Side Allocation Checking<a class="headerlink" href="#device-side-allocation-checking" title="Permalink to this headline"></a></h3>
+<p>The memcheck tool checks accesses to allocations in the device heap.</p>
+<p>These allocations are created by calling <code class="docutils literal notranslate"><span class="pre">malloc()</span></code> inside a kernel. This feature is implicitly enabled and can be disabled by specifying the <code class="docutils literal notranslate"><span class="pre">--check-device-heap</span> <span class="pre">no</span></code> option. This feature is only activated for kernels in the application that call <code class="docutils literal notranslate"><span class="pre">malloc()</span></code>.</p>
+<p>The tool will report an error if the application calls a <code class="docutils literal notranslate"><span class="pre">free()</span></code> twice for the same allocation, or if it calls <code class="docutils literal notranslate"><span class="pre">free()</span></code> on an invalid pointer.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Note: Make sure to look at the device side backtrace to find the location in the application where the <code class="docutils literal notranslate"><span class="pre">malloc()/free()</span></code> call was made.</p>
+</div>
+</section>
+<section id="leak-checking">
+<h3>Leak Checking<a class="headerlink" href="#leak-checking" title="Permalink to this headline"></a></h3>
+<p>The memcheck tool can detect leaks of allocated memory.</p>
+<p>Memory leaks are device side allocations that have not been freed by the time the context is destroyed. The memcheck tool tracks device memory allocations created using the CUDA driver or runtime APIs.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">--leak-check</span> <span class="pre">full</span></code> option must be specified to enable leak checking.</p>
+</section>
+<section id="padding">
+<h3>Padding<a class="headerlink" href="#padding" title="Permalink to this headline"></a></h3>
+<p>The memcheck tool can automatically add padding to memory allocations in order to improve out of bounds error detection for global memory.</p>
+<p>By default, global memory buffers can be allocated back-to-back in the virtual address space. When that happens, an overflow access into the first buffer will simply happen in the second buffer and not be detected as out-of-bounds.</p>
+<img alt="../_images/no-padding.png" src="../_images/no-padding.png" />
+<p>Using the <code class="docutils literal notranslate"><span class="pre">--padding</span></code> option will automatically extend the allocation size, effectively creating a padding buffer after each allocation. This improves the out of bounds error detection as accesses to the padding area will always be considered invalid. The example below displays possible buffer addresses when using <code class="docutils literal notranslate"><span class="pre">--padding</span> <span class="pre">32</span></code>. Every allocation is followed by a 32 bytes padding buffer. Writing or reading this buffer will cause an out-of-bounds access to be reported.</p>
+<img alt="../_images/padding.png" src="../_images/padding.png" />
+<p>This option supports allocations created via the <code class="docutils literal notranslate"><span class="pre">cudaMalloc</span></code> APIs, <code class="docutils literal notranslate"><span class="pre">cudaHostAlloc</span></code> and <code class="docutils literal notranslate"><span class="pre">cudaMallocHost</span></code>.</p>
+<p>This option does not support allocations created via <code class="docutils literal notranslate"><span class="pre">cudaHostRegister</span></code> or the CUDA virtual memory management APIs.</p>
+<p>Be aware that using this option will result in an increased device memory pressure, potentially causing additional CUDA out of memory errors.</p>
+</section>
+<section id="stream-ordered-race-detection">
+<h3>Stream-ordered race detection<a class="headerlink" href="#stream-ordered-race-detection" title="Permalink to this headline"></a></h3>
+<p>The memcheck tool can detect stream-ordered allocations races using the <code class="docutils literal notranslate"><span class="pre">--track-stream-ordered-races</span> <span class="pre">all</span></code> option. It will report accesses to stream-ordered allocations used outside of their lifespan.</p>
+<p>The tool is capable of detecting 2 types of races:</p>
+<ul>
+<li><p>Use-before-alloc races (<code class="docutils literal notranslate"><span class="pre">--track-stream-ordered-races</span> <span class="pre">use-before-alloc</span></code>)</p>
+<p>This race occurs when an allocation is used before it is available: an allocation created using <code class="docutils literal notranslate"><span class="pre">cudaMallocAsync</span></code> on a stream cannot be used on another stream without a prior synchronization event after the allocation.</p>
+<p>It also includes cases where an allocation is freed before it is available using <code class="docutils literal notranslate"><span class="pre">cudaFreeAsync</span></code>.</p>
+<img alt="../_images/use-before-alloc.png" src="../_images/use-before-alloc.png" />
+</li>
+<li><p>Use-after-free races (<code class="docutils literal notranslate"><span class="pre">--track-stream-ordered-races</span> <span class="pre">use-after-free</span></code>)</p>
+<p>This race occurs when an allocation is used after it is freed: an allocation freed using <code class="docutils literal notranslate"><span class="pre">cudaFreeAsync</span></code> on a stream cannot be used on another stream without a following synchronization event before the free.</p>
+<img alt="../_images/use-after-free.png" src="../_images/use-after-free.png" />
+</li>
+</ul>
+</section>
+</section>
+<section id="racecheck-tool">
+<h2>Racecheck Tool<a class="headerlink" href="#racecheck-tool" title="Permalink to this headline"></a></h2>
+<section id="what-is-racecheck">
+<h3>What is Racecheck?<a class="headerlink" href="#what-is-racecheck" title="Permalink to this headline"></a></h3>
+<p>The racecheck tool is a run time shared memory data access hazard detector. The primary use of this tool is to help identify memory access race conditions in CUDA applications that use shared memory.</p>
+<p>In CUDA applications, storage declared with the <code class="docutils literal notranslate"><span class="pre">__shared__</span></code> qualifier is placed on chip shared memory. All threads in a thread block can access this per block shared memory. Shared memory goes out of scope when the thread block completes execution. As shared memory is on chip, it is frequently used for inter-thread communication and as a temporary buffer to hold data being processed. As this data is being accessed by multiple threads in parallel, incorrect program assumptions may result in data races. Racecheck is a tool built to identify these hazards and help users write programs free of shared memory races.</p>
+<p>Currently, this tool only supports detecting accesses to on-chip shared memory.</p>
+</section>
+<section id="what-are-hazards">
+<h3>What are Hazards?<a class="headerlink" href="#what-are-hazards" title="Permalink to this headline"></a></h3>
+<p>A data access hazard is a case where two threads attempt to access the same location in memory resulting in non-deterministic behavior, based on the relative order of the two accesses. These hazards cause data races where the behavior or the output of the application depends on the order in which all parallel threads are executed by the hardware. Race conditions manifest as intermittent application failures or as failures when attempting to run a working application on a different GPU.</p>
+<p>The racecheck tool identifies three types of canonical hazards in a program. These are :</p>
+<ul>
+<li><p>Write-After-Write (WAW) hazards</p>
+<p>This hazard occurs when two threads attempt to write data to the same memory location. The resulting value in that location depends on the relative order of the two accesses.</p>
+</li>
+<li><p>Write-After-Read (WAR) hazards</p>
+<p>This hazard occurs when two threads access the same memory location, with one thread performing a read and another a write. In this case, the writing thread is ordered before the reading thread and the value returned to the reading thread is not the original value at the memory location.</p>
+</li>
+<li><p>Read-After-Write (RAW) hazards</p>
+<p>This hazard occurs when two threads access the same memory location, with one thread performing a read and the other a write. In this case, the reading thread reads the value before the writing thread commits it.</p>
+</li>
+</ul>
+</section>
+<section id="using-racecheck">
+<h3>Using Racecheck<a class="headerlink" href="#using-racecheck" title="Permalink to this headline"></a></h3>
+<p>The racecheck tool is enabled by running the Compute Sanitizer application with the <code class="docutils literal notranslate"><span class="pre">--tool</span> <span class="pre">racecheck</span></code> option.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>compute-sanitizer --tool racecheck [sanitizer_options] app_name [app_options]
+</pre></div>
+</div>
+<p>Once racecheck has identified a hazard, the user can make program modifications to ensure this hazard is no longer present. In the case of Write-After-Write hazards, the program should be modified so that multiple writes are not happening to the same location. In the case of Read-After-Write and Write-After-Read hazards, the reading and writing locations should be deterministically ordered. In CUDA kernels, this can be achieved by inserting a <code class="docutils literal notranslate"><span class="pre">__syncthreads()</span></code> call between the two accesses. To avoid races between threads within a single warp, <code class="docutils literal notranslate"><span class="pre">__syncwarp()</span></code> can be used.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Note: The racecheck tool does not perform any memory access error checking. It is recommended that users first run the memcheck tool to ensure the application is free of errors.</p>
+</div>
+</section>
+<section id="racecheck-report-modes">
+<h3>Racecheck Report Modes<a class="headerlink" href="#racecheck-report-modes" title="Permalink to this headline"></a></h3>
+<p>The racecheck tool can produce two types of output:</p>
+<ul>
+<li><p>Hazard reports</p>
+<p>These reports contain detailed information about one particular hazard. Each hazard report is byte accurate and represents information about conflicting accesses between two threads that affect this byte of shared memory.</p>
+</li>
+<li><p>Analysis reports</p>
+<p>These reports contain a post analysis set of reports. These reports are produced by the racecheck tool by analysing multiple hazard reports and examining active device state. For example usage of analysis reports, see <a class="reference external" href="index.html#understanding-racecheck-analysis-reports">Understanding Racecheck Analysis Reports</a>.</p>
+</li>
+</ul>
+</section>
+<section id="understanding-racecheck-analysis-reports">
+<h3>Understanding Racecheck Analysis Reports<a class="headerlink" href="#understanding-racecheck-analysis-reports" title="Permalink to this headline"></a></h3>
+<p>In analysis reports, the racecheck tool produces a series of high-level messages that identify the source locations of a particular race, based on observed hazards and other machine state.</p>
+<p>A sample racecheck analysis report is below:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>========= WARNING: Race reported between Write access at RAW()+0xf0 in raceGroupBasic.cu:40
+=========     and Read access at RAW()+0x280 in raceGroupBasic:46 [4 hazards]
+</pre></div>
+</div>
+<p>The analysis record contains high-level information about the hazard that is conveyed to the end user. Each line contains information about a unique location in the application which is participating in the race.</p>
+<p>The first word on the first line indicates the severity of this report. In this case, the message is at the WARNING level of severity. For more information on the different severity levels, see <a class="reference external" href="index.html#racecheck-severity-levels">Racecheck Severity Levels</a>. Analysis reports are composed of one or more racecheck hazards, and the severity level of the report is that of the hazard with the highest severity.</p>
+<p>The first line additionally contains the type of access. The access can be either:</p>
+<ul class="simple">
+<li><p>Read</p></li>
+<li><p>Write</p></li>
+</ul>
+<p>The next item on the line is the name of the kernel issuing the access and the offset of the location where the access happened from. In this case, the offset is 0xf0 in the RAW() kernel. If the application was compiled with line number information, this line also contains the file name and line number of the access.</p>
+<p>The next lines contain the location of the other offsets participating in the race condition. In this case, there is only one other location which is the RAW() kernel at offset 0x280. Similarly to the first line, file name and line number are printed if the application was compiled with line number information. Finally, the line also contains the number of hazards detected for this specific race condition.</p>
+<p>A given analysis report will always contain at least one line which is performing a write access. A common strategy to eliminate races which contain only write accesses is to ensure that the write access is performed by only one thread. In the case of races with multiple readers and one writer, introducing explicit program ordering via a <code class="docutils literal notranslate"><span class="pre">__syncthreads()</span></code> call can avoid the race condition. For races between threads within the same warp, the <code class="docutils literal notranslate"><span class="pre">__syncwarp()</span></code> intrinsic can be used to avoid the hazard.</p>
+</section>
+<section id="understanding-racecheck-hazard-reports">
+<h3>Understanding Racecheck Hazard Reports<a class="headerlink" href="#understanding-racecheck-hazard-reports" title="Permalink to this headline"></a></h3>
+<p>In hazard reporting mode, the racecheck tool produces a series of messages detailing information about hazards in the application. The tool is byte accurate and produces a message for each byte on which a hazard was detected. Additionally, when enabled, the host backtrace for the launch of the kernel will also be displayed.</p>
+<p>A sample racecheck hazard is below:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>========= ERROR: Potential WAW hazard detected at __shared__ 0x0 in block (0,0,0) :
+=========     Write Thread (0,0,0) at WAW()+0x2f0 in raceWAW.cu:20
+=========     Write Thread (1,0,0) at WAW()+0x2f0 in raceWAW.cu:20
+=========     Current Value : 1, Incoming Value : 2
+</pre></div>
+</div>
+<p>The hazard records are dense and capture a lot of interesting information. In general terms, the first line contains information about the hazard severity, type and address, as well as information about the thread block where it occurred. The next 2 lines contain detailed information about the two threads that were in contention. These two lines are ordered chronologically, so the first entry is for the access that occurred earlier and the second for the access that occurred later. The final line is printed for some hazard types and captures the actual data that was being written.</p>
+<p>Examining this line by line, we have :</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>ERROR: Potential WAW hazard detected at __shared__ 0x0 in block (0, 0, 0)
+</pre></div>
+</div>
+<p>The first word on this line indicates the severity of this hazard. In this case, the message is at the ERROR level of severity. For more information on the different severity levels, see <a class="reference external" href="index.html#racecheck-severity-levels">Racecheck Severity Levels</a>.</p>
+<p>The next piece of information here is the type of hazard. The racecheck tool detects three types of hazards:</p>
+<ul class="simple">
+<li><p>WAW or Write-After-Write hazards</p></li>
+<li><p>WAR or Write-After-Read hazards</p></li>
+<li><p>RAW or Read-After-Write hazards</p></li>
+</ul>
+<p>The type of hazard indicates the accesses types of the two threads that were in contention. In this example, the hazard is of Write-After-Write type.</p>
+<p>The next piece of information is the address in shared memory that was being accessed. This is the offset in per block shared memory that was being accessed by both threads. Since the racecheck tool is byte accurate, the message is only for the byte of memory at given address. In this example, the byte being accessed is byte 0x0 in shared memory.</p>
+<p>Finally, the first line contains the block index of the thread block to which the two racing threads belong.</p>
+<p>The second line contains information about the first thread to write to this location.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Write Thread (0, 0, 0) at WAW()+0x2f0 in raceWAW.cu:20(void)
+</pre></div>
+</div>
+<p>The first item on this line indicates the type of access being performed by this thread to the shared memory address. In this example, the thread was writing to the location. The next component is the index of the thread block. In this case, the thread is at index (0,0,0). Following this, we have the name of the kernel and byte offset of the instruction which did the access in the kernel. In this example, the offset is 0x2f0. This is followed by the source file and line number (if line number information is available).</p>
+<p>The third line contains similar information about the second thread that was causing this hazard. This line has an identical format to the previous line.</p>
+<p>The fourth line contains information about the data in the two accesses.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Current Value : 1, Incoming Value : 2
+</pre></div>
+</div>
+<p>If the second thread in the hazard was performing a write access, i.e., the hazard is a Write-After-Write (WAW) or a Write-After-Read (WAR), this line contains the value after the access by the first thread as the Current Value and the value that will be written by the second access as the Incoming Value. In this case, the first thread wrote the value 1 to the shared memory location. The second thread is attempting to write the value 2.</p>
+</section>
+<section id="racecheck-severity-levels">
+<h3>Racecheck Severity Levels<a class="headerlink" href="#racecheck-severity-levels" title="Permalink to this headline"></a></h3>
+<p>Problems reported by racecheck can be of different severity levels. Depending on the level, different actions are required from developers. By default, only issues of severity level WARNING and ERROR are shown. The command line option <code class="docutils literal notranslate"><span class="pre">--print-level</span></code> can be used to set the lowest severity level that should be reported.</p>
+<p>Racecheck reports have one of the following severity levels:</p>
+<ul>
+<li><p>INFO: The lowest level of severity. This is for hazards that have no impact on program execution and hence are not contributing to data access hazards. It is still a good idea to find and eliminate such hazards.</p></li>
+<li><p>WARNING: Hazards at this level of severity are determined to be programming model hazards, however may be intentionally created by the programmer. An example of this are hazards due to warp level programming that make the assumption that threads are proceeding in groups. Such hazards are typically only encountered by advanced programmers. In cases where a beginner programmer encounters such errors, he should treat them as sources of hazards.</p>
+<p>Starting with the Volta architecture, programmers cannot rely anymore on the assumption that threads within a warp execute in lock-step unconditionally. As a result, warnings due to warp-synchronous programming without explicit synchronization must be fixed when developing or porting applications from earlier architectures to Volta and above. Developers can use the <code class="docutils literal notranslate"><span class="pre">__syncwarp()</span></code> intrinsic or the Cooperative Groups API.</p>
+</li>
+<li><p><em>ERROR</em>: The highest level of severity. This corresponds to hazards that are very likely candidates for causing data access races. Programmers would be well advised to examine errors at this level of severity.</p></li>
+</ul>
+</section>
+<section id="racecheck-support-for-cuda-barrier">
+<h3>Racecheck support for <code class="docutils literal notranslate"><span class="pre">cuda::barrier</span></code><a class="headerlink" href="#racecheck-support-for-cuda-barrier" title="Permalink to this headline"></a></h3>
+<p>Racecheck supports synchronization through <code class="docutils literal notranslate"><span class="pre">cuda::barrier</span></code> on Ampere GPUs and newer.</p>
+<p>The number of barriers tracked by the tool is based on the number of barriers present in the source code as reported by compiler information. In some cases, the compiler may undercount this number. Racecheck will report the following warning if more barriers are used than expected:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>========= Warning: Detected overflow of tracked cuda::barrier structures. Results might be incorrect. Try using --num-cuda-barriers to fix the issue
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">--num-cuda-barriers</span></code> option can be used to indicate the number of expected barriers in the source code and workaround this issue.</p>
+</section>
+<section id="racecheck-support-for-asynchronous-copy">
+<h3>Racecheck support for asynchronous copy<a class="headerlink" href="#racecheck-support-for-asynchronous-copy" title="Permalink to this headline"></a></h3>
+<p>Racecheck supports race detection on shared memory for asynchronous memory copy operations from global to shared memory introduced in compute capability 8.0. These can take the form of CUDA C++ <code class="docutils literal notranslate"><span class="pre">cuda::memcpy_async</span></code> or the PTX <code class="docutils literal notranslate"><span class="pre">cp.async</span></code>. Specifically, racecheck is able to detect when the target of a asynchronous copy tracked by a pipeline (CUDA C++) or async-group (PTX) was accessed before the required commit/wait to guarantee its completion. In these cases, individual hazards when using <code class="docutils literal notranslate"><span class="pre">--racecheck-report</span> <span class="pre">hazard</span></code> will bear the mention <code class="docutils literal notranslate"><span class="pre">(invalid</span> <span class="pre">memcpy_async</span> <span class="pre">synchronization)</span></code>. These checks can be disabled by using <code class="docutils literal notranslate"><span class="pre">--racecheck-memcpy-async</span> <span class="pre">no</span></code>.</p>
+</section>
+<section id="racecheck-cluster-entry-and-exit-race-detection">
+<h3>Racecheck cluster entry and exit race detection<a class="headerlink" href="#racecheck-cluster-entry-and-exit-race-detection" title="Permalink to this headline"></a></h3>
+<p>Racecheck supports race detection on remote shared memory accesses without appropriate cluster-wide synchronization. When a kernel makes a remote shared memory access from one block to another (in the same cluster), it needs to guarantee that the target block exists, otherwise error <code class="docutils literal notranslate"><span class="pre">cudaErrorLaunchFailure</span></code> is raised. One way to achieve this is using cluster.sync() from the <a class="reference external" href="https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#cluster-group">Cluster Group API</a> . Refer to the <a class="reference external" href="https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#distributed-shared-memory">CUDA documentation about distributed shared memory</a> for more information.</p>
+<p>When running a program under Racecheck, instead of failing, the tool will report these two types of illegal accesses:</p>
+<ol class="arabic simple">
+<li><p>Late entry race detection: a block is trying to access shared memory from another block in the cluster without an appropriate cluster-wide synchronization beforehand.</p></li>
+<li><p>Early exit race detection: a block is trying to access shared memory from another block in the cluster without an appropriate cluster-wide synchronization before the target block exits.</p></li>
+</ol>
+<p>A sample report for both races is below:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>========= Potential invalid __shared__ read of size 4 bytes
+=========     at RemoteAccess(int *, int)+0x170 in RaceCluster.cu:10
+=========     by thread (0,0,0) in block (0,0,0)
+=========     Address 0x1000400 is located in a block that might not have entered yet
+=========
+========= Potential invalid __shared__ read of size 4 bytes
+=========     at RemoteAccess(int *, int)+0x170 in RaceCluster.cu:10
+=========     by thread (0,0,0) in block (0,0,0)
+=========     Address 0x1000400 is located in a block that might have already exited
+=========
+</pre></div>
+</div>
+</section>
+</section>
+<section id="initcheck-tool">
+<h2>Initcheck Tool<a class="headerlink" href="#initcheck-tool" title="Permalink to this headline"></a></h2>
+<section id="what-is-initcheck">
+<h3>What is Initcheck?<a class="headerlink" href="#what-is-initcheck" title="Permalink to this headline"></a></h3>
+<p>The initcheck tool is a run time uninitialized device global memory access detector. This tool can identify when device global memory is accessed without it being initialized via device side writes, or via CUDA memcpy and memset API calls.</p>
+<p>Currently, this tool only supports detecting accesses to device global memory.</p>
+</section>
+<section id="using-initcheck">
+<h3>Using Initcheck<a class="headerlink" href="#using-initcheck" title="Permalink to this headline"></a></h3>
+<p>The initcheck tool is enabled by running the Compute Sanitizer application with the <code class="docutils literal notranslate"><span class="pre">--tool</span> <span class="pre">initcheck</span></code> option.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>compute-sanitizer --tool initcheck [sanitizer_options] app_name [app_options]
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The initcheck tool does not perform any memory access error checking. It is recommended that users first run the memcheck tool to ensure the application is free of errors.</p>
+</div>
+</section>
+<section id="unused-memory-detection">
+<h3>Unused memory detection<a class="headerlink" href="#unused-memory-detection" title="Permalink to this headline"></a></h3>
+<p>The initcheck tool can also be used to detect unused memory by using the <code class="docutils literal notranslate"><span class="pre">--track-unused-memory</span></code> option.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>compute-sanitizer --tool initcheck --track-unused-memory app_name [app_options]
+</pre></div>
+</div>
+<p>A sample unused memory report is below:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>=========  Unused memory in allocation 0x7fed9f400000 of size 100 bytes
+=========     Not written 80 bytes at offset 0x14 (0x7fed9f400014)
+=========     80% of allocation were unused.
+</pre></div>
+</div>
+<p>This report contains the address and size of the allocation, the number of bytes not used and their location. The location can be a range if all unused bytes are not contiguous.</p>
+<p>The behavior for this feature can be adjusted with the <code class="docutils literal notranslate"><span class="pre">--unused-memory-threshold</span></code> option which takes the minimum percentage at which reports should be printed. For instance, using a value of 81 or above would silence the sample report above.</p>
+</section>
+</section>
+<section id="synccheck-tool">
+<h2>Synccheck Tool<a class="headerlink" href="#synccheck-tool" title="Permalink to this headline"></a></h2>
+<section id="what-is-synccheck">
+<h3>What is Synccheck?<a class="headerlink" href="#what-is-synccheck" title="Permalink to this headline"></a></h3>
+<p>The synccheck tool is a runtime tool that can identify whether a CUDA application is correctly using synchronization primitives, specifically <code class="docutils literal notranslate"><span class="pre">__syncthreads()</span></code> and <code class="docutils literal notranslate"><span class="pre">__syncwarp()</span></code> intrinsics and their Cooperative Groups API counterparts.</p>
+</section>
+<section id="using-synccheck">
+<h3>Using Synccheck<a class="headerlink" href="#using-synccheck" title="Permalink to this headline"></a></h3>
+<p>The synccheck tool is enabled by running the Compute Sanitizer application with the <code class="docutils literal notranslate"><span class="pre">--tool</span> <span class="pre">synccheck</span></code> option.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>compute-sanitizer --tool synccheck [sanitizer_options] app_name [app_options]
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The synccheck tool does not perform any memory access error checking. It is recommended that users first run the memcheck tool to ensure the application is free of errors.</p>
+</div>
+</section>
+<section id="understanding-synccheck-reports">
+<h3>Understanding Synccheck Reports<a class="headerlink" href="#understanding-synccheck-reports" title="Permalink to this headline"></a></h3>
+<p>For each violation, the synccheck tool produces a report message that identifies the source location of the violation and its classification.</p>
+<p>A sample synccheck report is below:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>========= Barrier error detected. Divergent thread(s) in warp
+=========     at ThreadDivergence(int *, int)+0xf0 in divergence.cu:79
+=========     by thread (37,0,0) in block (0,0,0)
+</pre></div>
+</div>
+<p>Each report starts with “Barrier error detected.” In most cases, this is followed by a classification of the detected barrier error. In this message, a CUDA block with divergent threads was found. The following error classes can be reported:</p>
+<ul class="simple">
+<li><p>Divergent thread(s) in block: Divergence between threads within a block was detected for a barrier that does not support this on the current architecture. For example, this occurs when <code class="docutils literal notranslate"><span class="pre">__syncthreads()</span></code> is used within conditional code but the conditional does not evaluate equally across all threads in the block.</p></li>
+<li><p>Divergent thread(s) in warp: Divergence between threads within a single warp was detected for a barrier that does not support this on the current architecture.</p></li>
+<li><p>Invalid arguments: A barrier instruction or primitive was used with invalid arguments. This can occur for example if not all threads reaching a <code class="docutils literal notranslate"><span class="pre">__syncwarp()</span></code> declare themselves in the mask parameter. However, synccheck will not detect cases where not all the threads declared in the mask parameter reach the <code class="docutils literal notranslate"><span class="pre">__syncwarp()</span></code>.</p></li>
+</ul>
+<p>The next line states the offset within the function of the location where the access happened. In this case, the offset is 0xf0. If the application was compiled with line number information, this line would also contain the file name and line number of the access, followed by the name of the kernel issuing the access.</p>
+<p>The third line contains information on the thread and block for which this violation was detected. In this case, it is thread 37 in block 0.</p>
+</section>
+<section id="synccheck-support-for-cuda-barrier">
+<h3>Synccheck support for <code class="docutils literal notranslate"><span class="pre">cuda::barrier</span></code><a class="headerlink" href="#synccheck-support-for-cuda-barrier" title="Permalink to this headline"></a></h3>
+<p>Synccheck supports synchronization through <code class="docutils literal notranslate"><span class="pre">cuda::barrier</span></code> on Ampere GPUs and newer.</p>
+<p>The number of barriers tracked by the tool is based on the number of barriers present in the source code as reported by compiler information. In some cases, the compiler may undercount this number. Synccheck will report the following warning if more barriers are used than expected:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>========= Warning: Detected overflow of tracked cuda::barrier structures. Results might be incorrect. Try using --num-cuda-barriers to fix the issue
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">--num-cuda-barriers</span></code> option can be used to indicate the number of expected barriers in the source code and workaround this issue.</p>
+</section>
+<section id="synccheck-support-for-wgmma">
+<h3>Synccheck support for <code class="docutils literal notranslate"><span class="pre">wgmma</span></code><a class="headerlink" href="#synccheck-support-for-wgmma" title="Permalink to this headline"></a></h3>
+<p>Synccheck supports additional checks related to PTX <code class="docutils literal notranslate"><span class="pre">wgmma</span></code> instructions for Hopper sm_90a architecture.</p>
+<p><code class="docutils literal notranslate"><span class="pre">`wgmma</span></code> &lt;<a class="reference external" href="https://docs.nvidia.com/cuda/parallel-thread-execution/index.html#asynchronous-warpgroup-level-matrix-instructions">https://docs.nvidia.com/cuda/parallel-thread-execution/index.html#asynchronous-warpgroup-level-matrix-instructions</a>&gt;`__ instructions are executed across a <a class="reference external" href="https://docs.nvidia.com/cuda/parallel-thread-execution/index.html#asynchronous-warpgroup-level-matrix-instructions-warpgroup">warpgroup</a>. Each warp in the warpgroup are expected to execute the same <code class="docutils literal notranslate"><span class="pre">wgmma</span></code> instructions in the same order with the same predicates, with all threads active or none. Synccheck can detect and report cases where these rules are not respected, and will exit the entire warpgroup when detected. In such cases, the report will start with “Warpgroup MMA sequence error detected” instead of “Barrier error detected”, followed by a description of the specific error encountered. The error is reported once per warp encountering the error.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">--check-warpgroup-mma</span></code> option can be used to enable or disable these checks.</p>
+</section>
+</section>
+<section id="compute-sanitizer-features">
+<h2>Compute Sanitizer Features<a class="headerlink" href="#compute-sanitizer-features" title="Permalink to this headline"></a></h2>
+<section id="nonblocking-mode">
+<h3>Nonblocking Mode<a class="headerlink" href="#nonblocking-mode" title="Permalink to this headline"></a></h3>
+<p>By default, the standalone Compute Sanitizer tool will launch kernels in nonblocking mode. This allows the tool to support error reporting in applications running concurrent kernels</p>
+<p>To force kernels to execute serially, a user can use the <code class="docutils literal notranslate"><span class="pre">--force-blocking-launches</span></code> option. One side effect is that when in blocking mode, only the first thread to hit an error in a kernel will be reported. Also, using this option or <code class="docutils literal notranslate"><span class="pre">--force-synchronization-limit</span></code> will disable CUDA reduced API serialization.</p>
+</section>
+<section id="stack-backtraces">
+<h3>Stack Backtraces<a class="headerlink" href="#stack-backtraces" title="Permalink to this headline"></a></h3>
+<p>Compute Sanitizer can generate backtraces when given <code class="docutils literal notranslate"><span class="pre">--show-backtrace</span></code> option. Backtraces usually consist of two sections – a saved host backtrace that leads up to the CUDA driver call site, and a device backtrace at the time of the error. Each backtrace contains a list of frames showing the state of the stack at the time the backtrace was created.</p>
+<p>To get function names in the host backtraces, the user application must be built with support for symbol information in the host application. For more information, see <a class="reference external" href="index.html#compilation-options">Compilation Options</a></p>
+<p>Backtraces are printed for most Compute Sanitizer tool outputs, and the information generated varies depending on the type of output. The table below explains the kind of host and device backtrace seen under different conditions.</p>
+<table class="table-no-stripes docutils align-default" id="id11">
+<caption><span class="caption-text">Table 8. Compute Sanitizer Stack Backtrace Information</span><a class="headerlink" href="#id11" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 30%" />
+<col style="width: 41%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Output Type</p></th>
+<th class="head"><p>Host Backtrace</p></th>
+<th class="head"><p>Device Backtrace</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Memory access error</p></td>
+<td><p>Kernel launch on host</p></td>
+<td><p>Precise backtrace on device</p></td>
+</tr>
+<tr class="row-odd"><td><p>Hardware exception</p></td>
+<td><p>Kernel launch on host</p></td>
+<td><p>Imprecise backtrace on device <a class="footnote-reference brackets" href="#fn1" id="id3">1</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Malloc/Free error</p></td>
+<td><p>Kernel launch on host</p></td>
+<td><p>Precise backtrace on device</p></td>
+</tr>
+<tr class="row-odd"><td><p>cudaMalloc allocation leak</p></td>
+<td><p>Callsite of cudaMalloc</p></td>
+<td><p>N/A</p></td>
+</tr>
+<tr class="row-even"><td><p>CUDA API error</p></td>
+<td><p>Callsite of CUDA API call</p></td>
+<td><p>N/A</p></td>
+</tr>
+<tr class="row-odd"><td><p>Compute Sanitizer internal error</p></td>
+<td><p>Callsite leading to internal error</p></td>
+<td><p>N/A</p></td>
+</tr>
+<tr class="row-even"><td><p>Device heap allocation leak</p></td>
+<td><p>N/A</p></td>
+<td><p>N/A</p></td>
+</tr>
+<tr class="row-odd"><td><p>Shared memory hazard</p></td>
+<td><p>Kernel launch on host</p></td>
+<td><p>N/A</p></td>
+</tr>
+</tbody>
+</table>
+<p>Note that for OptiX applications, the name of OptiX internal device functions will be displayed as “NVIDIA Internal”.</p>
+<dl class="footnote brackets">
+<dt class="label" id="fn1"><span class="brackets"><a class="fn-backref" href="#id3">1</a></span></dt>
+<dd><p>In some cases, there may be no device backtrace</p>
+</dd>
+</dl>
+</section>
+<section id="name-demangling">
+<h3>Name Demangling<a class="headerlink" href="#name-demangling" title="Permalink to this headline"></a></h3>
+<p>The Compute Sanitizer suite supports displaying mangled and demangled names for CUDA kernels and CUDA device functions. By default, tools display the fully demangled name, which contains the name of the kernel as well as its prototype information. In the simple demangle mode, the tools will only display the first part of the name. If demangling is disabled, tools will display the complete mangled name of the kernel.</p>
+</section>
+<section id="dynamic-parallelism">
+<h3>Dynamic Parallelism<a class="headerlink" href="#dynamic-parallelism" title="Permalink to this headline"></a></h3>
+<p>The Compute Sanitizer tool suite supports dynamic parallelism. The memcheck tool supports precise error reporting of out of bounds and misaligned accesses on global, local and shared memory accesses, as well as on global atomic instructions for applications using dynamic parallelism. In addition, the imprecise hardware exception reporting mechanism is also fully supported. Error detection on applications using dynamic parallelism requires significantly more memory on the device; as a result, in memory constrained environments, memcheck may fail to initialize with an internal out of memory error.</p>
+<p>For limitations, see the known limitations in the Release Notes section.</p>
+</section>
+<section id="error-actions">
+<h3>Error Actions<a class="headerlink" href="#error-actions" title="Permalink to this headline"></a></h3>
+<p>When encountering an error, Compute Sanitizer behavior depends on the type of error. The default behavior of Compute Sanitizer is to continue execution on purely host side errors. Hardware exceptions detected by the memcheck tool cause the CUDA context to be destroyed. Precise errors (such as memory access and malloc/free errors) detected by the memcheck tool cause the kernel to be terminated. This terminates the kernel without running any subsequent instructions and the application continues launching other kernels in the CUDA context. The handling of memory access and malloc/free errors detected by the memcheck tool can be changed using the <code class="docutils literal notranslate"><span class="pre">--destroy-on-device-error</span></code> option.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">--destroy-on-device-error</span> <span class="pre">kernel</span></code> option is not supported on Maxwell GPUs.</p>
+<p>For racecheck detected hazards, the hazard is reported, but execution is not affected.</p>
+<p>For a full summary of error action, based on the type of the error see the table below. The error action terminate kernel refers to the cases where the kernel is terminated early, and no subsequent instructions are run. In such cases, the CUDA context is not destroyed and other kernels continue execution and CUDA API calls can still be made.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When kernel execution is terminated early, the application may not have completed its computations on data. Any subsequent kernels that depend on this data will have undefined behavior.</p>
+</div>
+<p>The action terminate CUDA context refers to the cases where the CUDA context is forcibly terminated. In such cases, all outstanding work for the context is terminated and subsequent CUDA API calls will fail. The action continue application refers to cases where the application execution is not impacted, and the kernel continues executing instructions.</p>
+<table class="table-no-stripes docutils align-default" id="id12">
+<caption><span class="caption-text">Table 9. Compute Sanitizer Error Actions</span><a class="headerlink" href="#id12" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 28%" />
+<col style="width: 8%" />
+<col style="width: 20%" />
+<col style="width: 43%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Error Type</p></th>
+<th class="head"><p>Location</p></th>
+<th class="head"><p>Action</p></th>
+<th class="head"><p>Comments</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Memory access error</p></td>
+<td><p>Device</p></td>
+<td><p>Terminate CUDA context</p></td>
+<td><p>User can choose to instead terminate the kernel</p></td>
+</tr>
+<tr class="row-odd"><td><p>Hardware exception</p></td>
+<td><p>Device</p></td>
+<td><p>Terminate CUDA context</p></td>
+<td><p>Subsequent calls on the CUDA context will fail</p></td>
+</tr>
+<tr class="row-even"><td><p>Malloc/Free error</p></td>
+<td><p>Device</p></td>
+<td><p>Terminate CUDA context</p></td>
+<td><p>User can choose to instead terminate the kernel</p></td>
+</tr>
+<tr class="row-odd"><td><p>cudaMalloc allocation leak</p></td>
+<td><p>Host</p></td>
+<td><p>Continue application</p></td>
+<td><p>Error reported. No other action taken.</p></td>
+</tr>
+<tr class="row-even"><td><p>CUDA API error</p></td>
+<td><p>Host</p></td>
+<td><p>Continue application</p></td>
+<td><p>Error reported. No other action taken.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Device heap allocation leak</p></td>
+<td><p>Device</p></td>
+<td><p>Continue application</p></td>
+<td><p>Error reported. No other action taken.</p></td>
+</tr>
+<tr class="row-even"><td><p>Shared memory hazard</p></td>
+<td><p>Device</p></td>
+<td><p>Continue application</p></td>
+<td><p>Error reported. No other action taken.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Synchronization error</p></td>
+<td><p>Device</p></td>
+<td><p>Terminate CUDA context</p></td>
+<td><p>User can choose to instead terminate the kernel</p></td>
+</tr>
+<tr class="row-even"><td><p>Compute Sanitizer internal error</p></td>
+<td><p>Host</p></td>
+<td><p>Undefined</p></td>
+<td><p>The application may behave in an undefined fashion</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="escape-sequences">
+<h3>Escape Sequences<a class="headerlink" href="#escape-sequences" title="Permalink to this headline"></a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">--save</span></code> and <code class="docutils literal notranslate"><span class="pre">--log-file</span></code> options to Compute Sanitizer accept the following escape sequences in the file name.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">%%</span></code> : Replaced with a literal %.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">%p</span></code> : Replaced with the PID of the Compute Sanitizer frontend application.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">%q{ENVVAR}</span></code> : Replaced with the contents of the environment variable <code class="docutils literal notranslate"><span class="pre">ENVVAR</span></code>. If the variable does not exist, this is replaced with an empty string.</p></li>
+<li><p>Any other character following the % causes an error.</p></li>
+</ul>
+</section>
+<section id="specifying-filters">
+<h3>Specifying Filters<a class="headerlink" href="#specifying-filters" title="Permalink to this headline"></a></h3>
+<p>Compute Sanitizer tools support filtering the choice of kernels which should be checked. When a filter is specified, only kernels matching the filter will be checked. Filters are specified using the <code class="docutils literal notranslate"><span class="pre">--kernel-name</span></code> and <code class="docutils literal notranslate"><span class="pre">--kernel-name-exclude</span></code> options. By default, the Compute Sanitizer tools will check all kernels in the application.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">--kernel-name</span></code> and <code class="docutils literal notranslate"><span class="pre">--kernel-name-exclude</span></code> options can be specified multiple times. If a kernel satisfies any filter, it will be checked by the running the Compute Sanitizer tool.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">--kernel-name</span></code> and <code class="docutils literal notranslate"><span class="pre">--kernel-name-exclude</span></code> options take a filter specification consisting of a list of comma separated key value pairs, specified as <code class="docutils literal notranslate"><span class="pre">key=value</span></code>. When using the regex filter key, multiple key value pairs need to be specified through multiple use of the option instead. In order for a filter to be matched, all components of the filter specification must be satisfied. If a filter is incorrectly specified in any component, the entire filter is ignored. For a full summary of valid key values, see the table below. If a key has multiple strings, any of the strings can be used to specify that filter component.</p>
+<table class="table-no-stripes docutils align-default" id="id13">
+<caption><span class="caption-text">Table 10. Compute Sanitizer Filter Keys</span><a class="headerlink" href="#id13" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 12%" />
+<col style="width: 39%" />
+<col style="width: 39%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Key String</p></th>
+<th class="head"><p>Value</p></th>
+<th class="head"><p>Comments</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Kernel Name</p></td>
+<td><p>kernel_name, kne</p></td>
+<td><p>Complete mangled kernel name</p></td>
+<td><p>User specifies the complete mangled kernel name.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Kernel Substring</p></td>
+<td><p>kernel_substring, kns</p></td>
+<td><p>Any substring in mangled kernel name</p></td>
+<td><p>User specifies a substring in the mangled kernel name.</p></td>
+</tr>
+<tr class="row-even"><td><p>Regex</p></td>
+<td><p>regex</p></td>
+<td><p>Any regex that can be matched in a substring of the mangled kernel name</p></td>
+<td><p>User specifies a regular expression searched in the mangled kernel name.</p></td>
+</tr>
+</tbody>
+</table>
+<p>When using the <code class="docutils literal notranslate"><span class="pre">kernel-name</span></code> filters, the Compute Sanitizer tools will check all <code class="docutils literal notranslate"><span class="pre">device</span></code> function calls made by the kernel. When using CUDA Dynamic Parallelism (CDP), the Compute Sanitizer tools will not check child kernels launched from a checked kernel unless the child kernel matches a filter. If a GPU launched kernel that does not match a filter calls a device function that is reachable from a kernel that does match a filter, the device function behaves as though it was checked. In the case of some tools, this can result in undefined behavior.</p>
+<p><strong>Filter usage example</strong></p>
+<p>We consider an application that launches three different kernels declared below.</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">__global__</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">gamma</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="n">bufer</span><span class="p">);</span><span class="w"></span>
+<span class="n">__global__</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">delta</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="n">bufer</span><span class="p">);</span><span class="w"></span>
+<span class="n">__global__</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">epsilon</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="n">bufer</span><span class="p">);</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Their respective mangled names are <code class="docutils literal notranslate"><span class="pre">_Z5gammaPi</span></code>, <code class="docutils literal notranslate"><span class="pre">_Z5deltaPi</span></code> and <code class="docutils literal notranslate"><span class="pre">_Z7epsilonPi</span></code>. We only want to check the launches of the kernel epsilon. Here are different means to achieve it:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">compute-sanitizer</span> <span class="pre">--kernel-name</span> <span class="pre">kne=_Z7epsilonPi</span></code> Only epsilon is matching the specified filter, so only kernel launches of epsilon will be checked.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">compute-sanitizer</span> <span class="pre">--kernel-name</span> <span class="pre">kns=epsilon</span></code> Since “epsilon” is a substring of “_Z7epsilonPi”, and also happens to be the only kernel having this substring in its mangled name, only epsilon will be matched and checked.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">compute-sanitizer</span> <span class="pre">--kernel-name-exclude</span> <span class="pre">kns=delta,kne=_Z5gammaPi</span></code> This time, we are using the exclude options. Only epsilon is not matched by the exclude option in this scenario, which means it will be the only one checked. We specified multiple filter separating them with a comma: this can be used with both <code class="docutils literal notranslate"><span class="pre">kernel-name</span></code> and <code class="docutils literal notranslate"><span class="pre">kernel-name-exclude</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">compute-sanitizer</span> <span class="pre">--kernel-name-exclude</span> <span class="pre">kns=delta</span> <span class="pre">--kernel-name-exclude</span> <span class="pre">kne=_Z5gammaPi</span></code> Same as above, except we used the exclude option twice to specify multiple filters instead of specifying them all at once. If needed, <code class="docutils literal notranslate"><span class="pre">kernel-name</span></code> and <code class="docutils literal notranslate"><span class="pre">kernel-name-exclude</span></code> can be used at the same time.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">compute-sanitizer</span> <span class="pre">--kernel-name</span> <span class="pre">regex='[a-z]{7}'</span></code> For this example we are using the regex filter. It matches any kernel for which the regular expression can be matched anywhere inside the mangle named. The specified regex matches any 7 consecutive lowercase letter. Only <code class="docutils literal notranslate"><span class="pre">_Z7epsilonPi</span></code> has 7 consecutive lowercase letter, and therefore is the only kernel matched by <code class="docutils literal notranslate"><span class="pre">--kernel-name</span></code>.</p></li>
+</ul>
+</section>
+<section id="coredump-support">
+<h3>Coredump support<a class="headerlink" href="#coredump-support" title="Permalink to this headline"></a></h3>
+<p>Starting from CUDA 11.6, the compute-sanitizer tool can generate a CUDA coredump once an error is detected by using the <code class="docutils literal notranslate"><span class="pre">--generate-coredump</span></code> option. Once the coredump is generated, the target application will abort.</p>
+<p>On Linux, the coredump file can be loaded in cuda-gdb using the following option:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>(cuda-gdb) target cudacore core.name.nvcudmp
+</pre></div>
+</div>
+<p>See the <a class="reference external" href="https://docs.nvidia.com/cuda/cuda-gdb/index.html#gpu-core-dump-support">cuda-gdb documentation</a> for more information.</p>
+<p>On Windows, the coredump file can be loaded in NVIDIA Nsight Visual Studio Edition with the <strong>File</strong> &gt; <strong>Open</strong> menu, or by
+dragging and dropping the file in Visual Studio. See the <a class="reference external" href="https://docs.nvidia.com/nsight-visual-studio-edition/cuda-inspect-state/index.html#gpu-core-dump-files">NVIDIA Nsight Visual Studio Edition documentation</a>
+for more information.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">--coredump-name</span></code> option can be used to specify the file name of the coredump. See the “Naming of GPU core dump files” section of the <a class="reference external" href="https://docs.nvidia.com/cuda/cuda-gdb/index.html#gpu-core-dump-support">cuda-gdb documentation</a> for more information on template specifiers and default name.</p>
+<p>The coredump feature has the following restrictions:</p>
+<ul class="simple">
+<li><p>Only threads that encountered an error can be inspected in the generated coredump</p></li>
+<li><p>Maxwell GPUs are not supported</p></li>
+<li><p>The racecheck tool is not supported.</p></li>
+<li><p>Coredumps are not supported on WSL2.</p></li>
+</ul>
+</section>
+<section id="error-suppression">
+<h3>Error suppression<a class="headerlink" href="#error-suppression" title="Permalink to this headline"></a></h3>
+<p>The compute-sanitizer tools can sometimes generate false positive reports. In these cases, a suppression file can be provided as input to the tool to suppress the reporting of these false positives.</p>
+<p>A suppression file can be generated by using the <code class="docutils literal notranslate"><span class="pre">--xml</span></code> option of the compute-sanitizer tool on the target application. Once generated, the XML file can be edited manually to be more generic.</p>
+<p>On subsequent use of the tools, the suppression file can be provided as input using the <code class="docutils literal notranslate"><span class="pre">--suppressions</span></code> option.</p>
+<p>The following rules are applied when checking if a detected report should be suppressed:</p>
+<ul class="simple">
+<li><p>The types of the report must match.</p></li>
+<li><p>If provided in the suppression file, integer fields must match exactly.</p></li>
+<li><p>If provided in the suppression file, a string field can be a regex.</p></li>
+<li><p>When comparing stack traces, the suppression trace needs to have the same number of frames or less than the report one.</p></li>
+<li><p>Stack frame comparisons include the following fields (if provided in the suppression): function name, file name and module name.</p></li>
+</ul>
+<p>The following types of error can be suppressed:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="index.html#api-error-checking">CUDA API errors</a></p></li>
+<li><p><a class="reference external" href="index.html#initcheck-tool">Initcheck uninitialized memory accesses</a></p></li>
+<li><p><a class="reference external" href="index.html#understanding-racecheck-analysis-reports">Racecheck analysis reports</a></p></li>
+</ul>
+</section>
+<section id="optix-support">
+<h3>OptiX support<a class="headerlink" href="#optix-support" title="Permalink to this headline"></a></h3>
+<p>Starting from CUDA 11.6, the compute-sanitizer tool support OptiX 7 applications with memcheck and initcheck. The option <code class="docutils literal notranslate"><span class="pre">--check-optix</span></code> needs to be set for optix launches to be tracked with initcheck. To get full device backtrace information, please make sure your OptiX modules are compiled with <code class="docutils literal notranslate"><span class="pre">OPTIX_COMPILE_DEBUG_LEVEL_FULL</span></code> set in the <code class="docutils literal notranslate"><span class="pre">debugLevel</span></code> field in the <code class="docutils literal notranslate"><span class="pre">OptixModuleCompileOptions</span></code> structure.</p>
+<p>When using compute-sanitizer on OptiX applciations, it is possible that some or all device frames are located in OptiX internal code. Such frames have their name displayed as <code class="docutils literal notranslate"><span class="pre">NVIDIA</span> <span class="pre">Internal</span></code>. See the example below of an error reported in user code called from an internal OptiX function:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>========= Invalid __global__ write of size 1 bytes
+=========     at __raygen__placeholder_0x67b9a77bb7822a34+0x19b0 in /home/cuda/optixApp.cu:70
+=========     by thread (0,0,0) in block (0,0,0)
+=========     Address 0x7f91edf00403 is out of bounds
+=========     and is 262,132 bytes after the nearest allocation at 0x7f91edec0400 of size 16 bytes
+=========     Device Frame:NVIDIA Internal [0x520]
+=========     Saved host backtrace up to driver entry point at kernel launch time
+[...]
+</pre></div>
+</div>
+<p>Starting from CUDA 11.7, it is possible to detect leaks of <code class="docutils literal notranslate"><span class="pre">OptixModule</span></code>, <code class="docutils literal notranslate"><span class="pre">optixPipeline</span></code>, <code class="docutils literal notranslate"><span class="pre">optixProgramGroup</span></code> and <code class="docutils literal notranslate"><span class="pre">optixDenoiser</span></code> with compute-sanitizer. This requires using the <code class="docutils literal notranslate"><span class="pre">--check-optix-leaks</span></code> option. Leaks will only reported if the <code class="docutils literal notranslate"><span class="pre">OptixDeviceContext</span></code> is destroyed with a call to <code class="docutils literal notranslate"><span class="pre">OptixDeviceContextDestroy</span></code>. <code class="docutils literal notranslate"><span class="pre">OptixDeviceContext</span></code> that are leaking will have their associated CUDA buffers reported with a regular use of <code class="docutils literal notranslate"><span class="pre">--leak-check</span> <span class="pre">full</span></code>. See the example below of an <code class="docutils literal notranslate"><span class="pre">optixProgramGroup</span></code> that was not destroyed being reported:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>========= Leaked an OptixProgramGroup with handle 0x55dbffbd9840
+=========     Saved host backtrace up to driver entry point at allocation time
+[...]
+</pre></div>
+</div>
+<p>The following feature set is supported per OptiX API version:</p>
+<table class="table-no-stripes docutils align-default">
+<colgroup>
+<col style="width: 34%" />
+<col style="width: 28%" />
+<col style="width: 38%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>OptiX API Version</strong></p></td>
+<td><p><strong>Kernel checks</strong></p></td>
+<td><p><strong>Resource leak check</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>7.0 - 8.1</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="usage-guide">
+<h2>Usage Guide<a class="headerlink" href="#usage-guide" title="Permalink to this headline"></a></h2>
+<section id="memory-footprint">
+<h3>Memory Footprint<a class="headerlink" href="#memory-footprint" title="Permalink to this headline"></a></h3>
+<p>Compute Sanitizer tools can have a large memory footprint due to their tracking data. This can cause out of memory errors on applications performing a large number of concurrent kernel launches.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>========= Internal Sanitizer Error: The Sanitizer encountered an error while launching kernel_name and didn&#39;t track the launch. Errors might go undetected. (Unable to allocate enough memory to perform the requested operation)
+</pre></div>
+</div>
+<p>The tools might also cause a failure to allocate host memory causing the application to crash.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>========= Error: process didn&#39;t terminate successfully
+========= Target application returned an error
+</pre></div>
+</div>
+<p>This issue can be resolved using one of the following command line options:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">--force-synchronization-limit</span> <span class="pre">{number}</span></code> forces a stream synchronization after a stream reaches the given number of launches without synchronizing.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--force-blocking-launches</span></code> forces the serialization of of every kernel launch. This option is equivalent to <code class="docutils literal notranslate"><span class="pre">--force-synchronization-limit</span> <span class="pre">1</span></code>.</p></li>
+</ul>
+<p>Using <a class="reference external" href="https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#lazy-loading">CUDA lazy module loading</a> will also help lower the memory footprint of the tools, both for host and device memory.</p>
+</section>
+</section>
+<section id="operating-system-specific-behavior">
+<h2>Operating System Specific Behavior<a class="headerlink" href="#operating-system-specific-behavior" title="Permalink to this headline"></a></h2>
+<p>This section describes operating system specific behavior.</p>
+<section id="windows-specific-behavior">
+<h3>Windows Specific Behavior<a class="headerlink" href="#windows-specific-behavior" title="Permalink to this headline"></a></h3>
+<ul>
+<li><p>Timeout Detection and Recovery (TDR)</p>
+<p>On Windows, GPUs have a timeout associated with them. GPU applications that take longer than the threshold (default of 2 seconds) will be killed by the operating system. Since the Compute Sanitizer tools increase the runtime of kernels, it is possible for a CUDA kernel to exceed the timeout and therefore be terminated due to the TDR mechanism.</p>
+<p>For the purposes of debugging, the number of seconds before which the timeout is hit can be modified by setting the timeout value in seconds in the DWORD registry key <code class="docutils literal notranslate"><span class="pre">TdrDelay</span></code> at:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\GraphicsDrivers
+</pre></div>
+</div>
+<p>More information about the registry keys to control the Timeout Detection and Recovery mechanism is available from MSDN at <a class="reference external" href="http://msdn.microsoft.com/en-us/library/windows/hardware/ff569918%28v=vs.85%29.aspx">http://msdn.microsoft.com/en-us/library/windows/hardware/ff569918%28v=vs.85%29.aspx</a>.</p>
+</li>
+</ul>
+</section>
+<section id="using-the-compute-sanitizer-on-jetson-and-tegra-devices">
+<h3>Using the Compute Sanitizer on Jetson and Tegra devices<a class="headerlink" href="#using-the-compute-sanitizer-on-jetson-and-tegra-devices" title="Permalink to this headline"></a></h3>
+<p>By default, on Jetson and Drive Tegra devices, GPU debugging is supported only if <code class="docutils literal notranslate"><span class="pre">compute-sanitizer</span></code> is launched by a user who is a member of the <strong>debug</strong> group.</p>
+<p>To add the current user to the <strong>debug</strong> group run this command:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>sudo usermod -a -G debug $USER
+</pre></div>
+</div>
+</section>
+</section>
+<section id="cuda-fortran-support">
+<h2>CUDA Fortran Support<a class="headerlink" href="#cuda-fortran-support" title="Permalink to this headline"></a></h2>
+<p>This section describes support for CUDA Fortran.</p>
+<section id="cuda-fortran-specific-behavior">
+<h3>CUDA Fortran Specific Behavior<a class="headerlink" href="#cuda-fortran-specific-behavior" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>By default, error reports printed by Compute Sanitizer contain 0-based C style values for thread index (threadIdx) and block index (blockIdx). For Compute Sanitizer tools to use Fortran style 1-based offsets, use the <code class="docutils literal notranslate"><span class="pre">--language</span> <span class="pre">fortran</span></code> option.</p></li>
+<li><p>The CUDA Fortran compiler may insert extra padding in shared memory. Accesses hitting this extra padding may not be reported as an error.</p></li>
+</ul>
+</section>
+</section>
+<section id="compute-sanitizer-tool-examples">
+<h2>Compute Sanitizer Tool Examples<a class="headerlink" href="#compute-sanitizer-tool-examples" title="Permalink to this headline"></a></h2>
+<section id="example-use-of-memcheck">
+<h3>Example Use of Memcheck<a class="headerlink" href="#example-use-of-memcheck" title="Permalink to this headline"></a></h3>
+<p>This section presents a walk-through of running the memcheck tool from Compute Sanitizer on a simple application called <code class="docutils literal notranslate"><span class="pre">memcheck_demo</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Depending on the SM type of your GPU, your system output may vary.</p>
+</div>
+<p>The application can be found on the <a class="reference external" href="https://github.com/NVIDIA/compute-sanitizer-samples/tree/master/Memcheck">compute-sanitizer github repository</a></p>
+<p>This application can be compiled using the provided Makefile:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>make
+</pre></div>
+</div>
+<section id="memcheck-demo-output">
+<h4><code class="docutils literal notranslate"><span class="pre">memcheck_demo</span></code> Output<a class="headerlink" href="#memcheck-demo-output" title="Permalink to this headline"></a></h4>
+<p>When a CUDA application causes access violations, the kernel launch may report an illegal memory access or misaligned address. Sticky errors will be reported for all subsequent kernel launches.</p>
+<p>This sample application is causing two failures but there is no way to detect where the misaligned address access is caused. The second kernel is also not able to run, as illustrated in the following output:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ ./memcheck_demo
+Mallocing memory
+Running unaligned_kernel: misaligned address
+Running out_of_bounds_kernel: misaligned address
+</pre></div>
+</div>
+</section>
+<section id="memcheck-demo-output-with-memcheck-release-build">
+<h4><code class="docutils literal notranslate"><span class="pre">memcheck_demo</span></code> Output with Memcheck (Release Build)<a class="headerlink" href="#memcheck-demo-output-with-memcheck-release-build" title="Permalink to this headline"></a></h4>
+<p>In this case, since the application is built in release mode, the Compute Sanitizer output contains only the kernel names from the application causing the access violation. Though the kernel name and error type are detected, there is no line number information on the failing kernel. Also included in the output are the host and device backtraces for the call sites where the functions were launched</p>
+<p>Now run this application with Compute Sanitizer and check the output. By default, the application will run so that the kernel is terminated on memory access errors, but other work in the CUDA context can still proceed.</p>
+<p>In the output below, the first kernel no longer reports an unspecified launch failure as its execution has been terminated early after Compute Sanitizer detected the error. The application continued to run the second kernel. The error detected in the second kernel causes it to terminate early.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ make run_memcheck
+/usr/local/cuda/compute-sanitizer/compute-sanitizer --destroy-on-device-error kernel memcheck_demo
+========= COMPUTE-SANITIZER
+Mallocing memory
+========= Invalid __global__ write of size 4 bytes
+=========     at unaligned_kernel()+0x70
+=========     by thread (0,0,0) in block (0,0,0)
+=========     Address 0x7f671ac00001 is misaligned
+=========     and is inside the nearest allocation at 0x7fb654c00000 of size 4 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========     Host Frame: [0x2774ec]
+=========                in /lib/x86_64-linux-gnu/libcuda.so.1
+=========     Host Frame:__cudart803 [0xfccb]
+=========                in /home/cuda/github/compute-sanitizer-samples/Memcheck/memcheck_demo
+=========     Host Frame:cudaLaunchKernel [0x6a578]
+=========                in /home/cuda/github/compute-sanitizer-samples/Memcheck/memcheck_demo
+=========     Host Frame:cudaError cudaLaunchKernel&lt;char&gt;(char const*, dim3, dim3, void**, unsigned long, CUstream_st*) [0xb535]
+=========                in /home/cuda/github/compute-sanitizer-samples/Memcheck/memcheck_demo
+=========     Host Frame:__device_stub__Z16unaligned_kernelv() [0xb22e]
+=========                in /home/cuda/github/compute-sanitizer-samples/Memcheck/memcheck_demo
+=========     Host Frame:unaligned_kernel() [0xb28c]
+=========                in /home/cuda/github/compute-sanitizer-samples/Memcheck/memcheck_demo
+=========     Host Frame:run_unaligned() [0xaf55]
+=========                in /home/cuda/github/compute-sanitizer-samples/Memcheck/memcheck_demo
+=========     Host Frame:main [0xb0e2]
+=========                in /home/cuda/github/compute-sanitizer-samples/Memcheck/memcheck_demo
+=========     Host Frame:../sysdeps/nptl/libc_start_call_main.h:58:__libc_start_call_main [0x2dfd0]
+=========                in /lib/x86_64-linux-gnu/libc.so.6
+=========     Host Frame:../csu/libc-start.c:379:__libc_start_main [0x2e07d]
+=========                in /lib/x86_64-linux-gnu/libc.so.6
+=========     Host Frame:_start [0xada5]
+=========                in /home/cuda/github/compute-sanitizer-samples/Memcheck/memcheck_demo
+=========
+Running unaligned_kernel: no error
+========= Invalid __global__ write of size 4 bytes
+=========     at out_of_bounds_kernel()+0x90
+=========     by thread (0,0,0) in block (0,0,0)
+=========     and is 140,418,624,437,472 bytes before the nearest allocation at 0x7fb649a00000 of size 1,024 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========     Host Frame: [0x2774ec]
+=========                in /lib/x86_64-linux-gnu/libcuda.so.1
+=========     Host Frame:__cudart803 [0xfccb]
+=========                in /home/cuda/github/compute-sanitizer-samples/Memcheck/memcheck_demo
+=========     Host Frame:cudaLaunchKernel [0x6a578]
+=========                in /home/cuda/github/compute-sanitizer-samples/Memcheck/memcheck_demo
+=========     Host Frame:cudaError cudaLaunchKernel&lt;char&gt;(char const*, dim3, dim3, void**, unsigned long, CUstream_st*) [0xb535]
+=========                in /home/cuda/github/compute-sanitizer-samples/Memcheck/memcheck_demo
+=========     Host Frame:__device_stub__Z20out_of_bounds_kernelv() [0xb34e]
+=========                in /home/cuda/github/compute-sanitizer-samples/Memcheck/memcheck_demo
+=========     Host Frame:out_of_bounds_kernel() [0xb3ac]
+=========                in /home/cuda/github/compute-sanitizer-samples/Memcheck/memcheck_demo
+=========     Host Frame:run_out_of_bounds() [0xb037]
+=========                in /home/cuda/github/compute-sanitizer-samples/Memcheck/memcheck_demo
+=========     Host Frame:main [0xb0e7]
+=========                in /home/cuda/github/compute-sanitizer-samples/Memcheck/memcheck_demo
+=========     Host Frame:../sysdeps/nptl/libc_start_call_main.h:58:__libc_start_call_main [0x2dfd0]
+=========                in /lib/x86_64-linux-gnu/libc.so.6
+=========     Host Frame:../csu/libc-start.c:379:__libc_start_main [0x2e07d]
+=========                in /lib/x86_64-linux-gnu/libc.so.6
+=========     Host Frame:_start [0xada5]
+=========                in /home/cuda/github/compute-sanitizer-samples/Memcheck/memcheck_demo
+=========
+Running out_of_bounds_kernel: no error
+========= ERROR SUMMARY: 2 errors
+</pre></div>
+</div>
+</section>
+<section id="memcheck-demo-output-with-memcheck-debug-build">
+<h4><code class="docutils literal notranslate"><span class="pre">memcheck_demo</span></code> Output with Memcheck (Debug Build)<a class="headerlink" href="#memcheck-demo-output-with-memcheck-debug-build" title="Permalink to this headline"></a></h4>
+<p>The application can be built with device side debug information and function symbols as:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>make dbg=1
+</pre></div>
+</div>
+<p>The source location of the error is now reported in the compute-sanitizer output:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ make run_memcheck
+========= COMPUTE-SANITIZER
+========= Invalid __global__ write of size 4 bytes
+=========     at unaligned_kernel()+0x160 in /home/cuda/github/compute-sanitizer-samples/Memcheck/memcheck_demo.cu:34
+=========     by thread (0,0,0) in block (0,0,0)
+=========     Address 0x7f3d7ce00001 is misaligned
+=========     and is inside the nearest allocation at 0x7f9544c00000 of size 4 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========     Host Frame: [0x2774ec]
+=========                in /lib/x86_64-linux-gnu/libcuda.so.1
+=========     Host Frame:__cudart803 [0xfccb]
+=========                in /home/cuda/github/compute-sanitizer-samples/Memcheck/memcheck_demo
+=========     Host Frame:cudaLaunchKernel [0x6a578]
+=========                in /home/cuda/github/compute-sanitizer-samples/Memcheck/memcheck_demo
+=========     Host Frame:cudaError cudaLaunchKernel&lt;char&gt;(char const*, dim3, dim3, void**, unsigned long, CUstream_st*) [0xb535]
+=========                in /home/cuda/github/compute-sanitizer-samples/Memcheck/memcheck_demo
+=========     Host Frame:__device_stub__Z16unaligned_kernelv() [0xb22e]
+=========                in /home/cuda/github/compute-sanitizer-samples/Memcheck/memcheck_demo
+=========     Host Frame:unaligned_kernel() [0xb28c]
+=========                in /home/cuda/github/compute-sanitizer-samples/Memcheck/memcheck_demo
+=========     Host Frame:run_unaligned() [0xaf55]
+=========                in /home/cuda/github/compute-sanitizer-samples/Memcheck/memcheck_demo
+=========     Host Frame:main [0xb0e2]
+=========                in /home/cuda/github/compute-sanitizer-samples/Memcheck/memcheck_demo
+=========     Host Frame:../sysdeps/nptl/libc_start_call_main.h:58:__libc_start_call_main [0x2dfd0]
+=========                in /lib/x86_64-linux-gnu/libc.so.6
+=========     Host Frame:../csu/libc-start.c:379:__libc_start_main [0x2e07d]
+=========                in /lib/x86_64-linux-gnu/libc.so.6
+=========     Host Frame:_start [0xada5]
+=========                in /home/cuda/github/compute-sanitizer-samples/Memcheck/memcheck_demo
+=========
+Running unaligned_kernel: no error
+========= Invalid __global__ write of size 4 bytes
+=========     at out_of_bounds_function()+0xb0 in /home/cuda/github/compute-sanitizer-samples/Memcheck/memcheck_demo.cu:39
+=========     by thread (0,0,0) in block (0,0,0)
+=========     Address 0x87654320 is out of bounds
+=========     and is 140,276,689,190,112 bytes before the nearest allocation at 0x7f953da00000 of size 1,024 bytes
+=========     Device Frame:out_of_bounds_kernel()+0x30 in /home/cuda/github/compute-sanitizer-samples/Memcheck/memcheck_demo.cu:44
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========     Host Frame: [0x2774ec]
+=========                in /lib/x86_64-linux-gnu/libcuda.so.1
+=========     Host Frame:__cudart803 [0xfccb]
+=========                in /home/cuda/github/compute-sanitizer-samples/Memcheck/memcheck_demo
+=========     Host Frame:cudaLaunchKernel [0x6a578]
+=========                in /home/cuda/github/compute-sanitizer-samples/Memcheck/memcheck_demo
+=========     Host Frame:cudaError cudaLaunchKernel&lt;char&gt;(char const*, dim3, dim3, void**, unsigned long, CUstream_st*) [0xb535]
+=========                in /home/cuda/github/compute-sanitizer-samples/Memcheck/memcheck_demo
+=========     Host Frame:__device_stub__Z20out_of_bounds_kernelv() [0xb34e]
+=========                in /home/cuda/github/compute-sanitizer-samples/Memcheck/memcheck_demo
+=========     Host Frame:out_of_bounds_kernel() [0xb3ac]
+=========                in /home/cuda/github/compute-sanitizer-samples/Memcheck/memcheck_demo
+=========     Host Frame:run_out_of_bounds() [0xb037]
+=========                in /home/cuda/github/compute-sanitizer-samples/Memcheck/memcheck_demo
+=========     Host Frame:main [0xb0e7]
+=========                in /home/cuda/github/compute-sanitizer-samples/Memcheck/memcheck_demo
+=========     Host Frame:../sysdeps/nptl/libc_start_call_main.h:58:__libc_start_call_main [0x2dfd0]
+=========                in /lib/x86_64-linux-gnu/libc.so.6
+=========     Host Frame:../csu/libc-start.c:379:__libc_start_main [0x2e07d]
+=========                in /lib/x86_64-linux-gnu/libc.so.6
+=========     Host Frame:_start [0xada5]
+=========                in /home/cuda/github/compute-sanitizer-samples/Memcheck/memcheck_demo
+=========
+Running out_of_bounds_kernel: no error
+========= ERROR SUMMARY: 2 errors
+</pre></div>
+</div>
+</section>
+<section id="leak-checking-in-compute-sanitizer">
+<h4>Leak Checking in Compute Sanitizer<a class="headerlink" href="#leak-checking-in-compute-sanitizer" title="Permalink to this headline"></a></h4>
+<p>To print information about the allocations that have not been freed at the time the CUDA context is destroyed, we can specify the <code class="docutils literal notranslate"><span class="pre">--leak-check</span> <span class="pre">full</span></code> option to Compute Sanitizer.</p>
+<p>When running the program with the leak check option, the user is presented with a list of allocations that were not destroyed, along with the size of the allocation and the address on the device of the allocation. For allocations made on the host, each leak report will also print a backtrace corresponding to the saved host stack at the time the allocation was first made. Also presented is a summary of the total number of bytes leaked and the corresponding number of allocations.</p>
+<p>In this example, the program created an allocation using <code class="docutils literal notranslate"><span class="pre">cudaMalloc()</span></code> and has not called <code class="docutils literal notranslate"><span class="pre">cudaFree()</span></code> to release it, leaking memory. Notice that Compute Sanitizer still prints errors it encountered while running the application. They are omitted in the output below for the sake of clarity.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ make run_leakcheck
+========= COMPUTE-SANITIZER
+...
+========= Leaked 1,024 bytes at 0x7fab4fa00000
+=========     Saved host backtrace up to driver entry point at cudaMalloc time
+=========     Host Frame: [0x9b5c16]
+=========                in /lib/x86_64-linux-gnu/libcuda.so.1
+=========     Host Frame:__cudart612 [0x41f5e]
+=========                in /home/cuda/github/compute-sanitizer-samples/Memcheck/memcheck_demo
+=========     Host Frame:__cudart618 [0x1080b]
+=========                in /home/cuda/github/compute-sanitizer-samples/Memcheck/memcheck_demo
+=========     Host Frame:cudaMalloc [0x4f3ef]
+=========                in /home/cuda/github/compute-sanitizer-samples/Memcheck/memcheck_demo
+=========     Host Frame:main [0xb0dd]
+=========                in /home/cuda/github/compute-sanitizer-samples/Memcheck/memcheck_demo
+=========     Host Frame:../sysdeps/nptl/libc_start_call_main.h:58:__libc_start_call_main [0x2dfd0]
+=========                in /lib/x86_64-linux-gnu/libc.so.6
+=========     Host Frame:../csu/libc-start.c:379:__libc_start_main [0x2e07d]
+=========                in /lib/x86_64-linux-gnu/libc.so.6
+=========     Host Frame:_start [0xada5]
+=========                in /home/cuda/github/compute-sanitizer-samples/Memcheck/memcheck_demo
+=========
+========= LEAK SUMMARY: 1024 bytes leaked in 1 allocations
+========= ERROR SUMMARY: 3 errors
+</pre></div>
+</div>
+</section>
+</section>
+<section id="example-use-of-racecheck">
+<h3>Example Use of Racecheck<a class="headerlink" href="#example-use-of-racecheck" title="Permalink to this headline"></a></h3>
+<p>This section presents two example usages of the racecheck tool from Compute Sanitizer. The first example uses an application called <code class="docutils literal notranslate"><span class="pre">block_error</span></code>, which has shared memory hazards on the block level. The second example uses an application called <code class="docutils literal notranslate"><span class="pre">warp_error</span></code>, which has shared memory hazards on the warp level.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Depending on the SM type of your GPU, your system output may vary.</p>
+</div>
+<section id="block-level-hazards">
+<h4>Block-level Hazards<a class="headerlink" href="#block-level-hazards" title="Permalink to this headline"></a></h4>
+<p>The application can be found on the <a class="reference external" href="https://github.com/NVIDIA/compute-sanitizer-samples/tree/master/Racecheck">compute-sanitizer github repository</a></p>
+<p>This application can be compiled using the provided Makefile:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>make dbg=1
+</pre></div>
+</div>
+<p>Each kernel thread write some element in shared memory. Afterward, thread 0 computes the sum of all elements in shared memory and stores the result in global memory variable <code class="docutils literal notranslate"><span class="pre">sum_out</span></code>.</p>
+<p>Running this application under the racecheck tool with the <code class="docutils literal notranslate"><span class="pre">--racecheck-report</span> <span class="pre">analysis</span></code> option, the following error is reported:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ make run_block_error
+========= COMPUTE-SANITIZER
+========= Error: Race reported between Write access at sumKernel(int *, int *)+0x90 in /home/cuda/github/compute-sanitizer-samples/Racecheck/block_error.cu:41
+=========     and Read access at sumKernel(int *, int *)+0x100 in /home/cuda/github/compute-sanitizer-samples/Racecheck/block_error.cu:51 [508 hazards]
+=========
+========= RACECHECK SUMMARY: 1 hazard displayed (1 error, 0 warnings)
+</pre></div>
+</div>
+<p>Racecheck reports races between thread 0 reading all shared memory elements in line 51 and each individual thread writing its shared memory entry in line 41. Accesses to shared memory between multiple threads, where at least one access is a write, can potentially race with each other. Since the races are between threads of different warps, the block-level synchronization barrier <code class="docutils literal notranslate"><span class="pre">__syncthreads()</span></code> is required in line 42.</p>
+<p>Note that a total of 508 hazards are reported: the kernel uses a single block of 128 threads. The data size written or read, respectively, by each thread is four bytes (one <code class="docutils literal notranslate"><span class="pre">int</span></code>) and hazards are reported at the byte level. The writes by all threads race with the reads by thread 0, except for the four writes by thread 0 itself.</p>
+</section>
+<section id="warp-level-hazards">
+<h4>Warp-level Hazards<a class="headerlink" href="#warp-level-hazards" title="Permalink to this headline"></a></h4>
+<p>The application can be found on the <a class="reference external" href="https://github.com/NVIDIA/compute-sanitizer-samples/tree/master/Racecheck">compute-sanitizer github repository</a></p>
+<p>This application can be compiled using the provided Makefile:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>make dbg=1
+</pre></div>
+</div>
+<p>The kernel computes the some of all individual elements in shared memory two stages. First, each thread computes its local shared memory value in <code class="docutils literal notranslate"><span class="pre">smem_first</span></code>. Second, a single thread of each warp is chosen with <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">(tx</span> <span class="pre">%</span> <span class="pre">WARP_SIZE</span> <span class="pre">==</span> <span class="pre">0)</span></code> to sum all elements written by its warp, indexed <code class="docutils literal notranslate"><span class="pre">wx</span></code>, and store the result in <code class="docutils literal notranslate"><span class="pre">smem_second</span></code>. Finally, thread 0 of the kernel computes the sum of elements in <code class="docutils literal notranslate"><span class="pre">smem_second</span></code> and writes the value into global memory.</p>
+<p>Running this application under the racecheck tool with the <code class="docutils literal notranslate"><span class="pre">--racecheck-report</span> <span class="pre">hazard</span></code> option, multiple hazards with WARNING severity are reported:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>========= Warning: (Warp Level Programming) Potential RAW hazard detected at __shared__ 0x8c in block (0,0,0) :
+=========     Write Thread (35,0,0) at sumKernel(int *, int *)+0x90 in /home/cuda/github/compute-sanitizer-samples/Racecheck/warp_error.cu:44
+=========     Read Thread (32,0,0) at sumKernel(int *, int *)+0x120 in /home/cuda/github/compute-sanitizer-samples/Racecheck/warp_error.cu:56
+=========     Current Value : 35
+</pre></div>
+</div>
+<p>To avoid the errors demonstrated in the <a class="reference external" href="index.html#racecheck-demo-block-error">Block-level Hazards</a> example, the kernel uses the block-level barrier <code class="docutils literal notranslate"><span class="pre">__syncthreads()</span></code> in line 60. However, racecheck still reports read-after-write (RAW) hazards between threads within the same warp, with severity WARNING. On architectures prior to SM 7.0 (Volta), programmers commonly relied on the assumption that threads within a warp execute code in lock-step (warp-level programming). Starting with CUDA 9.0, programmers can use the new <code class="docutils literal notranslate"><span class="pre">__syncwarp()</span></code> warp-wide barrier (instead of only <code class="docutils literal notranslate"><span class="pre">__syncthreads()</span></code> beforehand) to avoid such hazards. This barrier should be inserted at line 45.</p>
+</section>
+</section>
+<section id="example-use-of-initcheck">
+<h3>Example Use of Initcheck<a class="headerlink" href="#example-use-of-initcheck" title="Permalink to this headline"></a></h3>
+<p>This section presents the usage of the initcheck tool from Compute Sanitizer. The example uses an application called <code class="docutils literal notranslate"><span class="pre">memset_error</span></code>.</p>
+<section id="memset-error">
+<h4>Memset Error<a class="headerlink" href="#memset-error" title="Permalink to this headline"></a></h4>
+<p>The application can be found on the <a class="reference external" href="https://github.com/NVIDIA/compute-sanitizer-samples/tree/master/Initcheck">compute-sanitizer github repository</a></p>
+<p>This application can be compiled using the provided Makefile:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>make dbg=1
+</pre></div>
+</div>
+<p>The example implements a very simple vector addition, where the thread index is added to each vector element. The vector contains <code class="docutils literal notranslate"><span class="pre">NumBlocks</span> <span class="pre">*</span> <span class="pre">NumThreads</span></code> elements of type <code class="docutils literal notranslate"><span class="pre">int</span></code>. The vector is allocated on the device and then initialized to 0 using <code class="docutils literal notranslate"><span class="pre">cudaMemset</span></code> before the kernel is launched.</p>
+<p>Running this application under the initcheck tool reports multiple errors like the following:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ make run_initcheck
+========= Uninitialized __global__ memory read of size 4 bytes
+=========     at vectorAdd(int *)+0x70 in /home/cuda/github/compute-sanitizer-samples/Initcheck/memset_error.cu:41
+=========     by thread (31,0,0) in block (1,0,0)
+=========     Address 0x7f3c7ec000fc
+</pre></div>
+</div>
+<p>The problem is that the call to <code class="docutils literal notranslate"><span class="pre">cudaMemset</span></code> expects the size of the to-be set memory in bytes. However, the size is given in elements, as a factor of <code class="docutils literal notranslate"><span class="pre">sizeof(int)</span></code> is missing while computing the parameter. As a result, 3/4 of the memory will have undefined values during the vector addition.</p>
+</section>
+</section>
+<section id="example-use-of-synccheck">
+<h3>Example Use of Synccheck<a class="headerlink" href="#example-use-of-synccheck" title="Permalink to this headline"></a></h3>
+<p>This section presents two example usages of the synccheck tool from Compute Sanitizer. The first example uses an application called <code class="docutils literal notranslate"><span class="pre">divergent_threads</span></code>. The second example uses an application called <code class="docutils literal notranslate"><span class="pre">illegal_syncwarp</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Depending on the SM type of your GPU, your system output may vary.</p>
+</div>
+<section id="divergent-threads">
+<h4>Divergent Threads<a class="headerlink" href="#divergent-threads" title="Permalink to this headline"></a></h4>
+<p>The divergent_threads application can be found on the <a class="reference external" href="https://github.com/NVIDIA/compute-sanitizer-samples/tree/master/Synccheck">compute-sanitizer github repository</a></p>
+<p>This application can be compiled using the provided Makefile:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>make dbg=1
+</pre></div>
+</div>
+<p>In this example, we launch a kernel with a single block of 64 threads. The kernels loops over <code class="docutils literal notranslate"><span class="pre">DataBlocks</span></code> blocks of input data <code class="docutils literal notranslate"><span class="pre">data_in</span></code>. In each iteration, <code class="docutils literal notranslate"><span class="pre">NumThreads</span></code> elements are added concurrently in shared memory. Finally, a single thread 0 computes the sum of all values in shared memory and writes it to <code class="docutils literal notranslate"><span class="pre">sum_out</span></code>.</p>
+<p>Running this application under the synccheck tool, 16 errors like the following are reported:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ make run_divergent_threads
+========= Barrier error detected. Divergent thread(s) in warp
+=========     at myKernel(int*, int*, int)+0x578 in divergent_thread.cu:54
+=========     by thread (32,0,0) in block (0,0,0)
+</pre></div>
+</div>
+<p>The issue is with the <code class="docutils literal notranslate"><span class="pre">__syncthreads()</span></code> in line 20 when reading the last data block into shared memory. Note that the last data block only has 48 elements (compared to 64 elements for all other blocks). As a result, not all threads of the second warp execute this statement in convergence as required.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Calling <code class="docutils literal notranslate"><span class="pre">__syncthreads()</span></code> without convergence is allowed on SM 7.0 and above. Synccheck will not report any error for this example on these architectures.</p>
+</div>
+</section>
+<section id="illegal-syncwarp">
+<h4>Illegal Syncwarp<a class="headerlink" href="#illegal-syncwarp" title="Permalink to this headline"></a></h4>
+<p>The illegal_syncwarp application can be found on the <a class="reference external" href="https://github.com/NVIDIA/compute-sanitizer-samples/tree/master/Synccheck">compute-sanitizer github repository</a></p>
+<p>This application can be compiled using the provided Makefile:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>make dbg=1
+</pre></div>
+</div>
+<p>This example only applies to devices of compute capability 7.0 (Volta) and above. The kernel is launched with a single warp (32 threads), but only thread 0-15 are part of the computation. Each of these threads initializes one shared memory element with its thread index. After the assignment, <code class="docutils literal notranslate"><span class="pre">__syncwarp()</span></code> is used to ensure that the warp is converged and all writes are visible to other threads. The mask passed to <code class="docutils literal notranslate"><span class="pre">__syncwarp()</span></code> is computed using <code class="docutils literal notranslate"><span class="pre">__ballot_sync()</span></code>, which enables the bits for the first 16 threads in <code class="docutils literal notranslate"><span class="pre">mask</span></code>. Finally, the first thread (index 0) computes the sum over all initialized shared memory elements and writes it to global memory.</p>
+<p>Building the application with <code class="docutils literal notranslate"><span class="pre">-G</span></code> to enable debug information and running it under the synccheck tool on SM 7.0 and above, multiple errors like the following are reported:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ make run_illegal_syncwarp
+========= Barrier error detected. Invalid arguments
+=========     at __cuda_sm70_warpsync+0x30
+=========     by thread (0,0,0) in block (0,0,0)
+=========     Device Frame:__syncwarp(unsigned int)+0xf0 in /usr/local/cuda/include/sm_30_intrinsics.hpp:110
+=========     Device Frame:myKernel(int *)+0x3c0 in /home/cuda/github/compute-sanitizer-samples/Synccheck/illegal_syncwarp.cu:48
+</pre></div>
+</div>
+<p>The issue is with the <code class="docutils literal notranslate"><span class="pre">__syncwarp(mask)</span></code> at line 48. All threads for which <code class="docutils literal notranslate"><span class="pre">tx</span> <span class="pre">&lt;</span> <span class="pre">(NumThreads</span> <span class="pre">/</span> <span class="pre">2)</span></code> holds true are enabled in the mask, which are threads 0-15. However, the if condition evaluates true for threads 0-16. As a result, thread 16 executes the <code class="docutils literal notranslate"><span class="pre">__syncwarp(mask)</span></code> but does not declare itself in the mask parameter as required.</p>
+</section>
+</section>
+<section id="example-use-of-suppressions">
+<h3>Example Use of Suppressions<a class="headerlink" href="#example-use-of-suppressions" title="Permalink to this headline"></a></h3>
+<p>This section presents two example usages of the suppressions feature of Compute Sanitizer. The first example displays an API
+suppression (in the memcheck tool). The second example displays an initcheck report suppression.</p>
+<section id="api-error-suppression">
+<h4>API error suppression<a class="headerlink" href="#api-error-suppression" title="Permalink to this headline"></a></h4>
+<p>The API error application can be found on the <a class="reference external" href="https://github.com/NVIDIA/compute-sanitizer-samples/tree/master/Suppressions">compute-sanitizer github repository</a> &lt;/xref&gt;</p>
+<p>This application can be compiled using the provided Makefile:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>make
+</pre></div>
+</div>
+<p>In this example, we have a simple loop where the application attempts to allocate a large decreasing size. We can expect the
+cudaMalloc API to fail several times before the size is small enough to fit on the GPU.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ make run_memcheck
+/usr/local/cuda/compute-sanitizer/compute-sanitizer suppressions_demo
+========= COMPUTE-SANITIZER
+========= Program hit cudaErrorMemoryAllocation (error 2) due to &quot;out of memory&quot; on CUDA API call to cudaMalloc.
+</pre></div>
+</div>
+<p>In order to generate a suppressions file, we need to use the <code class="docutils literal notranslate"><span class="pre">--xml</span></code> option combined with the <code class="docutils literal notranslate"><span class="pre">--save</span></code> option for the output
+file name. Running that command still prints out error as before, but it also creates an XML file and populates it with a record of the output.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ make gen_supp
+ /usr/local/cuda/compute-sanitizer/compute-sanitizer --save supp.xml --xml suppressions_demo
+ ========= COMPUTE-SANITIZER
+ ========= Program hit cudaErrorMemoryAllocation (error 2) due to &quot;out of memory&quot; on CUDA API call to cudaMalloc.
+ [...]
+ $ cat supp.xml
+ &lt;![CDATA[
+ &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+   &lt;ComputeSanitizerOutput&gt;
+     &lt;record&gt;
+       &lt;kind&gt;Api&lt;/kind&gt;
+       &lt;what&gt;
+         &lt;text&gt;Program hit cudaErrorMemoryAllocation (error 2) due to out of memory on CUDA API call to cudaMalloc.&lt;/text&gt;
+         &lt;api&gt;cudaMalloc&lt;/api&gt;
+         &lt;error&gt;cudaErrorMemoryAllocation&lt;/error&gt;
+         &lt;message&gt;out of memory&lt;/message&gt;
+         &lt;result&gt;2&lt;/result&gt;
+       &lt;/what&gt;
+       &lt;hostStack&gt;
+       [...]
+       &lt;/hostStack&gt;
+ ]]&gt;
+</pre></div>
+</div>
+<p>Now, we can use that file as input to run the tool, along with the <code class="docutils literal notranslate"><span class="pre">--suppressions</span></code> option to ignore that error.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ make run_memcheck_with_supp
+/usr/local/cuda/compute-sanitizer/compute-sanitizer --suppressions supp.xml suppressions_demo
+========= COMPUTE-SANITIZER
+========= ERROR SUMMARY: 0 errors
+</pre></div>
+</div>
+<p>The XML file can be edited to change which errors are ignored. For instance, a regular expression can be used in the api tag to suppress a range of API calls. For instance <code class="docutils literal notranslate"><span class="pre">cuda.*</span></code> will ignore any errors related to an API starting with cuda.</p>
+<p>Other tags that can be edited are the result and hoststack ones. Note that the host stack appears in reverse order and the
+suppressions feature will compare every stack frame that was recorded.</p>
+</section>
+<section id="initcheck-error-suppression">
+<h4>Initcheck error suppression<a class="headerlink" href="#initcheck-error-suppression" title="Permalink to this headline"></a></h4>
+<p>The API error application can be found on the <a class="reference external" href="https://github.com/NVIDIA/compute-sanitizer-samples/tree/master/Suppressions">compute-sanitizer github repository</a> &lt;/xref&gt;</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>make
+</pre></div>
+</div>
+<p>In this example, we have a simple multiplication kernel. A call to &lt;codeph&gt;cudaMemset&lt;/codeph&gt; is used to initialize the device
+memory to 0. However, it does not initialize the last byte of the array. The initcheck tool detects the uninitialized access:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ make run_initcheck
+/usr/local/cuda/compute-sanitizer/compute-sanitizer --tool initcheck suppressions_initcheck_demo
+========= COMPUTE-SANITIZER
+========= Uninitialized __global__ memory read of size 4 bytes
+=========     at mult(int *, int *, int)+0x60
+=========     by thread (122,0,0) in block (0,0,0)
+=========     Address 0x7f936fa001e8
+[...]
+========= ERROR SUMMARY: 1 error
+</pre></div>
+</div>
+<p>In a similar fashion to the previous example, we can use the &lt;codeph&gt;–xml&lt;/codeph&gt; option to generate a suppression file.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ make initcheck_gen_supp
+/usr/local/cuda/compute-sanitizer/compute-sanitizer --tool initcheck --save supp.xml --xml suppressions_initcheck_demo
+========= COMPUTE-SANITIZER
+========= Uninitialized __global__ memory read of size 4 bytes
+[...]
+</pre></div>
+</div>
+<p>Now, the error can be ignored using the XML file as input to the suppressions feature.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ make run_initcheck_with_supp
+/usr/local/cuda/compute-sanitizer/compute-sanitizer --tool initcheck --suppressions supp.xml suppressions_initcheck_demo
+========= COMPUTE-SANITIZER
+========= ERROR SUMMARY: 0 errors
+</pre></div>
+</div>
+<p>As with the API suppressions, the XML file can be edited to make the suppressions detection more generic, by editing or removing the threadId, blockId, size and device stack tags.</p>
+<p class="rubric-h1 rubric">Notices</p>
+<p class="rubric-h2 rubric">Notice</p>
+<p>ALL NVIDIA DESIGN SPECIFICATIONS, REFERENCE BOARDS, FILES, DRAWINGS, DIAGNOSTICS, LISTS, AND OTHER DOCUMENTS (TOGETHER AND SEPARATELY, “MATERIALS”) ARE BEING PROVIDED “AS IS.” NVIDIA MAKES NO WARRANTIES, EXPRESSED, IMPLIED, STATUTORY, OR OTHERWISE WITH RESPECT TO THE MATERIALS, AND EXPRESSLY DISCLAIMS ALL IMPLIED WARRANTIES OF NONINFRINGEMENT, MERCHANTABILITY, AND FITNESS FOR A PARTICULAR PURPOSE.</p>
+<p>Information furnished is believed to be accurate and reliable. However, NVIDIA Corporation assumes no responsibility for the consequences of use of such information or for any infringement of patents or other rights of third parties that may result from its use. No license is granted by implication of otherwise under any patent rights of NVIDIA Corporation. Specifications mentioned in this publication are subject to change without notice. This publication supersedes and replaces all other information previously supplied. NVIDIA Corporation products are not authorized as critical components in life support devices or systems without express written approval of NVIDIA Corporation.</p>
+<p class="rubric-h2 rubric">Trademarks</p>
+<p>NVIDIA and the NVIDIA logo are trademarks and/or registered trademarks of NVIDIA Corporation in the Unites States and other countries. Other company and product names may be trademarks of the respective companies with which they are associated.</p>
+</section>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+<img src="../_static/NVIDIA-LogoBlack.svg" class="only-light"/>
+<img src="../_static/NVIDIA-LogoWhite.svg" class="only-dark"/>
+
+<p class="notices">
+<a href="https://www.nvidia.com/en-us/about-nvidia/privacy-policy/" target="_blank">Privacy Policy</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/privacy-center/" target="_blank">Manage My Privacy</a>
+|
+<a href="https://www.nvidia.com/en-us/preferences/start/" target="_blank">Do Not Sell or Share My Data</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/terms-of-service/" target="_blank">Terms of Service</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/accessibility/" target="_blank">Accessibility</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/company-policies/" target="_blank">Corporate Policies</a>
+|
+<a href="https://www.nvidia.com/en-us/product-security/" target="_blank">Product Security</a>
+|
+<a href="https://www.nvidia.com/en-us/contact/" target="_blank">Contact</a>
+</p>
+
+<p>
+  Copyright &#169; 2019-2024, NVIDIA Corporation &amp; Affiliates. All rights reserved.
+</p>
+
+    <p>
+      <span class="lastupdated">Last updated on Jul 11, 2024.
+      </span></p>
+
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+ 
+
+
+
+</body>
+</html>

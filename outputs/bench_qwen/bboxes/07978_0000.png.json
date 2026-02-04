@@ -1,0 +1,12 @@
+{
+  "image": "07978_0000.png",
+  "boxes": [
+    {
+      "label": "Aerial view of a baseball field sourced from Google Earth. The field features a typical diamond layout with a large outfield area, clearly demarcated infield dirt, and a pitcher's mound visible near the center of the diamond. Surrounding the field, there are patches of grass and walking paths.",
+      "x1": 74,
+      "y1": 5,
+      "x2": 506,
+      "y2": 448
+    }
+  ]
+}

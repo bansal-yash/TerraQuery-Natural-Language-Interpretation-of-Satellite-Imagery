@@ -1,0 +1,12 @@
+{
+  "image": "P2541_0030.png",
+  "boxes": [
+    {
+      "label": "High-resolution aerial imagery from Google Earth showcases a dense residential neighborhood with twisting roads and lush greenery. Numerous houses with varying roof colors are interspersed with abundant greenery and several roads that meander through the area, creating a suburban area. There are two small roundabouts within the neighborhood located in the bottom-right of the image.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 510,
+      "y2": 512
+    }
+  ]
+}

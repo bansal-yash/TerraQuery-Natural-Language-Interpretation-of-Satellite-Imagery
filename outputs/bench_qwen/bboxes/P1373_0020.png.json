@@ -1,0 +1,19 @@
+{
+  "image": "P1373_0020.png",
+  "boxes": [
+    {
+      "label": "building",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    },
+    {
+      "label": "small basketball court",
+      "x1": 105,
+      "y1": 223,
+      "x2": 151,
+      "y2": 262
+    }
+  ]
+}

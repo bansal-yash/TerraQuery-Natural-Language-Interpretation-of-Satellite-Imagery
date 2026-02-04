@@ -1,0 +1,19 @@
+{
+  "image": "P2429_0004.png",
+  "boxes": [
+    {
+      "label": "small swimming pool",
+      "x1": 65,
+      "y1": 366,
+      "x2": 80,
+      "y2": 379
+    },
+    {
+      "label": "small roundabout",
+      "x1": 39,
+      "y1": 221,
+      "x2": 65,
+      "y2": 243
+    }
+  ]
+}

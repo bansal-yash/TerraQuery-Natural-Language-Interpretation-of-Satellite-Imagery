@@ -1,0 +1,12 @@
+{
+  "image": "P2394_0006.png",
+  "boxes": [
+    {
+      "label": "The color aerial image from GoogleEarth with medium resolution shows a dense cluster of buildings varying in size and color, predominantly featuring shades of green, blue, and grey rooftops. A small bridge spans over a road, visible amongst the surrounding infrastructure.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 510,
+      "y2": 510
+    }
+  ]
+}

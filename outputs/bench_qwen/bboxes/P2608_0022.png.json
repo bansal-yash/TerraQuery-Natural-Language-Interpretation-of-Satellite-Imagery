@@ -1,0 +1,47 @@
+{
+  "image": "P2608_0022.png",
+  "boxes": [
+    {
+      "label": "construction site",
+      "x1": 132,
+      "y1": 54,
+      "x2": 475,
+      "y2": 392
+    },
+    {
+      "label": "railroad tracks",
+      "x1": 0,
+      "y1": 0,
+      "x2": 193,
+      "y2": 151
+    },
+    {
+      "label": "red crane",
+      "x1": 274,
+      "y1": 54,
+      "x2": 472,
+      "y2": 392
+    },
+    {
+      "label": "road",
+      "x1": 300,
+      "y1": 392,
+      "x2": 448,
+      "y2": 510
+    },
+    {
+      "label": "vehicles parked at the bottom-left",
+      "x1": 0,
+      "y1": 351,
+      "x2": 251,
+      "y2": 454
+    },
+    {
+      "label": "vehicles parked along the road",
+      "x1": 157,
+      "y1": 198,
+      "x2": 251,
+      "y2": 291
+    }
+  ]
+}

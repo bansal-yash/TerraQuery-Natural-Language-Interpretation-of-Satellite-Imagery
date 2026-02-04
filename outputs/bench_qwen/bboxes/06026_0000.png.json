@@ -1,0 +1,33 @@
+{
+  "image": "06026_0000.png",
+  "boxes": [
+    {
+      "label": "residential areas with rows of houses",
+      "x1": 0,
+      "y1": 0,
+      "x2": 167,
+      "y2": 510
+    },
+    {
+      "label": "large stadium with an oval structure",
+      "x1": 335,
+      "y1": 340,
+      "x2": 449,
+      "y2": 487
+    },
+    {
+      "label": "road networks",
+      "x1": 198,
+      "y1": 0,
+      "x2": 335,
+      "y2": 510
+    },
+    {
+      "label": "parking spaces",
+      "x1": 326,
+      "y1": 0,
+      "x2": 512,
+      "y2": 384
+    }
+  ]
+}

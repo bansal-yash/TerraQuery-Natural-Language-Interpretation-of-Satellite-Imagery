@@ -1,0 +1,26 @@
+{
+  "image": "P1377_0033.png",
+  "boxes": [
+    {
+      "label": "large white structure with significant wear",
+      "x1": 119,
+      "y1": 6,
+      "x2": 510,
+      "y2": 322
+    },
+    {
+      "label": "patches of grass and trees",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    },
+    {
+      "label": "small vehicle",
+      "x1": 86,
+      "y1": 435,
+      "x2": 102,
+      "y2": 453
+    }
+  ]
+}

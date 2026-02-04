@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanitizer_ResourceStreamData &mdash; compute-sanitizer 12.6 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/omni-style.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/api-styles.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/mermaid-init.js"></script>
+        <script src="../_static/design-tabs.js"></script>
+        <script src="../_static/version.js"></script>
+        <script src="../_static/social-media.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Sanitizer_ResourceVirtualRange" href="structSanitizer__ResourceVirtualRange.html" />
+    <link rel="prev" title="Sanitizer_ResourceModuleData" href="structSanitizer__ResourceModuleData.html" />
+ 
+
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+
+<a href="../index.html">
+  <img src="../_static/Logo_and_CUDA.png" class="logo" alt="Logo"/>
+</a>
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../ReleaseNotes/index.html">Release Notes</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tools</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ComputeSanitizer/index.html">Compute Sanitizer</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Interfaces</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../SanitizerApiGuide/index.html">Compute Sanitizer API Reference Manual</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../SanitizerApi/table-of-contents.html">Sanitizer API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="modules.html">Modules</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="structs.html">Structs</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__BatchMemopData.html">Sanitizer_BatchMemopData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__CallbackData.html">Sanitizer_CallbackData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__EventData.html">Sanitizer_EventData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__ExternalMemoryData.html">Sanitizer_ExternalMemoryData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__GraphExecData.html">Sanitizer_GraphExecData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__GraphLaunchData.html">Sanitizer_GraphLaunchData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__GraphNodeLaunchData.html">Sanitizer_GraphNodeLaunchData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__LaunchData.html">Sanitizer_LaunchData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__MemcpyData.html">Sanitizer_MemcpyData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__MemsetData.html">Sanitizer_MemsetData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__ResourceArrayData.html">Sanitizer_ResourceArrayData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__ResourceContextData.html">Sanitizer_ResourceContextData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__ResourceFunctionsLazyLoadedData.html">Sanitizer_ResourceFunctionsLazyLoadedData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__ResourceMemoryData.html">Sanitizer_ResourceMemoryData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__ResourceMempoolData.html">Sanitizer_ResourceMempoolData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__ResourceModuleData.html">Sanitizer_ResourceModuleData</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Sanitizer_ResourceStreamData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__ResourceVirtualRange.html">Sanitizer_ResourceVirtualRange</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__SynchronizeData.html">Sanitizer_SynchronizeData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__UvmData.html">Sanitizer_UvmData</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../SanitizerNvtxGuide/index.html">NVTX API for Compute Sanitizer Reference Manual</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Copyright And Licenses</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../CopyrightAndLicenses/index.html">Copyright and Licenses</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">compute-sanitizer</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+
+
+  
+
+<li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+  
+    <li><a href="../SanitizerApi/table-of-contents.html">Sanitizer API</a> &raquo;</li>
+    <li><a href="structs.html">Structs</a> &raquo;</li>
+<li>Sanitizer_ResourceStreamData</li>
+
+      <li class="wy-breadcrumbs-aside">
+      </li>
+<li class="wy-breadcrumbs-aside">
+
+
+  <span>v2024.3.0</span>
+
+
+  <span>&nbsp;</span>
+</li>
+
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="sanitizer-resourcestreamdata">
+<h1>Sanitizer_ResourceStreamData<a class="headerlink" href="#sanitizer-resourcestreamdata" title="Permalink to this headline"></a></h1>
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv428Sanitizer_ResourceStreamData">
+<span id="_CPPv328Sanitizer_ResourceStreamData"></span><span id="_CPPv228Sanitizer_ResourceStreamData"></span><span id="Sanitizer_ResourceStreamData"></span><span class="target" id="structsanitizer__resourcestreamdata"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Sanitizer_ResourceStreamData</span></span></span><a class="headerlink" href="#_CPPv428Sanitizer_ResourceStreamData" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Data passed into a stream resource callback function. </p>
+<p>Data passed into a stream resource callback function as the <code class="docutils literal notranslate"><span class="pre">cbdata</span></code> argument to <a class="reference internal" href="group__SANITIZER__CALLBACK__API.html#group__sanitizer__callback__api_1gac1ae37612d036530e060f1bca8c3ccd8"><span class="std std-ref">Sanitizer_CallbackFunc</span></a>. The <code class="docutils literal notranslate"><span class="pre">cbdata</span></code> will be this type for <code class="docutils literal notranslate"><span class="pre">domain</span></code> equal to SANITIZER_CB_DOMAIN_RESOURCE and <code class="docutils literal notranslate"><span class="pre">cbid</span></code> equal to SANITIZER_CBID_RESOURCE_STREAM_CREATED, SANITIZER_CBID_RESOURCE_STREAM_DESTROY_STARTING or SANITIZER_CBID_RESOURCE_STREAM_DESTROY_FINISHED. The callback data is only valid within the invocation of the callback function that is passed the data. If you need to retain some data for use outside of the callback, you must make a copy of it. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric-h3 rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N28Sanitizer_ResourceStreamData7contextE">
+<span id="_CPPv3N28Sanitizer_ResourceStreamData7contextE"></span><span id="_CPPv2N28Sanitizer_ResourceStreamData7contextE"></span><span id="Sanitizer_ResourceStreamData::context__CUcontext"></span><span class="target" id="structsanitizer__resourcestreamdata_1a7e570056c26d3c785d1e1db0db33cbb0"></span><span class="n"><span class="pre">CUcontext</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">context</span></span></span><a class="headerlink" href="#_CPPv4N28Sanitizer_ResourceStreamData7contextE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The context containing the stream being created or destroyed. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N28Sanitizer_ResourceStreamData7hStreamE">
+<span id="_CPPv3N28Sanitizer_ResourceStreamData7hStreamE"></span><span id="_CPPv2N28Sanitizer_ResourceStreamData7hStreamE"></span><span id="Sanitizer_ResourceStreamData::hStream__Sanitizer_StreamHandle"></span><span class="target" id="structsanitizer__resourcestreamdata_1a17058d030f8c196b4a250148c3e2c662"></span><a class="reference internal" href="group__SANITIZER__STREAM__API.html#_CPPv422Sanitizer_StreamHandle" title="Sanitizer_StreamHandle"><span class="n"><span class="pre">Sanitizer_StreamHandle</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">hStream</span></span></span><a class="headerlink" href="#_CPPv4N28Sanitizer_ResourceStreamData7hStreamE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Unique handle for the stream. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N28Sanitizer_ResourceStreamData6streamE">
+<span id="_CPPv3N28Sanitizer_ResourceStreamData6streamE"></span><span id="_CPPv2N28Sanitizer_ResourceStreamData6streamE"></span><span id="Sanitizer_ResourceStreamData::stream__CUstream"></span><span class="target" id="structsanitizer__resourcestreamdata_1a9ac109c0cc16da3636538dfcebaeac33"></span><span class="n"><span class="pre">CUstream</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">stream</span></span></span><a class="headerlink" href="#_CPPv4N28Sanitizer_ResourceStreamData6streamE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The stream being created or destroyed. </p>
+<p>This handle will be NULL for the STREAM_DESTROY_FINISHED cbid. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+<img src="../_static/NVIDIA-LogoBlack.svg" class="only-light"/>
+<img src="../_static/NVIDIA-LogoWhite.svg" class="only-dark"/>
+
+<p class="notices">
+<a href="https://www.nvidia.com/en-us/about-nvidia/privacy-policy/" target="_blank">Privacy Policy</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/privacy-center/" target="_blank">Manage My Privacy</a>
+|
+<a href="https://www.nvidia.com/en-us/preferences/start/" target="_blank">Do Not Sell or Share My Data</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/terms-of-service/" target="_blank">Terms of Service</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/accessibility/" target="_blank">Accessibility</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/company-policies/" target="_blank">Corporate Policies</a>
+|
+<a href="https://www.nvidia.com/en-us/product-security/" target="_blank">Product Security</a>
+|
+<a href="https://www.nvidia.com/en-us/contact/" target="_blank">Contact</a>
+</p>
+
+<p>
+  Copyright &#169; 2019-2024, NVIDIA Corporation &amp; Affiliates. All rights reserved.
+</p>
+
+    <p>
+      <span class="lastupdated">Last updated on Jul 11, 2024.
+      </span></p>
+
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+ 
+
+
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+{
+  "image": "06276_0000.png",
+  "boxes": [
+    {
+      "label": "large stadium with blue running tracks and field",
+      "x1": 198,
+      "y1": 111,
+      "x2": 510,
+      "y2": 510
+    },
+    {
+      "label": "multiple tennis courts",
+      "x1": 0,
+      "y1": 147,
+      "x2": 143,
+      "y2": 216
+    },
+    {
+      "label": "smaller stadium with internal field",
+      "x1": 34,
+      "y1": 34,
+      "x2": 142,
+      "y2": 138
+    },
+    {
+      "label": "ground track field within larger stadium",
+      "x1": 269,
+      "y1": 193,
+      "x2": 415,
+      "y2": 459
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "image": "P1854_0131.png",
+  "boxes": [
+    {
+      "label": "A high-resolution aerial image from GoogleEarth showcases a small airplane on a tarmac with visible branding on its fuselage. The aircraft is positioned on top section with parking infrastructure adjacent to it, and the tarmac features ground markings and slight textures.",
+      "x1": 6,
+      "y1": 0,
+      "x2": 339,
+      "y2": 185
+    }
+  ]
+}

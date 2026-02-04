@@ -1,0 +1,12 @@
+{
+  "image": "P0168_0011.png",
+  "boxes": [
+    {
+      "label": "small white plane",
+      "x1": 303,
+      "y1": 6,
+      "x2": 372,
+      "y2": 57
+    }
+  ]
+}

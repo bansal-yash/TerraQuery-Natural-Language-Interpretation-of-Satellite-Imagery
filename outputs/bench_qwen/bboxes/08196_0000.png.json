@@ -1,0 +1,26 @@
+{
+  "image": "08196_0000.png",
+  "boxes": [
+    {
+      "label": "stadium",
+      "x1": 351,
+      "y1": 172,
+      "x2": 512,
+      "y2": 510
+    },
+    {
+      "label": "three circular swimming pools",
+      "x1": 268,
+      "y1": 119,
+      "x2": 345,
+      "y2": 192
+    },
+    {
+      "label": "larger rectangular swimming pool",
+      "x1": 285,
+      "y1": 201,
+      "x2": 336,
+      "y2": 281
+    }
+  ]
+}

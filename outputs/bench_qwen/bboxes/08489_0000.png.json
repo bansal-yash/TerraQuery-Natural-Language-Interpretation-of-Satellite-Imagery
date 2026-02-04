@@ -1,0 +1,19 @@
+{
+  "image": "08489_0000.png",
+  "boxes": [
+    {
+      "label": "housing development",
+      "x1": 0,
+      "y1": 0,
+      "x2": 396,
+      "y2": 146
+    },
+    {
+      "label": "basketball court",
+      "x1": 230,
+      "y1": 310,
+      "x2": 512,
+      "y2": 510
+    }
+  ]
+}

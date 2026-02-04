@@ -1,0 +1,12 @@
+{
+  "image": "08873_0000.png",
+  "boxes": [
+    {
+      "label": "The image, sourced from GoogleEarth, depicts a small baseball field surrounded by a larger grassy area.",
+      "x1": 34,
+      "y1": 296,
+      "x2": 254,
+      "y2": 506
+    }
+  ]
+}

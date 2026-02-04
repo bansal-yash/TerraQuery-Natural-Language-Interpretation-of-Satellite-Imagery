@@ -1,0 +1,1 @@
+RGB:Sparse vegetation on dry, barren land with visible road and fence lines. || SAR:Grainy texture with diagonal streaks and noise artifacts.

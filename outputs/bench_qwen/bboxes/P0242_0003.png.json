@@ -1,0 +1,19 @@
+{
+  "image": "P0242_0003.png",
+  "boxes": [
+    {
+      "label": "tennis courts",
+      "x1": 147,
+      "y1": 374,
+      "x2": 350,
+      "y2": 510
+    },
+    {
+      "label": "soccer ball field",
+      "x1": 0,
+      "y1": 0,
+      "x2": 322,
+      "y2": 322
+    }
+  ]
+}

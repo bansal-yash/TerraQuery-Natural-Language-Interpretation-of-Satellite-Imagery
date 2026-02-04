@@ -1,0 +1,26 @@
+{
+  "image": "P0962_0008.png",
+  "boxes": [
+    {
+      "label": "body of water",
+      "x1": 0,
+      "y1": 0,
+      "x2": 285,
+      "y2": 506
+    },
+    {
+      "label": "vegetated land",
+      "x1": 264,
+      "y1": 0,
+      "x2": 512,
+      "y2": 506
+    },
+    {
+      "label": "small harbor",
+      "x1": 121,
+      "y1": 300,
+      "x2": 196,
+      "y2": 506
+    }
+  ]
+}

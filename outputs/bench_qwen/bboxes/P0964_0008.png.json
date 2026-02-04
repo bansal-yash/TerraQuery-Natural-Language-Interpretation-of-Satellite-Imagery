@@ -1,0 +1,12 @@
+{
+  "image": "P0964_0008.png",
+  "boxes": [
+    {
+      "label": "The high-resolution image from GoogleEarth features a small harbor along the water's edge, located in the left side of the image.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 189,
+      "y2": 443
+    }
+  ]
+}

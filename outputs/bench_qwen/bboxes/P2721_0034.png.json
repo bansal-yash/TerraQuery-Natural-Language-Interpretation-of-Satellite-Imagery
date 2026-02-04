@@ -1,0 +1,12 @@
+{
+  "image": "P2721_0034.png",
+  "boxes": [
+    {
+      "label": "A medium-resolution satellite image from GoogleEarth depicts a densely packed urban area with a mixture of buildings, streets, and open spaces. In the top-middle of the image, there is a small soccer-ball field distinguished by its unique green surface and boundary markings. Adjacent to it towards the north.",
+      "x1": 282,
+      "y1": 59,
+      "x2": 340,
+      "y2": 100
+    }
+  ]
+}

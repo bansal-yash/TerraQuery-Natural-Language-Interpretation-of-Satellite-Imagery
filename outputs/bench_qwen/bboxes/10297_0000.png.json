@@ -1,0 +1,19 @@
+{
+  "image": "10297_0000.png",
+  "boxes": [
+    {
+      "label": "multiple rails aligning parallel to each other on a sandy ground surface",
+      "x1": 273,
+      "y1": 0,
+      "x2": 396,
+      "y2": 510
+    },
+    {
+      "label": "distinctive small storage tank with a white rooftop and a dark circular shadow",
+      "x1": 35,
+      "y1": 356,
+      "x2": 210,
+      "y2": 510
+    }
+  ]
+}

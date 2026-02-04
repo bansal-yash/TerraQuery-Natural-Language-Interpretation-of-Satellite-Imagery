@@ -1,0 +1,12 @@
+{
+  "image": "10646_0000.png",
+  "boxes": [
+    {
+      "label": "expressway toll station",
+      "x1": 236,
+      "y1": 408,
+      "x2": 510,
+      "y2": 489
+    }
+  ]
+}

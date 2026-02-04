@@ -1,0 +1,26 @@
+{
+  "image": "07861_0000.png",
+  "boxes": [
+    {
+      "label": "buildings of various sizes and a mix of roofing colors",
+      "x1": 84,
+      "y1": 126,
+      "x2": 448,
+      "y2": 417
+    },
+    {
+      "label": "storage tanks",
+      "x1": 198,
+      "y1": 198,
+      "x2": 277,
+      "y2": 320
+    },
+    {
+      "label": "distinct small vehicle",
+      "x1": 129,
+      "y1": 423,
+      "x2": 159,
+      "y2": 448
+    }
+  ]
+}

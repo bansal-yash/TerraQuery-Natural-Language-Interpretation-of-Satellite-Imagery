@@ -1,0 +1,12 @@
+{
+  "image": "P1432_0028.png",
+  "boxes": [
+    {
+      "label": "two adjacent basketball courts",
+      "x1": 214,
+      "y1": 360,
+      "x2": 326,
+      "y2": 510
+    }
+  ]
+}

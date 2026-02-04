@@ -1,0 +1,12 @@
+{
+  "image": "P2721_0026.png",
+  "boxes": [
+    {
+      "label": "Aerial view of an urban area captured at medium resolution from GoogleEarth. The image showcases a dense arrangement of buildings of various sizes and shapes, with roads running in between them. Notably, there is a soccer-ball field with a distinct pattern in the middle-left part of the image. Adjacent to it, a ground-track field is visible with track lanes.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "image": "P1007_0020.png",
+  "boxes": [
+    {
+      "label": "harbor structure",
+      "x1": 0,
+      "y1": 228,
+      "x2": 41,
+      "y2": 368
+    },
+    {
+      "label": "harbor structure",
+      "x1": 115,
+      "y1": 269,
+      "x2": 146,
+      "y2": 479
+    },
+    {
+      "label": "harbor structure",
+      "x1": 163,
+      "y1": 262,
+      "x2": 185,
+      "y2": 500
+    },
+    {
+      "label": "harbor structure",
+      "x1": 234,
+      "y1": 289,
+      "x2": 260,
+      "y2": 510
+    },
+    {
+      "label": "harbor structure",
+      "x1": 304,
+      "y1": 275,
+      "x2": 330,
+      "y2": 479
+    },
+    {
+      "label": "harbor structure",
+      "x1": 419,
+      "y1": 231,
+      "x2": 470,
+      "y2": 510
+    },
+    {
+      "label": "ship",
+      "x1": 214,
+      "y1": 189,
+      "x2": 287,
+      "y2": 231
+    }
+  ]
+}

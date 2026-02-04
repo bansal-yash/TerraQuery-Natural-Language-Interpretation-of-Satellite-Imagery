@@ -1,0 +1,68 @@
+{
+  "image": "P1384_0054.png",
+  "boxes": [
+    {
+      "label": "residential neighborhoods",
+      "x1": 0,
+      "y1": 384,
+      "x2": 218,
+      "y2": 510
+    },
+    {
+      "label": "commercial buildings",
+      "x1": 23,
+      "y1": 210,
+      "x2": 179,
+      "y2": 256
+    },
+    {
+      "label": "small airstrip",
+      "x1": 403,
+      "y1": 5,
+      "x2": 510,
+      "y2": 473
+    },
+    {
+      "label": "parked planes",
+      "x1": 397,
+      "y1": 82,
+      "x2": 420,
+      "y2": 102
+    },
+    {
+      "label": "parked planes",
+      "x1": 403,
+      "y1": 46,
+      "x2": 420,
+      "y2": 64
+    },
+    {
+      "label": "parked planes",
+      "x1": 428,
+      "y1": 46,
+      "x2": 452,
+      "y2": 64
+    },
+    {
+      "label": "houses with varying rooftop colors and sizes",
+      "x1": 0,
+      "y1": 384,
+      "x2": 218,
+      "y2": 510
+    },
+    {
+      "label": "lush greenery",
+      "x1": 0,
+      "y1": 0,
+      "x2": 510,
+      "y2": 510
+    },
+    {
+      "label": "warehouses and commercial structures",
+      "x1": 295,
+      "y1": 134,
+      "x2": 410,
+      "y2": 473
+    }
+  ]
+}

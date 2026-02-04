@@ -1,0 +1,12 @@
+{
+  "image": "07156_0000.png",
+  "boxes": [
+    {
+      "label": "expressway service area",
+      "x1": 54,
+      "y1": 11,
+      "x2": 413,
+      "y2": 510
+    }
+  ]
+}

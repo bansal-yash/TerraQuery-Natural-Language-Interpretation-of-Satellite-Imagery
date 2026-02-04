@@ -1,0 +1,1 @@
+RGB:Residential neighborhood with roads, trees, and rooftops visible. || SAR:SAR image shows textured, grainy surface with linear features and speckle noise.

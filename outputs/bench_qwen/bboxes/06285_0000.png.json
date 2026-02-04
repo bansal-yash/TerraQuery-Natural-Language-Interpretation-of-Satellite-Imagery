@@ -1,0 +1,12 @@
+{
+  "image": "06285_0000.png",
+  "boxes": [
+    {
+      "label": "vehicle at bottom-middle",
+      "x1": 247,
+      "y1": 395,
+      "x2": 358,
+      "y2": 452
+    }
+  ]
+}

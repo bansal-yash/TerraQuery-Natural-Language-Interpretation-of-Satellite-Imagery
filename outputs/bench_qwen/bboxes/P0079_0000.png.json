@@ -1,0 +1,12 @@
+{
+  "image": "P0079_0000.png",
+  "boxes": [
+    {
+      "label": "A high-resolution GoogleEarth image captures a landscape covered with sparse vegetation and a few scattered trees. A small roundabout is characterized by a circular road with a central island.",
+      "x1": 213,
+      "y1": 249,
+      "x2": 510,
+      "y2": 510
+    }
+  ]
+}

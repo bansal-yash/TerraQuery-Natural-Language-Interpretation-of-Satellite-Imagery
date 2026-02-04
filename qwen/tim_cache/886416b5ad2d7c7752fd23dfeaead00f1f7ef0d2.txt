@@ -1,0 +1,1 @@
+RGB:Dark blue ocean surface with scattered white wave highlights. || SAR:Synthetic aperture radar captures images via microwave reflection, day/night, weather-independent.

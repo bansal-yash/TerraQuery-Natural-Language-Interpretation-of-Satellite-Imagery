@@ -1,0 +1,26 @@
+{
+  "image": "P1754_0003.png",
+  "boxes": [
+    {
+      "label": "residential housing",
+      "x1": 0,
+      "y1": 0,
+      "x2": 413,
+      "y2": 213
+    },
+    {
+      "label": "dense foliage",
+      "x1": 0,
+      "y1": 203,
+      "x2": 413,
+      "y2": 510
+    },
+    {
+      "label": "storage tank",
+      "x1": 24,
+      "y1": 415,
+      "x2": 60,
+      "y2": 448
+    }
+  ]
+}

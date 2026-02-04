@@ -1,0 +1,12 @@
+{
+  "image": "10558_0000.png",
+  "boxes": [
+    {
+      "label": "Aerial view showing a landscape likely from a satellite imaging source such as Google Earth. The image includes patches of greenery, alongside cultivated fields in varying shades of green and brown. A storage tank with a circular shape and a white top is visible at the bottom right quadrant of the image.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    }
+  ]
+}

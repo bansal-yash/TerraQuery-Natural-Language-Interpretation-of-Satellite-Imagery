@@ -1,0 +1,12 @@
+{
+  "image": "P1179_0136.png",
+  "boxes": [
+    {
+      "label": "two small planes on the tarmac",
+      "x1": 0,
+      "y1": 251,
+      "x2": 56,
+      "y2": 428
+    }
+  ]
+}

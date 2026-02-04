@@ -1,0 +1,26 @@
+{
+  "image": "P1854_0094.png",
+  "boxes": [
+    {
+      "label": "small vehicle isolated in bottom-left",
+      "x1": 94,
+      "y1": 479,
+      "x2": 126,
+      "y2": 502
+    },
+    {
+      "label": "collection of vehicles top-left",
+      "x1": 170,
+      "y1": 36,
+      "x2": 196,
+      "y2": 144
+    },
+    {
+      "label": "two large vehicles right side",
+      "x1": 226,
+      "y1": 305,
+      "x2": 485,
+      "y2": 502
+    }
+  ]
+}

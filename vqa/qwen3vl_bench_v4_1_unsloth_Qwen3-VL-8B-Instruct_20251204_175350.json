@@ -1,0 +1,42 @@
+{
+  "model": "unsloth/Qwen3-VL-8B-Instruct",
+  "dtype": "bf16",
+  "use_flash_attn": false,
+  "latencies_s": [
+    1.7433880921453238,
+    1.7433987725526094,
+    1.7417071294039488,
+    1.7425683429464698,
+    1.7420739708468318,
+    1.741229634732008,
+    1.7403949229046702,
+    1.7404380524531007,
+    1.7409750623628497,
+    1.7399270134046674
+  ],
+  "tokens_per_iter": [
+    64,
+    64,
+    64,
+    64,
+    64,
+    64,
+    64,
+    64,
+    64,
+    64
+  ],
+  "peak_mem_bytes": 17638268416,
+  "outputs": [
+    "This is a high-resolution satellite or aerial photograph of a densely built urban area, likely a city neighborhood. The image is taken from directly above, offering a bird\u2019s-eye view of the streets, buildings, and open spaces.\n\nKey features include:\n\n- **Central Sports Complex**: The most prominent feature is a large sports complex",
+    "This is a high-resolution satellite or aerial photograph of a densely built urban area, likely a city or town in the United States, centered around a large sports complex.\n\n**Key Features:**\n\n*   **Central Sports Complex:** The most prominent feature is a large, multi-sport athletic facility located in the upper-center of",
+    "This is a high-resolution satellite or aerial photograph of a densely built urban area, likely a city or town in the United States, centered around a large sports complex.\n\nKey features include:\n\n- **A Sports Complex**: The most prominent feature is a large, multi-sport facility located in the upper center of the image.",
+    "This is a high-resolution satellite or aerial photograph of a dense urban area, likely in a city in the United States, centered around a large sports complex.\n\nKey features visible in the image:\n\n- **Central Sports Complex**: The most prominent feature is a large, multi-sport athletic facility located in the upper-middle portion of",
+    "This is a high-resolution satellite or aerial photograph of a densely built urban area, likely a city or town in the United States, centered around a large sports complex.\n\nHere\u2019s a detailed description:\n\n- **Central Feature**: The most prominent feature is a large sports complex located in the upper-middle portion of the image. It",
+    "This is a high-resolution satellite or aerial photograph of a densely built urban area, likely a city or town. The image is taken from directly above, showing a grid-like street pattern with numerous buildings, roads, and a prominent sports complex.\n\nHere are the key features visible:\n\n- **Central Sports Complex**: The most striking",
+    "This is a high-resolution satellite or aerial photograph of a densely built urban area, likely in a city in the United States, centered around a large sports complex.\n\nKey features of the image include:\n\n- **Central Sports Complex**: The most prominent feature is a large athletic facility located in the upper-middle portion of the image.",
+    "This is a high-resolution satellite or aerial photograph of a dense urban area, likely in the United States, centered around a large, prominent sports complex.\n\nKey features visible in the image:\n\n- **Central Sports Complex**: The most striking feature is a large athletic facility located in the upper-middle portion of the image. It includes",
+    "This is a high-resolution satellite or aerial photograph of a dense urban area, likely in the United States, centered around a large sports complex.\n\nKey features include:\n\n- **A Sports Complex**: The most prominent feature is a large, multi-sport facility located in the upper-center of the image. It includes:\n  -",
+    "This is a high-resolution satellite or aerial photograph of a densely built urban area, likely a city neighborhood in the United States, centered around a large sports complex.\n\nKey features of the image:\n\n- **Central Sports Complex**: The most prominent feature is a large athletic facility located near the center of the image. It includes:\n"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "image": "P2571_0008.png",
+  "boxes": [
+    {
+      "label": "driveway with vehicles",
+      "x1": 16,
+      "y1": 280,
+      "x2": 358,
+      "y2": 500
+    }
+  ]
+}

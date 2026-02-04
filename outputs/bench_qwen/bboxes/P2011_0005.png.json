@@ -1,0 +1,33 @@
+{
+  "image": "P2011_0005.png",
+  "boxes": [
+    {
+      "label": "tennis courts",
+      "x1": 182,
+      "y1": 63,
+      "x2": 344,
+      "y2": 157
+    },
+    {
+      "label": "parking lot",
+      "x1": 102,
+      "y1": 182,
+      "x2": 344,
+      "y2": 269
+    },
+    {
+      "label": "vehicle near bottom of parking lot",
+      "x1": 219,
+      "y1": 310,
+      "x2": 234,
+      "y2": 328
+    },
+    {
+      "label": "vehicle near center top of parking area",
+      "x1": 221,
+      "y1": 185,
+      "x2": 237,
+      "y2": 205
+    }
+  ]
+}

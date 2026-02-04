@@ -1,0 +1,1 @@
+RGB:Industrial zone, airport, and farmland in satellite view. || SAR:SAR image shows urban grid, vegetation, and water bodies with speckle noise.

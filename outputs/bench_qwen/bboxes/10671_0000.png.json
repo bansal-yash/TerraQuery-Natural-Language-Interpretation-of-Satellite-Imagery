@@ -1,0 +1,12 @@
+{
+  "image": "10671_0000.png",
+  "boxes": [
+    {
+      "label": "stadium with a white roof",
+      "x1": 285,
+      "y1": 274,
+      "x2": 438,
+      "y2": 441
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "image": "10278_0000.png",
+  "boxes": [
+    {
+      "label": "curved road with marked lanes",
+      "x1": 0,
+      "y1": 0,
+      "x2": 463,
+      "y2": 510
+    },
+    {
+      "label": "house adjacent to the road",
+      "x1": 0,
+      "y1": 281,
+      "x2": 243,
+      "y2": 510
+    },
+    {
+      "label": "distinctive basketball court",
+      "x1": 364,
+      "y1": 162,
+      "x2": 512,
+      "y2": 510
+    }
+  ]
+}

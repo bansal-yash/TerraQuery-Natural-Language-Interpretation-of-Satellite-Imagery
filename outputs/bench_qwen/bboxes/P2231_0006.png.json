@@ -1,0 +1,33 @@
+{
+  "image": "P2231_0006.png",
+  "boxes": [
+    {
+      "label": "small vehicle",
+      "x1": 108,
+      "y1": 363,
+      "x2": 123,
+      "y2": 380
+    },
+    {
+      "label": "plane oriented diagonally towards the upper corner of the image",
+      "x1": 102,
+      "y1": 211,
+      "x2": 190,
+      "y2": 307
+    },
+    {
+      "label": "another small plane",
+      "x1": 0,
+      "y1": 317,
+      "x2": 95,
+      "y2": 405
+    },
+    {
+      "label": "portions of large vehicles at the bottom of the image",
+      "x1": 129,
+      "y1": 464,
+      "x2": 169,
+      "y2": 512
+    }
+  ]
+}

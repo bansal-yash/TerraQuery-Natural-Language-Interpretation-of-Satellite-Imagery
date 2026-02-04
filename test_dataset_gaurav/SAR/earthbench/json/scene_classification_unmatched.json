@@ -1,0 +1,3098 @@
+[
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is depicted in the image based on the description?",
+    "answer": "A",
+    "candidate": [
+      "A. Urban residential or commercial area with integrated green spaces",
+      "B. Rural farmland with scattered housing",
+      "C. Industrial complex with manufacturing facilities",
+      "D. Coastal area with beachfront properties"
+    ],
+    "file_name": "dfc2023_test_P_0601.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Industrial area",
+      "B. Rural farmland",
+      "C. Urban area",
+      "D. Desert landscape"
+    ],
+    "file_name": "dfc2023_test_P_0528.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the primary land use depicted in the aerial view image?",
+    "answer": "A",
+    "candidate": [
+      "A. Agricultural",
+      "B. Urban residential",
+      "C. Industrial",
+      "D. Forest"
+    ],
+    "file_name": "multires-sar_Low-Resolution_056.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of landscape is most likely depicted in the image based on its color, texture, and patterns?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban area",
+      "B. Agricultural fields",
+      "C. Natural geographic features",
+      "D. Water body"
+    ],
+    "file_name": "wuhan_NH49E006014_patch4.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What does the grayish line in the image represent?",
+    "answer": "A",
+    "candidate": [
+      "A. A bridge or road",
+      "B. A river",
+      "C. A row of buildings",
+      "D. A railway track"
+    ],
+    "file_name": "dfc2025_TrainArea_070.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What feature separates the residential area from the wooded area in the image?",
+    "answer": "B",
+    "candidate": [
+      "A. A river",
+      "B. A road or pathway",
+      "C. A row of trees",
+      "D. A fence"
+    ],
+    "file_name": "SPACE6_20190823142603_20190823142913_tile_3556.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of scene is primarily depicted in the image?",
+    "answer": "B",
+    "candidate": [
+      "A. Urban area",
+      "B. Agricultural field",
+      "C. Forest",
+      "D. Water body"
+    ],
+    "file_name": "dfc2025_TrainArea_135.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of urban layout is depicted in the image?",
+    "answer": "B",
+    "candidate": [
+      "A. Radial layout",
+      "B. Grid-like layout",
+      "C. Organic layout",
+      "D. Mixed layout"
+    ],
+    "file_name": "multires-sar_Low-Resolution_001.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of scene is depicted in the image based on the described features?",
+    "answer": "C",
+    "candidate": [
+      "A. Rural countryside",
+      "B. Industrial complex",
+      "C. Urban area with integrated recreational spaces",
+      "D. Coastal beach area"
+    ],
+    "file_name": "SPACE6_20190822091156_20190822091502_tile_120.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the primary purpose of the industrial site depicted in the image?",
+    "answer": "A",
+    "candidate": [
+      "A. Transfer of materials between land and sea transport",
+      "B. Agricultural processing and storage",
+      "C. Residential development",
+      "D. Recreational water sports facility"
+    ],
+    "file_name": "SPACE6_20190822155502_20190822155747_tile_4644.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of facility is depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Residential area",
+      "B. Agricultural zone",
+      "C. Port or freight terminal",
+      "D. Recreational park"
+    ],
+    "file_name": "SPACE6_20190823141123_20190823141407_tile_3123.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the primary feature dividing the urban landscape in this image?",
+    "answer": "B",
+    "candidate": [
+      "A. A network of roads",
+      "B. A river",
+      "C. A series of bridges",
+      "D. Agricultural lands"
+    ],
+    "file_name": "wuhan_NI49E024020_patch1.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of landscape is predominantly depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban landscape",
+      "B. Desert landscape",
+      "C. Rural or semi-rural landscape",
+      "D. Coastal landscape"
+    ],
+    "file_name": "wuhan_NH49E003024_patch1.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of landscape is predominantly depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban cityscape",
+      "B. Desert terrain",
+      "C. Mountainous forested area",
+      "D. Coastal beach"
+    ],
+    "file_name": "wuhan_NH49E002012_patch4.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the primary function of the area depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Residential area",
+      "B. Agricultural zone",
+      "C. Transportation hub",
+      "D. Industrial complex"
+    ],
+    "file_name": "SPACE6_20190822084226_20190822084526_tile_3224.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of landscape is depicted in the image?",
+    "answer": "B",
+    "candidate": [
+      "A. Urban cityscape",
+      "B. Agricultural landscape",
+      "C. Forested area",
+      "D. Desert terrain"
+    ],
+    "file_name": "wuhan_NH49E012017_patch2.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What time of day is most likely depicted in the image based on the shadows cast by the trees?",
+    "answer": "C",
+    "candidate": [
+      "A. Noon",
+      "B. Midnight",
+      "C. Early morning or late afternoon",
+      "D. Mid-morning"
+    ],
+    "file_name": "dfc2025_TrainArea_210.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the most likely classification of the area depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Residential Area",
+      "B. Agricultural Zone",
+      "C. Commercial or Transportation Hub",
+      "D. Natural Reserve"
+    ],
+    "file_name": "dfc2025_TrainArea_247.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What natural feature separates the two agricultural fields in the image?",
+    "answer": "B",
+    "candidate": [
+      "A. A river",
+      "B. A dirt road",
+      "C. A line of trees",
+      "D. A fence"
+    ],
+    "file_name": "dfc2025_TrainArea_115.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of natural feature is prominently visible in the center of the image?",
+    "answer": "B",
+    "candidate": [
+      "A. A dense forest",
+      "B. A winding river or stream",
+      "C. A large plateau",
+      "D. A coastal beach"
+    ],
+    "file_name": "wuhan_NI49E022010_patch2.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of landscape is primarily depicted in the aerial image?",
+    "answer": "A",
+    "candidate": [
+      "A. Rural landscape with agricultural and natural features",
+      "B. Urban landscape with high-density buildings",
+      "C. Coastal landscape with sandy beaches",
+      "D. Industrial landscape with factories and warehouses"
+    ],
+    "file_name": "multires-sar_Low-Resolution_099.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is depicted in the satellite image based on the described features?",
+    "answer": "A",
+    "candidate": [
+      "A. Mixed-use area with residential, recreational, and industrial zones",
+      "B. Predominantly industrial area with minimal greenery",
+      "C. Rural agricultural area with scattered farmhouses",
+      "D. Urban area with high-rise residential buildings and no greenery"
+    ],
+    "file_name": "SPACE6_20190804145216_20190804145445_tile_6521.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of urban planning is most likely depicted in the image?",
+    "answer": "B",
+    "candidate": [
+      "A. Radial planning",
+      "B. Grid planning",
+      "C. Organic planning",
+      "D. Linear planning"
+    ],
+    "file_name": "SPACE6_20190823132244_20190823132535_tile_2802.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the primary land use depicted in the image?",
+    "answer": "A",
+    "candidate": [
+      "A. Agricultural",
+      "B. Industrial",
+      "C. Urban",
+      "D. Forest"
+    ],
+    "file_name": "multires-sar_Low-Resolution_021.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is depicted in the image?",
+    "answer": "A",
+    "candidate": [
+      "A. Industrial area",
+      "B. Residential area",
+      "C. Agricultural area",
+      "D. Recreational area"
+    ],
+    "file_name": "SPACE6_20190804130422_20190804130643_tile_3181.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the relative location of the parking area in relation to the large warehouse?",
+    "answer": "C",
+    "candidate": [
+      "A. Directly in front of the warehouse",
+      "B. Adjacent to the left side of the warehouse",
+      "C. To the far right of the warehouse",
+      "D. Behind the warehouse"
+    ],
+    "file_name": "SPACE6_20190822161045_20190822161339_tile_2480.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is primarily depicted in the satellite image?",
+    "answer": "A",
+    "candidate": [
+      "A. Forested and mountainous terrain",
+      "B. Urban cityscape",
+      "C. Coastal shoreline",
+      "D. Desert landscape"
+    ],
+    "file_name": "wuhan_NI49E024013_patch4.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the most likely primary function of the area depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Residential neighborhood",
+      "B. Urban city center",
+      "C. Industrial facility with adjacent natural areas",
+      "D. Agricultural farmland"
+    ],
+    "file_name": "dfc2025_TrainArea_292.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the primary feature that suggests the image is of agricultural land?",
+    "answer": "A",
+    "candidate": [
+      "A. The patchwork pattern of fields with varying shapes and sizes.",
+      "B. The presence of densely packed settlements near the water.",
+      "C. The diagonal river or stream crossing the image.",
+      "D. The overall mix of greens, browns, and lighter shades."
+    ],
+    "file_name": "wuhan_NH49E011024_patch1.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is depicted in the image?",
+    "answer": "B",
+    "candidate": [
+      "A. Industrial area",
+      "B. Suburban residential area",
+      "C. Rural farmland",
+      "D. Urban commercial district"
+    ],
+    "file_name": "dfc2023_test_P_0733.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of landscape is depicted in the satellite image?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban area",
+      "B. Coastal region",
+      "C. Rural agricultural area",
+      "D. Desert landscape"
+    ],
+    "file_name": "multires-sar_Low-Resolution_061.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of environment is predominantly depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Rural area",
+      "B. Forested landscape",
+      "C. Urban area",
+      "D. Desert region"
+    ],
+    "file_name": "multires-sar_Low-Resolution_036.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of landscape is primarily depicted in the image?",
+    "answer": "A",
+    "candidate": [
+      "A. A mountainous region with dense forest",
+      "B. A coastal city with high-rise buildings",
+      "C. A desert with sparse vegetation",
+      "D. A flat agricultural plain"
+    ],
+    "file_name": "wuhan_NH49E004013_patch1.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is depicted in the image?",
+    "answer": "A",
+    "candidate": [
+      "A. Urban residential area",
+      "B. Industrial zone",
+      "C. Rural farmland",
+      "D. Desert landscape"
+    ],
+    "file_name": "dfc2023_test_P_0509.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of transition is depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban to industrial",
+      "B. Coastal to desert",
+      "C. Residential to rural",
+      "D. Mountainous to flatlands"
+    ],
+    "file_name": "SPACE6_20190822093552_20190822093843_tile_9664.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is predominantly depicted in the satellite image based on the presence of both developed and undeveloped land?",
+    "answer": "C",
+    "candidate": [
+      "A. A large urban city with skyscrapers",
+      "B. A dense forest with no human development",
+      "C. A rural area with some urban development and agriculture",
+      "D. A desert landscape with no vegetation or development"
+    ],
+    "file_name": "wuhan_NH50E007003_patch3.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is depicted in the image based on its features and layout?",
+    "answer": "B",
+    "candidate": [
+      "A. Industrial Area",
+      "B. Residential Urban Area",
+      "C. Agricultural Land",
+      "D. Commercial District"
+    ],
+    "file_name": "SPACE6_20190822164803_20190822165101_tile_4211.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is primarily depicted in the satellite image?",
+    "answer": "B",
+    "candidate": [
+      "A. Rural area",
+      "B. Suburban area",
+      "C. Urban center",
+      "D. Industrial zone"
+    ],
+    "file_name": "SPACE6_20190823080230_20190823080526_tile_1975.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the most likely classification of the area depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban residential area",
+      "B. Industrial zone",
+      "C. Agricultural farmland",
+      "D. Dense forest"
+    ],
+    "file_name": "multires-sar_Low-Resolution_077.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What shape is the park that is surrounded by three roads?",
+    "answer": "A",
+    "candidate": [
+      "A. Triangular",
+      "B. Rectangular",
+      "C. Circular",
+      "D. Oval"
+    ],
+    "file_name": "dfc2023_test_P_1135.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is most likely depicted in the image based on the described features?",
+    "answer": "C",
+    "candidate": [
+      "A. Rural area",
+      "B. Agricultural area",
+      "C. Urban area",
+      "D. Industrial area"
+    ],
+    "file_name": "dfc2023_val_P_0374.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of natural environment is depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban area with industrial facilities",
+      "B. Agricultural fields with irrigation systems",
+      "C. Dense forest with streams or rivers",
+      "D. Desert landscape with sand dunes"
+    ],
+    "file_name": "wuhan_NH49E004021_patch1.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the predominant land use in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban development",
+      "B. Industrial facilities",
+      "C. Rural agriculture and forestry",
+      "D. Desert landscape"
+    ],
+    "file_name": "wuhan_NH49E007017_patch3.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of landscape is primarily depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban cityscape",
+      "B. Dense forest area",
+      "C. Agricultural landscape with river",
+      "D. Desert terrain"
+    ],
+    "file_name": "wuhan_NH50E012001_patch1.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is depicted in the image based on the description?",
+    "answer": "C",
+    "candidate": [
+      "A. Industrial area",
+      "B. Commercial district",
+      "C. Residential neighborhood",
+      "D. Agricultural field"
+    ],
+    "file_name": "dfc2023_val_P_0102.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of scene does the image depict?",
+    "answer": "A",
+    "candidate": [
+      "A. Open ocean",
+      "B. Coastal beach",
+      "C. Urban waterfront",
+      "D. Mountain lake"
+    ],
+    "file_name": "dfc2025_TrainArea_227.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is depicted in the image?",
+    "answer": "B",
+    "candidate": [
+      "A. Urban area",
+      "B. Rural area with agricultural fields and a village",
+      "C. Coastal area",
+      "D. Desert area"
+    ],
+    "file_name": "multires-sar_Low-Resolution_082.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of facility is depicted in the image?",
+    "answer": "B",
+    "candidate": [
+      "A. Residential housing complex",
+      "B. Industrial complex",
+      "C. Agricultural farm",
+      "D. Recreational park"
+    ],
+    "file_name": "SPACE6_20190823075755_20190823080053_tile_10755.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of landscape is primarily depicted in the image?",
+    "answer": "A",
+    "candidate": [
+      "A. Mixed-use landscape with agricultural, natural, and industrial elements",
+      "B. Urban landscape with dense infrastructure",
+      "C. Coastal landscape with beaches and ocean",
+      "D. Desert landscape with sand dunes"
+    ],
+    "file_name": "multires-sar_Low-Resolution_094.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is depicted in the aerial image?",
+    "answer": "C",
+    "candidate": [
+      "A. Industrial zone",
+      "B. Rural farmland",
+      "C. Residential neighborhood",
+      "D. Desert landscape"
+    ],
+    "file_name": "dfc2023_test_P_0495.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of facility is depicted in the image?",
+    "answer": "A",
+    "candidate": [
+      "A. An industrial facility, possibly a chemical or oil refinery",
+      "B. A residential neighborhood",
+      "C. A shopping mall",
+      "D. A sports complex"
+    ],
+    "file_name": "SPACE6_20190804132031_20190804132301_tile_9494.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of landscape is primarily depicted in the image?",
+    "answer": "B",
+    "candidate": [
+      "A. Urban cityscape",
+      "B. Mixed natural and agricultural landscape",
+      "C. Desert terrain",
+      "D. Coastal beach area"
+    ],
+    "file_name": "multires-sar_Low-Resolution_057.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of land use is primarily depicted in the top-left section of the image?",
+    "answer": "A",
+    "candidate": [
+      "A. Residential or commercial district",
+      "B. Industrial zone",
+      "C. Agricultural land",
+      "D. Natural forest area"
+    ],
+    "file_name": "wuhan_NH50E009003_patch2.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of natural scene is depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Desert landscape",
+      "B. Mountainous terrain",
+      "C. Ocean or sea surface",
+      "D. Dense forest canopy"
+    ],
+    "file_name": "dfc2025_TrainArea_175.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the primary landscape feature depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban development",
+      "B. Agricultural fields",
+      "C. Mountainous terrain",
+      "D. Coastal beach"
+    ],
+    "file_name": "wuhan_NH49E002012_patch2.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of scene is depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Residential area",
+      "B. Agricultural field",
+      "C. Industrial port facility",
+      "D. Recreational park"
+    ],
+    "file_name": "SPACE6_20190822141103_20190822141406_tile_4960.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the primary land use depicted in this satellite image?",
+    "answer": "B",
+    "candidate": [
+      "A. Urban development",
+      "B. Agricultural use",
+      "C. Industrial activity",
+      "D. Dense forest"
+    ],
+    "file_name": "wuhan_NH49E012017_patch4.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of land cover is predominantly visible in this satellite image?",
+    "answer": "B",
+    "candidate": [
+      "A. Urban area",
+      "B. Forested area",
+      "C. Desert area",
+      "D. Agricultural fields"
+    ],
+    "file_name": "wuhan_NH49E004011_patch4.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is depicted in the aerial image?",
+    "answer": "C",
+    "candidate": [
+      "A. Industrial zone",
+      "B. Rural farmland",
+      "C. Urban residential neighborhood",
+      "D. Forested parkland"
+    ],
+    "file_name": "dfc2023_test_P_0888.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What natural feature is located near the triangular-shaped field in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. A multi-lane highway",
+      "B. A dense cluster of trees",
+      "C. A canal or narrow body of water",
+      "D. An urban residential area"
+    ],
+    "file_name": "SPACE6_20190804140510_20190804140727_tile_4709.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of facility is depicted in the aerial image?",
+    "answer": "C",
+    "candidate": [
+      "A. Residential area",
+      "B. Agricultural farm",
+      "C. Industrial storage or processing facility",
+      "D. Recreational park"
+    ],
+    "file_name": "SPACE6_20190804115720_20190804115941_tile_9547.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the primary land use type depicted in the image?",
+    "answer": "A",
+    "candidate": [
+      "A. Industrial and commercial",
+      "B. Agricultural",
+      "C. Residential",
+      "D. Recreational"
+    ],
+    "file_name": "multires-sar_Low-Resolution_070.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the position of the drawbridge sections in the image?",
+    "answer": "B",
+    "candidate": [
+      "A. Closed and level with the road",
+      "B. Raised to allow boats to pass",
+      "C. Partially open",
+      "D. Collapsed into the water"
+    ],
+    "file_name": "SPACE6_20190804125251_20190804125541_tile_6880.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is depicted in the image?",
+    "answer": "B",
+    "candidate": [
+      "A. Industrial area",
+      "B. Urban residential or institutional area",
+      "C. Agricultural landscape",
+      "D. Coastal region"
+    ],
+    "file_name": "dfc2023_test_P_1132.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What feature is located on the right-hand side of the image, separating fields?",
+    "answer": "C",
+    "candidate": [
+      "A. A densely built area",
+      "B. A narrow road",
+      "C. A prominent canal or waterway",
+      "D. A cluster of farmhouses"
+    ],
+    "file_name": "wuhan_NH49E012018_patch2.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of landscape is depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban area",
+      "B. Desert landscape",
+      "C. Rural agricultural landscape",
+      "D. Coastal region"
+    ],
+    "file_name": "wuhan_NH49E009023_patch3.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of region is depicted in the image based on the mix of natural and developed features?",
+    "answer": "B",
+    "candidate": [
+      "A. Completely natural reserve",
+      "B. Semi-urban area with agricultural and water management features",
+      "C. Fully urbanized cityscape",
+      "D. Desert landscape with minimal vegetation"
+    ],
+    "file_name": "multires-sar_Low-Resolution_027.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of urban planning is depicted in the image based on the street layout and building arrangement?",
+    "answer": "C",
+    "candidate": [
+      "A. Organic layout",
+      "B. Radial layout",
+      "C. Grid layout",
+      "D. Concentric layout"
+    ],
+    "file_name": "SPACE6_20190823144849_20190823145144_tile_3288.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What key feature connects the urban areas on both sides of the river in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. The forested areas",
+      "B. The road networks",
+      "C. The bridge",
+      "D. The boats on the river"
+    ],
+    "file_name": "wuhan_NH49E008014_patch3.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the primary use of the land on the left side of the image?",
+    "answer": "A",
+    "candidate": [
+      "A. Agricultural fields",
+      "B. Dense forest",
+      "C. Urban settlement",
+      "D. Water body"
+    ],
+    "file_name": "multires-sar_Low-Resolution_066.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the primary activity depicted in the image?",
+    "answer": "B",
+    "candidate": [
+      "A. Urban development",
+      "B. Agricultural cultivation",
+      "C. Industrial manufacturing",
+      "D. Recreational park"
+    ],
+    "file_name": "multires-sar_Low-Resolution_089.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the main feature of the scene depicted in the image?",
+    "answer": "A",
+    "candidate": [
+      "A. A large expanse of water with a curved shoreline",
+      "B. A dense urban area with skyscrapers",
+      "C. A vast desert landscape with sand dunes",
+      "D. A mountainous region with snow-capped peaks"
+    ],
+    "file_name": "SPACE6_20190822094025_20190822094322_tile_5876.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of scene is depicted in the image?",
+    "answer": "B",
+    "candidate": [
+      "A. Urban landscape",
+      "B. Rural agricultural area",
+      "C. Dense forest region",
+      "D. Coastal beach"
+    ],
+    "file_name": "multires-sar_Low-Resolution_011.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the primary function of the area depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Residential area",
+      "B. Agricultural field",
+      "C. Industrial port",
+      "D. Recreational park"
+    ],
+    "file_name": "SPACE6_20190823074026_20190823074323_tile_2205.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is depicted in the satellite image based on the description?",
+    "answer": "C",
+    "candidate": [
+      "A. Rural area with wide open fields",
+      "B. Industrial zone with large factories",
+      "C. Urban neighborhood with residential or commercial buildings",
+      "D. Agricultural land with crop fields"
+    ],
+    "file_name": "dfc2023_val_P_0257.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is located to the right of the waterway in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Storage tanks",
+      "B. Industrial structures",
+      "C. Highway with multiple lanes",
+      "D. Green park area"
+    ],
+    "file_name": "SPACE6_20190823075755_20190823080053_tile_10768.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of landscape is predominantly depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban landscape",
+      "B. Coastal landscape",
+      "C. Rural or semi-rural landscape",
+      "D. Desert landscape"
+    ],
+    "file_name": "wuhan_NH49E010015_patch1.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is depicted in the image based on the described features?",
+    "answer": "B",
+    "candidate": [
+      "A. Industrial area",
+      "B. Coastal recreational area",
+      "C. Agricultural area",
+      "D. Mountainous area"
+    ],
+    "file_name": "dfc2025_TrainArea_125.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What feature runs through both urban and rural areas in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. The highway",
+      "B. The patches of forest",
+      "C. The river or canal",
+      "D. The agricultural fields"
+    ],
+    "file_name": "wuhan_NH49E007023_patch2.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is primarily found in the central and left portions of the image?",
+    "answer": "A",
+    "candidate": [
+      "A. Agricultural fields",
+      "B. Dense forest",
+      "C. Urban development",
+      "D. Large water body"
+    ],
+    "file_name": "multires-sar_Low-Resolution_050.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area does the image primarily depict?",
+    "answer": "C",
+    "candidate": [
+      "A. Industrial zone",
+      "B. Agricultural fields",
+      "C. Parkland adjacent to residential area",
+      "D. Desert landscape"
+    ],
+    "file_name": "SPACE6_20190823091132_20190823091448_tile_7918.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of scene is depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Industrial area",
+      "B. Coastal region",
+      "C. Urban green space",
+      "D. Desert landscape"
+    ],
+    "file_name": "dfc2023_test_P_0611.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of landscape does the satellite image primarily depict?",
+    "answer": "C",
+    "candidate": [
+      "A. Predominantly urban with no natural features",
+      "B. Entirely agricultural with no urban development",
+      "C. A mix of urban development and natural features",
+      "D. Completely covered by dense forest"
+    ],
+    "file_name": "multires-sar_Low-Resolution_007.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of environment is depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban landscape",
+      "B. Dense forest",
+      "C. Ocean or sea",
+      "D. Mountainous terrain"
+    ],
+    "file_name": "dfc2025_TrainArea_021.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of landscape is primarily depicted in the satellite image?",
+    "answer": "B",
+    "candidate": [
+      "A. Urban area with dense buildings",
+      "B. Agricultural area with fields and a river",
+      "C. Desert landscape with sand dunes",
+      "D. Forested area with dense tree cover"
+    ],
+    "file_name": "wuhan_NH49E013023_patch3.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of landscape is depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban",
+      "B. Industrial",
+      "C. Rural",
+      "D. Coastal"
+    ],
+    "file_name": "multires-sar_Low-Resolution_093.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What feature is located diagonally across the image from the upper left to the lower right?",
+    "answer": "C",
+    "candidate": [
+      "A. A large parking lot",
+      "B. A roundabout surrounded by trees",
+      "C. A bridge or overpass",
+      "D. A large grassy field"
+    ],
+    "file_name": "SPACE6_20190823131240_20190823131533_tile_7541.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of environment is depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Industrial area",
+      "B. Desert landscape",
+      "C. Residential area with greenery",
+      "D. Coastal region"
+    ],
+    "file_name": "dfc2023_test_P_0543.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the architectural style of the residential area depicted in the image?",
+    "answer": "B",
+    "candidate": [
+      "A. Circular cluster design",
+      "B. Cross-like building layout with grid pattern",
+      "C. Randomly scattered buildings",
+      "D. Traditional linear housing rows"
+    ],
+    "file_name": "dfc2023_test_P_0778.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of landscape is primarily depicted in the image?",
+    "answer": "A",
+    "candidate": [
+      "A. Arid land or dried-out lake bed",
+      "B. Dense forest",
+      "C. Urban cityscape",
+      "D. Coastal beach"
+    ],
+    "file_name": "dfc2025_TrainArea_277.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of landscape is primarily depicted in this remote sensing image?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban landscape",
+      "B. Desert landscape",
+      "C. Rural agricultural landscape",
+      "D. Coastal landscape"
+    ],
+    "file_name": "wuhan_NH49E008017_patch4.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What feature is located immediately below the road in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. A dense forest",
+      "B. A large lake",
+      "C. An open, barren plot of land",
+      "D. A residential building"
+    ],
+    "file_name": "dfc2023_val_P_0105.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Residential neighborhood",
+      "B. Agricultural field",
+      "C. Marina or dock",
+      "D. Forested area"
+    ],
+    "file_name": "dfc2023_val_P_0411.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the dominant feature in the lower-middle section of the urban area?",
+    "answer": "A",
+    "candidate": [
+      "A. A park with well-maintained green spaces.",
+      "B. A large shopping mall.",
+      "C. A dense residential block.",
+      "D. A high-rise office building."
+    ],
+    "file_name": "dfc2023_test_P_1129.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the primary function of the area depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Residential housing",
+      "B. Agricultural farming",
+      "C. Industrial operations",
+      "D. Recreational park"
+    ],
+    "file_name": "SPACE6_20190823160819_20190823161113_tile_11027.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the primary geographical feature identified in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban cityscape",
+      "B. Coastal beach area",
+      "C. Heavily forested region with hills",
+      "D. Agricultural farmland"
+    ],
+    "file_name": "wuhan_NI49E022014_patch1.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of setting is depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban city center",
+      "B. Industrial complex",
+      "C. Suburban neighborhood with green space",
+      "D. Rural farmland"
+    ],
+    "file_name": "dfc2023_test_P_0811.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the primary land use observed in this satellite image?",
+    "answer": "A",
+    "candidate": [
+      "A. Agricultural",
+      "B. Urban",
+      "C. Industrial",
+      "D. Recreational"
+    ],
+    "file_name": "multires-sar_Low-Resolution_092.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What feature is located on the right side of the image adjacent to a grid of smaller roads and buildings?",
+    "answer": "C",
+    "candidate": [
+      "A. Densely packed industrial buildings",
+      "B. Patches of greenery and small bodies of water",
+      "C. A large airport runway with taxiways and a terminal area",
+      "D. Agricultural fields"
+    ],
+    "file_name": "wuhan_NI49E024018_patch1.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "Which quadrant of the image predominantly features industrial areas?",
+    "answer": "A",
+    "candidate": [
+      "A. Top-left",
+      "B. Top-right",
+      "C. Bottom-left",
+      "D. Bottom-right"
+    ],
+    "file_name": "multires-sar_Low-Resolution_006.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the primary geographical feature depicted in this satellite image?",
+    "answer": "A",
+    "candidate": [
+      "A. Mountainous terrain",
+      "B. Coastal region",
+      "C. Urban area",
+      "D. Desert landscape"
+    ],
+    "file_name": "wuhan_NI49E021010_patch3.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the primary land use depicted in the image?",
+    "answer": "A",
+    "candidate": [
+      "A. Agricultural",
+      "B. Urban residential",
+      "C. Industrial",
+      "D. Recreational"
+    ],
+    "file_name": "multires-sar_Low-Resolution_051.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of scene is depicted in the image based on the combination of natural and urban elements?",
+    "answer": "C",
+    "candidate": [
+      "A. Predominantly natural landscape with minimal urban influence",
+      "B. Purely urban setting with no natural features",
+      "C. Mixed-use area with both industrial and recreational elements",
+      "D. Agricultural landscape with scattered rural structures"
+    ],
+    "file_name": "SPACE6_20190823101748_20190823102106_tile_9434.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the most likely classification of the terrain shown in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban area",
+      "B. Forested landscape",
+      "C. Desert terrain",
+      "D. Agricultural field"
+    ],
+    "file_name": "dfc2025_TrainArea_124.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of urban planning is most evident in the described image?",
+    "answer": "C",
+    "candidate": [
+      "A. Unplanned sprawl",
+      "B. Predominantly residential",
+      "C. Mixed-use with both residential and industrial areas",
+      "D. Primarily commercial"
+    ],
+    "file_name": "multires-sar_Low-Resolution_010.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of landscape is primarily depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban area",
+      "B. Industrial zone",
+      "C. Rural landscape with natural and agricultural elements",
+      "D. Desert region"
+    ],
+    "file_name": "multires-sar_Low-Resolution_067.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of landscape is primarily depicted in the image?",
+    "answer": "B",
+    "candidate": [
+      "A. Urban landscape",
+      "B. Rural landscape",
+      "C. Desert landscape",
+      "D. Coastal landscape"
+    ],
+    "file_name": "multires-sar_Low-Resolution_088.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of landscape is depicted in the image based on the description?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban area",
+      "B. Coastal region",
+      "C. Rural and semi-urban landscape",
+      "D. Desert landscape"
+    ],
+    "file_name": "multires-sar_Low-Resolution_030.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the primary feature on the left side of the image?",
+    "answer": "A",
+    "candidate": [
+      "A. Mountainous or hilly regions covered in vegetation",
+      "B. Dense clusters of buildings",
+      "C. Agricultural fields in grid-like patterns",
+      "D. Bright industrial or commercial zones"
+    ],
+    "file_name": "wuhan_NH50E003001_patch1.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of water body is primarily visible in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Ocean",
+      "B. Swimming pool",
+      "C. River or lake",
+      "D. Reservoir"
+    ],
+    "file_name": "SPACE6_20190822134328_20190822134645_tile_7045.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of scene is depicted in the aerial image?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban area",
+      "B. Desert landscape",
+      "C. Forest with a clearing",
+      "D. Coastal beach"
+    ],
+    "file_name": "dfc2025_TrainArea_145.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What best describes the primary use of the land depicted in the image?",
+    "answer": "A",
+    "candidate": [
+      "A. Agricultural activities",
+      "B. Urban commercial development",
+      "C. Dense forestation",
+      "D. Industrial production"
+    ],
+    "file_name": "wuhan_NH49E009024_patch1.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is depicted in the image?",
+    "answer": "B",
+    "candidate": [
+      "A. Industrial area",
+      "B. Suburban area",
+      "C. Rural area",
+      "D. Urban city center"
+    ],
+    "file_name": "dfc2023_val_P_0149.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What feature acts as a boundary between the residential area and the agricultural fields?",
+    "answer": "B",
+    "candidate": [
+      "A. A river",
+      "B. A line of dense trees",
+      "C. A fence",
+      "D. A railway track"
+    ],
+    "file_name": "SPACE6_20190822164803_20190822165101_tile_4217.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of landscape is primarily depicted in the image?",
+    "answer": "A",
+    "candidate": [
+      "A. A rural area with agricultural fields and natural features",
+      "B. An urban area with dense buildings and infrastructure",
+      "C. A desert landscape with sparse vegetation",
+      "D. A coastal area with sandy beaches and dunes"
+    ],
+    "file_name": "wuhan_NH49E005019_patch1.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What feature divides the storage tanks from the processing facilities in the industrial area?",
+    "answer": "C",
+    "candidate": [
+      "A. A row of trees",
+      "B. A river",
+      "C. A road",
+      "D. A railway line"
+    ],
+    "file_name": "SPACE6_20190822163834_20190822164115_tile_7700.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of forest is depicted in the image?",
+    "answer": "B",
+    "candidate": [
+      "A. Tropical rainforest",
+      "B. Managed coniferous forest",
+      "C. Deciduous forest",
+      "D. Mixed forest"
+    ],
+    "file_name": "dfc2025_TrainArea_240.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of environment is depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban landscape",
+      "B. Forested area",
+      "C. Desert landscape",
+      "D. Coastal region"
+    ],
+    "file_name": "dfc2025_TrainArea_305.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is predominantly depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Industrial area",
+      "B. Rural area",
+      "C. Urban area",
+      "D. Desert area"
+    ],
+    "file_name": "SPACE6_20190804114647_20190804114904_tile_6249.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of landscape is depicted in the image based on the description?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban industrial area",
+      "B. Desert landscape",
+      "C. Rural agricultural landscape",
+      "D. Coastal urban area"
+    ],
+    "file_name": "wuhan_NH49E014024_patch1.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is depicted in the central part of the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Industrial zone",
+      "B. Agricultural fields",
+      "C. Landscaped area with pathways and gardens",
+      "D. Undeveloped land"
+    ],
+    "file_name": "dfc2023_val_P_0974.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the primary feature of the landscape visible in the satellite image?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban development",
+      "B. Desert terrain",
+      "C. Mountainous region",
+      "D. Coastal area"
+    ],
+    "file_name": "wuhan_NH49E005011_patch4.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What feature separates the residential buildings from the large body of water in the image?",
+    "answer": "B",
+    "candidate": [
+      "A. A line of trees",
+      "B. A road with several vehicles",
+      "C. A row of commercial buildings",
+      "D. A pedestrian walkway"
+    ],
+    "file_name": "dfc2023_val_P_1063.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of environment is primarily depicted in the satellite image?",
+    "answer": "B",
+    "candidate": [
+      "A. Urban cityscape",
+      "B. Rural agricultural landscape",
+      "C. Dense forest region",
+      "D. Coastal beach area"
+    ],
+    "file_name": "multires-sar_Low-Resolution_064.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of landscape is depicted in the satellite image?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban residential area",
+      "B. Dense forest region",
+      "C. Rural agricultural area",
+      "D. Coastal beach area"
+    ],
+    "file_name": "wuhan_NI49E023017_patch4.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the most likely primary activity taking place in the mountainous region depicted in the image?",
+    "answer": "B",
+    "candidate": [
+      "A. Urban development",
+      "B. Mining activity",
+      "C. Agricultural farming",
+      "D. Tourism and recreation"
+    ],
+    "file_name": "wuhan_NH49E008014_patch1.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What best describes the central area of the image?",
+    "answer": "B",
+    "candidate": [
+      "A. A large urban settlement with numerous buildings",
+      "B. A densely wooded area with industrial structures like storage tanks or silos",
+      "C. A large open field with scattered trees",
+      "D. A barren land with no significant vegetation or structures"
+    ],
+    "file_name": "multires-sar_Low-Resolution_033.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of scene is depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Residential area",
+      "B. Agricultural fields",
+      "C. Industrial area",
+      "D. Recreational park"
+    ],
+    "file_name": "SPACE6_20190822160239_20190822160529_tile_3883.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of facility is depicted in the image based on the description?",
+    "answer": "A",
+    "candidate": [
+      "A. Oil refinery",
+      "B. Residential complex",
+      "C. Agricultural farm",
+      "D. Amusement park"
+    ],
+    "file_name": "SPACE6_20190822163021_20190822163304_tile_8465.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of scene is depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Rural farmland",
+      "B. Coastal beach",
+      "C. Urban residential area",
+      "D. Industrial complex"
+    ],
+    "file_name": "dfc2023_val_P_1022.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is located to the left of the airport in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. A dense urban area",
+      "B. A large forest",
+      "C. A body of water",
+      "D. More airport terminals"
+    ],
+    "file_name": "multires-sar_Low-Resolution_025.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is primarily depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban area",
+      "B. Industrial area",
+      "C. Rural residential and agricultural area",
+      "D. Coastal area"
+    ],
+    "file_name": "dfc2025_TrainArea_003.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of scene is predominantly depicted in the aerial image?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban cityscape with skyscrapers",
+      "B. Industrial area with factories",
+      "C. Rural landscape with agricultural fields and small settlements",
+      "D. Desert landscape with sand dunes"
+    ],
+    "file_name": "wuhan_NH49E005024_patch4.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What separates the industrial area on the right from the green space in the central and left parts of the image?",
+    "answer": "C",
+    "candidate": [
+      "A. A river",
+      "B. A railway line",
+      "C. A road",
+      "D. A fence"
+    ],
+    "file_name": "SPACE6_20190822155502_20190822155747_tile_4660.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is depicted in the image based on the described features?",
+    "answer": "B",
+    "candidate": [
+      "A. Residential neighborhood",
+      "B. Highway interchange",
+      "C. Industrial zone",
+      "D. Agricultural land"
+    ],
+    "file_name": "SPACE6_20190823130736_20190823131054_tile_4274.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of facility is most likely depicted in the aerial view?",
+    "answer": "C",
+    "candidate": [
+      "A. Residential complex",
+      "B. Shopping mall",
+      "C. Manufacturing or processing plant",
+      "D. Recreational park"
+    ],
+    "file_name": "SPACE6_20190823085011_20190823085317_tile_6936.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of environment does the landscape in the image suggest?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban city center",
+      "B. Dense forested region",
+      "C. Desert or semi-desert area",
+      "D. Coastal beach area"
+    ],
+    "file_name": "dfc2025_TrainArea_039.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the predominant type of land use observed in the central part of the image?",
+    "answer": "A",
+    "candidate": [
+      "A. Agricultural fields",
+      "B. Industrial area",
+      "C. Residential area",
+      "D. Forest"
+    ],
+    "file_name": "multires-sar_Low-Resolution_087.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of landscape is primarily depicted in the image?",
+    "answer": "A",
+    "candidate": [
+      "A. A mixed-use landscape with agriculture and forest",
+      "B. An urban area with high-density buildings",
+      "C. A desert landscape with minimal vegetation",
+      "D. A coastal region with sandy beaches"
+    ],
+    "file_name": "multires-sar_Low-Resolution_068.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is primarily depicted in the satellite image?",
+    "answer": "A",
+    "candidate": [
+      "A. Developing urban area",
+      "B. Dense forest region",
+      "C. Coastal beach area",
+      "D. Mountainous rural area"
+    ],
+    "file_name": "wuhan_NI49E024017_patch4.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of landscape is depicted in the image?",
+    "answer": "B",
+    "candidate": [
+      "A. Urban cityscape",
+      "B. Mountainous landscape with human development",
+      "C. Coastal region with beaches",
+      "D. Agricultural farmland"
+    ],
+    "file_name": "wuhan_NI49E021012_patch2.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of facility is most likely shown in the image based on the description?",
+    "answer": "C",
+    "candidate": [
+      "A. Residential complex",
+      "B. Shopping mall",
+      "C. Government or industrial complex",
+      "D. Sports stadium"
+    ],
+    "file_name": "dfc2025_TrainArea_330.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What feature runs parallel to the highway in the image?",
+    "answer": "B",
+    "candidate": [
+      "A. A river",
+      "B. A railway line",
+      "C. A pedestrian walkway",
+      "D. A bicycle path"
+    ],
+    "file_name": "SPACE6_20190804130422_20190804130643_tile_3170.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of setting is depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Rural farmland",
+      "B. Mountainous region",
+      "C. Urban waterfront",
+      "D. Desert landscape"
+    ],
+    "file_name": "dfc2023_val_P_0279.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is depicted in the image?",
+    "answer": "B",
+    "candidate": [
+      "A. Residential area",
+      "B. Port area",
+      "C. Agricultural area",
+      "D. Forest area"
+    ],
+    "file_name": "dfc2023_val_P_0280.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of landscape is depicted in the image based on the description?",
+    "answer": "C",
+    "candidate": [
+      "A. A dense forest with scattered water bodies",
+      "B. A coastal area with sandy beaches and cliffs",
+      "C. A rural area with agricultural fields and urban development",
+      "D. A mountainous region with snow-covered peaks"
+    ],
+    "file_name": "multires-sar_Low-Resolution_029.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What urban element is prominently featured next to the highway in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. A football stadium",
+      "B. A shopping mall",
+      "C. A canal with trees and possibly boats",
+      "D. A large parking lot"
+    ],
+    "file_name": "dfc2025_TrainArea_234.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is depicted in the image?",
+    "answer": "A",
+    "candidate": [
+      "A. Residential area",
+      "B. Industrial area",
+      "C. Agricultural area",
+      "D. Desert area"
+    ],
+    "file_name": "SPACE6_20190823162315_20190823162606_tile_7877.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Industrial complex",
+      "B. Urban city center",
+      "C. Suburban residential neighborhood",
+      "D. Rural farmland"
+    ],
+    "file_name": "dfc2023_test_P_0668.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Rural agricultural area",
+      "B. Dense forest region",
+      "C. Urban industrial area",
+      "D. Coastal beach area"
+    ],
+    "file_name": "SPACE6_20190804141608_20190804141830_tile_5323.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of environment is predominantly depicted in this satellite image?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban area with high-density buildings",
+      "B. Coastal area with beaches",
+      "C. Rural and semi-urban area with agricultural fields and small communities",
+      "D. Mountainous terrain with forests"
+    ],
+    "file_name": "multires-sar_Low-Resolution_005.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the most prominent feature in the lower center part of the image?",
+    "answer": "B",
+    "candidate": [
+      "A. A large lake",
+      "B. A circular structure",
+      "C. A dense forest area",
+      "D. An urban settlement"
+    ],
+    "file_name": "wuhan_NH50E011004_patch3.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the primary land use depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban development",
+      "B. Industrial area",
+      "C. Rural agricultural landscape",
+      "D. Coastal region"
+    ],
+    "file_name": "wuhan_NH50E013005_patch1.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the primary use of the areas adjacent to the waterway in the top part of the image?",
+    "answer": "A",
+    "candidate": [
+      "A. Industrial or commercial use",
+      "B. Residential housing",
+      "C. Agricultural fields",
+      "D. Recreational parks"
+    ],
+    "file_name": "multires-sar_Low-Resolution_052.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is depicted in the satellite image based on the description?",
+    "answer": "C",
+    "candidate": [
+      "A. Rural agricultural area",
+      "B. Industrial zone",
+      "C. Urban waterfront district",
+      "D. Dense forest region"
+    ],
+    "file_name": "dfc2023_test_P_1110.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of landscape is predominantly found on the right side of the image?",
+    "answer": "B",
+    "candidate": [
+      "A. Agricultural fields",
+      "B. Rugged and barren terrain",
+      "C. Urban settlements",
+      "D. Dense forest"
+    ],
+    "file_name": "multires-sar_Low-Resolution_044.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of geographic feature is most prominently depicted in the center of the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban city",
+      "B. Desert landscape",
+      "C. River or estuary",
+      "D. Mountain range"
+    ],
+    "file_name": "wuhan_NH50E009004_patch4.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of scene is predominantly depicted in this aerial image?",
+    "answer": "A",
+    "candidate": [
+      "A. Suburban area with residential and some commercial buildings",
+      "B. Urban area with high-density skyscrapers",
+      "C. Rural farmland with large agricultural fields",
+      "D. Coastal area with beaches and oceanfront properties"
+    ],
+    "file_name": "dfc2023_test_P_0890.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of environment is predominantly depicted in the satellite image?",
+    "answer": "B",
+    "candidate": [
+      "A. Urban landscape with high-rise buildings",
+      "B. Rural landscape with agricultural fields and small settlements",
+      "C. Industrial area with large factories and warehouses",
+      "D. Coastal region with beaches and ports"
+    ],
+    "file_name": "wuhan_NH50E012008_patch4.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of geographical feature is predominantly visible in the image?",
+    "answer": "B",
+    "candidate": [
+      "A. Urban area",
+      "B. Coastal region",
+      "C. Desert landscape",
+      "D. Mountainous terrain"
+    ],
+    "file_name": "multires-sar_Low-Resolution_013.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of urban planning is depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Organic city layout",
+      "B. Radial city design",
+      "C. Grid city pattern",
+      "D. Mixed-use development"
+    ],
+    "file_name": "dfc2023_val_P_1151.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of landscape is primarily depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban landscape with dense buildings",
+      "B. Coastal area with visible beaches",
+      "C. Rural or semi-rural landscape with mixed natural and altered terrain",
+      "D. Desert landscape with vast sandy areas"
+    ],
+    "file_name": "multires-sar_Low-Resolution_012.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of environment is depicted in the satellite image?",
+    "answer": "A",
+    "candidate": [
+      "A. Mixed-use urban environment with industrial activity",
+      "B. Predominantly rural agricultural landscape",
+      "C. Dense forest with limited human activity",
+      "D. Coastal area with extensive sandy beaches"
+    ],
+    "file_name": "wuhan_NH50E012005_patch1.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of landscape is depicted in the image?",
+    "answer": "B",
+    "candidate": [
+      "A. Urban cityscape",
+      "B. Mixed agricultural and natural terrain",
+      "C. Dense forest area",
+      "D. Coastal beachside"
+    ],
+    "file_name": "multires-sar_Low-Resolution_045.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the primary characteristic of the urban layout in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Circular road patterns",
+      "B. Randomly scattered buildings",
+      "C. Grid-like arrangement with variations",
+      "D. Sparse population of buildings"
+    ],
+    "file_name": "dfc2023_test_P_1107.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What does the distribution of fields and buildings in the image suggest about the landscape?",
+    "answer": "C",
+    "candidate": [
+      "A. It is a densely populated urban area.",
+      "B. It is a natural forested region.",
+      "C. It is a planned agricultural landscape.",
+      "D. It is an industrial zone with factories."
+    ],
+    "file_name": "multires-sar_Low-Resolution_100.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the most likely material depicted in the image based on its texture and color?",
+    "answer": "B",
+    "candidate": [
+      "A. Sand dune",
+      "B. Fur or fabric",
+      "C. Snow-covered ground",
+      "D. Water surface"
+    ],
+    "file_name": "dfc2025_TrainArea_126.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is located directly adjacent to the wooded area in the image?",
+    "answer": "A",
+    "candidate": [
+      "A. A road and several buildings",
+      "B. A large lake",
+      "C. An industrial complex",
+      "D. A desert area"
+    ],
+    "file_name": "dfc2023_test_P_0583.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is depicted in the image based on the description?",
+    "answer": "C",
+    "candidate": [
+      "A. Rural area with scattered homes",
+      "B. Forested region with dense tree cover",
+      "C. Urban area with a network of roads and densely packed buildings",
+      "D. Agricultural fields with crop patterns"
+    ],
+    "file_name": "dfc2023_val_P_0242.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of landscape is depicted in the satellite image?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban center",
+      "B. Rural farmland",
+      "C. Semi-rural area near an urban center",
+      "D. Uninhabited natural landscape"
+    ],
+    "file_name": "multires-sar_Low-Resolution_090.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is depicted in the image based on the described features?",
+    "answer": "C",
+    "candidate": [
+      "A. Industrial zone",
+      "B. Rural farmland",
+      "C. Residential neighborhood",
+      "D. Commercial district"
+    ],
+    "file_name": "SPACE6_20190823070415_20190823070716_tile_6360.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of environment is depicted in the satellite image?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban area",
+      "B. Desert landscape",
+      "C. Coastal and forested area",
+      "D. Agricultural farmland"
+    ],
+    "file_name": "multires-sar_Low-Resolution_028.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the primary feature characterizing the lower part of the image?",
+    "answer": "B",
+    "candidate": [
+      "A. Agricultural fields",
+      "B. Urban/Industrial area",
+      "C. Water bodies",
+      "D. Natural terrain"
+    ],
+    "file_name": "wuhan_NH50E010001_patch2.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the primary type of area depicted in the satellite image?",
+    "answer": "A",
+    "candidate": [
+      "A. Residential area",
+      "B. Industrial zone",
+      "C. Agricultural land",
+      "D. Desert landscape"
+    ],
+    "file_name": "dfc2023_val_P_0147.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of facility is depicted in the image?",
+    "answer": "A",
+    "candidate": [
+      "A. Oil refinery or storage facility",
+      "B. Residential housing complex",
+      "C. Agricultural farmland",
+      "D. Recreational park"
+    ],
+    "file_name": "SPACE6_20190823160819_20190823161113_tile_11033.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of environment is primarily depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Industrial area",
+      "B. Rural farmland",
+      "C. Urban environment with recreational spaces",
+      "D. Desert landscape"
+    ],
+    "file_name": "dfc2023_val_P_0014.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the primary classification of the area depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban area",
+      "B. Industrial zone",
+      "C. Agricultural region",
+      "D. Desert landscape"
+    ],
+    "file_name": "multires-sar_Low-Resolution_086.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of natural landscape is predominantly featured in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban area",
+      "B. Agricultural fields",
+      "C. Mountainous region",
+      "D. Coastal area"
+    ],
+    "file_name": "wuhan_NH49E002012_patch1.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area does this satellite image most likely depict?",
+    "answer": "B",
+    "candidate": [
+      "A. Industrial zone",
+      "B. Urban mixed-use area",
+      "C. Rural farmland",
+      "D. Desert landscape"
+    ],
+    "file_name": "dfc2023_test_P_0872.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is depicted in the satellite image?",
+    "answer": "B",
+    "candidate": [
+      "A. Urban area",
+      "B. Suburban area",
+      "C. Rural area",
+      "D. Industrial area"
+    ],
+    "file_name": "dfc2023_val_P_0171.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the primary use of the land depicted in the image?",
+    "answer": "A",
+    "candidate": [
+      "A. Agriculture",
+      "B. Urban development",
+      "C. Industrial area",
+      "D. Forest reserve"
+    ],
+    "file_name": "multires-sar_Low-Resolution_049.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Residential area",
+      "B. Agricultural area",
+      "C. Industrial area",
+      "D. Recreational area"
+    ],
+    "file_name": "SPACE6_20190823071743_20190823072036_tile_2636.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is depicted in the top-left section of the image?",
+    "answer": "A",
+    "candidate": [
+      "A. Industrial or commercial area",
+      "B. Residential neighborhood",
+      "C. Agricultural fields",
+      "D. Recreational park"
+    ],
+    "file_name": "dfc2023_val_P_0188.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of environment is depicted in the satellite image?",
+    "answer": "C",
+    "candidate": [
+      "A. Rural agricultural area",
+      "B. Desert landscape",
+      "C. Urban area with mixed-use developments",
+      "D. Mountainous region"
+    ],
+    "file_name": "multires-sar_Low-Resolution_008.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What feature is located between the residential neighborhood and the sports fields?",
+    "answer": "B",
+    "candidate": [
+      "A. A major road or highway",
+      "B. A canal or waterway",
+      "C. A shopping mall",
+      "D. A forested area"
+    ],
+    "file_name": "SPACE6_20190823145732_20190823150016_tile_7327.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is located on the right side of the image adjacent to the dense greenery?",
+    "answer": "C",
+    "candidate": [
+      "A. A large body of water",
+      "B. A forest with tall trees",
+      "C. A lighter green strip that could be a grassy path or field",
+      "D. A residential or urban area"
+    ],
+    "file_name": "SPACE6_20190823135139_20190823135448_tile_1424.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of scene is depicted in the image?",
+    "answer": "A",
+    "candidate": [
+      "A. A uniform color background",
+      "B. A forested area",
+      "C. An urban cityscape",
+      "D. A body of water"
+    ],
+    "file_name": "dfc2025_TrainArea_110.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of scene is primarily depicted in the satellite image?",
+    "answer": "A",
+    "candidate": [
+      "A. Rural agricultural area",
+      "B. Urban industrial zone",
+      "C. Coastal beach region",
+      "D. Mountainous forest reserve"
+    ],
+    "file_name": "multires-sar_Low-Resolution_073.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Residential neighborhood",
+      "B. Agricultural farmland",
+      "C. Industrial port area",
+      "D. Recreational beach"
+    ],
+    "file_name": "SPACE6_20190822092149_20190822092450_tile_1708.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the primary type of area depicted in this satellite image?",
+    "answer": "A",
+    "candidate": [
+      "A. Urban residential area",
+      "B. Industrial zone",
+      "C. Agricultural land",
+      "D. Coastal resort"
+    ],
+    "file_name": "dfc2023_test_P_0448.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of landscape is depicted in the aerial photograph?",
+    "answer": "A",
+    "candidate": [
+      "A. Mountainous and forested area",
+      "B. Urban cityscape",
+      "C. Desert with sand dunes",
+      "D. Coastal beach area"
+    ],
+    "file_name": "wuhan_NH49E008013_patch3.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the primary type of infrastructure visible on the left side of the image?",
+    "answer": "B",
+    "candidate": [
+      "A. A dam",
+      "B. A bridge",
+      "C. A pier",
+      "D. A railway"
+    ],
+    "file_name": "SPACE6_20190823150417_20190823150712_tile_10309.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of landscape is depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Desert landscape",
+      "B. Mountainous terrain",
+      "C. Mixed natural and developed environment",
+      "D. Dense forest area"
+    ],
+    "file_name": "multires-sar_Low-Resolution_032.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the predominant land use type depicted in the image?",
+    "answer": "A",
+    "candidate": [
+      "A. Agricultural fields",
+      "B. Urban residential area",
+      "C. Dense forest",
+      "D. Industrial zone"
+    ],
+    "file_name": "multires-sar_Low-Resolution_065.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of setting is depicted in the satellite image?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban landscape",
+      "B. Coastal region",
+      "C. Rural hilly terrain",
+      "D. Desert plains"
+    ],
+    "file_name": "wuhan_NH50E016002_patch3.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the primary activity depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Residential housing development",
+      "B. Agricultural farming",
+      "C. Cargo handling and storage",
+      "D. Recreational park activities"
+    ],
+    "file_name": "SPACE6_20190823143102_20190823143400_tile_5991.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the primary feature of the landscape in the described image?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban development",
+      "B. Agricultural fields",
+      "C. Rugged, mountainous terrain with dense forest cover",
+      "D. Coastal beach"
+    ],
+    "file_name": "wuhan_NI49E022014_patch4.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What does the image primarily depict?",
+    "answer": "C",
+    "candidate": [
+      "A. A satellite view of agricultural fields",
+      "B. A close-up of a rocky surface",
+      "C. A close-up of tree rings in a piece of wood",
+      "D. An aerial view of a desert landscape"
+    ],
+    "file_name": "dfc2025_TrainArea_320.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of environment is depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban area with industrial facilities",
+      "B. Coastal region with sandy beaches",
+      "C. Rural area with agricultural lands and a small settlement",
+      "D. Mountainous region with dense forests"
+    ],
+    "file_name": "multires-sar_Low-Resolution_097.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of facility is depicted in the image based on the presence of storage tanks, a large vessel, and complex infrastructure?",
+    "answer": "C",
+    "candidate": [
+      "A. Residential complex",
+      "B. Agricultural farm",
+      "C. Industrial port facility",
+      "D. Recreational park"
+    ],
+    "file_name": "SPACE6_20190822094025_20190822094322_tile_5868.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the primary use of land in the area depicted in the image?",
+    "answer": "A",
+    "candidate": [
+      "A. Agriculture",
+      "B. Urban development",
+      "C. Industrial activity",
+      "D. Recreational facilities"
+    ],
+    "file_name": "multires-sar_Low-Resolution_078.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of landscape is predominantly depicted in the image?",
+    "answer": "B",
+    "candidate": [
+      "A. Urban landscape",
+      "B. Rural landscape",
+      "C. Coastal landscape",
+      "D. Mountainous landscape"
+    ],
+    "file_name": "wuhan_NH49E006024_patch4.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is depicted in the satellite image?",
+    "answer": "C",
+    "candidate": [
+      "A. Industrial area",
+      "B. Rural farmland",
+      "C. Residential neighborhood",
+      "D. Commercial district"
+    ],
+    "file_name": "dfc2023_test_P_0438.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is located adjacent to the body of water on the right side of the image?",
+    "answer": "B",
+    "candidate": [
+      "A. Roads and parking lots",
+      "B. Greenery and trees",
+      "C. Rectangular buildings with flat roofs",
+      "D. Parked cars"
+    ],
+    "file_name": "dfc2023_val_P_0087.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is depicted in the image based on the arrangement of structures and infrastructure?",
+    "answer": "C",
+    "candidate": [
+      "A. Residential neighborhood",
+      "B. Agricultural farmland",
+      "C. Industrial complex",
+      "D. Recreational park"
+    ],
+    "file_name": "multires-sar_Low-Resolution_042.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of environment is depicted in the image?",
+    "answer": "B",
+    "candidate": [
+      "A. Forest",
+      "B. Urban park",
+      "C. Agricultural field",
+      "D. Desert"
+    ],
+    "file_name": "dfc2023_val_P_1045.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of landscape is depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Completely urban",
+      "B. Completely rural",
+      "C. Mixed urban and rural with coastal features",
+      "D. Industrial zone"
+    ],
+    "file_name": "wuhan_NH50E010004_patch4.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is most likely the main content of the image given its description?",
+    "answer": "C",
+    "candidate": [
+      "A. A detailed landscape with various features",
+      "B. A complex urban scene with multiple structures",
+      "C. A close-up view of a textured or patterned surface",
+      "D. A panoramic view of a natural habitat"
+    ],
+    "file_name": "dfc2025_TrainArea_208.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of geographical feature is predominantly visible in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Mountain range",
+      "B. Desert plateau",
+      "C. Coastal peninsulas",
+      "D. Urban cityscape"
+    ],
+    "file_name": "multires-sar_Low-Resolution_015.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is depicted in this image?",
+    "answer": "A",
+    "candidate": [
+      "A. Urban area with residential buildings",
+      "B. Industrial zone with factories",
+      "C. Agricultural land with large fields",
+      "D. Coastal area with beaches"
+    ],
+    "file_name": "dfc2023_val_P_0224.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of landscape is depicted in the image based on vegetation density and terrain features?",
+    "answer": "B",
+    "candidate": [
+      "A. Urban area",
+      "B. Mixed natural and agricultural landscape",
+      "C. Desert landscape",
+      "D. Coastal region"
+    ],
+    "file_name": "multires-sar_Low-Resolution_062.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What does the image primarily depict?",
+    "answer": "A",
+    "candidate": [
+      "A. An agricultural area with fields and irrigation channels",
+      "B. An urban cityscape with high-rise buildings",
+      "C. A dense forest with various tree species",
+      "D. A desert landscape with sand dunes"
+    ],
+    "file_name": "wuhan_NH49E011024_patch3.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is depicted in the image?",
+    "answer": "B",
+    "candidate": [
+      "A. Industrial area",
+      "B. Urban residential area",
+      "C. Rural farmland",
+      "D. Coastal beach"
+    ],
+    "file_name": "SPACE6_20190822151944_20190822152215_tile_6994.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of landscape is depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban landscape",
+      "B. Desert landscape",
+      "C. Mixed agricultural and forest landscape",
+      "D. Coastal landscape"
+    ],
+    "file_name": "dfc2025_TrainArea_013.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of landscape is predominantly depicted in the satellite image?",
+    "answer": "B",
+    "candidate": [
+      "A. Urban landscape with high-density buildings",
+      "B. Rural landscape with agricultural fields",
+      "C. Desert landscape with sparse vegetation",
+      "D. Coastal landscape with sandy beaches"
+    ],
+    "file_name": "wuhan_NH49E006022_patch2.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of surface is depicted in the image?",
+    "answer": "B",
+    "candidate": [
+      "A. Sandstone",
+      "B. Travertine",
+      "C. Granite",
+      "D. Limestone"
+    ],
+    "file_name": "dfc2025_TrainArea_156.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is the most likely feature running diagonally across the terrain in the image?",
+    "answer": "A",
+    "candidate": [
+      "A. A river or stream",
+      "B. A road or highway",
+      "C. A railway line",
+      "D. A power line"
+    ],
+    "file_name": "multires-sar_Low-Resolution_074.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the primary use of the land in the image?",
+    "answer": "B",
+    "candidate": [
+      "A. Urban development",
+      "B. Agriculture",
+      "C. Industrial area",
+      "D. Forest reserve"
+    ],
+    "file_name": "wuhan_NH49E012022_patch3.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What feature separates the residential and industrial zones in the central section of the image?",
+    "answer": "C",
+    "candidate": [
+      "A. A canal",
+      "B. A row of trees",
+      "C. A curving road",
+      "D. A railway line"
+    ],
+    "file_name": "SPACE6_20190822083256_20190822083600_tile_10916.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What feature runs vertically through the image and crosses the river?",
+    "answer": "C",
+    "candidate": [
+      "A. An irrigation canal",
+      "B. A row of trees",
+      "C. A roadway or path",
+      "D. A power line"
+    ],
+    "file_name": "wuhan_NH49E014024_patch4.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of region is depicted in the satellite image?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban area with high-rise buildings",
+      "B. Mountainous region with dense forests",
+      "C. Coastal or delta region with agricultural fields and waterways",
+      "D. Desert region with sand dunes"
+    ],
+    "file_name": "wuhan_NH50E012001_patch2.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of environment is most prevalent in the bottom left corner of the image?",
+    "answer": "A",
+    "candidate": [
+      "A. Urban or industrial zone",
+      "B. Dense forest area",
+      "C. Large water body",
+      "D. Desert landscape"
+    ],
+    "file_name": "multires-sar_Low-Resolution_019.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What stage of construction is the site likely in based on the visible elements?",
+    "answer": "C",
+    "candidate": [
+      "A. Planning stage",
+      "B. Foundation stage",
+      "C. Early to mid-construction stage",
+      "D. Finishing stage"
+    ],
+    "file_name": "dfc2025_TrainArea_253.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of facility is depicted in the image?",
+    "answer": "A",
+    "candidate": [
+      "A. Shipping port",
+      "B. Residential area",
+      "C. Agricultural field",
+      "D. Amusement park"
+    ],
+    "file_name": "SPACE6_20190822085151_20190822085445_tile_567.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of landscape is primarily depicted in the image?",
+    "answer": "B",
+    "candidate": [
+      "A. Urban area",
+      "B. Mountainous terrain",
+      "C. Coastal region",
+      "D. Agricultural fields"
+    ],
+    "file_name": "wuhan_NH49E014007_patch1.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of setting is depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban",
+      "B. Forest",
+      "C. Semi-urban or rural",
+      "D. Desert"
+    ],
+    "file_name": "multires-sar_Low-Resolution_018.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is located to the left of the water body in the image?",
+    "answer": "B",
+    "candidate": [
+      "A. A large park with a playground",
+      "B. A land area with greenery and a few buildings",
+      "C. A dense forest with no visible structures",
+      "D. A barren desert with sand dunes"
+    ],
+    "file_name": "dfc2023_test_P_0435.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is depicted in the image?",
+    "answer": "B",
+    "candidate": [
+      "A. Industrial zone",
+      "B. Residential area",
+      "C. Commercial district",
+      "D. Agricultural land"
+    ],
+    "file_name": "SPACE6_20190822091719_20190822092011_tile_9705.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What does the arrangement of structures and greenery in the image suggest about the area?",
+    "answer": "C",
+    "candidate": [
+      "A. A heavily industrialized area with minimal green spaces",
+      "B. A rural area primarily used for agriculture",
+      "C. A planned urban development blending residential buildings with recreational areas",
+      "D. A coastal area with beach resorts and marine facilities"
+    ],
+    "file_name": "dfc2023_val_P_0073.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the predominant feature of the landscape in the image?",
+    "answer": "A",
+    "candidate": [
+      "A. Agricultural fields",
+      "B. Urban development",
+      "C. Industrial facilities",
+      "D. Desert terrain"
+    ],
+    "file_name": "multires-sar_Low-Resolution_059.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of scene is depicted in the image?",
+    "answer": "A",
+    "candidate": [
+      "A. Rural area with sparse vegetation",
+      "B. Urban area with dense infrastructure",
+      "C. Coastal area with sandy beaches",
+      "D. Dense forest area"
+    ],
+    "file_name": "dfc2025_TrainArea_213.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the primary feature of this landscape?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban cityscape",
+      "B. Agricultural farmland",
+      "C. Forested mountainous area",
+      "D. Desert plain"
+    ],
+    "file_name": "wuhan_NH49E001013_patch4.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the primary feature of the landscape depicted in the image?",
+    "answer": "B",
+    "candidate": [
+      "A. Urban residential buildings",
+      "B. Transportation infrastructure",
+      "C. Industrial facilities",
+      "D. Agricultural fields"
+    ],
+    "file_name": "SPACE6_20190822084226_20190822084526_tile_3231.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of landscape is primarily depicted in the image?",
+    "answer": "A",
+    "candidate": [
+      "A. Agricultural fields",
+      "B. Urban cityscape",
+      "C. Dense forest",
+      "D. Desert landscape"
+    ],
+    "file_name": "wuhan_NH49E012022_patch2.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Residential neighborhood",
+      "B. Urban park",
+      "C. Industrial or commercial area",
+      "D. Farmland"
+    ],
+    "file_name": "SPACE6_20190822095638_20190822095937_tile_7425.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Residential area",
+      "B. Agricultural area",
+      "C. Industrial harbor",
+      "D. Recreational park"
+    ],
+    "file_name": "SPACE6_20190823065938_20190823070236_tile_2138.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is primarily depicted in the image with a mix of green spaces and built environments?",
+    "answer": "A",
+    "candidate": [
+      "A. Urban area with integrated green spaces",
+      "B. Rural farmland with scattered buildings",
+      "C. Industrial zone with factories and warehouses",
+      "D. Desert landscape with sparse vegetation"
+    ],
+    "file_name": "SPACE6_20190822145028_20190822145325_tile_9230.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of landscape is depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban industrial area",
+      "B. Coastal beach area",
+      "C. Rural agricultural area",
+      "D. Dense forest area"
+    ],
+    "file_name": "multires-sar_Low-Resolution_075.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is depicted in the image based on the combination of features described?",
+    "answer": "C",
+    "candidate": [
+      "A. Fully urban area",
+      "B. Purely agricultural landscape",
+      "C. Semi-rural area with mixed land use",
+      "D. Undeveloped natural terrain"
+    ],
+    "file_name": "multires-sar_Low-Resolution_022.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What urban planning characteristic is most evident in the described satellite image?",
+    "answer": "B",
+    "candidate": [
+      "A. Organic street layout",
+      "B. Grid-like pattern with square blocks",
+      "C. Circular road design",
+      "D. Irregular block arrangement"
+    ],
+    "file_name": "dfc2023_test_P_1176.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of landscape is depicted in the image based on the description?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban area with dense infrastructure",
+      "B. Coastal region with visible water bodies",
+      "C. Rural landscape with mixed vegetation and agricultural fields",
+      "D. Desert area with vast sandy regions"
+    ],
+    "file_name": "multires-sar_Low-Resolution_034.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of facility is depicted in the image based on its structures and surroundings?",
+    "answer": "C",
+    "candidate": [
+      "A. Residential area",
+      "B. Agricultural farm",
+      "C. Industrial port complex",
+      "D. Recreational park"
+    ],
+    "file_name": "SPACE6_20190804111224_20190804111453_tile_8683.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What feature runs diagonally through the center of the image?",
+    "answer": "C",
+    "candidate": [
+      "A. A small lake",
+      "B. A grassy embankment",
+      "C. A bridge or overpass",
+      "D. A single-lane road"
+    ],
+    "file_name": "SPACE6_20190804115720_20190804115941_tile_9554.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is primarily depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Industrial area",
+      "B. Rural area",
+      "C. Semi-urban area",
+      "D. Dense urban area"
+    ],
+    "file_name": "SPACE6_20190822080151_20190822080440_tile_606.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the primary scene type depicted in the image?",
+    "answer": "A",
+    "candidate": [
+      "A. Rural agricultural area",
+      "B. Dense urban city",
+      "C. Industrial complex",
+      "D. Desert landscape"
+    ],
+    "file_name": "multires-sar_Low-Resolution_063.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of scene is depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Rural landscape with farmland",
+      "B. Industrial area with factories",
+      "C. Urban area adjacent to a body of water",
+      "D. Desert with sparse vegetation"
+    ],
+    "file_name": "dfc2023_val_P_1013.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area is depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban city center",
+      "B. Desert landscape",
+      "C. Suburban neighborhood",
+      "D. Industrial complex"
+    ],
+    "file_name": "dfc2023_val_P_0194.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of urban environment is depicted in the image?",
+    "answer": "B",
+    "candidate": [
+      "A. Industrial area",
+      "B. Dense urban area with mixed-use development",
+      "C. Suburban residential neighborhood",
+      "D. Rural farmland"
+    ],
+    "file_name": "dfc2023_test_P_1101.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What feature acts as a dividing line separating the two halves of the landscape in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. A straight road",
+      "B. A series of agricultural fields",
+      "C. A prominent vertical waterway",
+      "D. A dense patch of vegetation"
+    ],
+    "file_name": "wuhan_NH49E007024_patch4.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of environment is depicted in the satellite image?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban",
+      "B. Rural",
+      "C. Suburban",
+      "D. Industrial"
+    ],
+    "file_name": "dfc2023_test_P_0643.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the most prominent feature at the top right of the image?",
+    "answer": "A",
+    "candidate": [
+      "A. A large building under construction with an L-shaped design",
+      "B. A completed rectangular building with a flat roof",
+      "C. A dense area of tree coverage",
+      "D. A rectangular lot without visible development"
+    ],
+    "file_name": "dfc2023_test_P_0585.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What feature lies directly above the highway in the image?",
+    "answer": "B",
+    "candidate": [
+      "A. A body of water",
+      "B. Railway tracks",
+      "C. Urban buildings",
+      "D. Dense forest"
+    ],
+    "file_name": "SPACE6_20190804141608_20190804141830_tile_5324.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the primary feature of the landscape in the image?",
+    "answer": "A",
+    "candidate": [
+      "A. Dense, forested areas with lush green vegetation",
+      "B. Extensive urban development with skyscrapers",
+      "C. Large bodies of water with aquatic vegetation",
+      "D. Arid desert terrain with sparse vegetation"
+    ],
+    "file_name": "wuhan_NH49E002014_patch1.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the primary focus of the area depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Residential housing",
+      "B. Agricultural lands",
+      "C. Industrial or logistical activities",
+      "D. Recreational parks"
+    ],
+    "file_name": "wuhan_NH50E010001_patch4.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of area does the image primarily depict?",
+    "answer": "A",
+    "candidate": [
+      "A. Residential area",
+      "B. Industrial area",
+      "C. Agricultural area",
+      "D. Forest area"
+    ],
+    "file_name": "dfc2023_test_P_0638.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What is the primary function of the area depicted in the image?",
+    "answer": "B",
+    "candidate": [
+      "A. Residential housing",
+      "B. Industrial port operations",
+      "C. Agricultural fields",
+      "D. Recreational park"
+    ],
+    "file_name": "SPACE6_20190823075755_20190823080053_tile_10757.json"
+  },
+  {
+    "task_type": "scene classification",
+    "question": "What type of landscape features are primarily depicted in the image?",
+    "answer": "C",
+    "candidate": [
+      "A. Urban cityscape",
+      "B. Desert terrain",
+      "C. Mixed natural and human-altered landscapes",
+      "D. Coastal beachfront"
+    ],
+    "file_name": "multires-sar_Low-Resolution_038.json"
+  },
+  {
+    "task_type": "spatial relationship",
+    "question": "What is located in the top right quadrant of the image?",
+    "answer": "B",
+    "candidate": [
+      "A. A large building with a geometric pattern on its roof",
+      "B. A bridge crossing a body of water",
+      "C. A long, docked vessel at a pier",
+      "D. An orange building with a distinct roof"
+    ],
+    "file_name": "dfc2023_test_P_1087.json"
+  }
+]

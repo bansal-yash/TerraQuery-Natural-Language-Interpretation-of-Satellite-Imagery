@@ -1,0 +1,1 @@
+RGB:Aerial view of farmland with roads and small settlements. || SAR:SAR image shows urban grid with roads and buildings in grayscale.

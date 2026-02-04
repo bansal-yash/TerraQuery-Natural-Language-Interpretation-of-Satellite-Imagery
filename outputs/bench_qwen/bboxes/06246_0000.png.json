@@ -1,0 +1,26 @@
+{
+  "image": "06246_0000.png",
+  "boxes": [
+    {
+      "label": "ground track and field oval",
+      "x1": 159,
+      "y1": 185,
+      "x2": 384,
+      "y2": 510
+    },
+    {
+      "label": "baseball diamond",
+      "x1": 384,
+      "y1": 159,
+      "x2": 510,
+      "y2": 295
+    },
+    {
+      "label": "large parking area",
+      "x1": 346,
+      "y1": 0,
+      "x2": 512,
+      "y2": 128
+    }
+  ]
+}

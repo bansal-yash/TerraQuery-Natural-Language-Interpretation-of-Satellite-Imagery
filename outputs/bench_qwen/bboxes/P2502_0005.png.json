@@ -1,0 +1,26 @@
+{
+  "image": "P2502_0005.png",
+  "boxes": [
+    {
+      "label": "residential housing",
+      "x1": 206,
+      "y1": 112,
+      "x2": 510,
+      "y2": 505
+    },
+    {
+      "label": "soccer ball field",
+      "x1": 56,
+      "y1": 409,
+      "x2": 172,
+      "y2": 505
+    },
+    {
+      "label": "ground track field",
+      "x1": 56,
+      "y1": 378,
+      "x2": 182,
+      "y2": 505
+    }
+  ]
+}

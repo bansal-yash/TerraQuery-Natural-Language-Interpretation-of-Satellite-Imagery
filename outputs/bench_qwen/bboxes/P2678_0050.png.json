@@ -1,0 +1,19 @@
+{
+  "image": "P2678_0050.png",
+  "boxes": [
+    {
+      "label": "large, circular storage tank",
+      "x1": 223,
+      "y1": 103,
+      "x2": 335,
+      "y2": 234
+    },
+    {
+      "label": "small storage tank",
+      "x1": 359,
+      "y1": 6,
+      "x2": 397,
+      "y2": 47
+    }
+  ]
+}

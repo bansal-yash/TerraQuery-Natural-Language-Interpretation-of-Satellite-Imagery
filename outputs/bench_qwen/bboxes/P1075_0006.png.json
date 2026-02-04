@@ -1,0 +1,12 @@
+{
+  "image": "P1075_0006.png",
+  "boxes": [
+    {
+      "label": "small ships docked nearby",
+      "x1": 315,
+      "y1": 392,
+      "x2": 439,
+      "y2": 503
+    }
+  ]
+}

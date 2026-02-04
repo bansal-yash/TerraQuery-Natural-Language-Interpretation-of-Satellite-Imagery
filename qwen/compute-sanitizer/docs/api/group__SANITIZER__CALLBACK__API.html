@@ -1,0 +1,1402 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanitizer Callback API &mdash; compute-sanitizer 12.6 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/omni-style.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/api-styles.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/mermaid-init.js"></script>
+        <script src="../_static/design-tabs.js"></script>
+        <script src="../_static/version.js"></script>
+        <script src="../_static/social-media.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Sanitizer Memory API" href="group__SANITIZER__MEMORY__API.html" />
+    <link rel="prev" title="Sanitizer Barrier API" href="group__SANITIZER__BARRIER__API.html" />
+ 
+
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+
+<a href="../index.html">
+  <img src="../_static/Logo_and_CUDA.png" class="logo" alt="Logo"/>
+</a>
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../ReleaseNotes/index.html">Release Notes</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tools</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ComputeSanitizer/index.html">Compute Sanitizer</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Interfaces</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../SanitizerApiGuide/index.html">Compute Sanitizer API Reference Manual</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../SanitizerApi/table-of-contents.html">Sanitizer API</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="modules.html">Modules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="group__SANITIZER__BARRIER__API.html">Sanitizer Barrier API</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Sanitizer Callback API</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#enumerations">Enumerations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#functions">Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#typedefs">Typedefs</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="group__SANITIZER__MEMORY__API.html">Sanitizer Memory API</a></li>
+<li class="toctree-l3"><a class="reference internal" href="group__SANITIZER__PATCHING__API.html">Sanitizer Patching API</a></li>
+<li class="toctree-l3"><a class="reference internal" href="group__SANITIZER__RESULT__API.html">Sanitizer Result Codes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="group__SANITIZER__STREAM__API.html">Sanitizer Stream API</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="structs.html">Structs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../SanitizerNvtxGuide/index.html">NVTX API for Compute Sanitizer Reference Manual</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Copyright And Licenses</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../CopyrightAndLicenses/index.html">Copyright and Licenses</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">compute-sanitizer</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+
+
+  
+
+<li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+  
+    <li><a href="../SanitizerApi/table-of-contents.html">Sanitizer API</a> &raquo;</li>
+    <li><a href="modules.html">Modules</a> &raquo;</li>
+<li>Sanitizer Callback API</li>
+
+      <li class="wy-breadcrumbs-aside">
+      </li>
+<li class="wy-breadcrumbs-aside">
+
+
+  <span>v2024.3.0</span>
+
+
+  <span>&nbsp;</span>
+</li>
+
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="sanitizer-callback-api">
+<h1>Sanitizer Callback API<a class="headerlink" href="#sanitizer-callback-api" title="Permalink to this headline"></a></h1>
+<p id="group__sanitizer__callback__api">Functions, types, and enums that implement the Sanitizer Callback API. </p>
+<p class="rubric-h2 rubric">Enumerations</p>
+<div class="dl-as-table docutils container">
+<dl class="simple">
+<dt><a class="reference internal" href="#group__sanitizer__callback__api_1ga0bc24cc0af4c2b8f9c50355c1c1d36ae"><span class="std std-ref">Sanitizer_ApiCallbackSite</span></a></dt><dd><p>Specifies the point in an API call that a callback is issued.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__callback__api_1gaab53af117ae98aa6acf0a6b4dfb71cfa"><span class="std std-ref">Sanitizer_BatchMemopType</span></a></dt><dd><p>Specifies the type of batch memory operation.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__callback__api_1gadf767501dec0e4e2deb55b0c76d35f5f"><span class="std std-ref">Sanitizer_CallackIdSync</span></a></dt><dd><p>Callback IDs for synchronization domain.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__callback__api_1ga2184025e5309c5989412b9f64beac46b"><span class="std std-ref">Sanitizer_CallbackDomain</span></a></dt><dd><p>Callback domains.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__callback__api_1gae089f8eea1aee2408f559e304d9d0ffa"><span class="std std-ref">Sanitizer_CallbackIdBatchMemop</span></a></dt><dd><p>Callback IDs for batch memop domain.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__callback__api_1gac64a40e719db73937178eba5ffea9b67"><span class="std std-ref">Sanitizer_CallbackIdEvents</span></a></dt><dd><p>Callback IDs for events domain.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__callback__api_1gafe4f153f58660f80e6dd95e874ccd72a"><span class="std std-ref">Sanitizer_CallbackIdExternalMemory</span></a></dt><dd><p>Callback IDs for external memory domain.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__callback__api_1ga65ad906ecc3006f2b49f63d8b09f38fd"><span class="std std-ref">Sanitizer_CallbackIdGraphs</span></a></dt><dd><p>Callback IDs for graphs domain.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__callback__api_1ga023cd56b97f1231cb0c4d11b4f8f95d4"><span class="std std-ref">Sanitizer_CallbackIdLaunch</span></a></dt><dd><p>Callback IDs for launch domain.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__callback__api_1ga9047997c07890c2fd3136ca731228bd5"><span class="std std-ref">Sanitizer_CallbackIdMemcpy</span></a></dt><dd><p>Callback IDs for memcpy domain.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__callback__api_1ga70a5aabab8a7528c5213ee5f535b466c"><span class="std std-ref">Sanitizer_CallbackIdMemset</span></a></dt><dd><p>Callback IDs for memset domain.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__callback__api_1gad447a2768c522f1d2b2a086a47705a49"><span class="std std-ref">Sanitizer_CallbackIdResource</span></a></dt><dd><p>Callback IDs for resource domain.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__callback__api_1gad0dca53274794d63531e7993fb6248a0"><span class="std std-ref">Sanitizer_CallbackIdUvm</span></a></dt><dd><p>Callback IDs for managed memory domain.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__callback__api_1ga6dd430318fea9a813020c974d07da85e"><span class="std std-ref">Sanitizer_MemcpyDirection</span></a></dt><dd><p>Memcpy direction.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__callback__api_1ga62d02f306fdb955ab1f5add810c45564"><span class="std std-ref">Sanitizer_MemoryVisibility</span></a></dt><dd><p>Specifies the visibility of an allocation.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__callback__api_1gad29155bb34524587a5a42d41be1d3fb2"><span class="std std-ref">Sanitizer_ResourceMemoryFlags</span></a></dt><dd><p>Flags describing a memory allocation.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__callback__api_1gac172db1fa20fecca6ac23c2954ae15a1"><span class="std std-ref">Sanitizer_ResourceMemoryPermissions</span></a></dt><dd><p>Permissions for a memory allocation.</p>
+</dd>
+</dl>
+</div>
+<p class="rubric-h2 rubric">Functions</p>
+<div class="dl-as-table docutils container">
+<dl class="simple">
+<dt><span class="tag-as-table-cell">SanitizerResult</span> <a class="reference internal" href="#group__sanitizer__callback__api_1ga7141b8c08d19678c49e55b48b6807048"><span class="std std-ref">sanitizerEnableAllDomains</span></a>(uint32_t enable, Sanitizer_SubscriberHandle subscriber)</dt><dd><p>Enable or disable all callbacks in all domains.</p>
+</dd>
+<dt><span class="tag-as-table-cell">SanitizerResult</span> <a class="reference internal" href="#group__sanitizer__callback__api_1ga7f9ccc2d0e0380061e8eed072c41b3b7"><span class="std std-ref">sanitizerEnableCallback</span></a>(uint32_t enable, Sanitizer_SubscriberHandle subscriber, Sanitizer_CallbackDomain domain, Sanitizer_CallbackId cbid)</dt><dd><p>Enable or disable callbacks for a specific domain and callback ID.</p>
+</dd>
+<dt><span class="tag-as-table-cell">SanitizerResult</span> <a class="reference internal" href="#group__sanitizer__callback__api_1ga2de696ffde337829a90b3d0b34a0293c"><span class="std std-ref">sanitizerEnableDomain</span></a>(uint32_t enable, Sanitizer_SubscriberHandle subscriber, Sanitizer_CallbackDomain domain)</dt><dd><p>Enable or disable all callbacks for a specific domain.</p>
+</dd>
+<dt><span class="tag-as-table-cell">SanitizerResult</span> <a class="reference internal" href="#group__sanitizer__callback__api_1gaabc521e1a8b19bea5adee39ed7e8c6e4"><span class="std std-ref">sanitizerGetCallbackState</span></a>(uint32_t *enable, Sanitizer_SubscriberHandle subscriber, Sanitizer_CallbackDomain domain, Sanitizer_CallbackId cbid)</dt><dd><p>Get the current enabled/disabled state of a callback for a specific domain and function ID.</p>
+</dd>
+<dt><span class="tag-as-table-cell">SanitizerResult</span> <a class="reference internal" href="#group__sanitizer__callback__api_1ga1654365b83859f8dfd48df6ea832c927"><span class="std std-ref">sanitizerSubscribe</span></a>(Sanitizer_SubscriberHandle *subscriber, Sanitizer_CallbackFunc callback, void *userdata)</dt><dd><p>Initialize a callback subscriber with a callback function and user data.</p>
+</dd>
+<dt><span class="tag-as-table-cell">SanitizerResult</span> <a class="reference internal" href="#group__sanitizer__callback__api_1gad278cce7894df2bb97002c25ff36e868"><span class="std std-ref">sanitizerUnsubscribe</span></a>(Sanitizer_SubscriberHandle subscriber)</dt><dd><p>Unregister a callback subscriber.</p>
+</dd>
+</dl>
+</div>
+<p class="rubric-h2 rubric">Structs</p>
+<div class="docutils container">
+<dl class="simple">
+<dt><a class="reference internal" href="structSanitizer__BatchMemopData.html#structsanitizer__batchmemopdata"><span class="std std-ref">Sanitizer_BatchMemopData</span></a></dt><dd><p>Data passed into a batch memop callback function.</p>
+</dd>
+<dt><a class="reference internal" href="structSanitizer__CallbackData.html#structsanitizer__callbackdata"><span class="std std-ref">Sanitizer_CallbackData</span></a></dt><dd><p>Data passed into a runtime or driver API callback function.</p>
+</dd>
+<dt><a class="reference internal" href="structSanitizer__EventData.html#structsanitizer__eventdata"><span class="std std-ref">Sanitizer_EventData</span></a></dt><dd><p>Data passed into an event callback function.</p>
+</dd>
+<dt><a class="reference internal" href="structSanitizer__ExternalMemoryData.html#structsanitizer__externalmemorydata"><span class="std std-ref">Sanitizer_ExternalMemoryData</span></a></dt><dd><p>Data passed into an external memory callback function.</p>
+</dd>
+<dt><a class="reference internal" href="structSanitizer__GraphExecData.html#structsanitizer__graphexecdata"><span class="std std-ref">Sanitizer_GraphExecData</span></a></dt><dd><p>Data passed into a graphexec creation callback function.</p>
+</dd>
+<dt><a class="reference internal" href="structSanitizer__GraphLaunchData.html#structsanitizer__graphlaunchdata"><span class="std std-ref">Sanitizer_GraphLaunchData</span></a></dt><dd><p>Data passed into a graph launch callback function.</p>
+</dd>
+<dt><a class="reference internal" href="structSanitizer__GraphNodeLaunchData.html#structsanitizer__graphnodelaunchdata"><span class="std std-ref">Sanitizer_GraphNodeLaunchData</span></a></dt><dd><p>Data passed into a graph node launch callback function.</p>
+</dd>
+<dt><a class="reference internal" href="structSanitizer__LaunchData.html#structsanitizer__launchdata"><span class="std std-ref">Sanitizer_LaunchData</span></a></dt><dd><p>Data passed into a launch callback function.</p>
+</dd>
+<dt><a class="reference internal" href="structSanitizer__MemcpyData.html#structsanitizer__memcpydata"><span class="std std-ref">Sanitizer_MemcpyData</span></a></dt><dd><p>Data passed into a memcpy callback function.</p>
+</dd>
+<dt><a class="reference internal" href="structSanitizer__MemsetData.html#structsanitizer__memsetdata"><span class="std std-ref">Sanitizer_MemsetData</span></a></dt><dd><p>Data passed into a memset callback function.</p>
+</dd>
+<dt><a class="reference internal" href="structSanitizer__ResourceArrayData.html#structsanitizer__resourcearraydata"><span class="std std-ref">Sanitizer_ResourceArrayData</span></a></dt><dd><p>Data passed into a CUDA array callback function.</p>
+</dd>
+<dt><a class="reference internal" href="structSanitizer__ResourceContextData.html#structsanitizer__resourcecontextdata"><span class="std std-ref">Sanitizer_ResourceContextData</span></a></dt><dd><p>Data passed into a context resource callback function.</p>
+</dd>
+<dt><a class="reference internal" href="structSanitizer__ResourceFunctionsLazyLoadedData.html#structsanitizer__resourcefunctionslazyloadeddata"><span class="std std-ref">Sanitizer_ResourceFunctionsLazyLoadedData</span></a></dt><dd><p>Data passed into a CUDA function callback function.</p>
+</dd>
+<dt><a class="reference internal" href="structSanitizer__ResourceMemoryData.html#structsanitizer__resourcememorydata"><span class="std std-ref">Sanitizer_ResourceMemoryData</span></a></dt><dd><p>Data passed into a memory resource callback function.</p>
+</dd>
+<dt><a class="reference internal" href="structSanitizer__ResourceMempoolData.html#structsanitizer__resourcemempooldata"><span class="std std-ref">Sanitizer_ResourceMempoolData</span></a></dt><dd><p>Data passed into a mempool resource callback function.</p>
+</dd>
+<dt><a class="reference internal" href="structSanitizer__ResourceModuleData.html#structsanitizer__resourcemoduledata"><span class="std std-ref">Sanitizer_ResourceModuleData</span></a></dt><dd><p>Data passed into a module resource callback function.</p>
+</dd>
+<dt><a class="reference internal" href="structSanitizer__ResourceStreamData.html#structsanitizer__resourcestreamdata"><span class="std std-ref">Sanitizer_ResourceStreamData</span></a></dt><dd><p>Data passed into a stream resource callback function.</p>
+</dd>
+<dt><a class="reference internal" href="structSanitizer__ResourceVirtualRange.html#structsanitizer__resourcevirtualrange"><span class="std std-ref">Sanitizer_ResourceVirtualRange</span></a></dt><dd><p>Data passed into a VA reservation callback function.</p>
+</dd>
+<dt><a class="reference internal" href="structSanitizer__SynchronizeData.html#structsanitizer__synchronizedata"><span class="std std-ref">Sanitizer_SynchronizeData</span></a></dt><dd><p>Data passed into a synchronization callback function.</p>
+</dd>
+<dt><a class="reference internal" href="structSanitizer__UvmData.html#structsanitizer__uvmdata"><span class="std std-ref">Sanitizer_UvmData</span></a></dt><dd><p>Data passed into a managed memory callback function.</p>
+</dd>
+</dl>
+</div>
+<p class="rubric-h2 rubric">Typedefs</p>
+<div class="dl-as-table docutils container">
+<dl class="simple">
+<dt><a class="reference internal" href="#group__sanitizer__callback__api_1gac1ae37612d036530e060f1bca8c3ccd8"><span class="std std-ref">Sanitizer_CallbackFunc</span></a></dt><dd><p>Function type for a callback.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__callback__api_1ga6e4655fe27c8ee6f85661350bfbc7bd7"><span class="std std-ref">Sanitizer_CallbackId</span></a></dt><dd><p>Callback ID.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__callback__api_1ga11604a410fe99da425a0bd40b17c7464"><span class="std std-ref">Sanitizer_SubscriberHandle</span></a></dt><dd><p>A callback subscriber.</p>
+</dd>
+</dl>
+</div>
+<section id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Permalink to this headline"></a></h2>
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv425Sanitizer_ApiCallbackSite">
+<span id="_CPPv325Sanitizer_ApiCallbackSite"></span><span id="_CPPv225Sanitizer_ApiCallbackSite"></span><span class="target" id="group__sanitizer__callback__api_1ga0bc24cc0af4c2b8f9c50355c1c1d36ae"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Sanitizer_ApiCallbackSite</span></span></span><a class="headerlink" href="#_CPPv425Sanitizer_ApiCallbackSite" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Specifies the point in an API call that a callback is issued. </p>
+<p>Specifies the point in an API that a callback is issued. This value is communicated to the callback function via Sanitizer_CallbackData::CallbackSize. </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N25Sanitizer_ApiCallbackSite19SANITIZER_API_ENTERE">
+<span id="_CPPv3N25Sanitizer_ApiCallbackSite19SANITIZER_API_ENTERE"></span><span id="_CPPv2N25Sanitizer_ApiCallbackSite19SANITIZER_API_ENTERE"></span><span class="target" id="group__sanitizer__callback__api_1gga0bc24cc0af4c2b8f9c50355c1c1d36aea2c586ea71b178fefe7bba33fbf934412"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_API_ENTER</span></span></span><a class="headerlink" href="#_CPPv4N25Sanitizer_ApiCallbackSite19SANITIZER_API_ENTERE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>This callback is at API entry. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N25Sanitizer_ApiCallbackSite18SANITIZER_API_EXITE">
+<span id="_CPPv3N25Sanitizer_ApiCallbackSite18SANITIZER_API_EXITE"></span><span id="_CPPv2N25Sanitizer_ApiCallbackSite18SANITIZER_API_EXITE"></span><span class="target" id="group__sanitizer__callback__api_1gga0bc24cc0af4c2b8f9c50355c1c1d36aeab0d68d7e16d4d3a67df49b7e0dd7e446"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_API_EXIT</span></span></span><a class="headerlink" href="#_CPPv4N25Sanitizer_ApiCallbackSite18SANITIZER_API_EXITE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>This callback is at API exit. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N25Sanitizer_ApiCallbackSite30SANITIZER_API_CBSITE_FORCE_INTE">
+<span id="_CPPv3N25Sanitizer_ApiCallbackSite30SANITIZER_API_CBSITE_FORCE_INTE"></span><span id="_CPPv2N25Sanitizer_ApiCallbackSite30SANITIZER_API_CBSITE_FORCE_INTE"></span><span class="target" id="group__sanitizer__callback__api_1gga0bc24cc0af4c2b8f9c50355c1c1d36aea20d021090d2b18985cc38fc7f0c7706d"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_API_CBSITE_FORCE_INT</span></span></span><a class="headerlink" href="#_CPPv4N25Sanitizer_ApiCallbackSite30SANITIZER_API_CBSITE_FORCE_INTE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv424Sanitizer_BatchMemopType">
+<span id="_CPPv324Sanitizer_BatchMemopType"></span><span id="_CPPv224Sanitizer_BatchMemopType"></span><span class="target" id="group__sanitizer__callback__api_1gaab53af117ae98aa6acf0a6b4dfb71cfa"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Sanitizer_BatchMemopType</span></span></span><a class="headerlink" href="#_CPPv424Sanitizer_BatchMemopType" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Specifies the type of batch memory operation. </p>
+<p>Specifies the type of batch memory operation reported by a callback in domain SANITIZER_CB_DOMAIN_BATCH_MEMOP. This value is communicated to the callback function via <a class="reference internal" href="structSanitizer__BatchMemopData.html#structsanitizer__batchmemopdata_1a874b875cc64512766ed6d8f43fea3afd"><span class="std std-ref">Sanitizer_BatchMemopData::type</span></a>. </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N24Sanitizer_BatchMemopType30SANITIZER_BATCH_MEMOP_TYPE_32BE">
+<span id="_CPPv3N24Sanitizer_BatchMemopType30SANITIZER_BATCH_MEMOP_TYPE_32BE"></span><span id="_CPPv2N24Sanitizer_BatchMemopType30SANITIZER_BATCH_MEMOP_TYPE_32BE"></span><span class="target" id="group__sanitizer__callback__api_1ggaab53af117ae98aa6acf0a6b4dfb71cfaaee1dd1870400d2b5d4abc9bc1b274995"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_BATCH_MEMOP_TYPE_32B</span></span></span><a class="headerlink" href="#_CPPv4N24Sanitizer_BatchMemopType30SANITIZER_BATCH_MEMOP_TYPE_32BE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Batch memory operation size is 32 bits. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N24Sanitizer_BatchMemopType30SANITIZER_BATCH_MEMOP_TYPE_64BE">
+<span id="_CPPv3N24Sanitizer_BatchMemopType30SANITIZER_BATCH_MEMOP_TYPE_64BE"></span><span id="_CPPv2N24Sanitizer_BatchMemopType30SANITIZER_BATCH_MEMOP_TYPE_64BE"></span><span class="target" id="group__sanitizer__callback__api_1ggaab53af117ae98aa6acf0a6b4dfb71cfaa429cd1d863fefe747795c064679a6b7d"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_BATCH_MEMOP_TYPE_64B</span></span></span><a class="headerlink" href="#_CPPv4N24Sanitizer_BatchMemopType30SANITIZER_BATCH_MEMOP_TYPE_64BE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Batch memory operation size is 64 bits. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N24Sanitizer_BatchMemopType36SANITIZER_BATCH_MEMOP_TYPE_FORCE_INTE">
+<span id="_CPPv3N24Sanitizer_BatchMemopType36SANITIZER_BATCH_MEMOP_TYPE_FORCE_INTE"></span><span id="_CPPv2N24Sanitizer_BatchMemopType36SANITIZER_BATCH_MEMOP_TYPE_FORCE_INTE"></span><span class="target" id="group__sanitizer__callback__api_1ggaab53af117ae98aa6acf0a6b4dfb71cfaaf28cc659163064f9417ba4a02298707d"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_BATCH_MEMOP_TYPE_FORCE_INT</span></span></span><a class="headerlink" href="#_CPPv4N24Sanitizer_BatchMemopType36SANITIZER_BATCH_MEMOP_TYPE_FORCE_INTE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv423Sanitizer_CallackIdSync">
+<span id="_CPPv323Sanitizer_CallackIdSync"></span><span id="_CPPv223Sanitizer_CallackIdSync"></span><span class="target" id="group__sanitizer__callback__api_1gadf767501dec0e4e2deb55b0c76d35f5f"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Sanitizer_CallackIdSync</span></span></span><a class="headerlink" href="#_CPPv423Sanitizer_CallackIdSync" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Callback IDs for synchronization domain. </p>
+<p>Callback IDs for resource domain SANITIZER_CB_DOMAIN_SYNCHRONIZE. This value is communicated to the callback function via the <code class="docutils literal notranslate"><span class="pre">cbid</span></code> parameter. </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N23Sanitizer_CallackIdSync34SANITIZER_CBID_SYNCHRONIZE_INVALIDE">
+<span id="_CPPv3N23Sanitizer_CallackIdSync34SANITIZER_CBID_SYNCHRONIZE_INVALIDE"></span><span id="_CPPv2N23Sanitizer_CallackIdSync34SANITIZER_CBID_SYNCHRONIZE_INVALIDE"></span><span class="target" id="group__sanitizer__callback__api_1ggadf767501dec0e4e2deb55b0c76d35f5facf44b97bbe7f31befa64b938a3631fd1"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_SYNCHRONIZE_INVALID</span></span></span><a class="headerlink" href="#_CPPv4N23Sanitizer_CallackIdSync34SANITIZER_CBID_SYNCHRONIZE_INVALIDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Invalid synchronize callback ID. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N23Sanitizer_CallackIdSync46SANITIZER_CBID_SYNCHRONIZE_STREAM_SYNCHRONIZEDE">
+<span id="_CPPv3N23Sanitizer_CallackIdSync46SANITIZER_CBID_SYNCHRONIZE_STREAM_SYNCHRONIZEDE"></span><span id="_CPPv2N23Sanitizer_CallackIdSync46SANITIZER_CBID_SYNCHRONIZE_STREAM_SYNCHRONIZEDE"></span><span class="target" id="group__sanitizer__callback__api_1ggadf767501dec0e4e2deb55b0c76d35f5fa2a581721ae7bfc5da910a4b21c38a323"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_SYNCHRONIZE_STREAM_SYNCHRONIZED</span></span></span><a class="headerlink" href="#_CPPv4N23Sanitizer_CallackIdSync46SANITIZER_CBID_SYNCHRONIZE_STREAM_SYNCHRONIZEDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Stream synchronization has completed for a given stream. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N23Sanitizer_CallackIdSync47SANITIZER_CBID_SYNCHRONIZE_CONTEXT_SYNCHRONIZEDE">
+<span id="_CPPv3N23Sanitizer_CallackIdSync47SANITIZER_CBID_SYNCHRONIZE_CONTEXT_SYNCHRONIZEDE"></span><span id="_CPPv2N23Sanitizer_CallackIdSync47SANITIZER_CBID_SYNCHRONIZE_CONTEXT_SYNCHRONIZEDE"></span><span class="target" id="group__sanitizer__callback__api_1ggadf767501dec0e4e2deb55b0c76d35f5fab5a0541ea36095bad50c9a77cb7f2b37"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_SYNCHRONIZE_CONTEXT_SYNCHRONIZED</span></span></span><a class="headerlink" href="#_CPPv4N23Sanitizer_CallackIdSync47SANITIZER_CBID_SYNCHRONIZE_CONTEXT_SYNCHRONIZEDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Context synchronization has completed for a given context. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N23Sanitizer_CallackIdSync31SANITIZER_CBID_SYNCHRONIZE_SIZEE">
+<span id="_CPPv3N23Sanitizer_CallackIdSync31SANITIZER_CBID_SYNCHRONIZE_SIZEE"></span><span id="_CPPv2N23Sanitizer_CallackIdSync31SANITIZER_CBID_SYNCHRONIZE_SIZEE"></span><span class="target" id="group__sanitizer__callback__api_1ggadf767501dec0e4e2deb55b0c76d35f5faf87e8253b63429b87ff3674cd1e53e11"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_SYNCHRONIZE_SIZE</span></span></span><a class="headerlink" href="#_CPPv4N23Sanitizer_CallackIdSync31SANITIZER_CBID_SYNCHRONIZE_SIZEE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N23Sanitizer_CallackIdSync36SANITIZER_CBID_SYNCHRONIZE_FORCE_INTE">
+<span id="_CPPv3N23Sanitizer_CallackIdSync36SANITIZER_CBID_SYNCHRONIZE_FORCE_INTE"></span><span id="_CPPv2N23Sanitizer_CallackIdSync36SANITIZER_CBID_SYNCHRONIZE_FORCE_INTE"></span><span class="target" id="group__sanitizer__callback__api_1ggadf767501dec0e4e2deb55b0c76d35f5fa804d440981578b214c3f87ec3021ed84"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_SYNCHRONIZE_FORCE_INT</span></span></span><a class="headerlink" href="#_CPPv4N23Sanitizer_CallackIdSync36SANITIZER_CBID_SYNCHRONIZE_FORCE_INTE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv424Sanitizer_CallbackDomain">
+<span id="_CPPv324Sanitizer_CallbackDomain"></span><span id="_CPPv224Sanitizer_CallbackDomain"></span><span class="target" id="group__sanitizer__callback__api_1ga2184025e5309c5989412b9f64beac46b"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Sanitizer_CallbackDomain</span></span></span><a class="headerlink" href="#_CPPv424Sanitizer_CallbackDomain" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Callback domains. </p>
+<p>Callback domain. Each domain represents callback points for a group of related API functions or CUDA driver activity. </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N24Sanitizer_CallbackDomain27SANITIZER_CB_DOMAIN_INVALIDE">
+<span id="_CPPv3N24Sanitizer_CallbackDomain27SANITIZER_CB_DOMAIN_INVALIDE"></span><span id="_CPPv2N24Sanitizer_CallbackDomain27SANITIZER_CB_DOMAIN_INVALIDE"></span><span class="target" id="group__sanitizer__callback__api_1gga2184025e5309c5989412b9f64beac46bad636f502a9364e0031d5fc0ea47d94e2"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CB_DOMAIN_INVALID</span></span></span><a class="headerlink" href="#_CPPv4N24Sanitizer_CallbackDomain27SANITIZER_CB_DOMAIN_INVALIDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Invalid domain. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N24Sanitizer_CallbackDomain30SANITIZER_CB_DOMAIN_DRIVER_APIE">
+<span id="_CPPv3N24Sanitizer_CallbackDomain30SANITIZER_CB_DOMAIN_DRIVER_APIE"></span><span id="_CPPv2N24Sanitizer_CallbackDomain30SANITIZER_CB_DOMAIN_DRIVER_APIE"></span><span class="target" id="group__sanitizer__callback__api_1gga2184025e5309c5989412b9f64beac46ba584e0d10a04d1ce4d91b604ba17af174"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CB_DOMAIN_DRIVER_API</span></span></span><a class="headerlink" href="#_CPPv4N24Sanitizer_CallbackDomain30SANITIZER_CB_DOMAIN_DRIVER_APIE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Domain containing callback points for all driver API functions. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N24Sanitizer_CallbackDomain31SANITIZER_CB_DOMAIN_RUNTIME_APIE">
+<span id="_CPPv3N24Sanitizer_CallbackDomain31SANITIZER_CB_DOMAIN_RUNTIME_APIE"></span><span id="_CPPv2N24Sanitizer_CallbackDomain31SANITIZER_CB_DOMAIN_RUNTIME_APIE"></span><span class="target" id="group__sanitizer__callback__api_1gga2184025e5309c5989412b9f64beac46ba7aa34f41d42ddf2360cc8d54d8b0f521"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CB_DOMAIN_RUNTIME_API</span></span></span><a class="headerlink" href="#_CPPv4N24Sanitizer_CallbackDomain31SANITIZER_CB_DOMAIN_RUNTIME_APIE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Domain containing callback points for all runtime API functions. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N24Sanitizer_CallbackDomain28SANITIZER_CB_DOMAIN_RESOURCEE">
+<span id="_CPPv3N24Sanitizer_CallbackDomain28SANITIZER_CB_DOMAIN_RESOURCEE"></span><span id="_CPPv2N24Sanitizer_CallbackDomain28SANITIZER_CB_DOMAIN_RESOURCEE"></span><span class="target" id="group__sanitizer__callback__api_1gga2184025e5309c5989412b9f64beac46ba5e762a37fc6de9651fd86615f2fa537b"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CB_DOMAIN_RESOURCE</span></span></span><a class="headerlink" href="#_CPPv4N24Sanitizer_CallbackDomain28SANITIZER_CB_DOMAIN_RESOURCEE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Domain containing callback points for CUDA resource tracking. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N24Sanitizer_CallbackDomain31SANITIZER_CB_DOMAIN_SYNCHRONIZEE">
+<span id="_CPPv3N24Sanitizer_CallbackDomain31SANITIZER_CB_DOMAIN_SYNCHRONIZEE"></span><span id="_CPPv2N24Sanitizer_CallbackDomain31SANITIZER_CB_DOMAIN_SYNCHRONIZEE"></span><span class="target" id="group__sanitizer__callback__api_1gga2184025e5309c5989412b9f64beac46bab9bb9a6373d15cbff742fc1656bb0416"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CB_DOMAIN_SYNCHRONIZE</span></span></span><a class="headerlink" href="#_CPPv4N24Sanitizer_CallbackDomain31SANITIZER_CB_DOMAIN_SYNCHRONIZEE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Domain containing callback points for CUDA synchronization. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N24Sanitizer_CallbackDomain26SANITIZER_CB_DOMAIN_LAUNCHE">
+<span id="_CPPv3N24Sanitizer_CallbackDomain26SANITIZER_CB_DOMAIN_LAUNCHE"></span><span id="_CPPv2N24Sanitizer_CallbackDomain26SANITIZER_CB_DOMAIN_LAUNCHE"></span><span class="target" id="group__sanitizer__callback__api_1gga2184025e5309c5989412b9f64beac46ba76da136b51d4868c98cb706c02bd3a60"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CB_DOMAIN_LAUNCH</span></span></span><a class="headerlink" href="#_CPPv4N24Sanitizer_CallbackDomain26SANITIZER_CB_DOMAIN_LAUNCHE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Domain containing callback points for CUDA grid launches. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N24Sanitizer_CallbackDomain26SANITIZER_CB_DOMAIN_MEMCPYE">
+<span id="_CPPv3N24Sanitizer_CallbackDomain26SANITIZER_CB_DOMAIN_MEMCPYE"></span><span id="_CPPv2N24Sanitizer_CallbackDomain26SANITIZER_CB_DOMAIN_MEMCPYE"></span><span class="target" id="group__sanitizer__callback__api_1gga2184025e5309c5989412b9f64beac46ba95fbde80182449300ec201f264e7dfb3"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CB_DOMAIN_MEMCPY</span></span></span><a class="headerlink" href="#_CPPv4N24Sanitizer_CallbackDomain26SANITIZER_CB_DOMAIN_MEMCPYE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Domain containing callback points for CUDA memcpy operations. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N24Sanitizer_CallbackDomain26SANITIZER_CB_DOMAIN_MEMSETE">
+<span id="_CPPv3N24Sanitizer_CallbackDomain26SANITIZER_CB_DOMAIN_MEMSETE"></span><span id="_CPPv2N24Sanitizer_CallbackDomain26SANITIZER_CB_DOMAIN_MEMSETE"></span><span class="target" id="group__sanitizer__callback__api_1gga2184025e5309c5989412b9f64beac46ba8fd6b1f2d4230f466089bd823e8f7f6a"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CB_DOMAIN_MEMSET</span></span></span><a class="headerlink" href="#_CPPv4N24Sanitizer_CallbackDomain26SANITIZER_CB_DOMAIN_MEMSETE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Domain containing callback points for CUDA memset operations. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N24Sanitizer_CallbackDomain31SANITIZER_CB_DOMAIN_BATCH_MEMOPE">
+<span id="_CPPv3N24Sanitizer_CallbackDomain31SANITIZER_CB_DOMAIN_BATCH_MEMOPE"></span><span id="_CPPv2N24Sanitizer_CallbackDomain31SANITIZER_CB_DOMAIN_BATCH_MEMOPE"></span><span class="target" id="group__sanitizer__callback__api_1gga2184025e5309c5989412b9f64beac46bac413ad3c7766b3d5baa4857b9281328f"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CB_DOMAIN_BATCH_MEMOP</span></span></span><a class="headerlink" href="#_CPPv4N24Sanitizer_CallbackDomain31SANITIZER_CB_DOMAIN_BATCH_MEMOPE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Domain containing callback points for CUDA batch memop operations. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N24Sanitizer_CallbackDomain23SANITIZER_CB_DOMAIN_UVME">
+<span id="_CPPv3N24Sanitizer_CallbackDomain23SANITIZER_CB_DOMAIN_UVME"></span><span id="_CPPv2N24Sanitizer_CallbackDomain23SANITIZER_CB_DOMAIN_UVME"></span><span class="target" id="group__sanitizer__callback__api_1gga2184025e5309c5989412b9f64beac46ba3fb8aa18ec9e7c7cab4b07ab6a7bcd08"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CB_DOMAIN_UVM</span></span></span><a class="headerlink" href="#_CPPv4N24Sanitizer_CallbackDomain23SANITIZER_CB_DOMAIN_UVME" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Domain containing callback points for CUDA managed memory operations. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N24Sanitizer_CallbackDomain26SANITIZER_CB_DOMAIN_GRAPHSE">
+<span id="_CPPv3N24Sanitizer_CallbackDomain26SANITIZER_CB_DOMAIN_GRAPHSE"></span><span id="_CPPv2N24Sanitizer_CallbackDomain26SANITIZER_CB_DOMAIN_GRAPHSE"></span><span class="target" id="group__sanitizer__callback__api_1gga2184025e5309c5989412b9f64beac46babca42bd5841566bfa1c3fb4cf3cc24ba"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CB_DOMAIN_GRAPHS</span></span></span><a class="headerlink" href="#_CPPv4N24Sanitizer_CallbackDomain26SANITIZER_CB_DOMAIN_GRAPHSE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Domain containing callback points for CUDA graphs operations. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N24Sanitizer_CallbackDomain26SANITIZER_CB_DOMAIN_EVENTSE">
+<span id="_CPPv3N24Sanitizer_CallbackDomain26SANITIZER_CB_DOMAIN_EVENTSE"></span><span id="_CPPv2N24Sanitizer_CallbackDomain26SANITIZER_CB_DOMAIN_EVENTSE"></span><span class="target" id="group__sanitizer__callback__api_1gga2184025e5309c5989412b9f64beac46ba55aaba2060ad6b533536107498647aa0"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CB_DOMAIN_EVENTS</span></span></span><a class="headerlink" href="#_CPPv4N24Sanitizer_CallbackDomain26SANITIZER_CB_DOMAIN_EVENTSE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Domain containing callback points for CUDA events. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N24Sanitizer_CallbackDomain35SANITIZER_CB_DOMAIN_EXTERNAL_MEMORYE">
+<span id="_CPPv3N24Sanitizer_CallbackDomain35SANITIZER_CB_DOMAIN_EXTERNAL_MEMORYE"></span><span id="_CPPv2N24Sanitizer_CallbackDomain35SANITIZER_CB_DOMAIN_EXTERNAL_MEMORYE"></span><span class="target" id="group__sanitizer__callback__api_1gga2184025e5309c5989412b9f64beac46ba8c9e69090764e887db2e94561a064fd6"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CB_DOMAIN_EXTERNAL_MEMORY</span></span></span><a class="headerlink" href="#_CPPv4N24Sanitizer_CallbackDomain35SANITIZER_CB_DOMAIN_EXTERNAL_MEMORYE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Domain containing callback points for CUDA external memory. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N24Sanitizer_CallbackDomain24SANITIZER_CB_DOMAIN_SIZEE">
+<span id="_CPPv3N24Sanitizer_CallbackDomain24SANITIZER_CB_DOMAIN_SIZEE"></span><span id="_CPPv2N24Sanitizer_CallbackDomain24SANITIZER_CB_DOMAIN_SIZEE"></span><span class="target" id="group__sanitizer__callback__api_1gga2184025e5309c5989412b9f64beac46ba4054a210f46312209482d4e0ebe644c8"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CB_DOMAIN_SIZE</span></span></span><a class="headerlink" href="#_CPPv4N24Sanitizer_CallbackDomain24SANITIZER_CB_DOMAIN_SIZEE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N24Sanitizer_CallbackDomain29SANITIZER_CB_DOMAIN_FORCE_INTE">
+<span id="_CPPv3N24Sanitizer_CallbackDomain29SANITIZER_CB_DOMAIN_FORCE_INTE"></span><span id="_CPPv2N24Sanitizer_CallbackDomain29SANITIZER_CB_DOMAIN_FORCE_INTE"></span><span class="target" id="group__sanitizer__callback__api_1gga2184025e5309c5989412b9f64beac46ba060c15c774a89178f40f76c779cf1af3"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CB_DOMAIN_FORCE_INT</span></span></span><a class="headerlink" href="#_CPPv4N24Sanitizer_CallbackDomain29SANITIZER_CB_DOMAIN_FORCE_INTE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv430Sanitizer_CallbackIdBatchMemop">
+<span id="_CPPv330Sanitizer_CallbackIdBatchMemop"></span><span id="_CPPv230Sanitizer_CallbackIdBatchMemop"></span><span class="target" id="group__sanitizer__callback__api_1gae089f8eea1aee2408f559e304d9d0ffa"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Sanitizer_CallbackIdBatchMemop</span></span></span><a class="headerlink" href="#_CPPv430Sanitizer_CallbackIdBatchMemop" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Callback IDs for batch memop domain. </p>
+<p>Callback IDs for resource domain SANITIZER_CB_DOMAIN_BATCH_MEMOP. This value is communicated to the callback function via the <code class="docutils literal notranslate"><span class="pre">cbid</span></code> parameter. </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N30Sanitizer_CallbackIdBatchMemop34SANITIZER_CBID_BATCH_MEMOP_INVALIDE">
+<span id="_CPPv3N30Sanitizer_CallbackIdBatchMemop34SANITIZER_CBID_BATCH_MEMOP_INVALIDE"></span><span id="_CPPv2N30Sanitizer_CallbackIdBatchMemop34SANITIZER_CBID_BATCH_MEMOP_INVALIDE"></span><span class="target" id="group__sanitizer__callback__api_1ggae089f8eea1aee2408f559e304d9d0ffaac36e6935acb088cb8297fe031f0820bb"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_BATCH_MEMOP_INVALID</span></span></span><a class="headerlink" href="#_CPPv4N30Sanitizer_CallbackIdBatchMemop34SANITIZER_CBID_BATCH_MEMOP_INVALIDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Invalid batch memop callback ID. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N30Sanitizer_CallbackIdBatchMemop32SANITIZER_CBID_BATCH_MEMOP_WRITEE">
+<span id="_CPPv3N30Sanitizer_CallbackIdBatchMemop32SANITIZER_CBID_BATCH_MEMOP_WRITEE"></span><span id="_CPPv2N30Sanitizer_CallbackIdBatchMemop32SANITIZER_CBID_BATCH_MEMOP_WRITEE"></span><span class="target" id="group__sanitizer__callback__api_1ggae089f8eea1aee2408f559e304d9d0ffaa3d805bd2669a0619aa0e6cc639b716ca"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_BATCH_MEMOP_WRITE</span></span></span><a class="headerlink" href="#_CPPv4N30Sanitizer_CallbackIdBatchMemop32SANITIZER_CBID_BATCH_MEMOP_WRITEE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A batch memory operation was initiated. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N30Sanitizer_CallbackIdBatchMemop31SANITIZER_CBID_BATCH_MEMOP_SIZEE">
+<span id="_CPPv3N30Sanitizer_CallbackIdBatchMemop31SANITIZER_CBID_BATCH_MEMOP_SIZEE"></span><span id="_CPPv2N30Sanitizer_CallbackIdBatchMemop31SANITIZER_CBID_BATCH_MEMOP_SIZEE"></span><span class="target" id="group__sanitizer__callback__api_1ggae089f8eea1aee2408f559e304d9d0ffaae6ae2f89f19e7ce0960970001df37a6f"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_BATCH_MEMOP_SIZE</span></span></span><a class="headerlink" href="#_CPPv4N30Sanitizer_CallbackIdBatchMemop31SANITIZER_CBID_BATCH_MEMOP_SIZEE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N30Sanitizer_CallbackIdBatchMemop36SANITIZER_CBID_BATCH_MEMOP_FORCE_INTE">
+<span id="_CPPv3N30Sanitizer_CallbackIdBatchMemop36SANITIZER_CBID_BATCH_MEMOP_FORCE_INTE"></span><span id="_CPPv2N30Sanitizer_CallbackIdBatchMemop36SANITIZER_CBID_BATCH_MEMOP_FORCE_INTE"></span><span class="target" id="group__sanitizer__callback__api_1ggae089f8eea1aee2408f559e304d9d0ffaa4a68185c9acdf0d0b77b9a7cccede260"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_BATCH_MEMOP_FORCE_INT</span></span></span><a class="headerlink" href="#_CPPv4N30Sanitizer_CallbackIdBatchMemop36SANITIZER_CBID_BATCH_MEMOP_FORCE_INTE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv426Sanitizer_CallbackIdEvents">
+<span id="_CPPv326Sanitizer_CallbackIdEvents"></span><span id="_CPPv226Sanitizer_CallbackIdEvents"></span><span class="target" id="group__sanitizer__callback__api_1gac64a40e719db73937178eba5ffea9b67"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Sanitizer_CallbackIdEvents</span></span></span><a class="headerlink" href="#_CPPv426Sanitizer_CallbackIdEvents" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Callback IDs for events domain. </p>
+<p>Callback IDs for resource domain SANITIZER_CB_DOMAIN_EVENTS. This value is communicated to the callback function via the <code class="docutils literal notranslate"><span class="pre">cbid</span></code> parameter. Available with a driver version of 515 or newer. </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N26Sanitizer_CallbackIdEvents29SANITIZER_CBID_EVENTS_INVALIDE">
+<span id="_CPPv3N26Sanitizer_CallbackIdEvents29SANITIZER_CBID_EVENTS_INVALIDE"></span><span id="_CPPv2N26Sanitizer_CallbackIdEvents29SANITIZER_CBID_EVENTS_INVALIDE"></span><span class="target" id="group__sanitizer__callback__api_1ggac64a40e719db73937178eba5ffea9b67abb3d0267b41ff1732614bc19f341e8e1"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_EVENTS_INVALID</span></span></span><a class="headerlink" href="#_CPPv4N26Sanitizer_CallbackIdEvents29SANITIZER_CBID_EVENTS_INVALIDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Invalid event callback ID. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N26Sanitizer_CallbackIdEvents29SANITIZER_CBID_EVENTS_CREATEDE">
+<span id="_CPPv3N26Sanitizer_CallbackIdEvents29SANITIZER_CBID_EVENTS_CREATEDE"></span><span id="_CPPv2N26Sanitizer_CallbackIdEvents29SANITIZER_CBID_EVENTS_CREATEDE"></span><span class="target" id="group__sanitizer__callback__api_1ggac64a40e719db73937178eba5ffea9b67a7ffbc0eff672e59e69664946cdf18b80"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_EVENTS_CREATED</span></span></span><a class="headerlink" href="#_CPPv4N26Sanitizer_CallbackIdEvents29SANITIZER_CBID_EVENTS_CREATEDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>An event was created. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N26Sanitizer_CallbackIdEvents31SANITIZER_CBID_EVENTS_DESTROYEDE">
+<span id="_CPPv3N26Sanitizer_CallbackIdEvents31SANITIZER_CBID_EVENTS_DESTROYEDE"></span><span id="_CPPv2N26Sanitizer_CallbackIdEvents31SANITIZER_CBID_EVENTS_DESTROYEDE"></span><span class="target" id="group__sanitizer__callback__api_1ggac64a40e719db73937178eba5ffea9b67ab2e80fab3842b23f3441d720987eb10e"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_EVENTS_DESTROYED</span></span></span><a class="headerlink" href="#_CPPv4N26Sanitizer_CallbackIdEvents31SANITIZER_CBID_EVENTS_DESTROYEDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>An event was destroyed. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N26Sanitizer_CallbackIdEvents28SANITIZER_CBID_EVENTS_RECORDE">
+<span id="_CPPv3N26Sanitizer_CallbackIdEvents28SANITIZER_CBID_EVENTS_RECORDE"></span><span id="_CPPv2N26Sanitizer_CallbackIdEvents28SANITIZER_CBID_EVENTS_RECORDE"></span><span class="target" id="group__sanitizer__callback__api_1ggac64a40e719db73937178eba5ffea9b67a4377192e40db2eccc3814762b34565f0"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_EVENTS_RECORD</span></span></span><a class="headerlink" href="#_CPPv4N26Sanitizer_CallbackIdEvents28SANITIZER_CBID_EVENTS_RECORDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>An event was recorded. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N26Sanitizer_CallbackIdEvents33SANITIZER_CBID_EVENTS_STREAM_WAITE">
+<span id="_CPPv3N26Sanitizer_CallbackIdEvents33SANITIZER_CBID_EVENTS_STREAM_WAITE"></span><span id="_CPPv2N26Sanitizer_CallbackIdEvents33SANITIZER_CBID_EVENTS_STREAM_WAITE"></span><span class="target" id="group__sanitizer__callback__api_1ggac64a40e719db73937178eba5ffea9b67a4ddf6e8055238263b9f01565b20fe7a2"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_EVENTS_STREAM_WAIT</span></span></span><a class="headerlink" href="#_CPPv4N26Sanitizer_CallbackIdEvents33SANITIZER_CBID_EVENTS_STREAM_WAITE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A stream was synchronized to an event. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N26Sanitizer_CallbackIdEvents33SANITIZER_CBID_EVENTS_SYNCHRONIZEE">
+<span id="_CPPv3N26Sanitizer_CallbackIdEvents33SANITIZER_CBID_EVENTS_SYNCHRONIZEE"></span><span id="_CPPv2N26Sanitizer_CallbackIdEvents33SANITIZER_CBID_EVENTS_SYNCHRONIZEE"></span><span class="target" id="group__sanitizer__callback__api_1ggac64a40e719db73937178eba5ffea9b67a9ec800d3b0f497588ee7e6fd3f482ad7"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_EVENTS_SYNCHRONIZE</span></span></span><a class="headerlink" href="#_CPPv4N26Sanitizer_CallbackIdEvents33SANITIZER_CBID_EVENTS_SYNCHRONIZEE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>An event was synchronized. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N26Sanitizer_CallbackIdEvents26SANITIZER_CBID_EVENTS_SIZEE">
+<span id="_CPPv3N26Sanitizer_CallbackIdEvents26SANITIZER_CBID_EVENTS_SIZEE"></span><span id="_CPPv2N26Sanitizer_CallbackIdEvents26SANITIZER_CBID_EVENTS_SIZEE"></span><span class="target" id="group__sanitizer__callback__api_1ggac64a40e719db73937178eba5ffea9b67add17b33d128d64e458568bce619e745c"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_EVENTS_SIZE</span></span></span><a class="headerlink" href="#_CPPv4N26Sanitizer_CallbackIdEvents26SANITIZER_CBID_EVENTS_SIZEE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N26Sanitizer_CallbackIdEvents31SANITIZER_CBID_EVENTS_FORCE_INTE">
+<span id="_CPPv3N26Sanitizer_CallbackIdEvents31SANITIZER_CBID_EVENTS_FORCE_INTE"></span><span id="_CPPv2N26Sanitizer_CallbackIdEvents31SANITIZER_CBID_EVENTS_FORCE_INTE"></span><span class="target" id="group__sanitizer__callback__api_1ggac64a40e719db73937178eba5ffea9b67adf98dd3497f4e50776db0cd1642c0dc2"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_EVENTS_FORCE_INT</span></span></span><a class="headerlink" href="#_CPPv4N26Sanitizer_CallbackIdEvents31SANITIZER_CBID_EVENTS_FORCE_INTE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv434Sanitizer_CallbackIdExternalMemory">
+<span id="_CPPv334Sanitizer_CallbackIdExternalMemory"></span><span id="_CPPv234Sanitizer_CallbackIdExternalMemory"></span><span class="target" id="group__sanitizer__callback__api_1gafe4f153f58660f80e6dd95e874ccd72a"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Sanitizer_CallbackIdExternalMemory</span></span></span><a class="headerlink" href="#_CPPv434Sanitizer_CallbackIdExternalMemory" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Callback IDs for external memory domain. </p>
+<p>Callback IDs for resource domain SANITIZER_CB_DOMAIN_EXTERNA_MEMORY. This value is communicated to the callback function via the <code class="docutils literal notranslate"><span class="pre">cbid</span></code> parameter. Available with a driver version of 535 or newer. </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N34Sanitizer_CallbackIdExternalMemory38SANITIZER_CBID_EXTERNAL_MEMORY_INVALIDE">
+<span id="_CPPv3N34Sanitizer_CallbackIdExternalMemory38SANITIZER_CBID_EXTERNAL_MEMORY_INVALIDE"></span><span id="_CPPv2N34Sanitizer_CallbackIdExternalMemory38SANITIZER_CBID_EXTERNAL_MEMORY_INVALIDE"></span><span class="target" id="group__sanitizer__callback__api_1ggafe4f153f58660f80e6dd95e874ccd72aa7527bef20e529d49fd87b60e27ab4c46"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_EXTERNAL_MEMORY_INVALID</span></span></span><a class="headerlink" href="#_CPPv4N34Sanitizer_CallbackIdExternalMemory38SANITIZER_CBID_EXTERNAL_MEMORY_INVALIDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Invalid external memory callback ID. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N34Sanitizer_CallbackIdExternalMemory37SANITIZER_CBID_EXTERNAL_MEMORY_IMPORTE">
+<span id="_CPPv3N34Sanitizer_CallbackIdExternalMemory37SANITIZER_CBID_EXTERNAL_MEMORY_IMPORTE"></span><span id="_CPPv2N34Sanitizer_CallbackIdExternalMemory37SANITIZER_CBID_EXTERNAL_MEMORY_IMPORTE"></span><span class="target" id="group__sanitizer__callback__api_1ggafe4f153f58660f80e6dd95e874ccd72aa667e49589832129e3555f39d00842e12"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_EXTERNAL_MEMORY_IMPORT</span></span></span><a class="headerlink" href="#_CPPv4N34Sanitizer_CallbackIdExternalMemory37SANITIZER_CBID_EXTERNAL_MEMORY_IMPORTE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>External memory was imported. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N34Sanitizer_CallbackIdExternalMemory37SANITIZER_CBID_EXTERNAL_MEMORY_MAPPEDE">
+<span id="_CPPv3N34Sanitizer_CallbackIdExternalMemory37SANITIZER_CBID_EXTERNAL_MEMORY_MAPPEDE"></span><span id="_CPPv2N34Sanitizer_CallbackIdExternalMemory37SANITIZER_CBID_EXTERNAL_MEMORY_MAPPEDE"></span><span class="target" id="group__sanitizer__callback__api_1ggafe4f153f58660f80e6dd95e874ccd72aa95a1d744235c2ec6c120cc4d9e1e1d19"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_EXTERNAL_MEMORY_MAPPED</span></span></span><a class="headerlink" href="#_CPPv4N34Sanitizer_CallbackIdExternalMemory37SANITIZER_CBID_EXTERNAL_MEMORY_MAPPEDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>External memory was mapped. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N34Sanitizer_CallbackIdExternalMemory40SANITIZER_CBID_EXTERNAL_MEMORY_DESTROYEDE">
+<span id="_CPPv3N34Sanitizer_CallbackIdExternalMemory40SANITIZER_CBID_EXTERNAL_MEMORY_DESTROYEDE"></span><span id="_CPPv2N34Sanitizer_CallbackIdExternalMemory40SANITIZER_CBID_EXTERNAL_MEMORY_DESTROYEDE"></span><span class="target" id="group__sanitizer__callback__api_1ggafe4f153f58660f80e6dd95e874ccd72aa2ca7a2cd2a98536bfdc93a13b24f3188"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_EXTERNAL_MEMORY_DESTROYED</span></span></span><a class="headerlink" href="#_CPPv4N34Sanitizer_CallbackIdExternalMemory40SANITIZER_CBID_EXTERNAL_MEMORY_DESTROYEDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>External memory was destroyed. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N34Sanitizer_CallbackIdExternalMemory35SANITIZER_CBID_EXTERNAL_MEMORY_SIZEE">
+<span id="_CPPv3N34Sanitizer_CallbackIdExternalMemory35SANITIZER_CBID_EXTERNAL_MEMORY_SIZEE"></span><span id="_CPPv2N34Sanitizer_CallbackIdExternalMemory35SANITIZER_CBID_EXTERNAL_MEMORY_SIZEE"></span><span class="target" id="group__sanitizer__callback__api_1ggafe4f153f58660f80e6dd95e874ccd72aa9dc9c8c2bcbf09979489f26ac5099c77"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_EXTERNAL_MEMORY_SIZE</span></span></span><a class="headerlink" href="#_CPPv4N34Sanitizer_CallbackIdExternalMemory35SANITIZER_CBID_EXTERNAL_MEMORY_SIZEE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N34Sanitizer_CallbackIdExternalMemory40SANITIZER_CBID_EXTERNAL_MEMORY_FORCE_INTE">
+<span id="_CPPv3N34Sanitizer_CallbackIdExternalMemory40SANITIZER_CBID_EXTERNAL_MEMORY_FORCE_INTE"></span><span id="_CPPv2N34Sanitizer_CallbackIdExternalMemory40SANITIZER_CBID_EXTERNAL_MEMORY_FORCE_INTE"></span><span class="target" id="group__sanitizer__callback__api_1ggafe4f153f58660f80e6dd95e874ccd72aa0439229fb087aab456e7e18d9c4a046d"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_EXTERNAL_MEMORY_FORCE_INT</span></span></span><a class="headerlink" href="#_CPPv4N34Sanitizer_CallbackIdExternalMemory40SANITIZER_CBID_EXTERNAL_MEMORY_FORCE_INTE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv426Sanitizer_CallbackIdGraphs">
+<span id="_CPPv326Sanitizer_CallbackIdGraphs"></span><span id="_CPPv226Sanitizer_CallbackIdGraphs"></span><span class="target" id="group__sanitizer__callback__api_1ga65ad906ecc3006f2b49f63d8b09f38fd"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Sanitizer_CallbackIdGraphs</span></span></span><a class="headerlink" href="#_CPPv426Sanitizer_CallbackIdGraphs" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Callback IDs for graphs domain. </p>
+<p>Callback IDs for resource domain SANITIZER_CB_DOMAIN_GRAPHS. This value is communicated to the callback function via the <code class="docutils literal notranslate"><span class="pre">cbid</span></code> parameter. </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N26Sanitizer_CallbackIdGraphs29SANITIZER_CBID_GRAPHS_INVALIDE">
+<span id="_CPPv3N26Sanitizer_CallbackIdGraphs29SANITIZER_CBID_GRAPHS_INVALIDE"></span><span id="_CPPv2N26Sanitizer_CallbackIdGraphs29SANITIZER_CBID_GRAPHS_INVALIDE"></span><span class="target" id="group__sanitizer__callback__api_1gga65ad906ecc3006f2b49f63d8b09f38fdaf18bdb5d2ccad6aa429f5c6165ee918b"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_GRAPHS_INVALID</span></span></span><a class="headerlink" href="#_CPPv4N26Sanitizer_CallbackIdGraphs29SANITIZER_CBID_GRAPHS_INVALIDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Invalid graphs callback ID. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N26Sanitizer_CallbackIdGraphs40SANITIZER_CBID_GRAPHS_GRAPHEXEC_CREATINGE">
+<span id="_CPPv3N26Sanitizer_CallbackIdGraphs40SANITIZER_CBID_GRAPHS_GRAPHEXEC_CREATINGE"></span><span id="_CPPv2N26Sanitizer_CallbackIdGraphs40SANITIZER_CBID_GRAPHS_GRAPHEXEC_CREATINGE"></span><span class="target" id="group__sanitizer__callback__api_1gga65ad906ecc3006f2b49f63d8b09f38fda9fe0de660c091ef11ef7eacbd271935a"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_GRAPHS_GRAPHEXEC_CREATING</span></span></span><a class="headerlink" href="#_CPPv4N26Sanitizer_CallbackIdGraphs40SANITIZER_CBID_GRAPHS_GRAPHEXEC_CREATINGE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A new graphexec is being created. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N26Sanitizer_CallbackIdGraphs39SANITIZER_CBID_GRAPHS_GRAPHEXEC_CREATEDE">
+<span id="_CPPv3N26Sanitizer_CallbackIdGraphs39SANITIZER_CBID_GRAPHS_GRAPHEXEC_CREATEDE"></span><span id="_CPPv2N26Sanitizer_CallbackIdGraphs39SANITIZER_CBID_GRAPHS_GRAPHEXEC_CREATEDE"></span><span class="target" id="group__sanitizer__callback__api_1gga65ad906ecc3006f2b49f63d8b09f38fda6c1bfed487cc476bba510aaab710085f"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_GRAPHS_GRAPHEXEC_CREATED</span></span></span><a class="headerlink" href="#_CPPv4N26Sanitizer_CallbackIdGraphs39SANITIZER_CBID_GRAPHS_GRAPHEXEC_CREATEDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A new graphexec is created. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N26Sanitizer_CallbackIdGraphs42SANITIZER_CBID_GRAPHS_GRAPHEXEC_DESTROYINGE">
+<span id="_CPPv3N26Sanitizer_CallbackIdGraphs42SANITIZER_CBID_GRAPHS_GRAPHEXEC_DESTROYINGE"></span><span id="_CPPv2N26Sanitizer_CallbackIdGraphs42SANITIZER_CBID_GRAPHS_GRAPHEXEC_DESTROYINGE"></span><span class="target" id="group__sanitizer__callback__api_1gga65ad906ecc3006f2b49f63d8b09f38fda74ef5c3024f3805feb6477e80a13058d"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_GRAPHS_GRAPHEXEC_DESTROYING</span></span></span><a class="headerlink" href="#_CPPv4N26Sanitizer_CallbackIdGraphs42SANITIZER_CBID_GRAPHS_GRAPHEXEC_DESTROYINGE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A graphexec is being destroyed. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N26Sanitizer_CallbackIdGraphs39SANITIZER_CBID_GRAPHS_NODE_LAUNCH_BEGINE">
+<span id="_CPPv3N26Sanitizer_CallbackIdGraphs39SANITIZER_CBID_GRAPHS_NODE_LAUNCH_BEGINE"></span><span id="_CPPv2N26Sanitizer_CallbackIdGraphs39SANITIZER_CBID_GRAPHS_NODE_LAUNCH_BEGINE"></span><span class="target" id="group__sanitizer__callback__api_1gga65ad906ecc3006f2b49f63d8b09f38fda9aa8253c5fe915071883bfbf16045a68"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_GRAPHS_NODE_LAUNCH_BEGIN</span></span></span><a class="headerlink" href="#_CPPv4N26Sanitizer_CallbackIdGraphs39SANITIZER_CBID_GRAPHS_NODE_LAUNCH_BEGINE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A node launch was initiated. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N26Sanitizer_CallbackIdGraphs37SANITIZER_CBID_GRAPHS_NODE_LAUNCH_ENDE">
+<span id="_CPPv3N26Sanitizer_CallbackIdGraphs37SANITIZER_CBID_GRAPHS_NODE_LAUNCH_ENDE"></span><span id="_CPPv2N26Sanitizer_CallbackIdGraphs37SANITIZER_CBID_GRAPHS_NODE_LAUNCH_ENDE"></span><span class="target" id="group__sanitizer__callback__api_1gga65ad906ecc3006f2b49f63d8b09f38fda1a2e9175953b497467eb788f362fd38a"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_GRAPHS_NODE_LAUNCH_END</span></span></span><a class="headerlink" href="#_CPPv4N26Sanitizer_CallbackIdGraphs37SANITIZER_CBID_GRAPHS_NODE_LAUNCH_ENDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A node launch is complete. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N26Sanitizer_CallbackIdGraphs34SANITIZER_CBID_GRAPHS_LAUNCH_BEGINE">
+<span id="_CPPv3N26Sanitizer_CallbackIdGraphs34SANITIZER_CBID_GRAPHS_LAUNCH_BEGINE"></span><span id="_CPPv2N26Sanitizer_CallbackIdGraphs34SANITIZER_CBID_GRAPHS_LAUNCH_BEGINE"></span><span class="target" id="group__sanitizer__callback__api_1gga65ad906ecc3006f2b49f63d8b09f38fda7c2be05510e7bc0f8d88746a21b259ec"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_GRAPHS_LAUNCH_BEGIN</span></span></span><a class="headerlink" href="#_CPPv4N26Sanitizer_CallbackIdGraphs34SANITIZER_CBID_GRAPHS_LAUNCH_BEGINE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A graph launch was initiated. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N26Sanitizer_CallbackIdGraphs32SANITIZER_CBID_GRAPHS_LAUNCH_ENDE">
+<span id="_CPPv3N26Sanitizer_CallbackIdGraphs32SANITIZER_CBID_GRAPHS_LAUNCH_ENDE"></span><span id="_CPPv2N26Sanitizer_CallbackIdGraphs32SANITIZER_CBID_GRAPHS_LAUNCH_ENDE"></span><span class="target" id="group__sanitizer__callback__api_1gga65ad906ecc3006f2b49f63d8b09f38fdaeb48e77124225829861586f0daaa0bfb"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_GRAPHS_LAUNCH_END</span></span></span><a class="headerlink" href="#_CPPv4N26Sanitizer_CallbackIdGraphs32SANITIZER_CBID_GRAPHS_LAUNCH_ENDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A graph launch is complete. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N26Sanitizer_CallbackIdGraphs26SANITIZER_CBID_GRAPHS_SIZEE">
+<span id="_CPPv3N26Sanitizer_CallbackIdGraphs26SANITIZER_CBID_GRAPHS_SIZEE"></span><span id="_CPPv2N26Sanitizer_CallbackIdGraphs26SANITIZER_CBID_GRAPHS_SIZEE"></span><span class="target" id="group__sanitizer__callback__api_1gga65ad906ecc3006f2b49f63d8b09f38fda6a6daab31f3630cbeefba89189c3b4e9"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_GRAPHS_SIZE</span></span></span><a class="headerlink" href="#_CPPv4N26Sanitizer_CallbackIdGraphs26SANITIZER_CBID_GRAPHS_SIZEE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N26Sanitizer_CallbackIdGraphs31SANITIZER_CBID_GRAPHS_FORCE_INTE">
+<span id="_CPPv3N26Sanitizer_CallbackIdGraphs31SANITIZER_CBID_GRAPHS_FORCE_INTE"></span><span id="_CPPv2N26Sanitizer_CallbackIdGraphs31SANITIZER_CBID_GRAPHS_FORCE_INTE"></span><span class="target" id="group__sanitizer__callback__api_1gga65ad906ecc3006f2b49f63d8b09f38fda6f78bc5b1fdb2d60cbc1fbce0d1266ab"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_GRAPHS_FORCE_INT</span></span></span><a class="headerlink" href="#_CPPv4N26Sanitizer_CallbackIdGraphs31SANITIZER_CBID_GRAPHS_FORCE_INTE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv426Sanitizer_CallbackIdLaunch">
+<span id="_CPPv326Sanitizer_CallbackIdLaunch"></span><span id="_CPPv226Sanitizer_CallbackIdLaunch"></span><span class="target" id="group__sanitizer__callback__api_1ga023cd56b97f1231cb0c4d11b4f8f95d4"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Sanitizer_CallbackIdLaunch</span></span></span><a class="headerlink" href="#_CPPv426Sanitizer_CallbackIdLaunch" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Callback IDs for launch domain. </p>
+<p>Callback IDs for resource domain SANITIZER_CB_DOMAIN_LAUNCH. This value is communicated to the callback function via the <code class="docutils literal notranslate"><span class="pre">cbid</span></code> parameter. </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N26Sanitizer_CallbackIdLaunch29SANITIZER_CBID_LAUNCH_INVALIDE">
+<span id="_CPPv3N26Sanitizer_CallbackIdLaunch29SANITIZER_CBID_LAUNCH_INVALIDE"></span><span id="_CPPv2N26Sanitizer_CallbackIdLaunch29SANITIZER_CBID_LAUNCH_INVALIDE"></span><span class="target" id="group__sanitizer__callback__api_1gga023cd56b97f1231cb0c4d11b4f8f95d4aa4c3af939550c790d74ff11a1dfa27cb"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_LAUNCH_INVALID</span></span></span><a class="headerlink" href="#_CPPv4N26Sanitizer_CallbackIdLaunch29SANITIZER_CBID_LAUNCH_INVALIDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Invalid launch callback ID. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N26Sanitizer_CallbackIdLaunch27SANITIZER_CBID_LAUNCH_BEGINE">
+<span id="_CPPv3N26Sanitizer_CallbackIdLaunch27SANITIZER_CBID_LAUNCH_BEGINE"></span><span id="_CPPv2N26Sanitizer_CallbackIdLaunch27SANITIZER_CBID_LAUNCH_BEGINE"></span><span class="target" id="group__sanitizer__callback__api_1gga023cd56b97f1231cb0c4d11b4f8f95d4aed7d9f21349e1e6a0042178c717d9b8b"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_LAUNCH_BEGIN</span></span></span><a class="headerlink" href="#_CPPv4N26Sanitizer_CallbackIdLaunch27SANITIZER_CBID_LAUNCH_BEGINE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A grid launch was initiated. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N26Sanitizer_CallbackIdLaunch41SANITIZER_CBID_LAUNCH_AFTER_SYSCALL_SETUPE">
+<span id="_CPPv3N26Sanitizer_CallbackIdLaunch41SANITIZER_CBID_LAUNCH_AFTER_SYSCALL_SETUPE"></span><span id="_CPPv2N26Sanitizer_CallbackIdLaunch41SANITIZER_CBID_LAUNCH_AFTER_SYSCALL_SETUPE"></span><span class="target" id="group__sanitizer__callback__api_1gga023cd56b97f1231cb0c4d11b4f8f95d4a20b20cd0488dc397426be7b416b97310"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_LAUNCH_AFTER_SYSCALL_SETUP</span></span></span><a class="headerlink" href="#_CPPv4N26Sanitizer_CallbackIdLaunch41SANITIZER_CBID_LAUNCH_AFTER_SYSCALL_SETUPE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A grid launch has completed syscalls setup. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N26Sanitizer_CallbackIdLaunch25SANITIZER_CBID_LAUNCH_ENDE">
+<span id="_CPPv3N26Sanitizer_CallbackIdLaunch25SANITIZER_CBID_LAUNCH_ENDE"></span><span id="_CPPv2N26Sanitizer_CallbackIdLaunch25SANITIZER_CBID_LAUNCH_ENDE"></span><span class="target" id="group__sanitizer__callback__api_1gga023cd56b97f1231cb0c4d11b4f8f95d4ae99da23dfb7ec9f9ae126088f0bf33dd"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_LAUNCH_END</span></span></span><a class="headerlink" href="#_CPPv4N26Sanitizer_CallbackIdLaunch25SANITIZER_CBID_LAUNCH_ENDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The grid launch is complete. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N26Sanitizer_CallbackIdLaunch26SANITIZER_CBID_LAUNCH_SIZEE">
+<span id="_CPPv3N26Sanitizer_CallbackIdLaunch26SANITIZER_CBID_LAUNCH_SIZEE"></span><span id="_CPPv2N26Sanitizer_CallbackIdLaunch26SANITIZER_CBID_LAUNCH_SIZEE"></span><span class="target" id="group__sanitizer__callback__api_1gga023cd56b97f1231cb0c4d11b4f8f95d4a30e81da3abb4edba55a3ee8ca9465748"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_LAUNCH_SIZE</span></span></span><a class="headerlink" href="#_CPPv4N26Sanitizer_CallbackIdLaunch26SANITIZER_CBID_LAUNCH_SIZEE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N26Sanitizer_CallbackIdLaunch31SANITIZER_CBID_LAUNCH_FORCE_INTE">
+<span id="_CPPv3N26Sanitizer_CallbackIdLaunch31SANITIZER_CBID_LAUNCH_FORCE_INTE"></span><span id="_CPPv2N26Sanitizer_CallbackIdLaunch31SANITIZER_CBID_LAUNCH_FORCE_INTE"></span><span class="target" id="group__sanitizer__callback__api_1gga023cd56b97f1231cb0c4d11b4f8f95d4ab11280c4dfe7217e875f8d6c57a2c0d6"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_LAUNCH_FORCE_INT</span></span></span><a class="headerlink" href="#_CPPv4N26Sanitizer_CallbackIdLaunch31SANITIZER_CBID_LAUNCH_FORCE_INTE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv426Sanitizer_CallbackIdMemcpy">
+<span id="_CPPv326Sanitizer_CallbackIdMemcpy"></span><span id="_CPPv226Sanitizer_CallbackIdMemcpy"></span><span class="target" id="group__sanitizer__callback__api_1ga9047997c07890c2fd3136ca731228bd5"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Sanitizer_CallbackIdMemcpy</span></span></span><a class="headerlink" href="#_CPPv426Sanitizer_CallbackIdMemcpy" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Callback IDs for memcpy domain. </p>
+<p>Callback IDs for resource domain SANITIZER_CB_DOMAIN_MEMCPY. This value is communicated to the callback function via the <code class="docutils literal notranslate"><span class="pre">cbid</span></code> parameter. </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N26Sanitizer_CallbackIdMemcpy29SANITIZER_CBID_MEMCPY_INVALIDE">
+<span id="_CPPv3N26Sanitizer_CallbackIdMemcpy29SANITIZER_CBID_MEMCPY_INVALIDE"></span><span id="_CPPv2N26Sanitizer_CallbackIdMemcpy29SANITIZER_CBID_MEMCPY_INVALIDE"></span><span class="target" id="group__sanitizer__callback__api_1gga9047997c07890c2fd3136ca731228bd5a3ead2079459d28219a7a6f3aaa122c2b"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_MEMCPY_INVALID</span></span></span><a class="headerlink" href="#_CPPv4N26Sanitizer_CallbackIdMemcpy29SANITIZER_CBID_MEMCPY_INVALIDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Invalid memcpy callback ID. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N26Sanitizer_CallbackIdMemcpy30SANITIZER_CBID_MEMCPY_STARTINGE">
+<span id="_CPPv3N26Sanitizer_CallbackIdMemcpy30SANITIZER_CBID_MEMCPY_STARTINGE"></span><span id="_CPPv2N26Sanitizer_CallbackIdMemcpy30SANITIZER_CBID_MEMCPY_STARTINGE"></span><span class="target" id="group__sanitizer__callback__api_1gga9047997c07890c2fd3136ca731228bd5a89c7fd9883238502bb28e26e76dda383"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_MEMCPY_STARTING</span></span></span><a class="headerlink" href="#_CPPv4N26Sanitizer_CallbackIdMemcpy30SANITIZER_CBID_MEMCPY_STARTINGE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A memcpy operation was initiated. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N26Sanitizer_CallbackIdMemcpy26SANITIZER_CBID_MEMCPY_SIZEE">
+<span id="_CPPv3N26Sanitizer_CallbackIdMemcpy26SANITIZER_CBID_MEMCPY_SIZEE"></span><span id="_CPPv2N26Sanitizer_CallbackIdMemcpy26SANITIZER_CBID_MEMCPY_SIZEE"></span><span class="target" id="group__sanitizer__callback__api_1gga9047997c07890c2fd3136ca731228bd5a3dca8a09a8c8445ce9717e76ab0f20c8"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_MEMCPY_SIZE</span></span></span><a class="headerlink" href="#_CPPv4N26Sanitizer_CallbackIdMemcpy26SANITIZER_CBID_MEMCPY_SIZEE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N26Sanitizer_CallbackIdMemcpy31SANITIZER_CBID_MEMCPY_FORCE_INTE">
+<span id="_CPPv3N26Sanitizer_CallbackIdMemcpy31SANITIZER_CBID_MEMCPY_FORCE_INTE"></span><span id="_CPPv2N26Sanitizer_CallbackIdMemcpy31SANITIZER_CBID_MEMCPY_FORCE_INTE"></span><span class="target" id="group__sanitizer__callback__api_1gga9047997c07890c2fd3136ca731228bd5a920f67ef4e343c46b2c3554a968fd47a"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_MEMCPY_FORCE_INT</span></span></span><a class="headerlink" href="#_CPPv4N26Sanitizer_CallbackIdMemcpy31SANITIZER_CBID_MEMCPY_FORCE_INTE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv426Sanitizer_CallbackIdMemset">
+<span id="_CPPv326Sanitizer_CallbackIdMemset"></span><span id="_CPPv226Sanitizer_CallbackIdMemset"></span><span class="target" id="group__sanitizer__callback__api_1ga70a5aabab8a7528c5213ee5f535b466c"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Sanitizer_CallbackIdMemset</span></span></span><a class="headerlink" href="#_CPPv426Sanitizer_CallbackIdMemset" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Callback IDs for memset domain. </p>
+<p>Callback IDs for resource domain SANITIZER_CB_DOMAIN_MEMSET. This value is communicated to the callback function via the <code class="docutils literal notranslate"><span class="pre">cbid</span></code> parameter. </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N26Sanitizer_CallbackIdMemset29SANITIZER_CBID_MEMSET_INVALIDE">
+<span id="_CPPv3N26Sanitizer_CallbackIdMemset29SANITIZER_CBID_MEMSET_INVALIDE"></span><span id="_CPPv2N26Sanitizer_CallbackIdMemset29SANITIZER_CBID_MEMSET_INVALIDE"></span><span class="target" id="group__sanitizer__callback__api_1gga70a5aabab8a7528c5213ee5f535b466ca2ed084a804472ab66f0d898049b601fb"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_MEMSET_INVALID</span></span></span><a class="headerlink" href="#_CPPv4N26Sanitizer_CallbackIdMemset29SANITIZER_CBID_MEMSET_INVALIDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Invalid memset callback ID. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N26Sanitizer_CallbackIdMemset30SANITIZER_CBID_MEMSET_STARTINGE">
+<span id="_CPPv3N26Sanitizer_CallbackIdMemset30SANITIZER_CBID_MEMSET_STARTINGE"></span><span id="_CPPv2N26Sanitizer_CallbackIdMemset30SANITIZER_CBID_MEMSET_STARTINGE"></span><span class="target" id="group__sanitizer__callback__api_1gga70a5aabab8a7528c5213ee5f535b466ca627ffcfed33317f86d4adc88d0c8eb5a"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_MEMSET_STARTING</span></span></span><a class="headerlink" href="#_CPPv4N26Sanitizer_CallbackIdMemset30SANITIZER_CBID_MEMSET_STARTINGE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A memset operation was initiated. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N26Sanitizer_CallbackIdMemset26SANITIZER_CBID_MEMSET_SIZEE">
+<span id="_CPPv3N26Sanitizer_CallbackIdMemset26SANITIZER_CBID_MEMSET_SIZEE"></span><span id="_CPPv2N26Sanitizer_CallbackIdMemset26SANITIZER_CBID_MEMSET_SIZEE"></span><span class="target" id="group__sanitizer__callback__api_1gga70a5aabab8a7528c5213ee5f535b466ca6f5d85a1e95b517d1dcaf98e822ec36f"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_MEMSET_SIZE</span></span></span><a class="headerlink" href="#_CPPv4N26Sanitizer_CallbackIdMemset26SANITIZER_CBID_MEMSET_SIZEE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N26Sanitizer_CallbackIdMemset31SANITIZER_CBID_MEMSET_FORCE_INTE">
+<span id="_CPPv3N26Sanitizer_CallbackIdMemset31SANITIZER_CBID_MEMSET_FORCE_INTE"></span><span id="_CPPv2N26Sanitizer_CallbackIdMemset31SANITIZER_CBID_MEMSET_FORCE_INTE"></span><span class="target" id="group__sanitizer__callback__api_1gga70a5aabab8a7528c5213ee5f535b466ca11a3dc9b8f58d815b34bd31ac107e78c"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_MEMSET_FORCE_INT</span></span></span><a class="headerlink" href="#_CPPv4N26Sanitizer_CallbackIdMemset31SANITIZER_CBID_MEMSET_FORCE_INTE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv428Sanitizer_CallbackIdResource">
+<span id="_CPPv328Sanitizer_CallbackIdResource"></span><span id="_CPPv228Sanitizer_CallbackIdResource"></span><span class="target" id="group__sanitizer__callback__api_1gad447a2768c522f1d2b2a086a47705a49"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Sanitizer_CallbackIdResource</span></span></span><a class="headerlink" href="#_CPPv428Sanitizer_CallbackIdResource" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Callback IDs for resource domain. </p>
+<p>Callback IDs for resource domain SANITIZER_CB_DOMAIN_RESOURCE. This value is communicated to the callback function via the <code class="docutils literal notranslate"><span class="pre">cbid</span></code> parameter. </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N28Sanitizer_CallbackIdResource31SANITIZER_CBID_RESOURCE_INVALIDE">
+<span id="_CPPv3N28Sanitizer_CallbackIdResource31SANITIZER_CBID_RESOURCE_INVALIDE"></span><span id="_CPPv2N28Sanitizer_CallbackIdResource31SANITIZER_CBID_RESOURCE_INVALIDE"></span><span class="target" id="group__sanitizer__callback__api_1ggad447a2768c522f1d2b2a086a47705a49ad43439a668fcd368dd306a6fed0bf729"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_RESOURCE_INVALID</span></span></span><a class="headerlink" href="#_CPPv4N28Sanitizer_CallbackIdResource31SANITIZER_CBID_RESOURCE_INVALIDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Invalid resource callback ID. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N28Sanitizer_CallbackIdResource37SANITIZER_CBID_RESOURCE_INIT_FINISHEDE">
+<span id="_CPPv3N28Sanitizer_CallbackIdResource37SANITIZER_CBID_RESOURCE_INIT_FINISHEDE"></span><span id="_CPPv2N28Sanitizer_CallbackIdResource37SANITIZER_CBID_RESOURCE_INIT_FINISHEDE"></span><span class="target" id="group__sanitizer__callback__api_1ggad447a2768c522f1d2b2a086a47705a49a1ee5702cda826f9ee18e8992a955d57c"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_RESOURCE_INIT_FINISHED</span></span></span><a class="headerlink" href="#_CPPv4N28Sanitizer_CallbackIdResource37SANITIZER_CBID_RESOURCE_INIT_FINISHEDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Driver initialization is finished. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N28Sanitizer_CallbackIdResource49SANITIZER_CBID_RESOURCE_CONTEXT_CREATION_STARTINGE">
+<span id="_CPPv3N28Sanitizer_CallbackIdResource49SANITIZER_CBID_RESOURCE_CONTEXT_CREATION_STARTINGE"></span><span id="_CPPv2N28Sanitizer_CallbackIdResource49SANITIZER_CBID_RESOURCE_CONTEXT_CREATION_STARTINGE"></span><span class="target" id="group__sanitizer__callback__api_1ggad447a2768c522f1d2b2a086a47705a49aeedce847aa53b7df5cbad11f822db088"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_RESOURCE_CONTEXT_CREATION_STARTING</span></span></span><a class="headerlink" href="#_CPPv4N28Sanitizer_CallbackIdResource49SANITIZER_CBID_RESOURCE_CONTEXT_CREATION_STARTINGE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A new context is about to be created. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N28Sanitizer_CallbackIdResource49SANITIZER_CBID_RESOURCE_CONTEXT_CREATION_FINISHEDE">
+<span id="_CPPv3N28Sanitizer_CallbackIdResource49SANITIZER_CBID_RESOURCE_CONTEXT_CREATION_FINISHEDE"></span><span id="_CPPv2N28Sanitizer_CallbackIdResource49SANITIZER_CBID_RESOURCE_CONTEXT_CREATION_FINISHEDE"></span><span class="target" id="group__sanitizer__callback__api_1ggad447a2768c522f1d2b2a086a47705a49ae757f7d5ecc22ae45bc8990b02dca0f9"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_RESOURCE_CONTEXT_CREATION_FINISHED</span></span></span><a class="headerlink" href="#_CPPv4N28Sanitizer_CallbackIdResource49SANITIZER_CBID_RESOURCE_CONTEXT_CREATION_FINISHEDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A new context was created. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N28Sanitizer_CallbackIdResource48SANITIZER_CBID_RESOURCE_CONTEXT_DESTROY_STARTINGE">
+<span id="_CPPv3N28Sanitizer_CallbackIdResource48SANITIZER_CBID_RESOURCE_CONTEXT_DESTROY_STARTINGE"></span><span id="_CPPv2N28Sanitizer_CallbackIdResource48SANITIZER_CBID_RESOURCE_CONTEXT_DESTROY_STARTINGE"></span><span class="target" id="group__sanitizer__callback__api_1ggad447a2768c522f1d2b2a086a47705a49a13c6e827f9f82f075d46a7215b87aba4"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_RESOURCE_CONTEXT_DESTROY_STARTING</span></span></span><a class="headerlink" href="#_CPPv4N28Sanitizer_CallbackIdResource48SANITIZER_CBID_RESOURCE_CONTEXT_DESTROY_STARTINGE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A context is about to be destroyed. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N28Sanitizer_CallbackIdResource48SANITIZER_CBID_RESOURCE_CONTEXT_DESTROY_FINISHEDE">
+<span id="_CPPv3N28Sanitizer_CallbackIdResource48SANITIZER_CBID_RESOURCE_CONTEXT_DESTROY_FINISHEDE"></span><span id="_CPPv2N28Sanitizer_CallbackIdResource48SANITIZER_CBID_RESOURCE_CONTEXT_DESTROY_FINISHEDE"></span><span class="target" id="group__sanitizer__callback__api_1ggad447a2768c522f1d2b2a086a47705a49adf1aecd4fe1514ce55ce7888cddae732"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_RESOURCE_CONTEXT_DESTROY_FINISHED</span></span></span><a class="headerlink" href="#_CPPv4N28Sanitizer_CallbackIdResource48SANITIZER_CBID_RESOURCE_CONTEXT_DESTROY_FINISHEDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A context was destroyed. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N28Sanitizer_CallbackIdResource38SANITIZER_CBID_RESOURCE_STREAM_CREATEDE">
+<span id="_CPPv3N28Sanitizer_CallbackIdResource38SANITIZER_CBID_RESOURCE_STREAM_CREATEDE"></span><span id="_CPPv2N28Sanitizer_CallbackIdResource38SANITIZER_CBID_RESOURCE_STREAM_CREATEDE"></span><span class="target" id="group__sanitizer__callback__api_1ggad447a2768c522f1d2b2a086a47705a49a36eece499c3921982d4c005c99eb4994"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_RESOURCE_STREAM_CREATED</span></span></span><a class="headerlink" href="#_CPPv4N28Sanitizer_CallbackIdResource38SANITIZER_CBID_RESOURCE_STREAM_CREATEDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A new stream was created. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N28Sanitizer_CallbackIdResource47SANITIZER_CBID_RESOURCE_STREAM_DESTROY_STARTINGE">
+<span id="_CPPv3N28Sanitizer_CallbackIdResource47SANITIZER_CBID_RESOURCE_STREAM_DESTROY_STARTINGE"></span><span id="_CPPv2N28Sanitizer_CallbackIdResource47SANITIZER_CBID_RESOURCE_STREAM_DESTROY_STARTINGE"></span><span class="target" id="group__sanitizer__callback__api_1ggad447a2768c522f1d2b2a086a47705a49a68c8eb02e7f7b4823233eb77e7ce7494"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_RESOURCE_STREAM_DESTROY_STARTING</span></span></span><a class="headerlink" href="#_CPPv4N28Sanitizer_CallbackIdResource47SANITIZER_CBID_RESOURCE_STREAM_DESTROY_STARTINGE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A stream is about to be destroyed. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N28Sanitizer_CallbackIdResource47SANITIZER_CBID_RESOURCE_STREAM_DESTROY_FINISHEDE">
+<span id="_CPPv3N28Sanitizer_CallbackIdResource47SANITIZER_CBID_RESOURCE_STREAM_DESTROY_FINISHEDE"></span><span id="_CPPv2N28Sanitizer_CallbackIdResource47SANITIZER_CBID_RESOURCE_STREAM_DESTROY_FINISHEDE"></span><span class="target" id="group__sanitizer__callback__api_1ggad447a2768c522f1d2b2a086a47705a49ac8951f93a907cc1e70f52d3fd6aba083"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_RESOURCE_STREAM_DESTROY_FINISHED</span></span></span><a class="headerlink" href="#_CPPv4N28Sanitizer_CallbackIdResource47SANITIZER_CBID_RESOURCE_STREAM_DESTROY_FINISHEDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A stream was destroyed. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N28Sanitizer_CallbackIdResource37SANITIZER_CBID_RESOURCE_MODULE_LOADEDE">
+<span id="_CPPv3N28Sanitizer_CallbackIdResource37SANITIZER_CBID_RESOURCE_MODULE_LOADEDE"></span><span id="_CPPv2N28Sanitizer_CallbackIdResource37SANITIZER_CBID_RESOURCE_MODULE_LOADEDE"></span><span class="target" id="group__sanitizer__callback__api_1ggad447a2768c522f1d2b2a086a47705a49acbed32968d4482003381ca8c50abe464"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_RESOURCE_MODULE_LOADED</span></span></span><a class="headerlink" href="#_CPPv4N28Sanitizer_CallbackIdResource37SANITIZER_CBID_RESOURCE_MODULE_LOADEDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A module was loaded. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N28Sanitizer_CallbackIdResource46SANITIZER_CBID_RESOURCE_MODULE_UNLOAD_STARTINGE">
+<span id="_CPPv3N28Sanitizer_CallbackIdResource46SANITIZER_CBID_RESOURCE_MODULE_UNLOAD_STARTINGE"></span><span id="_CPPv2N28Sanitizer_CallbackIdResource46SANITIZER_CBID_RESOURCE_MODULE_UNLOAD_STARTINGE"></span><span class="target" id="group__sanitizer__callback__api_1ggad447a2768c522f1d2b2a086a47705a49ad2e3ceaa1adb9c6099c1d07a096eaf8d"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_RESOURCE_MODULE_UNLOAD_STARTING</span></span></span><a class="headerlink" href="#_CPPv4N28Sanitizer_CallbackIdResource46SANITIZER_CBID_RESOURCE_MODULE_UNLOAD_STARTINGE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A module is about to be unloaded. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N28Sanitizer_CallbackIdResource43SANITIZER_CBID_RESOURCE_DEVICE_MEMORY_ALLOCE">
+<span id="_CPPv3N28Sanitizer_CallbackIdResource43SANITIZER_CBID_RESOURCE_DEVICE_MEMORY_ALLOCE"></span><span id="_CPPv2N28Sanitizer_CallbackIdResource43SANITIZER_CBID_RESOURCE_DEVICE_MEMORY_ALLOCE"></span><span class="target" id="group__sanitizer__callback__api_1ggad447a2768c522f1d2b2a086a47705a49a62f2c8af52f8285f51684fa6ce776162"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_RESOURCE_DEVICE_MEMORY_ALLOC</span></span></span><a class="headerlink" href="#_CPPv4N28Sanitizer_CallbackIdResource43SANITIZER_CBID_RESOURCE_DEVICE_MEMORY_ALLOCE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Device memory was allocated. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N28Sanitizer_CallbackIdResource42SANITIZER_CBID_RESOURCE_DEVICE_MEMORY_FREEE">
+<span id="_CPPv3N28Sanitizer_CallbackIdResource42SANITIZER_CBID_RESOURCE_DEVICE_MEMORY_FREEE"></span><span id="_CPPv2N28Sanitizer_CallbackIdResource42SANITIZER_CBID_RESOURCE_DEVICE_MEMORY_FREEE"></span><span class="target" id="group__sanitizer__callback__api_1ggad447a2768c522f1d2b2a086a47705a49a5638b6ba05cc418a127a123a743d9fda"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_RESOURCE_DEVICE_MEMORY_FREE</span></span></span><a class="headerlink" href="#_CPPv4N28Sanitizer_CallbackIdResource42SANITIZER_CBID_RESOURCE_DEVICE_MEMORY_FREEE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Device memory was freed. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N28Sanitizer_CallbackIdResource41SANITIZER_CBID_RESOURCE_HOST_MEMORY_ALLOCE">
+<span id="_CPPv3N28Sanitizer_CallbackIdResource41SANITIZER_CBID_RESOURCE_HOST_MEMORY_ALLOCE"></span><span id="_CPPv2N28Sanitizer_CallbackIdResource41SANITIZER_CBID_RESOURCE_HOST_MEMORY_ALLOCE"></span><span class="target" id="group__sanitizer__callback__api_1ggad447a2768c522f1d2b2a086a47705a49aec3615d6adaf20d8b89637fd64bc0974"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_RESOURCE_HOST_MEMORY_ALLOC</span></span></span><a class="headerlink" href="#_CPPv4N28Sanitizer_CallbackIdResource41SANITIZER_CBID_RESOURCE_HOST_MEMORY_ALLOCE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Pinned host memory was allocated. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N28Sanitizer_CallbackIdResource40SANITIZER_CBID_RESOURCE_HOST_MEMORY_FREEE">
+<span id="_CPPv3N28Sanitizer_CallbackIdResource40SANITIZER_CBID_RESOURCE_HOST_MEMORY_FREEE"></span><span id="_CPPv2N28Sanitizer_CallbackIdResource40SANITIZER_CBID_RESOURCE_HOST_MEMORY_FREEE"></span><span class="target" id="group__sanitizer__callback__api_1ggad447a2768c522f1d2b2a086a47705a49aaabeddb71b2fa843418a90b8760ea9d7"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_RESOURCE_HOST_MEMORY_FREE</span></span></span><a class="headerlink" href="#_CPPv4N28Sanitizer_CallbackIdResource40SANITIZER_CBID_RESOURCE_HOST_MEMORY_FREEE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Pinned host memory was freed. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N28Sanitizer_CallbackIdResource42SANITIZER_CBID_RESOURCE_MEMORY_ALLOC_ASYNCE">
+<span id="_CPPv3N28Sanitizer_CallbackIdResource42SANITIZER_CBID_RESOURCE_MEMORY_ALLOC_ASYNCE"></span><span id="_CPPv2N28Sanitizer_CallbackIdResource42SANITIZER_CBID_RESOURCE_MEMORY_ALLOC_ASYNCE"></span><span class="target" id="group__sanitizer__callback__api_1ggad447a2768c522f1d2b2a086a47705a49afb5edae93d426e280a547e18490863ab"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_RESOURCE_MEMORY_ALLOC_ASYNC</span></span></span><a class="headerlink" href="#_CPPv4N28Sanitizer_CallbackIdResource42SANITIZER_CBID_RESOURCE_MEMORY_ALLOC_ASYNCE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Memory was allocated asynchronously. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N28Sanitizer_CallbackIdResource41SANITIZER_CBID_RESOURCE_MEMORY_FREE_ASYNCE">
+<span id="_CPPv3N28Sanitizer_CallbackIdResource41SANITIZER_CBID_RESOURCE_MEMORY_FREE_ASYNCE"></span><span id="_CPPv2N28Sanitizer_CallbackIdResource41SANITIZER_CBID_RESOURCE_MEMORY_FREE_ASYNCE"></span><span class="target" id="group__sanitizer__callback__api_1ggad447a2768c522f1d2b2a086a47705a49adc8da45895d34fc420bc5604e80edc49"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_RESOURCE_MEMORY_FREE_ASYNC</span></span></span><a class="headerlink" href="#_CPPv4N28Sanitizer_CallbackIdResource41SANITIZER_CBID_RESOURCE_MEMORY_FREE_ASYNCE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Memory was freed asynchronously. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N28Sanitizer_CallbackIdResource46SANITIZER_CBID_RESOURCE_MEMORY_FREE_ASYNC_DONEE">
+<span id="_CPPv3N28Sanitizer_CallbackIdResource46SANITIZER_CBID_RESOURCE_MEMORY_FREE_ASYNC_DONEE"></span><span id="_CPPv2N28Sanitizer_CallbackIdResource46SANITIZER_CBID_RESOURCE_MEMORY_FREE_ASYNC_DONEE"></span><span class="target" id="group__sanitizer__callback__api_1ggad447a2768c522f1d2b2a086a47705a49aad42f1afe7973734d5941952c40c4304"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_RESOURCE_MEMORY_FREE_ASYNC_DONE</span></span></span><a class="headerlink" href="#_CPPv4N28Sanitizer_CallbackIdResource46SANITIZER_CBID_RESOURCE_MEMORY_FREE_ASYNC_DONEE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Memory freed asynchronously was released, only happens if a regular allocation (cudaMalloc) is free’d asynchronously (cudaFreeAsync). </p>
+<p>See CUDA runtime documentation for cudaFreeAsync </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N28Sanitizer_CallbackIdResource39SANITIZER_CBID_RESOURCE_MEMPOOL_CREATEDE">
+<span id="_CPPv3N28Sanitizer_CallbackIdResource39SANITIZER_CBID_RESOURCE_MEMPOOL_CREATEDE"></span><span id="_CPPv2N28Sanitizer_CallbackIdResource39SANITIZER_CBID_RESOURCE_MEMPOOL_CREATEDE"></span><span class="target" id="group__sanitizer__callback__api_1ggad447a2768c522f1d2b2a086a47705a49a40745c67c29fd59a8842a9a7bb6a807b"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_RESOURCE_MEMPOOL_CREATED</span></span></span><a class="headerlink" href="#_CPPv4N28Sanitizer_CallbackIdResource39SANITIZER_CBID_RESOURCE_MEMPOOL_CREATEDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A new mempool was created. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N28Sanitizer_CallbackIdResource42SANITIZER_CBID_RESOURCE_MEMPOOL_DESTROYINGE">
+<span id="_CPPv3N28Sanitizer_CallbackIdResource42SANITIZER_CBID_RESOURCE_MEMPOOL_DESTROYINGE"></span><span id="_CPPv2N28Sanitizer_CallbackIdResource42SANITIZER_CBID_RESOURCE_MEMPOOL_DESTROYINGE"></span><span class="target" id="group__sanitizer__callback__api_1ggad447a2768c522f1d2b2a086a47705a49ab42ebe6b4e398725675c96d9aff15725"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_RESOURCE_MEMPOOL_DESTROYING</span></span></span><a class="headerlink" href="#_CPPv4N28Sanitizer_CallbackIdResource42SANITIZER_CBID_RESOURCE_MEMPOOL_DESTROYINGE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A mempool is about to be destroyed. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N28Sanitizer_CallbackIdResource51SANITIZER_CBID_RESOURCE_MEMPOOL_PEER_ACCESS_ENABLEDE">
+<span id="_CPPv3N28Sanitizer_CallbackIdResource51SANITIZER_CBID_RESOURCE_MEMPOOL_PEER_ACCESS_ENABLEDE"></span><span id="_CPPv2N28Sanitizer_CallbackIdResource51SANITIZER_CBID_RESOURCE_MEMPOOL_PEER_ACCESS_ENABLEDE"></span><span class="target" id="group__sanitizer__callback__api_1ggad447a2768c522f1d2b2a086a47705a49a7f8c0e11f215840906b2652e64e4d502"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_RESOURCE_MEMPOOL_PEER_ACCESS_ENABLED</span></span></span><a class="headerlink" href="#_CPPv4N28Sanitizer_CallbackIdResource51SANITIZER_CBID_RESOURCE_MEMPOOL_PEER_ACCESS_ENABLEDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A mempool is now accessible from a peer device. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N28Sanitizer_CallbackIdResource53SANITIZER_CBID_RESOURCE_MEMPOOL_PEER_ACCESS_DISABLINGE">
+<span id="_CPPv3N28Sanitizer_CallbackIdResource53SANITIZER_CBID_RESOURCE_MEMPOOL_PEER_ACCESS_DISABLINGE"></span><span id="_CPPv2N28Sanitizer_CallbackIdResource53SANITIZER_CBID_RESOURCE_MEMPOOL_PEER_ACCESS_DISABLINGE"></span><span class="target" id="group__sanitizer__callback__api_1ggad447a2768c522f1d2b2a086a47705a49af39a1fd0fde3d834f3af301ee9c0d1fd"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_RESOURCE_MEMPOOL_PEER_ACCESS_DISABLING</span></span></span><a class="headerlink" href="#_CPPv4N28Sanitizer_CallbackIdResource53SANITIZER_CBID_RESOURCE_MEMPOOL_PEER_ACCESS_DISABLINGE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A mempool is no longer accessible from a peer device. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N28Sanitizer_CallbackIdResource37SANITIZER_CBID_RESOURCE_ARRAY_CREATEDE">
+<span id="_CPPv3N28Sanitizer_CallbackIdResource37SANITIZER_CBID_RESOURCE_ARRAY_CREATEDE"></span><span id="_CPPv2N28Sanitizer_CallbackIdResource37SANITIZER_CBID_RESOURCE_ARRAY_CREATEDE"></span><span class="target" id="group__sanitizer__callback__api_1ggad447a2768c522f1d2b2a086a47705a49a3240b79721f1a81d5de1b2c95ba6f98e"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_RESOURCE_ARRAY_CREATED</span></span></span><a class="headerlink" href="#_CPPv4N28Sanitizer_CallbackIdResource37SANITIZER_CBID_RESOURCE_ARRAY_CREATEDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A CUDA array was created. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N28Sanitizer_CallbackIdResource39SANITIZER_CBID_RESOURCE_ARRAY_DESTROYEDE">
+<span id="_CPPv3N28Sanitizer_CallbackIdResource39SANITIZER_CBID_RESOURCE_ARRAY_DESTROYEDE"></span><span id="_CPPv2N28Sanitizer_CallbackIdResource39SANITIZER_CBID_RESOURCE_ARRAY_DESTROYEDE"></span><span class="target" id="group__sanitizer__callback__api_1ggad447a2768c522f1d2b2a086a47705a49ac7167a9a77562b81eeb5ca89e69c0a48"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_RESOURCE_ARRAY_DESTROYED</span></span></span><a class="headerlink" href="#_CPPv4N28Sanitizer_CallbackIdResource39SANITIZER_CBID_RESOURCE_ARRAY_DESTROYEDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A CUDA array was destroyed. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N28Sanitizer_CallbackIdResource45SANITIZER_CBID_RESOURCE_FUNCTIONS_LAZY_LOADEDE">
+<span id="_CPPv3N28Sanitizer_CallbackIdResource45SANITIZER_CBID_RESOURCE_FUNCTIONS_LAZY_LOADEDE"></span><span id="_CPPv2N28Sanitizer_CallbackIdResource45SANITIZER_CBID_RESOURCE_FUNCTIONS_LAZY_LOADEDE"></span><span class="target" id="group__sanitizer__callback__api_1ggad447a2768c522f1d2b2a086a47705a49a697a6e4db682a1f34097ae42e461d21c"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_RESOURCE_FUNCTIONS_LAZY_LOADED</span></span></span><a class="headerlink" href="#_CPPv4N28Sanitizer_CallbackIdResource45SANITIZER_CBID_RESOURCE_FUNCTIONS_LAZY_LOADEDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>CUDA functions were loaded lazily and are fully loaded. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N28Sanitizer_CallbackIdResource46SANITIZER_CBID_RESOURCE_FUNCTIONS_LAZY_PATCHEDE">
+<span id="_CPPv3N28Sanitizer_CallbackIdResource46SANITIZER_CBID_RESOURCE_FUNCTIONS_LAZY_PATCHEDE"></span><span id="_CPPv2N28Sanitizer_CallbackIdResource46SANITIZER_CBID_RESOURCE_FUNCTIONS_LAZY_PATCHEDE"></span><span class="target" id="group__sanitizer__callback__api_1ggad447a2768c522f1d2b2a086a47705a49acc3a5961f9fb941151fb9db2512903e1"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_RESOURCE_FUNCTIONS_LAZY_PATCHED</span></span></span><a class="headerlink" href="#_CPPv4N28Sanitizer_CallbackIdResource46SANITIZER_CBID_RESOURCE_FUNCTIONS_LAZY_PATCHEDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>CUDA lazily loaded functions were patched. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N28Sanitizer_CallbackIdResource39SANITIZER_CBID_RESOURCE_VIRTUAL_RESERVEE">
+<span id="_CPPv3N28Sanitizer_CallbackIdResource39SANITIZER_CBID_RESOURCE_VIRTUAL_RESERVEE"></span><span id="_CPPv2N28Sanitizer_CallbackIdResource39SANITIZER_CBID_RESOURCE_VIRTUAL_RESERVEE"></span><span class="target" id="group__sanitizer__callback__api_1ggad447a2768c522f1d2b2a086a47705a49a10cf4b0ba25a8abb84d37fca019de5fa"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_RESOURCE_VIRTUAL_RESERVE</span></span></span><a class="headerlink" href="#_CPPv4N28Sanitizer_CallbackIdResource39SANITIZER_CBID_RESOURCE_VIRTUAL_RESERVEE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The CUDA driver reserved a virtual address range. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N28Sanitizer_CallbackIdResource39SANITIZER_CBID_RESOURCE_VIRTUAL_RELEASEE">
+<span id="_CPPv3N28Sanitizer_CallbackIdResource39SANITIZER_CBID_RESOURCE_VIRTUAL_RELEASEE"></span><span id="_CPPv2N28Sanitizer_CallbackIdResource39SANITIZER_CBID_RESOURCE_VIRTUAL_RELEASEE"></span><span class="target" id="group__sanitizer__callback__api_1ggad447a2768c522f1d2b2a086a47705a49ae1a4378f1e2f625351e5a89a08adf3c1"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_RESOURCE_VIRTUAL_RELEASE</span></span></span><a class="headerlink" href="#_CPPv4N28Sanitizer_CallbackIdResource39SANITIZER_CBID_RESOURCE_VIRTUAL_RELEASEE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The CUDA driver released a virtual address range. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N28Sanitizer_CallbackIdResource46SANITIZER_CBID_RESOURCE_MEMPOOL_IMPORT_POINTERE">
+<span id="_CPPv3N28Sanitizer_CallbackIdResource46SANITIZER_CBID_RESOURCE_MEMPOOL_IMPORT_POINTERE"></span><span id="_CPPv2N28Sanitizer_CallbackIdResource46SANITIZER_CBID_RESOURCE_MEMPOOL_IMPORT_POINTERE"></span><span class="target" id="group__sanitizer__callback__api_1ggad447a2768c522f1d2b2a086a47705a49a8f86e41ce9ec6c04e8cb78d3a2ebc19c"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_RESOURCE_MEMPOOL_IMPORT_POINTER</span></span></span><a class="headerlink" href="#_CPPv4N28Sanitizer_CallbackIdResource46SANITIZER_CBID_RESOURCE_MEMPOOL_IMPORT_POINTERE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A memory pool allocation was imported. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N28Sanitizer_CallbackIdResource28SANITIZER_CBID_RESOURCE_SIZEE">
+<span id="_CPPv3N28Sanitizer_CallbackIdResource28SANITIZER_CBID_RESOURCE_SIZEE"></span><span id="_CPPv2N28Sanitizer_CallbackIdResource28SANITIZER_CBID_RESOURCE_SIZEE"></span><span class="target" id="group__sanitizer__callback__api_1ggad447a2768c522f1d2b2a086a47705a49ac1142b91be35687f6c324667a2af12ef"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_RESOURCE_SIZE</span></span></span><a class="headerlink" href="#_CPPv4N28Sanitizer_CallbackIdResource28SANITIZER_CBID_RESOURCE_SIZEE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N28Sanitizer_CallbackIdResource33SANITIZER_CBID_RESOURCE_FORCE_INTE">
+<span id="_CPPv3N28Sanitizer_CallbackIdResource33SANITIZER_CBID_RESOURCE_FORCE_INTE"></span><span id="_CPPv2N28Sanitizer_CallbackIdResource33SANITIZER_CBID_RESOURCE_FORCE_INTE"></span><span class="target" id="group__sanitizer__callback__api_1ggad447a2768c522f1d2b2a086a47705a49aa04e5bbc4ee360eaa61b920a9eff0dc6"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_RESOURCE_FORCE_INT</span></span></span><a class="headerlink" href="#_CPPv4N28Sanitizer_CallbackIdResource33SANITIZER_CBID_RESOURCE_FORCE_INTE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv423Sanitizer_CallbackIdUvm">
+<span id="_CPPv323Sanitizer_CallbackIdUvm"></span><span id="_CPPv223Sanitizer_CallbackIdUvm"></span><span class="target" id="group__sanitizer__callback__api_1gad0dca53274794d63531e7993fb6248a0"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Sanitizer_CallbackIdUvm</span></span></span><a class="headerlink" href="#_CPPv423Sanitizer_CallbackIdUvm" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Callback IDs for managed memory domain. </p>
+<p>Callback IDs for resource domain SANITIZER_CB_DOMAIN_UVM. This value is communicated to the callback function via the <code class="docutils literal notranslate"><span class="pre">cbid</span></code> parameter. </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N23Sanitizer_CallbackIdUvm26SANITIZER_CBID_UVM_INVALIDE">
+<span id="_CPPv3N23Sanitizer_CallbackIdUvm26SANITIZER_CBID_UVM_INVALIDE"></span><span id="_CPPv2N23Sanitizer_CallbackIdUvm26SANITIZER_CBID_UVM_INVALIDE"></span><span class="target" id="group__sanitizer__callback__api_1ggad0dca53274794d63531e7993fb6248a0a707ca0649121416d591274ad94cf38ae"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_UVM_INVALID</span></span></span><a class="headerlink" href="#_CPPv4N23Sanitizer_CallbackIdUvm26SANITIZER_CBID_UVM_INVALIDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Invalid managed memory callback ID. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N23Sanitizer_CallbackIdUvm29SANITIZER_CBID_UVM_ATTACH_MEME">
+<span id="_CPPv3N23Sanitizer_CallbackIdUvm29SANITIZER_CBID_UVM_ATTACH_MEME"></span><span id="_CPPv2N23Sanitizer_CallbackIdUvm29SANITIZER_CBID_UVM_ATTACH_MEME"></span><span class="target" id="group__sanitizer__callback__api_1ggad0dca53274794d63531e7993fb6248a0a92eb9620669167609f2623faedc47c2b"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_UVM_ATTACH_MEM</span></span></span><a class="headerlink" href="#_CPPv4N23Sanitizer_CallbackIdUvm29SANITIZER_CBID_UVM_ATTACH_MEME" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Modify the stream association of an allocation (see cudaStreamAttachMemAsync) </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N23Sanitizer_CallbackIdUvm23SANITIZER_CBID_UVM_SIZEE">
+<span id="_CPPv3N23Sanitizer_CallbackIdUvm23SANITIZER_CBID_UVM_SIZEE"></span><span id="_CPPv2N23Sanitizer_CallbackIdUvm23SANITIZER_CBID_UVM_SIZEE"></span><span class="target" id="group__sanitizer__callback__api_1ggad0dca53274794d63531e7993fb6248a0a5ad25e98a2e638f3efdaf610f62f1a54"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_UVM_SIZE</span></span></span><a class="headerlink" href="#_CPPv4N23Sanitizer_CallbackIdUvm23SANITIZER_CBID_UVM_SIZEE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N23Sanitizer_CallbackIdUvm28SANITIZER_CBID_UVM_FORCE_ITNE">
+<span id="_CPPv3N23Sanitizer_CallbackIdUvm28SANITIZER_CBID_UVM_FORCE_ITNE"></span><span id="_CPPv2N23Sanitizer_CallbackIdUvm28SANITIZER_CBID_UVM_FORCE_ITNE"></span><span class="target" id="group__sanitizer__callback__api_1ggad0dca53274794d63531e7993fb6248a0a7420534a867b1bb00b86ab606a10b5cc"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CBID_UVM_FORCE_ITN</span></span></span><a class="headerlink" href="#_CPPv4N23Sanitizer_CallbackIdUvm28SANITIZER_CBID_UVM_FORCE_ITNE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv425Sanitizer_MemcpyDirection">
+<span id="_CPPv325Sanitizer_MemcpyDirection"></span><span id="_CPPv225Sanitizer_MemcpyDirection"></span><span class="target" id="group__sanitizer__callback__api_1ga6dd430318fea9a813020c974d07da85e"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Sanitizer_MemcpyDirection</span></span></span><a class="headerlink" href="#_CPPv425Sanitizer_MemcpyDirection" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Memcpy direction. </p>
+<p>Indicates the direction of a memcpy, passed inside <code class="docutils literal notranslate"><span class="pre">Sanitizer_Memcpydata</span></code>. </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N25Sanitizer_MemcpyDirection34SANITIZER_MEMCPY_DIRECTION_UNKNOWNE">
+<span id="_CPPv3N25Sanitizer_MemcpyDirection34SANITIZER_MEMCPY_DIRECTION_UNKNOWNE"></span><span id="_CPPv2N25Sanitizer_MemcpyDirection34SANITIZER_MEMCPY_DIRECTION_UNKNOWNE"></span><span class="target" id="group__sanitizer__callback__api_1gga6dd430318fea9a813020c974d07da85ea60dffdfafa7bcdb76a8adae0f7e4fb65"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_MEMCPY_DIRECTION_UNKNOWN</span></span></span><a class="headerlink" href="#_CPPv4N25Sanitizer_MemcpyDirection34SANITIZER_MEMCPY_DIRECTION_UNKNOWNE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Unknown memcpy direction. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N25Sanitizer_MemcpyDirection39SANITIZER_MEMCPY_DIRECTION_HOST_TO_HOSTE">
+<span id="_CPPv3N25Sanitizer_MemcpyDirection39SANITIZER_MEMCPY_DIRECTION_HOST_TO_HOSTE"></span><span id="_CPPv2N25Sanitizer_MemcpyDirection39SANITIZER_MEMCPY_DIRECTION_HOST_TO_HOSTE"></span><span class="target" id="group__sanitizer__callback__api_1gga6dd430318fea9a813020c974d07da85ea5be6c4f49002493f69fba85794c571de"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_MEMCPY_DIRECTION_HOST_TO_HOST</span></span></span><a class="headerlink" href="#_CPPv4N25Sanitizer_MemcpyDirection39SANITIZER_MEMCPY_DIRECTION_HOST_TO_HOSTE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Memcpy from host to host. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N25Sanitizer_MemcpyDirection41SANITIZER_MEMCPY_DIRECTION_HOST_TO_DEVICEE">
+<span id="_CPPv3N25Sanitizer_MemcpyDirection41SANITIZER_MEMCPY_DIRECTION_HOST_TO_DEVICEE"></span><span id="_CPPv2N25Sanitizer_MemcpyDirection41SANITIZER_MEMCPY_DIRECTION_HOST_TO_DEVICEE"></span><span class="target" id="group__sanitizer__callback__api_1gga6dd430318fea9a813020c974d07da85ea4bb24eea51783a23a040b5d840921724"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_MEMCPY_DIRECTION_HOST_TO_DEVICE</span></span></span><a class="headerlink" href="#_CPPv4N25Sanitizer_MemcpyDirection41SANITIZER_MEMCPY_DIRECTION_HOST_TO_DEVICEE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Memcpy from host to device. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N25Sanitizer_MemcpyDirection41SANITIZER_MEMCPY_DIRECTION_DEVICE_TO_HOSTE">
+<span id="_CPPv3N25Sanitizer_MemcpyDirection41SANITIZER_MEMCPY_DIRECTION_DEVICE_TO_HOSTE"></span><span id="_CPPv2N25Sanitizer_MemcpyDirection41SANITIZER_MEMCPY_DIRECTION_DEVICE_TO_HOSTE"></span><span class="target" id="group__sanitizer__callback__api_1gga6dd430318fea9a813020c974d07da85ead745d5602c5688537b69de243c957330"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_MEMCPY_DIRECTION_DEVICE_TO_HOST</span></span></span><a class="headerlink" href="#_CPPv4N25Sanitizer_MemcpyDirection41SANITIZER_MEMCPY_DIRECTION_DEVICE_TO_HOSTE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Memcpy from device to host. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N25Sanitizer_MemcpyDirection43SANITIZER_MEMCPY_DIRECTION_DEVICE_TO_DEVICEE">
+<span id="_CPPv3N25Sanitizer_MemcpyDirection43SANITIZER_MEMCPY_DIRECTION_DEVICE_TO_DEVICEE"></span><span id="_CPPv2N25Sanitizer_MemcpyDirection43SANITIZER_MEMCPY_DIRECTION_DEVICE_TO_DEVICEE"></span><span class="target" id="group__sanitizer__callback__api_1gga6dd430318fea9a813020c974d07da85eaba06c89f6f834bfc27291fe66a52bdb1"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_MEMCPY_DIRECTION_DEVICE_TO_DEVICE</span></span></span><a class="headerlink" href="#_CPPv4N25Sanitizer_MemcpyDirection43SANITIZER_MEMCPY_DIRECTION_DEVICE_TO_DEVICEE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Memcpy from device to device. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N25Sanitizer_MemcpyDirection31SANITIZER_MEMCPY_DIRECTION_SIZEE">
+<span id="_CPPv3N25Sanitizer_MemcpyDirection31SANITIZER_MEMCPY_DIRECTION_SIZEE"></span><span id="_CPPv2N25Sanitizer_MemcpyDirection31SANITIZER_MEMCPY_DIRECTION_SIZEE"></span><span class="target" id="group__sanitizer__callback__api_1gga6dd430318fea9a813020c974d07da85eaf0e06f0ded274f0aa294c6d77573887e"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_MEMCPY_DIRECTION_SIZE</span></span></span><a class="headerlink" href="#_CPPv4N25Sanitizer_MemcpyDirection31SANITIZER_MEMCPY_DIRECTION_SIZEE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N25Sanitizer_MemcpyDirection36SANITIZER_MEMCPY_DIRECTION_FORCE_INTE">
+<span id="_CPPv3N25Sanitizer_MemcpyDirection36SANITIZER_MEMCPY_DIRECTION_FORCE_INTE"></span><span id="_CPPv2N25Sanitizer_MemcpyDirection36SANITIZER_MEMCPY_DIRECTION_FORCE_INTE"></span><span class="target" id="group__sanitizer__callback__api_1gga6dd430318fea9a813020c974d07da85ea2f2c07fd0a5ee840c21223e5cd794fc8"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_MEMCPY_DIRECTION_FORCE_INT</span></span></span><a class="headerlink" href="#_CPPv4N25Sanitizer_MemcpyDirection36SANITIZER_MEMCPY_DIRECTION_FORCE_INTE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv426Sanitizer_MemoryVisibility">
+<span id="_CPPv326Sanitizer_MemoryVisibility"></span><span id="_CPPv226Sanitizer_MemoryVisibility"></span><span class="target" id="group__sanitizer__callback__api_1ga62d02f306fdb955ab1f5add810c45564"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Sanitizer_MemoryVisibility</span></span></span><a class="headerlink" href="#_CPPv426Sanitizer_MemoryVisibility" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Specifies the visibility of an allocation. </p>
+<p>Specifies the visibility of an allocation. This is typically GLOBAL on allocations made via cudaMalloc, cudaHostAlloc and similar APIs. This can be GLOBAL or HOST for cudaMallocManaged allocations depending on the flags parameter. This can be changed after allocation time using cudaMemAttachSingle API (see SANITIZER_CBID_UVM_ATTACH_MEM for the corresponding callback). </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N26Sanitizer_MemoryVisibility35SANITIZER_MEMORY_VISIBILITY_INVALIDE">
+<span id="_CPPv3N26Sanitizer_MemoryVisibility35SANITIZER_MEMORY_VISIBILITY_INVALIDE"></span><span id="_CPPv2N26Sanitizer_MemoryVisibility35SANITIZER_MEMORY_VISIBILITY_INVALIDE"></span><span class="target" id="group__sanitizer__callback__api_1gga62d02f306fdb955ab1f5add810c45564aec98e94be6b92519a97382661efc7ec3"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_MEMORY_VISIBILITY_INVALID</span></span></span><a class="headerlink" href="#_CPPv4N26Sanitizer_MemoryVisibility35SANITIZER_MEMORY_VISIBILITY_INVALIDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Invalid memory visibility. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N26Sanitizer_MemoryVisibility34SANITIZER_MEMORY_VISIBILITY_GLOBALE">
+<span id="_CPPv3N26Sanitizer_MemoryVisibility34SANITIZER_MEMORY_VISIBILITY_GLOBALE"></span><span id="_CPPv2N26Sanitizer_MemoryVisibility34SANITIZER_MEMORY_VISIBILITY_GLOBALE"></span><span class="target" id="group__sanitizer__callback__api_1gga62d02f306fdb955ab1f5add810c45564a7054a49c377ec2be82a2a0649e470cd7"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_MEMORY_VISIBILITY_GLOBAL</span></span></span><a class="headerlink" href="#_CPPv4N26Sanitizer_MemoryVisibility34SANITIZER_MEMORY_VISIBILITY_GLOBALE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Memory can be accessed by any stream on any device (see cudaMemAttachGlobal) </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N26Sanitizer_MemoryVisibility32SANITIZER_MEMORY_VISIBILITY_HOSTE">
+<span id="_CPPv3N26Sanitizer_MemoryVisibility32SANITIZER_MEMORY_VISIBILITY_HOSTE"></span><span id="_CPPv2N26Sanitizer_MemoryVisibility32SANITIZER_MEMORY_VISIBILITY_HOSTE"></span><span class="target" id="group__sanitizer__callback__api_1gga62d02f306fdb955ab1f5add810c45564a0ce73516f2ab9ecebda2870c42403c87"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_MEMORY_VISIBILITY_HOST</span></span></span><a class="headerlink" href="#_CPPv4N26Sanitizer_MemoryVisibility32SANITIZER_MEMORY_VISIBILITY_HOSTE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Memory cannot be accessed by any stream on any device (see cudaMemAttachHost) </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N26Sanitizer_MemoryVisibility34SANITIZER_MEMORY_VISIBILITY_STREAME">
+<span id="_CPPv3N26Sanitizer_MemoryVisibility34SANITIZER_MEMORY_VISIBILITY_STREAME"></span><span id="_CPPv2N26Sanitizer_MemoryVisibility34SANITIZER_MEMORY_VISIBILITY_STREAME"></span><span class="target" id="group__sanitizer__callback__api_1gga62d02f306fdb955ab1f5add810c45564a3c1f84ccf3f2c63b65630004aafbaee9"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_MEMORY_VISIBILITY_STREAM</span></span></span><a class="headerlink" href="#_CPPv4N26Sanitizer_MemoryVisibility34SANITIZER_MEMORY_VISIBILITY_STREAME" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Memory can only be accessed by a single stream on the associated device (see cudaMemAttachSingle) </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N26Sanitizer_MemoryVisibility37SANITIZER_MEMORY_VISIBILITY_FORCE_INTE">
+<span id="_CPPv3N26Sanitizer_MemoryVisibility37SANITIZER_MEMORY_VISIBILITY_FORCE_INTE"></span><span id="_CPPv2N26Sanitizer_MemoryVisibility37SANITIZER_MEMORY_VISIBILITY_FORCE_INTE"></span><span class="target" id="group__sanitizer__callback__api_1gga62d02f306fdb955ab1f5add810c45564ab4a2e50305b0db742d78c53ccf593a03"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_MEMORY_VISIBILITY_FORCE_INT</span></span></span><a class="headerlink" href="#_CPPv4N26Sanitizer_MemoryVisibility37SANITIZER_MEMORY_VISIBILITY_FORCE_INTE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv429Sanitizer_ResourceMemoryFlags">
+<span id="_CPPv329Sanitizer_ResourceMemoryFlags"></span><span id="_CPPv229Sanitizer_ResourceMemoryFlags"></span><span class="target" id="group__sanitizer__callback__api_1gad29155bb34524587a5a42d41be1d3fb2"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Sanitizer_ResourceMemoryFlags</span></span></span><a class="headerlink" href="#_CPPv429Sanitizer_ResourceMemoryFlags" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Flags describing a memory allocation. </p>
+<p>Flags describing a memory allocation. These values are to be used in order to interpret the value of <a class="reference internal" href="structSanitizer__ResourceMemoryData.html#structsanitizer__resourcememorydata_1a7bee77cc4075471b0397cf557c843c4a"><span class="std std-ref">Sanitizer_ResourceMemoryData::flags</span></a> </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N29Sanitizer_ResourceMemoryFlags26SANITIZER_MEMORY_FLAG_NONEE">
+<span id="_CPPv3N29Sanitizer_ResourceMemoryFlags26SANITIZER_MEMORY_FLAG_NONEE"></span><span id="_CPPv2N29Sanitizer_ResourceMemoryFlags26SANITIZER_MEMORY_FLAG_NONEE"></span><span class="target" id="group__sanitizer__callback__api_1ggad29155bb34524587a5a42d41be1d3fb2afe628d1619f6084b2ff9d546d62754d5"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_MEMORY_FLAG_NONE</span></span></span><a class="headerlink" href="#_CPPv4N29Sanitizer_ResourceMemoryFlags26SANITIZER_MEMORY_FLAG_NONEE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Empty flag. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N29Sanitizer_ResourceMemoryFlags28SANITIZER_MEMORY_FLAG_MODULEE">
+<span id="_CPPv3N29Sanitizer_ResourceMemoryFlags28SANITIZER_MEMORY_FLAG_MODULEE"></span><span id="_CPPv2N29Sanitizer_ResourceMemoryFlags28SANITIZER_MEMORY_FLAG_MODULEE"></span><span class="target" id="group__sanitizer__callback__api_1ggad29155bb34524587a5a42d41be1d3fb2ade496bf8bb3e2f56a4e5b4f13ccf1958"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_MEMORY_FLAG_MODULE</span></span></span><a class="headerlink" href="#_CPPv4N29Sanitizer_ResourceMemoryFlags28SANITIZER_MEMORY_FLAG_MODULEE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Specifies that the allocation is static scoped to a module. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N29Sanitizer_ResourceMemoryFlags29SANITIZER_MEMORY_FLAG_MANAGEDE">
+<span id="_CPPv3N29Sanitizer_ResourceMemoryFlags29SANITIZER_MEMORY_FLAG_MANAGEDE"></span><span id="_CPPv2N29Sanitizer_ResourceMemoryFlags29SANITIZER_MEMORY_FLAG_MANAGEDE"></span><span class="target" id="group__sanitizer__callback__api_1ggad29155bb34524587a5a42d41be1d3fb2ab4f87d77b74a0fcdb803e884896f4e1d"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_MEMORY_FLAG_MANAGED</span></span></span><a class="headerlink" href="#_CPPv4N29Sanitizer_ResourceMemoryFlags29SANITIZER_MEMORY_FLAG_MANAGEDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Specifies that the allocation is managed memory. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N29Sanitizer_ResourceMemoryFlags33SANITIZER_MEMORY_FLAG_HOST_MAPPEDE">
+<span id="_CPPv3N29Sanitizer_ResourceMemoryFlags33SANITIZER_MEMORY_FLAG_HOST_MAPPEDE"></span><span id="_CPPv2N29Sanitizer_ResourceMemoryFlags33SANITIZER_MEMORY_FLAG_HOST_MAPPEDE"></span><span class="target" id="group__sanitizer__callback__api_1ggad29155bb34524587a5a42d41be1d3fb2a8e50f29060b27b767df0a344dd68f5d0"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_MEMORY_FLAG_HOST_MAPPED</span></span></span><a class="headerlink" href="#_CPPv4N29Sanitizer_ResourceMemoryFlags33SANITIZER_MEMORY_FLAG_HOST_MAPPEDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Species that the allocation accessible from the host. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N29Sanitizer_ResourceMemoryFlags33SANITIZER_MEMORY_FLAG_HOST_PINNEDE">
+<span id="_CPPv3N29Sanitizer_ResourceMemoryFlags33SANITIZER_MEMORY_FLAG_HOST_PINNEDE"></span><span id="_CPPv2N29Sanitizer_ResourceMemoryFlags33SANITIZER_MEMORY_FLAG_HOST_PINNEDE"></span><span class="target" id="group__sanitizer__callback__api_1ggad29155bb34524587a5a42d41be1d3fb2aedd0c300182b331d0efa950226e6eb2d"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_MEMORY_FLAG_HOST_PINNED</span></span></span><a class="headerlink" href="#_CPPv4N29Sanitizer_ResourceMemoryFlags33SANITIZER_MEMORY_FLAG_HOST_PINNEDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Specifies that the allocation is pinned on the host. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N29Sanitizer_ResourceMemoryFlags26SANITIZER_MEMORY_FLAG_PEERE">
+<span id="_CPPv3N29Sanitizer_ResourceMemoryFlags26SANITIZER_MEMORY_FLAG_PEERE"></span><span id="_CPPv2N29Sanitizer_ResourceMemoryFlags26SANITIZER_MEMORY_FLAG_PEERE"></span><span class="target" id="group__sanitizer__callback__api_1ggad29155bb34524587a5a42d41be1d3fb2ae48682eff0dbf2410d29e85dcba2363c"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_MEMORY_FLAG_PEER</span></span></span><a class="headerlink" href="#_CPPv4N29Sanitizer_ResourceMemoryFlags26SANITIZER_MEMORY_FLAG_PEERE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Specifies that the allocation is located on a peer GPU. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N29Sanitizer_ResourceMemoryFlags33SANITIZER_MEMORY_FLAG_PEER_ATOMICE">
+<span id="_CPPv3N29Sanitizer_ResourceMemoryFlags33SANITIZER_MEMORY_FLAG_PEER_ATOMICE"></span><span id="_CPPv2N29Sanitizer_ResourceMemoryFlags33SANITIZER_MEMORY_FLAG_PEER_ATOMICE"></span><span class="target" id="group__sanitizer__callback__api_1ggad29155bb34524587a5a42d41be1d3fb2a5f5c733652a1f6523aba62c52ec17cf8"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_MEMORY_FLAG_PEER_ATOMIC</span></span></span><a class="headerlink" href="#_CPPv4N29Sanitizer_ResourceMemoryFlags33SANITIZER_MEMORY_FLAG_PEER_ATOMICE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Specifies that the allocation is located on a peer GPU supporting native atomics. </p>
+<p>This implies that SANITIZER_MEMORY_FLAG_PEER is set as well. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N29Sanitizer_ResourceMemoryFlags32SANITIZER_MEMORY_FLAG_CG_RUNTIMEE">
+<span id="_CPPv3N29Sanitizer_ResourceMemoryFlags32SANITIZER_MEMORY_FLAG_CG_RUNTIMEE"></span><span id="_CPPv2N29Sanitizer_ResourceMemoryFlags32SANITIZER_MEMORY_FLAG_CG_RUNTIMEE"></span><span class="target" id="group__sanitizer__callback__api_1ggad29155bb34524587a5a42d41be1d3fb2ad658f4fb8f76628770b7600cb445a42b"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_MEMORY_FLAG_CG_RUNTIME</span></span></span><a class="headerlink" href="#_CPPv4N29Sanitizer_ResourceMemoryFlags32SANITIZER_MEMORY_FLAG_CG_RUNTIMEE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Specifies that the allocation is used by the Cooperative Groups runtime functions. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N29Sanitizer_ResourceMemoryFlags25SANITIZER_MEMORY_FLAG_CNPE">
+<span id="_CPPv3N29Sanitizer_ResourceMemoryFlags25SANITIZER_MEMORY_FLAG_CNPE"></span><span id="_CPPv2N29Sanitizer_ResourceMemoryFlags25SANITIZER_MEMORY_FLAG_CNPE"></span><span class="target" id="group__sanitizer__callback__api_1ggad29155bb34524587a5a42d41be1d3fb2afb39111f58e43b9e00035279a321396f"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_MEMORY_FLAG_CNP</span></span></span><a class="headerlink" href="#_CPPv4N29Sanitizer_ResourceMemoryFlags25SANITIZER_MEMORY_FLAG_CNPE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Specifies that this is an allocation used for CUDA Dynamic Parallelism purposes. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N29Sanitizer_ResourceMemoryFlags31SANITIZER_MEMORY_FLAG_FORCE_INTE">
+<span id="_CPPv3N29Sanitizer_ResourceMemoryFlags31SANITIZER_MEMORY_FLAG_FORCE_INTE"></span><span id="_CPPv2N29Sanitizer_ResourceMemoryFlags31SANITIZER_MEMORY_FLAG_FORCE_INTE"></span><span class="target" id="group__sanitizer__callback__api_1ggad29155bb34524587a5a42d41be1d3fb2a8aefd4a3775211bd0357803cb270be33"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_MEMORY_FLAG_FORCE_INT</span></span></span><a class="headerlink" href="#_CPPv4N29Sanitizer_ResourceMemoryFlags31SANITIZER_MEMORY_FLAG_FORCE_INTE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv435Sanitizer_ResourceMemoryPermissions">
+<span id="_CPPv335Sanitizer_ResourceMemoryPermissions"></span><span id="_CPPv235Sanitizer_ResourceMemoryPermissions"></span><span class="target" id="group__sanitizer__callback__api_1gac172db1fa20fecca6ac23c2954ae15a1"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Sanitizer_ResourceMemoryPermissions</span></span></span><a class="headerlink" href="#_CPPv435Sanitizer_ResourceMemoryPermissions" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Permissions for a memory allocation. </p>
+<p>Permissions for a memory allocation. These values are to be used in order to interpret the value of <a class="reference internal" href="structSanitizer__ResourceMemoryData.html#structsanitizer__resourcememorydata_1afa68ea5df21d945ae35162a7573c4d61"><span class="std std-ref">Sanitizer_ResourceMemoryData::permissions</span></a> </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N35Sanitizer_ResourceMemoryPermissions32SANITIZER_MEMORY_PERMISSION_NONEE">
+<span id="_CPPv3N35Sanitizer_ResourceMemoryPermissions32SANITIZER_MEMORY_PERMISSION_NONEE"></span><span id="_CPPv2N35Sanitizer_ResourceMemoryPermissions32SANITIZER_MEMORY_PERMISSION_NONEE"></span><span class="target" id="group__sanitizer__callback__api_1ggac172db1fa20fecca6ac23c2954ae15a1ad007a64340a1fa1c858e1735e2b732e9"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_MEMORY_PERMISSION_NONE</span></span></span><a class="headerlink" href="#_CPPv4N35Sanitizer_ResourceMemoryPermissions32SANITIZER_MEMORY_PERMISSION_NONEE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>No permissions. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N35Sanitizer_ResourceMemoryPermissions32SANITIZER_MEMORY_PERMISSION_READE">
+<span id="_CPPv3N35Sanitizer_ResourceMemoryPermissions32SANITIZER_MEMORY_PERMISSION_READE"></span><span id="_CPPv2N35Sanitizer_ResourceMemoryPermissions32SANITIZER_MEMORY_PERMISSION_READE"></span><span class="target" id="group__sanitizer__callback__api_1ggac172db1fa20fecca6ac23c2954ae15a1ae75db3c063e08e0e62554d4ea3f6f555"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_MEMORY_PERMISSION_READ</span></span></span><a class="headerlink" href="#_CPPv4N35Sanitizer_ResourceMemoryPermissions32SANITIZER_MEMORY_PERMISSION_READE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Specifies that the allocation is readable. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N35Sanitizer_ResourceMemoryPermissions33SANITIZER_MEMORY_PERMISSION_WRITEE">
+<span id="_CPPv3N35Sanitizer_ResourceMemoryPermissions33SANITIZER_MEMORY_PERMISSION_WRITEE"></span><span id="_CPPv2N35Sanitizer_ResourceMemoryPermissions33SANITIZER_MEMORY_PERMISSION_WRITEE"></span><span class="target" id="group__sanitizer__callback__api_1ggac172db1fa20fecca6ac23c2954ae15a1a5d9b919025a4c997d342a44e6545e985"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_MEMORY_PERMISSION_WRITE</span></span></span><a class="headerlink" href="#_CPPv4N35Sanitizer_ResourceMemoryPermissions33SANITIZER_MEMORY_PERMISSION_WRITEE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Specifies that the allocation is writable. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N35Sanitizer_ResourceMemoryPermissions34SANITIZER_MEMORY_PERMISSION_ATOMICE">
+<span id="_CPPv3N35Sanitizer_ResourceMemoryPermissions34SANITIZER_MEMORY_PERMISSION_ATOMICE"></span><span id="_CPPv2N35Sanitizer_ResourceMemoryPermissions34SANITIZER_MEMORY_PERMISSION_ATOMICE"></span><span class="target" id="group__sanitizer__callback__api_1ggac172db1fa20fecca6ac23c2954ae15a1a7104209c55e959075959198586bf8ec7"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_MEMORY_PERMISSION_ATOMIC</span></span></span><a class="headerlink" href="#_CPPv4N35Sanitizer_ResourceMemoryPermissions34SANITIZER_MEMORY_PERMISSION_ATOMICE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Specifies that the allocation is readable/writable with atomic operations. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N35Sanitizer_ResourceMemoryPermissions31SANITIZER_MEMORY_PERMISSION_ALLE">
+<span id="_CPPv3N35Sanitizer_ResourceMemoryPermissions31SANITIZER_MEMORY_PERMISSION_ALLE"></span><span id="_CPPv2N35Sanitizer_ResourceMemoryPermissions31SANITIZER_MEMORY_PERMISSION_ALLE"></span><span class="target" id="group__sanitizer__callback__api_1ggac172db1fa20fecca6ac23c2954ae15a1a09f85c91d0f602a335c9f8511bbe1069"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_MEMORY_PERMISSION_ALL</span></span></span><a class="headerlink" href="#_CPPv4N35Sanitizer_ResourceMemoryPermissions31SANITIZER_MEMORY_PERMISSION_ALLE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Specifies that the allocation has all permissions. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N35Sanitizer_ResourceMemoryPermissions37SANITIZER_MEMORY_PERMISSION_FORCE_INTE">
+<span id="_CPPv3N35Sanitizer_ResourceMemoryPermissions37SANITIZER_MEMORY_PERMISSION_FORCE_INTE"></span><span id="_CPPv2N35Sanitizer_ResourceMemoryPermissions37SANITIZER_MEMORY_PERMISSION_FORCE_INTE"></span><span class="target" id="group__sanitizer__callback__api_1ggac172db1fa20fecca6ac23c2954ae15a1a151c7384a759c0560b056ce2313761a9"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_MEMORY_PERMISSION_FORCE_INT</span></span></span><a class="headerlink" href="#_CPPv4N35Sanitizer_ResourceMemoryPermissions37SANITIZER_MEMORY_PERMISSION_FORCE_INTE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline"></a></h2>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv425sanitizerEnableAllDomains8uint32_t26Sanitizer_SubscriberHandle">
+<span id="_CPPv325sanitizerEnableAllDomains8uint32_t26Sanitizer_SubscriberHandle"></span><span id="_CPPv225sanitizerEnableAllDomains8uint32_t26Sanitizer_SubscriberHandle"></span><span id="sanitizerEnableAllDomains__uint32_t.Sanitizer_SubscriberHandle"></span><span class="target" id="group__sanitizer__callback__api_1ga7141b8c08d19678c49e55b48b6807048"></span><a class="reference internal" href="group__SANITIZER__RESULT__API.html#_CPPv415SanitizerResult" title="SanitizerResult"><span class="n"><span class="pre">SanitizerResult</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sanitizerEnableAllDomains</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">enable</span></span>, <a class="reference internal" href="#_CPPv426Sanitizer_SubscriberHandle" title="Sanitizer_SubscriberHandle"><span class="n"><span class="pre">Sanitizer_SubscriberHandle</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">subscriber</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv425sanitizerEnableAllDomains8uint32_t26Sanitizer_SubscriberHandle" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Enable or disable all callbacks in all domains. </p>
+<p>Enable or disable all callbacks in all domains.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Thread-safety</strong><p>: a subscriber must serialize access to sanitizerGetCallbackState, sanitizerEnableCallback, sanitizerEnableDomain, and sanitizerEnableAllDomains. For example, if sanitizerGetCallbackState(sub,</p>
+<p>d, *) and sanitizerEnableAllDomains(sub) are called concurrently, the results are undefined.</p>
+</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>enable</strong> – New enable state for all callbacks in all domains. Zero disables all callbacks, non-zero enables all callbacks. </p></li>
+<li><p><strong>subscriber</strong> – - Handle of the initialized subscriber</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return values</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>SANITIZER_SUCCESS</strong> – on success </p></li>
+<li><p><strong>SANITIZER_ERROR_NOT_INITIALIZED</strong> – if unable to initialize the sanitizer </p></li>
+<li><p><strong>SANITIZER_ERROR_INVALID_PARAMETER</strong> – if <code class="docutils literal notranslate"><span class="pre">subscriber</span></code> is invalid </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv423sanitizerEnableCallback8uint32_t26Sanitizer_SubscriberHandle24Sanitizer_CallbackDomain20Sanitizer_CallbackId">
+<span id="_CPPv323sanitizerEnableCallback8uint32_t26Sanitizer_SubscriberHandle24Sanitizer_CallbackDomain20Sanitizer_CallbackId"></span><span id="_CPPv223sanitizerEnableCallback8uint32_t26Sanitizer_SubscriberHandle24Sanitizer_CallbackDomain20Sanitizer_CallbackId"></span><span id="sanitizerEnableCallback__uint32_t.Sanitizer_SubscriberHandle.Sanitizer_CallbackDomain.Sanitizer_CallbackId"></span><span class="target" id="group__sanitizer__callback__api_1ga7f9ccc2d0e0380061e8eed072c41b3b7"></span><a class="reference internal" href="group__SANITIZER__RESULT__API.html#_CPPv415SanitizerResult" title="SanitizerResult"><span class="n"><span class="pre">SanitizerResult</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sanitizerEnableCallback</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">enable</span></span>, <a class="reference internal" href="#_CPPv426Sanitizer_SubscriberHandle" title="Sanitizer_SubscriberHandle"><span class="n"><span class="pre">Sanitizer_SubscriberHandle</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">subscriber</span></span>, <a class="reference internal" href="#_CPPv424Sanitizer_CallbackDomain" title="Sanitizer_CallbackDomain"><span class="n"><span class="pre">Sanitizer_CallbackDomain</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">domain</span></span>, <a class="reference internal" href="#_CPPv420Sanitizer_CallbackId" title="Sanitizer_CallbackId"><span class="n"><span class="pre">Sanitizer_CallbackId</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">cbid</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv423sanitizerEnableCallback8uint32_t26Sanitizer_SubscriberHandle24Sanitizer_CallbackDomain20Sanitizer_CallbackId" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Enable or disable callbacks for a specific domain and callback ID. </p>
+<p>Enable or disable callbacks for a subscriber for a specific domain and callback ID.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Thread-safety</strong><p>: a subscriber must serialize access to sanitizerGetCallbackState, sanitizerEnableCallback, sanitizerEnableDomain, and sanitizerEnableAllDomains. For example, if sanitizerGetCallbackState(sub, d,</p>
+<p>c) and sanitizerEnableCallback(sub, d, c) are called concurrently, the results are undefined.</p>
+</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>enable</strong> – New enable state for the callback. Zero disables the callback, non-zero enables the callback </p></li>
+<li><p><strong>subscriber</strong> – - Handle of the initialized subscriber </p></li>
+<li><p><strong>domain</strong> – The domain of the callback </p></li>
+<li><p><strong>cbid</strong> – The ID of the callback</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return values</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>SANITIZER_SUCCESS</strong> – on success </p></li>
+<li><p><strong>SANITIZER_ERROR_NOT_INITIALIZED</strong> – if unable to initialize the sanitizer </p></li>
+<li><p><strong>SANITIZER_ERROR_INVALID_PARAMETER</strong> – if <code class="docutils literal notranslate"><span class="pre">subscriber</span></code>, <code class="docutils literal notranslate"><span class="pre">domain</span></code> or <code class="docutils literal notranslate"><span class="pre">cbid</span></code> is invalid </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv421sanitizerEnableDomain8uint32_t26Sanitizer_SubscriberHandle24Sanitizer_CallbackDomain">
+<span id="_CPPv321sanitizerEnableDomain8uint32_t26Sanitizer_SubscriberHandle24Sanitizer_CallbackDomain"></span><span id="_CPPv221sanitizerEnableDomain8uint32_t26Sanitizer_SubscriberHandle24Sanitizer_CallbackDomain"></span><span id="sanitizerEnableDomain__uint32_t.Sanitizer_SubscriberHandle.Sanitizer_CallbackDomain"></span><span class="target" id="group__sanitizer__callback__api_1ga2de696ffde337829a90b3d0b34a0293c"></span><a class="reference internal" href="group__SANITIZER__RESULT__API.html#_CPPv415SanitizerResult" title="SanitizerResult"><span class="n"><span class="pre">SanitizerResult</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sanitizerEnableDomain</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">enable</span></span>, <a class="reference internal" href="#_CPPv426Sanitizer_SubscriberHandle" title="Sanitizer_SubscriberHandle"><span class="n"><span class="pre">Sanitizer_SubscriberHandle</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">subscriber</span></span>, <a class="reference internal" href="#_CPPv424Sanitizer_CallbackDomain" title="Sanitizer_CallbackDomain"><span class="n"><span class="pre">Sanitizer_CallbackDomain</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">domain</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv421sanitizerEnableDomain8uint32_t26Sanitizer_SubscriberHandle24Sanitizer_CallbackDomain" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Enable or disable all callbacks for a specific domain. </p>
+<p>Enable or disable all callbacks for a specific domain.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Thread-safety</strong><p>: a subscriber must serialize access to sanitizerGetCallbackState, sanitizerEnableCallback, sanitizerEnableDomain, and sanitizerEnableAllDomains. For example, if sanitizerGetCallbackEnabled(sub,</p>
+<p>d, *) and sanitizerEnableDomain(sub, d) are called concurrently, the results are undefined.</p>
+</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>enable</strong> – New enable state for all callbacks in the domain. Zero disables all callbacks, non-zero enables all callbacks </p></li>
+<li><p><strong>subscriber</strong> – - Handle of the initialized subscriber </p></li>
+<li><p><strong>domain</strong> – The domain of the callback</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return values</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>SANITIZER_SUCCESS</strong> – on success </p></li>
+<li><p><strong>SANITIZER_ERROR_NOT_INITIALIZED</strong> – if unable to initialize the sanitizer </p></li>
+<li><p><strong>SANITIZER_ERROR_INVALID_PARAMETER</strong> – if <code class="docutils literal notranslate"><span class="pre">subscriber</span></code> or <code class="docutils literal notranslate"><span class="pre">domain</span></code> is invalid </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv425sanitizerGetCallbackStateP8uint32_t26Sanitizer_SubscriberHandle24Sanitizer_CallbackDomain20Sanitizer_CallbackId">
+<span id="_CPPv325sanitizerGetCallbackStateP8uint32_t26Sanitizer_SubscriberHandle24Sanitizer_CallbackDomain20Sanitizer_CallbackId"></span><span id="_CPPv225sanitizerGetCallbackStateP8uint32_t26Sanitizer_SubscriberHandle24Sanitizer_CallbackDomain20Sanitizer_CallbackId"></span><span id="sanitizerGetCallbackState__uint32_tP.Sanitizer_SubscriberHandle.Sanitizer_CallbackDomain.Sanitizer_CallbackId"></span><span class="target" id="group__sanitizer__callback__api_1gaabc521e1a8b19bea5adee39ed7e8c6e4"></span><a class="reference internal" href="group__SANITIZER__RESULT__API.html#_CPPv415SanitizerResult" title="SanitizerResult"><span class="n"><span class="pre">SanitizerResult</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sanitizerGetCallbackState</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">enable</span></span>, <a class="reference internal" href="#_CPPv426Sanitizer_SubscriberHandle" title="Sanitizer_SubscriberHandle"><span class="n"><span class="pre">Sanitizer_SubscriberHandle</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">subscriber</span></span>, <a class="reference internal" href="#_CPPv424Sanitizer_CallbackDomain" title="Sanitizer_CallbackDomain"><span class="n"><span class="pre">Sanitizer_CallbackDomain</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">domain</span></span>, <a class="reference internal" href="#_CPPv420Sanitizer_CallbackId" title="Sanitizer_CallbackId"><span class="n"><span class="pre">Sanitizer_CallbackId</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">cbid</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv425sanitizerGetCallbackStateP8uint32_t26Sanitizer_SubscriberHandle24Sanitizer_CallbackDomain20Sanitizer_CallbackId" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Get the current enabled/disabled state of a callback for a specific domain and function ID. </p>
+<p>Returns non-zero in <code class="docutils literal notranslate"><span class="pre">*enable</span></code> if the callback for a domain and callback ID is enabled, and zero if not enabled.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Thread-safety</strong><p>: a subscriber must serialize access to sanitizerGetCallbackState, sanitizerEnableCallback, sanitizerEnableDomain, and sanitizerEnableAllDomains. For example, if sanitizerGetCallbackState(sub, d,</p>
+<p>c) and sanitizerEnableCallback(sub, d, c) are called concurrently, the results are undefined.</p>
+</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>enable</strong> – Returns non-zero if callback enabled, zero if not enabled </p></li>
+<li><p><strong>subscriber</strong> – Handle to the initialized subscriber </p></li>
+<li><p><strong>domain</strong> – The domain of the callback </p></li>
+<li><p><strong>cbid</strong> – The ID of the callback</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return values</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>SANITIZER_SUCCESS</strong> – on success </p></li>
+<li><p><strong>SANITIZER_ERROR_NOT_INITIALIZED</strong> – if unable to initialize the sanitizer </p></li>
+<li><p><strong>SANITIZER_ERROR_INVALID_PARAMETER</strong> – if <code class="docutils literal notranslate"><span class="pre">enabled</span></code> is NULL, or if <code class="docutils literal notranslate"><span class="pre">subscriber</span></code>, <code class="docutils literal notranslate"><span class="pre">domain</span></code> or <code class="docutils literal notranslate"><span class="pre">cbid</span></code> is invalid. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv418sanitizerSubscribeP26Sanitizer_SubscriberHandle22Sanitizer_CallbackFuncPv">
+<span id="_CPPv318sanitizerSubscribeP26Sanitizer_SubscriberHandle22Sanitizer_CallbackFuncPv"></span><span id="_CPPv218sanitizerSubscribeP26Sanitizer_SubscriberHandle22Sanitizer_CallbackFuncPv"></span><span id="sanitizerSubscribe__Sanitizer_SubscriberHandleP.Sanitizer_CallbackFunc.voidP"></span><span class="target" id="group__sanitizer__callback__api_1ga1654365b83859f8dfd48df6ea832c927"></span><a class="reference internal" href="group__SANITIZER__RESULT__API.html#_CPPv415SanitizerResult" title="SanitizerResult"><span class="n"><span class="pre">SanitizerResult</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sanitizerSubscribe</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv426Sanitizer_SubscriberHandle" title="Sanitizer_SubscriberHandle"><span class="n"><span class="pre">Sanitizer_SubscriberHandle</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">subscriber</span></span>, <a class="reference internal" href="#_CPPv422Sanitizer_CallbackFunc" title="Sanitizer_CallbackFunc"><span class="n"><span class="pre">Sanitizer_CallbackFunc</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">callback</span></span>, <span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">userdata</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv418sanitizerSubscribeP26Sanitizer_SubscriberHandle22Sanitizer_CallbackFuncPv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Initialize a callback subscriber with a callback function and user data. </p>
+<p>Initialize a callback subscriber with a callback function and (optionally) a pointer to user data. The returned subscriber handle can be used to enable and disable the callback for specific domains and callback IDs. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Only one subscriber can be registered at a time. </p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function does not enable any callbacks. </p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Thread-safety</strong>: this function is thread safe.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>subscriber</strong> – Returns handle to initialize subscriber </p></li>
+<li><p><strong>callback</strong> – The callback function </p></li>
+<li><p><strong>userdata</strong> – A pointer to user data. This data will be passed to the callback function via the <code class="docutils literal notranslate"><span class="pre">userdata</span></code> parameter</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return values</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>SANITIZER_SUCCESS</strong> – on success </p></li>
+<li><p><strong>SANITIZER_ERROR_NOT_INITIALIZED</strong> – if unable to initialize the sanitizer </p></li>
+<li><p><strong>SANITIZER_ERROR_MAX_LIMIT_RACHED</strong> – if there is already a sanitizer subscriber </p></li>
+<li><p><strong>SANITIZER_ERROR_INVALID_PARAMETER</strong> – if <code class="docutils literal notranslate"><span class="pre">subscriber</span></code> is NULL </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv420sanitizerUnsubscribe26Sanitizer_SubscriberHandle">
+<span id="_CPPv320sanitizerUnsubscribe26Sanitizer_SubscriberHandle"></span><span id="_CPPv220sanitizerUnsubscribe26Sanitizer_SubscriberHandle"></span><span id="sanitizerUnsubscribe__Sanitizer_SubscriberHandle"></span><span class="target" id="group__sanitizer__callback__api_1gad278cce7894df2bb97002c25ff36e868"></span><a class="reference internal" href="group__SANITIZER__RESULT__API.html#_CPPv415SanitizerResult" title="SanitizerResult"><span class="n"><span class="pre">SanitizerResult</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sanitizerUnsubscribe</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv426Sanitizer_SubscriberHandle" title="Sanitizer_SubscriberHandle"><span class="n"><span class="pre">Sanitizer_SubscriberHandle</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">subscriber</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv420sanitizerUnsubscribe26Sanitizer_SubscriberHandle" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Unregister a callback subscriber. </p>
+<p>Removes a callback subscriber so that no future callback will be issued to that subscriber. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Thread-safety</strong>: this function is thread safe.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>subscriber</strong> – Handle to the initialized subscriber</p>
+</dd>
+<dt class="field-even">Return values</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>SANITIZER_SUCCESS</strong> – on success </p></li>
+<li><p><strong>SANITIZER_ERROR_NOT_INITIALIZED</strong> – if unable to initialize the sanitizer </p></li>
+<li><p><strong>SANITIZER_ERROR_INVALID_PARAMETER</strong> – if <code class="docutils literal notranslate"><span class="pre">subscriber</span></code> is NULL or not initialized </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="typedefs">
+<h2>Typedefs<a class="headerlink" href="#typedefs" title="Permalink to this headline"></a></h2>
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv422Sanitizer_CallbackFunc">
+<span id="_CPPv322Sanitizer_CallbackFunc"></span><span id="_CPPv222Sanitizer_CallbackFunc"></span><span id="Sanitizer_CallbackFunc"></span><span class="target" id="group__sanitizer__callback__api_1gac1ae37612d036530e060f1bca8c3ccd8"></span><span class="k"><span class="pre">typedef</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">Sanitizer_CallbackFunc</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">userdata</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv424Sanitizer_CallbackDomain" title="Sanitizer_CallbackDomain"><span class="n"><span class="pre">Sanitizer_CallbackDomain</span></span></a><span class="w"> </span><span class="n"><span class="pre">domain</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv420Sanitizer_CallbackId" title="Sanitizer_CallbackId"><span class="n"><span class="pre">Sanitizer_CallbackId</span></span></a><span class="w"> </span><span class="n"><span class="pre">cbid</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">cbdata</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#_CPPv422Sanitizer_CallbackFunc" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Function type for a callback. </p>
+<p>Function type for a callback. The type of the data passed to the callback in <code class="docutils literal notranslate"><span class="pre">cbdata</span></code> depends on the domain. If <code class="docutils literal notranslate"><span class="pre">domain</span></code> is SANITIZER_CB_DOMAIN_DRIVER_API or SANITIZER_CB_DOMAIN_RUNTIME_API the type of <code class="docutils literal notranslate"><span class="pre">cbdata</span></code> will be <a class="reference internal" href="structSanitizer__CallbackData.html#structsanitizer__callbackdata"><span class="std std-ref">Sanitizer_CallbackData</span></a>. If <code class="docutils literal notranslate"><span class="pre">domain</span></code> is SANITIZER_CB_DOMAIN_RESOURCE the type of <code class="docutils literal notranslate"><span class="pre">cbdata</span></code> will be dependent on cbid. Refer to <a class="reference internal" href="structSanitizer__ResourceContextData.html#structsanitizer__resourcecontextdata"><span class="std std-ref">Sanitizer_ResourceContextData</span></a>, <a class="reference internal" href="structSanitizer__ResourceStreamData.html#structsanitizer__resourcestreamdata"><span class="std std-ref">Sanitizer_ResourceStreamData</span></a>, <a class="reference internal" href="structSanitizer__ResourceModuleData.html#structsanitizer__resourcemoduledata"><span class="std std-ref">Sanitizer_ResourceModuleData</span></a> and <a class="reference internal" href="#group__sanitizer__callback__api_1gad29155bb34524587a5a42d41be1d3fb2"><span class="std std-ref">Sanitizer_ResourceMemoryFlags</span></a> documentations. If <code class="docutils literal notranslate"><span class="pre">domain</span></code> is SANITIZER_CB_DOMAIN_SYNCHRONIZE the type of <code class="docutils literal notranslate"><span class="pre">cbdata</span></code> will be <a class="reference internal" href="structSanitizer__SynchronizeData.html#structsanitizer__synchronizedata"><span class="std std-ref">Sanitizer_SynchronizeData</span></a>. If <code class="docutils literal notranslate"><span class="pre">domain</span></code> is SANITIZER_CB_DOMAIN_LAUNCH the type of <code class="docutils literal notranslate"><span class="pre">cbdata</span></code> will be <a class="reference internal" href="structSanitizer__LaunchData.html#structsanitizer__launchdata"><span class="std std-ref">Sanitizer_LaunchData</span></a>. If <code class="docutils literal notranslate"><span class="pre">domain</span></code> is SANITIZER_CB_DOMAIN_MEMCPY the type of <code class="docutils literal notranslate"><span class="pre">cbdata</span></code> will be <a class="reference internal" href="structSanitizer__MemcpyData.html#structsanitizer__memcpydata"><span class="std std-ref">Sanitizer_MemcpyData</span></a>. If <code class="docutils literal notranslate"><span class="pre">domain</span></code> is SANITIZER_CB_DOMAIN_MEMSET the type of <code class="docutils literal notranslate"><span class="pre">cbdata</span></code> will be <a class="reference internal" href="structSanitizer__MemsetData.html#structsanitizer__memsetdata"><span class="std std-ref">Sanitizer_MemsetData</span></a>. If <code class="docutils literal notranslate"><span class="pre">domain</span></code> is SANITIZER_CB_DOMAIN_BATCH_MEMOP the type of <code class="docutils literal notranslate"><span class="pre">cbdata</span></code> will be <a class="reference internal" href="structSanitizer__BatchMemopData.html#structsanitizer__batchmemopdata"><span class="std std-ref">Sanitizer_BatchMemopData</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv420Sanitizer_CallbackId">
+<span id="_CPPv320Sanitizer_CallbackId"></span><span id="_CPPv220Sanitizer_CallbackId"></span><span id="Sanitizer_CallbackId"></span><span class="target" id="group__sanitizer__callback__api_1ga6e4655fe27c8ee6f85661350bfbc7bd7"></span><span class="k"><span class="pre">typedef</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Sanitizer_CallbackId</span></span></span><a class="headerlink" href="#_CPPv420Sanitizer_CallbackId" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Callback ID. </p>
+</dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv426Sanitizer_SubscriberHandle">
+<span id="_CPPv326Sanitizer_SubscriberHandle"></span><span id="_CPPv226Sanitizer_SubscriberHandle"></span><span id="Sanitizer_SubscriberHandle"></span><span class="target" id="group__sanitizer__callback__api_1ga11604a410fe99da425a0bd40b17c7464"></span><span class="k"><span class="pre">typedef</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">Sanitizer_Subscriber_st</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">Sanitizer_SubscriberHandle</span></span></span><a class="headerlink" href="#_CPPv426Sanitizer_SubscriberHandle" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A callback subscriber. </p>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+<img src="../_static/NVIDIA-LogoBlack.svg" class="only-light"/>
+<img src="../_static/NVIDIA-LogoWhite.svg" class="only-dark"/>
+
+<p class="notices">
+<a href="https://www.nvidia.com/en-us/about-nvidia/privacy-policy/" target="_blank">Privacy Policy</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/privacy-center/" target="_blank">Manage My Privacy</a>
+|
+<a href="https://www.nvidia.com/en-us/preferences/start/" target="_blank">Do Not Sell or Share My Data</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/terms-of-service/" target="_blank">Terms of Service</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/accessibility/" target="_blank">Accessibility</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/company-policies/" target="_blank">Corporate Policies</a>
+|
+<a href="https://www.nvidia.com/en-us/product-security/" target="_blank">Product Security</a>
+|
+<a href="https://www.nvidia.com/en-us/contact/" target="_blank">Contact</a>
+</p>
+
+<p>
+  Copyright &#169; 2019-2024, NVIDIA Corporation &amp; Affiliates. All rights reserved.
+</p>
+
+    <p>
+      <span class="lastupdated">Last updated on Jul 11, 2024.
+      </span></p>
+
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+ 
+
+
+
+</body>
+</html>

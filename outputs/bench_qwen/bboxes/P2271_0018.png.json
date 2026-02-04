@@ -1,0 +1,26 @@
+{
+  "image": "P2271_0018.png",
+  "boxes": [
+    {
+      "label": "forest",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 506
+    },
+    {
+      "label": "winding road",
+      "x1": 0,
+      "y1": 0,
+      "x2": 510,
+      "y2": 506
+    },
+    {
+      "label": "rectangular-roofed structures",
+      "x1": 0,
+      "y1": 447,
+      "x2": 271,
+      "y2": 510
+    }
+  ]
+}

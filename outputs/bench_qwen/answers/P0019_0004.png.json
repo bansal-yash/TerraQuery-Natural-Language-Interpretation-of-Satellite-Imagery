@@ -1,0 +1,20 @@
+{
+  "image": "P0019_0004.png",
+  "answers": [
+    {
+      "question_id": 43,
+      "question": "How many harbors are visible in the image?",
+      "answer": "unknown"
+    },
+    {
+      "question_id": 44,
+      "question": "Where is the smaller harbor located?",
+      "answer": "unknown"
+    },
+    {
+      "question_id": 45,
+      "question": "Is the larger harbor touching the image's edge?",
+      "answer": "no"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "image": "P0179_0030.png",
+  "boxes": [
+    {
+      "label": "building with a blue roof",
+      "x1": 297,
+      "y1": 8,
+      "x2": 510,
+      "y2": 225
+    },
+    {
+      "label": "smaller white-roofed structures",
+      "x1": 134,
+      "y1": 379,
+      "x2": 234,
+      "y2": 487
+    },
+    {
+      "label": "smaller white-roofed structures",
+      "x1": 189,
+      "y1": 297,
+      "x2": 300,
+      "y2": 397
+    },
+    {
+      "label": "stretch of road",
+      "x1": 0,
+      "y1": 0,
+      "x2": 153,
+      "y2": 408
+    },
+    {
+      "label": "grassy field",
+      "x1": 128,
+      "y1": 0,
+      "x2": 297,
+      "y2": 379
+    },
+    {
+      "label": "three small vehicles",
+      "x1": 316,
+      "y1": 479,
+      "x2": 412,
+      "y2": 512
+    }
+  ]
+}

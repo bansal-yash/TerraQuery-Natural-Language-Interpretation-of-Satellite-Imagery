@@ -1,0 +1,1 @@
+RGB:Urban area with residential buildings, industrial structures, and a canal. || SAR:SAR image shows urban area with buildings and roads in grayscale.

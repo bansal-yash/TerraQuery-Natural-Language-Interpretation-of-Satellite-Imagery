@@ -1,0 +1,40 @@
+{
+  "image": "P2781_0009.png",
+  "boxes": [
+    {
+      "label": "building with a dark-colored roof at the top-left",
+      "x1": 59,
+      "y1": 0,
+      "x2": 193,
+      "y2": 113
+    },
+    {
+      "label": "large vehicle at the top-right",
+      "x1": 381,
+      "y1": 0,
+      "x2": 448,
+      "y2": 53
+    },
+    {
+      "label": "large vehicle at the bottom-right",
+      "x1": 463,
+      "y1": 213,
+      "x2": 512,
+      "y2": 333
+    },
+    {
+      "label": "small vehicle to the right",
+      "x1": 430,
+      "y1": 201,
+      "x2": 458,
+      "y2": 243
+    },
+    {
+      "label": "small vehicle centrally located to the left",
+      "x1": 179,
+      "y1": 201,
+      "x2": 225,
+      "y2": 234
+    }
+  ]
+}

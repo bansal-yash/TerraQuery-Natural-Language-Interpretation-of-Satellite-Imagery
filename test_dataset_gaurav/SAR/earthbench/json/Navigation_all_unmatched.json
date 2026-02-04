@@ -1,0 +1,1784 @@
+[
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (20,511), point2: (537,568)",
+    "answer": "Go straight until you reach the third intersection, then turn left and continue straight until you reach the roundabout.",
+    "file_name": "SPACE6_20190823161806_20190823162129_tile_2735.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (461,564), point2: (313,98)",
+    "answer": "Go straight up until passing all the trees.",
+    "file_name": "SPACE6_20190822162621_20190822162906_tile_5652.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (94,411), point2: (9,617)",
+    "answer": "Proceed straight down, pass three storage tanks, make a right turn, and arrive at the second storage tank.",
+    "file_name": "SPACE6_20190822073257_20190822073557_tile_2425.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (12,346), point2: (324,524)",
+    "answer": "Go straight to the right, then turn right at the first intersection and continue straight.",
+    "file_name": "SPACE6_20190822133333_20190822133635_tile_7760.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (497,196), point2: (467,373)",
+    "answer": "Walk straight down from the middle of the two factories, turn right, and walk past the black factory to finish.",
+    "file_name": "SPACE6_20190822083256_20190822083600_tile_10916.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (496,9), point2: (462,404)",
+    "answer": "Go straight down to the three-way intersection, turn right, and walk to the edge of the forest.",
+    "file_name": "SPACE6_20190822155502_20190822155747_tile_4660.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (4,829), point2: (239,539)",
+    "answer": "Go straight past three storage tanks, then turn left and pass two more storage tanks.",
+    "file_name": "SPACE6_20190822163021_20190822163304_tile_8465.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (462,825), point2: (712,493)",
+    "answer": "Walk straight along the boat-shaped building and turn right at the green belt.",
+    "file_name": "SPACE6_20190804130928_20190804131204_tile_5135.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (385,891), point2: (885,521)",
+    "answer": "Go straight up to the three-way intersection, turn right, and continue straight to the end.",
+    "file_name": "SPACE6_20190822160239_20190822160529_tile_3883.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (795,343), point2: (771,643)",
+    "answer": "Continue straight along the road in the middle of the red and black house, turn left at the forest, and stop at the first intersection.",
+    "file_name": "SPACE6_20190823071743_20190823072036_tile_2637.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (688,11), point2: (46,125)",
+    "answer": "Go straight ahead to the end of the lawn, turn right, and continue straight ahead to the end of the lawn.",
+    "file_name": "SPACE6_20190823085011_20190823085317_tile_6936.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (152,472), point2: (439,417)",
+    "answer": "Continue straight along the road, turn left at the first intersection, and continue to the next intersection.",
+    "file_name": "SPACE6_20190822072817_20190822073109_tile_10149.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (608,409), point2: (424,857)",
+    "answer": "Proceed straight down past three storage tanks, then turn right and pass two more storage tanks.",
+    "file_name": "SPACE6_20190822100953_20190822101249_tile_8845.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (87,587), point2: (287,343)",
+    "answer": "Pass two storage tanks on the left, then turn left and pass two more storage tanks.",
+    "file_name": "SPACE6_20190822072404_20190822072642_tile_6775.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (304,266), point2: (821,505)",
+    "answer": "Proceed straight down past two storage tanks, then turn left and pass four more storage tanks.",
+    "file_name": "SPACE6_20190822153558_20190822153835_tile_2529.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (256,347), point2: (428,659)",
+    "answer": "Proceed straight down, turn left at the first major intersection, and stop at the intersection.",
+    "file_name": "SPACE6_20190822075657_20190822080002_tile_10713.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (867,593), point2: (346,849)",
+    "answer": "Go straight to the upper left, walk past the factory building and turn left, continue straight until the end.",
+    "file_name": "SPACE6_20190822162246_20190822162529_tile_7641.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (322,518), point2: (590,633)",
+    "answer": "Go straight down along the green belt, turn left at the first intersection, and walk past the black house.",
+    "file_name": "SPACE6_20190822074720_20190822075013_tile_10031.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (423,215), point2: (578,419)",
+    "answer": "Proceed straight down past the silver factory, turn left, and continue straight past the silver factory.",
+    "file_name": "SPACE6_20190823083559_20190823083940_tile_5942.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (575,30), point2: (780,149)",
+    "answer": "Go straight down, walk through the parking lot, turn left, and walk through the parking lot.",
+    "file_name": "SPACE6_20190822091156_20190822091502_tile_110.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (861,270), point2: (492,108)",
+    "answer": "Go straight along the storage tank, and turn right at the end.",
+    "file_name": "SPACE6_20190822071924_20190822072224_tile_8630.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (362,285), point2: (360,575)",
+    "answer": "Go straight down, turn left at the second intersection, and stop by the river.",
+    "file_name": "SPACE6_20190822163425_20190822163708_tile_6299.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (158,83), point2: (421,194)",
+    "answer": "Go straight down, turn left when you see the red house, and stop at the second intersection.",
+    "file_name": "SPACE6_20190823095034_20190823095347_tile_1810.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (39,365), point2: (169,410)",
+    "answer": "Go straight along the red factory building, then turn left at the intersection.",
+    "file_name": "SPACE6_20190804142149_20190804142420_tile_9114.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (7,268), point2: (850,154)",
+    "answer": "Drive straight along the road from left to right.",
+    "file_name": "SPACE6_20190804130422_20190804130643_tile_3170.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (642,276), point2: (852,648)",
+    "answer": "Walk straight along the green belt, turn left at the sea, and walk past all the containers.",
+    "file_name": "SPACE6_20190822092149_20190822092450_tile_1705.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (488,841), point2: (164,707)",
+    "answer": "Walk straight along the edge of the lawn, turn left at the end, and stop at the intersection.",
+    "file_name": "SPACE6_20190804134228_20190804134450_tile_1865.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (433,851), point2: (250,661)",
+    "answer": "Go straight ahead, turn left at the gap in the green belt, and stop at the house.",
+    "file_name": "SPACE6_20190822084703_20190822085003_tile_1377.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (284,235), point2: (483,515)",
+    "answer": "Go straight down to the second intersection, then turn left at the first intersection.",
+    "file_name": "SPACE6_20190823162315_20190823162606_tile_7877.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (561,430), point2: (472,879)",
+    "answer": "Go straight down to the end, turn right, and go straight to the entrance of the grassland.",
+    "file_name": "SPACE6_20190823085444_20190823085754_tile_937.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (41,474), point2: (217,813)",
+    "answer": "Continue straight down until you reach a three-way intersection, then turn left and stop at the next three-way intersection.",
+    "file_name": "SPACE6_20190823074026_20190823074323_tile_2211.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (444,848), point2: (562,577)",
+    "answer": "Walk straight along the factory building, and turn right at the farthest red container.",
+    "file_name": "SPACE6_20190804141608_20190804141830_tile_5323.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (323,575), point2: (430,476)",
+    "answer": "Go straight to the right, turn left when you reach the building, and stop if there is no road.",
+    "file_name": "SPACE6_20190822075219_20190822075510_tile_8139.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (67,450), point2: (340,183)",
+    "answer": "Go straight up, turn right when you reach the double row of trees, and stop when you see a big tree.",
+    "file_name": "SPACE6_20190823160351_20190823160645_tile_8188.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (782,113), point2: (664,511)",
+    "answer": "Continue straight down to the bottom of the three-way intersection, then turn right at the crossroads.",
+    "file_name": "SPACE6_20190822155502_20190822155747_tile_4656.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (48,462), point2: (365,449)",
+    "answer": "Go straight ahead until you reach the white factory building, then turn right and continue straight until you reach the red factory building.",
+    "file_name": "SPACE6_20190823075755_20190823080053_tile_10756.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (308,400), point2: (589,112)",
+    "answer": "Go straight up through the forest, turn right, and continue straight through the forest.",
+    "file_name": "SPACE6_20190823140636_20190823140937_tile_10428.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (52,368), point2: (134,662)",
+    "answer": "Go straight along the storage tank, turn right along this road, and walk to the end of the storage tank.",
+    "file_name": "SPACE6_20190823075755_20190823080053_tile_10757.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (486,119), point2: (16,314)",
+    "answer": "Continue straight down to the intersection, then turn right and continue straight to the end.",
+    "file_name": "SPACE6_20190823070415_20190823070716_tile_6360.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (777,541), point2: (492,510)",
+    "answer": "Go straight to the crane on the left, then turn right and pass the black factory building.",
+    "file_name": "SPACE6_20190823072627_20190823072925_tile_10485.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (418,158), point2: (322,252)",
+    "answer": "Walk straight down along the house, turn right at the first intersection, and continue until you reach the trees.",
+    "file_name": "SPACE6_20190804134228_20190804134450_tile_1872.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (583,296), point2: (296,740)",
+    "answer": "Proceed straight down to the side of the ship, then turn right and continue straight to the second crane.",
+    "file_name": "SPACE6_20190822142505_20190822142747_tile_6839.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (706,58), point2: (204,401)",
+    "answer": "Walk past two red-topped storage tanks, then turn right and walk past five more tanks.",
+    "file_name": "SPACE6_20190804132031_20190804132301_tile_9500.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (432,267), point2: (45,401)",
+    "answer": "Go straight down to the edge of the track, then turn right to the edge of the lawn.",
+    "file_name": "SPACE6_20190822095638_20190822095937_tile_7439.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (160,738), point2: (477,497)",
+    "answer": "Turn left when passing the silver striped factory building, continue straight until you reach the trees.",
+    "file_name": "SPACE6_20190823092528_20190823092835_tile_1203.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (19,363), point2: (448,699)",
+    "answer": "Go straight to the right, turn right at the roundabout, and continue straight until the densest trees.",
+    "file_name": "SPACE6_20190822101452_20190822101748_tile_4377.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (290,89), point2: (324,323)",
+    "answer": "Go straight down to the second intersection, turn left, and continue straight past the gray house to stop.",
+    "file_name": "SPACE6_20190823100116_20190823100432_tile_2360.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (742,6), point2: (881,136)",
+    "answer": "Go straight past four storage tanks, then turn left and continue straight to the end.",
+    "file_name": "SPACE6_20190822153558_20190822153835_tile_2528.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (428,85), point2: (332,341)",
+    "answer": "Continue straight along the reservoir, turn left at the end of the factory building, and walk to the end of the factory building.",
+    "file_name": "SPACE6_20190804133131_20190804133356_tile_782.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (82,364), point2: (143,864)",
+    "answer": "Go straight along the river, turn right at the intersection, and stop when you reach the highway.",
+    "file_name": "SPACE6_20190822101929_20190822102224_tile_10381.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (86,102), point2: (598,214)",
+    "answer": "Go straight down, turn left before reaching the white factory building, and continue straight until you reach the seaside.",
+    "file_name": "SPACE6_20190823071743_20190823072036_tile_2636.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (8,684), point2: (774,343)",
+    "answer": "Travel straight along the road from left to right.",
+    "file_name": "SPACE6_20190804125251_20190804125541_tile_6883.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (366,393), point2: (156,888)",
+    "answer": "Continue straight ahead until the end, then turn right and continue straight ahead until the end.",
+    "file_name": "SPACE6_20190823145732_20190823150016_tile_7327.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (541,698), point2: (822,442)",
+    "answer": "Go straight to the right, turn left when you reach the trees, and continue straight to the roundabout intersection.",
+    "file_name": "SPACE6_20190823081159_20190823081456_tile_5213.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (458,312), point2: (589,548)",
+    "answer": "Along the river, go straight down, turn left at the intersection, and walk past the red building.",
+    "file_name": "SPACE6_20190822072817_20190822073109_tile_10133.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (375,395), point2: (656,112)",
+    "answer": "Continue straight ahead along the forest, turn right at the end of the forest, and the first intersection is the end.",
+    "file_name": "SPACE6_20190823123717_20190823124038_tile_2682.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (264,431), point2: (63,358)",
+    "answer": "Go straight ahead until the end of the trees, then turn left and stop when you reach the trees.",
+    "file_name": "SPACE6_20190822160239_20190822160529_tile_3894.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (140,23), point2: (501,458)",
+    "answer": "Go down past four storage tanks, turn left, and pass two more storage tanks.",
+    "file_name": "SPACE6_20190822085151_20190822085445_tile_562.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (450,876), point2: (23,812)",
+    "answer": "Go straight ahead, turn left at the first intersection, and continue straight to the end.",
+    "file_name": "SPACE6_20190822162621_20190822162906_tile_5653.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (610,388), point2: (502,797)",
+    "answer": "Continue straight down to the second intersection, then turn right to reach the first intersection.",
+    "file_name": "SPACE6_20190823085011_20190823085317_tile_6951.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (621,204), point2: (613,417)",
+    "answer": "Continue straight down to the first intersection, then turn right and continue straight to the next intersection.",
+    "file_name": "SPACE6_20190822091156_20190822091502_tile_120.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (264,391), point2: (451,697)",
+    "answer": "Continue straight down the road, turn left at the second intersection, and stop at the intersection.",
+    "file_name": "SPACE6_20190804144353_20190804144627_tile_9925.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (384,283), point2: (778,488)",
+    "answer": "Passing two storage tanks downwards, turn left, and then pass two more storage tanks.",
+    "file_name": "SPACE6_20190822094025_20190822094322_tile_5868.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (393,2), point2: (467,379)",
+    "answer": "Walk straight along the road through the forest, turn left at the roundabout, and walk to the first intersection.",
+    "file_name": "SPACE6_20190804125251_20190804125541_tile_6888.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (333,431), point2: (414,261)",
+    "answer": "Walk straight along the red house, turn left after passing the red house, and walk past the red house again.",
+    "file_name": "SPACE6_20190823081159_20190823081456_tile_5218.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (272,525), point2: (627,487)",
+    "answer": "Go straight along the road, turn left at the intersection, and continue straight to the red container storage area.",
+    "file_name": "SPACE6_20190804140510_20190804140727_tile_4701.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (500,152), point2: (870,427)",
+    "answer": "Go straight down along the container, turn left at the end, and continue straight to the end.",
+    "file_name": "SPACE6_20190822153149_20190822153444_tile_1050.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (15,597), point2: (275,356)",
+    "answer": "Go straight along the green belt, turn left at the roundabout, and go to the end.",
+    "file_name": "SPACE6_20190822080151_20190822080440_tile_609.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (577,305), point2: (209,552)",
+    "answer": "Go straight along the greenery, turn right at the end, and stop at the bend in the road.",
+    "file_name": "SPACE6_20190804135937_20190804140208_tile_6565.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (298,628), point2: (778,469)",
+    "answer": "Go straight up to the first intersection and turn right, then go straight to the second intersection and turn left, continue straight until you reach the highway.",
+    "file_name": "SPACE6_20190823161806_20190823162129_tile_2733.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (519,476), point2: (727,694)",
+    "answer": "Go straight down, turn left at the intersection, and stop at the white factory building.",
+    "file_name": "SPACE6_20190804142736_20190804142950_tile_1157.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (197,4), point2: (195,207)",
+    "answer": "Continue straight down along the red house, turn right at the intersection, and go to the next intersection.",
+    "file_name": "SPACE6_20190822073746_20190822074042_tile_5386.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (134,685), point2: (775,726)",
+    "answer": "Continue straight until you reach the roundabout, then turn right. Continue straight until the second roundabout.",
+    "file_name": "SPACE6_20190822164304_20190822164613_tile_3399.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (79,100), point2: (332,666)",
+    "answer": "Go straight ahead to the first intersection, turn right, and continue straight ahead.",
+    "file_name": "SPACE6_20190822151944_20190822152215_tile_6994.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (469,203), point2: (735,401)",
+    "answer": "Go straight, turn right at the third intersection, and stop at the first intersection.",
+    "file_name": "SPACE6_20190823080230_20190823080526_tile_1976.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (125,363), point2: (367,538)",
+    "answer": "Walk along the yellow containers, turn right, and walk along the road next to the containers.",
+    "file_name": "SPACE6_20190804130422_20190804130643_tile_3183.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (749,380), point2: (861,728)",
+    "answer": "Continue straight down to the first intersection, then turn left and continue straight to the end.",
+    "file_name": "SPACE6_20190823144849_20190823145144_tile_3275.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (320,272), point2: (556,652)",
+    "answer": "Go straight down to the seaside, turn left, and pass all the storage tanks.",
+    "file_name": "SPACE6_20190823065021_20190823065333_tile_9165.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (344,614), point2: (820,488)",
+    "answer": "Walk straight along the house, turn left at the first intersection, and continue straight to the second intersection.",
+    "file_name": "SPACE6_20190823125732_20190823130048_tile_1925.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (182,283), point2: (491,124)",
+    "answer": "Walk along the road with trees on both sides, turn left at the end, and stop at the isolated red house.",
+    "file_name": "SPACE6_20190804124148_20190804124417_tile_1330.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (199,254), point2: (338,685)",
+    "answer": "Walk straight along the river bank, turn left, and continue straight until you reach the first silver factory building.",
+    "file_name": "SPACE6_20190823094036_20190823094408_tile_10265.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (480,766), point2: (882,361)",
+    "answer": "Go straight along the forest towards the ocean, turn right at the end, and keep walking until the end.",
+    "file_name": "SPACE6_20190804123547_20190804123823_tile_6161.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (633,417), point2: (416,603)",
+    "answer": "Continue straight down to the first intersection, then turn left and stop at the first intersection.",
+    "file_name": "SPACE6_20190823100116_20190823100432_tile_2371.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (159,424), point2: (642,666)",
+    "answer": "Continue straight down to the second intersection, then turn left and continue straight through the rectangular area.",
+    "file_name": "SPACE6_20190823141628_20190823141922_tile_8727.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (697,554), point2: (478,656)",
+    "answer": "Go straight down to the large forest, turn right, and continue straight until you reach the forest in front of you.",
+    "file_name": "SPACE6_20190823065505_20190823065800_tile_389.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (16,133), point2: (345,21)",
+    "answer": "Walk along the black-roofed factory building to the end, turn left, and walk along the black-roofed factory building to the end.",
+    "file_name": "SPACE6_20190804141038_20190804141312_tile_9062.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (63,301), point2: (386,424)",
+    "answer": "Go straight down along the edge of the lawn, turn left, and go straight to the intersection.",
+    "file_name": "SPACE6_20190823092528_20190823092835_tile_1204.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (423,363), point2: (304,880)",
+    "answer": "Go straight down the main road, turn left at the roundabout intersection, and continue straight to the end of the road.",
+    "file_name": "SPACE6_20190804121331_20190804121610_tile_1661.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (444,666), point2: (883,719)",
+    "answer": "Go straight down to the first intersection, then turn left and go straight to the end.",
+    "file_name": "SPACE6_20190822151108_20190822151351_tile_8075.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (605,254), point2: (391,585)",
+    "answer": "Walk straight along the river, turn right at the third chimney, and the factory building stops.",
+    "file_name": "SPACE6_20190822075657_20190822080002_tile_10715.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (134,712), point2: (669,868)",
+    "answer": "Go straight to the right passing 4 storage tanks, turn right, then pass two more storage tanks.",
+    "file_name": "SPACE6_20190823073047_20190823073350_tile_7977.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (365,635), point2: (739,502)",
+    "answer": "Continue straight along the road with red houses on both sides, turn left at the first intersection, and stop at the intersection.",
+    "file_name": "SPACE6_20190804135937_20190804140208_tile_6569.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (86,410), point2: (499,213)",
+    "answer": "Go straight ahead, turn right at the intersection, and stop at the intersection.",
+    "file_name": "SPACE6_20190822082538_20190822082826_tile_4158.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (264,24), point2: (465,211)",
+    "answer": "Go straight down to the sea, turn left, and pass three silver storage tanks.",
+    "file_name": "SPACE6_20190823071743_20190823072036_tile_2626.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (12,306), point2: (879,179)",
+    "answer": "Drive straight from left to right along the road.",
+    "file_name": "SPACE6_20190822072404_20190822072642_tile_6772.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (127,433), point2: (61,672)",
+    "answer": "Go straight along the green belt, turn right at the intersection, and continue straight to the roundabout.",
+    "file_name": "SPACE6_20190822091719_20190822092011_tile_9705.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (260,104), point2: (418,515)",
+    "answer": "Go straight along the tree-lined path, then turn left along the original road.",
+    "file_name": "SPACE6_20190804133131_20190804133356_tile_784.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (74,273), point2: (156,455)",
+    "answer": "Continue straight down to the first intersection, turn left, and stop at the first intersection.",
+    "file_name": "SPACE6_20190822091719_20190822092011_tile_9713.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (8,242), point2: (209,436)",
+    "answer": "Pass three storage tanks on the right, turn right, and continue straight past four storage tanks.",
+    "file_name": "SPACE6_20190822101929_20190822102224_tile_10368.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (143,277), point2: (218,523)",
+    "answer": "Proceed straight down, turn left onto the track, and stop at the fork in the road.",
+    "file_name": "SPACE6_20190822084226_20190822084526_tile_3231.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (196,691), point2: (622,630)",
+    "answer": "Go straight along the tree-lined path, turn right at the end, cross the lawn to reach the road.",
+    "file_name": "SPACE6_20190804125251_20190804125541_tile_6885.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (61,672), point2: (340,423)",
+    "answer": "Go straight ahead to the second intersection, then turn left and continue straight ahead to the edge of the forest.",
+    "file_name": "SPACE6_20190823084527_20190823084841_tile_10545.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (330,497), point2: (514,286)",
+    "answer": "Go straight along the road, turn right at the end of the factory on the right, and continue straight to reach the cylinder.",
+    "file_name": "SPACE6_20190804111224_20190804111453_tile_8695.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (210,412), point2: (274,856)",
+    "answer": "Go straight to the end of the black factory building on the right, turn right, and continue straight to the end.",
+    "file_name": "SPACE6_20190822095638_20190822095937_tile_7425.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (629,184), point2: (610,386)",
+    "answer": "Go straight down, turn right at the first intersection, and stop at the intersection.",
+    "file_name": "SPACE6_20190822145028_20190822145325_tile_9230.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (368,436), point2: (4,755)",
+    "answer": "Go straight down, pass all the factories, turn right, and continue straight to the end.",
+    "file_name": "SPACE6_20190822142505_20190822142747_tile_6833.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (224,735), point2: (425,884)",
+    "answer": "Go straight to the intersection and turn right, continue straight to the end.",
+    "file_name": "SPACE6_20190823145306_20190823145612_tile_7211.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (328,477), point2: (437,783)",
+    "answer": "Go straight along the road between the two factories, turn left onto the highway, and walk to the intersection.",
+    "file_name": "SPACE6_20190804125251_20190804125541_tile_6893.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (138,756), point2: (220,369)",
+    "answer": "Go straight up, pass three storage tanks, turn right, pass three storage tanks.",
+    "file_name": "SPACE6_20190822154325_20190822154559_tile_9323.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (366,268), point2: (452,543)",
+    "answer": "Walk down from the grass on the left along the black triangle area.",
+    "file_name": "SPACE6_20190804111224_20190804111453_tile_8683.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (8,67), point2: (332,68)",
+    "answer": "Walk straight along the square lake, turn right at the end of the first lake, turn left at the end of the lake, until the second square lake.",
+    "file_name": "SPACE6_20190804115720_20190804115941_tile_9554.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (782,436), point2: (378,372)",
+    "answer": "Go straight ahead, turn left after passing the blue factory building, and continue straight ahead after passing the blue factory building.",
+    "file_name": "SPACE6_20190823160819_20190823161113_tile_11044.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (714,80), point2: (479,366)",
+    "answer": "Pass three storage tanks, turn right, and stop at the second intersection.",
+    "file_name": "SPACE6_20190804135937_20190804140208_tile_6564.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (15,266), point2: (343,268)",
+    "answer": "Walk forward along the trees to the three-way intersection, turn left and walk to the end of the road.",
+    "file_name": "SPACE6_20190823075318_20190823075613_tile_5276.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (553,302), point2: (295,616)",
+    "answer": "Continue straight down past all the red houses, then turn left at the first intersection.",
+    "file_name": "SPACE6_20190823161806_20190823162129_tile_2745.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (602,145), point2: (785,421)",
+    "answer": "Go straight down, turn left at the third intersection, and continue straight until the end.",
+    "file_name": "SPACE6_20190823065505_20190823065800_tile_392.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (51,569), point2: (880,324)",
+    "answer": "Continue straight along the road until the end.",
+    "file_name": "SPACE6_20190804141608_20190804141830_tile_5324.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (105,693), point2: (349,473)",
+    "answer": "Go straight along the factory building, then turn right at the end of the building.",
+    "file_name": "SPACE6_20190822083256_20190822083600_tile_10927.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (275,430), point2: (607,517)",
+    "answer": "Go straight to the third intersection and turn right, then go straight to the first intersection.",
+    "file_name": "SPACE6_20190823160351_20190823160645_tile_8199.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (222,539), point2: (593,693)",
+    "answer": "Go straight along the green belt, turn left after passing the green belt, and continue straight to reach the roundabout intersection.",
+    "file_name": "SPACE6_20190823084527_20190823084841_tile_10549.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (890,554), point2: (517,638)",
+    "answer": "Go straight down past three houses, turn right, and continue straight past all the trees.",
+    "file_name": "SPACE6_20190823071331_20190823071608_tile_827.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (197,604), point2: (469,673)",
+    "answer": "Continue straight ahead to the first intersection and turn right, then continue straight ahead to the first intersection.",
+    "file_name": "SPACE6_20190823101134_20190823101448_tile_2847.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (213,299), point2: (702,15)",
+    "answer": "Go straight along the edge of the white area, pass four large storage tanks, turn left, and pass through the white area.",
+    "file_name": "SPACE6_20190823091635_20190823091951_tile_8786.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (440,104), point2: (14,331)",
+    "answer": "Go straight down along the forest, turn right, and continue straight along the forest until the end.",
+    "file_name": "SPACE6_20190823131240_20190823131533_tile_7552.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (6,328), point2: (320,7)",
+    "answer": "Walk straight along the lake, turn left at the end, and go to the end.",
+    "file_name": "SPACE6_20190822071924_20190822072224_tile_8640.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (332,473), point2: (451,882)",
+    "answer": "Go straight, turn right at the first intersection, and walk to the end.",
+    "file_name": "SPACE6_20190822085151_20190822085445_tile_547.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (140,173), point2: (418,857)",
+    "answer": "Go straight down along the road.",
+    "file_name": "SPACE6_20190822153558_20190822153835_tile_2537.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (739,345), point2: (535,474)",
+    "answer": "Go straight down, pass the red house and turn right, then pass the red house again.",
+    "file_name": "SPACE6_20190822153931_20190822154218_tile_4587.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (651,396), point2: (886,77)",
+    "answer": "Go straight up to the first intersection, turn right, and go straight to the end.",
+    "file_name": "SPACE6_20190822162621_20190822162906_tile_5660.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (185,491), point2: (868,500)",
+    "answer": "Go straight ahead past the building, turn right along the road, and continue straight until the end.",
+    "file_name": "SPACE6_20190823144002_20190823144238_tile_10091.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (192,449), point2: (14,259)",
+    "answer": "Continue straight until the first intersection, then turn left and continue straight.",
+    "file_name": "SPACE6_20190823145306_20190823145612_tile_7224.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (282,131), point2: (9,281)",
+    "answer": "Go straight down, turn right at the second intersection and walk to the end.",
+    "file_name": "SPACE6_20190822085638_20190822085935_tile_10658.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (169,639), point2: (266,869)",
+    "answer": "Passing by two black factories, turn right at the intersection and go straight to the end.",
+    "file_name": "SPACE6_20190804140510_20190804140727_tile_4703.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (113,563), point2: (360,832)",
+    "answer": "Go straight along the red house, turn right at the second intersection, and walk to the end.",
+    "file_name": "SPACE6_20190804121331_20190804121610_tile_1655.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (233,305), point2: (11,748)",
+    "answer": "Go straight down to the intersection, turn right, and continue straight until the end.",
+    "file_name": "SPACE6_20190823143102_20190823143400_tile_5985.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (111,413), point2: (459,724)",
+    "answer": "Proceed straight down past the black factory, turn left, and continue straight through the black factory.",
+    "file_name": "SPACE6_20190823141123_20190823141407_tile_3123.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (781,632), point2: (474,721)",
+    "answer": "Go straight down past three houses, turn right, and arrive in front of the gray house.",
+    "file_name": "SPACE6_20190822164304_20190822164613_tile_3397.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (16,364), point2: (404,480)",
+    "answer": "Go straight along the forest, turn right at the intersection of the main road, and walk to the end.",
+    "file_name": "SPACE6_20190804132547_20190804132826_tile_10872.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (136,558), point2: (476,679)",
+    "answer": "Go straight to the right, turn right at the first intersection, and arrive at the first intersection.",
+    "file_name": "SPACE6_20190823162315_20190823162606_tile_7865.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (445,875), point2: (675,723)",
+    "answer": "Go straight along the red house, then turn right after passing the red house, and continue straight until there is no road.",
+    "file_name": "SPACE6_20190823074455_20190823074758_tile_10207.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (149,519), point2: (628,718)",
+    "answer": "Go straight along the factory building, turn right, and continue straight until you reach the seaside.",
+    "file_name": "SPACE6_20190823142111_20190823142355_tile_3949.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (199,128), point2: (691,424)",
+    "answer": "Go straight along the trees to the second roundabout, turn right, and walk to the end of the forest.",
+    "file_name": "SPACE6_20190823090045_20190823090358_tile_998.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (660,769), point2: (550,602)",
+    "answer": "Go straight ahead, turn left along this road, and continue straight until you reach the trees.",
+    "file_name": "SPACE6_20190823075318_20190823075613_tile_5279.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (291,650), point2: (667,883)",
+    "answer": "Go straight along the storage tanks, then turn right and pass through two of them.",
+    "file_name": "SPACE6_20190823095600_20190823095931_tile_10975.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (385,305), point2: (67,797)",
+    "answer": "Continue straight down to the intersection, turn right, and go straight to the end.",
+    "file_name": "SPACE6_20190822152355_20190822152652_tile_3985.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (265,343), point2: (426,620)",
+    "answer": "Proceed straight down, turn left at the first intersection, and stop at the curved lane.",
+    "file_name": "SPACE6_20190822133830_20190822134118_tile_3779.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (684,121), point2: (461,415)",
+    "answer": "Go straight past three storage tanks, turn right, and then pass three more storage tanks.",
+    "file_name": "SPACE6_20190822145832_20190822150114_tile_9602.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (497,252), point2: (804,456)",
+    "answer": "Go straight down to the second intersection, turn left, and continue straight to the second intersection.",
+    "file_name": "SPACE6_20190823140636_20190823140937_tile_10437.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (210,601), point2: (530,501)",
+    "answer": "Continue straight along the road and turn right at the first intersection. Walk past the green belt and stop.",
+    "file_name": "SPACE6_20190822070610_20190822070846_tile_3721.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (107,861), point2: (398,563)",
+    "answer": "Go straight along the road, turn right at the first intersection, and stop at the intersection.",
+    "file_name": "SPACE6_20190804130422_20190804130643_tile_3181.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (361,407), point2: 537,749",
+    "answer": "Go straight along the green belt, turn right at the first intersection, and stop at the first intersection.",
+    "file_name": "SPACE6_20190804121331_20190804121610_tile_1659.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (392,322), point2: (488,510)",
+    "answer": "Pass two red houses, turn left, pass two red houses.",
+    "file_name": "SPACE6_20190804145216_20190804145445_tile_6521.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (387,640), point2: (776,524)",
+    "answer": "Go straight, turn left at the strip of greenery, and continue straight until you reach the edge of the forest.",
+    "file_name": "SPACE6_20190822094509_20190822094813_tile_167.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (186,9), point2: (498,211)",
+    "answer": "Go straight down to the first intersection, turn left, and continue straight to the first intersection.",
+    "file_name": "SPACE6_20190823132244_20190823132535_tile_2802.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (334,343), point2: (563,362)",
+    "answer": "Go straight along the road until you reach the first row of red houses.",
+    "file_name": "SPACE6_20190804135332_20190804135556_tile_7172.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (609,309), point2: (310,769)",
+    "answer": "Go straight down along the factory building to the ship, turn right, and stop at the second piece of equipment.",
+    "file_name": "SPACE6_20190822085151_20190822085445_tile_567.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (199,100), point2: (682,434)",
+    "answer": "Go straight along the trees to the second roundabout, turn right, and go to the first intersection.",
+    "file_name": "SPACE6_20190823101748_20190823102106_tile_9444.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (12,112), point2: (102,87)",
+    "answer": "Go straight along the river until you reach the first intersection.",
+    "file_name": "SPACE6_20190804124749_20190804125033_tile_3664.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (300,391), point2: (66,683)",
+    "answer": "After two storage tanks, turn right, and pass two more storage tanks.",
+    "file_name": "SPACE6_20190804142736_20190804142950_tile_1155.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (91,190), point2: (586,348)",
+    "answer": "Go down past two storage tanks, turn left, and go straight to the seaside.",
+    "file_name": "SPACE6_20190822094025_20190822094322_tile_5870.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (457,68), point2: (83,96)",
+    "answer": "Go straight down the road, turn right at the first intersection, and continue straight to the next intersection.",
+    "file_name": "SPACE6_20190804125251_20190804125541_tile_6890.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (521,332), point2: (848,649)",
+    "answer": "Go straight to the right, turn right at the first intersection, and continue straight to reach the crossroads.",
+    "file_name": "SPACE6_20190823153931_20190823154211_tile_6405.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (463,124), point2: (816,571)",
+    "answer": "Continue straight down to the first intersection and turn left, continue straight until the end.",
+    "file_name": "SPACE6_20190823132244_20190823132535_tile_2792.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (881,726), point2: (667,294)",
+    "answer": "Go straight along the road, then turn right along the road, and walk to the end.",
+    "file_name": "SPACE6_20190804125251_20190804125541_tile_6891.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (241,66), point2: (166,262)",
+    "answer": "Passing four storage tanks downwards, turn right and stop at the intersection.",
+    "file_name": "SPACE6_20190822073257_20190822073557_tile_2420.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (165,426), point2: (147,716)",
+    "answer": "Go straight down, turn right at the first intersection, and stop at the intersection.",
+    "file_name": "SPACE6_20190822083256_20190822083600_tile_10913.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (344,58), point2: (879,374)",
+    "answer": "Continue straight along the lake, turn left at the end of the lake, and continue straight to the end of the road.",
+    "file_name": "SPACE6_20190822085151_20190822085445_tile_566.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (107,528), point2: (623,608)",
+    "answer": "Continue straight down to the first major intersection, then turn left and continue straight.",
+    "file_name": "SPACE6_20190823080230_20190823080526_tile_1975.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (614,329), point2: (16,433)",
+    "answer": "Continue straight down to the roundabout and turn right. Continue straight to the end.",
+    "file_name": "SPACE6_20190822164803_20190822165101_tile_4211.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (3.73), point2: (240,155)",
+    "answer": "Walk along the silver storage tanks towards the sea, turn left at the end, and walk to the boarding road intersection.",
+    "file_name": "SPACE6_20190804130928_20190804131204_tile_5130.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (450,577), point2: (693,570)",
+    "answer": "Continue straight down to the first intersection, turn left, then continue straight to the first intersection.",
+    "file_name": "SPACE6_20190823160351_20190823160645_tile_8197.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (335,370), point2: (781,376)",
+    "answer": "Go straight ahead, turn right at the first intersection, and continue straight ahead to the end of the forest.",
+    "file_name": "SPACE6_20190822163425_20190822163708_tile_6300.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (894,156), point2: (798,639)",
+    "answer": "Go straight along the green belt, then turn left at the end.",
+    "file_name": "SPACE6_20190822080151_20190822080440_tile_606.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (426,138), point2: (783,544)",
+    "answer": "Pass two storage tanks on the right, turn right, and continue straight past four storage tanks.",
+    "file_name": "SPACE6_20190823084056_20190823084400_tile_3450.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (175,64), point2: (499,414)",
+    "answer": "Go straight ahead along the forest, turn right at the end of the forest, and continue straight ahead to the end of the forest.",
+    "file_name": "SPACE6_20190823085011_20190823085317_tile_6952.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (507,276), point2: (344,719)",
+    "answer": "Walk along the red house to the intersection, turn left and walk to the second intersection.",
+    "file_name": "SPACE6_20190823101748_20190823102106_tile_9449.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (697,476), point2: (184,396)",
+    "answer": "Go straight ahead past four large storage tanks, then turn left and continue straight ahead to the seaside.",
+    "file_name": "SPACE6_20190822092149_20190822092450_tile_1700.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (98,156), point2: (410,302)",
+    "answer": "Go straight to the right, turn right at the first intersection, and continue straight to the first crossroads.",
+    "file_name": "SPACE6_20190823161251_20190823161546_tile_8300.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (49,480), point2: (373,100)",
+    "answer": "Walk straight along the river bank, turn left at the end of the river bank, and walk across the river bank.",
+    "file_name": "SPACE6_20190823082625_20190823082938_tile_452.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (351,658), point2: (428,376)",
+    "answer": "Go straight up along the road and turn left at the intersection.",
+    "file_name": "SPACE6_20190804124148_20190804124417_tile_1313.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (24,608), point2: (524,778)",
+    "answer": "Go straight along the storage tanks, pass four tanks, turn right, pass two tanks and arrive.",
+    "file_name": "SPACE6_20190804120805_20190804121023_tile_6205.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (58,421), point2: (233,460)",
+    "answer": "Proceed straight down, turn left at the first intersection, and stop at the intersection.",
+    "file_name": "SPACE6_20190822085638_20190822085935_tile_10659.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (417,498), point2: (277,267)",
+    "answer": "Go straight to the first intersection on the left, then turn right and continue straight until you reach the playground.",
+    "file_name": "SPACE6_20190823065505_20190823065800_tile_390.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (502,42), point2: (284,297)",
+    "answer": "Walk straight along the storage tank, turn right at the end of the tank, and continue walking along the storage tank.",
+    "file_name": "SPACE6_20190804132031_20190804132301_tile_9494.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (141,347), point2: (619,263)",
+    "answer": "Go straight ahead past 4 storage tanks.",
+    "file_name": "SPACE6_20190822153558_20190822153835_tile_2536.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (366,88), point2: (853,132)",
+    "answer": "Passing a tank downwards, turn left and pass four tanks.",
+    "file_name": "SPACE6_20190823095600_20190823095931_tile_10978.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (323,567), point2: (474,758)",
+    "answer": "Go along the clockwise direction of the disc to reach the intersection on the right, then go straight down and turn left after seeing the black house.",
+    "file_name": "SPACE6_20190804113605_20190804113825_tile_9003.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (598,500), point2: (463,797)",
+    "answer": "Go straight along the road, turn right at the second intersection, and continue straight to reach the roundabout.",
+    "file_name": "SPACE6_20190823090045_20190823090358_tile_995.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (128,80), point2: (328,237)",
+    "answer": "Go straight along the green belt, turn left at the first intersection, and park the car in the parking lot.",
+    "file_name": "SPACE6_20190804145216_20190804145445_tile_6516.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (376,31), point2: (393,245)",
+    "answer": "Go straight down, turn right at the black shadow area, and continue straight until you reach the house.",
+    "file_name": "SPACE6_20190822085638_20190822085935_tile_10644.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (709,837), point2:(66,638)",
+    "answer": "Go straight up to the end and then turn left, continue straight until the end.",
+    "file_name": "SPACE6_20190822162246_20190822162529_tile_7643.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (812,114), point2: (626,424)",
+    "answer": "Continue straight down to the three-way intersection, turn right and stop at the next three-way intersection.",
+    "file_name": "SPACE6_20190822155502_20190822155747_tile_4658.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (254,371), point2: (629,480)",
+    "answer": "Go straight down until you reach the trees, then turn left and pass through the entire rectangular building.",
+    "file_name": "SPACE6_20190823100116_20190823100432_tile_2363.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (14,79), point2: (266,154)",
+    "answer": "Go straight past one storage tank, turn left, and walk past two storage tanks.",
+    "file_name": "SPACE6_20190804133131_20190804133356_tile_778.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (440,62), point2: (393,547)",
+    "answer": "Go straight down, turn left at the second house, and stop after passing the entire house.",
+    "file_name": "SPACE6_20190823082145_20190823082444_tile_7814.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (529,357), point2: (263,544)",
+    "answer": "Go straight along the storage tank, turn right at the first intersection, and stop when you reach the storage tank.",
+    "file_name": "SPACE6_20190804132031_20190804132301_tile_9489.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (260,546), point2: (431,779)",
+    "answer": "Go straight along the road, turn right along the road, and arrive at the yellow railing.",
+    "file_name": "SPACE6_20190823084056_20190823084400_tile_3441.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (94,282), point2: (389,107)",
+    "answer": "Go straight along the black house, turn left at the end, and walk past the black house.",
+    "file_name": "SPACE6_20190822091156_20190822091502_tile_104.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (13,248), point2: (735,3)",
+    "answer": "Drive straight from left to right along the bridge.",
+    "file_name": "SPACE6_20190804125251_20190804125541_tile_6880.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (451,523), point2: (44,777)",
+    "answer": "Go straight along the river, then turn right and go straight.",
+    "file_name": "SPACE6_20190804140510_20190804140727_tile_4709.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (156,400), point2: (328,599)",
+    "answer": "Go straight towards the direction close to the road, turn left at the side of the road, and walk to the end.",
+    "file_name": "SPACE6_20190804115720_20190804115941_tile_9547.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (561,699), point2: (662,864)",
+    "answer": "Go straight down along the factory building until the angle formed between the two factory buildings.",
+    "file_name": "SPACE6_20190804123547_20190804123823_tile_6149.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (318,59), point2: (367,449)",
+    "answer": "Continue straight down the path along the lawn, when you reach the trees in front, turn left, and then stop when you reach the trees again.",
+    "file_name": "SPACE6_20190804114647_20190804114904_tile_6264.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (153,884), point2: (862,571)",
+    "answer": "Go straight ahead to the first intersection, then turn right and continue straight to the end.",
+    "file_name": "SPACE6_20190822163021_20190822163304_tile_8467.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (103,444), point2: (214,649)",
+    "answer": "Go straight along the lawn, turn right at the first intersection, and stop when you reach the house.",
+    "file_name": "SPACE6_20190823093548_20190823093858_tile_5495.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (393,355), point2: (514,532)",
+    "answer": "Walk straight along the lawn, turn right after the first factory building, and stop at the driveway.",
+    "file_name": "SPACE6_20190822081617_20190822081907_tile_9817.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (386,216), point2: (671,355)",
+    "answer": "Go straight down to the second intersection, then turn left at the crossroads.",
+    "file_name": "SPACE6_20190823144849_20190823145144_tile_3288.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (387,353), point2: (283,640)",
+    "answer": "Walk straight along the road between the two factories, turn right at the end, and arrive at the first intersection.",
+    "file_name": "SPACE6_20190822075657_20190822080002_tile_10697.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (880,280), point2: (177,9)",
+    "answer": "Go straight to the end, then turn right and go straight to the end.",
+    "file_name": "SPACE6_20190822150641_20190822150929_tile_9976.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (774,196), point2: (538,461)",
+    "answer": "Proceed straight down past four storage tanks, then turn right and pass five more storage tanks.",
+    "file_name": "SPACE6_20190822154325_20190822154559_tile_9326.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (724,65), point2: (574,196)",
+    "answer": "Walk straight along the gray house, pass the containers, turn right, and stop after passing the containers.",
+    "file_name": "SPACE6_20190804141608_20190804141830_tile_5340.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (375,245), point2: (708,319)",
+    "answer": "Walk past two storage tanks, turn left, and walk past four storage tanks to stop.",
+    "file_name": "SPACE6_20190804135937_20190804140208_tile_6561.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (321,120), point2: (401,422)",
+    "answer": "Continue straight down to the first intersection and make a right turn, then continue straight to the second intersection.",
+    "file_name": "SPACE6_20190823150417_20190823150712_tile_10316.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (65,370), point2: (475,552)",
+    "answer": "Walk straight along the factory building, turn right and continue straight until you reach the sea.",
+    "file_name": "SPACE6_20190823070853_20190823071152_tile_2039.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (46,355), point2: (458,702)",
+    "answer": "Go straight along the factory building, turn right at the end, and stop at the intersection.",
+    "file_name": "SPACE6_20190804132031_20190804132301_tile_9493.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (504,77), point2: (482,547)",
+    "answer": "Go straight down to the end of the lawn, turn right, and continue straight along the lawn.",
+    "file_name": "SPACE6_20190823091132_20190823091448_tile_7918.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (646,428), point2: (607,700)",
+    "answer": "Go straight along the red house until you reach the forest, then turn left and go straight to the first intersection.",
+    "file_name": "SPACE6_20190823130239_20190823130540_tile_3629.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (18,349), point2: (323,454)",
+    "answer": "Go straight to the right, turn right at the first intersection, and continue straight.",
+    "file_name": "SPACE6_20190822143107_20190822143418_tile_1534.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (191,349), point2: (454,639)",
+    "answer": "Go straight along the red house, turn left at the first intersection, and continue straight until you reach the forest.",
+    "file_name": "SPACE6_20190804121331_20190804121610_tile_1645.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (521,13), point2: (888,144)",
+    "answer": "Go straight down past three storage tanks, then turn left and pass four storage tanks.",
+    "file_name": "SPACE6_20190823080717_20190823081024_tile_3064.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (249,800), point2: (605,852)",
+    "answer": "Go straight along the containers, turn right at the first intersection, and continue straight.",
+    "file_name": "SPACE6_20190823085011_20190823085317_tile_6955.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (376,260), point2: (802,389)",
+    "answer": "Proceed straight down past two storage tanks, then turn left to reach a single storage tank in the distance.",
+    "file_name": "SPACE6_20190823152057_20190823152354_tile_1263.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (624,636), point2: (874,644)",
+    "answer": "Go straight down to the three-way intersection, then turn left at the first intersection.",
+    "file_name": "SPACE6_20190823074455_20190823074758_tile_10201.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (230,62), point2: (814,312)",
+    "answer": "Proceed straight down through two white areas, then turn left and proceed straight through the white area.",
+    "file_name": "SPACE6_20190823152057_20190823152354_tile_1262.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (396,5), point2: (716,156)",
+    "answer": "Go straight along the storage tanks, turn left at the first red tank, and stop after passing two tanks.",
+    "file_name": "SPACE6_20190804132031_20190804132301_tile_9502.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (60,545), point2: (408,623)",
+    "answer": "Go straight ahead to the intersection, then turn right and continue until the first intersection.",
+    "file_name": "SPACE6_20190823074455_20190823074758_tile_10191.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (303,875), point2: (863,406)",
+    "answer": "Go straight up to the road, turn right, and go straight to the end.",
+    "file_name": "SPACE6_20190822134328_20190822134645_tile_7049.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (347,137), point2: (544,447)",
+    "answer": "Go straight down along the riverbank, then turn left at the end and walk past the black container.",
+    "file_name": "SPACE6_20190822065241_20190822065541_tile_2568.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (427,485), point2: (787,405)",
+    "answer": "Go straight ahead, turn right at the third intersection, and stop when you see the house.",
+    "file_name": "SPACE6_20190822144546_20190822144829_tile_7605.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (477,529), point2: (415,813)",
+    "answer": "Walk along the white factory building to the end, then turn left, and continue straight until the end of the lawn.",
+    "file_name": "SPACE6_20190804113009_20190804113242_tile_4799.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (108,153), point2: (410,438)",
+    "answer": "Walk straight down along the factory building, turn left at the end of the factory building, and stop at the end of the factory building.",
+    "file_name": "SPACE6_20190822072817_20190822073109_tile_10146.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (129,716), point2: (540,414)",
+    "answer": "Walk along the road in the lawn until there is no way, then turn left.",
+    "file_name": "SPACE6_20190804113605_20190804113825_tile_9013.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (233,401), point2: (494,347)",
+    "answer": "Go straight along the forest, turn left at the first intersection, and you will arrive after passing through two layers of trees.",
+    "file_name": "SPACE6_20190804120223_20190804120456_tile_67.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (309,246), point2: (747,543)",
+    "answer": "Go straight ahead, turn right along the road, and continue straight until the end.",
+    "file_name": "SPACE6_20190823101748_20190823102106_tile_9434.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (456,190), point2: (857,392)",
+    "answer": "Go straight down along the green belt, turn left when you reach the river, and walk along the river to the end.",
+    "file_name": "SPACE6_20190822090458_20190822090745_tile_6620.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (300,810), point2: (475,481)",
+    "answer": "Go straight to the right until you reach between two rectangular factories, then turn left and walk to the end of the two rectangular factories.",
+    "file_name": "SPACE6_20190823075755_20190823080053_tile_10755.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (563,362), point2: (197,600)",
+    "answer": "Go straight down to the first intersection, turn right, and continue straight to the edge of the forest.",
+    "file_name": "SPACE6_20190822155502_20190822155747_tile_4655.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (123,410), point2: (566,625)",
+    "answer": "Go straight to the end of the factory building, turn right, and continue straight until you reach the seaside.",
+    "file_name": "SPACE6_20190822094025_20190822094322_tile_5877.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (252,431), point2: (592,584)",
+    "answer": "Go straight down until you reach the trees, then turn left and continue straight until you reach the house.",
+    "file_name": "SPACE6_20190823123717_20190823124038_tile_2679.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (26,262), point2: (121,728)",
+    "answer": "Go straight along the river.",
+    "file_name": "SPACE6_20190804143251_20190804143533_tile_333.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (481,650), point2: (174,298)",
+    "answer": "Go straight up through the forest, turn left, and continue straight to the end.",
+    "file_name": "SPACE6_20190822164803_20190822165101_tile_4217.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (390,657), point2: (566,320)",
+    "answer": "Go straight towards the lawn, turn left when you reach the road, and go to the end.",
+    "file_name": "SPACE6_20190804130422_20190804130643_tile_3169.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (233,505), point2: (436,542)",
+    "answer": "Go straight along the factory building and turn left at the first intersection.",
+    "file_name": "SPACE6_20190822072817_20190822073109_tile_10131.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (620,512), point2: (799,208)",
+    "answer": "Go straight passing two storage tanks, then turn right passing two storage tanks.",
+    "file_name": "SPACE6_20190822163834_20190822164115_tile_7700.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (440,501), point2: (607,725)",
+    "answer": "Go straight down to the first intersection, turn left, and continue straight to the first intersection.",
+    "file_name": "SPACE6_20190823151153_20190823151440_tile_6053.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (205,73), point2: (476,480)",
+    "answer": "Go straight to the right, turn right at the intersection, and continue straight to the second intersection.",
+    "file_name": "SPACE6_20190823100116_20190823100432_tile_2358.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (831,466), point2: (664,370)",
+    "answer": "Pass the yellow container on the left, turn right, and walk past the yellow container.",
+    "file_name": "SPACE6_20190822084226_20190822084526_tile_3235.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (354,735), point2: (539,777)",
+    "answer": "Walk straight along the grey house, turn left at the first intersection, and walk to the end.",
+    "file_name": "SPACE6_20190804114647_20190804114904_tile_6249.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (108,441), point2: (415,767)",
+    "answer": "Walk straight down along the forest, turn left onto the road, and walk to the end of the forest again.",
+    "file_name": "SPACE6_20190823082145_20190823082444_tile_7815.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (125,145), point2: (328,478)",
+    "answer": "First, walk towards the upper right, turn right at the first intersection, and turn right at the second intersection, passing the first house.",
+    "file_name": "dfc2023_test_P_0440.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (170,315), point2: (451,137)",
+    "answer": "First go straight up, then turn right and walk to the first intersection.",
+    "file_name": "dfc2023_test_P_0529.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (105,290), point2: (389,266)",
+    "answer": "First go down to the right, then take the first left at the intersection.",
+    "file_name": "dfc2023_test_P_0745.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (106,182), point2: (485,194)",
+    "answer": "First, walk to the right and upwards until the first intersection, then turn right.",
+    "file_name": "dfc2023_test_P_0732.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (398,328), point2: (90,254)",
+    "answer": "First go up, then turn left at the first intersection.",
+    "file_name": "dfc2023_test_P_0660.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (471,107), point2: (169,266)",
+    "answer": "First, go straight down to an intersection and turn right, then walk to the first house.",
+    "file_name": "dfc2023_test_P_0630.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (331,72), point2: (145,445)",
+    "answer": "First, go down to the right, then turn right at the first intersection until the next intersection.",
+    "file_name": "dfc2023_test_P_0671.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (161,265), point2: (419,278)",
+    "answer": "First, walk towards the upper right, then turn right at the first intersection and walk to the second intersection.",
+    "file_name": "dfc2023_test_P_0470.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (68,290), point2: (205,459)",
+    "answer": "First, walk diagonally to the right, then turn right at the first intersection and pass the first house.",
+    "file_name": "dfc2023_test_P_0450.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (290,50), point2: (133,322)",
+    "answer": "Go down and turn right at the first intersection.",
+    "file_name": "dfc2023_test_P_0684.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (138,94), point2: (275,428)",
+    "answer": "First, go down to the right, then take a right at the first intersection.",
+    "file_name": "dfc2023_test_P_0503.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (122,220), point2: (118,31))",
+    "answer": "First, walk towards the upper right, pass the first house, then turn left and walk to the corner.",
+    "file_name": "dfc2023_test_P_0493.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (284,228), point2: (502,137)",
+    "answer": "First, go to the upper right, then take a right at the first intersection.",
+    "file_name": "dfc2023_test_P_0502.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (150,157), point2:(136,484)",
+    "answer": "First, go straight down to the end, then turn right and walk to the end of the second house.",
+    "file_name": "dfc2023_test_P_0426.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (452,268), point2: (68,98)",
+    "answer": "First, go left, then turn right.",
+    "file_name": "dfc2023_test_P_0563.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (419,345), point2: (205,234)",
+    "answer": "First, go left, then take a right at the first intersection, and after passing a house, turn left.",
+    "file_name": "dfc2023_test_P_0488.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (280,273), point2: (110,67)",
+    "answer": "First, go up and after passing three houses, turn left at the intersection, then pass the first house.",
+    "file_name": "dfc2023_test_P_0430.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (54,109), point2: (364,77)",
+    "answer": "First, go right, then turn left at the first intersection.",
+    "file_name": "dfc2023_test_P_0575.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (185,327), point2: (385,164)",
+    "answer": "Go straight up to the right and pass through an intersection to reach the destination.",
+    "file_name": "dfc2023_test_P_1173.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (172,372), point2:(476,280)",
+    "answer": "First, go to the upper right, then take a right turn at the first intersection.",
+    "file_name": "dfc2023_test_P_0518.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (483,121), point2: (176,276)",
+    "answer": "First, go straight down to an intersection and turn right, then walk to the first house.",
+    "file_name": "dfc2023_test_P_0631.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (238,181), point2: (491,213)",
+    "answer": "First, go downstairs, turn left at the corner, walk to the third house, then turn right.",
+    "file_name": "dfc2023_test_P_0425.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1:(86,142), point2:(305,411)",
+    "answer": "First go down, then turn left at the first intersection.",
+    "file_name": "dfc2023_test_P_0537.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (132,349), point2: (467,307)",
+    "answer": "First, walk towards the upper right, turn right at the first intersection, go straight at the second intersection until you reach the first house.",
+    "file_name": "dfc2023_test_P_0448.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (118,243), point2: (390,258)",
+    "answer": "First, go to the upper right until you reach an intersection, then turn right and proceed to the third house on the right.",
+    "file_name": "dfc2023_test_P_0632.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (453,368), point2: (392,200)",
+    "answer": "First go up, then turn right after passing the second house.",
+    "file_name": "dfc2023_test_P_0429.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (141,211), point2: (286,478)",
+    "answer": "First, walk diagonally to the right, turn right at the first intersection, and walk to the first house.",
+    "file_name": "dfc2023_test_P_0444.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (149,236), point2: (381,201)",
+    "answer": "First, walk towards the upper right, then take a right turn at the first intersection and pass three houses.",
+    "file_name": "dfc2023_test_P_0453.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (127,382), point2: (82,174)",
+    "answer": "First, go to the upper right, then turn left at the first intersection and walk to the first house.",
+    "file_name": "dfc2023_test_P_0445.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (22,19), point2: (395,261)",
+    "answer": "First, go right, turn right at the first intersection, and walk to the first house.",
+    "file_name": "dfc2023_test_P_0500.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (17,200), point2:(388,191)",
+    "answer": "Walk down the road and turn left at the first intersection, then go straight through another intersection.",
+    "file_name": "dfc2023_test_P_1171.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (108,259), point2: (377,280)",
+    "answer": "First, walk towards the upper right, turn right at the first intersection, and walk to the second intersection.",
+    "file_name": "dfc2023_test_P_0449.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (65,77), point2: (365,145)",
+    "answer": "Walk towards the lower left of the phenomenon, turn left at the first intersection, walk to the end and turn left, until you reach the first intersection.",
+    "file_name": "dfc2023_test_P_0439.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (69,124), point2: (351,28)",
+    "answer": "First, walk towards the upper right, turn right at the first intersection, pass two houses, then turn left, and walk to the first intersection.",
+    "file_name": "dfc2023_test_P_0442.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (139,162), point2:(395,23)",
+    "answer": "First, go down to the right, then turn left at the first intersection and walk to the second intersection.",
+    "file_name": "dfc2023_test_P_0696.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (145,357), point2: (359,358)",
+    "answer": "First, go to the upper right, then take a right at the first intersection and pass a house.",
+    "file_name": "dfc2023_test_P_0454.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (454,367), point2: (266,213)",
+    "answer": "First go straight ahead, then take the first left at the intersection.",
+    "file_name": "dfc2023_test_P_0618.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (46,206), point2: (448,234)",
+    "answer": "Walk down along the road, turn left at the first intersection, and then go straight through another intersection.",
+    "file_name": "dfc2023_test_P_1176.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (96,144), point2: (370,173)",
+    "answer": "First, walk towards the upper right, then turn right at the first intersection and pass three houses.",
+    "file_name": "dfc2023_test_P_0458.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (43,145), point2: (244,337)",
+    "answer": "First, walk towards the upper right, then take a right turn at the first intersection and pass two houses.",
+    "file_name": "dfc2023_test_P_0459.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1:(367,57), point2: (368,56)",
+    "answer": "Continue straight along the upper left and pass through an intersection to arrive.",
+    "file_name": "dfc2023_test_P_1177.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (467,430), point2: (490,178)",
+    "answer": "First, go straight up to the first intersection and turn right, then walk to the end of that road.",
+    "file_name": "dfc2023_test_P_0434.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (29,257), point2: (351,310)",
+    "answer": "First, walk towards the upper right, then turn right at the first intersection and pass three houses.",
+    "file_name": "dfc2023_test_P_0455.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (57,69), point2: (448,81)",
+    "answer": "Walk down the road and turn left at the first intersection, then go straight through another intersection.",
+    "file_name": "dfc2023_test_P_1182.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (129,291), point2: (451,209)",
+    "answer": "First, walk towards the upper right, then take a right turn at the first intersection and pass a house.",
+    "file_name": "dfc2023_test_P_0443.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (46,150), point2: (318,207)",
+    "answer": "First, walk towards the upper right, then turn right at the first intersection and pass three houses.",
+    "file_name": "dfc2023_test_P_0438.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (239,428), point2: (497,164)",
+    "answer": "First, go to the upper right, then take a right turn at the second intersection.",
+    "file_name": "dfc2023_test_P_0479.json"
+  },
+  {
+    "task_type": "Navigation",
+    "question": "How can I reach point2 from point1. point1: (175,256), point2:(356,79)",
+    "answer": "First, go down to the right, turn left at the first intersection, then go to the second intersection and turn left.",
+    "file_name": "dfc2023_test_P_0642.json"
+  }
+]

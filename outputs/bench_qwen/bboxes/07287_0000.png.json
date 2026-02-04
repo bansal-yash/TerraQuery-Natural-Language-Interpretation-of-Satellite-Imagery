@@ -1,0 +1,47 @@
+{
+  "image": "07287_0000.png",
+  "boxes": [
+    {
+      "label": "baseball field",
+      "x1": 156,
+      "y1": 233,
+      "x2": 317,
+      "y2": 388
+    },
+    {
+      "label": "basketball court",
+      "x1": 334,
+      "y1": 453,
+      "x2": 510,
+      "y2": 512
+    },
+    {
+      "label": "pathways",
+      "x1": 0,
+      "y1": 0,
+      "x2": 510,
+      "y2": 510
+    },
+    {
+      "label": "trees",
+      "x1": 0,
+      "y1": 0,
+      "x2": 510,
+      "y2": 510
+    },
+    {
+      "label": "grass areas",
+      "x1": 0,
+      "y1": 0,
+      "x2": 510,
+      "y2": 510
+    },
+    {
+      "label": "rectangular court",
+      "x1": 334,
+      "y1": 453,
+      "x2": 510,
+      "y2": 512
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "image": "P0019_0000.png",
+  "answers": [
+    {
+      "question_id": 28,
+      "question": "What type of area is visible in the image?",
+      "answer": "residential"
+    },
+    {
+      "question_id": 29,
+      "question": "Is there a vehicle parked in the driveway?",
+      "answer": "yes"
+    },
+    {
+      "question_id": 30,
+      "question": "How many vehicles are present?",
+      "answer": "1"
+    },
+    {
+      "question_id": 31,
+      "question": "Where is the vehicle positioned in the image?",
+      "answer": "driveway"
+    }
+  ]
+}

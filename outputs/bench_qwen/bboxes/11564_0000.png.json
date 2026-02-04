@@ -1,0 +1,26 @@
+{
+  "image": "11564_0000.png",
+  "boxes": [
+    {
+      "label": "track field",
+      "x1": 234,
+      "y1": 82,
+      "x2": 510,
+      "y2": 510
+    },
+    {
+      "label": "building complex",
+      "x1": 34,
+      "y1": 0,
+      "x2": 234,
+      "y2": 203
+    },
+    {
+      "label": "structured garden area",
+      "x1": 0,
+      "y1": 203,
+      "x2": 234,
+      "y2": 510
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "image": "P2194_0007.png",
+  "boxes": [
+    {
+      "label": "rectangular soccer field",
+      "x1": 181,
+      "y1": 365,
+      "x2": 378,
+      "y2": 510
+    },
+    {
+      "label": "small red storage shed",
+      "x1": 152,
+      "y1": 295,
+      "x2": 176,
+      "y2": 334
+    },
+    {
+      "label": "large, open grassy area",
+      "x1": 140,
+      "y1": 193,
+      "x2": 486,
+      "y2": 365
+    },
+    {
+      "label": "cluster of small structures, including dark-roofed buildings and small vehicles, is situated at the top-left corner of the image",
+      "x1": 207,
+      "y1": 109,
+      "x2": 284,
+      "y2": 193
+    },
+    {
+      "label": "solitary small vehicle parked near the road",
+      "x1": 272,
+      "y1": 202,
+      "x2": 290,
+      "y2": 218
+    }
+  ]
+}

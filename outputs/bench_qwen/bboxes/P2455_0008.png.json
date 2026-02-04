@@ -1,0 +1,12 @@
+{
+  "image": "P2455_0008.png",
+  "boxes": [
+    {
+      "label": "High-resolution GoogleEarth image showing a residential area with houses arranged along winding streets. The houses have dark colored rooftops, and there is notable vegetation between the buildings. Ten small vehicles are present, positioned near the houses and along the streets.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 510,
+      "y2": 510
+    }
+  ]
+}

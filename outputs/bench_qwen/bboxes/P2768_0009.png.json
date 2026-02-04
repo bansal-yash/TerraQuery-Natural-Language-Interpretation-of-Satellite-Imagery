@@ -1,0 +1,26 @@
+{
+  "image": "P2768_0009.png",
+  "boxes": [
+    {
+      "label": "tennis courts",
+      "x1": 369,
+      "y1": 6,
+      "x2": 413,
+      "y2": 261
+    },
+    {
+      "label": "swimming pool",
+      "x1": 42,
+      "y1": 165,
+      "x2": 138,
+      "y2": 221
+    },
+    {
+      "label": "ground track field",
+      "x1": 195,
+      "y1": 0,
+      "x2": 374,
+      "y2": 284
+    }
+  ]
+}

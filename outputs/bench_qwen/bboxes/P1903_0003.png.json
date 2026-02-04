@@ -1,0 +1,12 @@
+{
+  "image": "P1903_0003.png",
+  "boxes": [
+    {
+      "label": "seating grey area",
+      "x1": 26,
+      "y1": 95,
+      "x2": 315,
+      "y2": 201
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "image": "P3989_0002.png",
+  "boxes": [
+    {
+      "label": "agriculture",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 510
+    },
+    {
+      "label": "industrial sections",
+      "x1": 116,
+      "y1": 448,
+      "x2": 340,
+      "y2": 512
+    },
+    {
+      "label": "transportation infrastructures",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 510
+    },
+    {
+      "label": "roundabout",
+      "x1": 291,
+      "y1": 236,
+      "x2": 309,
+      "y2": 249
+    },
+    {
+      "label": "greenery",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 510
+    }
+  ]
+}

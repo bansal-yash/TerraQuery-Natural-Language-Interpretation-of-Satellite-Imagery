@@ -1,0 +1,12 @@
+{
+  "image": "P1234_0062.png",
+  "boxes": [
+    {
+      "label": "spherical storage tanks",
+      "x1": 0,
+      "y1": 0,
+      "x2": 510,
+      "y2": 198
+    }
+  ]
+}

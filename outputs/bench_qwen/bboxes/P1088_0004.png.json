@@ -1,0 +1,12 @@
+{
+  "image": "P1088_0004.png",
+  "boxes": [
+    {
+      "label": "The high-resolution image from GoogleEarth features a tarmac area with five small-sized planes neatly arranged in a row.",
+      "x1": 22,
+      "y1": 213,
+      "x2": 505,
+      "y2": 282
+    }
+  ]
+}

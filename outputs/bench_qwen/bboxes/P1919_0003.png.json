@@ -1,0 +1,54 @@
+{
+  "image": "P1919_0003.png",
+  "boxes": [
+    {
+      "label": "tennis court",
+      "x1": 0,
+      "y1": 131,
+      "x2": 56,
+      "y2": 247
+    },
+    {
+      "label": "tennis court",
+      "x1": 89,
+      "y1": 137,
+      "x2": 151,
+      "y2": 256
+    },
+    {
+      "label": "tennis court</ref><ref>tennis court",
+      "x1": 231,
+      "y1": 142,
+      "x2": 293,
+      "y2": 260
+    },
+    {
+      "label": "tennis court</ref><ref>tennis court",
+      "x1": 293,
+      "y1": 142,
+      "x2": 355,
+      "y2": 260
+    },
+    {
+      "label": "tennis court",
+      "x1": 0,
+      "y1": 298,
+      "x2": 56,
+      "y2": 407
+    },
+    {
+      "label": "tennis court",
+      "x1": 89,
+      "y1": 298,
+      "x2": 151,
+      "y2": 407
+    },
+    {
+      "label": "tennis court",
+      "x1": 151,
+      "y1": 298,
+      "x2": 203,
+      "y2": 407
+    }
+  ]
+}

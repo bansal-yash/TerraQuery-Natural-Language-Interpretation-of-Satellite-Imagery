@@ -1,0 +1,12 @@
+{
+  "image": "08945_0000.png",
+  "boxes": [
+    {
+      "label": "chimney emitting smoke",
+      "x1": 346,
+      "y1": 73,
+      "x2": 512,
+      "y2": 279
+    }
+  ]
+}

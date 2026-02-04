@@ -1,0 +1,19 @@
+{
+  "image": "P2766_0077.png",
+  "boxes": [
+    {
+      "label": "large industrial building with red patch on roof",
+      "x1": 93,
+      "y1": 113,
+      "x2": 400,
+      "y2": 392
+    },
+    {
+      "label": "small storage-tank",
+      "x1": 441,
+      "y1": 469,
+      "x2": 483,
+      "y2": 510
+    }
+  ]
+}

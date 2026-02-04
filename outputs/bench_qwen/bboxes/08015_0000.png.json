@@ -1,0 +1,12 @@
+{
+  "image": "08015_0000.png",
+  "boxes": [
+    {
+      "label": "The image, sourced from GoogleEarth, features a prominent overpass cutting diagonally across the frame, dividing the space between a highway on one side and a residential area with houses and dense greenery on the other.",
+      "x1": 134,
+      "y1": 0,
+      "x2": 334,
+      "y2": 506
+    }
+  ]
+}

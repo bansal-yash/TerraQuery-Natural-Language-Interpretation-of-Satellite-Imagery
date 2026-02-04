@@ -1,0 +1,19 @@
+{
+  "image": "P2168_0003.png",
+  "boxes": [
+    {
+      "label": "baseball diamond",
+      "x1": 172,
+      "y1": 185,
+      "x2": 463,
+      "y2": 477
+    },
+    {
+      "label": "body of water",
+      "x1": 100,
+      "y1": 0,
+      "x2": 463,
+      "y2": 223
+    }
+  ]
+}

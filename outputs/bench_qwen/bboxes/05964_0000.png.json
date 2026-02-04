@@ -1,0 +1,19 @@
+{
+  "image": "05964_0000.png",
+  "boxes": [
+    {
+      "label": "large round baseball field with concentric patterns",
+      "x1": 162,
+      "y1": 142,
+      "x2": 332,
+      "y2": 307
+    },
+    {
+      "label": "curved road",
+      "x1": 0,
+      "y1": 182,
+      "x2": 236,
+      "y2": 512
+    }
+  ]
+}

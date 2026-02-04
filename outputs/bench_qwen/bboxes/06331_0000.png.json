@@ -1,0 +1,19 @@
+{
+  "image": "06331_0000.png",
+  "boxes": [
+    {
+      "label": "large building with a dark grey rooftop",
+      "x1": 0,
+      "y1": 34,
+      "x2": 163,
+      "y2": 234
+    },
+    {
+      "label": "tennis court",
+      "x1": 350,
+      "y1": 247,
+      "x2": 512,
+      "y2": 479
+    }
+  ]
+}

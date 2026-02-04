@@ -1,0 +1,12 @@
+{
+  "image": "09412_0000.png",
+  "boxes": [
+    {
+      "label": "An aerial view from Google Earth shows a series of three tennis courts aligned horizontally on the bottom edge of the image.",
+      "x1": 99,
+      "y1": 272,
+      "x2": 457,
+      "y2": 487
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "image": "P1903_0007.png",
+  "boxes": [
+    {
+      "label": "baseball diamond",
+      "x1": 1,
+      "y1": 1,
+      "x2": 182,
+      "y2": 167
+    },
+    {
+      "label": "tennis courts",
+      "x1": 177,
+      "y1": 243,
+      "x2": 505,
+      "y2": 403
+    }
+  ]
+}

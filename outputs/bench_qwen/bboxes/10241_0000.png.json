@@ -1,0 +1,12 @@
+{
+  "image": "10241_0000.png",
+  "boxes": [
+    {
+      "label": "roundabout with an overpass",
+      "x1": 141,
+      "y1": 291,
+      "x2": 510,
+      "y2": 510
+    }
+  ]
+}

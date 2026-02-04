@@ -1,0 +1,33 @@
+FILTERING TASK PROMPT
+
+MISSION
+0. The crops are from an image of Earth taken from a satellite in orbit. Hence, they are taken from vertically up. Hence, some objects might not look like how you expect them to look. Hence, account for the fact that the image is being taken from above objects far away, so that the might not be very clear, and then identify them.
+1. From the provided masks/crops, identify which are relevant to the user query. Look at the crops CAREFULLY, if they don't have the entire object according to you, you can ignore them. Don't blindly trust the DETECTED OBJECTS INFORMATION. It is fine if the object is blurry, but it must be present in its entirety.
+2. Expect crops to be partial, narrow, rotated, zoomed, or low-resolution. A crop can be valid if it shows only a fragment—treat fragments as first-class evidence.
+3. Evaluate *structural correlation* between each crop and the annotated base image region: edge continuity, straight-line segments, parallel/orthogonal edges, consistent pavement/grass textures, repeated painted markings (stripes, numbers), consistent color/lighting gradients, or alignment with the annotated bounding box/mask footprint.
+4. Treat very elongated or thin crops (long-and-narrow aspect ratio) as likely fragments of linear structures (runway, road, taxiway) and judge by orientation and straight-line geometry rather than internal detail.
+5. For small or blurry crops, prefer *pattern-level* matching (shape, orientation, texture, contrast) over detail-level matching (sharp markings); do not reject for lack of sharpness.
+6. If multiple overlapping masks/crops show contiguous evidence, include them all and order by confidence/relevance.
+7. Use the annotated base image as the reference for spatial context—explicitly note whether the crop’s location, orientation, or pattern lines up with the annotated region.
+8. Provide concise, factual justifications stating the specific cue used (e.g., "long straight dark band aligned with runway axis", "painted white stripe fragment matching base image marking", "parallel concrete texture continuous with annotated bounding box").
+9. Output exact mask file paths verbatim.
+10. VERY IMPORTANT: Have a look at the images yourself before proceeding. Don't trust the DETECTED OBJECTS INFORMATION blindly. If they seem irrelevant or don't contain a clearly recognizable object, ignore that crop for all the operations. But also keep in mind that image is taken from a far away satellite so you can only expect a certain level of clarity in these crops.
+
+RESPONSE FORMAT
+[THINKING]
+- Restate the filtering criteria in your own words (one short sentence).
+- For each candidate crop (index 0..N-1), briefly evaluate: size/aspect hint (e.g., "thin strip"), main structural cues observed, and whether it spatially aligns with the annotated region in the base image.
+- If discarding, give a one-line reason that references a specific missing cue.
+
+[FINAL ANSWER]
+<JSON list of objects, each shaped {"index": int, "mask_path": "vqa_outputs/mask_X.png", "reason": "short phrase"}; use [] if none qualify>
+<Path to the most relevant mask or annotated image>
+
+CHECKLIST
+- Reference every candidate before filtering it out.
+- Accept partial evidence: linear strips, edge continuations, texture/color gradients, painted fragment(s), or matching orientation with the annotated bbox are valid.
+- Treat thin / low-res / rotated crops as potentially informative—judge via geometry and alignment, not clarity.
+- If multiple crops form a contiguous structure in the base image, include them all and explain their relationship (e.g., "part A aligns to left runway edge; part B continues centerline").
+- Prefer recall: include any crop with plausible structural correlation; downstream stages can refine false positives.
+- Keep reasoning qualitative and short; do not invent measurements.
+- Mask paths must be included verbatim.

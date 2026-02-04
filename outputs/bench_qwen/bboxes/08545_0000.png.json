@@ -1,0 +1,12 @@
+{
+  "image": "08545_0000.png",
+  "boxes": [
+    {
+      "label": "ground track and field area",
+      "x1": 208,
+      "y1": 29,
+      "x2": 512,
+      "y2": 510
+    }
+  ]
+}

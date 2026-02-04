@@ -1,0 +1,19 @@
+{
+  "image": "P1581_0006.png",
+  "boxes": [
+    {
+      "label": "residential housing units",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 510
+    },
+    {
+      "label": "roundabout",
+      "x1": 322,
+      "y1": 285,
+      "x2": 379,
+      "y2": 347
+    }
+  ]
+}

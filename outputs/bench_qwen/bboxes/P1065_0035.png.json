@@ -1,0 +1,12 @@
+{
+  "image": "P1065_0035.png",
+  "boxes": [
+    {
+      "label": "A high-resolution GoogleEarth image showcasing a dense area of trees with a small vehicle located at the top-right corner of the image.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    }
+  ]
+}

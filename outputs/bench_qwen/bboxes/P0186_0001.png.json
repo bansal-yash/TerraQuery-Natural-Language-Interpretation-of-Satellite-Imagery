@@ -1,0 +1,19 @@
+{
+  "image": "P0186_0001.png",
+  "boxes": [
+    {
+      "label": "third court is visible on the left.",
+      "x1": 0,
+      "y1": 185,
+      "x2": 123,
+      "y2": 368
+    },
+    {
+      "label": "The high-resolution image from GoogleEarth displays three tennis courts aligned side by side. On the right side is court, with clear court lines painted on the surface.",
+      "x1": 438,
+      "y1": 185,
+      "x2": 512,
+      "y2": 368
+    }
+  ]
+}

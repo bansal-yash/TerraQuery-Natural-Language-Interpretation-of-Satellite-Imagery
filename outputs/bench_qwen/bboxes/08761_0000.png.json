@@ -1,0 +1,12 @@
+{
+  "image": "08761_0000.png",
+  "boxes": [
+    {
+      "label": "The image, sourced from GoogleEarth, displays a section of an airport tarmac with a small airplane visible on the ground.",
+      "x1": 131,
+      "y1": 290,
+      "x2": 176,
+      "y2": 358
+    }
+  ]
+}

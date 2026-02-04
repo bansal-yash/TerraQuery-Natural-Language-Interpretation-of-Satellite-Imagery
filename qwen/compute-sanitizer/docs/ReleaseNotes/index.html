@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Release Notes &mdash; compute-sanitizer 12.6 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/omni-style.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/api-styles.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/mermaid-init.js"></script>
+        <script src="../_static/design-tabs.js"></script>
+        <script src="../_static/version.js"></script>
+        <script src="../_static/social-media.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Compute Sanitizer" href="../ComputeSanitizer/index.html" />
+    <link rel="prev" title="Compute Sanitizer" href="../index.html" />
+ 
+
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+
+<a href="../index.html">
+  <img src="../_static/Logo_and_CUDA.png" class="logo" alt="Logo"/>
+</a>
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Release Notes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">Release Notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">Release Notes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#updates-in-2024-3">Updates in 2024.3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#updates-in-2024-2">Updates in 2024.2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#updates-in-2024-1-1">Updates in 2024.1.1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#updates-in-2024-1">Updates in 2024.1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#updates-in-2023-1-1">Updates in 2023.1.1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#updates-in-2023-3">Updates in 2023.3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#updates-in-2023-2-2">Updates in 2023.2.2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#updates-in-2023-2-1">Updates in 2023.2.1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#updates-in-2023-2">Updates in 2023.2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">Updates in 2023.1.1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#updates-in-2023-1">Updates in 2023.1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#updates-in-2022-4-1">Updates in 2022.4.1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#updates-in-2022-4">Updates in 2022.4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#updates-in-2022-3">Updates in 2022.3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#updates-in-2022-2-1">Updates in 2022.2.1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#updates-in-2022-2">Updates in 2022.2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#updates-in-2022-1-1">Updates in 2022.1.1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#updates-in-2022-1">Updates in 2022.1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#updates-in-2021-3-1">Updates in 2021.3.1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#updates-in-2021-3">Updates in 2021.3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#updates-in-2021-2-3">Updates in 2021.2.3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#updates-in-2021-2-2">Updates in 2021.2.2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#updates-in-2021-2-1">Updates in 2021.2.1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#updates-in-2021-2">Updates in 2021.2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#updates-in-2021-1-1">Updates in 2021.1.1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#updates-in-2021-1">Updates in 2021.1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#updates-in-2020-3-1">Updates in 2020.3.1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#updates-in-2020-3">Updates in 2020.3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#updates-in-2020-2-1">Updates in 2020.2.1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#updates-in-2020-2">Updates in 2020.2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#updates-in-2020-1-2">Updates in 2020.1.2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#updates-in-2020-1-1">Updates in 2020.1.1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#updates-in-2020-1">Updates in 2020.1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#updates-in-2019-1">Updates in 2019.1</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#known-limitations">Known Limitations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#known-issues">Known Issues</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#support">Support</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#platform-support">Platform Support</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gpu-support">GPU Support</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tools</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ComputeSanitizer/index.html">Compute Sanitizer</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Interfaces</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../SanitizerApiGuide/index.html">Compute Sanitizer API Reference Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SanitizerApi/table-of-contents.html">Sanitizer API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SanitizerNvtxGuide/index.html">NVTX API for Compute Sanitizer Reference Manual</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Copyright And Licenses</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../CopyrightAndLicenses/index.html">Copyright and Licenses</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">compute-sanitizer</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+
+
+  
+
+<li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+  
+<li>Release Notes</li>
+
+      <li class="wy-breadcrumbs-aside">
+      </li>
+<li class="wy-breadcrumbs-aside">
+
+
+  <span>v2024.3.0</span>
+
+
+  <span>&nbsp;</span>
+</li>
+
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="release-notes">
+<h1>Release Notes<a class="headerlink" href="#release-notes" title="Permalink to this headline"></a></h1>
+<section id="id1">
+<h2>Release Notes<a class="headerlink" href="#id1" title="Permalink to this headline"></a></h2>
+<p>Compute Sanitizer Release Notes.</p>
+<p>Release notes and known issues.</p>
+</section>
+<section id="id2">
+<h2>Release Notes<a class="headerlink" href="#id2" title="Permalink to this headline"></a></h2>
+<section id="updates-in-2024-3">
+<h3>Updates in 2024.3<a class="headerlink" href="#updates-in-2024-3" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Fixed potential invalid results on Ampere with synccheck and racecheck relating to <code class="docutils literal notranslate"><span class="pre">cuda::barrier</span></code>. <code class="docutils literal notranslate"><span class="pre">cuda::barrier</span></code> wait
+events are now called after the wait as completed in the same fashion as Hopper. This may require target applications to be
+recompiled with a CUDA 12.4 or more recent compiler.</p></li>
+<li><p>Fixed multiple issues with coredump generation that resulted in failures or hangs.</p></li>
+<li><p>Fixed potential false positives in memcheck with the PTX instruction <code class="docutils literal notranslate"><span class="pre">st.async</span></code> on the barrier address.</p></li>
+<li><p>Fixed a potential hang when using per-thread default streams or green contexts and synchronous <code class="docutils literal notranslate"><span class="pre">cudaMemcpy</span></code> from device to
+host.</p></li>
+<li><p>Fixed potential issues with host backtraces on Windows.</p></li>
+<li><p>Fixed potential false positives misaligned accesses in memcheck with the PTX instruction <code class="docutils literal notranslate"><span class="pre">cp.async.bulk</span></code>.</p></li>
+</ul>
+</section>
+<section id="updates-in-2024-2">
+<h3>Updates in 2024.2<a class="headerlink" href="#updates-in-2024-2" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Added public API and memcheck support for PTX cp.async.bulk operations from global to shared memory on Hopper.</p></li>
+<li><p>Added support for OptiX 8.1.</p></li>
+<li><p>Dropped support for Linux ppc64le: this platform is no longer supported.</p></li>
+<li><p>Fixed an issue where memcheck would report misaligned or out of bounds false positives with accesses of a larger size than the actual operation in specific cases.</p></li>
+<li><p>Fixed potential issues when using Heterogeneous Memory Management.</p></li>
+<li><p>Fixed potential crashes or false results in racecheck when using clusters on Hopper.</p></li>
+<li><p>Added a warning when clearing unsupported coredump-related environment variables.</p></li>
+<li><p>Clarified in documentation when leak errors are reported.</p></li>
+</ul>
+</section>
+<section id="updates-in-2024-1-1">
+<h3>Updates in 2024.1.1<a class="headerlink" href="#updates-in-2024-1-1" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Fixed an issue where errors would not be reported in libraries called from .NET applications.</p></li>
+</ul>
+</section>
+<section id="updates-in-2024-1">
+<h3>Updates in 2024.1<a class="headerlink" href="#updates-in-2024-1" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Enable shared addressing support by default: removed option <code class="docutils literal notranslate"><span class="pre">--hmm-support</span></code> and replaced it with environment variable <code class="docutils literal notranslate"><span class="pre">NV_COMPUTE_SANITIZER_SHARED_ADDRESSING_SUPPORT</span></code>.
+See the <a class="reference external" href="../../ComputeSanitizer/topics/environment-variables.dita">environment variables documentation</a> for more information.</p></li>
+<li><p>Changed default value for option <code class="docutils literal notranslate"><span class="pre">--target-processes</span></code> to <code class="docutils literal notranslate"><span class="pre">all</span></code>.</p></li>
+<li><p>Added detection for <code class="docutils literal notranslate"><span class="pre">cuda::barrier</span></code> initialization race conditions in racecheck on Hopper.</p></li>
+<li><p>Added support for initcheck API errors suppression.</p></li>
+<li><p>Added memcheck support for <code class="docutils literal notranslate"><span class="pre">cuMemPoolImportPointer</span></code>.</p></li>
+<li><p>Added support for CUDA green contexts.</p></li>
+<li><p>Added support for CUDA graph device-side node update.</p></li>
+<li><p>Fixed potential false positives with synccheck when using different <code class="docutils literal notranslate"><span class="pre">cuda::barrier</span></code> in a single warp.</p></li>
+<li><p>Fixed potential false negatives with memcheck when using floating point atomics on Hopper.</p></li>
+</ul>
+</section>
+<section id="updates-in-2023-1-1">
+<h3>Updates in 2023.1.1<a class="headerlink" href="#updates-in-2023-1-1" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Fixed error output for WGMMA instructions.</p></li>
+</ul>
+</section>
+<section id="updates-in-2023-3">
+<h3>Updates in 2023.3<a class="headerlink" href="#updates-in-2023-3" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Added support for Heterogeneous Memory Management (HMM) and Address Translation Service (ATS).
+The feature is opt-in using the <code class="docutils literal notranslate"><span class="pre">--hmm-support</span></code> command-line option.</p></li>
+<li><p>Added racecheck support for device graph launches.</p></li>
+<li><p>Added the ability to suppress known issues using the <code class="docutils literal notranslate"><span class="pre">--suppressions</span></code> command-line option.
+See the <a class="reference external" href="../../ComputeSanitizer/topics/error-suppression.rst">suppressions documentation</a> for more information.</p></li>
+<li><p>Added support for <a class="reference external" href="https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__EXTRES__INTEROP.html#group__CUDART__EXTRES__INTEROP">external memory objects</a>.
+This effectively adds support for Vulkan and D3D12 interop.</p></li>
+<li><p>Added device backtrace support for WSL.</p></li>
+<li><p>Improve PC offset output. It is now printed next to the function name to clarify it is an assembly offset within that function.</p></li>
+<li><p>Several command-line options no longer require to explicitly specify “yes” or “no” when they are used.</p></li>
+<li><p>Renamed the options <code class="docutils literal notranslate"><span class="pre">--kernel-regex</span></code> and <code class="docutils literal notranslate"><span class="pre">--kernel-regex-exclude</span></code> to <code class="docutils literal notranslate"><span class="pre">--kernel-name</span></code> and <code class="docutils literal notranslate"><span class="pre">--kernel-name-exclude</span></code>.</p></li>
+<li><p>Added the regex filtering key to <code class="docutils literal notranslate"><span class="pre">--kernel-name</span></code> and <code class="docutils literal notranslate"><span class="pre">--kernel-name-exclude</span></code>.</p></li>
+<li><p>Added new command-line option <code class="docutils literal notranslate"><span class="pre">--racecheck-indirect-barrier-dependency</span></code> to enable indirect <code class="docutils literal notranslate"><span class="pre">cuda::barrier</span></code> tracking in racecheck.</p></li>
+<li><p>Added new command-line option <code class="docutils literal notranslate"><span class="pre">--coredump-behavior</span></code> to control the target application behavior after generating a GPU coredump.</p></li>
+<li><p>Added new command-line option <code class="docutils literal notranslate"><span class="pre">--detect-missing-module-unload</span></code> to detect missing calls to the <code class="docutils literal notranslate"><span class="pre">cuModuleUnload</span></code> driver API.</p></li>
+<li><p>Added new command-line option <code class="docutils literal notranslate"><span class="pre">--preload-library</span></code> to make the target application load a shared library before the injection libraries.</p></li>
+<li><p>Fix initcheck false positive when memory loads are widened and include padding bytes.</p></li>
+<li><p>Fix potential hang in racecheck and synccheck tools when the <code class="docutils literal notranslate"><span class="pre">bar.arrive</span></code> instruction is used.</p></li>
+<li><p>Added patching API support for the <code class="docutils literal notranslate"><span class="pre">setsmemsize</span></code> instruction.</p></li>
+<li><p>Added patching API support for <code class="docutils literal notranslate"><span class="pre">__syncthreads()</span></code> after the barrier is released.</p></li>
+</ul>
+</section>
+<section id="updates-in-2023-2-2">
+<h3>Updates in 2023.2.2<a class="headerlink" href="#updates-in-2023-2-2" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Updated version print output to include build and config information.</p></li>
+<li><p>Fix potential hang on QNX when capturing the host backtrace.</p></li>
+</ul>
+</section>
+<section id="updates-in-2023-2-1">
+<h3>Updates in 2023.2.1<a class="headerlink" href="#updates-in-2023-2-1" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Fixed potential racecheck hang on H100 when using thread block clusters.</p></li>
+<li><p>Compute Sanitizer 2023.2.1 is incorrectly versioned as 2023.2.0 and need to be differentiated by its build ID 33053471.</p></li>
+</ul>
+</section>
+<section id="updates-in-2023-2">
+<h3>Updates in 2023.2<a class="headerlink" href="#updates-in-2023-2" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Added support for CUDA device graph launches.</p></li>
+<li><p>Added racecheck support for cluster entry and exit race detection for remote shared memory accesses. See the <a class="reference external" href="../ComputeSanitizer/index.html#racecheck-cluster-races">cluster entry and exit race detection documentation</a> for more information.</p></li>
+<li><p>Added support for CUDA lazy loading when device heap checking is enabled. Requires CUDA driver version 535 or newer.</p></li>
+<li><p>Added support for tracking child processes launched with <code class="docutils literal notranslate"><span class="pre">system()</span></code> or <code class="docutils literal notranslate"><span class="pre">posix_spawn(p)</span></code> when using <code class="docutils literal notranslate"><span class="pre">--target-processes</span> <span class="pre">all</span></code>.</p></li>
+<li><p>Added support for <code class="docutils literal notranslate"><span class="pre">st.async</span></code> and <code class="docutils literal notranslate"><span class="pre">red.async</span></code> instructions.</p></li>
+<li><p>Improved support for partial warp synchronization using cooperative groups in racecheck.</p></li>
+<li><p>Improved support for <code class="docutils literal notranslate"><span class="pre">cuda::barrier::wait()</span></code> on SM 9.x.</p></li>
+<li><p>Added coredump support for Pascal architecture and multi-context applications.</p></li>
+<li><p>Added support for OptiX 8.0.</p></li>
+<li><p>Improved performance when using initcheck in OptiX applications in some cases. Using initcheck to track OptiX applications now requires the option <code class="docutils literal notranslate"><span class="pre">--check-optix</span> <span class="pre">yes</span></code>.</p></li>
+</ul>
+</section>
+<section id="id3">
+<h3>Updates in 2023.1.1<a class="headerlink" href="#id3" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Fixed bug where memcheck would report out-of-bound accesses when loading user parameter values using a ternary operator.</p></li>
+<li><p>Fixed potential crash when using leakcheck with applications using CUBLAS.</p></li>
+<li><p>Fixed potential false positives when using synccheck or racecheck with applications using CUDA barriers.</p></li>
+</ul>
+</section>
+<section id="updates-in-2023-1">
+<h3>Updates in 2023.1<a class="headerlink" href="#updates-in-2023-1" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Added racecheck support for distributed shared memory.</p></li>
+<li><p>Extended stream-ordered race detection to <code class="docutils literal notranslate"><span class="pre">cudaMemcpy</span></code> APIs.</p></li>
+<li><p>Added memcheck, synccheck and patching API support for warpgroup operations.</p></li>
+<li><p>Added <code class="docutils literal notranslate"><span class="pre">--coredump-name</span></code> CLI option to set the coredump file name.</p></li>
+<li><p>Added support for Unicode file paths.</p></li>
+<li><p>Added support for OptiX 7.7.</p></li>
+</ul>
+</section>
+<section id="updates-in-2022-4-1">
+<h3>Updates in 2022.4.1<a class="headerlink" href="#updates-in-2022-4-1" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Fixed bug where synccheck would incorrectly report illegal instructions for code using <code class="docutils literal notranslate"><span class="pre">cluster.sync()</span></code> and compiled with <code class="docutils literal notranslate"><span class="pre">--device-debug</span></code></p></li>
+<li><p>Fixed incorrect address reports in SanitizerCallbackMemcpyAsync in some specific cases, leading to potential invalid results in memcheck and racecheck.</p></li>
+<li><p>Fixed potential hangs and invalid results with racecheck on OptiX applications.</p></li>
+<li><p>Fixed potential crash or invalid results when using CUDA Lazy Module Loading with memcheck or initcheck if <code class="docutils literal notranslate"><span class="pre">--check-device-heap</span></code> is enabled. Lazy Module Loading will be automatically disabled in these cases.</p></li>
+</ul>
+</section>
+<section id="updates-in-2022-4">
+<h3>Updates in 2022.4<a class="headerlink" href="#updates-in-2022-4" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Added support for <code class="docutils literal notranslate"><span class="pre">__nv_aligned_device_malloc</span></code>.</p></li>
+<li><p>Added support for <code class="docutils literal notranslate"><span class="pre">ldmatrix</span></code> and <code class="docutils literal notranslate"><span class="pre">stmatrix</span></code> instructions.</p></li>
+<li><p>Added support for cache control operations when using the <code class="docutils literal notranslate"><span class="pre">--check-cache-control</span></code> command-line option.</p></li>
+<li><p>Added new command-line option <code class="docutils literal notranslate"><span class="pre">--unused-memory-threshold</span></code> to control the threshold for unused memory reports.</p></li>
+<li><p>Improved support for CUDA pipeline memcpy-async related hazards in racecheck.</p></li>
+</ul>
+</section>
+<section id="updates-in-2022-3">
+<h3>Updates in 2022.3<a class="headerlink" href="#updates-in-2022-3" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Added support for the NVIDIA GH100/SM 9.x GPU architecture.</p></li>
+<li><p>Added support for the NVIDIA AD10x/SM 8.9 GPU architecture.</p></li>
+<li><p>Added support for lazy kernel loading.</p></li>
+<li><p>Added memcheck support for distributed shared memory.</p></li>
+<li><p>Added new options <code class="docutils literal notranslate"><span class="pre">--num-callers-device</span></code> and <code class="docutils literal notranslate"><span class="pre">--num-callers-host</span></code> to control the number of callers to print in stack traces.</p></li>
+<li><p>Added support for OptiX 7.6 applications.</p></li>
+<li><p>Fix bug on Linux ppc64le where the host stack trace was incomplete.</p></li>
+</ul>
+</section>
+<section id="updates-in-2022-2-1">
+<h3>Updates in 2022.2.1<a class="headerlink" href="#updates-in-2022-2-1" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Fixed incorrect device backtrace for applications compiled with <code class="docutils literal notranslate"><span class="pre">-lineinfo</span></code>.</p></li>
+</ul>
+</section>
+<section id="updates-in-2022-2">
+<h3>Updates in 2022.2<a class="headerlink" href="#updates-in-2022-2" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Added memcheck support for use-before-alloc and use-after-free race detection. See the <a class="reference external" href="../ComputeSanitizer/index.html#stream-ordered-races">stream-ordered race detection documentation</a> for more information.</p></li>
+<li><p>Added leakcheck support for asynchronous allocations, OptiX resources and CUDA memmap (on Linux only for the latter).</p></li>
+<li><p>Added option to ignore <code class="docutils literal notranslate"><span class="pre">CUDA_ERROR_NOT_FOUND</span></code> error codes returned by the <code class="docutils literal notranslate"><span class="pre">cuGetProcAddress</span></code> API.</p></li>
+<li><p>Added new sanitizer API functions to allocate and free page-locked host memory.</p></li>
+<li><p>Added sanitizer API callbacks for the <a class="reference external" href="https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__EVENT.html">event management</a> API.</p></li>
+</ul>
+</section>
+<section id="updates-in-2022-1-1">
+<h3>Updates in 2022.1.1<a class="headerlink" href="#updates-in-2022-1-1" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Fixed initcheck issue where the tool would incorrectly abort a CUDA kernel launch after reporting an uninitialized access on Windows with hardware scheduling enabled.</p></li>
+</ul>
+</section>
+<section id="updates-in-2022-1">
+<h3>Updates in 2022.1<a class="headerlink" href="#updates-in-2022-1" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Added support for generating coredumps.</p></li>
+<li><p>Improved support for stack overflow detection.</p></li>
+<li><p>Added new option <code class="docutils literal notranslate"><span class="pre">--target-processes-filter</span></code> to filter the processes being tracked by name.</p></li>
+<li><p>Added initcheck support for asynchronous allocations. Requires CUDA driver version 510 or newer.</p></li>
+<li><p>Added initcheck support for accesses on peer devices. Requires CUDA driver version 510 or newer.</p></li>
+<li><p>Added support for OptiX 7 applications.</p></li>
+<li><p>Added support for tracking the child processes of 32-bit processes in multi-process applications on Linux and Windows x86_64.</p></li>
+</ul>
+</section>
+<section id="updates-in-2021-3-1">
+<h3>Updates in 2021.3.1<a class="headerlink" href="#updates-in-2021-3-1" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Fixed intermittent issue on vGPU where synccheck would incorrectly detect divergent threads.</p></li>
+<li><p>Fixed potential hang when tracking several graph launches.</p></li>
+</ul>
+</section>
+<section id="updates-in-2021-3">
+<h3>Updates in 2021.3<a class="headerlink" href="#updates-in-2021-3" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Improved Linux host backtrace.</p></li>
+<li><p>Removed requirement to call <code class="docutils literal notranslate"><span class="pre">cudaDeviceReset()</span></code> for accurate reporting of memory leaks and unused memory features.</p></li>
+<li><p>Fixed synccheck potential hang when calling <code class="docutils literal notranslate"><span class="pre">__syncthreads</span></code> in divergent code paths on Volta GPUs or newer.</p></li>
+<li><p>Added print of nearest allocation information for memcheck precise errors in global memory.</p></li>
+<li><p>Added warning when calling device-side <code class="docutils literal notranslate"><span class="pre">malloc</span></code> with an empty size.</p></li>
+<li><p>Added separate sanitizer API device callback for <code class="docutils literal notranslate"><span class="pre">cuda::memcpy_async</span></code>.</p></li>
+<li><p>Added new command-line option <code class="docutils literal notranslate"><span class="pre">--num-cuda-barriers</span></code> to override the expected number of <code class="docutils literal notranslate"><span class="pre">cuda::barrier</span></code> used by the target application.</p></li>
+<li><p>Added new command-line options <code class="docutils literal notranslate"><span class="pre">--print-session-details</span></code> to print session information and <code class="docutils literal notranslate"><span class="pre">--save-session-details</span></code> to save it to the output file.</p></li>
+<li><p>Added support for WSL2.</p></li>
+</ul>
+</section>
+<section id="updates-in-2021-2-3">
+<h3>Updates in 2021.2.3<a class="headerlink" href="#updates-in-2021-2-3" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Enabled SLS hardening and branch protection for L4T builds.</p></li>
+</ul>
+</section>
+<section id="updates-in-2021-2-2">
+<h3>Updates in 2021.2.2<a class="headerlink" href="#updates-in-2021-2-2" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Enabled stack canaries with random canary values for L4T builds.</p></li>
+</ul>
+</section>
+<section id="updates-in-2021-2-1">
+<h3>Updates in 2021.2.1<a class="headerlink" href="#updates-in-2021-2-1" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Added device backtrace for malloc/free errors in CUDA kernels.</p></li>
+<li><p>Improved racecheck host memory footprint.</p></li>
+</ul>
+</section>
+<section id="updates-in-2021-2">
+<h3>Updates in 2021.2<a class="headerlink" href="#updates-in-2021-2" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Added racecheck and synccheck support for <code class="docutils literal notranslate"><span class="pre">cuda::barrier</span></code> on Ampere GPUs or newer.</p></li>
+<li><p>Added racecheck support for <code class="docutils literal notranslate"><span class="pre">__syncwarp</span></code> with partial mask.</p></li>
+<li><p>Added <code class="docutils literal notranslate"><span class="pre">--launch-count</span></code> and <code class="docutils literal notranslate"><span class="pre">--launch-skip</span></code> filtering options. See the <a class="reference external" href="../ComputeSanitizer/index.html#command-line-options">Command Line Options documentation</a> for more information.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--filter</span></code> and <code class="docutils literal notranslate"><span class="pre">--exclude</span></code> options have been respectively renamed to <code class="docutils literal notranslate"><span class="pre">--kernel-regex</span></code> and <code class="docutils literal notranslate"><span class="pre">--kernel-regex-exclude</span></code>.</p></li>
+<li><p>Added support for QNX and Linux aarch64 platforms.</p></li>
+<li><p>Added support for CUDA graphs memory nodes.</p></li>
+</ul>
+</section>
+<section id="updates-in-2021-1-1">
+<h3>Updates in 2021.1.1<a class="headerlink" href="#updates-in-2021-1-1" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Fixed an issue where incorrect line numbers could be shown in errors reports.</p></li>
+</ul>
+</section>
+<section id="updates-in-2021-1">
+<h3>Updates in 2021.1<a class="headerlink" href="#updates-in-2021-1" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Added support for allocation padding via the <code class="docutils literal notranslate"><span class="pre">--padding</span></code> option.</p></li>
+<li><p>Added experimental support for NVTX memory API using option <code class="docutils literal notranslate"><span class="pre">--nvtx</span> <span class="pre">yes</span></code>. Please refer to <a class="reference external" href="../SanitizerNvtxGuide/index.html#about-nvtx">NVTX API for Compute Sanitizer Reference Manual</a> for more information.</p></li>
+</ul>
+</section>
+<section id="updates-in-2020-3-1">
+<h3>Updates in 2020.3.1<a class="headerlink" href="#updates-in-2020-3-1" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Fixed issue when launching a CUDA graph multiple times.</p></li>
+<li><p>Fixed false positives when using cooperative groups synchronization primitives with initcheck and synccheck.</p></li>
+</ul>
+</section>
+<section id="updates-in-2020-3">
+<h3>Updates in 2020.3<a class="headerlink" href="#updates-in-2020-3" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Added support for CUDA memory pools and CUDA API reduced serialization.</p></li>
+<li><p>Added host backtrace for unused memory reports.</p></li>
+</ul>
+</section>
+<section id="updates-in-2020-2-1">
+<h3>Updates in 2020.2.1<a class="headerlink" href="#updates-in-2020-2-1" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Fixed crash when loading cubins of size larger than 2 GiB.</p></li>
+<li><p>Fixed error detection on systems with multiple GPUs.</p></li>
+<li><p>Fixed issue when using CUDA Virtual Memory Management API <code class="docutils literal notranslate"><span class="pre">cuMemSetAccess</span></code> to remove access to a subset of devices on a system with multiple GPUs.</p></li>
+<li><p>Added sanitizer API to translate between sanitizer and CUDA stream handles.</p></li>
+</ul>
+</section>
+<section id="updates-in-2020-2">
+<h3>Updates in 2020.2<a class="headerlink" href="#updates-in-2020-2" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Added support for CUDA graphs and CUDA memmap APIs.</p></li>
+<li><p>The memory access callback of the sanitizer API has been split into three distinct callbacks corresponding to global, shared and local memory accesses.</p></li>
+</ul>
+</section>
+<section id="updates-in-2020-1-2">
+<h3>Updates in 2020.1.2<a class="headerlink" href="#updates-in-2020-1-2" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Added sanitizer stream API. This fixes tool crashes when per-thread streams are being used.</p></li>
+</ul>
+</section>
+<section id="updates-in-2020-1-1">
+<h3>Updates in 2020.1.1<a class="headerlink" href="#updates-in-2020-1-1" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Added support for Windows Hardware-accelerated GPU scheduling</p></li>
+<li><p>Added support for tracking child processes spawned by the application launched under the tool via the <code class="docutils literal notranslate"><span class="pre">--target-processes</span></code> CLI option.</p></li>
+</ul>
+</section>
+<section id="updates-in-2020-1">
+<h3>Updates in 2020.1<a class="headerlink" href="#updates-in-2020-1" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Initial release of the Compute Sanitizer (with CUDA 11.0)</p></li>
+</ul>
+<p>Updates to the Sanitizer API :</p>
+<ul class="simple">
+<li><p>Added support for per-thread streams</p></li>
+<li><p>Added APIs to retrieve the PC and size of a CUDA function or patch</p></li>
+<li><p>Added callback for <code class="docutils literal notranslate"><span class="pre">cudaStreamAttachMemAsync</span></code></p></li>
+<li><p>Added direction to memcpy callback data</p></li>
+<li><p>Added stream to memcpy and memset callbacks data</p></li>
+<li><p>Added launch callback after syscall setup</p></li>
+<li><p>Added visibility field to allocation callback data</p></li>
+<li><p>Added PC argument to block entry callback</p></li>
+<li><p>Added incoming value to memory access callbacks</p></li>
+<li><p>Added threadCount to barrier callbacks</p></li>
+<li><p>Added cooperative group flags for barrier and function callbacks</p></li>
+</ul>
+</section>
+<section id="updates-in-2019-1">
+<h3>Updates in 2019.1<a class="headerlink" href="#updates-in-2019-1" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Initial release of the Compute Sanitizer API (with CUDA 10.1)</p></li>
+</ul>
+</section>
+</section>
+<section id="known-limitations">
+<h2>Known Limitations<a class="headerlink" href="#known-limitations" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>Applications run much slower under the Compute Sanitizer tools. This may cause some kernel launches to fail with a launch timeout error when running with the Compute Sanitizer enabled.</p></li>
+<li><p>Compute Sanitizer tools do not support device backtrace on Maxwell devices (SM 5.x).</p></li>
+<li><p>Compute Sanitizer tools do not support coredumps on WSL2.</p></li>
+<li><p>The memcheck tool does not support CUDA API error checking for API calls made on the GPU using dynamic parallelism.</p></li>
+<li><p>The racecheck, synccheck and initcheck tools do not support CUDA dynamic parallelism.</p></li>
+<li><p>CUDA dynamic parallelism is not supported when Windows Hardware-accelerated GPU scheduling is enabled.</p></li>
+<li><p>Compute Sanitizer tools cannot interoperate with other CUDA developer tools. This includes CUDA coredumps which are automatically disabled by the Compute Sanitizer. They can be enabled instead by using the <code class="docutils literal notranslate"><span class="pre">--generate-coredump</span></code> option.</p></li>
+<li><p>The initcheck tool does not support IPC allocations. Using it will result in false positives.</p></li>
+<li><p>Compute Sanitizer tools are not supported when SLI is enabled.</p></li>
+<li><p>The racecheck tool is not supported under Confidential Computing.</p></li>
+</ul>
+</section>
+<section id="known-issues">
+<h2>Known Issues<a class="headerlink" href="#known-issues" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>The racecheck tool may print incorrect data for “Current value” when reporting a hazard on a shared memory location where the last access was an atomic operation. This can also impact the severity of this hazard.</p></li>
+<li><p>On QNX, when using the <code class="docutils literal notranslate"><span class="pre">--target-processes</span> <span class="pre">all</span></code> option, analyzing shell scripts may hang after the script has completed. End the application using Ctrl-C on the command line in that case.</p></li>
+<li><p>The initcheck tool might report false positives for device-to-host cudaMemcpy operations on padded structs that were initialized by a CUDA kernel. The <code class="docutils literal notranslate"><span class="pre">#pragma</span> <span class="pre">pack</span></code> directive can be used to disable the padding as a workaround.</p></li>
+<li><p>When a hardware exception occur during a kernel launch that was skipped due to the usage of the <code class="docutils literal notranslate"><span class="pre">kernel-name</span></code>, <code class="docutils literal notranslate"><span class="pre">kernel-name-exclude</span></code>, <code class="docutils literal notranslate"><span class="pre">launch-count</span></code> or <code class="docutils literal notranslate"><span class="pre">launch-skip</span></code> options, the memcheck tool will not be able to report additional details as an imprecise error.</p></li>
+<li><p>The leakcheck feature is disabled under Confidential Computing.</p></li>
+</ul>
+</section>
+<section id="support">
+<h2>Support<a class="headerlink" href="#support" title="Permalink to this headline"></a></h2>
+<p>Information on supported platforms and GPUs.</p>
+<section id="platform-support">
+<h3>Platform Support<a class="headerlink" href="#platform-support" title="Permalink to this headline"></a></h3>
+<table class="docutils align-default" id="id4">
+<caption><span class="caption-text">Table 1. Platforms supported by Compute Sanitizer</span><a class="headerlink" href="#id4" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 73%" />
+<col style="width: 27%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Platform</p></th>
+<th class="head"><p>Support</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Windows</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="row-odd"><td><p>Linux (x86_64)</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="row-even"><td><p>Linux (ppc64le)</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="row-odd"><td><p>Linux (aarch64sbsa)</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="row-even"><td><p>Linux (aarch64)</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="row-odd"><td><p>QNX</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="row-even"><td><p>MacOSX</p></td>
+<td><p>No</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="gpu-support">
+<h3>GPU Support<a class="headerlink" href="#gpu-support" title="Permalink to this headline"></a></h3>
+<p>The compute-sanitizer tools are supported on all CUDA capable GPUs with SM versions 5.0 and above.</p>
+<p class="rubric-h1 rubric">Notices</p>
+<p class="rubric-h2 rubric">Notice</p>
+<p>ALL NVIDIA DESIGN SPECIFICATIONS, REFERENCE BOARDS, FILES, DRAWINGS, DIAGNOSTICS, LISTS, AND OTHER DOCUMENTS (TOGETHER AND SEPARATELY, “MATERIALS”) ARE BEING PROVIDED “AS IS.” NVIDIA MAKES NO WARRANTIES, EXPRESSED, IMPLIED, STATUTORY, OR OTHERWISE WITH RESPECT TO THE MATERIALS, AND EXPRESSLY DISCLAIMS ALL IMPLIED WARRANTIES OF NONINFRINGEMENT, MERCHANTABILITY, AND FITNESS FOR A PARTICULAR PURPOSE.</p>
+<p>Information furnished is believed to be accurate and reliable. However, NVIDIA Corporation assumes no responsibility for the consequences of use of such information or for any infringement of patents or other rights of third parties that may result from its use. No license is granted by implication of otherwise under any patent rights of NVIDIA Corporation. Specifications mentioned in this publication are subject to change without notice. This publication supersedes and replaces all other information previously supplied. NVIDIA Corporation products are not authorized as critical components in life support devices or systems without express written approval of NVIDIA Corporation.</p>
+<p class="rubric-h2 rubric">Trademarks</p>
+<p>NVIDIA and the NVIDIA logo are trademarks and/or registered trademarks of NVIDIA Corporation in the Unites States and other countries. Other company and product names may be trademarks of the respective companies with which they are associated.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+<img src="../_static/NVIDIA-LogoBlack.svg" class="only-light"/>
+<img src="../_static/NVIDIA-LogoWhite.svg" class="only-dark"/>
+
+<p class="notices">
+<a href="https://www.nvidia.com/en-us/about-nvidia/privacy-policy/" target="_blank">Privacy Policy</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/privacy-center/" target="_blank">Manage My Privacy</a>
+|
+<a href="https://www.nvidia.com/en-us/preferences/start/" target="_blank">Do Not Sell or Share My Data</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/terms-of-service/" target="_blank">Terms of Service</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/accessibility/" target="_blank">Accessibility</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/company-policies/" target="_blank">Corporate Policies</a>
+|
+<a href="https://www.nvidia.com/en-us/product-security/" target="_blank">Product Security</a>
+|
+<a href="https://www.nvidia.com/en-us/contact/" target="_blank">Contact</a>
+</p>
+
+<p>
+  Copyright &#169; 2019-2024, NVIDIA Corporation &amp; Affiliates. All rights reserved.
+</p>
+
+    <p>
+      <span class="lastupdated">Last updated on Jul 11, 2024.
+      </span></p>
+
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+ 
+
+
+
+</body>
+</html>

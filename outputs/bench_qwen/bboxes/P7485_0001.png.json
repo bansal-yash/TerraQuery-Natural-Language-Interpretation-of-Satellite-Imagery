@@ -1,0 +1,68 @@
+{
+  "image": "P7485_0001.png",
+  "boxes": [
+    {
+      "label": "green field",
+      "x1": 0,
+      "y1": 151,
+      "x2": 226,
+      "y2": 425
+    },
+    {
+      "label": "curved dirt path",
+      "x1": 0,
+      "y1": 151,
+      "x2": 256,
+      "y2": 425
+    },
+    {
+      "label": "small vehicles",
+      "x1": 274,
+      "y1": 326,
+      "x2": 300,
+      "y2": 355
+    },
+    {
+      "label": "small vehicles",
+      "x1": 321,
+      "y1": 151,
+      "x2": 345,
+      "y2": 171
+    },
+    {
+      "label": "small vehicles",
+      "x1": 326,
+      "y1": 151,
+      "x2": 348,
+      "y2": 171
+    },
+    {
+      "label": "small vehicles",
+      "x1": 374,
+      "y1": 177,
+      "x2": 395,
+      "y2": 197
+    },
+    {
+      "label": "small vehicles",
+      "x1": 399,
+      "y1": 140,
+      "x2": 422,
+      "y2": 159
+    },
+    {
+      "label": "small vehicles",
+      "x1": 308,
+      "y1": 100,
+      "x2": 326,
+      "y2": 116
+    },
+    {
+      "label": "tennis courts",
+      "x1": 310,
+      "y1": 269,
+      "x2": 510,
+      "y2": 510
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "image": "10452_0000.png",
+  "boxes": [
+    {
+      "label": "large body of water",
+      "x1": 123,
+      "y1": 0,
+      "x2": 510,
+      "y2": 510
+    },
+    {
+      "label": "dam structure",
+      "x1": 100,
+      "y1": 364,
+      "x2": 510,
+      "y2": 510
+    }
+  ]
+}

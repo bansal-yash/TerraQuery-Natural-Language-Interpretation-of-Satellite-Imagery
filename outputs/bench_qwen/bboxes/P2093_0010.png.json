@@ -1,0 +1,68 @@
+{
+  "image": "P2093_0010.png",
+  "boxes": [
+    {
+      "label": "large-vehicle",
+      "x1": 0,
+      "y1": 364,
+      "x2": 29,
+      "y2": 461
+    },
+    {
+      "label": "large-vehicle",
+      "x1": 53,
+      "y1": 358,
+      "x2": 93,
+      "y2": 459
+    },
+    {
+      "label": "large-vehicle",
+      "x1": 38,
+      "y1": 269,
+      "x2": 117,
+      "y2": 326
+    },
+    {
+      "label": "large-vehicle",
+      "x1": 38,
+      "y1": 227,
+      "x2": 141,
+      "y2": 287
+    },
+    {
+      "label": "large-vehicle",
+      "x1": 72,
+      "y1": 153,
+      "x2": 172,
+      "y2": 212
+    },
+    {
+      "label": "large-vehicle",
+      "x1": 84,
+      "y1": 124,
+      "x2": 161,
+      "y2": 176
+    },
+    {
+      "label": "large-vehicle",
+      "x1": 103,
+      "y1": 88,
+      "x2": 192,
+      "y2": 139
+    },
+    {
+      "label": "large-vehicle",
+      "x1": 108,
+      "y1": 41,
+      "x2": 205,
+      "y2": 92
+    },
+    {
+      "label": "large-vehicle",
+      "x1": 134,
+      "y1": 0,
+      "x2": 205,
+      "y2": 31
+    }
+  ]
+}

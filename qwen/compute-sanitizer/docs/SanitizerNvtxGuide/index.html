@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NVTX API for Compute Sanitizer Reference Manual &mdash; compute-sanitizer 12.6 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/omni-style.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/api-styles.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/mermaid-init.js"></script>
+        <script src="../_static/design-tabs.js"></script>
+        <script src="../_static/version.js"></script>
+        <script src="../_static/social-media.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Copyright and Licenses" href="../CopyrightAndLicenses/index.html" />
+    <link rel="prev" title="Sanitizer_UvmData" href="../api/structSanitizer__UvmData.html" />
+ 
+
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+
+<a href="../index.html">
+  <img src="../_static/Logo_and_CUDA.png" class="logo" alt="Logo"/>
+</a>
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../ReleaseNotes/index.html">Release Notes</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tools</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ComputeSanitizer/index.html">Compute Sanitizer</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Interfaces</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../SanitizerApiGuide/index.html">Compute Sanitizer API Reference Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SanitizerApi/table-of-contents.html">Sanitizer API</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">NVTX API for Compute Sanitizer Reference Manual</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">NVTX API for Compute Sanitizer Reference Manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#overview">Overview</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#usage">Usage</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#compatibility-and-requirements">Compatibility and Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nvtx-domain">NVTX Domain</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#suballocation-api">Suballocation API</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#pools-management">Pools Management</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#suballocations-management">Suballocations Management</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#naming-api">Naming API</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#permissions-api">Permissions API</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#basic-permissions-management">Basic Permissions Management</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#advanced-permissions-management">Advanced Permissions Management</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#limitations">Limitations</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Copyright And Licenses</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../CopyrightAndLicenses/index.html">Copyright and Licenses</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">compute-sanitizer</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+
+
+  
+
+<li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+  
+<li>NVTX API for Compute Sanitizer Reference Manual</li>
+
+      <li class="wy-breadcrumbs-aside">
+      </li>
+<li class="wy-breadcrumbs-aside">
+
+
+  <span>v2024.3.0</span>
+
+
+  <span>&nbsp;</span>
+</li>
+
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="nvtx-api-for-compute-sanitizer-reference-manual">
+<h1>NVTX API for Compute Sanitizer Reference Manual<a class="headerlink" href="#nvtx-api-for-compute-sanitizer-reference-manual" title="Permalink to this headline"></a></h1>
+<section id="id1">
+<h2>NVTX API for Compute Sanitizer Reference Manual<a class="headerlink" href="#id1" title="Permalink to this headline"></a></h2>
+<p>The reference manual on NVTX API for Compute Sanitizer.</p>
+</section>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline"></a></h2>
+<section id="overview">
+<h3>Overview<a class="headerlink" href="#overview" title="Permalink to this headline"></a></h3>
+<p>The NVTX Memory API for Compute Sanitizer allows CUDA programs to notify Compute Sanitizer about memory restrictions: memory pools management or permissions restrictions, in addition to memory labeling. The tools are notified through NVTX (NVIDIA Tools Extension), a header-only C library used by various NVIDIA tools. Latest NVTX headers can be downloaded <a class="reference external" href="https://github.com/NVIDIA/NVTX/tree/dev-mem-api">on our GitHub repository (experimental branch)</a>.</p>
+<p>This API has the following main goals:</p>
+<ul class="simple">
+<li><p>Programs can mark allocations as memory pools, allowing Compute Sanitizer to be aware of which parts of this specific allocation are actually used. When using the Memcheck tool, you are notified if unregistered parts of the pool are accessed by the program, errors that could have been missed otherwise. When using the Initcheck tool, in combination with option <code class="docutils literal notranslate"><span class="pre">--track-unused-memory</span> <span class="pre">yes</span></code>, you are not notified for unused memory in non-registered regions, therefore avoiding false positives.</p></li>
+<li><p>Programs can label allocations with meaningful names, allowing you to identify an allocation associated to a specific error by its name (e.g., allocation that is leaking, or unused).</p></li>
+<li><p>Programs can restrict some allocations to a specific set of permissions (e.g., read-only or write-only) applicable for a specific scope (e.g., CUDA stream, device or whole program). When using the Memcheck tool, violation of these restrictions will result in an error.</p></li>
+</ul>
+</section>
+</section>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline"></a></h2>
+<section id="compatibility-and-requirements">
+<h3>Compatibility and Requirements<a class="headerlink" href="#compatibility-and-requirements" title="Permalink to this headline"></a></h3>
+<p>The Compute Sanitizer tools require CUDA 11.0 or newer.</p>
+<p>The NVTX Memory API is supported by Compute Sanitizer starting CUDA 11.3, using the <code class="docutils literal notranslate"><span class="pre">--nvtx</span> <span class="pre">yes</span></code> option. Starting CUDA 12.0, this option is enabled by default.</p>
+<p>Compute Sanitizer requires the CUDA runtime to be initialized before calling NVTX.</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// NVTX calls are not allowed before CUDA runtime initialization.</span>
+
+<span class="c1">// Forces CUDA runtime initialization.</span>
+<span class="n">cudaFree</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
+
+<span class="c1">// NVTX calls are now allowed.</span>
+</pre></div>
+</div>
+<p>NVTX structures must be zero-initialized. Examples on this page use C++ empty initializer (<code class="docutils literal notranslate"><span class="pre">{}</span></code>). If you are using C, you can use <code class="docutils literal notranslate"><span class="pre">memset</span></code> or use the intializer syntax with at least one field (C does not support empty initalizers).</p>
+</section>
+<section id="nvtx-domain">
+<h3>NVTX Domain<a class="headerlink" href="#nvtx-domain" title="Permalink to this headline"></a></h3>
+<p>All NVTX calls requires you to create a NVTX domain. This can be achieved using <code class="docutils literal notranslate"><span class="pre">nvtxDomainCreateA</span></code>.</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// Requires &lt;nvtx3/nvToolsExt.h&gt;</span>
+
+<span class="k">auto</span><span class="w"> </span><span class="n">nvtxDomain</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nvtxDomainCreateA</span><span class="p">(</span><span class="s">&quot;my-domain&quot;</span><span class="p">);</span><span class="w"></span>
+</pre></div>
+</div>
+<p>For now, NVTX domains have no specific usage, but will have one in a future Compute Sanitizer version.</p>
+</section>
+<section id="suballocation-api">
+<h3>Suballocation API<a class="headerlink" href="#suballocation-api" title="Permalink to this headline"></a></h3>
+<section id="pools-management">
+<h4>Pools Management<a class="headerlink" href="#pools-management" title="Permalink to this headline"></a></h4>
+<p>Any allocation created with <code class="docutils literal notranslate"><span class="pre">cudaMalloc</span></code> can be registered as a memory pool using <code class="docutils literal notranslate"><span class="pre">nvtxMemHeapRegister</span></code>. The following code example allocates 64 bytes and registers the allocation as a memory pool.</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// Requires &lt;nvtx3/nvToolsExtMem.h&gt;</span>
+<span class="c1">// (see https://github.com/NVIDIA/NVTX/tree/dev-mem-api/c/include)</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">ptr</span><span class="p">;</span><span class="w"></span>
+<span class="n">cudaMalloc</span><span class="p">(</span><span class="o">&amp;</span><span class="n">ptr</span><span class="p">,</span><span class="w"> </span><span class="mi">64</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">nvtxMemVirtualRangeDesc_t</span><span class="w"> </span><span class="n">nvtxRangeDesc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span><span class="w"></span>
+<span class="n">nvtxRangeDesc</span><span class="p">.</span><span class="n">size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">64</span><span class="p">;</span><span class="w"></span>
+<span class="n">nvtxRangeDesc</span><span class="p">.</span><span class="n">ptr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ptr</span><span class="p">;</span><span class="w"></span>
+
+<span class="n">nvtxMemHeapDesc_t</span><span class="w"> </span><span class="n">nvtxHeapDesc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span><span class="w"></span>
+<span class="n">nvtxHeapDesc</span><span class="p">.</span><span class="n">extCompatID</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NVTX_EXT_COMPATID_MEM</span><span class="p">;</span><span class="w"></span>
+<span class="n">nvtxHeapDesc</span><span class="p">.</span><span class="n">structSize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">nvtxMemHeapDesc_t</span><span class="p">);</span><span class="w"></span>
+<span class="n">nvtxHeapDesc</span><span class="p">.</span><span class="n">usage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NVTX_MEM_HEAP_USAGE_TYPE_SUB_ALLOCATOR</span><span class="p">;</span><span class="w"></span>
+<span class="n">nvtxHeapDesc</span><span class="p">.</span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NVTX_MEM_TYPE_VIRTUAL_ADDRESS</span><span class="p">;</span><span class="w"></span>
+<span class="n">nvtxHeapDesc</span><span class="p">.</span><span class="n">typeSpecificDescSize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">nvtxMemVirtualRangeDesc_t</span><span class="p">);</span><span class="w"></span>
+<span class="n">nvtxHeapDesc</span><span class="p">.</span><span class="n">typeSpecificDesc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">nvtxRangeDesc</span><span class="p">;</span><span class="w"></span>
+
+<span class="k">auto</span><span class="w"> </span><span class="n">nvtxPool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nvtxMemHeapRegister</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">nvtxDomain</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="o">&amp;</span><span class="n">nvtxHeapDesc</span><span class="p">);</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Please note that Compute Sanitizer only supports <code class="docutils literal notranslate"><span class="pre">nvtxMemHeapRegister</span></code> with parameters <code class="docutils literal notranslate"><span class="pre">usage</span> <span class="pre">=</span> <span class="pre">NVTX_MEM_HEAP_USAGE_TYPE_SUB_ALLOCATOR</span></code> and <code class="docutils literal notranslate"><span class="pre">type</span> <span class="pre">=</span> <span class="pre">NVTX_MEM_TYPE_VIRTUAL_ADDRESS</span></code>. If you are using the CUDA runtime API, <code class="docutils literal notranslate"><span class="pre">nvtxMemHeapRegister</span></code> can be used with allocations created with <code class="docutils literal notranslate"><span class="pre">cuMemAlloc</span></code>.</p>
+<p>An existing pool can be reset to its initial state using <code class="docutils literal notranslate"><span class="pre">nvtxMemHeapReset</span></code>. The following example resets the pool previously allocated.</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// Requires &lt;nvtx3/nvToolsExtMem.h&gt;</span>
+
+<span class="n">nvtxMemHeapReset</span><span class="p">(</span><span class="n">nvtxDomain</span><span class="p">,</span><span class="w"> </span><span class="n">nvtxPool</span><span class="p">);</span><span class="w"></span>
+</pre></div>
+</div>
+<p>In a similar fashion, a pool can be unregistered using <code class="docutils literal notranslate"><span class="pre">nvtxMemHeapUnregister</span></code>. An allocation cannot be used after it is unregistered, but the allocation must be freed using <code class="docutils literal notranslate"><span class="pre">cudaFree</span></code> to dispose of it.</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// Requires &lt;nvtx3/nvToolsExtMem.h&gt;</span>
+
+<span class="n">nvtxMemHeapUnregister</span><span class="p">(</span><span class="n">nvtxDomain</span><span class="p">,</span><span class="w"> </span><span class="n">nvtxPool</span><span class="p">);</span><span class="w"></span>
+</pre></div>
+</div>
+<p>For your convenience, calling <code class="docutils literal notranslate"><span class="pre">cudaFree</span></code> on a memory pool causes Compute Sanitizer to automatically unregister it.</p>
+</section>
+<section id="suballocations-management">
+<h4>Suballocations Management<a class="headerlink" href="#suballocations-management" title="Permalink to this headline"></a></h4>
+<p>Once a pool is created, users can create suballocations within this pool using <code class="docutils literal notranslate"><span class="pre">nvtxMemRegionsRegister</span></code>. For your convenience, you can register multiple regions at the same time. The following example creates a suballocation of 16 bytes at address <code class="docutils literal notranslate"><span class="pre">ptr</span></code>. Both <code class="docutils literal notranslate"><span class="pre">ptr</span></code> and <code class="docutils literal notranslate"><span class="pre">ptr</span> <span class="pre">+</span> <span class="pre">16</span> <span class="pre">bytes</span></code> must be part of the pool.</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// Requires &lt;nvtx3/nvToolsExtMem.h&gt;</span>
+
+<span class="n">nvtxMemVirtualRangeDesc_t</span><span class="w"> </span><span class="n">nvtxRangeDesc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span><span class="w"></span>
+<span class="n">nvtxRangeDesc</span><span class="p">.</span><span class="n">size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">16</span><span class="p">;</span><span class="w"></span>
+<span class="n">nvtxRangeDesc</span><span class="p">.</span><span class="n">ptr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ptr</span><span class="p">;</span><span class="w"></span>
+
+<span class="n">nvtxMemRegionsRegisterBatch_t</span><span class="w"> </span><span class="n">nvtxRegionsDesc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span><span class="w"></span>
+<span class="n">nvtxRegionsDesc</span><span class="p">.</span><span class="n">extCompatID</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NVTX_EXT_COMPATID_MEM</span><span class="p">;</span><span class="w"></span>
+<span class="n">nvtxRegionsDesc</span><span class="p">.</span><span class="n">structSize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">nvtxMemRegionsRegisterBatch_t</span><span class="p">);</span><span class="w"></span>
+<span class="n">nvtxRegionsDesc</span><span class="p">.</span><span class="n">regionType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NVTX_MEM_TYPE_VIRTUAL_ADDRESS</span><span class="p">;</span><span class="w"></span>
+<span class="n">nvtxRegionsDesc</span><span class="p">.</span><span class="n">heap</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nvtxPool</span><span class="p">;</span><span class="w"></span>
+<span class="n">nvtxRegionsDesc</span><span class="p">.</span><span class="n">regionCount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
+<span class="n">nvtxRegionsDesc</span><span class="p">.</span><span class="n">regionDescElementSize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">nvtxMemVirtualRangeDesc_t</span><span class="p">);</span><span class="w"></span>
+<span class="n">nvtxRegionsDesc</span><span class="p">.</span><span class="n">regionDescElements</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">nvtxRangeDesc</span><span class="p">;</span><span class="w"></span>
+
+<span class="n">nvtxMemRegionsRegister</span><span class="p">(</span><span class="n">nvtxDomain</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">nvtxRegionsDesc</span><span class="p">);</span><span class="w"></span>
+</pre></div>
+</div>
+<p>For your convenience, Initcheck assumes that a new suballocation is uninitialized, meaning failure to initialize it might result in error reports. Please note that Compute Sanitizer only supports <code class="docutils literal notranslate"><span class="pre">nvtxMemRegionsRegister</span></code> with parameter <code class="docutils literal notranslate"><span class="pre">regionType</span> <span class="pre">=</span> <span class="pre">NVTX_MEM_TYPE_VIRTUAL_ADDRESS</span></code>. Suballocations are considered as regular allocations for NVTX <a class="reference external" href="index.html#naming-api">naming</a> and <a class="reference external" href="index.html#permissions-api">permissions</a> API, therefore it is possible to label them or change their permissions.</p>
+<p>Existing suballocations can be resized using <code class="docutils literal notranslate"><span class="pre">nvtxMemRegionsResize</span></code>. The following example resizes our previous suballocation at address <code class="docutils literal notranslate"><span class="pre">ptr</span></code> from 16 bytes to 32.</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// Requires &lt;nvtx3/nvToolsExtMem.h&gt;</span>
+
+<span class="n">nvtxMemVirtualRangeDesc_t</span><span class="w"> </span><span class="n">nvtxRangeDesc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span><span class="w"></span>
+<span class="n">nvtxRangeDesc</span><span class="p">.</span><span class="n">size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">32</span><span class="p">;</span><span class="w"></span>
+<span class="n">nvtxRangeDesc</span><span class="p">.</span><span class="n">ptr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ptr</span><span class="p">;</span><span class="w"></span>
+
+<span class="n">nvtxMemRegionsResizeBatch_t</span><span class="w"> </span><span class="n">nvtxRegionsDesc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span><span class="w"></span>
+<span class="n">nvtxRegionsDesc</span><span class="p">.</span><span class="n">extCompatID</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NVTX_EXT_COMPATID_MEM</span><span class="p">;</span><span class="w"></span>
+<span class="n">nvtxRegionsDesc</span><span class="p">.</span><span class="n">structSize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">nvtxMemRegionsResizeBatch_t</span><span class="p">);</span><span class="w"></span>
+<span class="n">nvtxRegionsDesc</span><span class="p">.</span><span class="n">regionType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NVTX_MEM_TYPE_VIRTUAL_ADDRESS</span><span class="p">;</span><span class="w"></span>
+<span class="n">nvtxRegionsDesc</span><span class="p">.</span><span class="n">regionDescCount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
+<span class="n">nvtxRegionsDesc</span><span class="p">.</span><span class="n">regionDescElementSize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">nvtxMemVirtualRangeDesc_t</span><span class="p">);</span><span class="w"></span>
+<span class="n">nvtxRegionsDesc</span><span class="p">.</span><span class="n">regionDescElements</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">nvtxRangeDesc</span><span class="p">;</span><span class="w"></span>
+
+<span class="n">nvtxMemRegionsResize</span><span class="p">(</span><span class="n">nvtxDomain</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">nvtxRegionsDesc</span><span class="p">);</span><span class="w"></span>
+</pre></div>
+</div>
+<p>In a similar fashion, existing allocations can be removed using <code class="docutils literal notranslate"><span class="pre">nvtxMemRegionsUnregister</span></code>. The following example removes our previous suballocation at address <code class="docutils literal notranslate"><span class="pre">ptr</span></code>.</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">nvtxMemRegionRef_t</span><span class="w"> </span><span class="n">nvtxRegionRef</span><span class="p">;</span><span class="w"></span>
+<span class="n">nvtxRegionRef</span><span class="p">.</span><span class="n">pointer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ptr</span><span class="p">;</span><span class="w"></span>
+
+<span class="n">nvtxMemRegionsUnregisterBatch_t</span><span class="w"> </span><span class="n">nvtxRegionsDesc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span><span class="w"></span>
+<span class="n">nvtxRegionsDesc</span><span class="p">.</span><span class="n">extCompatID</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NVTX_EXT_COMPATID_MEM</span><span class="p">;</span><span class="w"></span>
+<span class="n">nvtxRegionsDesc</span><span class="p">.</span><span class="n">structSize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">nvtxMemRegionsUnregisterBatch_t</span><span class="p">);</span><span class="w"></span>
+<span class="n">nvtxRegionsDesc</span><span class="p">.</span><span class="n">refType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NVTX_MEM_REGION_REF_TYPE_POINTER</span><span class="p">;</span><span class="w"></span>
+<span class="n">nvtxRegionsDesc</span><span class="p">.</span><span class="n">refCount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
+<span class="n">nvtxRegionsDesc</span><span class="p">.</span><span class="n">refElementSize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">nvtxMemRegionRef_t</span><span class="p">);</span><span class="w"></span>
+<span class="n">nvtxRegionsDesc</span><span class="p">.</span><span class="n">refElements</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">nvtxRegionRef</span><span class="p">;</span><span class="w"></span>
+
+<span class="n">nvtxMemRegionsUnregister</span><span class="p">(</span><span class="n">nvtxDomain</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">nvtxRegionsDesc</span><span class="p">);</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Omitting to unregister a suballocation is reported as a memory leak if Compute Sanitizer is used in combination with option <code class="docutils literal notranslate"><span class="pre">--leak-check</span> <span class="pre">yes</span></code>.</p>
+</section>
+</section>
+<section id="naming-api">
+<h3>Naming API<a class="headerlink" href="#naming-api" title="Permalink to this headline"></a></h3>
+<p>Any allocation can be assigned a name, so future Compute Sanitizer error reports can refer to an allocation by its name. This example names the allocation at address <code class="docutils literal notranslate"><span class="pre">ptr</span></code>: “My Allocation”.</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// Requires &lt;nvtx3/nvToolsExtMem.h&gt;</span>
+
+<span class="n">nvtxMemRegionNameDesc_t</span><span class="w"> </span><span class="n">nvtxLabelDesc</span><span class="p">;</span><span class="w"></span>
+<span class="n">nvtxLabelDesc</span><span class="p">.</span><span class="n">regionRefType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NVTX_MEM_REGION_REF_TYPE_POINTER</span><span class="p">;</span><span class="w"></span>
+<span class="n">nvtxLabelDesc</span><span class="p">.</span><span class="n">nameType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NVTX_MESSAGE_TYPE_ASCII</span><span class="p">;</span><span class="w"></span>
+<span class="n">nvtxLabelDesc</span><span class="p">.</span><span class="n">region</span><span class="p">.</span><span class="n">pointer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ptr</span><span class="p">;</span><span class="w"></span>
+<span class="n">nvtxLabelDesc</span><span class="p">.</span><span class="n">name</span><span class="p">.</span><span class="n">ascii</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;My Allocation&quot;</span><span class="p">;</span><span class="w"></span>
+
+<span class="n">nvtxMemRegionsNameBatch_t</span><span class="w"> </span><span class="n">nvtxRegionsDesc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span><span class="w"></span>
+<span class="n">nvtxRegionsDesc</span><span class="p">.</span><span class="n">extCompatID</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NVTX_EXT_COMPATID_MEM</span><span class="p">;</span><span class="w"></span>
+<span class="n">nvtxRegionsDesc</span><span class="p">.</span><span class="n">structSize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">nvtxMemRegionsNameBatch_t</span><span class="p">);</span><span class="w"></span>
+<span class="n">nvtxRegionsDesc</span><span class="p">.</span><span class="n">regionCount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
+<span class="n">nvtxRegionsDesc</span><span class="p">.</span><span class="n">regionElementSize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">nvtxMemRegionNameDesc_t</span><span class="p">);</span><span class="w"></span>
+<span class="n">nvtxRegionsDesc</span><span class="p">.</span><span class="n">regionElements</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">nvtxLabelDesc</span><span class="p">;</span><span class="w"></span>
+
+<span class="n">nvtxMemRegionsName</span><span class="p">(</span><span class="n">nvtxDomain</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">nvtxRegionsDesc</span><span class="p">);</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Please note that Compute Sanitizer only supports <code class="docutils literal notranslate"><span class="pre">nvtxMemRegionsName</span></code> with parameter <code class="docutils literal notranslate"><span class="pre">nameType</span> <span class="pre">=</span> <span class="pre">NVTX_MESSAGE_TYPE_ASCII</span></code> for all region elements in <code class="docutils literal notranslate"><span class="pre">regionElements</span></code>. As of now, only leak and unused memory reporting features allocation names.</p>
+</section>
+<section id="permissions-api">
+<h3>Permissions API<a class="headerlink" href="#permissions-api" title="Permalink to this headline"></a></h3>
+<section id="basic-permissions-management">
+<h4>Basic Permissions Management<a class="headerlink" href="#basic-permissions-management" title="Permalink to this headline"></a></h4>
+<p>NVTX Permissions API allows any allocation permissions to be restricted using <code class="docutils literal notranslate"><span class="pre">nvtxMemPermissionsAssign</span></code>. For this example, we use the global program scope (by calling <code class="docutils literal notranslate"><span class="pre">nvtxMemCudaGetProcessWidePermissions</span></code>), meaning permissions are applied on all kernel launches. This example restricts the allocation at address <code class="docutils literal notranslate"><span class="pre">ptr</span></code> to read-only permissions.</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// Requires &lt;nvtx3/nvToolsExtMem.h&gt; and &lt;nvtx3/nvToolsExtMemCudaRt.h&gt;</span>
+
+<span class="k">auto</span><span class="w"> </span><span class="n">processPermHandle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nvtxMemCudaGetProcessWidePermissions</span><span class="p">(</span><span class="n">nvtxDomain</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">nvtxMemPermissionsAssignRegionDesc_t</span><span class="w"> </span><span class="n">nvtxPermDesc</span><span class="p">;</span><span class="w"></span>
+<span class="n">nvtxPermDesc</span><span class="p">.</span><span class="n">flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NVTX_MEM_PERMISSIONS_REGION_FLAGS_READ</span><span class="p">;</span><span class="w"></span>
+<span class="n">nvtxPermDesc</span><span class="p">.</span><span class="n">regionRefType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NVTX_MEM_REGION_REF_TYPE_POINTER</span><span class="p">;</span><span class="w"></span>
+<span class="n">nvtxPermDesc</span><span class="p">.</span><span class="n">region</span><span class="p">.</span><span class="n">pointer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ptr</span><span class="p">;</span><span class="w"></span>
+
+<span class="n">nvtxMemPermissionsAssignBatch_t</span><span class="w"> </span><span class="n">nvtxRegionsDesc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span><span class="w"></span>
+<span class="n">nvtxRegionsDesc</span><span class="p">.</span><span class="n">extCompatID</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NVTX_EXT_COMPATID_MEM</span><span class="p">;</span><span class="w"></span>
+<span class="n">nvtxRegionsDesc</span><span class="p">.</span><span class="n">structSize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">nvtxMemPermissionsAssignBatch_t</span><span class="p">);</span><span class="w"></span>
+<span class="n">nvtxRegionsDesc</span><span class="p">.</span><span class="n">permissions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">processPermHandle</span><span class="p">;</span><span class="w"></span>
+<span class="n">nvtxRegionsDesc</span><span class="p">.</span><span class="n">regionCount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
+<span class="n">nvtxRegionsDesc</span><span class="p">.</span><span class="n">regionElementSize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">nvtxMemPermissionsAssignRegionDesc_t</span><span class="p">);</span><span class="w"></span>
+<span class="n">nvtxRegionsDesc</span><span class="p">.</span><span class="n">regionElements</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">nvtxPermDesc</span><span class="p">;</span><span class="w"></span>
+
+<span class="n">nvtxMemPermissionsAssign</span><span class="p">(</span><span class="n">nvtxDomain</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">nvtxRegionsDesc</span><span class="p">);</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Valid permissions are:</p>
+<ul class="simple">
+<li><p>Read: <code class="docutils literal notranslate"><span class="pre">NVTX_MEM_PERMISSIONS_REGION_FLAGS_READ</span></code></p></li>
+<li><p>Write: <code class="docutils literal notranslate"><span class="pre">NVTX_MEM_PERMISSIONS_REGION_FLAGS_WRITE</span></code></p></li>
+<li><p>Atomic: <code class="docutils literal notranslate"><span class="pre">NVTX_MEM_PERMISSIONS_REGION_FLAGS_ATOMIC</span></code></p></li>
+<li><p>A combination of read, write and atomic (using XORs).</p></li>
+<li><p>Reset: <code class="docutils literal notranslate"><span class="pre">NVTX_MEM_PERMISSIONS_REGION_FLAGS_RESET</span></code></p></li>
+</ul>
+<p>Using special permission <code class="docutils literal notranslate"><span class="pre">NVTX_MEM_PERMISSIONS_REGION_FLAGS_RESET</span></code> resets assigned permissions for the specified allocation on the specified scope.</p>
+<p>Allocations permissions can be restricted on a per-device basis, using <code class="docutils literal notranslate"><span class="pre">nvtxMemCudaGetDeviceWidePermissions</span></code>. The following example gets the permissions handle from device <code class="docutils literal notranslate"><span class="pre">device</span></code>, a handle that is used with <code class="docutils literal notranslate"><span class="pre">nvtxMemPermissionsAssign</span></code> to change permissions for the allocation at address <code class="docutils literal notranslate"><span class="pre">ptr</span></code>, previously restricted to read-only on the global scope, and now read-write for kernel launched on <code class="docutils literal notranslate"><span class="pre">device</span></code> (no atomic allowed).</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// Requires &lt;nvtx3/nvToolsExtMem.h&gt; and &lt;nvtx3/nvToolsExtMemCudaRt.h&gt;</span>
+
+<span class="k">auto</span><span class="w"> </span><span class="n">devicePermHandle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nvtxMemCudaGetDeviceWidePermissions</span><span class="p">(</span><span class="n">nvtxDomain</span><span class="p">,</span><span class="w"> </span><span class="n">device</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">nvtxMemPermissionsAssignRegionDesc_t</span><span class="w"> </span><span class="n">nvtxPermDesc</span><span class="p">;</span><span class="w"></span>
+<span class="n">nvtxPermDesc</span><span class="p">.</span><span class="n">flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NVTX_MEM_PERMISSIONS_REGION_FLAGS_READ</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">NVTX_MEM_PERMISSIONS_REGION_FLAGS_WRITE</span><span class="p">;</span><span class="w"></span>
+<span class="n">nvtxPermDesc</span><span class="p">.</span><span class="n">regionRefType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NVTX_MEM_REGION_REF_TYPE_POINTER</span><span class="p">;</span><span class="w"></span>
+<span class="n">nvtxPermDesc</span><span class="p">.</span><span class="n">region</span><span class="p">.</span><span class="n">pointer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ptr</span><span class="p">;</span><span class="w"></span>
+
+<span class="n">nvtxMemPermissionsAssignBatch_t</span><span class="w"> </span><span class="n">nvtxRegionsDesc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span><span class="w"></span>
+<span class="n">nvtxRegionsDesc</span><span class="p">.</span><span class="n">extCompatID</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NVTX_EXT_COMPATID_MEM</span><span class="p">;</span><span class="w"></span>
+<span class="n">nvtxRegionsDesc</span><span class="p">.</span><span class="n">structSize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">nvtxMemPermissionsAssignBatch_t</span><span class="p">);</span><span class="w"></span>
+<span class="n">nvtxRegionsDesc</span><span class="p">.</span><span class="n">permissions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">devicePermHandle</span><span class="p">;</span><span class="w"></span>
+<span class="n">nvtxRegionsDesc</span><span class="p">.</span><span class="n">regionCount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
+<span class="n">nvtxRegionsDesc</span><span class="p">.</span><span class="n">regionElementSize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">nvtxMemPermissionsAssignRegionDesc_t</span><span class="p">);</span><span class="w"></span>
+<span class="n">nvtxRegionsDesc</span><span class="p">.</span><span class="n">regionElements</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">nvtxPermDesc</span><span class="p">;</span><span class="w"></span>
+
+<span class="n">nvtxMemPermissionsAssign</span><span class="p">(</span><span class="n">nvtxDomain</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">nvtxRegionsDesc</span><span class="p">);</span><span class="w"></span>
+</pre></div>
+</div>
+</section>
+<section id="advanced-permissions-management">
+<h4>Advanced Permissions Management<a class="headerlink" href="#advanced-permissions-management" title="Permalink to this headline"></a></h4>
+<p>Permissions can be assigned to a specific stream scope thanks to custom permissions objects. You can create one using <code class="docutils literal notranslate"><span class="pre">nvtxMemPermissionsCreate</span></code>, and bind it to a scope using <code class="docutils literal notranslate"><span class="pre">nvtxMemPermissionsBind</span></code>. The following example restricts the allocation at address <code class="docutils literal notranslate"><span class="pre">ptr</span></code> to read-only permissions.</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// Requires &lt;nvtx3/nvToolsExtMem.h&gt; and &lt;nvtx3/nvToolsExtMemCudaRt.h&gt;</span>
+
+<span class="c1">// Create new permissions object.</span>
+<span class="k">auto</span><span class="w"> </span><span class="n">permHandle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nvtxMemPermissionsCreate</span><span class="p">(</span><span class="n">nvtxDomain</span><span class="p">,</span><span class="w"> </span><span class="n">NVTX_MEM_PERMISSIONS_CREATE_FLAGS_NONE</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">nvtxMemPermissionsAssignRegionDesc_t</span><span class="w"> </span><span class="n">nvtxPermDesc</span><span class="p">;</span><span class="w"></span>
+<span class="n">nvtxPermDesc</span><span class="p">.</span><span class="n">flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NVTX_MEM_PERMISSIONS_REGION_FLAGS_READ</span><span class="p">;</span><span class="w"></span>
+<span class="n">nvtxPermDesc</span><span class="p">.</span><span class="n">regionRefType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NVTX_MEM_REGION_REF_TYPE_POINTER</span><span class="p">;</span><span class="w"></span>
+<span class="n">nvtxPermDesc</span><span class="p">.</span><span class="n">region</span><span class="p">.</span><span class="n">pointer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ptr</span><span class="p">;</span><span class="w"></span>
+
+<span class="n">nvtxMemPermissionsAssignBatch_t</span><span class="w"> </span><span class="n">nvtxRegionsDesc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span><span class="w"></span>
+<span class="n">nvtxRegionsDesc</span><span class="p">.</span><span class="n">extCompatID</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NVTX_EXT_COMPATID_MEM</span><span class="p">;</span><span class="w"></span>
+<span class="n">nvtxRegionsDesc</span><span class="p">.</span><span class="n">structSize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">nvtxMemPermissionsAssignBatch_t</span><span class="p">);</span><span class="w"></span>
+<span class="n">nvtxRegionsDesc</span><span class="p">.</span><span class="n">permissions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">permHandle</span><span class="p">;</span><span class="w"></span>
+<span class="n">nvtxRegionsDesc</span><span class="p">.</span><span class="n">regionCount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
+<span class="n">nvtxRegionsDesc</span><span class="p">.</span><span class="n">regionElementSize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">nvtxMemPermissionsAssignRegionDesc_t</span><span class="p">);</span><span class="w"></span>
+<span class="n">nvtxRegionsDesc</span><span class="p">.</span><span class="n">regionElements</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">nvtxPermDesc</span><span class="p">;</span><span class="w"></span>
+
+<span class="c1">// Assign read-only permissions to allocation at address ptr.</span>
+<span class="c1">// Permissions will be applied on scope bound to permHandle.</span>
+<span class="n">nvtxMemPermissionsAssign</span><span class="p">(</span><span class="n">nvtxDomain</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">nvtxRegionsDesc</span><span class="p">);</span><span class="w"></span>
+
+<span class="c1">// Binding will happen on next kernel launch on this CPU thread, meaning the</span>
+<span class="c1">// stream for this launch will be the one bound to this permissions object.</span>
+<span class="n">nvtxMemPermissionsBind</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">nvtxDomain</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">permHandle</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">NVTX_MEM_PERMISSIONS_BIND_SCOPE_CUDA_STREAM</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">NVTX_MEM_PERMISSIONS_BIND_FLAGS_NONE</span><span class="p">);</span><span class="w"></span>
+
+<span class="c1">// permHandle is now bound to stream.</span>
+<span class="n">MyKernel</span><span class="o">&lt;&lt;&lt;</span><span class="n">BlocksNb</span><span class="p">,</span><span class="w"> </span><span class="n">ThreadsNb</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">stream</span><span class="o">&gt;&gt;&gt;</span><span class="p">(</span><span class="n">ptr</span><span class="p">);</span><span class="w"></span>
+</pre></div>
+</div>
+<p>On permissions object creation or binding, you can specify inheritance restriction flags. For example, excluding write permissions will block access for all allocations with unassigned permissions on that scope. These are applied:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">nvtxMemPermissionsCreate</span></code>: applied for kernel launches on stream bound to the created object.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">nvtxMemPermissionsBind</span></code>: applied for next kernel launch (on this CPU thread) and others using the same stream.</p></li>
+</ul>
+<p>Please note that Compute Sanitizer only supports <code class="docutils literal notranslate"><span class="pre">nvtxMemPermissionsBind</span></code> with parameter <code class="docutils literal notranslate"><span class="pre">scope</span> <span class="pre">=</span> <span class="pre">NVTX_MEM_PERMISSIONS_BIND_SCOPE_CUDA_STREAM</span></code>.</p>
+<p>Permissions objects currently bound can be unbound using <code class="docutils literal notranslate"><span class="pre">nvtxMemPermissionsUnbind</span></code> and destroyed using <code class="docutils literal notranslate"><span class="pre">nvtxMemPermissionsDestroy</span></code>. Permissions object destruction will result in an unbinding.</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// Requires &lt;nvtx3/nvToolsExtMem.h&gt;</span>
+
+<span class="n">nvtxMemPermissionsUnbind</span><span class="p">(</span><span class="n">nvtxDomain</span><span class="p">,</span><span class="w"> </span><span class="n">NVTX_MEM_PERMISSIONS_BIND_SCOPE_CUDA_STREAM</span><span class="p">)</span><span class="w"></span>
+
+<span class="n">nvtxMemPermissionsDestroy</span><span class="p">(</span><span class="n">nvtxDomain</span><span class="p">,</span><span class="w"> </span><span class="n">permHandle</span><span class="p">);</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Please note that Compute Sanitizer only supports <code class="docutils literal notranslate"><span class="pre">nvtxMemPermissionsUnbind</span></code> with parameter <code class="docutils literal notranslate"><span class="pre">scope</span> <span class="pre">=</span> <span class="pre">NVTX_MEM_PERMISSIONS_BIND_SCOPE_CUDA_STREAM</span></code>.</p>
+<p>Peer devices access can be restricted for all allocations using <code class="docutils literal notranslate"><span class="pre">nvtxMemCudaSetPeerAccess</span></code>. If no permissions are set on an active scope for an allocation using <code class="docutils literal notranslate"><span class="pre">nvtxMemPermissionsAssign</span></code>, then default permissions set using <code class="docutils literal notranslate"><span class="pre">nvtxMemCudaSetPeerAccess</span></code> are applied. The following example restricts accesses to read-only on all devices except <code class="docutils literal notranslate"><span class="pre">device</span></code>.</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// Requires &lt;nvtx3/nvToolsExtMem.h&gt;</span>
+
+<span class="k">auto</span><span class="w"> </span><span class="n">permHandle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nvtxMemCudaGetDeviceWidePermissions</span><span class="p">(</span><span class="n">nvtxDomain</span><span class="p">,</span><span class="w"> </span><span class="n">device</span><span class="p">);</span><span class="w"></span>
+<span class="n">nvtxMemCudaSetPeerAccess</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">nvtxDomain</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">permHandle</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">NVTX_MEM_CUDA_PEER_ALL_DEVICES</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">NVTX_MEM_PERMISSIONS_REGION_FLAGS_READ</span><span class="p">);</span><span class="w"></span>
+<span class="n">nvtxMemCudaSetPeerAccess</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">nvtxDomain</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">permHandle</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">device</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">NVTX_MEM_PERMISSIONS_REGION_FLAGS_READ</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">NVTX_MEM_PERMISSIONS_REGION_FLAGS_WRITE</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">NVTX_MEM_PERMISSIONS_REGION_FLAGS_ATOMIC</span><span class="p">);</span><span class="w"></span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+<section id="limitations">
+<h2>Limitations<a class="headerlink" href="#limitations" title="Permalink to this headline"></a></h2>
+<p>Please note the Compute Sanitizer support for NVTX Memory API has the following limitations:</p>
+<ul class="simple">
+<li><p>Allocation names are visible on leak and unused memory reports, but not on other error reports for now.</p></li>
+<li><p>Allocation names must be encoded in ASCII, contain only printable characters, and contain between 1 and 49 characters (must comply to the following regex: <code class="docutils literal notranslate"><span class="pre">^[:print:]{1,49}$</span></code>)</p></li>
+<li><p>Permissions are only applied to kernel launches. Other operations, such as <code class="docutils literal notranslate"><span class="pre">cudaMemcpy</span></code> or <code class="docutils literal notranslate"><span class="pre">cudaMemset</span></code>, are not supported for now.</p></li>
+</ul>
+<p class="rubric-h1 rubric">Notices</p>
+<p class="rubric-h2 rubric">Notice</p>
+<p>ALL NVIDIA DESIGN SPECIFICATIONS, REFERENCE BOARDS, FILES, DRAWINGS, DIAGNOSTICS, LISTS, AND OTHER DOCUMENTS (TOGETHER AND SEPARATELY, “MATERIALS”) ARE BEING PROVIDED “AS IS.” NVIDIA MAKES NO WARRANTIES, EXPRESSED, IMPLIED, STATUTORY, OR OTHERWISE WITH RESPECT TO THE MATERIALS, AND EXPRESSLY DISCLAIMS ALL IMPLIED WARRANTIES OF NONINFRINGEMENT, MERCHANTABILITY, AND FITNESS FOR A PARTICULAR PURPOSE.</p>
+<p>Information furnished is believed to be accurate and reliable. However, NVIDIA Corporation assumes no responsibility for the consequences of use of such information or for any infringement of patents or other rights of third parties that may result from its use. No license is granted by implication of otherwise under any patent rights of NVIDIA Corporation. Specifications mentioned in this publication are subject to change without notice. This publication supersedes and replaces all other information previously supplied. NVIDIA Corporation products are not authorized as critical components in life support devices or systems without express written approval of NVIDIA Corporation.</p>
+<p class="rubric-h2 rubric">Trademarks</p>
+<p>NVIDIA and the NVIDIA logo are trademarks and/or registered trademarks of NVIDIA Corporation in the Unites States and other countries. Other company and product names may be trademarks of the respective companies with which they are associated.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+<img src="../_static/NVIDIA-LogoBlack.svg" class="only-light"/>
+<img src="../_static/NVIDIA-LogoWhite.svg" class="only-dark"/>
+
+<p class="notices">
+<a href="https://www.nvidia.com/en-us/about-nvidia/privacy-policy/" target="_blank">Privacy Policy</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/privacy-center/" target="_blank">Manage My Privacy</a>
+|
+<a href="https://www.nvidia.com/en-us/preferences/start/" target="_blank">Do Not Sell or Share My Data</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/terms-of-service/" target="_blank">Terms of Service</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/accessibility/" target="_blank">Accessibility</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/company-policies/" target="_blank">Corporate Policies</a>
+|
+<a href="https://www.nvidia.com/en-us/product-security/" target="_blank">Product Security</a>
+|
+<a href="https://www.nvidia.com/en-us/contact/" target="_blank">Contact</a>
+</p>
+
+<p>
+  Copyright &#169; 2019-2024, NVIDIA Corporation &amp; Affiliates. All rights reserved.
+</p>
+
+    <p>
+      <span class="lastupdated">Last updated on Jul 11, 2024.
+      </span></p>
+
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+ 
+
+
+
+</body>
+</html>

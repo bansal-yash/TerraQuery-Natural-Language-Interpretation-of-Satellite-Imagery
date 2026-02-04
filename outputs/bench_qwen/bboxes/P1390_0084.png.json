@@ -1,0 +1,12 @@
+{
+  "image": "P1390_0084.png",
+  "boxes": [
+    {
+      "label": "two small white vehicles on the road, positioned on the right lane",
+      "x1": 329,
+      "y1": 249,
+      "x2": 461,
+      "y2": 277
+    }
+  ]
+}

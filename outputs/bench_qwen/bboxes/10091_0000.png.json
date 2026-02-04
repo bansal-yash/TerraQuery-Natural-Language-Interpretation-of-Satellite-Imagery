@@ -1,0 +1,12 @@
+{
+  "image": "10091_0000.png",
+  "boxes": [
+    {
+      "label": "building with a dark roof",
+      "x1": 0,
+      "y1": 51,
+      "x2": 510,
+      "y2": 256
+    }
+  ]
+}

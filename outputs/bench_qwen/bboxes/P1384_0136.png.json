@@ -1,0 +1,33 @@
+{
+  "image": "P1384_0136.png",
+  "boxes": [
+    {
+      "label": "industrial buildings with white roofs",
+      "x1": 56,
+      "y1": 26,
+      "x2": 479,
+      "y2": 510
+    },
+    {
+      "label": "small roundabout",
+      "x1": 233,
+      "y1": 17,
+      "x2": 279,
+      "y2": 59
+    },
+    {
+      "label": "roads",
+      "x1": 0,
+      "y1": 0,
+      "x2": 334,
+      "y2": 510
+    },
+    {
+      "label": "cars parked outside buildings",
+      "x1": 0,
+      "y1": 51,
+      "x2": 479,
+      "y2": 510
+    }
+  ]
+}

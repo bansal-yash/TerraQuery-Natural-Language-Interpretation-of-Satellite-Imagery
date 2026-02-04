@@ -1,0 +1,47 @@
+{
+  "image": "P0814_0002.png",
+  "boxes": [
+    {
+      "label": "tennis courts",
+      "x1": 43,
+      "y1": 91,
+      "x2": 153,
+      "y2": 293
+    },
+    {
+      "label": "tennis courts",
+      "x1": 186,
+      "y1": 104,
+      "x2": 294,
+      "y2": 305
+    },
+    {
+      "label": "tennis courts",
+      "x1": 332,
+      "y1": 118,
+      "x2": 439,
+      "y2": 315
+    },
+    {
+      "label": "parking area",
+      "x1": 56,
+      "y1": 355,
+      "x2": 510,
+      "y2": 510
+    },
+    {
+      "label": "small vehicles",
+      "x1": 192,
+      "y1": 468,
+      "x2": 213,
+      "y2": 505
+    },
+    {
+      "label": "small vehicles",
+      "x1": 488,
+      "y1": 395,
+      "x2": 510,
+      "y2": 437
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "image": "09702_0000.png",
+  "boxes": [
+    {
+      "label": "three small tennis courts on grassy fields",
+      "x1": 17,
+      "y1": 44,
+      "x2": 254,
+      "y2": 221
+    }
+  ]
+}

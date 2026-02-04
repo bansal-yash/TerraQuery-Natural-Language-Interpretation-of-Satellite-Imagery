@@ -1,0 +1,19 @@
+{
+  "image": "07767_0000.png",
+  "boxes": [
+    {
+      "label": "two circular storage tanks positioned on a gray rectangular structure with patches of disturbed earth",
+      "x1": 58,
+      "y1": 58,
+      "x2": 424,
+      "y2": 210
+    },
+    {
+      "label": "several parallel lines",
+      "x1": 0,
+      "y1": 429,
+      "x2": 512,
+      "y2": 510
+    }
+  ]
+}

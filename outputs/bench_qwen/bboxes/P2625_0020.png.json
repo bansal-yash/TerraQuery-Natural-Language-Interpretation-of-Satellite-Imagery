@@ -1,0 +1,19 @@
+{
+  "image": "P2625_0020.png",
+  "boxes": [
+    {
+      "label": "large building with gray roof",
+      "x1": 0,
+      "y1": 139,
+      "x2": 510,
+      "y2": 510
+    },
+    {
+      "label": "two large vehicles",
+      "x1": 0,
+      "y1": 351,
+      "x2": 109,
+      "y2": 510
+    }
+  ]
+}

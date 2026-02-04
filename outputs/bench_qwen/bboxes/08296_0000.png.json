@@ -1,0 +1,12 @@
+{
+  "image": "08296_0000.png",
+  "boxes": [
+    {
+      "label": "Aerial view of an industrial area captured by GoogleEarth. A single small chimney is visible in the bottom-right part of the image, standing among other industrial structures.",
+      "x1": 371,
+      "y1": 100,
+      "x2": 512,
+      "y2": 510
+    }
+  ]
+}

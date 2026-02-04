@@ -1,0 +1,12 @@
+{
+  "image": "09795_0000.png",
+  "boxes": [
+    {
+      "label": "solitary windmill",
+      "x1": 405,
+      "y1": 59,
+      "x2": 479,
+      "y2": 139
+    }
+  ]
+}

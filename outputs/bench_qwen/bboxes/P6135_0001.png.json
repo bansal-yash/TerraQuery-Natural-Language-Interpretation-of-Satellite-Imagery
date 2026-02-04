@@ -1,0 +1,19 @@
+{
+  "image": "P6135_0001.png",
+  "boxes": [
+    {
+      "label": "urban area with dense housing development and prominent roads creating a grid-like pattern",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 510
+    },
+    {
+      "label": "small ground-track-field",
+      "x1": 315,
+      "y1": 131,
+      "x2": 343,
+      "y2": 161
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "image": "06105_0000.png",
+  "boxes": [
+    {
+      "label": "An aerial view from Google Earth depicts a large bridge spanning from the middle-left to the top-middle across a significant body of water.",
+      "x1": 141,
+      "y1": 0,
+      "x2": 281,
+      "y2": 129
+    }
+  ]
+}

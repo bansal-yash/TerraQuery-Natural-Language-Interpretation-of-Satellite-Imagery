@@ -1,0 +1,12 @@
+{
+  "image": "P2802_0092.png",
+  "boxes": [
+    {
+      "label": "small plane with distinctive red markings",
+      "x1": 337,
+      "y1": 390,
+      "x2": 497,
+      "y2": 512
+    }
+  ]
+}

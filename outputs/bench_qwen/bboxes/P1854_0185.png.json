@@ -1,0 +1,12 @@
+{
+  "image": "P1854_0185.png",
+  "boxes": [
+    {
+      "label": "small vehicles on the pavement",
+      "x1": 334,
+      "y1": 285,
+      "x2": 358,
+      "y2": 303
+    }
+  ]
+}

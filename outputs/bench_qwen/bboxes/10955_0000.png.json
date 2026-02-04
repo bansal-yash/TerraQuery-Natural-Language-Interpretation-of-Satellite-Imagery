@@ -1,0 +1,12 @@
+{
+  "image": "10955_0000.png",
+  "boxes": [
+    {
+      "label": "Aerial view of an orange ground track and field captured via Google Earth. The track has multiple lanes and is accompanied by an inner grass field. Surrounding the track and field area are sections of adjacent fields and buildings.",
+      "x1": 1,
+      "y1": 0,
+      "x2": 510,
+      "y2": 506
+    }
+  ]
+}

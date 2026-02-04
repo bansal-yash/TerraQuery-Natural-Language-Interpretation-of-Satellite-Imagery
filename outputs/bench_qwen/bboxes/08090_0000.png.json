@@ -1,0 +1,19 @@
+{
+  "image": "08090_0000.png",
+  "boxes": [
+    {
+      "label": "large establishment with a sizeable flat roof",
+      "x1": 0,
+      "y1": 0,
+      "x2": 434,
+      "y2": 273
+    },
+    {
+      "label": "ground track and field stadium",
+      "x1": 13,
+      "y1": 338,
+      "x2": 494,
+      "y2": 510
+    }
+  ]
+}

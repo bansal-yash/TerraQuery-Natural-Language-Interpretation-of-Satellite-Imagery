@@ -1,0 +1,33 @@
+{
+  "image": "11392_0000.png",
+  "boxes": [
+    {
+      "label": "ground track field",
+      "x1": 57,
+      "y1": 243,
+      "x2": 512,
+      "y2": 510
+    },
+    {
+      "label": "tennis courts",
+      "x1": 189,
+      "y1": 44,
+      "x2": 510,
+      "y2": 142
+    },
+    {
+      "label": "vehicles</ref><ref>vehicle 1",
+      "x1": 166,
+      "y1": 198,
+      "x2": 185,
+      "y2": 226
+    },
+    {
+      "label": "vehicle 2",
+      "x1": 203,
+      "y1": 164,
+      "x2": 226,
+      "y2": 177
+    }
+  ]
+}

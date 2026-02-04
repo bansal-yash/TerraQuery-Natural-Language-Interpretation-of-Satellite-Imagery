@@ -1,0 +1,26 @@
+{
+  "image": "P2255_0001.png",
+  "boxes": [
+    {
+      "label": "baseball diamond",
+      "x1": 149,
+      "y1": 49,
+      "x2": 223,
+      "y2": 113
+    },
+    {
+      "label": "baseball diamond",
+      "x1": 468,
+      "y1": 208,
+      "x2": 512,
+      "y2": 272
+    },
+    {
+      "label": "baseball diamond",
+      "x1": 212,
+      "y1": 0,
+      "x2": 290,
+      "y2": 36
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "image": "P1390_0056.png",
+  "boxes": [
+    {
+      "label": "vehicle",
+      "x1": 28,
+      "y1": 113,
+      "x2": 48,
+      "y2": 124
+    },
+    {
+      "label": "vehicle",
+      "x1": 290,
+      "y1": 121,
+      "x2": 313,
+      "y2": 135
+    },
+    {
+      "label": "air control tower",
+      "x1": 34,
+      "y1": 432,
+      "x2": 108,
+      "y2": 512
+    },
+    {
+      "label": "air control tower",
+      "x1": 156,
+      "y1": 437,
+      "x2": 274,
+      "y2": 512
+    },
+    {
+      "label": "air control tower",
+      "x1": 364,
+      "y1": 442,
+      "x2": 441,
+      "y2": 512
+    }
+  ]
+}

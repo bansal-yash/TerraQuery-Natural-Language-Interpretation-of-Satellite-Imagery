@@ -1,0 +1,35 @@
+{
+    "input_image": {    
+        "image_id": "sample1.png",
+        "image_url": "https://bit.ly/4ouV45l",
+        "metadata": {
+            "width": 512,
+            "height": 512,
+            "spatial_resolution_m": 1.57
+        }
+    },
+        "queries": {
+            "caption_query": {
+                "instruction": "Describe key features in this image?",
+                "response": ""
+            },
+            "grounding_query": {
+                "instruction": "For each instance of the airplane in the image, provide the oriented bounding box.",
+                "response": ""
+            },
+            "attribute_query": {
+                "binary": {
+                    "instruction": "Is there any digit present in the bottom right corner of the scene?",
+                    "response": ""
+                },
+                "numeric": {
+                    "instruction": "How many storage tanks are present in the scene?",
+                    "response": ""
+                },
+                "semantic": {
+                    "instruction": "What is the color of the digit painted on the landing strip?",
+                    "response": ""
+                }
+            }
+        }
+    }

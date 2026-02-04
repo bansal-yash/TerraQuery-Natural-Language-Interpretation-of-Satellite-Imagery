@@ -1,0 +1,19 @@
+{
+  "image": "07187_0000.png",
+  "boxes": [
+    {
+      "label": "stadium",
+      "x1": 209,
+      "y1": 59,
+      "x2": 344,
+      "y2": 195
+    },
+    {
+      "label": "athletics track and field",
+      "x1": 327,
+      "y1": 195,
+      "x2": 510,
+      "y2": 499
+    }
+  ]
+}

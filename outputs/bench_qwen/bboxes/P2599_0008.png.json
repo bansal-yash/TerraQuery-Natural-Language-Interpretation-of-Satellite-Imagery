@@ -1,0 +1,47 @@
+{
+  "image": "P2599_0008.png",
+  "boxes": [
+    {
+      "label": "tree",
+      "x1": 0,
+      "y1": 93,
+      "x2": 512,
+      "y2": 510
+    },
+    {
+      "label": "tennis court",
+      "x1": 0,
+      "y1": 0,
+      "x2": 340,
+      "y2": 136
+    },
+    {
+      "label": "residential property",
+      "x1": 0,
+      "y1": 294,
+      "x2": 287,
+      "y2": 510
+    },
+    {
+      "label": "residential property",
+      "x1": 377,
+      "y1": 420,
+      "x2": 512,
+      "y2": 510
+    },
+    {
+      "label": "vehicle",
+      "x1": 110,
+      "y1": 412,
+      "x2": 143,
+      "y2": 432
+    },
+    {
+      "label": "vehicle",
+      "x1": 477,
+      "y1": 80,
+      "x2": 500,
+      "y2": 112
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "image": "09442_0000.png",
+  "boxes": [
+    {
+      "label": "The image, sourced from GoogleEarth, features a small basketball court located on the lower right half of the image, marked with white boundary lines and visible court markings.",
+      "x1": 281,
+      "y1": 290,
+      "x2": 512,
+      "y2": 510
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "image": "P1854_0067.png",
+  "boxes": [
+    {
+      "label": "airplane wing",
+      "x1": 0,
+      "y1": 0,
+      "x2": 229,
+      "y2": 221
+    },
+    {
+      "label": "airplane wing",
+      "x1": 0,
+      "y1": 322,
+      "x2": 196,
+      "y2": 512
+    }
+  ]
+}

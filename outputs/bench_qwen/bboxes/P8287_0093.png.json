@@ -1,0 +1,33 @@
+{
+  "image": "P8287_0093.png",
+  "boxes": [
+    {
+      "label": "residential buildings with dark rooftops",
+      "x1": 44,
+      "y1": 50,
+      "x2": 354,
+      "y2": 512
+    },
+    {
+      "label": "green area with trees",
+      "x1": 204,
+      "y1": 0,
+      "x2": 512,
+      "y2": 510
+    },
+    {
+      "label": "parasol",
+      "x1": 264,
+      "y1": 221,
+      "x2": 303,
+      "y2": 264
+    },
+    {
+      "label": "small vehicles",
+      "x1": 18,
+      "y1": 415,
+      "x2": 61,
+      "y2": 512
+    }
+  ]
+}

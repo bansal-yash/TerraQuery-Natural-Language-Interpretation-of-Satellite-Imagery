@@ -1,0 +1,40 @@
+{
+  "image": "P2124_0008.png",
+  "boxes": [
+    {
+      "label": "industrial buildings",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    },
+    {
+      "label": "air conditioning units",
+      "x1": 346,
+      "y1": 100,
+      "x2": 364,
+      "y2": 120
+    },
+    {
+      "label": "skylights",
+      "x1": 390,
+      "y1": 59,
+      "x2": 407,
+      "y2": 78
+    },
+    {
+      "label": "large vehicles",
+      "x1": 0,
+      "y1": 100,
+      "x2": 46,
+      "y2": 153
+    },
+    {
+      "label": "large vehicles",
+      "x1": 0,
+      "y1": 0,
+      "x2": 59,
+      "y2": 66
+    }
+  ]
+}

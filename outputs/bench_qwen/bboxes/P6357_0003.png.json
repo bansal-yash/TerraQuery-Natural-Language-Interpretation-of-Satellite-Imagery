@@ -1,0 +1,33 @@
+{
+  "image": "P6357_0003.png",
+  "boxes": [
+    {
+      "label": "industrial area",
+      "x1": 59,
+      "y1": 0,
+      "x2": 230,
+      "y2": 121
+    },
+    {
+      "label": "residential area",
+      "x1": 141,
+      "y1": 0,
+      "x2": 437,
+      "y2": 198
+    },
+    {
+      "label": "green fields",
+      "x1": 0,
+      "y1": 121,
+      "x2": 512,
+      "y2": 510
+    },
+    {
+      "label": "roundabout",
+      "x1": 346,
+      "y1": 92,
+      "x2": 365,
+      "y2": 111
+    }
+  ]
+}

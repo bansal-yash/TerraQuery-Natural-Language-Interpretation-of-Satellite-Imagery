@@ -1,0 +1,26 @@
+{
+  "image": "P2085_0004.png",
+  "boxes": [
+    {
+      "label": "basketball court",
+      "x1": 0,
+      "y1": 106,
+      "x2": 113,
+      "y2": 334
+    },
+    {
+      "label": "basketball court",
+      "x1": 136,
+      "y1": 129,
+      "x2": 281,
+      "y2": 358
+    },
+    {
+      "label": "playground",
+      "x1": 256,
+      "y1": 256,
+      "x2": 512,
+      "y2": 505
+    }
+  ]
+}

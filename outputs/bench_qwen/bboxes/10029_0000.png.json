@@ -1,0 +1,26 @@
+{
+  "image": "10029_0000.png",
+  "boxes": [
+    {
+      "label": "ground track and field area",
+      "x1": 179,
+      "y1": 9,
+      "x2": 335,
+      "y2": 132
+    },
+    {
+      "label": "ground track and field area",
+      "x1": 385,
+      "y1": 269,
+      "x2": 473,
+      "y2": 364
+    },
+    {
+      "label": "ground track and field area",
+      "x1": 200,
+      "y1": 307,
+      "x2": 275,
+      "y2": 364
+    }
+  ]
+}

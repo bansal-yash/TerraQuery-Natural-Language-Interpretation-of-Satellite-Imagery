@@ -1,0 +1,26 @@
+{
+  "image": "P0904_0005.png",
+  "boxes": [
+    {
+      "label": "roundabout",
+      "x1": 220,
+      "y1": 202,
+      "x2": 358,
+      "y2": 341
+    },
+    {
+      "label": "tennis court",
+      "x1": 0,
+      "y1": 0,
+      "x2": 214,
+      "y2": 152
+    },
+    {
+      "label": "vehicle</ref><ref>vehicle</ref><ref>vehicle</ref><ref>vehicle</ref><ref>vehicle",
+      "x1": 156,
+      "y1": 365,
+      "x2": 198,
+      "y2": 392
+    }
+  ]
+}

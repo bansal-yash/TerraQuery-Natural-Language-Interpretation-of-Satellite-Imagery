@@ -1,0 +1,26 @@
+{
+  "image": "P2766_0104.png",
+  "boxes": [
+    {
+      "label": "blue warehouse",
+      "x1": 12,
+      "y1": 0,
+      "x2": 269,
+      "y2": 453
+    },
+    {
+      "label": "storage tank",
+      "x1": 322,
+      "y1": 8,
+      "x2": 366,
+      "y2": 46
+    },
+    {
+      "label": "storage tank",
+      "x1": 374,
+      "y1": 8,
+      "x2": 422,
+      "y2": 46
+    }
+  ]
+}

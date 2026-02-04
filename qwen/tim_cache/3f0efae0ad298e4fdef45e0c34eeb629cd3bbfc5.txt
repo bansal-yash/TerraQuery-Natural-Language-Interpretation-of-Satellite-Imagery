@@ -1,0 +1,1 @@
+RGB:Aerial view of textured terrain with intersecting light-colored paths. || SAR:SAR image shows uniform speckle noise across entire frame.

@@ -1,0 +1,33 @@
+{
+  "image": "P4151_0102.png",
+  "boxes": [
+    {
+      "label": "pedestrian crosswalks",
+      "x1": 82,
+      "y1": 157,
+      "x2": 205,
+      "y2": 213
+    },
+    {
+      "label": "traffic lights",
+      "x1": 73,
+      "y1": 297,
+      "x2": 86,
+      "y2": 315
+    },
+    {
+      "label": "marked lanes",
+      "x1": 0,
+      "y1": 277,
+      "x2": 281,
+      "y2": 440
+    },
+    {
+      "label": "smaller vehicles",
+      "x1": 176,
+      "y1": 461,
+      "x2": 227,
+      "y2": 510
+    }
+  ]
+}

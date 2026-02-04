@@ -1,0 +1,12 @@
+{
+  "image": "08361_0000.png",
+  "boxes": [
+    {
+      "label": "An aerial image from GoogleEarth featuring a prominent circular chimney structure. The surrounding area is industrial with various patterns and structures around the chimney.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 510,
+      "y2": 510
+    }
+  ]
+}

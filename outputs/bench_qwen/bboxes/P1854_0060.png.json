@@ -1,0 +1,33 @@
+{
+  "image": "P1854_0060.png",
+  "boxes": [
+    {
+      "label": "large building",
+      "x1": 0,
+      "y1": 0,
+      "x2": 274,
+      "y2": 464
+    },
+    {
+      "label": "boarding bridges",
+      "x1": 274,
+      "y1": 0,
+      "x2": 510,
+      "y2": 464
+    },
+    {
+      "label": "large vehicle",
+      "x1": 380,
+      "y1": 223,
+      "x2": 512,
+      "y2": 364
+    },
+    {
+      "label": "unique smaller vehicle",
+      "x1": 305,
+      "y1": 293,
+      "x2": 322,
+      "y2": 364
+    }
+  ]
+}

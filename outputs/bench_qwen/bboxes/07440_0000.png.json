@@ -1,0 +1,12 @@
+{
+  "image": "07440_0000.png",
+  "boxes": [
+    {
+      "label": "central circular storage tank with a white dome",
+      "x1": 279,
+      "y1": 249,
+      "x2": 510,
+      "y2": 463
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "image": "07018_0000.png",
+  "boxes": [
+    {
+      "label": "overpass",
+      "x1": 164,
+      "y1": 244,
+      "x2": 512,
+      "y2": 378
+    },
+    {
+      "label": "vehicle on the right-hand side of the road under the overpass",
+      "x1": 479,
+      "y1": 333,
+      "x2": 509,
+      "y2": 348
+    },
+    {
+      "label": "vehicle on the right edge under the overpass",
+      "x1": 413,
+      "y1": 162,
+      "x2": 428,
+      "y2": 189
+    },
+    {
+      "label": "vehicle on the road adjacent to the overpass",
+      "x1": 138,
+      "y1": 166,
+      "x2": 162,
+      "y2": 185
+    }
+  ]
+}

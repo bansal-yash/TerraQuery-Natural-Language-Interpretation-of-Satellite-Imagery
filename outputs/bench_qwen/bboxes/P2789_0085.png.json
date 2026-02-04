@@ -1,0 +1,26 @@
+{
+  "image": "P2789_0085.png",
+  "boxes": [
+    {
+      "label": "scorched section of land",
+      "x1": 75,
+      "y1": 39,
+      "x2": 448,
+      "y2": 351
+    },
+    {
+      "label": "two small ships",
+      "x1": 205,
+      "y1": 340,
+      "x2": 271,
+      "y2": 393
+    },
+    {
+      "label": "unique small vehicle",
+      "x1": 233,
+      "y1": 67,
+      "x2": 262,
+      "y2": 114
+    }
+  ]
+}

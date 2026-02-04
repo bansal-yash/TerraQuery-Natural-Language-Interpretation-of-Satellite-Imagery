@@ -1,0 +1,40 @@
+{
+  "image": "P4265_0003.png",
+  "boxes": [
+    {
+      "label": "airport facility",
+      "x1": 0,
+      "y1": 0,
+      "x2": 294,
+      "y2": 435
+    },
+    {
+      "label": "runways",
+      "x1": 0,
+      "y1": 0,
+      "x2": 294,
+      "y2": 435
+    },
+    {
+      "label": "taxiways",
+      "x1": 0,
+      "y1": 0,
+      "x2": 294,
+      "y2": 435
+    },
+    {
+      "label": "adjacent buildings",
+      "x1": 187,
+      "y1": 297,
+      "x2": 510,
+      "y2": 510
+    },
+    {
+      "label": "small ground track field",
+      "x1": 341,
+      "y1": 18,
+      "x2": 494,
+      "y2": 109
+    }
+  ]
+}

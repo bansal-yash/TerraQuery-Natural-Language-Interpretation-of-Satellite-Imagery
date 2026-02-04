@@ -1,0 +1,26 @@
+{
+  "image": "P2563_0006.png",
+  "boxes": [
+    {
+      "label": "tennis courts",
+      "x1": 0,
+      "y1": 157,
+      "x2": 262,
+      "y2": 367
+    },
+    {
+      "label": "basketball courts",
+      "x1": 108,
+      "y1": 405,
+      "x2": 315,
+      "y2": 512
+    },
+    {
+      "label": "small vehicles",
+      "x1": 18,
+      "y1": 388,
+      "x2": 45,
+      "y2": 405
+    }
+  ]
+}

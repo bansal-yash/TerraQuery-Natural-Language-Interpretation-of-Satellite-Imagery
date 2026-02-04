@@ -1,0 +1,40 @@
+{
+  "image": "09148_0000.png",
+  "boxes": [
+    {
+      "label": "residential area with houses",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 253
+    },
+    {
+      "label": "stadium",
+      "x1": 313,
+      "y1": 244,
+      "x2": 512,
+      "y2": 510
+    },
+    {
+      "label": "wide highway",
+      "x1": 0,
+      "y1": 116,
+      "x2": 512,
+      "y2": 322
+    },
+    {
+      "label": "two small overpasses",
+      "x1": 244,
+      "y1": 200,
+      "x2": 281,
+      "y2": 256
+    },
+    {
+      "label": "one positioned closer to the top-right",
+      "x1": 423,
+      "y1": 144,
+      "x2": 460,
+      "y2": 200
+    }
+  ]
+}

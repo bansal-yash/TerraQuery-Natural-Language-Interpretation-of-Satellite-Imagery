@@ -1,0 +1,9 @@
+pyproject.toml
+setup.py
+qwen_mtmd/__init__.py
+qwen_mtmd/qwen_mtmd.cpython-310-x86_64-linux-gnu.so
+qwen_mtmd.egg-info/PKG-INFO
+qwen_mtmd.egg-info/SOURCES.txt
+qwen_mtmd.egg-info/dependency_links.txt
+qwen_mtmd.egg-info/not-zip-safe
+qwen_mtmd.egg-info/top_level.txt

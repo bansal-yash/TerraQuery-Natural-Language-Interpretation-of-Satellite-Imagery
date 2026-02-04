@@ -1,0 +1,26 @@
+{
+  "image": "11542_0000.png",
+  "boxes": [
+    {
+      "label": "house with red roof",
+      "x1": 0,
+      "y1": 56,
+      "x2": 225,
+      "y2": 322
+    },
+    {
+      "label": "house with brown roof",
+      "x1": 198,
+      "y1": 0,
+      "x2": 510,
+      "y2": 227
+    },
+    {
+      "label": "small vehicle",
+      "x1": 421,
+      "y1": 157,
+      "x2": 486,
+      "y2": 239
+    }
+  ]
+}

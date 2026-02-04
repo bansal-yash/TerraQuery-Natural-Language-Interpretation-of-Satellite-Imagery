@@ -1,0 +1,40 @@
+{
+  "image": "P0615_0003.png",
+  "boxes": [
+    {
+      "label": "residential property with swimming pool",
+      "x1": 134,
+      "y1": 251,
+      "x2": 290,
+      "y2": 379
+    },
+    {
+      "label": "residential property with small vehicle",
+      "x1": 256,
+      "y1": 346,
+      "x2": 374,
+      "y2": 474
+    },
+    {
+      "label": "residential property with small vehicle",
+      "x1": 0,
+      "y1": 0,
+      "x2": 119,
+      "y2": 136
+    },
+    {
+      "label": "small vehicle",
+      "x1": 290,
+      "y1": 293,
+      "x2": 312,
+      "y2": 318
+    },
+    {
+      "label": "small vehicle",
+      "x1": 341,
+      "y1": 449,
+      "x2": 366,
+      "y2": 474
+    }
+  ]
+}

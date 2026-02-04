@@ -1,0 +1,12 @@
+{
+  "image": "P1384_0049.png",
+  "boxes": [
+    {
+      "label": "two soccer ball fields",
+      "x1": 0,
+      "y1": 61,
+      "x2": 158,
+      "y2": 510
+    }
+  ]
+}

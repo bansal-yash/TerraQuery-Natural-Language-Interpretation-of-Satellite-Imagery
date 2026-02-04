@@ -1,0 +1,12 @@
+{
+  "image": "06731_0000.png",
+  "boxes": [
+    {
+      "label": "red-roofed buildings",
+      "x1": 112,
+      "y1": 277,
+      "x2": 218,
+      "y2": 413
+    }
+  ]
+}

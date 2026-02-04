@@ -1,0 +1,12 @@
+{
+  "image": "P0977_0006.png",
+  "boxes": [
+    {
+      "label": "The high-resolution image sourced from GoogleEarth depicts a small harbor with a distinct t-shaped pier on dark-toned water. The pier extends from the lower edge towards the center of the image with two perpendicular extensions.",
+      "x1": 123,
+      "y1": 324,
+      "x2": 336,
+      "y2": 510
+    }
+  ]
+}

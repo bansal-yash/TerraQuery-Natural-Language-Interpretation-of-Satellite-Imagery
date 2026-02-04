@@ -1,0 +1,26 @@
+{
+  "image": "06647_0000.png",
+  "boxes": [
+    {
+      "label": "agricultural fields",
+      "x1": 0,
+      "y1": 0,
+      "x2": 281,
+      "y2": 307
+    },
+    {
+      "label": "residential area with red-roofed buildings aligned in rows",
+      "x1": 281,
+      "y1": 0,
+      "x2": 512,
+      "y2": 249
+    },
+    {
+      "label": "small ground track field",
+      "x1": 132,
+      "y1": 454,
+      "x2": 192,
+      "y2": 510
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "image": "09562_0000.png",
+  "boxes": [
+    {
+      "label": "Aerial view from GoogleEarth showing a series of tennis courts oriented horizontally. There are three distinguishable tennis courts located towards the bottom side of the image.",
+      "x1": 182,
+      "y1": 449,
+      "x2": 510,
+      "y2": 512
+    }
+  ]
+}

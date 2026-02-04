@@ -1,0 +1,12 @@
+{
+  "image": "08002_0000.png",
+  "boxes": [
+    {
+      "label": "A small airplane is located towards the bottom-middle of the image, standing out against the lighter gray background of the cracked terrain.",
+      "x1": 159,
+      "y1": 354,
+      "x2": 272,
+      "y2": 488
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "image": "P1376_0027.png",
+  "boxes": [
+    {
+      "label": "large curved building",
+      "x1": 5,
+      "y1": 0,
+      "x2": 512,
+      "y2": 358
+    },
+    {
+      "label": "small vehicles",
+      "x1": 352,
+      "y1": 384,
+      "x2": 377,
+      "y2": 409
+    },
+    {
+      "label": "small vehicles",
+      "x1": 331,
+      "y1": 408,
+      "x2": 352,
+      "y2": 434
+    },
+    {
+      "label": "small vehicles",
+      "x1": 268,
+      "y1": 408,
+      "x2": 289,
+      "y2": 434
+    },
+    {
+      "label": "small vehicles",
+      "x1": 256,
+      "y1": 485,
+      "x2": 275,
+      "y2": 510
+    },
+    {
+      "label": "small vehicles",
+      "x1": 46,
+      "y1": 371,
+      "x2": 66,
+      "y2": 396
+    },
+    {
+      "label": "small vehicles",
+      "x1": 51,
+      "y1": 384,
+      "x2": 71,
+      "y2": 408
+    },
+    {
+      "label": "small vehicles",
+      "x1": 140,
+      "y1": 281,
+      "x2": 168,
+      "y2": 312
+    },
+    {
+      "label": "small vehicles",
+      "x1": 281,
+      "y1": 384,
+      "x2": 307,
+      "y2": 409
+    }
+  ]
+}

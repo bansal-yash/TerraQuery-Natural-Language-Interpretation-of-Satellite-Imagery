@@ -1,0 +1,12 @@
+{
+  "image": "P2802_0119.png",
+  "boxes": [
+    {
+      "label": "vehicles parked at the bottom-middle section of the image",
+      "x1": 186,
+      "y1": 408,
+      "x2": 219,
+      "y2": 427
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "image": "P8656_0146.png",
+  "boxes": [
+    {
+      "label": "train tracks",
+      "x1": 0,
+      "y1": 0,
+      "x2": 243,
+      "y2": 512
+    },
+    {
+      "label": "building with circular rooftop structure",
+      "x1": 243,
+      "y1": 7,
+      "x2": 448,
+      "y2": 313
+    },
+    {
+      "label": "parked vehicles",
+      "x1": 428,
+      "y1": 195,
+      "x2": 512,
+      "y2": 396
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "image_path": "/home/samyak/scratch/interiit/data/VRSBench/Images_val/05873_0000.png",
+  "reference_caption": "The aerial image, sourced from GoogleEarth, showcases a residential area with a variety of features. In the center of the view, there is a large residence with a brown roof, surrounded by dense vegetation. Notable amenities include a kidney-shaped swimming pool, a brown tennis court towards the right. The area is well-maintained with landscaped paths and hedges.",
+  "finetuned_caption": "that generates detailed, accurate descriptions of satellite and aerial imagery.\nuser\nPlease describe this image in detail.\nassistant\nThe image is an aerial view of a large, lush property. It features a main house with a dark roof, surrounded by dense greenery. Adjacent to the house is a kidney-shaped swimming pool with a white deck area. To the right of the pool, there is a rectangular tennis court with a green surface. A driveway or path runs through the property, connecting different areas and bordered by trees. There is also a smaller building or structure near the tennis court. The property appears well-maintained and spacious, with a combination of recreational and relaxation areas.",
+  "base_caption": "This is an aerial satellite image of a large, upscale residential property, likely situated in a suburban or affluent area. The property is surrounded by dense greenery, including mature trees and shrubs, which contribute to a private, secluded feel.\n\nThe most prominent features are:\n\n1.  **A Swimming Pool:** Located in the upper center of the image, there is a large, kidney-shaped swimming pool with a light blue surface. It is surrounded by a paved patio area and appears to have some poolside furniture or a cabana structure nearby.\n\n2.  **A Tennis Court:** To the right of the pool, there is a standard-sized, hard-surface tennis court. The court is marked with white lines and has a dark green playing surface with a lighter green or gray border. The court is surrounded by a low fence or hedge for privacy.\n\n3.  **The Main Residence:** A large, multi-story house with a dark gray or brown shingled roof occupies the left side of the image. The house has multiple gables and chimneys, suggesting a complex architectural design. A smaller, detached structure, possibly a garage or guest house, is visible to the right of the main house.\n\n4.  **Landscape and Driveway:** The property is",
+  "finetuned_generation_time": 5.390231132507324,
+  "base_generation_time": 7.197695016860962,
+  "finetuned_scores": {
+    "bert-precision": 0.23696690797805786,
+    "bert-recall": 0.39851507544517517,
+    "bert-f1": 0.3176126778125763,
+    "per_sample_precision": [
+      0.23696690797805786
+    ],
+    "per_sample_recall": [
+      0.39851507544517517
+    ],
+    "per_sample_f1": [
+      0.3176126778125763
+    ],
+    "bert-bleu": 0.8257436156272888,
+    "per_sample_bert_bleu": [
+      0.8257436156272888
+    ],
+    "per_sample_pn": [
+      [
+        0.9239287376403809,
+        0.8317806124687195,
+        0.7835306525230408,
+        0.7721071839332581
+      ]
+    ]
+  },
+  "base_scores": {
+    "bert-precision": 0.0727679431438446,
+    "bert-recall": 0.40487998723983765,
+    "bert-f1": 0.2347467541694641,
+    "per_sample_precision": [
+      0.0727679431438446
+    ],
+    "per_sample_recall": [
+      0.40487998723983765
+    ],
+    "per_sample_f1": [
+      0.2347467541694641
+    ],
+    "bert-bleu": 0.8011578321456909,
+    "per_sample_bert_bleu": [
+      0.8011578321456909
+    ],
+    "per_sample_pn": [
+      [
+        0.9017723798751831,
+        0.8053513169288635,
+        0.764914870262146,
+        0.7416123151779175
+      ]
+    ]
+  }
+}

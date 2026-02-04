@@ -1,0 +1,12 @@
+{
+  "image": "05958_0000.png",
+  "boxes": [
+    {
+      "label": "Aerial view of a location showing a part of a road curving at the top, with adjacent parking spaces marked by white lines. A small building with a gray roof is situated near a grassy area, and there is one small vehicle parked at the bottom-left of the image.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 506
+    }
+  ]
+}

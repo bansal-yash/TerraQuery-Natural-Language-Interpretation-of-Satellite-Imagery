@@ -1,0 +1,26 @@
+{
+  "image": "06769_0000.png",
+  "boxes": [
+    {
+      "label": "small baseball field",
+      "x1": 330,
+      "y1": 379,
+      "x2": 512,
+      "y2": 510
+    },
+    {
+      "label": "small vehicle",
+      "x1": 397,
+      "y1": 164,
+      "x2": 432,
+      "y2": 205
+    },
+    {
+      "label": "white-roofed building",
+      "x1": 69,
+      "y1": 266,
+      "x2": 164,
+      "y2": 450
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "image": "P0833_0009.png",
+  "boxes": [
+    {
+      "label": "bottom-most basketball court",
+      "x1": 13,
+      "y1": 385,
+      "x2": 141,
+      "y2": 510
+    },
+    {
+      "label": "top-most basketball court",
+      "x1": 126,
+      "y1": 149,
+      "x2": 243,
+      "y2": 295
+    }
+  ]
+}

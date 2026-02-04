@@ -1,0 +1,1 @@
+RGB:Brownish terrain with winding waterways and scattered light patches. || SAR:SAR image shows textured, high-contrast terrain with wave-like patterns and dark voids.

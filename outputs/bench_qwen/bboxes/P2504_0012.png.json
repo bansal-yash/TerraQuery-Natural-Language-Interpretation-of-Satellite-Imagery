@@ -1,0 +1,33 @@
+{
+  "image": "P2504_0012.png",
+  "boxes": [
+    {
+      "label": "agricultural fields",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    },
+    {
+      "label": "narrow strip of trees",
+      "x1": 0,
+      "y1": 159,
+      "x2": 269,
+      "y2": 510
+    },
+    {
+      "label": "small bridge",
+      "x1": 269,
+      "y1": 403,
+      "x2": 357,
+      "y2": 461
+    },
+    {
+      "label": "residential area",
+      "x1": 351,
+      "y1": 353,
+      "x2": 512,
+      "y2": 510
+    }
+  ]
+}

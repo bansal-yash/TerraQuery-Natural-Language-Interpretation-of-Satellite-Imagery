@@ -1,0 +1,40 @@
+{
+  "image": "07809_0000.png",
+  "boxes": [
+    {
+      "label": "roadway infrastructure",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    },
+    {
+      "label": "vegetation",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    },
+    {
+      "label": "railway line",
+      "x1": 0,
+      "y1": 384,
+      "x2": 305,
+      "y2": 512
+    },
+    {
+      "label": "overpass",
+      "x1": 239,
+      "y1": 0,
+      "x2": 512,
+      "y2": 239
+    },
+    {
+      "label": "lone vehicle",
+      "x1": 340,
+      "y1": 421,
+      "x2": 361,
+      "y2": 446
+    }
+  ]
+}

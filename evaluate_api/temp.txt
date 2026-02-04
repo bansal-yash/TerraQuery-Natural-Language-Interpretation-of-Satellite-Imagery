@@ -1,0 +1,25 @@
+curl -X 'POST' 'http://52.66.150.171/api/eval' -H 'accept: application/json' -H 'Content-Type: application/json' -d @temp.json
+
+
+eval 25
+{
+  "caption_bert_blue_4": 0.6985700214230381,
+  "grounding_cp_meanIoU": 0.33482194396925274,
+  "binary_exact_match": 0.782608695652174,
+  "numeric_score_exp_neg_abs_diff": 0.7058829746219647,
+  "attribute_bert_blue_4": 0.6378615894414481,
+  "final_weighted_score": 0.5774616469026013
+}
+
+eval 100
+
+{
+  "caption_bert_blue_4": 0.7050661364233498,
+  "grounding_cp_meanIoU": 0.3129734276818562,
+  "binary_exact_match": 0.6626506024096386,
+  "numeric_score_exp_neg_abs_diff": 0.6191078597984586,
+  "attribute_bert_blue_4": 0.6976914218786904,
+  "final_weighted_score": 0.5569261435199344
+}
+
+

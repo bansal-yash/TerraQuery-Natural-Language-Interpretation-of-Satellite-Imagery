@@ -1,0 +1,19 @@
+{
+  "image": "10090_0000.png",
+  "boxes": [
+    {
+      "label": "large expressway service area",
+      "x1": 214,
+      "y1": 208,
+      "x2": 510,
+      "y2": 510
+    },
+    {
+      "label": "overpass",
+      "x1": 214,
+      "y1": 208,
+      "x2": 510,
+      "y2": 510
+    }
+  ]
+}

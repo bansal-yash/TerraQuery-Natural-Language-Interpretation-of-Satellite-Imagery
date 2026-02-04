@@ -1,0 +1,19 @@
+{
+  "image": "10868_0000.png",
+  "boxes": [
+    {
+      "label": "expressway-service-area",
+      "x1": 141,
+      "y1": 88,
+      "x2": 510,
+      "y2": 510
+    },
+    {
+      "label": "small vehicle",
+      "x1": 449,
+      "y1": 487,
+      "x2": 479,
+      "y2": 510
+    }
+  ]
+}

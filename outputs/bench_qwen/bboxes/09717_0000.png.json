@@ -1,0 +1,26 @@
+{
+  "image": "09717_0000.png",
+  "boxes": [
+    {
+      "label": "small storage tank with a large white circular top",
+      "x1": 321,
+      "y1": 273,
+      "x2": 512,
+      "y2": 503
+    },
+    {
+      "label": "small vehicle near roadway",
+      "x1": 59,
+      "y1": 173,
+      "x2": 99,
+      "y2": 202
+    },
+    {
+      "label": "small vehicle closer to bottom edge",
+      "x1": 49,
+      "y1": 320,
+      "x2": 93,
+      "y2": 343
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "image": "P2689_0025.png",
+  "boxes": [
+    {
+      "label": "The high-resolution image from GoogleEarth shows a section of an airport tarmac with a small plane positioned towards the left side of the image.",
+      "x1": 0,
+      "y1": 39,
+      "x2": 140,
+      "y2": 172
+    }
+  ]
+}

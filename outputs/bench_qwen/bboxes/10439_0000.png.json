@@ -1,0 +1,19 @@
+{
+  "image": "10439_0000.png",
+  "boxes": [
+    {
+      "label": "baseball field",
+      "x1": 145,
+      "y1": 75,
+      "x2": 444,
+      "y2": 423
+    },
+    {
+      "label": "cluster of blooming trees",
+      "x1": 77,
+      "y1": 238,
+      "x2": 287,
+      "y2": 442
+    }
+  ]
+}

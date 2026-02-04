@@ -1,0 +1,1 @@
+RGB:Rough, textured dark blue surface with scattered white highlights. || SAR:Synthetic aperture radar captures images via microwave reflection, independent of daylight or cloud cover.

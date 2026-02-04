@@ -1,0 +1,12 @@
+{
+  "image": "P0019_0071.png",
+  "boxes": [
+    {
+      "label": "two adjacent structures with rooftops",
+      "x1": 0,
+      "y1": 346,
+      "x2": 417,
+      "y2": 453
+    }
+  ]
+}

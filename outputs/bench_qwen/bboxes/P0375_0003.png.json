@@ -1,0 +1,26 @@
+{
+  "image": "P0375_0003.png",
+  "boxes": [
+    {
+      "label": "tennis courts",
+      "x1": 0,
+      "y1": 0,
+      "x2": 460,
+      "y2": 462
+    },
+    {
+      "label": "parking spaces",
+      "x1": 0,
+      "y1": 0,
+      "x2": 61,
+      "y2": 66
+    },
+    {
+      "label": "baseball diamond",
+      "x1": 163,
+      "y1": 388,
+      "x2": 432,
+      "y2": 512
+    }
+  ]
+}

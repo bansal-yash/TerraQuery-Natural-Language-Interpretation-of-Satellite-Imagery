@@ -1,0 +1,12 @@
+{
+  "image": "P0347_0021.png",
+  "boxes": [
+    {
+      "label": "A high-resolution image from Google Earth shows a small harbor located on a body of water, bordered by green tree cover on one side. The harbor features a dock extending into the water.",
+      "x1": 0,
+      "y1": 198,
+      "x2": 208,
+      "y2": 335
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "image": "P2450_0005.png",
+  "boxes": [
+    {
+      "label": "highway",
+      "x1": 0,
+      "y1": 0,
+      "x2": 319,
+      "y2": 461
+    },
+    {
+      "label": "large vehicles",
+      "x1": 181,
+      "y1": 144,
+      "x2": 189,
+      "y2": 156
+    },
+    {
+      "label": "large vehicles",
+      "x1": 161,
+      "y1": 190,
+      "x2": 166,
+      "y2": 198
+    },
+    {
+      "label": "large vehicles",
+      "x1": 77,
+      "y1": 292,
+      "x2": 87,
+      "y2": 305
+    },
+    {
+      "label": "large vehicles",
+      "x1": 442,
+      "y1": 422,
+      "x2": 448,
+      "y2": 441
+    },
+    {
+      "label": "large vehicles",
+      "x1": 458,
+      "y1": 218,
+      "x2": 466,
+      "y2": 237
+    },
+    {
+      "label": "large vehicles",
+      "x1": 231,
+      "y1": 106,
+      "x2": 237,
+      "y2": 115
+    },
+    {
+      "label": "large vehicles",
+      "x1": 241,
+      "y1": 77,
+      "x2": 246,
+      "y2": 85
+    },
+    {
+      "label": "large vehicles",
+      "x1": 256,
+      "y1": 61,
+      "x2": 260,
+      "y2": 69
+    }
+  ]
+}

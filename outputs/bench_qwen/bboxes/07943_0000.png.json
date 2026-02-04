@@ -1,0 +1,33 @@
+{
+  "image": "07943_0000.png",
+  "boxes": [
+    {
+      "label": "residential structures with various roof shapes",
+      "x1": 0,
+      "y1": 93,
+      "x2": 218,
+      "y2": 479
+    },
+    {
+      "label": "yard space with greenery",
+      "x1": 182,
+      "y1": 93,
+      "x2": 298,
+      "y2": 505
+    },
+    {
+      "label": "small vehicle",
+      "x1": 265,
+      "y1": 59,
+      "x2": 336,
+      "y2": 100
+    },
+    {
+      "label": "basketball court",
+      "x1": 262,
+      "y1": 366,
+      "x2": 463,
+      "y2": 507
+    }
+  ]
+}

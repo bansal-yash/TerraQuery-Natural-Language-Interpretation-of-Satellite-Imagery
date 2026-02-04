@@ -1,0 +1,19 @@
+{
+  "image": "07407_0000.png",
+  "boxes": [
+    {
+      "label": "expressway-toll-station",
+      "x1": 182,
+      "y1": 369,
+      "x2": 315,
+      "y2": 464
+    },
+    {
+      "label": "small vehicle",
+      "x1": 175,
+      "y1": 305,
+      "x2": 190,
+      "y2": 321
+    }
+  ]
+}

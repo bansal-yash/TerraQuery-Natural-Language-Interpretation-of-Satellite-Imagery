@@ -1,0 +1,1 @@
+RGB:Aerial view of rural landscape with fields, roads, and scattered settlements. || SAR:SAR image shows textured urban landscape with speckle noise and patchy brightness variations.

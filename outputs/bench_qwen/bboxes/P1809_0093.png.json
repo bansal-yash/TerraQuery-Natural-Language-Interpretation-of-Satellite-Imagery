@@ -1,0 +1,33 @@
+{
+  "image": "P1809_0093.png",
+  "boxes": [
+    {
+      "label": "large yellow vehicle",
+      "x1": 180,
+      "y1": 65,
+      "x2": 208,
+      "y2": 138
+    },
+    {
+      "label": "small vehicle near bottom",
+      "x1": 256,
+      "y1": 407,
+      "x2": 272,
+      "y2": 437
+    },
+    {
+      "label": "small vehicle at bottom left",
+      "x1": 99,
+      "y1": 400,
+      "x2": 119,
+      "y2": 430
+    },
+    {
+      "label": "small vehicle at top middle",
+      "x1": 167,
+      "y1": 129,
+      "x2": 182,
+      "y2": 154
+    }
+  ]
+}

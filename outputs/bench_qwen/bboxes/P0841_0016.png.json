@@ -1,0 +1,26 @@
+{
+  "image": "P0841_0016.png",
+  "boxes": [
+    {
+      "label": "small plane",
+      "x1": 75,
+      "y1": 374,
+      "x2": 249,
+      "y2": 510
+    },
+    {
+      "label": "small vehicles",
+      "x1": 149,
+      "y1": 334,
+      "x2": 219,
+      "y2": 374
+    },
+    {
+      "label": "small vehicles",
+      "x1": 9,
+      "y1": 266,
+      "x2": 31,
+      "y2": 293
+    }
+  ]
+}

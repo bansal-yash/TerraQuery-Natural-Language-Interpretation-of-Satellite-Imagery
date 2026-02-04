@@ -1,0 +1,33 @@
+{
+  "image": "P0368_0004.png",
+  "boxes": [
+    {
+      "label": "tennis courts",
+      "x1": 159,
+      "y1": 0,
+      "x2": 486,
+      "y2": 223
+    },
+    {
+      "label": "basketball court",
+      "x1": 313,
+      "y1": 79,
+      "x2": 510,
+      "y2": 306
+    },
+    {
+      "label": "soccer ball field",
+      "x1": 0,
+      "y1": 146,
+      "x2": 367,
+      "y2": 506
+    },
+    {
+      "label": "vehicles",
+      "x1": 418,
+      "y1": 449,
+      "x2": 457,
+      "y2": 495
+    }
+  ]
+}

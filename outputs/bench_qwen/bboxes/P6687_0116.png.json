@@ -1,0 +1,12 @@
+{
+  "image": "P6687_0116.png",
+  "boxes": [
+    {
+      "label": "The high-resolution aerial image features a section of an urban environment with a distinct small vehicle positioned in the top-left area of the scene.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 69,
+      "y2": 53
+    }
+  ]
+}

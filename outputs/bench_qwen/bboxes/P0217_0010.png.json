@@ -1,0 +1,33 @@
+{
+  "image": "P0217_0010.png",
+  "boxes": [
+    {
+      "label": "small plane",
+      "x1": 0,
+      "y1": 237,
+      "x2": 264,
+      "y2": 512
+    },
+    {
+      "label": "large parking lot",
+      "x1": 79,
+      "y1": 0,
+      "x2": 409,
+      "y2": 211
+    },
+    {
+      "label": "small vehicles",
+      "x1": 69,
+      "y1": 151,
+      "x2": 108,
+      "y2": 182
+    },
+    {
+      "label": "small building with a curved, metallic roof",
+      "x1": 118,
+      "y1": 175,
+      "x2": 269,
+      "y2": 313
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "image": "P2625_0016.png",
+  "boxes": [
+    {
+      "label": "three large vehicles distinctly marked",
+      "x1": 32,
+      "y1": 26,
+      "x2": 172,
+      "y2": 172
+    }
+  ]
+}

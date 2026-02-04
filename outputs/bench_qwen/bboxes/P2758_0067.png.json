@@ -1,0 +1,26 @@
+{
+  "image": "P2758_0067.png",
+  "boxes": [
+    {
+      "label": "ship",
+      "x1": 11,
+      "y1": 172,
+      "x2": 329,
+      "y2": 361
+    },
+    {
+      "label": "small vehicles",
+      "x1": 54,
+      "y1": 132,
+      "x2": 74,
+      "y2": 151
+    },
+    {
+      "label": "unique small vehicle",
+      "x1": 54,
+      "y1": 132,
+      "x2": 74,
+      "y2": 151
+    }
+  ]
+}

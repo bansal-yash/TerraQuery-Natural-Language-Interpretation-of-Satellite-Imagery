@@ -1,0 +1,40 @@
+{
+  "image": "P0079_0002.png",
+  "boxes": [
+    {
+      "label": "roundabout",
+      "x1": 86,
+      "y1": 330,
+      "x2": 209,
+      "y2": 443
+    },
+    {
+      "label": "dirt area with sparse vegetation",
+      "x1": 0,
+      "y1": 12,
+      "x2": 510,
+      "y2": 256
+    },
+    {
+      "label": "street",
+      "x1": 0,
+      "y1": 193,
+      "x2": 510,
+      "y2": 230
+    },
+    {
+      "label": "small vehicle",
+      "x1": 326,
+      "y1": 358,
+      "x2": 345,
+      "y2": 391
+    },
+    {
+      "label": "small swimming pool",
+      "x1": 401,
+      "y1": 479,
+      "x2": 459,
+      "y2": 512
+    }
+  ]
+}

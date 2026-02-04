@@ -1,0 +1,26 @@
+{
+  "image": "09959_0000.png",
+  "boxes": [
+    {
+      "label": "residential housing",
+      "x1": 0,
+      "y1": 0,
+      "x2": 510,
+      "y2": 510
+    },
+    {
+      "label": "train station",
+      "x1": 116,
+      "y1": 187,
+      "x2": 510,
+      "y2": 456
+    },
+    {
+      "label": "industrial or commercial buildings",
+      "x1": 266,
+      "y1": 220,
+      "x2": 415,
+      "y2": 271
+    }
+  ]
+}

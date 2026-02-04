@@ -1,0 +1,12 @@
+{
+  "image": "P1398_0070.png",
+  "boxes": [
+    {
+      "label": "High-resolution image from GoogleEarth displaying a small plane with distinct livery. The aircraft is captured from above, and its features such as wings and body are clearly visible against the contrasting ground.",
+      "x1": 136,
+      "y1": 0,
+      "x2": 512,
+      "y2": 442
+    }
+  ]
+}

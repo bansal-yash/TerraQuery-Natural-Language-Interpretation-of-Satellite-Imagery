@@ -1,0 +1,40 @@
+{
+  "image": "P2608_0015.png",
+  "boxes": [
+    {
+      "label": "small vehicle",
+      "x1": 75,
+      "y1": 407,
+      "x2": 99,
+      "y2": 443
+    },
+    {
+      "label": "small vehicle",
+      "x1": 388,
+      "y1": 132,
+      "x2": 427,
+      "y2": 159
+    },
+    {
+      "label": "small vehicle",
+      "x1": 183,
+      "y1": 176,
+      "x2": 221,
+      "y2": 204
+    },
+    {
+      "label": "small vehicle",
+      "x1": 32,
+      "y1": 146,
+      "x2": 69,
+      "y2": 176
+    },
+    {
+      "label": "small vehicle",
+      "x1": 73,
+      "y1": 116,
+      "x2": 108,
+      "y2": 146
+    }
+  ]
+}

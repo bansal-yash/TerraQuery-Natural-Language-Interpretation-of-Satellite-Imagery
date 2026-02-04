@@ -1,0 +1,26 @@
+{
+  "image": "P0761_0009.png",
+  "boxes": [
+    {
+      "label": "houses with distinctive brown roofs",
+      "x1": 146,
+      "y1": 108,
+      "x2": 492,
+      "y2": 388
+    },
+    {
+      "label": "beach area with a ship docked on the water's edge",
+      "x1": 0,
+      "y1": 281,
+      "x2": 251,
+      "y2": 510
+    },
+    {
+      "label": "small vehicles parked along the road",
+      "x1": 336,
+      "y1": 24,
+      "x2": 427,
+      "y2": 70
+    }
+  ]
+}

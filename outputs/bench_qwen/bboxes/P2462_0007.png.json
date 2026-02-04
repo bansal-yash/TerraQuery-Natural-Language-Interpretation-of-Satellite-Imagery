@@ -1,0 +1,54 @@
+{
+  "image": "P2462_0007.png",
+  "boxes": [
+    {
+      "label": "large domed structure",
+      "x1": 73,
+      "y1": 390,
+      "x2": 329,
+      "y2": 505
+    },
+    {
+      "label": "curved roads",
+      "x1": 0,
+      "y1": 0,
+      "x2": 510,
+      "y2": 505
+    },
+    {
+      "label": "highway with vehicles",
+      "x1": 0,
+      "y1": 0,
+      "x2": 510,
+      "y2": 505
+    },
+    {
+      "label": "parking lot",
+      "x1": 140,
+      "y1": 221,
+      "x2": 353,
+      "y2": 443
+    },
+    {
+      "label": "parked vehicles",
+      "x1": 140,
+      "y1": 221,
+      "x2": 353,
+      "y2": 443
+    },
+    {
+      "label": "large vehicle",
+      "x1": 334,
+      "y1": 175,
+      "x2": 349,
+      "y2": 187
+    },
+    {
+      "label": "small vehicle",
+      "x1": 203,
+      "y1": 108,
+      "x2": 214,
+      "y2": 121
+    }
+  ]
+}

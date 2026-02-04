@@ -1,0 +1,33 @@
+{
+  "image": "P2541_0025.png",
+  "boxes": [
+    {
+      "label": "highway",
+      "x1": 0,
+      "y1": 230,
+      "x2": 512,
+      "y2": 340
+    },
+    {
+      "label": "overpass bridge",
+      "x1": 331,
+      "y1": 230,
+      "x2": 413,
+      "y2": 400
+    },
+    {
+      "label": "buildings",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 510
+    },
+    {
+      "label": "agricultural fields",
+      "x1": 264,
+      "y1": 391,
+      "x2": 512,
+      "y2": 510
+    }
+  ]
+}

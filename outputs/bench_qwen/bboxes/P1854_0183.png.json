@@ -1,0 +1,68 @@
+{
+  "image": "P1854_0183.png",
+  "boxes": [
+    {
+      "label": "airplane",
+      "x1": 0,
+      "y1": 340,
+      "x2": 141,
+      "y2": 510
+    },
+    {
+      "label": "small vehicles",
+      "x1": 343,
+      "y1": 290,
+      "x2": 364,
+      "y2": 318
+    },
+    {
+      "label": "small vehicles",
+      "x1": 358,
+      "y1": 243,
+      "x2": 384,
+      "y2": 283
+    },
+    {
+      "label": "small vehicles",
+      "x1": 392,
+      "y1": 283,
+      "x2": 405,
+      "y2": 322
+    },
+    {
+      "label": "small vehicles",
+      "x1": 395,
+      "y1": 322,
+      "x2": 408,
+      "y2": 358
+    },
+    {
+      "label": "small vehicles",
+      "x1": 400,
+      "y1": 357,
+      "x2": 413,
+      "y2": 392
+    },
+    {
+      "label": "small vehicles",
+      "x1": 425,
+      "y1": 415,
+      "x2": 446,
+      "y2": 446
+    },
+    {
+      "label": "small vehicles",
+      "x1": 438,
+      "y1": 409,
+      "x2": 463,
+      "y2": 441
+    },
+    {
+      "label": "small vehicles",
+      "x1": 441,
+      "y1": 438,
+      "x2": 463,
+      "y2": 466
+    }
+  ]
+}

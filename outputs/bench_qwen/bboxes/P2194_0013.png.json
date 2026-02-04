@@ -1,0 +1,19 @@
+{
+  "image": "P2194_0013.png",
+  "boxes": [
+    {
+      "label": "baseball diamond",
+      "x1": 23,
+      "y1": 0,
+      "x2": 276,
+      "y2": 182
+    },
+    {
+      "label": "soccer pitch",
+      "x1": 375,
+      "y1": 0,
+      "x2": 512,
+      "y2": 394
+    }
+  ]
+}

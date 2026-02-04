@@ -1,0 +1,33 @@
+{
+  "image": "P2593_0007.png",
+  "boxes": [
+    {
+      "label": "tennis court",
+      "x1": 0,
+      "y1": 299,
+      "x2": 117,
+      "y2": 459
+    },
+    {
+      "label": "tennis court",
+      "x1": 0,
+      "y1": 145,
+      "x2": 87,
+      "y2": 299
+    },
+    {
+      "label": "tennis court",
+      "x1": 0,
+      "y1": 0,
+      "x2": 117,
+      "y2": 145
+    },
+    {
+      "label": "vehicle</ref><ref>vehicle",
+      "x1": 142,
+      "y1": 213,
+      "x2": 168,
+      "y2": 281
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "image": "P1410_0054.png",
+  "boxes": [
+    {
+      "label": "baseball diamond",
+      "x1": 1,
+      "y1": 315,
+      "x2": 225,
+      "y2": 505
+    },
+    {
+      "label": "parking lot",
+      "x1": 0,
+      "y1": 36,
+      "x2": 290,
+      "y2": 256
+    },
+    {
+      "label": "small vehicles",
+      "x1": 157,
+      "y1": 41,
+      "x2": 165,
+      "y2": 62
+    },
+    {
+      "label": "small vehicles",
+      "x1": 187,
+      "y1": 49,
+      "x2": 196,
+      "y2": 67
+    },
+    {
+      "label": "small vehicles",
+      "x1": 185,
+      "y1": 165,
+      "x2": 196,
+      "y2": 185
+    },
+    {
+      "label": "small vehicles",
+      "x1": 326,
+      "y1": 409,
+      "x2": 336,
+      "y2": 430
+    }
+  ]
+}

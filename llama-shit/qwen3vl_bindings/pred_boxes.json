@@ -1,0 +1,40 @@
+{
+  "image": "a1000070447_US_21.jpg",
+  "image_size": [
+    352,
+    300
+  ],
+  "boxes_normalized": [
+    {
+      "label": "parking lots",
+      "x1": 0.0,
+      "y1": 0.722,
+      "x2": 0.25,
+      "y2": 0.997
+    },
+    {
+      "label": "parking lots",
+      "x1": 0.425,
+      "y1": 0.722,
+      "x2": 0.997,
+      "y2": 0.997
+    }
+  ],
+  "boxes_px": [
+    {
+      "label": "parking lots",
+      "x1": 0,
+      "y1": 217,
+      "x2": 88,
+      "y2": 299
+    },
+    {
+      "label": "parking lots",
+      "x1": 150,
+      "y1": 217,
+      "x2": 351,
+      "y2": 299
+    }
+  ],
+  "raw_text": "<|image_description_1|>\n```json\n[\n\t{\"bbox_2d\": [0, 722, 250, 997], \"label\": \"parking lots\"},\n\t{\"bbox_2d\": [425, 722, 997, 997], \"label\": \"parking lots\"},\n\t{\"bbox_2d\": [0, 12\n\n<|combined_summary|>\nThe images depict various parking lots, showcasing different layouts and environments, including open spaces and structured parking areas."
+}

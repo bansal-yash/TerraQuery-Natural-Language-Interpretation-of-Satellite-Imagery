@@ -1,0 +1,26 @@
+{
+  "image": "P2714_0037.png",
+  "boxes": [
+    {
+      "label": "small roundabout",
+      "x1": 407,
+      "y1": 438,
+      "x2": 431,
+      "y2": 465
+    },
+    {
+      "label": "small soccer-ball field",
+      "x1": 358,
+      "y1": 0,
+      "x2": 397,
+      "y2": 27
+    },
+    {
+      "label": "small ground-track field",
+      "x1": 418,
+      "y1": 0,
+      "x2": 452,
+      "y2": 36
+    }
+  ]
+}

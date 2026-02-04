@@ -1,0 +1,1 @@
+RGB:Urban grid with red-tiled roofs, green trees, and central plaza. || SAR:SAR image shows textured, speckled patterns with bright and dark regions.

@@ -1,0 +1,33 @@
+{
+  "image": "P2488_0017.png",
+  "boxes": [
+    {
+      "label": "residential houses",
+      "x1": 5,
+      "y1": 164,
+      "x2": 510,
+      "y2": 506
+    },
+    {
+      "label": "industrial facilities",
+      "x1": 0,
+      "y1": 0,
+      "x2": 226,
+      "y2": 164
+    },
+    {
+      "label": "swimming pool",
+      "x1": 425,
+      "y1": 285,
+      "x2": 447,
+      "y2": 303
+    },
+    {
+      "label": "swimming pool",
+      "x1": 177,
+      "y1": 433,
+      "x2": 212,
+      "y2": 469
+    }
+  ]
+}

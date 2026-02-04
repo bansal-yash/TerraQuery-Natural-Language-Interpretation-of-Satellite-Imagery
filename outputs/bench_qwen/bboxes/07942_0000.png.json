@@ -1,0 +1,40 @@
+{
+  "image": "07942_0000.png",
+  "boxes": [
+    {
+      "label": "expressway-service-area",
+      "x1": 102,
+      "y1": 189,
+      "x2": 384,
+      "y2": 510
+    },
+    {
+      "label": "expressway",
+      "x1": 326,
+      "y1": 0,
+      "x2": 510,
+      "y2": 510
+    },
+    {
+      "label": "orange rooftops",
+      "x1": 102,
+      "y1": 271,
+      "x2": 221,
+      "y2": 510
+    },
+    {
+      "label": "parking spaces",
+      "x1": 221,
+      "y1": 189,
+      "x2": 384,
+      "y2": 510
+    },
+    {
+      "label": "small vehicle",
+      "x1": 454,
+      "y1": 474,
+      "x2": 482,
+      "y2": 510
+    }
+  ]
+}

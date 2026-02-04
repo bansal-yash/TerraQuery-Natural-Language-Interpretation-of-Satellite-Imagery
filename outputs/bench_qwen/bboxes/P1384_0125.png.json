@@ -1,0 +1,26 @@
+{
+  "image": "P1384_0125.png",
+  "boxes": [
+    {
+      "label": "industrial area with multiple large buildings featuring uniformly styled rooftops",
+      "x1": 182,
+      "y1": 0,
+      "x2": 510,
+      "y2": 510
+    },
+    {
+      "label": "segment of dry, barren land",
+      "x1": 0,
+      "y1": 0,
+      "x2": 135,
+      "y2": 510
+    },
+    {
+      "label": "roundabout with surrounding greenery",
+      "x1": 331,
+      "y1": 297,
+      "x2": 369,
+      "y2": 344
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "image": "P1095_0053.png",
+  "boxes": [
+    {
+      "label": "The image, sourced from GoogleEarth with a high resolution, shows a small harbor located near the edge of a land mass with brownish water.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 247,
+      "y2": 512
+    }
+  ]
+}

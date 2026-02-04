@@ -1,0 +1,12 @@
+{
+  "image": "P2789_0024.png",
+  "boxes": [
+    {
+      "label": "white small-vehicle",
+      "x1": 247,
+      "y1": 210,
+      "x2": 276,
+      "y2": 269
+    }
+  ]
+}

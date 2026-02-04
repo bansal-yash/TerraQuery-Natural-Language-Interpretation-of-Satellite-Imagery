@@ -1,0 +1,12 @@
+{
+  "image": "P2722_0002.png",
+  "boxes": [
+    {
+      "label": "small soccer-ball-field",
+      "x1": 229,
+      "y1": 176,
+      "x2": 274,
+      "y2": 241
+    }
+  ]
+}

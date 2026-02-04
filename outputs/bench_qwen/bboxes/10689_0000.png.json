@@ -1,0 +1,12 @@
+{
+  "image": "10689_0000.png",
+  "boxes": [
+    {
+      "label": "A satellite view from Google Earth showing a tennis court adjacent to a curvy pathway and greenery. The court is a small-sized, elongated rectangle with clear markings.",
+      "x1": 281,
+      "y1": 128,
+      "x2": 481,
+      "y2": 432
+    }
+  ]
+}

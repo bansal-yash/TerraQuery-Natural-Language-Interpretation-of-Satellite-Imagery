@@ -1,0 +1,12 @@
+{
+  "image": "P2625_0023.png",
+  "boxes": [
+    {
+      "label": "A high-resolution GoogleEarth image depicting large vehicles parked in a lot. The image shows a pattern of well-aligned large vehicles, with rows of trees surrounding the parking area.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 506
+    }
+  ]
+}

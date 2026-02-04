@@ -1,0 +1,12 @@
+{
+  "image": "P6687_0035.png",
+  "boxes": [
+    {
+      "label": "single large white vehicle",
+      "x1": 276,
+      "y1": 226,
+      "x2": 343,
+      "y2": 309
+    }
+  ]
+}

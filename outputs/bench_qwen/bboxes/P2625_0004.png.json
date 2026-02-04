@@ -1,0 +1,33 @@
+{
+  "image": "P2625_0004.png",
+  "boxes": [
+    {
+      "label": "small vehicle",
+      "x1": 466,
+      "y1": 400,
+      "x2": 503,
+      "y2": 446
+    },
+    {
+      "label": "left-most large vehicle",
+      "x1": 385,
+      "y1": 246,
+      "x2": 464,
+      "y2": 342
+    },
+    {
+      "label": "centrally located large vehicle",
+      "x1": 423,
+      "y1": 226,
+      "x2": 483,
+      "y2": 321
+    },
+    {
+      "label": "right-most large vehicle",
+      "x1": 456,
+      "y1": 195,
+      "x2": 512,
+      "y2": 315
+    }
+  ]
+}

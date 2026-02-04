@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanitizer Patching API &mdash; compute-sanitizer 12.6 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/omni-style.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/api-styles.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/mermaid-init.js"></script>
+        <script src="../_static/design-tabs.js"></script>
+        <script src="../_static/version.js"></script>
+        <script src="../_static/social-media.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Sanitizer Result Codes" href="group__SANITIZER__RESULT__API.html" />
+    <link rel="prev" title="Sanitizer Memory API" href="group__SANITIZER__MEMORY__API.html" />
+ 
+
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+
+<a href="../index.html">
+  <img src="../_static/Logo_and_CUDA.png" class="logo" alt="Logo"/>
+</a>
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../ReleaseNotes/index.html">Release Notes</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tools</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ComputeSanitizer/index.html">Compute Sanitizer</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Interfaces</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../SanitizerApiGuide/index.html">Compute Sanitizer API Reference Manual</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../SanitizerApi/table-of-contents.html">Sanitizer API</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="modules.html">Modules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="group__SANITIZER__BARRIER__API.html">Sanitizer Barrier API</a></li>
+<li class="toctree-l3"><a class="reference internal" href="group__SANITIZER__CALLBACK__API.html">Sanitizer Callback API</a></li>
+<li class="toctree-l3"><a class="reference internal" href="group__SANITIZER__MEMORY__API.html">Sanitizer Memory API</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Sanitizer Patching API</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#enumerations">Enumerations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#functions">Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#typedefs">Typedefs</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="group__SANITIZER__RESULT__API.html">Sanitizer Result Codes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="group__SANITIZER__STREAM__API.html">Sanitizer Stream API</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="structs.html">Structs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../SanitizerNvtxGuide/index.html">NVTX API for Compute Sanitizer Reference Manual</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Copyright And Licenses</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../CopyrightAndLicenses/index.html">Copyright and Licenses</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">compute-sanitizer</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+
+
+  
+
+<li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+  
+    <li><a href="../SanitizerApi/table-of-contents.html">Sanitizer API</a> &raquo;</li>
+    <li><a href="modules.html">Modules</a> &raquo;</li>
+<li>Sanitizer Patching API</li>
+
+      <li class="wy-breadcrumbs-aside">
+      </li>
+<li class="wy-breadcrumbs-aside">
+
+
+  <span>v2024.3.0</span>
+
+
+  <span>&nbsp;</span>
+</li>
+
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="sanitizer-patching-api">
+<h1>Sanitizer Patching API<a class="headerlink" href="#sanitizer-patching-api" title="Permalink to this headline"></a></h1>
+<p id="group__sanitizer__patching__api">Functions, types, and enums that implement the Sanitizer Patching API. </p>
+<p class="rubric-h2 rubric">Enumerations</p>
+<div class="dl-as-table docutils container">
+<dl class="simple">
+<dt><a class="reference internal" href="#group__sanitizer__patching__api_1ga3db35bcf534fa726680c73ba242b2e70"><span class="std std-ref">SanitizerPatchResult</span></a></dt><dd><p>Sanitizer patch result codes.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__patching__api_1ga22dc34eb2f89b61aa2a8535c8c089209"><span class="std std-ref">Sanitizer_BarrierFlags</span></a></dt><dd><p>Flags describing a barrier.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__patching__api_1gad3bcfc1a9d22465613ada149c757b5db"><span class="std std-ref">Sanitizer_CacheControlInstructionKind</span></a></dt><dd><p>Cache control action.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__patching__api_1ga2c82c2446853ee79b55d71b098181ca1"><span class="std std-ref">Sanitizer_CallFlags</span></a></dt><dd><p>Flags describing a function call.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__patching__api_1ga505b1abbfde6d1d66fba877f5ce9b5f3"><span class="std std-ref">Sanitizer_CudaBarrierInstructionKind</span></a></dt><dd><p>CUDA Barrier action kind.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__patching__api_1gaa177905ebbb1a243f0784662d6de9c0e"><span class="std std-ref">Sanitizer_DeviceMemoryFlags</span></a></dt><dd><p>Flags describing a memory access.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__patching__api_1ga7378dfd4f3c8d5f315e733e0243ae46d"><span class="std std-ref">Sanitizer_FunctionLoadedStatus</span></a></dt><dd><p></p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__patching__api_1ga25af2e64f4c5e2a4e012edb4bb991dcf"><span class="std std-ref">Sanitizer_InstructionId</span></a></dt><dd><p>Instrumentation.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__patching__api_1gacec4a303dd18b91d32ba1bcabf7296e9"><span class="std std-ref">Sanitizer_WarpgroupMMAAsyncFlags</span></a></dt><dd><p>Flags describing a warpgroup aligned MMA async.</p>
+</dd>
+</dl>
+</div>
+<p class="rubric-h2 rubric">Functions</p>
+<div class="dl-as-table docutils container">
+<dl class="simple">
+<dt><span class="tag-as-table-cell">SanitizerResult</span> <a class="reference internal" href="#group__sanitizer__patching__api_1ga9c3e7ff615f89534d674989679f2f0f5"><span class="std std-ref">sanitizerAddPatches</span></a>(const void *image, CUcontext ctx)</dt><dd><p>Load a module containing patches that can be used by the patching API.</p>
+</dd>
+<dt><span class="tag-as-table-cell">SanitizerResult</span> <a class="reference internal" href="#group__sanitizer__patching__api_1ga1dd8a6a6700a156fabb0f96dba61dd97"><span class="std std-ref">sanitizerAddPatchesFromFile</span></a>(const char *filename, CUcontext ctx)</dt><dd><p>Load a module containing patches that can be used by the patching API.</p>
+</dd>
+<dt><span class="tag-as-table-cell">SanitizerResult</span> <a class="reference internal" href="#group__sanitizer__patching__api_1gab14ad83bbb1b53e433b297a71dc9add4"><span class="std std-ref">sanitizerGetCallbackPcAndSize</span></a>(CUcontext ctx, const char *deviceCallbackName, uint64_t *pc, uint64_t *size)</dt><dd><p>Get PC and size of a device callback.</p>
+</dd>
+<dt><span class="tag-as-table-cell">SanitizerResult</span> <a class="reference internal" href="#group__sanitizer__patching__api_1ga15652426721721917c39e3f26f50bf11"><span class="std std-ref">sanitizerGetFunctionLoadedStatus</span></a>(CUfunction func, Sanitizer_FunctionLoadedStatus *loadingStatus)</dt><dd><p>Get the loading status of a function.</p>
+</dd>
+<dt><span class="tag-as-table-cell">SanitizerResult</span> <a class="reference internal" href="#group__sanitizer__patching__api_1gae65131f0c6b17318db16e618501e761f"><span class="std std-ref">sanitizerGetFunctionPcAndSize</span></a>(CUmodule module, const char *functionName, uint64_t *pc, uint64_t *size)</dt><dd><p>Get PC and size of a CUDA function.</p>
+</dd>
+<dt><span class="tag-as-table-cell">SanitizerResult</span> <a class="reference internal" href="#group__sanitizer__patching__api_1gaaa4c241c599f34d0010c2b3a9bc64678"><span class="std std-ref">sanitizerPatchInstructions</span></a>(const Sanitizer_InstructionId instructionId, CUmodule module, const char *deviceCallbackName)</dt><dd><p>Set instrumentation points and patches to be applied in a module.</p>
+</dd>
+<dt><span class="tag-as-table-cell">SanitizerResult</span> <a class="reference internal" href="#group__sanitizer__patching__api_1gaacc3ec25dd89f46c9bfbc3ae4ee94c92"><span class="std std-ref">sanitizerPatchModule</span></a>(CUmodule module)</dt><dd><p>Perform the actual instrumentation of a module.</p>
+</dd>
+<dt><span class="tag-as-table-cell">SanitizerResult</span> <a class="reference internal" href="#group__sanitizer__patching__api_1gad7d6a3be98248bcf8b75376fb63f4928"><span class="std std-ref">sanitizerSetCallbackData</span></a>(CUfunction kernel, const void *userdata)</dt><dd><p>Specifies the user data pointer for callbacks.</p>
+</dd>
+<dt><span class="tag-as-table-cell">SanitizerResult</span> <a class="reference internal" href="#group__sanitizer__patching__api_1ga4785e22e74662e75a8540424ca6c8306"><span class="std std-ref">sanitizerSetDeviceGraphData</span></a>(CUgraphExec graphExec, Sanitizer_StreamHandle stream, const void *userdata)</dt><dd><p>Specifies the user data pointer accessible from callbacks in the device-launched graphs launched by the specified host-launched graphExec.</p>
+</dd>
+<dt><span class="tag-as-table-cell">SanitizerResult</span> <a class="reference internal" href="#group__sanitizer__patching__api_1ga20e623843fd96ae221e7225d5e5369b9"><span class="std std-ref">sanitizerSetLaunchCallbackData</span></a>(Sanitizer_LaunchHandle launch, CUfunction kernel, Sanitizer_StreamHandle stream, const void *userdata)</dt><dd><p>Specifies the user data pointer for callbacks.</p>
+</dd>
+<dt><span class="tag-as-table-cell">SanitizerResult</span> <a class="reference internal" href="#group__sanitizer__patching__api_1ga384d2828ad1eb631eff4df8cbbbcba43"><span class="std std-ref">sanitizerUnpatchModule</span></a>(CUmodule module)</dt><dd><p>Remove existing instrumentation of a module.</p>
+</dd>
+</dl>
+</div>
+<p class="rubric-h2 rubric">Typedefs</p>
+<div class="dl-as-table docutils container">
+<dl class="simple">
+<dt><a class="reference internal" href="#group__sanitizer__patching__api_1gad620cec6f0d41934acbe5f1ad9262bd9"><span class="std std-ref">SanitizerCallbackAsyncReduction</span></a></dt><dd><p>Function type for an asynchronous reduction operation on shared memory.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__patching__api_1ga504dcd9a3fffd84b14dd46ee751a9555"><span class="std std-ref">SanitizerCallbackAsyncStore</span></a></dt><dd><p>Function type for an asynchronous store operation on shared memory.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__patching__api_1gaa62d7a8432bc9e0844bcf742f9f9b011"><span class="std std-ref">SanitizerCallbackBarrier</span></a></dt><dd><p>Function type for a barrier callback.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__patching__api_1ga44dab03d6994ad49f52593d891899006"><span class="std std-ref">SanitizerCallbackBlockEnter</span></a></dt><dd><p>Function type for a CUDA block enter callback.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__patching__api_1gaa9a0bc3a199e07f75c2bfe62a37ffd69"><span class="std std-ref">SanitizerCallbackBlockExit</span></a></dt><dd><p>Function type for a CUDA block exit callback.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__patching__api_1ga630ec8ac87a8212539e2b8dc77b53bf1"><span class="std std-ref">SanitizerCallbackBulkCopyGlobalToShared</span></a></dt><dd><p>Function type for a async bulk copy from global to shared memory.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__patching__api_1gab88689ebe67ea8a61c07652b736ddec8"><span class="std std-ref">SanitizerCallbackCacheControl</span></a></dt><dd><p>Function type for a cache control instruction callback.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__patching__api_1ga5a5866bef614d94825c786a6c724c4b2"><span class="std std-ref">SanitizerCallbackCall</span></a></dt><dd><p>Function type for a function call callback.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__patching__api_1ga1ab284f0f8fb79ec82330608d257f90f"><span class="std std-ref">SanitizerCallbackClusterBarrierArrive</span></a></dt><dd><p>Function type for a cluster barrier arrive.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__patching__api_1ga5a7ab381c778af25f8069064063fcc34"><span class="std std-ref">SanitizerCallbackCudaBarrier</span></a></dt><dd><p>Function type for a CUDA Barrier action callback.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__patching__api_1ga130489e7e21fcdd5b8dc6382090d9e13"><span class="std std-ref">SanitizerCallbackDeviceSideFree</span></a></dt><dd><p>Function type for a device-side free call.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__patching__api_1ga06bda752ce9da191c0c780fd2330b479"><span class="std std-ref">SanitizerCallbackDeviceSideMalloc</span></a></dt><dd><p>Function type for a device-side malloc call.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__patching__api_1ga2f254af064064938362861a073fcafa8"><span class="std std-ref">SanitizerCallbackMatrixMemoryAccess</span></a></dt><dd><p>Function type for a matrix shared memory access callback.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__patching__api_1ga523e5d920cb4c8c49eb46c1b2cd17087"><span class="std std-ref">SanitizerCallbackMemcpyAsync</span></a></dt><dd><p>Function type for a global to shared memory asynchronous copy.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__patching__api_1ga6ba3aa1fae45f8b70c5289ac11c49a6a"><span class="std std-ref">SanitizerCallbackMemoryAccess</span></a></dt><dd><p>Function type for a memory access callback.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__patching__api_1gaaac734ca1642efc475c934c8f406539a"><span class="std std-ref">SanitizerCallbackPipelineCommit</span></a></dt><dd><p>Function type for a pipeline commit.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__patching__api_1ga3e78dbc028a8c8d9005ff2c4a6deb35b"><span class="std std-ref">SanitizerCallbackPipelineWait</span></a></dt><dd><p>Function type for a pipeline wait.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__patching__api_1ga7ed18503ba41529ba07b153ac03ba730"><span class="std std-ref">SanitizerCallbackRet</span></a></dt><dd><p>Function type for a function return callback.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__patching__api_1ga91fbc129b2da327140646c217aa3a435"><span class="std std-ref">SanitizerCallbackSetSmemSize</span></a></dt><dd><p>Function type for setting the shared memory size allocated to a block.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__patching__api_1gaf95531eeb610479d4b672a7c1b7df039"><span class="std std-ref">SanitizerCallbackShfl</span></a></dt><dd><p>Function type for a shfl callback.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__patching__api_1gab99b4cd8171ad761a59ef900517c733a"><span class="std std-ref">SanitizerCallbackSyncwarp</span></a></dt><dd><p>Function type for a syncwarp callback.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__patching__api_1ga7ae0bc634fb431477f925b557d2c3f70"><span class="std std-ref">SanitizerCallbackWarpgroupFence</span></a></dt><dd><p>Function type for a warpgroup MMA fence.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__patching__api_1ga23ba635b8af1d84e5ef1d3363b4709a9"><span class="std std-ref">SanitizerCallbackWarpgroupMMAAsync</span></a></dt><dd><p>Function type for a warpgroup aligned async MMA.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__patching__api_1ga5c987165a25ab95edce4b35723abb8c1"><span class="std std-ref">SanitizerCallbackWarpgroupWaitGroup</span></a></dt><dd><p>Function type for a warpgroup MMA wait group.</p>
+</dd>
+<dt><a class="reference internal" href="#group__sanitizer__patching__api_1ga89c4c004dbeee79636f6696c408cf1aa"><span class="std std-ref">Sanitizer_LaunchHandle</span></a></dt><dd><p></p>
+</dd>
+</dl>
+</div>
+<section id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Permalink to this headline"></a></h2>
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv420SanitizerPatchResult">
+<span id="_CPPv320SanitizerPatchResult"></span><span id="_CPPv220SanitizerPatchResult"></span><span class="target" id="group__sanitizer__patching__api_1ga3db35bcf534fa726680c73ba242b2e70"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SanitizerPatchResult</span></span></span><a class="headerlink" href="#_CPPv420SanitizerPatchResult" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Sanitizer patch result codes. </p>
+<p>Error and result codes returned by Sanitizer patches. If a patch returns SANITIZER_PATCH_ERROR, the thread will be exited. On Volta and newer architectures, the full warp which the thread belongs to will be exited. </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N20SanitizerPatchResult23SANITIZER_PATCH_SUCCESSE">
+<span id="_CPPv3N20SanitizerPatchResult23SANITIZER_PATCH_SUCCESSE"></span><span id="_CPPv2N20SanitizerPatchResult23SANITIZER_PATCH_SUCCESSE"></span><span class="target" id="group__sanitizer__patching__api_1gga3db35bcf534fa726680c73ba242b2e70ab27e6d43015f3cf83c222664f5252b0f"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_PATCH_SUCCESS</span></span></span><a class="headerlink" href="#_CPPv4N20SanitizerPatchResult23SANITIZER_PATCH_SUCCESSE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>No error. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N20SanitizerPatchResult21SANITIZER_PATCH_ERRORE">
+<span id="_CPPv3N20SanitizerPatchResult21SANITIZER_PATCH_ERRORE"></span><span id="_CPPv2N20SanitizerPatchResult21SANITIZER_PATCH_ERRORE"></span><span class="target" id="group__sanitizer__patching__api_1gga3db35bcf534fa726680c73ba242b2e70a8d4fce4a175106f313134ef0332f9efc"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_PATCH_ERROR</span></span></span><a class="headerlink" href="#_CPPv4N20SanitizerPatchResult21SANITIZER_PATCH_ERRORE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>An error was detected in the patch. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N20SanitizerPatchResult25SANITIZER_PATCH_FORCE_INTE">
+<span id="_CPPv3N20SanitizerPatchResult25SANITIZER_PATCH_FORCE_INTE"></span><span id="_CPPv2N20SanitizerPatchResult25SANITIZER_PATCH_FORCE_INTE"></span><span class="target" id="group__sanitizer__patching__api_1gga3db35bcf534fa726680c73ba242b2e70a088f0c7727ec80dd558e7b4df1d52d5b"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_PATCH_FORCE_INT</span></span></span><a class="headerlink" href="#_CPPv4N20SanitizerPatchResult25SANITIZER_PATCH_FORCE_INTE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv422Sanitizer_BarrierFlags">
+<span id="_CPPv322Sanitizer_BarrierFlags"></span><span id="_CPPv222Sanitizer_BarrierFlags"></span><span class="target" id="group__sanitizer__patching__api_1ga22dc34eb2f89b61aa2a8535c8c089209"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Sanitizer_BarrierFlags</span></span></span><a class="headerlink" href="#_CPPv422Sanitizer_BarrierFlags" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Flags describing a barrier. </p>
+<p>Flags describing a barrier. These values are to be or-combined in the value of <strong>flags</strong> for a SanitizerCallbackBarrier callback. </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N22Sanitizer_BarrierFlags27SANITIZER_BARRIER_FLAG_NONEE">
+<span id="_CPPv3N22Sanitizer_BarrierFlags27SANITIZER_BARRIER_FLAG_NONEE"></span><span id="_CPPv2N22Sanitizer_BarrierFlags27SANITIZER_BARRIER_FLAG_NONEE"></span><span class="target" id="group__sanitizer__patching__api_1gga22dc34eb2f89b61aa2a8535c8c089209a6af1eab444b00487919dff702c88bbd7"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_BARRIER_FLAG_NONE</span></span></span><a class="headerlink" href="#_CPPv4N22Sanitizer_BarrierFlags27SANITIZER_BARRIER_FLAG_NONEE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Empty flag. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N22Sanitizer_BarrierFlags40SANITIZER_BARRIER_FLAG_UNALIGNED_ALLOWEDE">
+<span id="_CPPv3N22Sanitizer_BarrierFlags40SANITIZER_BARRIER_FLAG_UNALIGNED_ALLOWEDE"></span><span id="_CPPv2N22Sanitizer_BarrierFlags40SANITIZER_BARRIER_FLAG_UNALIGNED_ALLOWEDE"></span><span class="target" id="group__sanitizer__patching__api_1gga22dc34eb2f89b61aa2a8535c8c089209a2cf84ebfb48dc201dda3333237e78c22"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_BARRIER_FLAG_UNALIGNED_ALLOWED</span></span></span><a class="headerlink" href="#_CPPv4N22Sanitizer_BarrierFlags40SANITIZER_BARRIER_FLAG_UNALIGNED_ALLOWEDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Specifies that the barrier can be called unaligned. </p>
+<p>This flag is only valid on SM 7.0 and above. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N22Sanitizer_BarrierFlags32SANITIZER_BARRIER_FLAG_FORCE_INTE">
+<span id="_CPPv3N22Sanitizer_BarrierFlags32SANITIZER_BARRIER_FLAG_FORCE_INTE"></span><span id="_CPPv2N22Sanitizer_BarrierFlags32SANITIZER_BARRIER_FLAG_FORCE_INTE"></span><span class="target" id="group__sanitizer__patching__api_1gga22dc34eb2f89b61aa2a8535c8c089209ad6a607d14742082107d5c122a16b5d11"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_BARRIER_FLAG_FORCE_INT</span></span></span><a class="headerlink" href="#_CPPv4N22Sanitizer_BarrierFlags32SANITIZER_BARRIER_FLAG_FORCE_INTE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv437Sanitizer_CacheControlInstructionKind">
+<span id="_CPPv337Sanitizer_CacheControlInstructionKind"></span><span id="_CPPv237Sanitizer_CacheControlInstructionKind"></span><span class="target" id="group__sanitizer__patching__api_1gad3bcfc1a9d22465613ada149c757b5db"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Sanitizer_CacheControlInstructionKind</span></span></span><a class="headerlink" href="#_CPPv437Sanitizer_CacheControlInstructionKind" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Cache control action. </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N37Sanitizer_CacheControlInstructionKind31SANITIZER_CACHE_CONTROL_INVALIDE">
+<span id="_CPPv3N37Sanitizer_CacheControlInstructionKind31SANITIZER_CACHE_CONTROL_INVALIDE"></span><span id="_CPPv2N37Sanitizer_CacheControlInstructionKind31SANITIZER_CACHE_CONTROL_INVALIDE"></span><span class="target" id="group__sanitizer__patching__api_1ggad3bcfc1a9d22465613ada149c757b5dbaf6206156c9cf5d16175ba7976b55c6ce"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CACHE_CONTROL_INVALID</span></span></span><a class="headerlink" href="#_CPPv4N37Sanitizer_CacheControlInstructionKind31SANITIZER_CACHE_CONTROL_INVALIDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Invalid action ID. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N37Sanitizer_CacheControlInstructionKind35SANITIZER_CACHE_CONTROL_L1_PREFETCHE">
+<span id="_CPPv3N37Sanitizer_CacheControlInstructionKind35SANITIZER_CACHE_CONTROL_L1_PREFETCHE"></span><span id="_CPPv2N37Sanitizer_CacheControlInstructionKind35SANITIZER_CACHE_CONTROL_L1_PREFETCHE"></span><span class="target" id="group__sanitizer__patching__api_1ggad3bcfc1a9d22465613ada149c757b5dba3f9f2ac8fd9ba6921bd6703176a80fe2"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CACHE_CONTROL_L1_PREFETCH</span></span></span><a class="headerlink" href="#_CPPv4N37Sanitizer_CacheControlInstructionKind35SANITIZER_CACHE_CONTROL_L1_PREFETCHE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Prefetch to L1. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N37Sanitizer_CacheControlInstructionKind35SANITIZER_CACHE_CONTROL_L2_PREFETCHE">
+<span id="_CPPv3N37Sanitizer_CacheControlInstructionKind35SANITIZER_CACHE_CONTROL_L2_PREFETCHE"></span><span id="_CPPv2N37Sanitizer_CacheControlInstructionKind35SANITIZER_CACHE_CONTROL_L2_PREFETCHE"></span><span class="target" id="group__sanitizer__patching__api_1ggad3bcfc1a9d22465613ada149c757b5dba2503c68525271d06aaf101217ac62d94"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CACHE_CONTROL_L2_PREFETCH</span></span></span><a class="headerlink" href="#_CPPv4N37Sanitizer_CacheControlInstructionKind35SANITIZER_CACHE_CONTROL_L2_PREFETCHE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Prefetch to L2. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N37Sanitizer_CacheControlInstructionKind33SANITIZER_CACHE_CONTROL_FORCE_INTE">
+<span id="_CPPv3N37Sanitizer_CacheControlInstructionKind33SANITIZER_CACHE_CONTROL_FORCE_INTE"></span><span id="_CPPv2N37Sanitizer_CacheControlInstructionKind33SANITIZER_CACHE_CONTROL_FORCE_INTE"></span><span class="target" id="group__sanitizer__patching__api_1ggad3bcfc1a9d22465613ada149c757b5dba8d17278a5acd0aaae553c71dd3390d0d"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CACHE_CONTROL_FORCE_INT</span></span></span><a class="headerlink" href="#_CPPv4N37Sanitizer_CacheControlInstructionKind33SANITIZER_CACHE_CONTROL_FORCE_INTE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv419Sanitizer_CallFlags">
+<span id="_CPPv319Sanitizer_CallFlags"></span><span id="_CPPv219Sanitizer_CallFlags"></span><span class="target" id="group__sanitizer__patching__api_1ga2c82c2446853ee79b55d71b098181ca1"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Sanitizer_CallFlags</span></span></span><a class="headerlink" href="#_CPPv419Sanitizer_CallFlags" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Flags describing a function call. </p>
+<p>Flags describing a function call. These values are to be or-combined in the value of <strong>flags</strong> for a SanitizerCallbackCall callback. </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N19Sanitizer_CallFlags24SANITIZER_CALL_FLAG_NONEE">
+<span id="_CPPv3N19Sanitizer_CallFlags24SANITIZER_CALL_FLAG_NONEE"></span><span id="_CPPv2N19Sanitizer_CallFlags24SANITIZER_CALL_FLAG_NONEE"></span><span class="target" id="group__sanitizer__patching__api_1gga2c82c2446853ee79b55d71b098181ca1a3cf48edeb09a68cb3c0920a21dd09d7b"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CALL_FLAG_NONE</span></span></span><a class="headerlink" href="#_CPPv4N19Sanitizer_CallFlags24SANITIZER_CALL_FLAG_NONEE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Empty flag. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N19Sanitizer_CallFlags37SANITIZER_CALL_FLAG_UNALIGNED_ALLOWEDE">
+<span id="_CPPv3N19Sanitizer_CallFlags37SANITIZER_CALL_FLAG_UNALIGNED_ALLOWEDE"></span><span id="_CPPv2N19Sanitizer_CallFlags37SANITIZER_CALL_FLAG_UNALIGNED_ALLOWEDE"></span><span class="target" id="group__sanitizer__patching__api_1gga2c82c2446853ee79b55d71b098181ca1a208e029b1ae7767951345e14e60b1c1b"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CALL_FLAG_UNALIGNED_ALLOWED</span></span></span><a class="headerlink" href="#_CPPv4N19Sanitizer_CallFlags37SANITIZER_CALL_FLAG_UNALIGNED_ALLOWEDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Specifies that barriers within this function call can be called unaligned. </p>
+<p>This flag is only valid on SM 7.0 and above. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N19Sanitizer_CallFlags29SANITIZER_CALL_FLAG_FORCE_INTE">
+<span id="_CPPv3N19Sanitizer_CallFlags29SANITIZER_CALL_FLAG_FORCE_INTE"></span><span id="_CPPv2N19Sanitizer_CallFlags29SANITIZER_CALL_FLAG_FORCE_INTE"></span><span class="target" id="group__sanitizer__patching__api_1gga2c82c2446853ee79b55d71b098181ca1aa7f2324f77a3e67bcdbd16265617bc5c"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CALL_FLAG_FORCE_INT</span></span></span><a class="headerlink" href="#_CPPv4N19Sanitizer_CallFlags29SANITIZER_CALL_FLAG_FORCE_INTE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv436Sanitizer_CudaBarrierInstructionKind">
+<span id="_CPPv336Sanitizer_CudaBarrierInstructionKind"></span><span id="_CPPv236Sanitizer_CudaBarrierInstructionKind"></span><span class="target" id="group__sanitizer__patching__api_1ga505b1abbfde6d1d66fba877f5ce9b5f3"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Sanitizer_CudaBarrierInstructionKind</span></span></span><a class="headerlink" href="#_CPPv436Sanitizer_CudaBarrierInstructionKind" title="Permalink to this definition"></a><br /></dt>
+<dd><p>CUDA Barrier action kind. </p>
+<p>Refer to the CUDA Barrier interface section of the CUDA toolkit documentation for a more extensive description of these actions. </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N36Sanitizer_CudaBarrierInstructionKind30SANITIZER_CUDA_BARRIER_INVALIDE">
+<span id="_CPPv3N36Sanitizer_CudaBarrierInstructionKind30SANITIZER_CUDA_BARRIER_INVALIDE"></span><span id="_CPPv2N36Sanitizer_CudaBarrierInstructionKind30SANITIZER_CUDA_BARRIER_INVALIDE"></span><span class="target" id="group__sanitizer__patching__api_1gga505b1abbfde6d1d66fba877f5ce9b5f3aee9a91faa6945664b0ce03d905120cf4"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CUDA_BARRIER_INVALID</span></span></span><a class="headerlink" href="#_CPPv4N36Sanitizer_CudaBarrierInstructionKind30SANITIZER_CUDA_BARRIER_INVALIDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Invalid action ID. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N36Sanitizer_CudaBarrierInstructionKind27SANITIZER_CUDA_BARRIER_INITE">
+<span id="_CPPv3N36Sanitizer_CudaBarrierInstructionKind27SANITIZER_CUDA_BARRIER_INITE"></span><span id="_CPPv2N36Sanitizer_CudaBarrierInstructionKind27SANITIZER_CUDA_BARRIER_INITE"></span><span class="target" id="group__sanitizer__patching__api_1gga505b1abbfde6d1d66fba877f5ce9b5f3a15931890a68eb80129cbfb49a013e8ac"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CUDA_BARRIER_INIT</span></span></span><a class="headerlink" href="#_CPPv4N36Sanitizer_CudaBarrierInstructionKind27SANITIZER_CUDA_BARRIER_INITE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Barrier initialization. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N36Sanitizer_CudaBarrierInstructionKind29SANITIZER_CUDA_BARRIER_ARRIVEE">
+<span id="_CPPv3N36Sanitizer_CudaBarrierInstructionKind29SANITIZER_CUDA_BARRIER_ARRIVEE"></span><span id="_CPPv2N36Sanitizer_CudaBarrierInstructionKind29SANITIZER_CUDA_BARRIER_ARRIVEE"></span><span class="target" id="group__sanitizer__patching__api_1gga505b1abbfde6d1d66fba877f5ce9b5f3a4b3ac93d84739d9751cfa13f24662422"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CUDA_BARRIER_ARRIVE</span></span></span><a class="headerlink" href="#_CPPv4N36Sanitizer_CudaBarrierInstructionKind29SANITIZER_CUDA_BARRIER_ARRIVEE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Barrier arrive operation. </p>
+<p>On Hopper and newer architectures, barrier data is the count argument to the arrive-on operation. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N36Sanitizer_CudaBarrierInstructionKind34SANITIZER_CUDA_BARRIER_ARRIVE_DROPE">
+<span id="_CPPv3N36Sanitizer_CudaBarrierInstructionKind34SANITIZER_CUDA_BARRIER_ARRIVE_DROPE"></span><span id="_CPPv2N36Sanitizer_CudaBarrierInstructionKind34SANITIZER_CUDA_BARRIER_ARRIVE_DROPE"></span><span class="target" id="group__sanitizer__patching__api_1gga505b1abbfde6d1d66fba877f5ce9b5f3a230a6269ef171e6f20849eb9d5e820ac"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CUDA_BARRIER_ARRIVE_DROP</span></span></span><a class="headerlink" href="#_CPPv4N36Sanitizer_CudaBarrierInstructionKind34SANITIZER_CUDA_BARRIER_ARRIVE_DROPE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Barrier arrive and drop operation. </p>
+<p>On Hopper and newer architectures, barrier data is the count argument to the arrive-on operation. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N36Sanitizer_CudaBarrierInstructionKind40SANITIZER_CUDA_BARRIER_ARRIVE_NOCOMPLETEE">
+<span id="_CPPv3N36Sanitizer_CudaBarrierInstructionKind40SANITIZER_CUDA_BARRIER_ARRIVE_NOCOMPLETEE"></span><span id="_CPPv2N36Sanitizer_CudaBarrierInstructionKind40SANITIZER_CUDA_BARRIER_ARRIVE_NOCOMPLETEE"></span><span class="target" id="group__sanitizer__patching__api_1gga505b1abbfde6d1d66fba877f5ce9b5f3a51840247bb75a7e9c817d69e5265dbb1"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CUDA_BARRIER_ARRIVE_NOCOMPLETE</span></span></span><a class="headerlink" href="#_CPPv4N36Sanitizer_CudaBarrierInstructionKind40SANITIZER_CUDA_BARRIER_ARRIVE_NOCOMPLETEE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Barrier arrive operation without phase completion. </p>
+<p>Barrier data is the count argument to the arrive-on operation. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N36Sanitizer_CudaBarrierInstructionKind45SANITIZER_CUDA_BARRIER_ARRIVE_DROP_NOCOMPLETEE">
+<span id="_CPPv3N36Sanitizer_CudaBarrierInstructionKind45SANITIZER_CUDA_BARRIER_ARRIVE_DROP_NOCOMPLETEE"></span><span id="_CPPv2N36Sanitizer_CudaBarrierInstructionKind45SANITIZER_CUDA_BARRIER_ARRIVE_DROP_NOCOMPLETEE"></span><span class="target" id="group__sanitizer__patching__api_1gga505b1abbfde6d1d66fba877f5ce9b5f3a382bcc23518ba661fae3cdcf5d6a0dec"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CUDA_BARRIER_ARRIVE_DROP_NOCOMPLETE</span></span></span><a class="headerlink" href="#_CPPv4N36Sanitizer_CudaBarrierInstructionKind45SANITIZER_CUDA_BARRIER_ARRIVE_DROP_NOCOMPLETEE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Barrier arrive and drop operation without phase completion. </p>
+<p>Barrier data is the count argument to the arrive-on operation. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N36Sanitizer_CudaBarrierInstructionKind27SANITIZER_CUDA_BARRIER_WAITE">
+<span id="_CPPv3N36Sanitizer_CudaBarrierInstructionKind27SANITIZER_CUDA_BARRIER_WAITE"></span><span id="_CPPv2N36Sanitizer_CudaBarrierInstructionKind27SANITIZER_CUDA_BARRIER_WAITE"></span><span class="target" id="group__sanitizer__patching__api_1gga505b1abbfde6d1d66fba877f5ce9b5f3ae18b477c6970ee40efce04e234dd182a"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CUDA_BARRIER_WAIT</span></span></span><a class="headerlink" href="#_CPPv4N36Sanitizer_CudaBarrierInstructionKind27SANITIZER_CUDA_BARRIER_WAITE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Barrier wait operation. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N36Sanitizer_CudaBarrierInstructionKind33SANITIZER_CUDA_BARRIER_INVALIDATEE">
+<span id="_CPPv3N36Sanitizer_CudaBarrierInstructionKind33SANITIZER_CUDA_BARRIER_INVALIDATEE"></span><span id="_CPPv2N36Sanitizer_CudaBarrierInstructionKind33SANITIZER_CUDA_BARRIER_INVALIDATEE"></span><span class="target" id="group__sanitizer__patching__api_1gga505b1abbfde6d1d66fba877f5ce9b5f3a658582452af5eb48a6c5bc92f41d15e8"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CUDA_BARRIER_INVALIDATE</span></span></span><a class="headerlink" href="#_CPPv4N36Sanitizer_CudaBarrierInstructionKind33SANITIZER_CUDA_BARRIER_INVALIDATEE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Barrier invalidation. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N36Sanitizer_CudaBarrierInstructionKind32SANITIZER_CUDA_BARRIER_FORCE_INTE">
+<span id="_CPPv3N36Sanitizer_CudaBarrierInstructionKind32SANITIZER_CUDA_BARRIER_FORCE_INTE"></span><span id="_CPPv2N36Sanitizer_CudaBarrierInstructionKind32SANITIZER_CUDA_BARRIER_FORCE_INTE"></span><span class="target" id="group__sanitizer__patching__api_1gga505b1abbfde6d1d66fba877f5ce9b5f3a6a57b9009640408c50992880bfd52bfa"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_CUDA_BARRIER_FORCE_INT</span></span></span><a class="headerlink" href="#_CPPv4N36Sanitizer_CudaBarrierInstructionKind32SANITIZER_CUDA_BARRIER_FORCE_INTE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv427Sanitizer_DeviceMemoryFlags">
+<span id="_CPPv327Sanitizer_DeviceMemoryFlags"></span><span id="_CPPv227Sanitizer_DeviceMemoryFlags"></span><span class="target" id="group__sanitizer__patching__api_1gaa177905ebbb1a243f0784662d6de9c0e"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Sanitizer_DeviceMemoryFlags</span></span></span><a class="headerlink" href="#_CPPv427Sanitizer_DeviceMemoryFlags" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Flags describing a memory access. </p>
+<p>Flags describing a memory access. These values are to be or-combined in the value of <strong>flags</strong> for a SanitizerCallbackMemoryAccess callback. </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N27Sanitizer_DeviceMemoryFlags33SANITIZER_MEMORY_DEVICE_FLAG_NONEE">
+<span id="_CPPv3N27Sanitizer_DeviceMemoryFlags33SANITIZER_MEMORY_DEVICE_FLAG_NONEE"></span><span id="_CPPv2N27Sanitizer_DeviceMemoryFlags33SANITIZER_MEMORY_DEVICE_FLAG_NONEE"></span><span class="target" id="group__sanitizer__patching__api_1ggaa177905ebbb1a243f0784662d6de9c0eabe87dde2e3c4474d7c0e3525483ad08c"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_MEMORY_DEVICE_FLAG_NONE</span></span></span><a class="headerlink" href="#_CPPv4N27Sanitizer_DeviceMemoryFlags33SANITIZER_MEMORY_DEVICE_FLAG_NONEE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Empty flag. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N27Sanitizer_DeviceMemoryFlags33SANITIZER_MEMORY_DEVICE_FLAG_READE">
+<span id="_CPPv3N27Sanitizer_DeviceMemoryFlags33SANITIZER_MEMORY_DEVICE_FLAG_READE"></span><span id="_CPPv2N27Sanitizer_DeviceMemoryFlags33SANITIZER_MEMORY_DEVICE_FLAG_READE"></span><span class="target" id="group__sanitizer__patching__api_1ggaa177905ebbb1a243f0784662d6de9c0ea22aa86808c07a6e8243d376e6f972023"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_MEMORY_DEVICE_FLAG_READ</span></span></span><a class="headerlink" href="#_CPPv4N27Sanitizer_DeviceMemoryFlags33SANITIZER_MEMORY_DEVICE_FLAG_READE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Specifies that the access is a read. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N27Sanitizer_DeviceMemoryFlags34SANITIZER_MEMORY_DEVICE_FLAG_WRITEE">
+<span id="_CPPv3N27Sanitizer_DeviceMemoryFlags34SANITIZER_MEMORY_DEVICE_FLAG_WRITEE"></span><span id="_CPPv2N27Sanitizer_DeviceMemoryFlags34SANITIZER_MEMORY_DEVICE_FLAG_WRITEE"></span><span class="target" id="group__sanitizer__patching__api_1ggaa177905ebbb1a243f0784662d6de9c0eaa9fcb4800449066a51276f33394b03fe"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_MEMORY_DEVICE_FLAG_WRITE</span></span></span><a class="headerlink" href="#_CPPv4N27Sanitizer_DeviceMemoryFlags34SANITIZER_MEMORY_DEVICE_FLAG_WRITEE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Specifies that the access is a write. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N27Sanitizer_DeviceMemoryFlags36SANITIZER_MEMORY_DEVICE_FLAG_ATOMSYSE">
+<span id="_CPPv3N27Sanitizer_DeviceMemoryFlags36SANITIZER_MEMORY_DEVICE_FLAG_ATOMSYSE"></span><span id="_CPPv2N27Sanitizer_DeviceMemoryFlags36SANITIZER_MEMORY_DEVICE_FLAG_ATOMSYSE"></span><span class="target" id="group__sanitizer__patching__api_1ggaa177905ebbb1a243f0784662d6de9c0ead90430be7f917f6706600b4f27575a79"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_MEMORY_DEVICE_FLAG_ATOMSYS</span></span></span><a class="headerlink" href="#_CPPv4N27Sanitizer_DeviceMemoryFlags36SANITIZER_MEMORY_DEVICE_FLAG_ATOMSYSE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Specifies that the access is a system-scoped atomic. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N27Sanitizer_DeviceMemoryFlags37SANITIZER_MEMORY_DEVICE_FLAG_PREFETCHE">
+<span id="_CPPv3N27Sanitizer_DeviceMemoryFlags37SANITIZER_MEMORY_DEVICE_FLAG_PREFETCHE"></span><span id="_CPPv2N27Sanitizer_DeviceMemoryFlags37SANITIZER_MEMORY_DEVICE_FLAG_PREFETCHE"></span><span class="target" id="group__sanitizer__patching__api_1ggaa177905ebbb1a243f0784662d6de9c0eaf6a1c666441bbad386c41777506fd746"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_MEMORY_DEVICE_FLAG_PREFETCH</span></span></span><a class="headerlink" href="#_CPPv4N27Sanitizer_DeviceMemoryFlags37SANITIZER_MEMORY_DEVICE_FLAG_PREFETCHE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Specifies that the access is a cache prefetch. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N27Sanitizer_DeviceMemoryFlags38SANITIZER_MEMORY_DEVICE_FLAG_FORCE_INTE">
+<span id="_CPPv3N27Sanitizer_DeviceMemoryFlags38SANITIZER_MEMORY_DEVICE_FLAG_FORCE_INTE"></span><span id="_CPPv2N27Sanitizer_DeviceMemoryFlags38SANITIZER_MEMORY_DEVICE_FLAG_FORCE_INTE"></span><span class="target" id="group__sanitizer__patching__api_1ggaa177905ebbb1a243f0784662d6de9c0ea085f95676f603b8c5d6494eed012f261"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_MEMORY_DEVICE_FLAG_FORCE_INT</span></span></span><a class="headerlink" href="#_CPPv4N27Sanitizer_DeviceMemoryFlags38SANITIZER_MEMORY_DEVICE_FLAG_FORCE_INTE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv430Sanitizer_FunctionLoadedStatus">
+<span id="_CPPv330Sanitizer_FunctionLoadedStatus"></span><span id="_CPPv230Sanitizer_FunctionLoadedStatus"></span><span class="target" id="group__sanitizer__patching__api_1ga7378dfd4f3c8d5f315e733e0243ae46d"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Sanitizer_FunctionLoadedStatus</span></span></span><a class="headerlink" href="#_CPPv430Sanitizer_FunctionLoadedStatus" title="Permalink to this definition"></a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N30Sanitizer_FunctionLoadedStatus29SANITIZER_FUNCTION_NOT_LOADEDE">
+<span id="_CPPv3N30Sanitizer_FunctionLoadedStatus29SANITIZER_FUNCTION_NOT_LOADEDE"></span><span id="_CPPv2N30Sanitizer_FunctionLoadedStatus29SANITIZER_FUNCTION_NOT_LOADEDE"></span><span class="target" id="group__sanitizer__patching__api_1gga7378dfd4f3c8d5f315e733e0243ae46da4df8ae157dc9366feda9e04ad6730cdb"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_FUNCTION_NOT_LOADED</span></span></span><a class="headerlink" href="#_CPPv4N30Sanitizer_FunctionLoadedStatus29SANITIZER_FUNCTION_NOT_LOADEDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The function is not loaded. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N30Sanitizer_FunctionLoadedStatus35SANITIZER_FUNCTION_PARTIALLY_LOADEDE">
+<span id="_CPPv3N30Sanitizer_FunctionLoadedStatus35SANITIZER_FUNCTION_PARTIALLY_LOADEDE"></span><span id="_CPPv2N30Sanitizer_FunctionLoadedStatus35SANITIZER_FUNCTION_PARTIALLY_LOADEDE"></span><span class="target" id="group__sanitizer__patching__api_1gga7378dfd4f3c8d5f315e733e0243ae46daa09ef7ea3342e8b2e547eff843867b32"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_FUNCTION_PARTIALLY_LOADED</span></span></span><a class="headerlink" href="#_CPPv4N30Sanitizer_FunctionLoadedStatus35SANITIZER_FUNCTION_PARTIALLY_LOADEDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The function is being loaded. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N30Sanitizer_FunctionLoadedStatus25SANITIZER_FUNCTION_LOADEDE">
+<span id="_CPPv3N30Sanitizer_FunctionLoadedStatus25SANITIZER_FUNCTION_LOADEDE"></span><span id="_CPPv2N30Sanitizer_FunctionLoadedStatus25SANITIZER_FUNCTION_LOADEDE"></span><span class="target" id="group__sanitizer__patching__api_1gga7378dfd4f3c8d5f315e733e0243ae46dabdb7aab56b0e4d31a4e202efcdab6f7f"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_FUNCTION_LOADED</span></span></span><a class="headerlink" href="#_CPPv4N30Sanitizer_FunctionLoadedStatus25SANITIZER_FUNCTION_LOADEDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The function is fully loaded. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N30Sanitizer_FunctionLoadedStatus35SANITIZER_FUNCTION_LOADED_FORCE_INTE">
+<span id="_CPPv3N30Sanitizer_FunctionLoadedStatus35SANITIZER_FUNCTION_LOADED_FORCE_INTE"></span><span id="_CPPv2N30Sanitizer_FunctionLoadedStatus35SANITIZER_FUNCTION_LOADED_FORCE_INTE"></span><span class="target" id="group__sanitizer__patching__api_1gga7378dfd4f3c8d5f315e733e0243ae46da0f0c184ca9c921a2ea7276ffdf50402c"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_FUNCTION_LOADED_FORCE_INT</span></span></span><a class="headerlink" href="#_CPPv4N30Sanitizer_FunctionLoadedStatus35SANITIZER_FUNCTION_LOADED_FORCE_INTE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv423Sanitizer_InstructionId">
+<span id="_CPPv323Sanitizer_InstructionId"></span><span id="_CPPv223Sanitizer_InstructionId"></span><span class="target" id="group__sanitizer__patching__api_1ga25af2e64f4c5e2a4e012edb4bb991dcf"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Sanitizer_InstructionId</span></span></span><a class="headerlink" href="#_CPPv423Sanitizer_InstructionId" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Instrumentation. </p>
+<p>Instrumentation. Every entry represent an instruction type or a function call where a callback patch can be inserted. </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N23Sanitizer_InstructionId29SANITIZER_INSTRUCTION_INVALIDE">
+<span id="_CPPv3N23Sanitizer_InstructionId29SANITIZER_INSTRUCTION_INVALIDE"></span><span id="_CPPv2N23Sanitizer_InstructionId29SANITIZER_INSTRUCTION_INVALIDE"></span><span class="target" id="group__sanitizer__patching__api_1gga25af2e64f4c5e2a4e012edb4bb991dcfab792b56a62fc2cab8ce6f05827bee57e"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_INSTRUCTION_INVALID</span></span></span><a class="headerlink" href="#_CPPv4N23Sanitizer_InstructionId29SANITIZER_INSTRUCTION_INVALIDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Invalid instruction ID. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N23Sanitizer_InstructionId33SANITIZER_INSTRUCTION_BLOCK_ENTERE">
+<span id="_CPPv3N23Sanitizer_InstructionId33SANITIZER_INSTRUCTION_BLOCK_ENTERE"></span><span id="_CPPv2N23Sanitizer_InstructionId33SANITIZER_INSTRUCTION_BLOCK_ENTERE"></span><span class="target" id="group__sanitizer__patching__api_1gga25af2e64f4c5e2a4e012edb4bb991dcfa7c59f819d654294b1d03556920b6506a"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_INSTRUCTION_BLOCK_ENTER</span></span></span><a class="headerlink" href="#_CPPv4N23Sanitizer_InstructionId33SANITIZER_INSTRUCTION_BLOCK_ENTERE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>CUDA block enter. </p>
+<p>This is called prior to any user code. The type of the callback must be SanitizerCallbackBlockEnter. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N23Sanitizer_InstructionId32SANITIZER_INSTRUCTION_BLOCK_EXITE">
+<span id="_CPPv3N23Sanitizer_InstructionId32SANITIZER_INSTRUCTION_BLOCK_EXITE"></span><span id="_CPPv2N23Sanitizer_InstructionId32SANITIZER_INSTRUCTION_BLOCK_EXITE"></span><span class="target" id="group__sanitizer__patching__api_1gga25af2e64f4c5e2a4e012edb4bb991dcfaab863a91dcec4dba6d646493730c6dba"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_INSTRUCTION_BLOCK_EXIT</span></span></span><a class="headerlink" href="#_CPPv4N23Sanitizer_InstructionId32SANITIZER_INSTRUCTION_BLOCK_EXITE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>CUDA block exit. </p>
+<p>This is called after all user code has executed. The type of the callback must be SanitizerCallbackBlockExit. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N23Sanitizer_InstructionId42SANITIZER_INSTRUCTION_GLOBAL_MEMORY_ACCESSE">
+<span id="_CPPv3N23Sanitizer_InstructionId42SANITIZER_INSTRUCTION_GLOBAL_MEMORY_ACCESSE"></span><span id="_CPPv2N23Sanitizer_InstructionId42SANITIZER_INSTRUCTION_GLOBAL_MEMORY_ACCESSE"></span><span class="target" id="group__sanitizer__patching__api_1gga25af2e64f4c5e2a4e012edb4bb991dcfa5406d26c46ab9e70dbe9d5e28bde8b84"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_INSTRUCTION_GLOBAL_MEMORY_ACCESS</span></span></span><a class="headerlink" href="#_CPPv4N23Sanitizer_InstructionId42SANITIZER_INSTRUCTION_GLOBAL_MEMORY_ACCESSE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Global Memory Access. </p>
+<p>This can be a store, load or atomic operation. The type of the callback must be SanitizerCallbackMemoryAccess. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N23Sanitizer_InstructionId42SANITIZER_INSTRUCTION_SHARED_MEMORY_ACCESSE">
+<span id="_CPPv3N23Sanitizer_InstructionId42SANITIZER_INSTRUCTION_SHARED_MEMORY_ACCESSE"></span><span id="_CPPv2N23Sanitizer_InstructionId42SANITIZER_INSTRUCTION_SHARED_MEMORY_ACCESSE"></span><span class="target" id="group__sanitizer__patching__api_1gga25af2e64f4c5e2a4e012edb4bb991dcfa807d409043e80f13b0d8f72db74deca2"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_INSTRUCTION_SHARED_MEMORY_ACCESS</span></span></span><a class="headerlink" href="#_CPPv4N23Sanitizer_InstructionId42SANITIZER_INSTRUCTION_SHARED_MEMORY_ACCESSE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Shared Memory Access. </p>
+<p>This can be a store, load or atomic operation. The type of the callback must be SanitizerCallbackMemoryAccess. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N23Sanitizer_InstructionId41SANITIZER_INSTRUCTION_LOCAL_MEMORY_ACCESSE">
+<span id="_CPPv3N23Sanitizer_InstructionId41SANITIZER_INSTRUCTION_LOCAL_MEMORY_ACCESSE"></span><span id="_CPPv2N23Sanitizer_InstructionId41SANITIZER_INSTRUCTION_LOCAL_MEMORY_ACCESSE"></span><span class="target" id="group__sanitizer__patching__api_1gga25af2e64f4c5e2a4e012edb4bb991dcfa1de26cc6d4b3c2047c5d367f6feab8b5"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_INSTRUCTION_LOCAL_MEMORY_ACCESS</span></span></span><a class="headerlink" href="#_CPPv4N23Sanitizer_InstructionId41SANITIZER_INSTRUCTION_LOCAL_MEMORY_ACCESSE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Local Memory Access. </p>
+<p>This can be a store or load operation. The type of the callback must be SanitizerCallbackMemoryAccess. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N23Sanitizer_InstructionId29SANITIZER_INSTRUCTION_BARRIERE">
+<span id="_CPPv3N23Sanitizer_InstructionId29SANITIZER_INSTRUCTION_BARRIERE"></span><span id="_CPPv2N23Sanitizer_InstructionId29SANITIZER_INSTRUCTION_BARRIERE"></span><span class="target" id="group__sanitizer__patching__api_1gga25af2e64f4c5e2a4e012edb4bb991dcfac1de637e650a2ffe7873d9773dfe81dd"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_INSTRUCTION_BARRIER</span></span></span><a class="headerlink" href="#_CPPv4N23Sanitizer_InstructionId29SANITIZER_INSTRUCTION_BARRIERE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Barrier. </p>
+<p>The type of the callback must be SanitizerCallbackBarrier. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N23Sanitizer_InstructionId30SANITIZER_INSTRUCTION_SYNCWARPE">
+<span id="_CPPv3N23Sanitizer_InstructionId30SANITIZER_INSTRUCTION_SYNCWARPE"></span><span id="_CPPv2N23Sanitizer_InstructionId30SANITIZER_INSTRUCTION_SYNCWARPE"></span><span class="target" id="group__sanitizer__patching__api_1gga25af2e64f4c5e2a4e012edb4bb991dcfa675ff6968f4b589338b73ca52ff5e51d"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_INSTRUCTION_SYNCWARP</span></span></span><a class="headerlink" href="#_CPPv4N23Sanitizer_InstructionId30SANITIZER_INSTRUCTION_SYNCWARPE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Syncwarp. </p>
+<p>The type of the callback must be SanitizerCallbackSyncwarp. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N23Sanitizer_InstructionId26SANITIZER_INSTRUCTION_SHFLE">
+<span id="_CPPv3N23Sanitizer_InstructionId26SANITIZER_INSTRUCTION_SHFLE"></span><span id="_CPPv2N23Sanitizer_InstructionId26SANITIZER_INSTRUCTION_SHFLE"></span><span class="target" id="group__sanitizer__patching__api_1gga25af2e64f4c5e2a4e012edb4bb991dcfaf7dfa1d13d455871e8cf277e96fa98e0"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_INSTRUCTION_SHFL</span></span></span><a class="headerlink" href="#_CPPv4N23Sanitizer_InstructionId26SANITIZER_INSTRUCTION_SHFLE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Shfl. </p>
+<p>The type of the callback must be SanitizerCallbackShfl. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N23Sanitizer_InstructionId26SANITIZER_INSTRUCTION_CALLE">
+<span id="_CPPv3N23Sanitizer_InstructionId26SANITIZER_INSTRUCTION_CALLE"></span><span id="_CPPv2N23Sanitizer_InstructionId26SANITIZER_INSTRUCTION_CALLE"></span><span class="target" id="group__sanitizer__patching__api_1gga25af2e64f4c5e2a4e012edb4bb991dcfae794dd6b50d2cc90f31cadaf82c83183"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_INSTRUCTION_CALL</span></span></span><a class="headerlink" href="#_CPPv4N23Sanitizer_InstructionId26SANITIZER_INSTRUCTION_CALLE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Function call. </p>
+<p>The type of the callback must be SanitizerCallbackCall. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N23Sanitizer_InstructionId25SANITIZER_INSTRUCTION_RETE">
+<span id="_CPPv3N23Sanitizer_InstructionId25SANITIZER_INSTRUCTION_RETE"></span><span id="_CPPv2N23Sanitizer_InstructionId25SANITIZER_INSTRUCTION_RETE"></span><span class="target" id="group__sanitizer__patching__api_1gga25af2e64f4c5e2a4e012edb4bb991dcfa6ffff69ff42f32340d6c1629600fdf68"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_INSTRUCTION_RET</span></span></span><a class="headerlink" href="#_CPPv4N23Sanitizer_InstructionId25SANITIZER_INSTRUCTION_RETE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Function return. </p>
+<p>The type of the callback must be SanitizerCallbackRet. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N23Sanitizer_InstructionId40SANITIZER_INSTRUCTION_DEVICE_SIDE_MALLOCE">
+<span id="_CPPv3N23Sanitizer_InstructionId40SANITIZER_INSTRUCTION_DEVICE_SIDE_MALLOCE"></span><span id="_CPPv2N23Sanitizer_InstructionId40SANITIZER_INSTRUCTION_DEVICE_SIDE_MALLOCE"></span><span class="target" id="group__sanitizer__patching__api_1gga25af2e64f4c5e2a4e012edb4bb991dcfa1d5cb2a1144869418634b105ffea08ce"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_INSTRUCTION_DEVICE_SIDE_MALLOC</span></span></span><a class="headerlink" href="#_CPPv4N23Sanitizer_InstructionId40SANITIZER_INSTRUCTION_DEVICE_SIDE_MALLOCE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Device-side malloc. </p>
+<p>The type of the callback must be SanitizerCallbackDeviceSideMalloc. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N23Sanitizer_InstructionId38SANITIZER_INSTRUCTION_DEVICE_SIDE_FREEE">
+<span id="_CPPv3N23Sanitizer_InstructionId38SANITIZER_INSTRUCTION_DEVICE_SIDE_FREEE"></span><span id="_CPPv2N23Sanitizer_InstructionId38SANITIZER_INSTRUCTION_DEVICE_SIDE_FREEE"></span><span class="target" id="group__sanitizer__patching__api_1gga25af2e64f4c5e2a4e012edb4bb991dcfa55e73a8a1fdf8f213e67c9e8d776782c"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_INSTRUCTION_DEVICE_SIDE_FREE</span></span></span><a class="headerlink" href="#_CPPv4N23Sanitizer_InstructionId38SANITIZER_INSTRUCTION_DEVICE_SIDE_FREEE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Device-side free. </p>
+<p>The type of the callback must be SanitizerCallbackDeviceSideFree. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N23Sanitizer_InstructionId34SANITIZER_INSTRUCTION_CUDA_BARRIERE">
+<span id="_CPPv3N23Sanitizer_InstructionId34SANITIZER_INSTRUCTION_CUDA_BARRIERE"></span><span id="_CPPv2N23Sanitizer_InstructionId34SANITIZER_INSTRUCTION_CUDA_BARRIERE"></span><span class="target" id="group__sanitizer__patching__api_1gga25af2e64f4c5e2a4e012edb4bb991dcfac52324b09329445703e363d369b6360f"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_INSTRUCTION_CUDA_BARRIER</span></span></span><a class="headerlink" href="#_CPPv4N23Sanitizer_InstructionId34SANITIZER_INSTRUCTION_CUDA_BARRIERE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>CUDA Barrier operation. </p>
+<p>The type of the callback must be SanitizerCallbackCudaBarrier. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N23Sanitizer_InstructionId34SANITIZER_INSTRUCTION_MEMCPY_ASYNCE">
+<span id="_CPPv3N23Sanitizer_InstructionId34SANITIZER_INSTRUCTION_MEMCPY_ASYNCE"></span><span id="_CPPv2N23Sanitizer_InstructionId34SANITIZER_INSTRUCTION_MEMCPY_ASYNCE"></span><span class="target" id="group__sanitizer__patching__api_1gga25af2e64f4c5e2a4e012edb4bb991dcfa1ad83fa89c08aadb2a5a91e6b8573736"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_INSTRUCTION_MEMCPY_ASYNC</span></span></span><a class="headerlink" href="#_CPPv4N23Sanitizer_InstructionId34SANITIZER_INSTRUCTION_MEMCPY_ASYNCE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Global to shared memory asynchronous copy. </p>
+<p>The type of the callback must be SanitizerCallbackMemcpyAsync. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N23Sanitizer_InstructionId37SANITIZER_INSTRUCTION_PIPELINE_COMMITE">
+<span id="_CPPv3N23Sanitizer_InstructionId37SANITIZER_INSTRUCTION_PIPELINE_COMMITE"></span><span id="_CPPv2N23Sanitizer_InstructionId37SANITIZER_INSTRUCTION_PIPELINE_COMMITE"></span><span class="target" id="group__sanitizer__patching__api_1gga25af2e64f4c5e2a4e012edb4bb991dcfa4d0f8feda14c6d003e8a1ab086b06b72"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_INSTRUCTION_PIPELINE_COMMIT</span></span></span><a class="headerlink" href="#_CPPv4N23Sanitizer_InstructionId37SANITIZER_INSTRUCTION_PIPELINE_COMMITE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Pipeline commit. </p>
+<p>The type of the callback must be SanitizerCallbackPipelineCommit. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N23Sanitizer_InstructionId35SANITIZER_INSTRUCTION_PIPELINE_WAITE">
+<span id="_CPPv3N23Sanitizer_InstructionId35SANITIZER_INSTRUCTION_PIPELINE_WAITE"></span><span id="_CPPv2N23Sanitizer_InstructionId35SANITIZER_INSTRUCTION_PIPELINE_WAITE"></span><span class="target" id="group__sanitizer__patching__api_1gga25af2e64f4c5e2a4e012edb4bb991dcfa68f0cba8cf1afcba8ff13b2d884ac579"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_INSTRUCTION_PIPELINE_WAIT</span></span></span><a class="headerlink" href="#_CPPv4N23Sanitizer_InstructionId35SANITIZER_INSTRUCTION_PIPELINE_WAITE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Pipeline wait. </p>
+<p>The type of the callback must be SanitizerCallbackPipelineWait. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N23Sanitizer_InstructionId49SANITIZER_INSTRUCTION_REMOTE_SHARED_MEMORY_ACCESSE">
+<span id="_CPPv3N23Sanitizer_InstructionId49SANITIZER_INSTRUCTION_REMOTE_SHARED_MEMORY_ACCESSE"></span><span id="_CPPv2N23Sanitizer_InstructionId49SANITIZER_INSTRUCTION_REMOTE_SHARED_MEMORY_ACCESSE"></span><span class="target" id="group__sanitizer__patching__api_1gga25af2e64f4c5e2a4e012edb4bb991dcfa8072fa9014f4b425a0efc6f263d36a49"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_INSTRUCTION_REMOTE_SHARED_MEMORY_ACCESS</span></span></span><a class="headerlink" href="#_CPPv4N23Sanitizer_InstructionId49SANITIZER_INSTRUCTION_REMOTE_SHARED_MEMORY_ACCESSE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Remote Shared Memory Access. </p>
+<p>This can be a store or load operation. The type of the callback must be SanitizerCallbackMemoryAccess. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N23Sanitizer_InstructionId43SANITIZER_INSTRUCTION_DEVICE_ALIGNED_MALLOCE">
+<span id="_CPPv3N23Sanitizer_InstructionId43SANITIZER_INSTRUCTION_DEVICE_ALIGNED_MALLOCE"></span><span id="_CPPv2N23Sanitizer_InstructionId43SANITIZER_INSTRUCTION_DEVICE_ALIGNED_MALLOCE"></span><span class="target" id="group__sanitizer__patching__api_1gga25af2e64f4c5e2a4e012edb4bb991dcfab466d2d23df81ff9f9ac0fd2f9ba76bf"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_INSTRUCTION_DEVICE_ALIGNED_MALLOC</span></span></span><a class="headerlink" href="#_CPPv4N23Sanitizer_InstructionId43SANITIZER_INSTRUCTION_DEVICE_ALIGNED_MALLOCE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Device-side aligned malloc. </p>
+<p>The type of the callback must be SanitizerCallbackDeviceSideMalloc. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N23Sanitizer_InstructionId42SANITIZER_INSTRUCTION_MATRIX_MEMORY_ACCESSE">
+<span id="_CPPv3N23Sanitizer_InstructionId42SANITIZER_INSTRUCTION_MATRIX_MEMORY_ACCESSE"></span><span id="_CPPv2N23Sanitizer_InstructionId42SANITIZER_INSTRUCTION_MATRIX_MEMORY_ACCESSE"></span><span class="target" id="group__sanitizer__patching__api_1gga25af2e64f4c5e2a4e012edb4bb991dcfa8c9204d0db15113ed8de1102b3e16f3c"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_INSTRUCTION_MATRIX_MEMORY_ACCESS</span></span></span><a class="headerlink" href="#_CPPv4N23Sanitizer_InstructionId42SANITIZER_INSTRUCTION_MATRIX_MEMORY_ACCESSE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Matrix shared memory access. </p>
+<p>The type of the callback must be SanitizerCallbackMatrixMemoryAccess. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N23Sanitizer_InstructionId35SANITIZER_INSTRUCTION_CACHE_CONTROLE">
+<span id="_CPPv3N23Sanitizer_InstructionId35SANITIZER_INSTRUCTION_CACHE_CONTROLE"></span><span id="_CPPv2N23Sanitizer_InstructionId35SANITIZER_INSTRUCTION_CACHE_CONTROLE"></span><span class="target" id="group__sanitizer__patching__api_1gga25af2e64f4c5e2a4e012edb4bb991dcfa914c1d95480474684cb857928d81eb50"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_INSTRUCTION_CACHE_CONTROL</span></span></span><a class="headerlink" href="#_CPPv4N23Sanitizer_InstructionId35SANITIZER_INSTRUCTION_CACHE_CONTROLE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Cache control instruction. </p>
+<p>The type of the callback must be SanitizerCallbackCacheControl. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N23Sanitizer_InstructionId44SANITIZER_INSTRUCTION_CLUSTER_BARRIER_ARRIVEE">
+<span id="_CPPv3N23Sanitizer_InstructionId44SANITIZER_INSTRUCTION_CLUSTER_BARRIER_ARRIVEE"></span><span id="_CPPv2N23Sanitizer_InstructionId44SANITIZER_INSTRUCTION_CLUSTER_BARRIER_ARRIVEE"></span><span class="target" id="group__sanitizer__patching__api_1gga25af2e64f4c5e2a4e012edb4bb991dcfa512c7dfdc0d8dd20b50e4db1c3b88b7d"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_INSTRUCTION_CLUSTER_BARRIER_ARRIVE</span></span></span><a class="headerlink" href="#_CPPv4N23Sanitizer_InstructionId44SANITIZER_INSTRUCTION_CLUSTER_BARRIER_ARRIVEE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Cluster barrier arrive instruction. </p>
+<p>The type of the callback must be SanitizerCallbackClusterBarrierArrive. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N23Sanitizer_InstructionId42SANITIZER_INSTRUCTION_CLUSTER_BARRIER_WAITE">
+<span id="_CPPv3N23Sanitizer_InstructionId42SANITIZER_INSTRUCTION_CLUSTER_BARRIER_WAITE"></span><span id="_CPPv2N23Sanitizer_InstructionId42SANITIZER_INSTRUCTION_CLUSTER_BARRIER_WAITE"></span><span class="target" id="group__sanitizer__patching__api_1gga25af2e64f4c5e2a4e012edb4bb991dcfad555a47beed4559a95e78a07b8840bb4"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_INSTRUCTION_CLUSTER_BARRIER_WAIT</span></span></span><a class="headerlink" href="#_CPPv4N23Sanitizer_InstructionId42SANITIZER_INSTRUCTION_CLUSTER_BARRIER_WAITE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Cluster barrier wait instruction. </p>
+<p>The type of the callback must be SanitizerCallbackClusterBarrierWait. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N23Sanitizer_InstructionId41SANITIZER_INSTRUCTION_WARPGROUP_MMA_ASYNCE">
+<span id="_CPPv3N23Sanitizer_InstructionId41SANITIZER_INSTRUCTION_WARPGROUP_MMA_ASYNCE"></span><span id="_CPPv2N23Sanitizer_InstructionId41SANITIZER_INSTRUCTION_WARPGROUP_MMA_ASYNCE"></span><span class="target" id="group__sanitizer__patching__api_1gga25af2e64f4c5e2a4e012edb4bb991dcfa80005ea0a333907b8d13bf0fa0ee72e8"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_INSTRUCTION_WARPGROUP_MMA_ASYNC</span></span></span><a class="headerlink" href="#_CPPv4N23Sanitizer_InstructionId41SANITIZER_INSTRUCTION_WARPGROUP_MMA_ASYNCE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Warpgroup aligned async MMA instruction. </p>
+<p>The type of the callback must be SanitizerCallbackWarpgroupMMAAsync. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N23Sanitizer_InstructionId42SANITIZER_INSTRUCTION_WARPGROUP_WAIT_GROUPE">
+<span id="_CPPv3N23Sanitizer_InstructionId42SANITIZER_INSTRUCTION_WARPGROUP_WAIT_GROUPE"></span><span id="_CPPv2N23Sanitizer_InstructionId42SANITIZER_INSTRUCTION_WARPGROUP_WAIT_GROUPE"></span><span class="target" id="group__sanitizer__patching__api_1gga25af2e64f4c5e2a4e012edb4bb991dcfac2804c794076735eac139081030520f6"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_INSTRUCTION_WARPGROUP_WAIT_GROUP</span></span></span><a class="headerlink" href="#_CPPv4N23Sanitizer_InstructionId42SANITIZER_INSTRUCTION_WARPGROUP_WAIT_GROUPE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Warpgroup wait MMA group instruction. </p>
+<p>The type of the callback must be SanitizerCallbackWarpgroupWaitGroup. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N23Sanitizer_InstructionId37SANITIZER_INSTRUCTION_WARPGROUP_FENCEE">
+<span id="_CPPv3N23Sanitizer_InstructionId37SANITIZER_INSTRUCTION_WARPGROUP_FENCEE"></span><span id="_CPPv2N23Sanitizer_InstructionId37SANITIZER_INSTRUCTION_WARPGROUP_FENCEE"></span><span class="target" id="group__sanitizer__patching__api_1gga25af2e64f4c5e2a4e012edb4bb991dcfa2c32690ce36b108e2914b3f6b9a9c961"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_INSTRUCTION_WARPGROUP_FENCE</span></span></span><a class="headerlink" href="#_CPPv4N23Sanitizer_InstructionId37SANITIZER_INSTRUCTION_WARPGROUP_FENCEE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Warpgroup fence instruction. </p>
+<p>The type of the callback must be SanitizerCallbackWarpgroupFence. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N23Sanitizer_InstructionId33SANITIZER_INSTRUCTION_ASYNC_STOREE">
+<span id="_CPPv3N23Sanitizer_InstructionId33SANITIZER_INSTRUCTION_ASYNC_STOREE"></span><span id="_CPPv2N23Sanitizer_InstructionId33SANITIZER_INSTRUCTION_ASYNC_STOREE"></span><span class="target" id="group__sanitizer__patching__api_1gga25af2e64f4c5e2a4e012edb4bb991dcfa6e44221a867b6dce88ea436da3f6d55c"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_INSTRUCTION_ASYNC_STORE</span></span></span><a class="headerlink" href="#_CPPv4N23Sanitizer_InstructionId33SANITIZER_INSTRUCTION_ASYNC_STOREE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Asynchronous store instruction. </p>
+<p>The type of the callback must be SanitizerCallbackAsyncStore. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N23Sanitizer_InstructionId37SANITIZER_INSTRUCTION_ASYNC_REDUCTIONE">
+<span id="_CPPv3N23Sanitizer_InstructionId37SANITIZER_INSTRUCTION_ASYNC_REDUCTIONE"></span><span id="_CPPv2N23Sanitizer_InstructionId37SANITIZER_INSTRUCTION_ASYNC_REDUCTIONE"></span><span class="target" id="group__sanitizer__patching__api_1gga25af2e64f4c5e2a4e012edb4bb991dcfa872cf7045f0b1e986a316522e61e44c6"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_INSTRUCTION_ASYNC_REDUCTION</span></span></span><a class="headerlink" href="#_CPPv4N23Sanitizer_InstructionId37SANITIZER_INSTRUCTION_ASYNC_REDUCTIONE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Asynchronous reduction instruction. </p>
+<p>The type of the callback must be SanitizerCallbackAsyncReduction. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N23Sanitizer_InstructionId44SANITIZER_INSTRUCTION_SET_SHARED_MEMORY_SIZEE">
+<span id="_CPPv3N23Sanitizer_InstructionId44SANITIZER_INSTRUCTION_SET_SHARED_MEMORY_SIZEE"></span><span id="_CPPv2N23Sanitizer_InstructionId44SANITIZER_INSTRUCTION_SET_SHARED_MEMORY_SIZEE"></span><span class="target" id="group__sanitizer__patching__api_1gga25af2e64f4c5e2a4e012edb4bb991dcfa4c0769d01a6e4dfc9711435b158fd56f"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_INSTRUCTION_SET_SHARED_MEMORY_SIZE</span></span></span><a class="headerlink" href="#_CPPv4N23Sanitizer_InstructionId44SANITIZER_INSTRUCTION_SET_SHARED_MEMORY_SIZEE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Set the shared memory size allocated to a block instruction. </p>
+<p>The type of the callback must be SanitizerCallbackSetSmemSize. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N23Sanitizer_InstructionId37SANITIZER_INSTRUCTION_BARRIER_RELEASEE">
+<span id="_CPPv3N23Sanitizer_InstructionId37SANITIZER_INSTRUCTION_BARRIER_RELEASEE"></span><span id="_CPPv2N23Sanitizer_InstructionId37SANITIZER_INSTRUCTION_BARRIER_RELEASEE"></span><span class="target" id="group__sanitizer__patching__api_1gga25af2e64f4c5e2a4e012edb4bb991dcfa54b1d57b6f62ef1ad0cddc80a0508959"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_INSTRUCTION_BARRIER_RELEASE</span></span></span><a class="headerlink" href="#_CPPv4N23Sanitizer_InstructionId37SANITIZER_INSTRUCTION_BARRIER_RELEASEE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Barrier after it is released. </p>
+<p>The type of the callback must be SanitizerCallbackBarrier. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N23Sanitizer_InstructionId48SANITIZER_INSTRUCTION_BULK_COPY_GLOBAL_TO_SHAREDE">
+<span id="_CPPv3N23Sanitizer_InstructionId48SANITIZER_INSTRUCTION_BULK_COPY_GLOBAL_TO_SHAREDE"></span><span id="_CPPv2N23Sanitizer_InstructionId48SANITIZER_INSTRUCTION_BULK_COPY_GLOBAL_TO_SHAREDE"></span><span class="target" id="group__sanitizer__patching__api_1gga25af2e64f4c5e2a4e012edb4bb991dcfa13dc2a13cb123ef3de441d5921a79861"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_INSTRUCTION_BULK_COPY_GLOBAL_TO_SHARED</span></span></span><a class="headerlink" href="#_CPPv4N23Sanitizer_InstructionId48SANITIZER_INSTRUCTION_BULK_COPY_GLOBAL_TO_SHAREDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Bulk copy instruction from global to shared memory. </p>
+<p>The type of the callback must be SanitizerCallbackBulkCopyGlobalToShared. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N23Sanitizer_InstructionId31SANITIZER_INSTRUCTION_FORCE_INTE">
+<span id="_CPPv3N23Sanitizer_InstructionId31SANITIZER_INSTRUCTION_FORCE_INTE"></span><span id="_CPPv2N23Sanitizer_InstructionId31SANITIZER_INSTRUCTION_FORCE_INTE"></span><span class="target" id="group__sanitizer__patching__api_1gga25af2e64f4c5e2a4e012edb4bb991dcfa7e0adfc23877468dc5808416f8c2f6eb"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_INSTRUCTION_FORCE_INT</span></span></span><a class="headerlink" href="#_CPPv4N23Sanitizer_InstructionId31SANITIZER_INSTRUCTION_FORCE_INTE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv432Sanitizer_WarpgroupMMAAsyncFlags">
+<span id="_CPPv332Sanitizer_WarpgroupMMAAsyncFlags"></span><span id="_CPPv232Sanitizer_WarpgroupMMAAsyncFlags"></span><span class="target" id="group__sanitizer__patching__api_1gacec4a303dd18b91d32ba1bcabf7296e9"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Sanitizer_WarpgroupMMAAsyncFlags</span></span></span><a class="headerlink" href="#_CPPv432Sanitizer_WarpgroupMMAAsyncFlags" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Flags describing a warpgroup aligned MMA async. </p>
+<p>Flags describing a warpgroup aligned MMA async. These values are to be or-combined in the value of <strong>flags</strong> for a SanitizerCallbackWarpgroupMMAAsync callback. </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N32Sanitizer_WarpgroupMMAAsyncFlags39SANITIZER_WARPGROUP_MMA_ASYNC_FLAG_NONEE">
+<span id="_CPPv3N32Sanitizer_WarpgroupMMAAsyncFlags39SANITIZER_WARPGROUP_MMA_ASYNC_FLAG_NONEE"></span><span id="_CPPv2N32Sanitizer_WarpgroupMMAAsyncFlags39SANITIZER_WARPGROUP_MMA_ASYNC_FLAG_NONEE"></span><span class="target" id="group__sanitizer__patching__api_1ggacec4a303dd18b91d32ba1bcabf7296e9a7df769f65d0360d5616acd1cd4021f66"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_WARPGROUP_MMA_ASYNC_FLAG_NONE</span></span></span><a class="headerlink" href="#_CPPv4N32Sanitizer_WarpgroupMMAAsyncFlags39SANITIZER_WARPGROUP_MMA_ASYNC_FLAG_NONEE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Empty flag. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N32Sanitizer_WarpgroupMMAAsyncFlags47SANITIZER_WARPGROUP_MMA_ASYNC_FLAG_COMMIT_GROUPE">
+<span id="_CPPv3N32Sanitizer_WarpgroupMMAAsyncFlags47SANITIZER_WARPGROUP_MMA_ASYNC_FLAG_COMMIT_GROUPE"></span><span id="_CPPv2N32Sanitizer_WarpgroupMMAAsyncFlags47SANITIZER_WARPGROUP_MMA_ASYNC_FLAG_COMMIT_GROUPE"></span><span class="target" id="group__sanitizer__patching__api_1ggacec4a303dd18b91d32ba1bcabf7296e9a00d980aadfbc12fabe810564871a1edc"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_WARPGROUP_MMA_ASYNC_FLAG_COMMIT_GROUP</span></span></span><a class="headerlink" href="#_CPPv4N32Sanitizer_WarpgroupMMAAsyncFlags47SANITIZER_WARPGROUP_MMA_ASYNC_FLAG_COMMIT_GROUPE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Specifies that the MMA async delimits a MMA async group of which it is the last instruction. </p>
+<p>Please refer to the PTX documentation for wgmma_async.commit_group for more details. This property is valid even if the warpMask is zero. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N32Sanitizer_WarpgroupMMAAsyncFlags44SANITIZER_WARPGROUP_MMA_ASYNC_FLAG_FORCE_INTE">
+<span id="_CPPv3N32Sanitizer_WarpgroupMMAAsyncFlags44SANITIZER_WARPGROUP_MMA_ASYNC_FLAG_FORCE_INTE"></span><span id="_CPPv2N32Sanitizer_WarpgroupMMAAsyncFlags44SANITIZER_WARPGROUP_MMA_ASYNC_FLAG_FORCE_INTE"></span><span class="target" id="group__sanitizer__patching__api_1ggacec4a303dd18b91d32ba1bcabf7296e9a353c6c19de377d35ee18fd5c0f88eab8"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SANITIZER_WARPGROUP_MMA_ASYNC_FLAG_FORCE_INT</span></span></span><a class="headerlink" href="#_CPPv4N32Sanitizer_WarpgroupMMAAsyncFlags44SANITIZER_WARPGROUP_MMA_ASYNC_FLAG_FORCE_INTE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline"></a></h2>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv419sanitizerAddPatchesPKv9CUcontext">
+<span id="_CPPv319sanitizerAddPatchesPKv9CUcontext"></span><span id="_CPPv219sanitizerAddPatchesPKv9CUcontext"></span><span id="sanitizerAddPatches__voidCP.CUcontext"></span><span class="target" id="group__sanitizer__patching__api_1ga9c3e7ff615f89534d674989679f2f0f5"></span><a class="reference internal" href="group__SANITIZER__RESULT__API.html#_CPPv415SanitizerResult" title="SanitizerResult"><span class="n"><span class="pre">SanitizerResult</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sanitizerAddPatches</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">image</span></span>, <span class="n"><span class="pre">CUcontext</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">ctx</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv419sanitizerAddPatchesPKv9CUcontext" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Load a module containing patches that can be used by the patching API. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Thread-safety</strong>: an API user must serialize access to sanitizerAddPatchesFromFile, sanitizerAddPatches, sanitizerPatchInstructions, and sanitizerPatchModule. For example if sanitizerAddPatches(image) and sanitizerPatchInstruction(*, *, cbName) are called concurrently and cbName is intended to be found in the loaded image, the results are undefined.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The patches loaded are only valid for the specified CUDA context.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>image</strong> – Pointer to module data to load. This API supports the same module formats as the cuModuleLoadData and cuModuleLoadFatBinary functions from the CUDA driver API. </p></li>
+<li><p><strong>ctx</strong> – CUDA context in which to load the patches. If ctx is NULL, the current context will be used.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return values</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>SANITIZER_SUCCESS</strong> – on success </p></li>
+<li><p><strong>SANITIZER_ERROR_NOT_INITIALIZED</strong> – if unable to initialize the sanitizer </p></li>
+<li><p><strong>SANITIZER_ERROR_INVALID_PARAMETER</strong> – if <code class="docutils literal notranslate"><span class="pre">image</span></code> does not point to a valid CUDA module. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv427sanitizerAddPatchesFromFilePKc9CUcontext">
+<span id="_CPPv327sanitizerAddPatchesFromFilePKc9CUcontext"></span><span id="_CPPv227sanitizerAddPatchesFromFilePKc9CUcontext"></span><span id="sanitizerAddPatchesFromFile__cCP.CUcontext"></span><span class="target" id="group__sanitizer__patching__api_1ga1dd8a6a6700a156fabb0f96dba61dd97"></span><a class="reference internal" href="group__SANITIZER__RESULT__API.html#_CPPv415SanitizerResult" title="SanitizerResult"><span class="n"><span class="pre">SanitizerResult</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sanitizerAddPatchesFromFile</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">filename</span></span>, <span class="n"><span class="pre">CUcontext</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">ctx</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv427sanitizerAddPatchesFromFilePKc9CUcontext" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Load a module containing patches that can be used by the patching API. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Thread-safety</strong>: an API user must serialize access to sanitizerAddPatchesFromFile, sanitizerAddPatches, sanitizerPatchInstructions, and sanitizerPatchModule. For example if sanitizerAddPatchesFromFile(filename) and sanitizerPatchInstruction(*, *, cbName) are called concurrently and cbName is intended to be found in the loaded module, the results are undefined.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The patches loaded are only valid for the specified CUDA context.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filename</strong> – Path to the module file. This API supports the same module formats as the cuModuleLoad function from the CUDA driver API. </p></li>
+<li><p><strong>ctx</strong> – CUDA context in which to load the patches. If ctx is NULL, the current context will be used.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return values</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>SANITIZER_SUCCESS</strong> – on success </p></li>
+<li><p><strong>SANITIZER_ERROR_NOT_INITIALIZED</strong> – if unable to initialize the sanitizer </p></li>
+<li><p><strong>SANITIZER_ERROR_INVALID_PARAMETER</strong> – if <code class="docutils literal notranslate"><span class="pre">filename</span></code> is not a path to a valid CUDA module. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv429sanitizerGetCallbackPcAndSize9CUcontextPKcP8uint64_tP8uint64_t">
+<span id="_CPPv329sanitizerGetCallbackPcAndSize9CUcontextPKcP8uint64_tP8uint64_t"></span><span id="_CPPv229sanitizerGetCallbackPcAndSize9CUcontextPKcP8uint64_tP8uint64_t"></span><span id="sanitizerGetCallbackPcAndSize__CUcontext.cCP.uint64_tP.uint64_tP"></span><span class="target" id="group__sanitizer__patching__api_1gab14ad83bbb1b53e433b297a71dc9add4"></span><a class="reference internal" href="group__SANITIZER__RESULT__API.html#_CPPv415SanitizerResult" title="SanitizerResult"><span class="n"><span class="pre">SanitizerResult</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sanitizerGetCallbackPcAndSize</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">CUcontext</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">ctx</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">deviceCallbackName</span></span>, <span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">pc</span></span>, <span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">size</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv429sanitizerGetCallbackPcAndSize9CUcontextPKcP8uint64_tP8uint64_t" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Get PC and size of a device callback. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ctx</strong> – <strong>[in]</strong> CUDA context in which the patches were loaded. If ctx is NULL, the current context will be used. </p></li>
+<li><p><strong>deviceCallbackName</strong> – <strong>[in]</strong> device function callback name </p></li>
+<li><p><strong>pc</strong> – <strong>[out]</strong> Callback PC returned </p></li>
+<li><p><strong>size</strong> – <strong>[out]</strong> Callback size returned</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return values</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>SANITIZER_SUCCESS</strong> – on success </p></li>
+<li><p><strong>SANITIZER_ERROR_INVALID_PARAMETER</strong> – if <code class="docutils literal notranslate"><span class="pre">deviceCallbackName</span></code> function cannot be located, if pc is NULL or if size is NULL. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv432sanitizerGetFunctionLoadedStatus10CUfunctionP30Sanitizer_FunctionLoadedStatus">
+<span id="_CPPv332sanitizerGetFunctionLoadedStatus10CUfunctionP30Sanitizer_FunctionLoadedStatus"></span><span id="_CPPv232sanitizerGetFunctionLoadedStatus10CUfunctionP30Sanitizer_FunctionLoadedStatus"></span><span id="sanitizerGetFunctionLoadedStatus__CUfunction.Sanitizer_FunctionLoadedStatusP"></span><span class="target" id="group__sanitizer__patching__api_1ga15652426721721917c39e3f26f50bf11"></span><a class="reference internal" href="group__SANITIZER__RESULT__API.html#_CPPv415SanitizerResult" title="SanitizerResult"><span class="n"><span class="pre">SanitizerResult</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sanitizerGetFunctionLoadedStatus</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">CUfunction</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">func</span></span>, <a class="reference internal" href="#_CPPv430Sanitizer_FunctionLoadedStatus" title="Sanitizer_FunctionLoadedStatus"><span class="n"><span class="pre">Sanitizer_FunctionLoadedStatus</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">loadingStatus</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv432sanitizerGetFunctionLoadedStatus10CUfunctionP30Sanitizer_FunctionLoadedStatus" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Get the loading status of a function. </p>
+<p>Requires a driver version &gt;=515.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>func</strong> – <strong>[in]</strong> CUDA function for which the loading status is queried. </p></li>
+<li><p><strong>loadingStatus</strong> – <strong>[out]</strong> Loading status returned</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return values</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>SANITIZER_SUCCESS</strong> – on success </p></li>
+<li><p><strong>SANITIZER_ERROR_INVALID_PARAMETER</strong> – if <code class="docutils literal notranslate"><span class="pre">func</span></code> is NULL or if loadingStatus is NULL. </p></li>
+<li><p><strong>SANITIZER_ERROR_NOT_SUPPORTED</strong> – if the loading status cannot be queried with this driver version. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv429sanitizerGetFunctionPcAndSize8CUmodulePKcP8uint64_tP8uint64_t">
+<span id="_CPPv329sanitizerGetFunctionPcAndSize8CUmodulePKcP8uint64_tP8uint64_t"></span><span id="_CPPv229sanitizerGetFunctionPcAndSize8CUmodulePKcP8uint64_tP8uint64_t"></span><span id="sanitizerGetFunctionPcAndSize__CUmodule.cCP.uint64_tP.uint64_tP"></span><span class="target" id="group__sanitizer__patching__api_1gae65131f0c6b17318db16e618501e761f"></span><a class="reference internal" href="group__SANITIZER__RESULT__API.html#_CPPv415SanitizerResult" title="SanitizerResult"><span class="n"><span class="pre">SanitizerResult</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sanitizerGetFunctionPcAndSize</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">CUmodule</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">module</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">functionName</span></span>, <span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">pc</span></span>, <span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">size</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv429sanitizerGetFunctionPcAndSize8CUmodulePKcP8uint64_tP8uint64_t" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Get PC and size of a CUDA function. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>module</strong> – <strong>[in]</strong> CUDA module containing the function </p></li>
+<li><p><strong>deviceCallbackName</strong> – <strong>[in]</strong> CUDA function name </p></li>
+<li><p><strong>pc</strong> – <strong>[out]</strong> Function start program counter (PC) returned </p></li>
+<li><p><strong>size</strong> – <strong>[out]</strong> Function size in bytes returned</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return values</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>SANITIZER_SUCCESS</strong> – on success </p></li>
+<li><p><strong>SANITIZER_ERROR_INVALID_PARAMETER</strong> – if <code class="docutils literal notranslate"><span class="pre">functionName</span></code> function cannot be located, if pc is NULL or if size is NULL. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv426sanitizerPatchInstructionsK23Sanitizer_InstructionId8CUmodulePKc">
+<span id="_CPPv326sanitizerPatchInstructionsK23Sanitizer_InstructionId8CUmodulePKc"></span><span id="_CPPv226sanitizerPatchInstructionsK23Sanitizer_InstructionId8CUmodulePKc"></span><span id="sanitizerPatchInstructions__Sanitizer_InstructionIdC.CUmodule.cCP"></span><span class="target" id="group__sanitizer__patching__api_1gaaa4c241c599f34d0010c2b3a9bc64678"></span><a class="reference internal" href="group__SANITIZER__RESULT__API.html#_CPPv415SanitizerResult" title="SanitizerResult"><span class="n"><span class="pre">SanitizerResult</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sanitizerPatchInstructions</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv423Sanitizer_InstructionId" title="Sanitizer_InstructionId"><span class="n"><span class="pre">Sanitizer_InstructionId</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">instructionId</span></span>, <span class="n"><span class="pre">CUmodule</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">module</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">deviceCallbackName</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv426sanitizerPatchInstructionsK23Sanitizer_InstructionId8CUmodulePKc" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Set instrumentation points and patches to be applied in a module. </p>
+<p>Mark that all instrumentation points matching instructionId are to be patched in order to call the device function identified by deviceCallbackName. It is up to the API client to ensure that this device callback exists and match the correct callback format for this instrumentation point. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Thread-safety</strong>: an API user must serialize access to sanitizerAddPatchesFromFile, sanitizerAddPatches, sanitizerPatchInstructions, and sanitizerPatchModule. For example if sanitizerAddPatches(fileName) and sanitizerPatchInstruction(*, *, cbName) are called concurrently and cbName is intended to be found in the loaded module, the results are undefined.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>instructionId</strong> – Instrumentation point for which to insert patches </p></li>
+<li><p><strong>module</strong> – CUDA module to instrument </p></li>
+<li><p><strong>deviceCallbackName</strong> – Name of the device function callback that the inserted patch will call at the instrumented points. This function is expected to be found in code previously loaded by sanitizerAddPatchesFromFile or sanitizerAddPatches.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return values</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>SANITIZER_SUCCESS</strong> – on success </p></li>
+<li><p><strong>SANITIZER_ERROR_NOT_INITIALIZED</strong> – if unable to initialize the sanitizer </p></li>
+<li><p><strong>SANITIZER_ERROR_INVALID_PARAMETER</strong> – if <code class="docutils literal notranslate"><span class="pre">module</span></code> is not a CUDA module or if <code class="docutils literal notranslate"><span class="pre">deviceCallbackName</span></code> function cannot be located. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv420sanitizerPatchModule8CUmodule">
+<span id="_CPPv320sanitizerPatchModule8CUmodule"></span><span id="_CPPv220sanitizerPatchModule8CUmodule"></span><span id="sanitizerPatchModule__CUmodule"></span><span class="target" id="group__sanitizer__patching__api_1gaacc3ec25dd89f46c9bfbc3ae4ee94c92"></span><a class="reference internal" href="group__SANITIZER__RESULT__API.html#_CPPv415SanitizerResult" title="SanitizerResult"><span class="n"><span class="pre">SanitizerResult</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sanitizerPatchModule</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">CUmodule</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">module</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv420sanitizerPatchModule8CUmodule" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Perform the actual instrumentation of a module. </p>
+<p>Perform the instrumentation of a CUDA module based on previous calls to sanitizerPatchInstructions. This function also specifies the device memory buffer to be passed in as userdata to all callback functions. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Thread-safety</strong>: an API user must serialize access to sanitizerAddPatchesFromFile, sanitizerAddPatches, sanitizerPatchInstructions, and sanitizerPatchModule. For example if sanitizerPatchModule(mod, *) and sanitizerPatchInstruction(*, mod, *) are called concurrently, the results are undefined.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>module</strong> – CUDA module to instrument</p>
+</dd>
+<dt class="field-even">Return values</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>SANITIZER_SUCCESS</strong> – on success </p></li>
+<li><p><strong>SANITIZER_ERROR_INVALID_PARAMETER</strong> – if <code class="docutils literal notranslate"><span class="pre">module</span></code> is not a CUDA module </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv424sanitizerSetCallbackData10CUfunctionPKv">
+<span id="_CPPv324sanitizerSetCallbackData10CUfunctionPKv"></span><span id="_CPPv224sanitizerSetCallbackData10CUfunctionPKv"></span><span id="sanitizerSetCallbackData__CUfunction.voidCP"></span><span class="target" id="group__sanitizer__patching__api_1gad7d6a3be98248bcf8b75376fb63f4928"></span><a class="reference internal" href="group__SANITIZER__RESULT__API.html#_CPPv415SanitizerResult" title="SanitizerResult"><span class="n"><span class="pre">SanitizerResult</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sanitizerSetCallbackData</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">CUfunction</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">kernel</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">userdata</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv424sanitizerSetCallbackData10CUfunctionPKv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Specifies the user data pointer for callbacks. </p>
+<p>Mark all subsequent launches of <code class="docutils literal notranslate"><span class="pre">kernel</span></code> to use <code class="docutils literal notranslate"><span class="pre">userdata</span></code> pointer as the device memory buffer to pass in to callback functions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>kernel</strong> – CUDA function to link to user data. Callbacks in subsequent launches on this kernel will use <code class="docutils literal notranslate"><span class="pre">userdata</span></code> as callback data. </p></li>
+<li><p><strong>userdata</strong> – Device memory buffer. This data will be passed to callback functions via the <code class="docutils literal notranslate"><span class="pre">userdata</span></code> parameter.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return values</dt>
+<dd class="field-even"><p><strong>SANITIZER_SUCCESS</strong> – on success </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv427sanitizerSetDeviceGraphData11CUgraphExec22Sanitizer_StreamHandlePKv">
+<span id="_CPPv327sanitizerSetDeviceGraphData11CUgraphExec22Sanitizer_StreamHandlePKv"></span><span id="_CPPv227sanitizerSetDeviceGraphData11CUgraphExec22Sanitizer_StreamHandlePKv"></span><span id="sanitizerSetDeviceGraphData__CUgraphExec.Sanitizer_StreamHandle.voidCP"></span><span class="target" id="group__sanitizer__patching__api_1ga4785e22e74662e75a8540424ca6c8306"></span><a class="reference internal" href="group__SANITIZER__RESULT__API.html#_CPPv415SanitizerResult" title="SanitizerResult"><span class="n"><span class="pre">SanitizerResult</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sanitizerSetDeviceGraphData</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">CUgraphExec</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">graphExec</span></span>, <a class="reference internal" href="group__SANITIZER__STREAM__API.html#_CPPv422Sanitizer_StreamHandle" title="Sanitizer_StreamHandle"><span class="n"><span class="pre">Sanitizer_StreamHandle</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">stream</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">userdata</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv427sanitizerSetDeviceGraphData11CUgraphExec22Sanitizer_StreamHandlePKv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Specifies the user data pointer accessible from callbacks in the device-launched graphs launched by the specified host-launched graphExec. </p>
+<p>Mark all subsequent launch of <code class="docutils literal notranslate"><span class="pre">graphExec</span></code> to make available <code class="docutils literal notranslate"><span class="pre">userdata</span></code> in device callbacks from device-launched graphs. <code class="docutils literal notranslate"><span class="pre">userdata</span></code> will not be set in the callback userdata parameter but must be accessed through another mean instead. Please refer to the Sanitizer API reference manual. This function is only available if the driver version is 535 or newer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>graphExec</strong> – CUDA graphExec that will launch CUDA graphs from the device. </p></li>
+<li><p><strong>stream</strong> – CUDA stream associated with the stream launch. </p></li>
+<li><p><strong>userdata</strong> – Device memory buffer.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return values</dt>
+<dd class="field-even"><p><strong>SANITIZER_SUCCESS</strong> – on success </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv430sanitizerSetLaunchCallbackData22Sanitizer_LaunchHandle10CUfunction22Sanitizer_StreamHandlePKv">
+<span id="_CPPv330sanitizerSetLaunchCallbackData22Sanitizer_LaunchHandle10CUfunction22Sanitizer_StreamHandlePKv"></span><span id="_CPPv230sanitizerSetLaunchCallbackData22Sanitizer_LaunchHandle10CUfunction22Sanitizer_StreamHandlePKv"></span><span id="sanitizerSetLaunchCallbackData__Sanitizer_LaunchHandle.CUfunction.Sanitizer_StreamHandle.voidCP"></span><span class="target" id="group__sanitizer__patching__api_1ga20e623843fd96ae221e7225d5e5369b9"></span><a class="reference internal" href="group__SANITIZER__RESULT__API.html#_CPPv415SanitizerResult" title="SanitizerResult"><span class="n"><span class="pre">SanitizerResult</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sanitizerSetLaunchCallbackData</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv422Sanitizer_LaunchHandle" title="Sanitizer_LaunchHandle"><span class="n"><span class="pre">Sanitizer_LaunchHandle</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">launch</span></span>, <span class="n"><span class="pre">CUfunction</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">kernel</span></span>, <a class="reference internal" href="group__SANITIZER__STREAM__API.html#_CPPv422Sanitizer_StreamHandle" title="Sanitizer_StreamHandle"><span class="n"><span class="pre">Sanitizer_StreamHandle</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">stream</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">userdata</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv430sanitizerSetLaunchCallbackData22Sanitizer_LaunchHandle10CUfunction22Sanitizer_StreamHandlePKv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Specifies the user data pointer for callbacks. </p>
+<p>Mark <code class="docutils literal notranslate"><span class="pre">launch</span></code> to use <code class="docutils literal notranslate"><span class="pre">userdata</span></code> pointer as the device memory buffer to pass in to callback functions. This function is only available if the driver version is 455 or newer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>launch</strong> – Kernel launch to link to user data. Callbacks in this kernel launch will use <code class="docutils literal notranslate"><span class="pre">userdata</span></code> as callback data. </p></li>
+<li><p><strong>kernel</strong> – CUDA function associated with the kernel launch. </p></li>
+<li><p><strong>stream</strong> – CUDA stream associated with the stream launch. </p></li>
+<li><p><strong>userdata</strong> – Device memory buffer. This data will be passed to callback functions via the <code class="docutils literal notranslate"><span class="pre">userdata</span></code> parameter.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return values</dt>
+<dd class="field-even"><p><strong>SANITIZER_SUCCESS</strong> – on success </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv422sanitizerUnpatchModule8CUmodule">
+<span id="_CPPv322sanitizerUnpatchModule8CUmodule"></span><span id="_CPPv222sanitizerUnpatchModule8CUmodule"></span><span id="sanitizerUnpatchModule__CUmodule"></span><span class="target" id="group__sanitizer__patching__api_1ga384d2828ad1eb631eff4df8cbbbcba43"></span><a class="reference internal" href="group__SANITIZER__RESULT__API.html#_CPPv415SanitizerResult" title="SanitizerResult"><span class="n"><span class="pre">SanitizerResult</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sanitizerUnpatchModule</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">CUmodule</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">module</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv422sanitizerUnpatchModule8CUmodule" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Remove existing instrumentation of a module. </p>
+<p>Remove any instrumentation of a CUDA module performed by previous calls to sanitizerPatchModule. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Thread-safety</strong>: an API user must serialize access to sanitizerPatchModule and sanitizerUnpatchModule on the same module. For example, if sanitizerPatchModule(mod) and sanitizerUnpatchModule(mod) are called concurrently, the results are undefined.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>module</strong> – CUDA module on which to remove instrumentation</p>
+</dd>
+<dt class="field-even">Return values</dt>
+<dd class="field-even"><p><strong>SANITIZER_SUCCESS</strong> – on success </p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="typedefs">
+<h2>Typedefs<a class="headerlink" href="#typedefs" title="Permalink to this headline"></a></h2>
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv431SanitizerCallbackAsyncReduction">
+<span id="_CPPv331SanitizerCallbackAsyncReduction"></span><span id="_CPPv231SanitizerCallbackAsyncReduction"></span><span id="SanitizerCallbackAsyncReduction"></span><span class="target" id="group__sanitizer__patching__api_1gad620cec6f0d41934acbe5f1ad9262bd9"></span><span class="k"><span class="pre">typedef</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv420SanitizerPatchResult" title="SanitizerPatchResult"><span class="n"><span class="pre">SanitizerPatchResult</span></span></a><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">SanitizerCallbackAsyncReduction</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">userdata</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="n"><span class="pre">pc</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">address</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">mbarAddress</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">accessSize</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#_CPPv431SanitizerCallbackAsyncReduction" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Function type for an asynchronous reduction operation on shared memory. </p>
+<p>This can be generated by a red.async PTX instruction</p>
+<p><code class="docutils literal notranslate"><span class="pre">userdata</span></code> is a pointer to user data. See <a class="reference internal" href="#group__sanitizer__patching__api_1gaacc3ec25dd89f46c9bfbc3ae4ee94c92"><span class="std std-ref">sanitizerPatchModule</span></a>. <code class="docutils literal notranslate"><span class="pre">pc</span></code> is the program counter of the patched instruction. <code class="docutils literal notranslate"><span class="pre">address</span></code> is the destination address in shared memory. <code class="docutils literal notranslate"><span class="pre">mbarAddress</span></code> is the address of the mbarrier object. <code class="docutils literal notranslate"><span class="pre">accessSize</span></code> is the size of the access in bytes. Valid values are 4 and 8. </p>
+</dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv427SanitizerCallbackAsyncStore">
+<span id="_CPPv327SanitizerCallbackAsyncStore"></span><span id="_CPPv227SanitizerCallbackAsyncStore"></span><span id="SanitizerCallbackAsyncStore"></span><span class="target" id="group__sanitizer__patching__api_1ga504dcd9a3fffd84b14dd46ee751a9555"></span><span class="k"><span class="pre">typedef</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv420SanitizerPatchResult" title="SanitizerPatchResult"><span class="n"><span class="pre">SanitizerPatchResult</span></span></a><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">SanitizerCallbackAsyncStore</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">userdata</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="n"><span class="pre">pc</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">address</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">mbarAddress</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">pNewValue</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">accessSize</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#_CPPv427SanitizerCallbackAsyncStore" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Function type for an asynchronous store operation on shared memory. </p>
+<p>This can be generated by a st.async PTX instruction</p>
+<p><code class="docutils literal notranslate"><span class="pre">userdata</span></code> is a pointer to user data. See <a class="reference internal" href="#group__sanitizer__patching__api_1gaacc3ec25dd89f46c9bfbc3ae4ee94c92"><span class="std std-ref">sanitizerPatchModule</span></a>. <code class="docutils literal notranslate"><span class="pre">pc</span></code> is the program counter of the patched instruction. <code class="docutils literal notranslate"><span class="pre">address</span></code> is the destination address in shared memory. <code class="docutils literal notranslate"><span class="pre">mbarAddress</span></code> is the address of the mbarrier object. <code class="docutils literal notranslate"><span class="pre">pNewValue</span></code> is a pointer to the new value being written. <code class="docutils literal notranslate"><span class="pre">accessSize</span></code> is the size of the access in bytes. Valid values are 4 and 8. </p>
+</dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv424SanitizerCallbackBarrier">
+<span id="_CPPv324SanitizerCallbackBarrier"></span><span id="_CPPv224SanitizerCallbackBarrier"></span><span id="SanitizerCallbackBarrier"></span><span class="target" id="group__sanitizer__patching__api_1gaa62d7a8432bc9e0844bcf742f9f9b011"></span><span class="k"><span class="pre">typedef</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv420SanitizerPatchResult" title="SanitizerPatchResult"><span class="n"><span class="pre">SanitizerPatchResult</span></span></a><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">SanitizerCallbackBarrier</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">userdata</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="n"><span class="pre">pc</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">barIndex</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">threadCount</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">flags</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#_CPPv424SanitizerCallbackBarrier" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Function type for a barrier callback. </p>
+<p><code class="docutils literal notranslate"><span class="pre">userdata</span></code> is a pointer to user data. See <a class="reference internal" href="#group__sanitizer__patching__api_1gaacc3ec25dd89f46c9bfbc3ae4ee94c92"><span class="std std-ref">sanitizerPatchModule</span></a> <code class="docutils literal notranslate"><span class="pre">pc</span></code> is the program counter of the patched instruction <code class="docutils literal notranslate"><span class="pre">barIndex</span></code> is the barrier index. <code class="docutils literal notranslate"><span class="pre">threadCount</span></code> is the number of expected threads (must be a multiple of the warp size). <code class="docutils literal notranslate"><span class="pre">flags</span></code> contains information about the barrier. See Sanitizer_BarrierFlags to interpret this value. 0 means that all threads are participating in the barrier. </p>
+</dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv427SanitizerCallbackBlockEnter">
+<span id="_CPPv327SanitizerCallbackBlockEnter"></span><span id="_CPPv227SanitizerCallbackBlockEnter"></span><span id="SanitizerCallbackBlockEnter"></span><span class="target" id="group__sanitizer__patching__api_1ga44dab03d6994ad49f52593d891899006"></span><span class="k"><span class="pre">typedef</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv420SanitizerPatchResult" title="SanitizerPatchResult"><span class="n"><span class="pre">SanitizerPatchResult</span></span></a><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">SanitizerCallbackBlockEnter</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">userdata</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="n"><span class="pre">pc</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#_CPPv427SanitizerCallbackBlockEnter" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Function type for a CUDA block enter callback. </p>
+<p><code class="docutils literal notranslate"><span class="pre">userdata</span></code> is a pointer to user data. See <a class="reference internal" href="#group__sanitizer__patching__api_1gaacc3ec25dd89f46c9bfbc3ae4ee94c92"><span class="std std-ref">sanitizerPatchModule</span></a> <code class="docutils literal notranslate"><span class="pre">pc</span></code> is the program counter of the entry point of the block </p>
+</dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv426SanitizerCallbackBlockExit">
+<span id="_CPPv326SanitizerCallbackBlockExit"></span><span id="_CPPv226SanitizerCallbackBlockExit"></span><span id="SanitizerCallbackBlockExit"></span><span class="target" id="group__sanitizer__patching__api_1gaa9a0bc3a199e07f75c2bfe62a37ffd69"></span><span class="k"><span class="pre">typedef</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv420SanitizerPatchResult" title="SanitizerPatchResult"><span class="n"><span class="pre">SanitizerPatchResult</span></span></a><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">SanitizerCallbackBlockExit</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">userdata</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="n"><span class="pre">pc</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#_CPPv426SanitizerCallbackBlockExit" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Function type for a CUDA block exit callback. </p>
+<p><code class="docutils literal notranslate"><span class="pre">userdata</span></code> is a pointer to user data. See <a class="reference internal" href="#group__sanitizer__patching__api_1gaacc3ec25dd89f46c9bfbc3ae4ee94c92"><span class="std std-ref">sanitizerPatchModule</span></a> <code class="docutils literal notranslate"><span class="pre">pc</span></code> is the program counter of the patched instruction </p>
+</dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv439SanitizerCallbackBulkCopyGlobalToShared">
+<span id="_CPPv339SanitizerCallbackBulkCopyGlobalToShared"></span><span id="_CPPv239SanitizerCallbackBulkCopyGlobalToShared"></span><span id="SanitizerCallbackBulkCopyGlobalToShared"></span><span class="target" id="group__sanitizer__patching__api_1ga630ec8ac87a8212539e2b8dc77b53bf1"></span><span class="k"><span class="pre">typedef</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv420SanitizerPatchResult" title="SanitizerPatchResult"><span class="n"><span class="pre">SanitizerPatchResult</span></span></a><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">SanitizerCallbackBulkCopyGlobalToShared</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">userdata</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="n"><span class="pre">pc</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="n"><span class="pre">src</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">dst</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">barrier</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">isMulticast</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#_CPPv439SanitizerCallbackBulkCopyGlobalToShared" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Function type for a async bulk copy from global to shared memory. </p>
+<p>This can be generated by a cp.async.bulk.shared::cluster.global instruction</p>
+<p><code class="docutils literal notranslate"><span class="pre">userdata</span></code> is a pointer to user data. See <a class="reference internal" href="#group__sanitizer__patching__api_1gaacc3ec25dd89f46c9bfbc3ae4ee94c92"><span class="std std-ref">sanitizerPatchModule</span></a>. <code class="docutils literal notranslate"><span class="pre">pc</span></code> is the program counter of the patched instruction. <code class="docutils literal notranslate"><span class="pre">dst</span></code> is the destination DSMEM address. <code class="docutils literal notranslate"><span class="pre">barrier</span></code> is the DSMEM address for the associated mbarrier completion mechanism <code class="docutils literal notranslate"><span class="pre">src</span></code> is the source global memory address <code class="docutils literal notranslate"><span class="pre">data</span></code> contains in bits 0:15 the number of 16 bytes blocks requested and in bits 16:31 the multicast mask <code class="docutils literal notranslate"><span class="pre">isMulticast</span></code> is a boolean value indicating if the operation is a multicast</p>
+<p>All the active threads in a warp have the same parameter values. </p>
+</dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv429SanitizerCallbackCacheControl">
+<span id="_CPPv329SanitizerCallbackCacheControl"></span><span id="_CPPv229SanitizerCallbackCacheControl"></span><span id="SanitizerCallbackCacheControl"></span><span class="target" id="group__sanitizer__patching__api_1gab88689ebe67ea8a61c07652b736ddec8"></span><span class="k"><span class="pre">typedef</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv420SanitizerPatchResult" title="SanitizerPatchResult"><span class="n"><span class="pre">SanitizerPatchResult</span></span></a><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">SanitizerCallbackCacheControl</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">userdata</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="n"><span class="pre">pc</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">address</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv437Sanitizer_CacheControlInstructionKind" title="Sanitizer_CacheControlInstructionKind"><span class="n"><span class="pre">Sanitizer_CacheControlInstructionKind</span></span></a><span class="w"> </span><span class="n"><span class="pre">kind</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#_CPPv429SanitizerCallbackCacheControl" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Function type for a cache control instruction callback. </p>
+<p><code class="docutils literal notranslate"><span class="pre">userdata</span></code> is a pointer to user data. See <a class="reference internal" href="#group__sanitizer__patching__api_1gaacc3ec25dd89f46c9bfbc3ae4ee94c92"><span class="std std-ref">sanitizerPatchModule</span></a> <code class="docutils literal notranslate"><span class="pre">pc</span></code> is the program counter of the patched instruction <code class="docutils literal notranslate"><span class="pre">address</span></code> is the address of the memory being controlled <code class="docutils literal notranslate"><span class="pre">kind</span></code> is the type of cache control. See <a class="reference internal" href="#group__sanitizer__patching__api_1gad3bcfc1a9d22465613ada149c757b5db"><span class="std std-ref">Sanitizer_CacheControlInstructionKind</span></a> </p>
+</dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv421SanitizerCallbackCall">
+<span id="_CPPv321SanitizerCallbackCall"></span><span id="_CPPv221SanitizerCallbackCall"></span><span id="SanitizerCallbackCall"></span><span class="target" id="group__sanitizer__patching__api_1ga5a5866bef614d94825c786a6c724c4b2"></span><span class="k"><span class="pre">typedef</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv420SanitizerPatchResult" title="SanitizerPatchResult"><span class="n"><span class="pre">SanitizerPatchResult</span></span></a><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">SanitizerCallbackCall</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">userdata</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="n"><span class="pre">pc</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="n"><span class="pre">targetPc</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">flags</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#_CPPv421SanitizerCallbackCall" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Function type for a function call callback. </p>
+<p><code class="docutils literal notranslate"><span class="pre">userdata</span></code> is a pointer to user data. See <a class="reference internal" href="#group__sanitizer__patching__api_1gaacc3ec25dd89f46c9bfbc3ae4ee94c92"><span class="std std-ref">sanitizerPatchModule</span></a> <code class="docutils literal notranslate"><span class="pre">pc</span></code> is the program counter of the patched instruction <code class="docutils literal notranslate"><span class="pre">targetPc</span></code> is the PC where the called function is located. <code class="docutils literal notranslate"><span class="pre">flags</span></code> contains information about the function call. </p>
+</dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv437SanitizerCallbackClusterBarrierArrive">
+<span id="_CPPv337SanitizerCallbackClusterBarrierArrive"></span><span id="_CPPv237SanitizerCallbackClusterBarrierArrive"></span><span id="SanitizerCallbackClusterBarrierArrive"></span><span class="target" id="group__sanitizer__patching__api_1ga1ab284f0f8fb79ec82330608d257f90f"></span><span class="k"><span class="pre">typedef</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv420SanitizerPatchResult" title="SanitizerPatchResult"><span class="n"><span class="pre">SanitizerPatchResult</span></span></a><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">SanitizerCallbackClusterBarrierArrive</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">userdata</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="n"><span class="pre">pc</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#_CPPv437SanitizerCallbackClusterBarrierArrive" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Function type for a cluster barrier arrive. </p>
+<p>Function type for a cluster barrier wait.</p>
+<p>This can be generated by a cg::this_cluster().sync() (C++ API), or a barrier.cluster.arrive (PTX API).</p>
+<p><code class="docutils literal notranslate"><span class="pre">userdata</span></code> is a pointer to user data. See <a class="reference internal" href="#group__sanitizer__patching__api_1gaacc3ec25dd89f46c9bfbc3ae4ee94c92"><span class="std std-ref">sanitizerPatchModule</span></a> <code class="docutils literal notranslate"><span class="pre">pc</span></code> is the program counter of the patched instruction</p>
+<p>This can be generated by a cg::this_cluster().sync() (C++ API), or a barrier.cluster.wait (PTX API).</p>
+<p><code class="docutils literal notranslate"><span class="pre">userdata</span></code> is a pointer to user data. See <a class="reference internal" href="#group__sanitizer__patching__api_1gaacc3ec25dd89f46c9bfbc3ae4ee94c92"><span class="std std-ref">sanitizerPatchModule</span></a> <code class="docutils literal notranslate"><span class="pre">pc</span></code> is the program counter of the patched instruction </p>
+</dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv428SanitizerCallbackCudaBarrier">
+<span id="_CPPv328SanitizerCallbackCudaBarrier"></span><span id="_CPPv228SanitizerCallbackCudaBarrier"></span><span id="SanitizerCallbackCudaBarrier"></span><span class="target" id="group__sanitizer__patching__api_1ga5a7ab381c778af25f8069064063fcc34"></span><span class="k"><span class="pre">typedef</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv420SanitizerPatchResult" title="SanitizerPatchResult"><span class="n"><span class="pre">SanitizerPatchResult</span></span></a><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">SanitizerCallbackCudaBarrier</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">userdata</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="n"><span class="pre">pc</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">barrier</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">kind</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#_CPPv428SanitizerCallbackCudaBarrier" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Function type for a CUDA Barrier action callback. </p>
+<p><code class="docutils literal notranslate"><span class="pre">userdata</span></code> is a pointer to user data. See <a class="reference internal" href="#group__sanitizer__patching__api_1gaacc3ec25dd89f46c9bfbc3ae4ee94c92"><span class="std std-ref">sanitizerPatchModule</span></a> <code class="docutils literal notranslate"><span class="pre">pc</span></code> is the program counter of the patched instruction <code class="docutils literal notranslate"><span class="pre">barrier</span></code> Barrier address which can be used as a unique identifier <code class="docutils literal notranslate"><span class="pre">kind</span></code> Barrier action type. See <a class="reference internal" href="#group__sanitizer__patching__api_1ga505b1abbfde6d1d66fba877f5ce9b5f3"><span class="std std-ref">Sanitizer_CudaBarrierInstructionKind</span></a> <code class="docutils literal notranslate"><span class="pre">data</span></code> Barrier data. This is specific to each action type, refer to <a class="reference internal" href="#group__sanitizer__patching__api_1ga505b1abbfde6d1d66fba877f5ce9b5f3"><span class="std std-ref">Sanitizer_CudaBarrierInstructionKind</span></a> </p>
+</dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv431SanitizerCallbackDeviceSideFree">
+<span id="_CPPv331SanitizerCallbackDeviceSideFree"></span><span id="_CPPv231SanitizerCallbackDeviceSideFree"></span><span id="SanitizerCallbackDeviceSideFree"></span><span class="target" id="group__sanitizer__patching__api_1ga130489e7e21fcdd5b8dc6382090d9e13"></span><span class="k"><span class="pre">typedef</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv420SanitizerPatchResult" title="SanitizerPatchResult"><span class="n"><span class="pre">SanitizerPatchResult</span></span></a><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">SanitizerCallbackDeviceSideFree</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">userdata</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="n"><span class="pre">pc</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">ptr</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#_CPPv431SanitizerCallbackDeviceSideFree" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Function type for a device-side free call. </p>
+<p><code class="docutils literal notranslate"><span class="pre">userdata</span></code> is a pointer to user data. See <a class="reference internal" href="#group__sanitizer__patching__api_1gaacc3ec25dd89f46c9bfbc3ae4ee94c92"><span class="std std-ref">sanitizerPatchModule</span></a> <code class="docutils literal notranslate"><span class="pre">pc</span></code> is the program counter of the patched instruction <code class="docutils literal notranslate"><span class="pre">ptr</span></code> is the pointer passed to device-side free. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is called prior to the actual call.</p>
+</div>
+</dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv433SanitizerCallbackDeviceSideMalloc">
+<span id="_CPPv333SanitizerCallbackDeviceSideMalloc"></span><span id="_CPPv233SanitizerCallbackDeviceSideMalloc"></span><span id="SanitizerCallbackDeviceSideMalloc"></span><span class="target" id="group__sanitizer__patching__api_1ga06bda752ce9da191c0c780fd2330b479"></span><span class="k"><span class="pre">typedef</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv420SanitizerPatchResult" title="SanitizerPatchResult"><span class="n"><span class="pre">SanitizerPatchResult</span></span></a><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">SanitizerCallbackDeviceSideMalloc</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">userdata</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="n"><span class="pre">pc</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">allocatedPtr</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="n"><span class="pre">allocatedSize</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#_CPPv433SanitizerCallbackDeviceSideMalloc" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Function type for a device-side malloc call. </p>
+<p><code class="docutils literal notranslate"><span class="pre">userdata</span></code> is a pointer to user data. See <a class="reference internal" href="#group__sanitizer__patching__api_1gaacc3ec25dd89f46c9bfbc3ae4ee94c92"><span class="std std-ref">sanitizerPatchModule</span></a> <code class="docutils literal notranslate"><span class="pre">pc</span></code> is the program counter of the patched instruction <code class="docutils literal notranslate"><span class="pre">allocatedPtr</span></code> is the pointer returned by device-side malloc <code class="docutils literal notranslate"><span class="pre">allocatedSize</span></code> is the size requested by the user to device-side malloc. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is called after the call has completed.</p>
+</div>
+</dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv435SanitizerCallbackMatrixMemoryAccess">
+<span id="_CPPv335SanitizerCallbackMatrixMemoryAccess"></span><span id="_CPPv235SanitizerCallbackMatrixMemoryAccess"></span><span id="SanitizerCallbackMatrixMemoryAccess"></span><span class="target" id="group__sanitizer__patching__api_1ga2f254af064064938362861a073fcafa8"></span><span class="k"><span class="pre">typedef</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv420SanitizerPatchResult" title="SanitizerPatchResult"><span class="n"><span class="pre">SanitizerPatchResult</span></span></a><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">SanitizerCallbackMatrixMemoryAccess</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">userdata</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="n"><span class="pre">pc</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">address</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">accessSize</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">flags</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">count</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">pNewValue</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#_CPPv435SanitizerCallbackMatrixMemoryAccess" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Function type for a matrix shared memory access callback. </p>
+<p><code class="docutils literal notranslate"><span class="pre">userdata</span></code> is a pointer to user data. See <a class="reference internal" href="#group__sanitizer__patching__api_1gaacc3ec25dd89f46c9bfbc3ae4ee94c92"><span class="std std-ref">sanitizerPatchModule</span></a> <code class="docutils literal notranslate"><span class="pre">pc</span></code> is the program counter of the patched instruction <code class="docutils literal notranslate"><span class="pre">address</span></code> is the address of the shared memory being read or written. This is an offset within the shared memory window <code class="docutils literal notranslate"><span class="pre">accessSize</span></code> is the size of the access in bytes. Valid value is 16. <code class="docutils literal notranslate"><span class="pre">flags</span></code> contains information about the type of access. See Sanitizer_DeviceMemoryFlags to interpret this value. <code class="docutils literal notranslate"><span class="pre">count</span></code> is the number of matrices accessed. <code class="docutils literal notranslate"><span class="pre">pNewValue</span></code> is a pointer to the new value being written if the access is a write. If the access is a read or an atomic, the pointer will be NULL. </p>
+</dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv428SanitizerCallbackMemcpyAsync">
+<span id="_CPPv328SanitizerCallbackMemcpyAsync"></span><span id="_CPPv228SanitizerCallbackMemcpyAsync"></span><span id="SanitizerCallbackMemcpyAsync"></span><span class="target" id="group__sanitizer__patching__api_1ga523e5d920cb4c8c49eb46c1b2cd17087"></span><span class="k"><span class="pre">typedef</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv420SanitizerPatchResult" title="SanitizerPatchResult"><span class="n"><span class="pre">SanitizerPatchResult</span></span></a><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">SanitizerCallbackMemcpyAsync</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">userdata</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="n"><span class="pre">pc</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">src</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">dst</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">accessSize</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#_CPPv428SanitizerCallbackMemcpyAsync" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Function type for a global to shared memory asynchronous copy. </p>
+<p><code class="docutils literal notranslate"><span class="pre">userdata</span></code> is a pointer to user data. See <a class="reference internal" href="#group__sanitizer__patching__api_1gaacc3ec25dd89f46c9bfbc3ae4ee94c92"><span class="std std-ref">sanitizerPatchModule</span></a> <code class="docutils literal notranslate"><span class="pre">pc</span></code> is the program counter of the patched instruction <code class="docutils literal notranslate"><span class="pre">src</span></code> is the address of the global memory being read. This can be NULL if src-size is 0. <code class="docutils literal notranslate"><span class="pre">dst</span></code> is the address of the shared memory being written. This is an offset within the shared memory window <code class="docutils literal notranslate"><span class="pre">accessSize</span></code> is the size of the access in bytes. Valid values are 4, 8 and 16. </p>
+</dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv429SanitizerCallbackMemoryAccess">
+<span id="_CPPv329SanitizerCallbackMemoryAccess"></span><span id="_CPPv229SanitizerCallbackMemoryAccess"></span><span id="SanitizerCallbackMemoryAccess"></span><span class="target" id="group__sanitizer__patching__api_1ga6ba3aa1fae45f8b70c5289ac11c49a6a"></span><span class="k"><span class="pre">typedef</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv420SanitizerPatchResult" title="SanitizerPatchResult"><span class="n"><span class="pre">SanitizerPatchResult</span></span></a><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">SanitizerCallbackMemoryAccess</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">userdata</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="n"><span class="pre">pc</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">ptr</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">accessSize</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">flags</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">pData</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#_CPPv429SanitizerCallbackMemoryAccess" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Function type for a memory access callback. </p>
+<p><code class="docutils literal notranslate"><span class="pre">userdata</span></code> is a pointer to user data. See <a class="reference internal" href="#group__sanitizer__patching__api_1gaacc3ec25dd89f46c9bfbc3ae4ee94c92"><span class="std std-ref">sanitizerPatchModule</span></a> <code class="docutils literal notranslate"><span class="pre">pc</span></code> is the program counter of the patched instruction <code class="docutils literal notranslate"><span class="pre">ptr</span></code> is the address of the memory being accessed. For local or shared memory access, this is the offset within the local or shared memory window. <code class="docutils literal notranslate"><span class="pre">accessSize</span></code> is the size of the access in bytes. Valid values are 1, 2, 4, 8, and 16. <code class="docutils literal notranslate"><span class="pre">flags</span></code> contains information about the type of access. See Sanitizer_DeviceMemoryFlags to interpret this value. <code class="docutils literal notranslate"><span class="pre">pData</span></code> is a pointer which value depends on the type of access:<ul class="simple">
+<li><p>If the access is a write, <code class="docutils literal notranslate"><span class="pre">pData</span></code> points to the new value being written.</p></li>
+<li><p>If the access is a read and <code class="docutils literal notranslate"><span class="pre">pData</span></code> is not <code class="docutils literal notranslate"><span class="pre">NULL</span></code>, then it points to a 32-bit mask of loaded bytes being used (padding bytes will not appear).</p></li>
+<li><p>If the access is an atomic, the pointer will be <code class="docutils literal notranslate"><span class="pre">NULL</span></code>. </p></li>
+</ul>
+</p>
+</dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv431SanitizerCallbackPipelineCommit">
+<span id="_CPPv331SanitizerCallbackPipelineCommit"></span><span id="_CPPv231SanitizerCallbackPipelineCommit"></span><span id="SanitizerCallbackPipelineCommit"></span><span class="target" id="group__sanitizer__patching__api_1gaaac734ca1642efc475c934c8f406539a"></span><span class="k"><span class="pre">typedef</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv420SanitizerPatchResult" title="SanitizerPatchResult"><span class="n"><span class="pre">SanitizerPatchResult</span></span></a><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">SanitizerCallbackPipelineCommit</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">userdata</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="n"><span class="pre">pc</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#_CPPv431SanitizerCallbackPipelineCommit" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Function type for a pipeline commit. </p>
+<p>This can be generated by a pipeline::producer_commit (C++ API), a pipeline_commit (C API) or a cp.async.commit_group (PTX API).</p>
+<p><code class="docutils literal notranslate"><span class="pre">userdata</span></code> is a pointer to user data. See <a class="reference internal" href="#group__sanitizer__patching__api_1gaacc3ec25dd89f46c9bfbc3ae4ee94c92"><span class="std std-ref">sanitizerPatchModule</span></a> <code class="docutils literal notranslate"><span class="pre">pc</span></code> is the program counter of the patched instruction </p>
+</dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv429SanitizerCallbackPipelineWait">
+<span id="_CPPv329SanitizerCallbackPipelineWait"></span><span id="_CPPv229SanitizerCallbackPipelineWait"></span><span id="SanitizerCallbackPipelineWait"></span><span class="target" id="group__sanitizer__patching__api_1ga3e78dbc028a8c8d9005ff2c4a6deb35b"></span><span class="k"><span class="pre">typedef</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv420SanitizerPatchResult" title="SanitizerPatchResult"><span class="n"><span class="pre">SanitizerPatchResult</span></span></a><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">SanitizerCallbackPipelineWait</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">userdata</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="n"><span class="pre">pc</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">groups</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#_CPPv429SanitizerCallbackPipelineWait" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Function type for a pipeline wait. </p>
+<p>This can be generated by a pipeline::consumer_wait (C++ API), a pipeline_wait_prior (C API), cp.async.wait_group or cp.async.wait_all (PTX API).</p>
+<p><code class="docutils literal notranslate"><span class="pre">userdata</span></code> is a pointer to user data. See <a class="reference internal" href="#group__sanitizer__patching__api_1gaacc3ec25dd89f46c9bfbc3ae4ee94c92"><span class="std std-ref">sanitizerPatchModule</span></a> <code class="docutils literal notranslate"><span class="pre">pc</span></code> is the program counter of the patched instruction <code class="docutils literal notranslate"><span class="pre">groups</span></code> is the number of groups the pipeline will wait for. 0 is used to wait for all groups. </p>
+</dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv420SanitizerCallbackRet">
+<span id="_CPPv320SanitizerCallbackRet"></span><span id="_CPPv220SanitizerCallbackRet"></span><span id="SanitizerCallbackRet"></span><span class="target" id="group__sanitizer__patching__api_1ga7ed18503ba41529ba07b153ac03ba730"></span><span class="k"><span class="pre">typedef</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv420SanitizerPatchResult" title="SanitizerPatchResult"><span class="n"><span class="pre">SanitizerPatchResult</span></span></a><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">SanitizerCallbackRet</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">userdata</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="n"><span class="pre">pc</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#_CPPv420SanitizerCallbackRet" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Function type for a function return callback. </p>
+<p><code class="docutils literal notranslate"><span class="pre">userdata</span></code> is a pointer to user data. See <a class="reference internal" href="#group__sanitizer__patching__api_1gaacc3ec25dd89f46c9bfbc3ae4ee94c92"><span class="std std-ref">sanitizerPatchModule</span></a> <code class="docutils literal notranslate"><span class="pre">pc</span></code> is the program counter of the patched instruction </p>
+</dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv428SanitizerCallbackSetSmemSize">
+<span id="_CPPv328SanitizerCallbackSetSmemSize"></span><span id="_CPPv228SanitizerCallbackSetSmemSize"></span><span id="SanitizerCallbackSetSmemSize"></span><span class="target" id="group__sanitizer__patching__api_1ga91fbc129b2da327140646c217aa3a435"></span><span class="k"><span class="pre">typedef</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv420SanitizerPatchResult" title="SanitizerPatchResult"><span class="n"><span class="pre">SanitizerPatchResult</span></span></a><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">SanitizerCallbackSetSmemSize</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">userdata</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="n"><span class="pre">pc</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">size</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#_CPPv428SanitizerCallbackSetSmemSize" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Function type for setting the shared memory size allocated to a block. </p>
+<p>This can be generated by a setsmemsize.sync instruction</p>
+<p><code class="docutils literal notranslate"><span class="pre">userdata</span></code> is a pointer to user data. See <a class="reference internal" href="#group__sanitizer__patching__api_1gaacc3ec25dd89f46c9bfbc3ae4ee94c92"><span class="std std-ref">sanitizerPatchModule</span></a>. <code class="docutils literal notranslate"><span class="pre">pc</span></code> is the program counter of the patched instruction. <code class="docutils literal notranslate"><span class="pre">size</span></code> is the requested size in bytes. </p>
+</dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv421SanitizerCallbackShfl">
+<span id="_CPPv321SanitizerCallbackShfl"></span><span id="_CPPv221SanitizerCallbackShfl"></span><span id="SanitizerCallbackShfl"></span><span class="target" id="group__sanitizer__patching__api_1gaf95531eeb610479d4b672a7c1b7df039"></span><span class="k"><span class="pre">typedef</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv420SanitizerPatchResult" title="SanitizerPatchResult"><span class="n"><span class="pre">SanitizerPatchResult</span></span></a><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">SanitizerCallbackShfl</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">userdata</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="n"><span class="pre">pc</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#_CPPv421SanitizerCallbackShfl" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Function type for a shfl callback. </p>
+<p><code class="docutils literal notranslate"><span class="pre">userdata</span></code> is a pointer to user data. See <a class="reference internal" href="#group__sanitizer__patching__api_1gaacc3ec25dd89f46c9bfbc3ae4ee94c92"><span class="std std-ref">sanitizerPatchModule</span></a> <code class="docutils literal notranslate"><span class="pre">pc</span></code> is the program counter of the patched instruction </p>
+</dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv425SanitizerCallbackSyncwarp">
+<span id="_CPPv325SanitizerCallbackSyncwarp"></span><span id="_CPPv225SanitizerCallbackSyncwarp"></span><span id="SanitizerCallbackSyncwarp"></span><span class="target" id="group__sanitizer__patching__api_1gab99b4cd8171ad761a59ef900517c733a"></span><span class="k"><span class="pre">typedef</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv420SanitizerPatchResult" title="SanitizerPatchResult"><span class="n"><span class="pre">SanitizerPatchResult</span></span></a><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">SanitizerCallbackSyncwarp</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">userdata</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="n"><span class="pre">pc</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">mask</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#_CPPv425SanitizerCallbackSyncwarp" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Function type for a syncwarp callback. </p>
+<p><code class="docutils literal notranslate"><span class="pre">userdata</span></code> is a pointer to user data. See <a class="reference internal" href="#group__sanitizer__patching__api_1gaacc3ec25dd89f46c9bfbc3ae4ee94c92"><span class="std std-ref">sanitizerPatchModule</span></a> <code class="docutils literal notranslate"><span class="pre">pc</span></code> is the program counter of the patched instruction <code class="docutils literal notranslate"><span class="pre">mask</span></code> is the thread mask passed to __syncwarp(). </p>
+</dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv431SanitizerCallbackWarpgroupFence">
+<span id="_CPPv331SanitizerCallbackWarpgroupFence"></span><span id="_CPPv231SanitizerCallbackWarpgroupFence"></span><span id="SanitizerCallbackWarpgroupFence"></span><span class="target" id="group__sanitizer__patching__api_1ga7ae0bc634fb431477f925b557d2c3f70"></span><span class="k"><span class="pre">typedef</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv420SanitizerPatchResult" title="SanitizerPatchResult"><span class="n"><span class="pre">SanitizerPatchResult</span></span></a><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">SanitizerCallbackWarpgroupFence</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">userdata</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="n"><span class="pre">pc</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">warpMask</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#_CPPv431SanitizerCallbackWarpgroupFence" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Function type for a warpgroup MMA fence. </p>
+<p>This can be generated by a wgmma.fence in PTX.</p>
+<p><code class="docutils literal notranslate"><span class="pre">userdata</span></code> is a pointer to user data. See <a class="reference internal" href="#group__sanitizer__patching__api_1gaacc3ec25dd89f46c9bfbc3ae4ee94c92"><span class="std std-ref">sanitizerPatchModule</span></a>. <code class="docutils literal notranslate"><span class="pre">pc</span></code> is the program counter of the patched instruction. <code class="docutils literal notranslate"><span class="pre">warpMask</span></code> is a mask of threads that will perform the fence operation. Expected values are either 0x0 or 0xffffffff (full). The value is expected to be the same across the warpgroup. Other values can be reported but signal a programming error in the target application. </p>
+</dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv434SanitizerCallbackWarpgroupMMAAsync">
+<span id="_CPPv334SanitizerCallbackWarpgroupMMAAsync"></span><span id="_CPPv234SanitizerCallbackWarpgroupMMAAsync"></span><span id="SanitizerCallbackWarpgroupMMAAsync"></span><span class="target" id="group__sanitizer__patching__api_1ga23ba635b8af1d84e5ef1d3363b4709a9"></span><span class="k"><span class="pre">typedef</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv420SanitizerPatchResult" title="SanitizerPatchResult"><span class="n"><span class="pre">SanitizerPatchResult</span></span></a><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">SanitizerCallbackWarpgroupMMAAsync</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">userdata</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="n"><span class="pre">pc</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">addressMatrixA</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">sizeMatrixA</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">addressMatrixB</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">sizeMatrixB</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">flags</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">warpMask</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#_CPPv434SanitizerCallbackWarpgroupMMAAsync" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Function type for a warpgroup aligned async MMA. </p>
+<p>This can be generated by a wgmma.mma_async in PTX.</p>
+<p><code class="docutils literal notranslate"><span class="pre">userdata</span></code> is a pointer to user data. See <a class="reference internal" href="#group__sanitizer__patching__api_1gaacc3ec25dd89f46c9bfbc3ae4ee94c92"><span class="std std-ref">sanitizerPatchModule</span></a> <code class="docutils literal notranslate"><span class="pre">pc</span></code> is the program counter of the patched instruction <code class="docutils literal notranslate"><span class="pre">addressMatrixA</span></code> is the address in shared memory of the matrix A being read. This field is only valid if sizeMatrixA is non-zero and warpMask is full. <code class="docutils literal notranslate"><span class="pre">sizeMatrixA</span></code> is the size of the matrix A in shared memory. A value of 0 means that the matrix A is read from registers instead. <code class="docutils literal notranslate"><span class="pre">addressMatrixB</span></code> is the address in shared memory of the matrix B being read. This field is only valid if warpMask is full. <code class="docutils literal notranslate"><span class="pre">sizeMatrixB</span></code> is the size of the matrix B in shared memory. The value will always be non-zero. <code class="docutils literal notranslate"><span class="pre">flags</span></code> of type Sanitizer_WarpgroupMMAAsyncFlags provide information about the access. These flags are to be taken into account even if the warpMask is zero. <code class="docutils literal notranslate"><span class="pre">warpMask</span></code> is a mask of threads that will perform the operation and read the operands. Expected values are either 0x0 or 0xffffffff (full). The value is expected to be the same across the warpgroup. Other values can be reported but signal a programming error in the target application. </p>
+</dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv435SanitizerCallbackWarpgroupWaitGroup">
+<span id="_CPPv335SanitizerCallbackWarpgroupWaitGroup"></span><span id="_CPPv235SanitizerCallbackWarpgroupWaitGroup"></span><span id="SanitizerCallbackWarpgroupWaitGroup"></span><span class="target" id="group__sanitizer__patching__api_1ga5c987165a25ab95edce4b35723abb8c1"></span><span class="k"><span class="pre">typedef</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv420SanitizerPatchResult" title="SanitizerPatchResult"><span class="n"><span class="pre">SanitizerPatchResult</span></span></a><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">SanitizerCallbackWarpgroupWaitGroup</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">userdata</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="n"><span class="pre">pc</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">numGroups</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">warpMask</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#_CPPv435SanitizerCallbackWarpgroupWaitGroup" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Function type for a warpgroup MMA wait group. </p>
+<p>This can be generated by a wgmma.wait_group in PTX.</p>
+<p><code class="docutils literal notranslate"><span class="pre">userdata</span></code> is a pointer to user data. See <a class="reference internal" href="#group__sanitizer__patching__api_1gaacc3ec25dd89f46c9bfbc3ae4ee94c92"><span class="std std-ref">sanitizerPatchModule</span></a>. <code class="docutils literal notranslate"><span class="pre">pc</span></code> is the program counter of the patched instruction. <code class="docutils literal notranslate"><span class="pre">numGroups</span></code> is the maximum number of group that will be left pending after the operation. A value of zero means that all MMA async of the warpgroup are guaranteed to have completed after the operation. <code class="docutils literal notranslate"><span class="pre">warpMask</span></code> is a mask of threads for which the expected values are either 0x0 or 0xffffffff (full). The value is expected to be the same across the warpgroup. Other values can be reported but signal a programming error in the target application. If the value is valid, the value has no influence on the operation. </p>
+</dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv422Sanitizer_LaunchHandle">
+<span id="_CPPv322Sanitizer_LaunchHandle"></span><span id="_CPPv222Sanitizer_LaunchHandle"></span><span id="Sanitizer_LaunchHandle"></span><span class="target" id="group__sanitizer__patching__api_1ga89c4c004dbeee79636f6696c408cf1aa"></span><span class="k"><span class="pre">typedef</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">Sanitizer_Launch_st</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">Sanitizer_LaunchHandle</span></span></span><a class="headerlink" href="#_CPPv422Sanitizer_LaunchHandle" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+<img src="../_static/NVIDIA-LogoBlack.svg" class="only-light"/>
+<img src="../_static/NVIDIA-LogoWhite.svg" class="only-dark"/>
+
+<p class="notices">
+<a href="https://www.nvidia.com/en-us/about-nvidia/privacy-policy/" target="_blank">Privacy Policy</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/privacy-center/" target="_blank">Manage My Privacy</a>
+|
+<a href="https://www.nvidia.com/en-us/preferences/start/" target="_blank">Do Not Sell or Share My Data</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/terms-of-service/" target="_blank">Terms of Service</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/accessibility/" target="_blank">Accessibility</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/company-policies/" target="_blank">Corporate Policies</a>
+|
+<a href="https://www.nvidia.com/en-us/product-security/" target="_blank">Product Security</a>
+|
+<a href="https://www.nvidia.com/en-us/contact/" target="_blank">Contact</a>
+</p>
+
+<p>
+  Copyright &#169; 2019-2024, NVIDIA Corporation &amp; Affiliates. All rights reserved.
+</p>
+
+    <p>
+      <span class="lastupdated">Last updated on Jul 11, 2024.
+      </span></p>
+
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+ 
+
+
+
+</body>
+</html>

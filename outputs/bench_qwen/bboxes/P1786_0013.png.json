@@ -1,0 +1,33 @@
+{
+  "image": "P1786_0013.png",
+  "boxes": [
+    {
+      "label": "tennis courts",
+      "x1": 218,
+      "y1": 73,
+      "x2": 510,
+      "y2": 290
+    },
+    {
+      "label": "tennis courts",
+      "x1": 267,
+      "y1": 241,
+      "x2": 500,
+      "y2": 505
+    },
+    {
+      "label": "small vehicles",
+      "x1": 372,
+      "y1": 495,
+      "x2": 417,
+      "y2": 512
+    },
+    {
+      "label": "adjacent structure with a large roof",
+      "x1": 384,
+      "y1": 0,
+      "x2": 512,
+      "y2": 89
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "image": "07500_0000.png",
+  "boxes": [
+    {
+      "label": "The image, sourced from GoogleEarth, shows a sports field with no specified resolution.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    }
+  ]
+}

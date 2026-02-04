@@ -1,0 +1,61 @@
+{
+  "image": "P2608_0013.png",
+  "boxes": [
+    {
+      "label": "large vehicle",
+      "x1": 151,
+      "y1": 195,
+      "x2": 176,
+      "y2": 281
+    },
+    {
+      "label": "small vehicles",
+      "x1": 7,
+      "y1": 195,
+      "x2": 26,
+      "y2": 237
+    },
+    {
+      "label": "small vehicles",
+      "x1": 81,
+      "y1": 279,
+      "x2": 110,
+      "y2": 317
+    },
+    {
+      "label": "small vehicles",
+      "x1": 134,
+      "y1": 247,
+      "x2": 154,
+      "y2": 281
+    },
+    {
+      "label": "small vehicles",
+      "x1": 192,
+      "y1": 192,
+      "x2": 210,
+      "y2": 228
+    },
+    {
+      "label": "buildings with various rooftop colors and styles",
+      "x1": 352,
+      "y1": 100,
+      "x2": 512,
+      "y2": 269
+    },
+    {
+      "label": "buildings with various rooftop colors and styles",
+      "x1": 0,
+      "y1": 317,
+      "x2": 182,
+      "y2": 510
+    },
+    {
+      "label": "buildings with various rooftop colors and styles",
+      "x1": 408,
+      "y1": 264,
+      "x2": 512,
+      "y2": 510
+    }
+  ]
+}

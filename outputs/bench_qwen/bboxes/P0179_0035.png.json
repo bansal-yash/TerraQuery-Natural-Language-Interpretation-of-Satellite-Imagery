@@ -1,0 +1,12 @@
+{
+  "image": "P0179_0035.png",
+  "boxes": [
+    {
+      "label": "three small vehicles parked closely",
+      "x1": 454,
+      "y1": 374,
+      "x2": 512,
+      "y2": 506
+    }
+  ]
+}

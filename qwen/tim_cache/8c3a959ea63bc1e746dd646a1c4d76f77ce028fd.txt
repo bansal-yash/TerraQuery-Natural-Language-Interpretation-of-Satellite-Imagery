@@ -1,0 +1,1 @@
+RGB:Aerial view of farmland, roads, and industrial buildings. || SAR:SAR image shows urban areas with distinct building clusters and road networks.

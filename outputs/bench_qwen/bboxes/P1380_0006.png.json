@@ -1,0 +1,26 @@
+{
+  "image": "P1380_0006.png",
+  "boxes": [
+    {
+      "label": "swimming pool",
+      "x1": 346,
+      "y1": 86,
+      "x2": 376,
+      "y2": 113
+    },
+    {
+      "label": "swimming pool",
+      "x1": 331,
+      "y1": 27,
+      "x2": 361,
+      "y2": 52
+    },
+    {
+      "label": "swimming pool",
+      "x1": 431,
+      "y1": 407,
+      "x2": 474,
+      "y2": 454
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "image": "P1066_0014.png",
+  "boxes": [
+    {
+      "label": "large house",
+      "x1": 79,
+      "y1": 147,
+      "x2": 241,
+      "y2": 290
+    },
+    {
+      "label": "small body of water",
+      "x1": 277,
+      "y1": 100,
+      "x2": 512,
+      "y2": 506
+    },
+    {
+      "label": "harbor structure at bottom left edge",
+      "x1": 232,
+      "y1": 440,
+      "x2": 357,
+      "y2": 510
+    },
+    {
+      "label": "harbor structure at bottom right",
+      "x1": 297,
+      "y1": 343,
+      "x2": 512,
+      "y2": 479
+    },
+    {
+      "label": "harbor structure at top center",
+      "x1": 291,
+      "y1": 123,
+      "x2": 512,
+      "y2": 251
+    }
+  ]
+}

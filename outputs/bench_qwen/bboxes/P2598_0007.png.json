@@ -1,0 +1,26 @@
+{
+  "image": "P2598_0007.png",
+  "boxes": [
+    {
+      "label": "two tennis courts with a brown surface",
+      "x1": 0,
+      "y1": 287,
+      "x2": 301,
+      "y2": 510
+    },
+    {
+      "label": "small white vehicle",
+      "x1": 234,
+      "y1": 103,
+      "x2": 284,
+      "y2": 132
+    },
+    {
+      "label": "large building with a blue and white striped roof",
+      "x1": 301,
+      "y1": 187,
+      "x2": 512,
+      "y2": 510
+    }
+  ]
+}

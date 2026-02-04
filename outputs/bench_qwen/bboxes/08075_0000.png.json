@@ -1,0 +1,26 @@
+{
+  "image": "08075_0000.png",
+  "boxes": [
+    {
+      "label": "baseball field",
+      "x1": 202,
+      "y1": 329,
+      "x2": 379,
+      "y2": 505
+    },
+    {
+      "label": "basketball courts",
+      "x1": 23,
+      "y1": 206,
+      "x2": 140,
+      "y2": 343
+    },
+    {
+      "label": "tennis court",
+      "x1": 59,
+      "y1": 343,
+      "x2": 140,
+      "y2": 479
+    }
+  ]
+}

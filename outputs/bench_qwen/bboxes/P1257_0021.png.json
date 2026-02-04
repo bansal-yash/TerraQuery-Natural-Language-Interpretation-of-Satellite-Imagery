@@ -1,0 +1,12 @@
+{
+  "image": "P1257_0021.png",
+  "boxes": [
+    {
+      "label": "small ground track field with an irregular octagonal shape",
+      "x1": 185,
+      "y1": 189,
+      "x2": 313,
+      "y2": 279
+    }
+  ]
+}

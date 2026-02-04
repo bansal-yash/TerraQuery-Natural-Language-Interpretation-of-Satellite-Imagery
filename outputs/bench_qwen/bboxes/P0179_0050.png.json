@@ -1,0 +1,26 @@
+{
+  "image": "P0179_0050.png",
+  "boxes": [
+    {
+      "label": "small plane",
+      "x1": 90,
+      "y1": 0,
+      "x2": 168,
+      "y2": 53
+    },
+    {
+      "label": "small vehicle",
+      "x1": 119,
+      "y1": 256,
+      "x2": 158,
+      "y2": 291
+    },
+    {
+      "label": "small vehicle",
+      "x1": 0,
+      "y1": 64,
+      "x2": 31,
+      "y2": 98
+    }
+  ]
+}

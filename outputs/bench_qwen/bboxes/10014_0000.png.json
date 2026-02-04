@@ -1,0 +1,19 @@
+{
+  "image": "10014_0000.png",
+  "boxes": [
+    {
+      "label": "houses and buildings",
+      "x1": 0,
+      "y1": 0,
+      "x2": 335,
+      "y2": 512
+    },
+    {
+      "label": "small-sized golf field",
+      "x1": 313,
+      "y1": 128,
+      "x2": 512,
+      "y2": 510
+    }
+  ]
+}

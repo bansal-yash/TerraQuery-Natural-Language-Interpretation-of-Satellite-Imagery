@@ -1,0 +1,1 @@
+RGB:Aerial view of buildings, parking lots, trees, and a nearby water body. || SAR:SAR image shows urban area with roads and buildings in grayscale.

@@ -1,0 +1,26 @@
+{
+  "image": "P4151_0058.png",
+  "boxes": [
+    {
+      "label": "red-colored small vehicle",
+      "x1": 300,
+      "y1": 7,
+      "x2": 375,
+      "y2": 58
+    },
+    {
+      "label": "other vehicles",
+      "x1": 110,
+      "y1": 79,
+      "x2": 183,
+      "y2": 135
+    },
+    {
+      "label": "other vehicles",
+      "x1": 202,
+      "y1": 46,
+      "x2": 276,
+      "y2": 98
+    }
+  ]
+}

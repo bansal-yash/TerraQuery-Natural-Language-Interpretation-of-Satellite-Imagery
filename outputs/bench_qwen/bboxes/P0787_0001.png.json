@@ -1,0 +1,12 @@
+{
+  "image": "P0787_0001.png",
+  "boxes": [
+    {
+      "label": "A high-resolution GoogleEarth image depicts an area with multiple large vehicles. One of the vehicles stands out due to its position at the top-left of the image and being the left-most in its row.",
+      "x1": 70,
+      "y1": 0,
+      "x2": 163,
+      "y2": 57
+    }
+  ]
+}

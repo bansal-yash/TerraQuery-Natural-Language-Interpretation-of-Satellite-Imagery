@@ -1,0 +1,19 @@
+{
+  "image": "08474_0000.png",
+  "boxes": [
+    {
+      "label": "basketball court",
+      "x1": 218,
+      "y1": 139,
+      "x2": 346,
+      "y2": 353
+    },
+    {
+      "label": "basketball court",
+      "x1": 392,
+      "y1": 139,
+      "x2": 510,
+      "y2": 353
+    }
+  ]
+}

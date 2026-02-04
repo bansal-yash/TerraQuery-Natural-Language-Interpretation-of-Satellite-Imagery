@@ -1,0 +1,54 @@
+{
+  "image": "P1957_0012.png",
+  "boxes": [
+    {
+      "label": "large vehicle",
+      "x1": 132,
+      "y1": 310,
+      "x2": 195,
+      "y2": 378
+    },
+    {
+      "label": "large vehicle",
+      "x1": 61,
+      "y1": 403,
+      "x2": 164,
+      "y2": 479
+    },
+    {
+      "label": "large vehicle",
+      "x1": 54,
+      "y1": 433,
+      "x2": 195,
+      "y2": 512
+    },
+    {
+      "label": "large vehicle",
+      "x1": 25,
+      "y1": 364,
+      "x2": 132,
+      "y2": 448
+    },
+    {
+      "label": "large vehicle",
+      "x1": 54,
+      "y1": 433,
+      "x2": 195,
+      "y2": 512
+    },
+    {
+      "label": "large vehicle",
+      "x1": 25,
+      "y1": 364,
+      "x2": 132,
+      "y2": 448
+    },
+    {
+      "label": "small vehicle",
+      "x1": 362,
+      "y1": 51,
+      "x2": 415,
+      "y2": 82
+    }
+  ]
+}

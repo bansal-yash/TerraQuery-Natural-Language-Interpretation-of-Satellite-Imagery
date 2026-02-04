@@ -1,0 +1,12 @@
+{
+  "image": "P2504_0011.png",
+  "boxes": [
+    {
+      "label": "recreational area",
+      "x1": 79,
+      "y1": 0,
+      "x2": 208,
+      "y2": 113
+    }
+  ]
+}

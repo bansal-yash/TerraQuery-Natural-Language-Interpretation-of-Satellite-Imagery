@@ -1,0 +1,12 @@
+{
+  "image": "09331_0000.png",
+  "boxes": [
+    {
+      "label": "The image sourced from GoogleEarth displays a green space featuring a single basketball court located at the right side of the frame.",
+      "x1": 385,
+      "y1": 264,
+      "x2": 510,
+      "y2": 510
+    }
+  ]
+}

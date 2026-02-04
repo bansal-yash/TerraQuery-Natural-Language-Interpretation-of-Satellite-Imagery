@@ -1,0 +1,19 @@
+{
+  "image": "07167_0000.png",
+  "boxes": [
+    {
+      "label": "building with a peaked roof",
+      "x1": 266,
+      "y1": 96,
+      "x2": 512,
+      "y2": 279
+    },
+    {
+      "label": "basketball court",
+      "x1": 26,
+      "y1": 41,
+      "x2": 182,
+      "y2": 239
+    }
+  ]
+}

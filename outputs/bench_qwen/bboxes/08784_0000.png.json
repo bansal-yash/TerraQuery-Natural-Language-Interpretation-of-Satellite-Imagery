@@ -1,0 +1,12 @@
+{
+  "image": "08784_0000.png",
+  "boxes": [
+    {
+      "label": "An overhead view of a landscape captured from Google Earth, showcasing a mix of agricultural fields and natural vegetation. There is a baseball field in the lower right quadrant of the image.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "image": "P8392_0000.png",
+  "boxes": [
+    {
+      "label": "small swimming pool",
+      "x1": 445,
+      "y1": 459,
+      "x2": 503,
+      "y2": 493
+    }
+  ]
+}

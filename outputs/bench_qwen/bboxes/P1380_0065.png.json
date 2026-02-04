@@ -1,0 +1,33 @@
+{
+  "image": "P1380_0065.png",
+  "boxes": [
+    {
+      "label": "tennis courts",
+      "x1": 230,
+      "y1": 0,
+      "x2": 384,
+      "y2": 128
+    },
+    {
+      "label": "roundabout",
+      "x1": 409,
+      "y1": 358,
+      "x2": 510,
+      "y2": 435
+    },
+    {
+      "label": "small vehicles",
+      "x1": 0,
+      "y1": 435,
+      "x2": 281,
+      "y2": 510
+    },
+    {
+      "label": "large vehicle",
+      "x1": 227,
+      "y1": 396,
+      "x2": 294,
+      "y2": 453
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "image": "P1397_0010.png",
+  "boxes": [
+    {
+      "label": "A high resolution satellite image from GoogleEarth showing several small airplanes positioned on the ground. At the top of the image, there is a row of three airplanes. Another airplane is located at the bottom right corner of the image.",
+      "x1": 13,
+      "y1": 0,
+      "x2": 512,
+      "y2": 505
+    }
+  ]
+}

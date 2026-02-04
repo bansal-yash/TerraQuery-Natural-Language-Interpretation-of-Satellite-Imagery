@@ -1,0 +1,40 @@
+{
+  "image": "09801_0000.png",
+  "boxes": [
+    {
+      "label": "large white roofed building",
+      "x1": 310,
+      "y1": 220,
+      "x2": 512,
+      "y2": 510
+    },
+    {
+      "label": "smaller circular storage tank",
+      "x1": 141,
+      "y1": 256,
+      "x2": 226,
+      "y2": 340
+    },
+    {
+      "label": "larger circular storage tank",
+      "x1": 84,
+      "y1": 390,
+      "x2": 226,
+      "y2": 510
+    },
+    {
+      "label": "road",
+      "x1": 232,
+      "y1": 123,
+      "x2": 512,
+      "y2": 510
+    },
+    {
+      "label": "cultivated land",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 510
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "image": "P9031_0001.png",
+  "boxes": [
+    {
+      "label": "residential buildings",
+      "x1": 0,
+      "y1": 0,
+      "x2": 510,
+      "y2": 510
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "image": "06390_0000.png",
+  "boxes": [
+    {
+      "label": "track and field arena",
+      "x1": 189,
+      "y1": 60,
+      "x2": 512,
+      "y2": 510
+    }
+  ]
+}

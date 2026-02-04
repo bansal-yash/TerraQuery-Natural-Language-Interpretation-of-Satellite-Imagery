@@ -1,0 +1,12 @@
+{
+  "image": "06226_0000.png",
+  "boxes": [
+    {
+      "label": "Aerial view of an area showcasing two baseball fields. One field is located towards the top half of the image with its infield dirt clearly visible, surrounded by well-maintained green grass. Another baseball field is positioned towards the bottom of the image, also featuring an infield and grass outfield, though this one is slightly larger than the top field.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "image": "P1390_0063.png",
+  "boxes": [
+    {
+      "label": "small-vehicle",
+      "x1": 162,
+      "y1": 151,
+      "x2": 187,
+      "y2": 164
+    },
+    {
+      "label": "small-vehicle",
+      "x1": 282,
+      "y1": 132,
+      "x2": 313,
+      "y2": 150
+    },
+    {
+      "label": "small-sized plane",
+      "x1": 307,
+      "y1": 402,
+      "x2": 466,
+      "y2": 510
+    }
+  ]
+}

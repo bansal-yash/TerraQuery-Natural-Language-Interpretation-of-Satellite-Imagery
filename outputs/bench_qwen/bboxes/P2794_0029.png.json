@@ -1,0 +1,33 @@
+{
+  "image": "P2794_0029.png",
+  "boxes": [
+    {
+      "label": "running track",
+      "x1": 0,
+      "y1": 0,
+      "x2": 213,
+      "y2": 297
+    },
+    {
+      "label": "row of bushes",
+      "x1": 269,
+      "y1": 0,
+      "x2": 417,
+      "y2": 346
+    },
+    {
+      "label": "parked cars",
+      "x1": 484,
+      "y1": 0,
+      "x2": 512,
+      "y2": 201
+    },
+    {
+      "label": "small vehicle",
+      "x1": 484,
+      "y1": 0,
+      "x2": 512,
+      "y2": 93
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "image": "06427_0000.png",
+  "boxes": [
+    {
+      "label": "forested areas",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    },
+    {
+      "label": "circular sandy formation",
+      "x1": 249,
+      "y1": 377,
+      "x2": 476,
+      "y2": 510
+    },
+    {
+      "label": "golf course",
+      "x1": 249,
+      "y1": 239,
+      "x2": 512,
+      "y2": 377
+    }
+  ]
+}

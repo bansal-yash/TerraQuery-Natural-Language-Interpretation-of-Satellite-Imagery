@@ -1,0 +1,54 @@
+{
+  "image": "P1269_0014.png",
+  "boxes": [
+    {
+      "label": "storage tank",
+      "x1": 0,
+      "y1": 179,
+      "x2": 29,
+      "y2": 217
+    },
+    {
+      "label": "storage tank",
+      "x1": 0,
+      "y1": 152,
+      "x2": 39,
+      "y2": 192
+    },
+    {
+      "label": "storage tank",
+      "x1": 0,
+      "y1": 125,
+      "x2": 45,
+      "y2": 165
+    },
+    {
+      "label": "storage tank",
+      "x1": 0,
+      "y1": 99,
+      "x2": 50,
+      "y2": 138
+    },
+    {
+      "label": "storage tank",
+      "x1": 0,
+      "y1": 72,
+      "x2": 55,
+      "y2": 112
+    },
+    {
+      "label": "storage tank",
+      "x1": 0,
+      "y1": 45,
+      "x2": 60,
+      "y2": 84
+    },
+    {
+      "label": "storage tank",
+      "x1": 0,
+      "y1": 18,
+      "x2": 65,
+      "y2": 58
+    }
+  ]
+}

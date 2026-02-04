@@ -1,0 +1,19 @@
+{
+  "image": "07448_0000.png",
+  "boxes": [
+    {
+      "label": "building with gray rooftop",
+      "x1": 262,
+      "y1": 123,
+      "x2": 510,
+      "y2": 365
+    },
+    {
+      "label": "vehicle in top-right",
+      "x1": 342,
+      "y1": 29,
+      "x2": 367,
+      "y2": 61
+    }
+  ]
+}

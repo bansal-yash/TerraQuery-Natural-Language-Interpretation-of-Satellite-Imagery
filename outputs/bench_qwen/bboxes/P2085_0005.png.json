@@ -1,0 +1,12 @@
+{
+  "image": "P2085_0005.png",
+  "boxes": [
+    {
+      "label": "two adjacent basketball courts with visible court markings",
+      "x1": 0,
+      "y1": 18,
+      "x2": 306,
+      "y2": 282
+    }
+  ]
+}

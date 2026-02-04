@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanitizer_LaunchData &mdash; compute-sanitizer 12.6 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/omni-style.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/api-styles.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/mermaid-init.js"></script>
+        <script src="../_static/design-tabs.js"></script>
+        <script src="../_static/version.js"></script>
+        <script src="../_static/social-media.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Sanitizer_MemcpyData" href="structSanitizer__MemcpyData.html" />
+    <link rel="prev" title="Sanitizer_GraphNodeLaunchData" href="structSanitizer__GraphNodeLaunchData.html" />
+ 
+
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+
+<a href="../index.html">
+  <img src="../_static/Logo_and_CUDA.png" class="logo" alt="Logo"/>
+</a>
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../ReleaseNotes/index.html">Release Notes</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tools</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ComputeSanitizer/index.html">Compute Sanitizer</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Interfaces</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../SanitizerApiGuide/index.html">Compute Sanitizer API Reference Manual</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../SanitizerApi/table-of-contents.html">Sanitizer API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="modules.html">Modules</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="structs.html">Structs</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__BatchMemopData.html">Sanitizer_BatchMemopData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__CallbackData.html">Sanitizer_CallbackData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__EventData.html">Sanitizer_EventData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__ExternalMemoryData.html">Sanitizer_ExternalMemoryData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__GraphExecData.html">Sanitizer_GraphExecData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__GraphLaunchData.html">Sanitizer_GraphLaunchData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__GraphNodeLaunchData.html">Sanitizer_GraphNodeLaunchData</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Sanitizer_LaunchData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__MemcpyData.html">Sanitizer_MemcpyData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__MemsetData.html">Sanitizer_MemsetData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__ResourceArrayData.html">Sanitizer_ResourceArrayData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__ResourceContextData.html">Sanitizer_ResourceContextData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__ResourceFunctionsLazyLoadedData.html">Sanitizer_ResourceFunctionsLazyLoadedData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__ResourceMemoryData.html">Sanitizer_ResourceMemoryData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__ResourceMempoolData.html">Sanitizer_ResourceMempoolData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__ResourceModuleData.html">Sanitizer_ResourceModuleData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__ResourceStreamData.html">Sanitizer_ResourceStreamData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__ResourceVirtualRange.html">Sanitizer_ResourceVirtualRange</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__SynchronizeData.html">Sanitizer_SynchronizeData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__UvmData.html">Sanitizer_UvmData</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../SanitizerNvtxGuide/index.html">NVTX API for Compute Sanitizer Reference Manual</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Copyright And Licenses</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../CopyrightAndLicenses/index.html">Copyright and Licenses</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">compute-sanitizer</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+
+
+  
+
+<li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+  
+    <li><a href="../SanitizerApi/table-of-contents.html">Sanitizer API</a> &raquo;</li>
+    <li><a href="structs.html">Structs</a> &raquo;</li>
+<li>Sanitizer_LaunchData</li>
+
+      <li class="wy-breadcrumbs-aside">
+      </li>
+<li class="wy-breadcrumbs-aside">
+
+
+  <span>v2024.3.0</span>
+
+
+  <span>&nbsp;</span>
+</li>
+
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="sanitizer-launchdata">
+<h1>Sanitizer_LaunchData<a class="headerlink" href="#sanitizer-launchdata" title="Permalink to this headline"></a></h1>
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv420Sanitizer_LaunchData">
+<span id="_CPPv320Sanitizer_LaunchData"></span><span id="_CPPv220Sanitizer_LaunchData"></span><span id="Sanitizer_LaunchData"></span><span class="target" id="structsanitizer__launchdata"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Sanitizer_LaunchData</span></span></span><a class="headerlink" href="#_CPPv420Sanitizer_LaunchData" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Data passed into a launch callback function. </p>
+<p>Data passed into a launch callback function as the <code class="docutils literal notranslate"><span class="pre">cbdata</span></code> argument to <a class="reference internal" href="group__SANITIZER__CALLBACK__API.html#group__sanitizer__callback__api_1gac1ae37612d036530e060f1bca8c3ccd8"><span class="std std-ref">Sanitizer_CallbackFunc</span></a>. The <code class="docutils literal notranslate"><span class="pre">cbdata</span></code> will be this type for <code class="docutils literal notranslate"><span class="pre">domain</span></code> equal to SANITIZER_CB_DOMAIN_LAUNCH. The callback data is only valid within the invocation of the callback function that is passed the data. If you need to retain some data for use outside of the callback, you must make a copy of it. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric-h3 rubric" id="breathe-section-title-unnamed-group">Unnamed Group</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N20Sanitizer_LaunchData9gridDim_xE">
+<span id="_CPPv3N20Sanitizer_LaunchData9gridDim_xE"></span><span id="_CPPv2N20Sanitizer_LaunchData9gridDim_xE"></span><span id="Sanitizer_LaunchData::gridDim_x__uint32_t"></span><span class="target" id="structsanitizer__launchdata_1a934581cb477c3d030f30e2b2ee7944d4"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gridDim_x</span></span></span><a class="headerlink" href="#_CPPv4N20Sanitizer_LaunchData9gridDim_xE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Launch properties of the grid. These values are only valid for SANITIZER_CBID_LAUNCH_BEGIN and graph node launch callbacks </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N20Sanitizer_LaunchData9gridDim_yE">
+<span id="_CPPv3N20Sanitizer_LaunchData9gridDim_yE"></span><span id="_CPPv2N20Sanitizer_LaunchData9gridDim_yE"></span><span id="Sanitizer_LaunchData::gridDim_y__uint32_t"></span><span class="target" id="structsanitizer__launchdata_1a66f032ce9b5eaac75a5993167cf282c8"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gridDim_y</span></span></span><a class="headerlink" href="#_CPPv4N20Sanitizer_LaunchData9gridDim_yE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N20Sanitizer_LaunchData9gridDim_zE">
+<span id="_CPPv3N20Sanitizer_LaunchData9gridDim_zE"></span><span id="_CPPv2N20Sanitizer_LaunchData9gridDim_zE"></span><span id="Sanitizer_LaunchData::gridDim_z__uint32_t"></span><span class="target" id="structsanitizer__launchdata_1a9a0d553822926781996a01e8255ac049"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gridDim_z</span></span></span><a class="headerlink" href="#_CPPv4N20Sanitizer_LaunchData9gridDim_zE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N20Sanitizer_LaunchData10blockDim_xE">
+<span id="_CPPv3N20Sanitizer_LaunchData10blockDim_xE"></span><span id="_CPPv2N20Sanitizer_LaunchData10blockDim_xE"></span><span id="Sanitizer_LaunchData::blockDim_x__uint32_t"></span><span class="target" id="structsanitizer__launchdata_1ad71d9596f42c5280117c58aec28f7677"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">blockDim_x</span></span></span><a class="headerlink" href="#_CPPv4N20Sanitizer_LaunchData10blockDim_xE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N20Sanitizer_LaunchData10blockDim_yE">
+<span id="_CPPv3N20Sanitizer_LaunchData10blockDim_yE"></span><span id="_CPPv2N20Sanitizer_LaunchData10blockDim_yE"></span><span id="Sanitizer_LaunchData::blockDim_y__uint32_t"></span><span class="target" id="structsanitizer__launchdata_1aeaccddc162d325b688fb59813e854df6"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">blockDim_y</span></span></span><a class="headerlink" href="#_CPPv4N20Sanitizer_LaunchData10blockDim_yE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N20Sanitizer_LaunchData10blockDim_zE">
+<span id="_CPPv3N20Sanitizer_LaunchData10blockDim_zE"></span><span id="_CPPv2N20Sanitizer_LaunchData10blockDim_zE"></span><span id="Sanitizer_LaunchData::blockDim_z__uint32_t"></span><span class="target" id="structsanitizer__launchdata_1adea40e9c9cab2e4b98b0e0abaf04ed7a"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">blockDim_z</span></span></span><a class="headerlink" href="#_CPPv4N20Sanitizer_LaunchData10blockDim_zE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N20Sanitizer_LaunchData12clusterDim_xE">
+<span id="_CPPv3N20Sanitizer_LaunchData12clusterDim_xE"></span><span id="_CPPv2N20Sanitizer_LaunchData12clusterDim_xE"></span><span id="Sanitizer_LaunchData::clusterDim_x__uint32_t"></span><span class="target" id="structsanitizer__launchdata_1ac83c9a72971e8b4fcbae6e5299a0bb52"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">clusterDim_x</span></span></span><a class="headerlink" href="#_CPPv4N20Sanitizer_LaunchData12clusterDim_xE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N20Sanitizer_LaunchData12clusterDim_yE">
+<span id="_CPPv3N20Sanitizer_LaunchData12clusterDim_yE"></span><span id="_CPPv2N20Sanitizer_LaunchData12clusterDim_yE"></span><span id="Sanitizer_LaunchData::clusterDim_y__uint32_t"></span><span class="target" id="structsanitizer__launchdata_1ab69bc0f86a204aef81bbb27ab3599121"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">clusterDim_y</span></span></span><a class="headerlink" href="#_CPPv4N20Sanitizer_LaunchData12clusterDim_yE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N20Sanitizer_LaunchData12clusterDim_zE">
+<span id="_CPPv3N20Sanitizer_LaunchData12clusterDim_zE"></span><span id="_CPPv2N20Sanitizer_LaunchData12clusterDim_zE"></span><span id="Sanitizer_LaunchData::clusterDim_z__uint32_t"></span><span class="target" id="structsanitizer__launchdata_1a3d0219ba9537466c00a8d8d6f7fe5232"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">clusterDim_z</span></span></span><a class="headerlink" href="#_CPPv4N20Sanitizer_LaunchData12clusterDim_zE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric-h3 rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N20Sanitizer_LaunchData10apiContextE">
+<span id="_CPPv3N20Sanitizer_LaunchData10apiContextE"></span><span id="_CPPv2N20Sanitizer_LaunchData10apiContextE"></span><span id="Sanitizer_LaunchData::apiContext__CUcontext"></span><span class="target" id="structsanitizer__launchdata_1a0f74ceb1522b0d27bb1d38ce41f83d73"></span><span class="n"><span class="pre">CUcontext</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">apiContext</span></span></span><a class="headerlink" href="#_CPPv4N20Sanitizer_LaunchData10apiContextE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Only valid for graph node launches. </p>
+<p>This is the context of the stream used in the graph launch API call. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N20Sanitizer_LaunchData9apiStreamE">
+<span id="_CPPv3N20Sanitizer_LaunchData9apiStreamE"></span><span id="_CPPv2N20Sanitizer_LaunchData9apiStreamE"></span><span id="Sanitizer_LaunchData::apiStream__CUstream"></span><span class="target" id="structsanitizer__launchdata_1a73236f03601aa99a589d4c46a4a8c19e"></span><span class="n"><span class="pre">CUstream</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">apiStream</span></span></span><a class="headerlink" href="#_CPPv4N20Sanitizer_LaunchData9apiStreamE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Only valid for graph node launches. </p>
+<p>This is the stream used in the graph launch API call. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N20Sanitizer_LaunchData7contextE">
+<span id="_CPPv3N20Sanitizer_LaunchData7contextE"></span><span id="_CPPv2N20Sanitizer_LaunchData7contextE"></span><span id="Sanitizer_LaunchData::context__CUcontext"></span><span class="target" id="structsanitizer__launchdata_1a8d3cab763b1f9e9907c02809185df3f5"></span><span class="n"><span class="pre">CUcontext</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">context</span></span></span><a class="headerlink" href="#_CPPv4N20Sanitizer_LaunchData7contextE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The context where the grid is launched. </p>
+<p>For graph node launches, this is the context in which the kernel will run. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N20Sanitizer_LaunchData6deviceE">
+<span id="_CPPv3N20Sanitizer_LaunchData6deviceE"></span><span id="_CPPv2N20Sanitizer_LaunchData6deviceE"></span><span id="Sanitizer_LaunchData::device__CUdevice"></span><span class="target" id="structsanitizer__launchdata_1a54ac0dec13a70e0cb9d1dc3849c40063"></span><span class="n"><span class="pre">CUdevice</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">device</span></span></span><a class="headerlink" href="#_CPPv4N20Sanitizer_LaunchData6deviceE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The device where the grid is launched. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N20Sanitizer_LaunchData8functionE">
+<span id="_CPPv3N20Sanitizer_LaunchData8functionE"></span><span id="_CPPv2N20Sanitizer_LaunchData8functionE"></span><span id="Sanitizer_LaunchData::function__CUfunction"></span><span class="target" id="structsanitizer__launchdata_1a6ae473df62bfb4cac682ebedaf8627fd"></span><span class="n"><span class="pre">CUfunction</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">function</span></span></span><a class="headerlink" href="#_CPPv4N20Sanitizer_LaunchData8functionE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The function of the grid launch. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N20Sanitizer_LaunchData12functionNameE">
+<span id="_CPPv3N20Sanitizer_LaunchData12functionNameE"></span><span id="_CPPv2N20Sanitizer_LaunchData12functionNameE"></span><span id="Sanitizer_LaunchData::functionName__cCP"></span><span class="target" id="structsanitizer__launchdata_1af217ff198ada2e206aa01e3e2f4aaef8"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">functionName</span></span></span><a class="headerlink" href="#_CPPv4N20Sanitizer_LaunchData12functionNameE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The name of the launched function. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N20Sanitizer_LaunchData6gridIdE">
+<span id="_CPPv3N20Sanitizer_LaunchData6gridIdE"></span><span id="_CPPv2N20Sanitizer_LaunchData6gridIdE"></span><span id="Sanitizer_LaunchData::gridId__uint64_t"></span><span class="target" id="structsanitizer__launchdata_1ab9302cae916c7eaab0c6de268b246e59"></span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gridId</span></span></span><a class="headerlink" href="#_CPPv4N20Sanitizer_LaunchData6gridIdE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Unique identifier of the grid launch. </p>
+<p>For graph node launches, this is only unique within the graphexec launch. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N20Sanitizer_LaunchData10hApiStreamE">
+<span id="_CPPv3N20Sanitizer_LaunchData10hApiStreamE"></span><span id="_CPPv2N20Sanitizer_LaunchData10hApiStreamE"></span><span id="Sanitizer_LaunchData::hApiStream__Sanitizer_StreamHandle"></span><span class="target" id="structsanitizer__launchdata_1ab4c74f8d8eaa10a76a9eb055e02bbfdb"></span><a class="reference internal" href="group__SANITIZER__STREAM__API.html#_CPPv422Sanitizer_StreamHandle" title="Sanitizer_StreamHandle"><span class="n"><span class="pre">Sanitizer_StreamHandle</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">hApiStream</span></span></span><a class="headerlink" href="#_CPPv4N20Sanitizer_LaunchData10hApiStreamE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Unique handle for the API stream. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N20Sanitizer_LaunchData7hLaunchE">
+<span id="_CPPv3N20Sanitizer_LaunchData7hLaunchE"></span><span id="_CPPv2N20Sanitizer_LaunchData7hLaunchE"></span><span id="Sanitizer_LaunchData::hLaunch__Sanitizer_LaunchHandle"></span><span class="target" id="structsanitizer__launchdata_1a57fec3035b443ac0cc7e35908ca53117"></span><a class="reference internal" href="group__SANITIZER__PATCHING__API.html#_CPPv422Sanitizer_LaunchHandle" title="Sanitizer_LaunchHandle"><span class="n"><span class="pre">Sanitizer_LaunchHandle</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">hLaunch</span></span></span><a class="headerlink" href="#_CPPv4N20Sanitizer_LaunchData7hLaunchE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Handle of the grid launch. </p>
+<p>This is only valid between the launch begin and end callbacks. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N20Sanitizer_LaunchData7hStreamE">
+<span id="_CPPv3N20Sanitizer_LaunchData7hStreamE"></span><span id="_CPPv2N20Sanitizer_LaunchData7hStreamE"></span><span id="Sanitizer_LaunchData::hStream__Sanitizer_StreamHandle"></span><span class="target" id="structsanitizer__launchdata_1a07a4addf3473a03f38060b769517bd9e"></span><a class="reference internal" href="group__SANITIZER__STREAM__API.html#_CPPv422Sanitizer_StreamHandle" title="Sanitizer_StreamHandle"><span class="n"><span class="pre">Sanitizer_StreamHandle</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">hStream</span></span></span><a class="headerlink" href="#_CPPv4N20Sanitizer_LaunchData7hStreamE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Unique handle for the stream. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N20Sanitizer_LaunchData6moduleE">
+<span id="_CPPv3N20Sanitizer_LaunchData6moduleE"></span><span id="_CPPv2N20Sanitizer_LaunchData6moduleE"></span><span id="Sanitizer_LaunchData::module__CUmodule"></span><span class="target" id="structsanitizer__launchdata_1a149c3ada82b4937473864e2b27bc5825"></span><span class="n"><span class="pre">CUmodule</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">module</span></span></span><a class="headerlink" href="#_CPPv4N20Sanitizer_LaunchData6moduleE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The module containing the grid code. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N20Sanitizer_LaunchData6streamE">
+<span id="_CPPv3N20Sanitizer_LaunchData6streamE"></span><span id="_CPPv2N20Sanitizer_LaunchData6streamE"></span><span id="Sanitizer_LaunchData::stream__CUstream"></span><span class="target" id="structsanitizer__launchdata_1a670de4d81de9ea2c2a2f875281f3d726"></span><span class="n"><span class="pre">CUstream</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">stream</span></span></span><a class="headerlink" href="#_CPPv4N20Sanitizer_LaunchData6streamE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The stream where the grid is launched. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+<img src="../_static/NVIDIA-LogoBlack.svg" class="only-light"/>
+<img src="../_static/NVIDIA-LogoWhite.svg" class="only-dark"/>
+
+<p class="notices">
+<a href="https://www.nvidia.com/en-us/about-nvidia/privacy-policy/" target="_blank">Privacy Policy</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/privacy-center/" target="_blank">Manage My Privacy</a>
+|
+<a href="https://www.nvidia.com/en-us/preferences/start/" target="_blank">Do Not Sell or Share My Data</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/terms-of-service/" target="_blank">Terms of Service</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/accessibility/" target="_blank">Accessibility</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/company-policies/" target="_blank">Corporate Policies</a>
+|
+<a href="https://www.nvidia.com/en-us/product-security/" target="_blank">Product Security</a>
+|
+<a href="https://www.nvidia.com/en-us/contact/" target="_blank">Contact</a>
+</p>
+
+<p>
+  Copyright &#169; 2019-2024, NVIDIA Corporation &amp; Affiliates. All rights reserved.
+</p>
+
+    <p>
+      <span class="lastupdated">Last updated on Jul 11, 2024.
+      </span></p>
+
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+ 
+
+
+
+</body>
+</html>

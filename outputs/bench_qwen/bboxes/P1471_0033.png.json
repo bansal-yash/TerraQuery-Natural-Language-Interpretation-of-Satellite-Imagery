@@ -1,0 +1,26 @@
+{
+  "image": "P1471_0033.png",
+  "boxes": [
+    {
+      "label": "small vehicle",
+      "x1": 384,
+      "y1": 271,
+      "x2": 454,
+      "y2": 320
+    },
+    {
+      "label": "small vehicle",
+      "x1": 0,
+      "y1": 203,
+      "x2": 39,
+      "y2": 246
+    },
+    {
+      "label": "large vehicle",
+      "x1": 57,
+      "y1": 84,
+      "x2": 301,
+      "y2": 212
+    }
+  ]
+}

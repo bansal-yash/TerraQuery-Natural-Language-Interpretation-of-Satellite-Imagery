@@ -1,0 +1,40 @@
+{
+  "image": "P2385_0014.png",
+  "boxes": [
+    {
+      "label": "bridge",
+      "x1": 19,
+      "y1": 198,
+      "x2": 113,
+      "y2": 505
+    },
+    {
+      "label": "farmlands",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 221
+    },
+    {
+      "label": "blue solar panels",
+      "x1": 11,
+      "y1": 47,
+      "x2": 86,
+      "y2": 150
+    },
+    {
+      "label": "blue solar panels",
+      "x1": 156,
+      "y1": 120,
+      "x2": 264,
+      "y2": 198
+    },
+    {
+      "label": "blue solar panels",
+      "x1": 267,
+      "y1": 73,
+      "x2": 375,
+      "y2": 170
+    }
+  ]
+}

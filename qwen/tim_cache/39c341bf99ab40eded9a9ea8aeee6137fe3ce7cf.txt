@@ -1,0 +1,1 @@
+RGB:Urban neighborhood with roads, buildings, green spaces, and parked cars. || SAR:SAR image shows textured, grainy patterns with bright and dark speckles.

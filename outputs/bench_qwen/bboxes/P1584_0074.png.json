@@ -1,0 +1,19 @@
+{
+  "image": "P1584_0074.png",
+  "boxes": [
+    {
+      "label": "rectangular roofed structures",
+      "x1": 0,
+      "y1": 0,
+      "x2": 510,
+      "y2": 510
+    },
+    {
+      "label": "small, circular storage-tank",
+      "x1": 0,
+      "y1": 397,
+      "x2": 39,
+      "y2": 435
+    }
+  ]
+}

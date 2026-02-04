@@ -1,0 +1,12 @@
+{
+  "image": "P6868_0003.png",
+  "boxes": [
+    {
+      "label": "ground track field",
+      "x1": 78,
+      "y1": 100,
+      "x2": 120,
+      "y2": 140
+    }
+  ]
+}

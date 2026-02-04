@@ -1,0 +1,47 @@
+{
+  "image": "P5728_0002.png",
+  "boxes": [
+    {
+      "label": "agricultural fields",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    },
+    {
+      "label": "trees",
+      "x1": 193,
+      "y1": 34,
+      "x2": 241,
+      "y2": 86
+    },
+    {
+      "label": "roads",
+      "x1": 0,
+      "y1": 225,
+      "x2": 512,
+      "y2": 512
+    },
+    {
+      "label": "golf course",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    },
+    {
+      "label": "buildings with large rooftops",
+      "x1": 249,
+      "y1": 49,
+      "x2": 290,
+      "y2": 86
+    },
+    {
+      "label": "small plane",
+      "x1": 322,
+      "y1": 190,
+      "x2": 346,
+      "y2": 208
+    }
+  ]
+}

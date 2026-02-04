@@ -1,0 +1,26 @@
+{
+  "image": "P1903_0008.png",
+  "boxes": [
+    {
+      "label": "swimming pool",
+      "x1": 381,
+      "y1": 330,
+      "x2": 399,
+      "y2": 350
+    },
+    {
+      "label": "tennis courts",
+      "x1": 176,
+      "y1": 6,
+      "x2": 500,
+      "y2": 152
+    },
+    {
+      "label": "soccer ball field",
+      "x1": 0,
+      "y1": 0,
+      "x2": 176,
+      "y2": 500
+    }
+  ]
+}

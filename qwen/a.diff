@@ -1,0 +1,66 @@
+18d17
+< os.environ['UNSLOTH_RETURN_LOGITS'] = '1'
+115,116c114,115
+<                             print(f" PREDICTED:\n{pred_text[:250]}\n")
+<                             print(f" REFERENCE:\n{label_text[:250]}")
+---
+>                             print(f" PREDICTED:\n{pred_text}\n")
+>                             print(f" REFERENCE:\n{label_text}")
+165a165,177
+>                     # Token ID for "<|im_start|>assistant"
+>                     assistant_id = self.processor.tokenizer.convert_tokens_to_ids("<|im_start|>assistant")
+> 
+>                     # Find where assistant response actually begins
+>                     assistant_positions = (output_ids[0] == assistant_id).nonzero(as_tuple=True)[0]
+> 
+>                     if len(assistant_positions) == 0:
+>                         # Fall back to old behavior, but this almost never happens
+>                         start = inputs['input_ids'].shape[1]
+>                     else:
+>                         # Start decoding AFTER the assistant tag
+>                         start = assistant_positions[0] + 1
+> 
+167c179
+<                         output_ids[0][inputs['input_ids'].shape[1]:],
+---
+>                         output_ids[0][start:],
+169a182
+> 
+344a358,370
+> 
+>         print("DEBUG pixel_values:", 
+>             "present" if "pixel_values" in inputs else "missing",
+>             "shape =", inputs["pixel_values"].shape if "pixel_values" in inputs else None)
+> 
+>         print("DEBUG image_grid_thw:", 
+>             "present" if "image_grid_thw" in inputs else "missing",
+>             "shape =", inputs["image_grid_thw"].shape if "image_grid_thw" in inputs else None)
+> 
+>         print("Full prompt tokens:", inputs['input_ids'].shape)
+>         print("Caption tokens:", inputs['input_ids'].shape[1] - prefix_length)
+> 
+>         # print("Labels: ", labels)
+476,477c502,503
+<                 finetune_vision_layers=True,
+<                 finetune_language_layers=True,
+---
+>                 finetune_vision_layers=False,
+>                 finetune_language_layers=False,
+512c538
+<                 # device_map="cuda",
+---
+>                 # device_map="auto",
+521c547
+<                 # device_map="cuda",
+---
+>                 # device_map="auto",
+613c639
+<         eval_frequency=100,             # ✨ Evaluate every 100 steps
+---
+>         eval_frequency=1,             # ✨ Evaluate every 100 steps
+628,629d653
+<         model.save_pretrained(final_output_dir)
+<         print(f"Saved LoRA/adapter weights to: {final_output_dir}")
+642a667
+> # python finetune_qwen_caption_earthmind.py --train-json /home/spandan/scratch/interiit/EarthMind-Bench/json/caption_all_unmatched.json --local-model-dir /home/spandan/scratch/interiit/qwen/small_spandan --image-dir /home/samyak/scratch/interiit/EarthMind-Bench/img/test/rgb/img --use-lora
+\ No newline at end of file

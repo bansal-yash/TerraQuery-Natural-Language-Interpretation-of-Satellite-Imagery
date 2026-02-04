@@ -1,0 +1,26 @@
+{
+  "image": "P2375_0006.png",
+  "boxes": [
+    {
+      "label": "roundabout",
+      "x1": 236,
+      "y1": 349,
+      "x2": 312,
+      "y2": 429
+    },
+    {
+      "label": "soccer field",
+      "x1": 269,
+      "y1": 0,
+      "x2": 417,
+      "y2": 157
+    },
+    {
+      "label": "oval-shaped track",
+      "x1": 364,
+      "y1": 0,
+      "x2": 438,
+      "y2": 79
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "image": "P2582_0009.png",
+  "boxes": [
+    {
+      "label": "soccer ball field",
+      "x1": 0,
+      "y1": 0,
+      "x2": 306,
+      "y2": 281
+    },
+    {
+      "label": "soccer ball field",
+      "x1": 203,
+      "y1": 0,
+      "x2": 512,
+      "y2": 379
+    },
+    {
+      "label": "soccer ball field",
+      "x1": 60,
+      "y1": 290,
+      "x2": 403,
+      "y2": 506
+    }
+  ]
+}

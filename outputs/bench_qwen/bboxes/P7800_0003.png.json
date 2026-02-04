@@ -1,0 +1,26 @@
+{
+  "image": "P7800_0003.png",
+  "boxes": [
+    {
+      "label": "baseball diamonds",
+      "x1": 66,
+      "y1": 399,
+      "x2": 152,
+      "y2": 448
+    },
+    {
+      "label": "ground track field",
+      "x1": 408,
+      "y1": 338,
+      "x2": 442,
+      "y2": 376
+    },
+    {
+      "label": "roundabout",
+      "x1": 385,
+      "y1": 418,
+      "x2": 403,
+      "y2": 437
+    }
+  ]
+}

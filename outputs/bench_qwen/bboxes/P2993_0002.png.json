@@ -1,0 +1,12 @@
+{
+  "image": "P2993_0002.png",
+  "boxes": [
+    {
+      "label": "urban development with dense residential areas intersected by curving roads and some patches of greenery",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    }
+  ]
+}

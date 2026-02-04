@@ -1,0 +1,25 @@
+{
+  "image": "P0019_0001.png",
+  "answers": [
+    {
+      "question_id": 32,
+      "question": "Is there a vehicle present in the image?",
+      "answer": "yes"
+    },
+    {
+      "question_id": 33,
+      "question": "What object is located in the middle-left position of the image?",
+      "answer": "vehicle"
+    },
+    {
+      "question_id": 34,
+      "question": "What is the shape of the house's roof?",
+      "answer": "complex"
+    },
+    {
+      "question_id": 35,
+      "question": "What kind of area is shown in the image?",
+      "answer": "residential"
+    }
+  ]
+}

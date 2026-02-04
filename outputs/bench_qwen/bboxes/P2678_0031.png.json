@@ -1,0 +1,47 @@
+{
+  "image": "P2678_0031.png",
+  "boxes": [
+    {
+      "label": "storage tank",
+      "x1": 362,
+      "y1": 228,
+      "x2": 395,
+      "y2": 267
+    },
+    {
+      "label": "storage tank",
+      "x1": 435,
+      "y1": 189,
+      "x2": 466,
+      "y2": 228
+    },
+    {
+      "label": "small vehicle",
+      "x1": 79,
+      "y1": 103,
+      "x2": 102,
+      "y2": 123
+    },
+    {
+      "label": "small vehicle",
+      "x1": 120,
+      "y1": 98,
+      "x2": 139,
+      "y2": 115
+    },
+    {
+      "label": "small vehicle",
+      "x1": 139,
+      "y1": 186,
+      "x2": 186,
+      "y2": 231
+    },
+    {
+      "label": "small vehicle",
+      "x1": 98,
+      "y1": 336,
+      "x2": 139,
+      "y2": 379
+    }
+  ]
+}

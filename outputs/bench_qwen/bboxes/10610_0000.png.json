@@ -1,0 +1,12 @@
+{
+  "image": "10610_0000.png",
+  "boxes": [
+    {
+      "label": "The image, sourced from GoogleEarth, shows a portion of a park or recreational area including a small baseball field located on the right side. Surrounding the baseball field are patches of dense trees and grassy areas.",
+      "x1": 315,
+      "y1": 0,
+      "x2": 512,
+      "y2": 256
+    }
+  ]
+}

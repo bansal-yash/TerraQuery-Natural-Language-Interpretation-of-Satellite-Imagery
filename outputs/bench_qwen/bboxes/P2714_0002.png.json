@@ -1,0 +1,12 @@
+{
+  "image": "P2714_0002.png",
+  "boxes": [
+    {
+      "label": "two small sports fields",
+      "x1": 349,
+      "y1": 340,
+      "x2": 391,
+      "y2": 384
+    }
+  ]
+}

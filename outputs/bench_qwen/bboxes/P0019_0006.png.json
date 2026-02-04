@@ -1,0 +1,12 @@
+{
+  "image": "P0019_0006.png",
+  "boxes": [
+    {
+      "label": "compact row of three cars parked end to end",
+      "x1": 388,
+      "y1": 233,
+      "x2": 439,
+      "y2": 260
+    }
+  ]
+}

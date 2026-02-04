@@ -1,0 +1,12 @@
+{
+  "image": "11255_0000.png",
+  "boxes": [
+    {
+      "label": "Aerial view of an expressway service area sourced from GoogleEarth with visible structures and vehicles. The expressway service area features a large parking area with numerous small vehicles and facilities such as buildings.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 510,
+      "y2": 510
+    }
+  ]
+}

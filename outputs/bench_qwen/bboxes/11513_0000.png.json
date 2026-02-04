@@ -1,0 +1,12 @@
+{
+  "image": "11513_0000.png",
+  "boxes": [
+    {
+      "label": "small train station",
+      "x1": 356,
+      "y1": 162,
+      "x2": 407,
+      "y2": 510
+    }
+  ]
+}

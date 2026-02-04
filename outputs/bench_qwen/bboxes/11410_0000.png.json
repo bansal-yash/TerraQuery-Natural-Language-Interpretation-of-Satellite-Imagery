@@ -1,0 +1,12 @@
+{
+  "image": "11410_0000.png",
+  "boxes": [
+    {
+      "label": "Stadium with a green field",
+      "x1": 271,
+      "y1": 239,
+      "x2": 510,
+      "y2": 510
+    }
+  ]
+}

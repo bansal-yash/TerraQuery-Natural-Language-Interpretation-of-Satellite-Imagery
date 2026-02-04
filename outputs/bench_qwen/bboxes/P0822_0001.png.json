@@ -1,0 +1,26 @@
+{
+  "image": "P0822_0001.png",
+  "boxes": [
+    {
+      "label": "tennis court",
+      "x1": 249,
+      "y1": 59,
+      "x2": 410,
+      "y2": 361
+    },
+    {
+      "label": "tennis court",
+      "x1": 419,
+      "y1": 64,
+      "x2": 512,
+      "y2": 372
+    },
+    {
+      "label": "basketball court",
+      "x1": 75,
+      "y1": 136,
+      "x2": 203,
+      "y2": 332
+    }
+  ]
+}

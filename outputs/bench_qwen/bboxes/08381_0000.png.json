@@ -1,0 +1,19 @@
+{
+  "image": "08381_0000.png",
+  "boxes": [
+    {
+      "label": "expressway-service-area",
+      "x1": 103,
+      "y1": 170,
+      "x2": 266,
+      "y2": 290
+    },
+    {
+      "label": "bridges",
+      "x1": 86,
+      "y1": 0,
+      "x2": 354,
+      "y2": 510
+    }
+  ]
+}

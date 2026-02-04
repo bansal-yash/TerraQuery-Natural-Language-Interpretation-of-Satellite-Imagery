@@ -1,0 +1,19 @@
+{
+  "image": "P2781_0025.png",
+  "boxes": [
+    {
+      "label": "football field",
+      "x1": 132,
+      "y1": 335,
+      "x2": 510,
+      "y2": 510
+    },
+    {
+      "label": "building with green rooftop",
+      "x1": 0,
+      "y1": 157,
+      "x2": 291,
+      "y2": 462
+    }
+  ]
+}

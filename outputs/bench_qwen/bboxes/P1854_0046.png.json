@@ -1,0 +1,68 @@
+{
+  "image": "P1854_0046.png",
+  "boxes": [
+    {
+      "label": "service vehicle",
+      "x1": 338,
+      "y1": 392,
+      "x2": 512,
+      "y2": 510
+    },
+    {
+      "label": "service vehicle",
+      "x1": 82,
+      "y1": 443,
+      "x2": 103,
+      "y2": 497
+    },
+    {
+      "label": "service vehicle",
+      "x1": 82,
+      "y1": 360,
+      "x2": 103,
+      "y2": 417
+    },
+    {
+      "label": "service vehicle",
+      "x1": 369,
+      "y1": 281,
+      "x2": 420,
+      "y2": 310
+    },
+    {
+      "label": "service vehicle",
+      "x1": 369,
+      "y1": 264,
+      "x2": 420,
+      "y2": 281
+    },
+    {
+      "label": "service vehicle",
+      "x1": 116,
+      "y1": 310,
+      "x2": 176,
+      "y2": 329
+    },
+    {
+      "label": "service vehicle",
+      "x1": 116,
+      "y1": 339,
+      "x2": 176,
+      "y2": 360
+    },
+    {
+      "label": "service vehicle",
+      "x1": 483,
+      "y1": 219,
+      "x2": 510,
+      "y2": 236
+    },
+    {
+      "label": "service vehicle",
+      "x1": 483,
+      "y1": 198,
+      "x2": 510,
+      "y2": 219
+    }
+  ]
+}

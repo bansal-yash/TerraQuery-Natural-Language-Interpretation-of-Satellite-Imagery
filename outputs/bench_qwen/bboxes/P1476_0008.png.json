@@ -1,0 +1,47 @@
+{
+  "image": "P1476_0008.png",
+  "boxes": [
+    {
+      "label": "large vehicle",
+      "x1": 85,
+      "y1": 87,
+      "x2": 126,
+      "y2": 237
+    },
+    {
+      "label": "large vehicle",
+      "x1": 60,
+      "y1": 428,
+      "x2": 149,
+      "y2": 512
+    },
+    {
+      "label": "large vehicle",
+      "x1": 0,
+      "y1": 346,
+      "x2": 69,
+      "y2": 438
+    },
+    {
+      "label": "large vehicle",
+      "x1": 156,
+      "y1": 479,
+      "x2": 218,
+      "y2": 512
+    },
+    {
+      "label": "small vehicle",
+      "x1": 450,
+      "y1": 423,
+      "x2": 489,
+      "y2": 464
+    },
+    {
+      "label": "road network",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    }
+  ]
+}

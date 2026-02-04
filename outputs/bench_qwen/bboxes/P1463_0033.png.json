@@ -1,0 +1,19 @@
+{
+  "image": "P1463_0033.png",
+  "boxes": [
+    {
+      "label": "small basketball court",
+      "x1": 0,
+      "y1": 151,
+      "x2": 287,
+      "y2": 510
+    },
+    {
+      "label": "small vehicle",
+      "x1": 351,
+      "y1": 344,
+      "x2": 392,
+      "y2": 435
+    }
+  ]
+}

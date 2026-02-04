@@ -1,0 +1,33 @@
+{
+  "image": "P1903_0002.png",
+  "boxes": [
+    {
+      "label": "baseball diamond",
+      "x1": 154,
+      "y1": 268,
+      "x2": 295,
+      "y2": 407
+    },
+    {
+      "label": "baseball diamond",
+      "x1": 193,
+      "y1": 35,
+      "x2": 324,
+      "y2": 176
+    },
+    {
+      "label": "baseball diamond",
+      "x1": 417,
+      "y1": 310,
+      "x2": 512,
+      "y2": 435
+    },
+    {
+      "label": "small vehicle",
+      "x1": 27,
+      "y1": 243,
+      "x2": 46,
+      "y2": 268
+    }
+  ]
+}

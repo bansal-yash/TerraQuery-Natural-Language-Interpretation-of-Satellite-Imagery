@@ -1,0 +1,33 @@
+{
+  "image": "P2481_0016.png",
+  "boxes": [
+    {
+      "label": "parking area",
+      "x1": 0,
+      "y1": 182,
+      "x2": 443,
+      "y2": 415
+    },
+    {
+      "label": "large structure with a dark rooftop and white segments",
+      "x1": 0,
+      "y1": 95,
+      "x2": 443,
+      "y2": 510
+    },
+    {
+      "label": "five vehicles parked in a row in the middle-right",
+      "x1": 415,
+      "y1": 234,
+      "x2": 510,
+      "y2": 340
+    },
+    {
+      "label": "two storage tanks",
+      "x1": 481,
+      "y1": 426,
+      "x2": 510,
+      "y2": 468
+    }
+  ]
+}

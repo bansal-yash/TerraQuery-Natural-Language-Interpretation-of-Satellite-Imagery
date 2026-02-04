@@ -1,0 +1,19 @@
+{
+  "image": "06022_0000.png",
+  "boxes": [
+    {
+      "label": "golf field",
+      "x1": 438,
+      "y1": 372,
+      "x2": 489,
+      "y2": 409
+    },
+    {
+      "label": "ground track and field",
+      "x1": 312,
+      "y1": 200,
+      "x2": 353,
+      "y2": 246
+    }
+  ]
+}

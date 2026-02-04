@@ -1,0 +1,12 @@
+{
+  "image": "P1492_0022.png",
+  "boxes": [
+    {
+      "label": "A high-resolution image from GoogleEarth displays a small plane parked on a tarmac with distinct tarmac markings and gray surface. The plane is positioned towards the corner of the image.",
+      "x1": 0,
+      "y1": 13,
+      "x2": 183,
+      "y2": 195
+    }
+  ]
+}

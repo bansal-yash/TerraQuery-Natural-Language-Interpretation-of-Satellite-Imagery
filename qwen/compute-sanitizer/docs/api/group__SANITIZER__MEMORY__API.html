@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanitizer Memory API &mdash; compute-sanitizer 12.6 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/omni-style.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/api-styles.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/mermaid-init.js"></script>
+        <script src="../_static/design-tabs.js"></script>
+        <script src="../_static/version.js"></script>
+        <script src="../_static/social-media.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Sanitizer Patching API" href="group__SANITIZER__PATCHING__API.html" />
+    <link rel="prev" title="Sanitizer Callback API" href="group__SANITIZER__CALLBACK__API.html" />
+ 
+
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+
+<a href="../index.html">
+  <img src="../_static/Logo_and_CUDA.png" class="logo" alt="Logo"/>
+</a>
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../ReleaseNotes/index.html">Release Notes</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tools</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ComputeSanitizer/index.html">Compute Sanitizer</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Interfaces</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../SanitizerApiGuide/index.html">Compute Sanitizer API Reference Manual</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../SanitizerApi/table-of-contents.html">Sanitizer API</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="modules.html">Modules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="group__SANITIZER__BARRIER__API.html">Sanitizer Barrier API</a></li>
+<li class="toctree-l3"><a class="reference internal" href="group__SANITIZER__CALLBACK__API.html">Sanitizer Callback API</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Sanitizer Memory API</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#functions">Functions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="group__SANITIZER__PATCHING__API.html">Sanitizer Patching API</a></li>
+<li class="toctree-l3"><a class="reference internal" href="group__SANITIZER__RESULT__API.html">Sanitizer Result Codes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="group__SANITIZER__STREAM__API.html">Sanitizer Stream API</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="structs.html">Structs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../SanitizerNvtxGuide/index.html">NVTX API for Compute Sanitizer Reference Manual</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Copyright And Licenses</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../CopyrightAndLicenses/index.html">Copyright and Licenses</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">compute-sanitizer</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+
+
+  
+
+<li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+  
+    <li><a href="../SanitizerApi/table-of-contents.html">Sanitizer API</a> &raquo;</li>
+    <li><a href="modules.html">Modules</a> &raquo;</li>
+<li>Sanitizer Memory API</li>
+
+      <li class="wy-breadcrumbs-aside">
+      </li>
+<li class="wy-breadcrumbs-aside">
+
+
+  <span>v2024.3.0</span>
+
+
+  <span>&nbsp;</span>
+</li>
+
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="sanitizer-memory-api">
+<h1>Sanitizer Memory API<a class="headerlink" href="#sanitizer-memory-api" title="Permalink to this headline"></a></h1>
+<p id="group__sanitizer__memory__api">Functions, types, and enums that implement the Sanitizer Memory API. </p>
+<p class="rubric-h2 rubric">Functions</p>
+<div class="dl-as-table docutils container">
+<dl class="simple">
+<dt><span class="tag-as-table-cell">SanitizerResult</span> <a class="reference internal" href="#group__sanitizer__memory__api_1gae79baddc2606f95c4a08b329d91eba1f"><span class="std std-ref">sanitizerAlloc</span></a>(CUcontext ctx, void **devPtr, size_t size)</dt><dd><p>Allocate memory on the device.</p>
+</dd>
+<dt><span class="tag-as-table-cell">SanitizerResult</span> <a class="reference internal" href="#group__sanitizer__memory__api_1gae0e449b985a82593b51e74b903c894c1"><span class="std std-ref">sanitizerAllocHost</span></a>(CUcontext ctx, void **devPtr, size_t size)</dt><dd><p>Allocate host pinned memory.</p>
+</dd>
+<dt><span class="tag-as-table-cell">SanitizerResult</span> <a class="reference internal" href="#group__sanitizer__memory__api_1gaf98cbb040c6ad85e0d4666a1fac8c706"><span class="std std-ref">sanitizerFree</span></a>(CUcontext ctx, void *devPtr)</dt><dd><p>Frees memory on the device.</p>
+</dd>
+<dt><span class="tag-as-table-cell">SanitizerResult</span> <a class="reference internal" href="#group__sanitizer__memory__api_1gac7063c0ded9edc4754ce71f522b6e176"><span class="std std-ref">sanitizerFreeHost</span></a>(CUcontext ctx, void *devPtr)</dt><dd><p>Frees host memory.</p>
+</dd>
+<dt><span class="tag-as-table-cell">SanitizerResult</span> <a class="reference internal" href="#group__sanitizer__memory__api_1ga07274beaf9942d2bbd408f30d84d18a6"><span class="std std-ref">sanitizerMemcpyDeviceToHost</span></a>(void *dst, void *src, size_t count, Sanitizer_StreamHandle stream)</dt><dd><p>Copies data from device to host.</p>
+</dd>
+<dt><span class="tag-as-table-cell">SanitizerResult</span> <a class="reference internal" href="#group__sanitizer__memory__api_1ga0966da96869961ba0eb940549d83c3d3"><span class="std std-ref">sanitizerMemcpyHostToDeviceAsync</span></a>(void *dst, void *src, size_t count, Sanitizer_StreamHandle stream)</dt><dd><p>Copies data from host to device.</p>
+</dd>
+<dt><span class="tag-as-table-cell">SanitizerResult</span> <a class="reference internal" href="#group__sanitizer__memory__api_1ga3882bef4021470a075c241d90c99cabb"><span class="std std-ref">sanitizerMemset</span></a>(void *devPtr, int value, size_t count, Sanitizer_StreamHandle stream)</dt><dd><p>Initializes or sets device memory to a value.</p>
+</dd>
+</dl>
+</div>
+<section id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline"></a></h2>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv414sanitizerAlloc9CUcontextPPv6size_t">
+<span id="_CPPv314sanitizerAlloc9CUcontextPPv6size_t"></span><span id="_CPPv214sanitizerAlloc9CUcontextPPv6size_t"></span><span id="sanitizerAlloc__CUcontext.voidPP.s"></span><span class="target" id="group__sanitizer__memory__api_1gae79baddc2606f95c4a08b329d91eba1f"></span><a class="reference internal" href="group__SANITIZER__RESULT__API.html#_CPPv415SanitizerResult" title="SanitizerResult"><span class="n"><span class="pre">SanitizerResult</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sanitizerAlloc</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">CUcontext</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">ctx</span></span>, <span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">devPtr</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">size</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv414sanitizerAlloc9CUcontextPPv6size_t" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Allocate memory on the device. </p>
+<p>Equivalent of cudaMalloc that can be called within a callback function. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Thread-safety</strong>: this function is thread safe.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ctx</strong> – Context for the allocation. If NULL, the current context will be used. </p></li>
+<li><p><strong>devPtr</strong> – Pointer to allocated device memory </p></li>
+<li><p><strong>size</strong> – Allocation size in bytes </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv418sanitizerAllocHost9CUcontextPPv6size_t">
+<span id="_CPPv318sanitizerAllocHost9CUcontextPPv6size_t"></span><span id="_CPPv218sanitizerAllocHost9CUcontextPPv6size_t"></span><span id="sanitizerAllocHost__CUcontext.voidPP.s"></span><span class="target" id="group__sanitizer__memory__api_1gae0e449b985a82593b51e74b903c894c1"></span><a class="reference internal" href="group__SANITIZER__RESULT__API.html#_CPPv415SanitizerResult" title="SanitizerResult"><span class="n"><span class="pre">SanitizerResult</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sanitizerAllocHost</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">CUcontext</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">ctx</span></span>, <span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">devPtr</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">size</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv418sanitizerAllocHost9CUcontextPPv6size_t" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Allocate host pinned memory. </p>
+<p>Equivalent of cudaMallocHost that can be called within a callback function. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Thread-safety</strong>: this function is thread safe.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ctx</strong> – Context for the allocation. If NULL, the current context will be used. </p></li>
+<li><p><strong>devPtr</strong> – Pointer to allocated host memory </p></li>
+<li><p><strong>size</strong> – Allocation size in bytes </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv413sanitizerFree9CUcontextPv">
+<span id="_CPPv313sanitizerFree9CUcontextPv"></span><span id="_CPPv213sanitizerFree9CUcontextPv"></span><span id="sanitizerFree__CUcontext.voidP"></span><span class="target" id="group__sanitizer__memory__api_1gaf98cbb040c6ad85e0d4666a1fac8c706"></span><a class="reference internal" href="group__SANITIZER__RESULT__API.html#_CPPv415SanitizerResult" title="SanitizerResult"><span class="n"><span class="pre">SanitizerResult</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sanitizerFree</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">CUcontext</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">ctx</span></span>, <span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">devPtr</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv413sanitizerFree9CUcontextPv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Frees memory on the device. </p>
+<p>Equivalent of cudaFree that can be called within a callback function. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Thread-safety</strong>: this function is thread safe.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ctx</strong> – Context for the allocation. If NULL, the current context will be used. </p></li>
+<li><p><strong>devPtr</strong> – Device pointer to memory to free </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv417sanitizerFreeHost9CUcontextPv">
+<span id="_CPPv317sanitizerFreeHost9CUcontextPv"></span><span id="_CPPv217sanitizerFreeHost9CUcontextPv"></span><span id="sanitizerFreeHost__CUcontext.voidP"></span><span class="target" id="group__sanitizer__memory__api_1gac7063c0ded9edc4754ce71f522b6e176"></span><a class="reference internal" href="group__SANITIZER__RESULT__API.html#_CPPv415SanitizerResult" title="SanitizerResult"><span class="n"><span class="pre">SanitizerResult</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sanitizerFreeHost</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">CUcontext</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">ctx</span></span>, <span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">devPtr</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv417sanitizerFreeHost9CUcontextPv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Frees host memory. </p>
+<p>Equivalent of cudaFreeHost that can be called within a callback function. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Thread-safety</strong>: this function is thread safe.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ctx</strong> – Context for the allocation. If NULL, the current context will be used. </p></li>
+<li><p><strong>devPtr</strong> – Host pointer to memory to free </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv427sanitizerMemcpyDeviceToHostPvPv6size_t22Sanitizer_StreamHandle">
+<span id="_CPPv327sanitizerMemcpyDeviceToHostPvPv6size_t22Sanitizer_StreamHandle"></span><span id="_CPPv227sanitizerMemcpyDeviceToHostPvPv6size_t22Sanitizer_StreamHandle"></span><span id="sanitizerMemcpyDeviceToHost__voidP.voidP.s.Sanitizer_StreamHandle"></span><span class="target" id="group__sanitizer__memory__api_1ga07274beaf9942d2bbd408f30d84d18a6"></span><a class="reference internal" href="group__SANITIZER__RESULT__API.html#_CPPv415SanitizerResult" title="SanitizerResult"><span class="n"><span class="pre">SanitizerResult</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sanitizerMemcpyDeviceToHost</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">dst</span></span>, <span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">src</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">count</span></span>, <a class="reference internal" href="group__SANITIZER__STREAM__API.html#_CPPv422Sanitizer_StreamHandle" title="Sanitizer_StreamHandle"><span class="n"><span class="pre">Sanitizer_StreamHandle</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">stream</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv427sanitizerMemcpyDeviceToHostPvPv6size_t22Sanitizer_StreamHandle" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Copies data from device to host. </p>
+<p>Equivalent of cudaMemcpy that can be called within a callback function. The function will return once the copy has completed. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Thread-safety</strong>: this function is thread safe.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dst</strong> – Destination memory address </p></li>
+<li><p><strong>src</strong> – Source memory address </p></li>
+<li><p><strong>count</strong> – Size in bytes to copy </p></li>
+<li><p><strong>stream</strong> – Stream handle. If NULL, the NULL stream will be used. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv432sanitizerMemcpyHostToDeviceAsyncPvPv6size_t22Sanitizer_StreamHandle">
+<span id="_CPPv332sanitizerMemcpyHostToDeviceAsyncPvPv6size_t22Sanitizer_StreamHandle"></span><span id="_CPPv232sanitizerMemcpyHostToDeviceAsyncPvPv6size_t22Sanitizer_StreamHandle"></span><span id="sanitizerMemcpyHostToDeviceAsync__voidP.voidP.s.Sanitizer_StreamHandle"></span><span class="target" id="group__sanitizer__memory__api_1ga0966da96869961ba0eb940549d83c3d3"></span><a class="reference internal" href="group__SANITIZER__RESULT__API.html#_CPPv415SanitizerResult" title="SanitizerResult"><span class="n"><span class="pre">SanitizerResult</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sanitizerMemcpyHostToDeviceAsync</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">dst</span></span>, <span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">src</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">count</span></span>, <a class="reference internal" href="group__SANITIZER__STREAM__API.html#_CPPv422Sanitizer_StreamHandle" title="Sanitizer_StreamHandle"><span class="n"><span class="pre">Sanitizer_StreamHandle</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">stream</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv432sanitizerMemcpyHostToDeviceAsyncPvPv6size_t22Sanitizer_StreamHandle" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Copies data from host to device. </p>
+<p>Equivalent of cudaMemcpyAsync that can be called within a callback function. The function will return once the pageable buffer has been copied to the staging memory for DMA transfer to device memory, but the DMA to final destination may not have completed. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Thread-safety</strong>: this function is thread safe.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dst</strong> – Destination memory address </p></li>
+<li><p><strong>src</strong> – Source memory address </p></li>
+<li><p><strong>count</strong> – Size in bytes to copy </p></li>
+<li><p><strong>stream</strong> – Stream handle. If NULL, the NULL stream will be used. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv415sanitizerMemsetPvi6size_t22Sanitizer_StreamHandle">
+<span id="_CPPv315sanitizerMemsetPvi6size_t22Sanitizer_StreamHandle"></span><span id="_CPPv215sanitizerMemsetPvi6size_t22Sanitizer_StreamHandle"></span><span id="sanitizerMemset__voidP.i.s.Sanitizer_StreamHandle"></span><span class="target" id="group__sanitizer__memory__api_1ga3882bef4021470a075c241d90c99cabb"></span><a class="reference internal" href="group__SANITIZER__RESULT__API.html#_CPPv415SanitizerResult" title="SanitizerResult"><span class="n"><span class="pre">SanitizerResult</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sanitizerMemset</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">devPtr</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">value</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">count</span></span>, <a class="reference internal" href="group__SANITIZER__STREAM__API.html#_CPPv422Sanitizer_StreamHandle" title="Sanitizer_StreamHandle"><span class="n"><span class="pre">Sanitizer_StreamHandle</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">stream</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv415sanitizerMemsetPvi6size_t22Sanitizer_StreamHandle" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Initializes or sets device memory to a value. </p>
+<p>Equivalent of cudaMemset that can be called within a callback function. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Thread-safety</strong>: this function is thread safe.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>devPtr</strong> – Pointer to device memory </p></li>
+<li><p><strong>value</strong> – value to set for each byte of specified memory </p></li>
+<li><p><strong>count</strong> – Size in bytes to set </p></li>
+<li><p><strong>stream</strong> – Stream handle. If NULL, the NULL stream will be used. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+<img src="../_static/NVIDIA-LogoBlack.svg" class="only-light"/>
+<img src="../_static/NVIDIA-LogoWhite.svg" class="only-dark"/>
+
+<p class="notices">
+<a href="https://www.nvidia.com/en-us/about-nvidia/privacy-policy/" target="_blank">Privacy Policy</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/privacy-center/" target="_blank">Manage My Privacy</a>
+|
+<a href="https://www.nvidia.com/en-us/preferences/start/" target="_blank">Do Not Sell or Share My Data</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/terms-of-service/" target="_blank">Terms of Service</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/accessibility/" target="_blank">Accessibility</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/company-policies/" target="_blank">Corporate Policies</a>
+|
+<a href="https://www.nvidia.com/en-us/product-security/" target="_blank">Product Security</a>
+|
+<a href="https://www.nvidia.com/en-us/contact/" target="_blank">Contact</a>
+</p>
+
+<p>
+  Copyright &#169; 2019-2024, NVIDIA Corporation &amp; Affiliates. All rights reserved.
+</p>
+
+    <p>
+      <span class="lastupdated">Last updated on Jul 11, 2024.
+      </span></p>
+
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+ 
+
+
+
+</body>
+</html>

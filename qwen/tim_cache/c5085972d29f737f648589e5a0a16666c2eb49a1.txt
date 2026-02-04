@@ -1,0 +1,1 @@
+RGB:Aerial view of house, forest, field, and road intersection. || SAR:SAR image shows textured, grainy terrain with faint linear and clustered patterns.

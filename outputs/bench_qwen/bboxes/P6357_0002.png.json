@@ -1,0 +1,33 @@
+{
+  "image": "P6357_0002.png",
+  "boxes": [
+    {
+      "label": "structures in a small complex center-upper part",
+      "x1": 223,
+      "y1": 34,
+      "x2": 358,
+      "y2": 141
+    },
+    {
+      "label": "housing area on the bottom-left",
+      "x1": 120,
+      "y1": 415,
+      "x2": 249,
+      "y2": 510
+    },
+    {
+      "label": "roundabout towards the right side of the image",
+      "x1": 358,
+      "y1": 330,
+      "x2": 384,
+      "y2": 351
+    },
+    {
+      "label": "roundabout near the bottom-middle",
+      "x1": 244,
+      "y1": 415,
+      "x2": 275,
+      "y2": 438
+    }
+  ]
+}

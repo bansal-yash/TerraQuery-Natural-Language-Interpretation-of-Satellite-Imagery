@@ -1,0 +1,12 @@
+{
+  "image": "P0949_0007.png",
+  "boxes": [
+    {
+      "label": "two ships situated at the top-right corner",
+      "x1": 431,
+      "y1": 38,
+      "x2": 492,
+      "y2": 86
+    }
+  ]
+}

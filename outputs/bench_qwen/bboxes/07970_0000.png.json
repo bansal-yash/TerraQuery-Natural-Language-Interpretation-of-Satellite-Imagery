@@ -1,0 +1,12 @@
+{
+  "image": "07970_0000.png",
+  "boxes": [
+    {
+      "label": "industrial structure",
+      "x1": 269,
+      "y1": 27,
+      "x2": 512,
+      "y2": 507
+    }
+  ]
+}

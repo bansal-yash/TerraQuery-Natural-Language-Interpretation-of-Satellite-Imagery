@@ -1,0 +1,12 @@
+{
+  "image": "P2450_0004.png",
+  "boxes": [
+    {
+      "label": "A high-resolution image from GoogleEarth presents an aerial view of an area with a pattern of long buildings with orange rooftops, surrounded by greenery. Many buildings are aligned in parallel rows with pathways separating them. The image includes a large vehicle that is located towards the right side of the image.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 506
+    }
+  ]
+}

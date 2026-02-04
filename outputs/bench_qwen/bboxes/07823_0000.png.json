@@ -1,0 +1,12 @@
+{
+  "image": "07823_0000.png",
+  "boxes": [
+    {
+      "label": "An aerial image sourced from GoogleEarth featuring multiple tennis courts closely aligned in a row. The courts have similar dimensions but different orientations, with visible surrounding grassy areas and a distinct left-most court aligned vertically from this perspective.",
+      "x1": 139,
+      "y1": 139,
+      "x2": 510,
+      "y2": 510
+    }
+  ]
+}

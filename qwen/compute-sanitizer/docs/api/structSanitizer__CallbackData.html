@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanitizer_CallbackData &mdash; compute-sanitizer 12.6 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/omni-style.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/api-styles.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/mermaid-init.js"></script>
+        <script src="../_static/design-tabs.js"></script>
+        <script src="../_static/version.js"></script>
+        <script src="../_static/social-media.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Sanitizer_EventData" href="structSanitizer__EventData.html" />
+    <link rel="prev" title="Sanitizer_BatchMemopData" href="structSanitizer__BatchMemopData.html" />
+ 
+
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+
+<a href="../index.html">
+  <img src="../_static/Logo_and_CUDA.png" class="logo" alt="Logo"/>
+</a>
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../ReleaseNotes/index.html">Release Notes</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tools</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ComputeSanitizer/index.html">Compute Sanitizer</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Interfaces</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../SanitizerApiGuide/index.html">Compute Sanitizer API Reference Manual</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../SanitizerApi/table-of-contents.html">Sanitizer API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="modules.html">Modules</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="structs.html">Structs</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__BatchMemopData.html">Sanitizer_BatchMemopData</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Sanitizer_CallbackData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__EventData.html">Sanitizer_EventData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__ExternalMemoryData.html">Sanitizer_ExternalMemoryData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__GraphExecData.html">Sanitizer_GraphExecData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__GraphLaunchData.html">Sanitizer_GraphLaunchData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__GraphNodeLaunchData.html">Sanitizer_GraphNodeLaunchData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__LaunchData.html">Sanitizer_LaunchData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__MemcpyData.html">Sanitizer_MemcpyData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__MemsetData.html">Sanitizer_MemsetData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__ResourceArrayData.html">Sanitizer_ResourceArrayData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__ResourceContextData.html">Sanitizer_ResourceContextData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__ResourceFunctionsLazyLoadedData.html">Sanitizer_ResourceFunctionsLazyLoadedData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__ResourceMemoryData.html">Sanitizer_ResourceMemoryData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__ResourceMempoolData.html">Sanitizer_ResourceMempoolData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__ResourceModuleData.html">Sanitizer_ResourceModuleData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__ResourceStreamData.html">Sanitizer_ResourceStreamData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__ResourceVirtualRange.html">Sanitizer_ResourceVirtualRange</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__SynchronizeData.html">Sanitizer_SynchronizeData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structSanitizer__UvmData.html">Sanitizer_UvmData</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../SanitizerNvtxGuide/index.html">NVTX API for Compute Sanitizer Reference Manual</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Copyright And Licenses</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../CopyrightAndLicenses/index.html">Copyright and Licenses</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">compute-sanitizer</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+
+
+  
+
+<li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+  
+    <li><a href="../SanitizerApi/table-of-contents.html">Sanitizer API</a> &raquo;</li>
+    <li><a href="structs.html">Structs</a> &raquo;</li>
+<li>Sanitizer_CallbackData</li>
+
+      <li class="wy-breadcrumbs-aside">
+      </li>
+<li class="wy-breadcrumbs-aside">
+
+
+  <span>v2024.3.0</span>
+
+
+  <span>&nbsp;</span>
+</li>
+
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="sanitizer-callbackdata">
+<h1>Sanitizer_CallbackData<a class="headerlink" href="#sanitizer-callbackdata" title="Permalink to this headline"></a></h1>
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv422Sanitizer_CallbackData">
+<span id="_CPPv322Sanitizer_CallbackData"></span><span id="_CPPv222Sanitizer_CallbackData"></span><span id="Sanitizer_CallbackData"></span><span class="target" id="structsanitizer__callbackdata"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Sanitizer_CallbackData</span></span></span><a class="headerlink" href="#_CPPv422Sanitizer_CallbackData" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Data passed into a runtime or driver API callback function. </p>
+<p>Data passed into a runtime or driver API callback function as the <code class="docutils literal notranslate"><span class="pre">cbdata</span></code> argument to <a class="reference internal" href="group__SANITIZER__CALLBACK__API.html#group__sanitizer__callback__api_1gac1ae37612d036530e060f1bca8c3ccd8"><span class="std std-ref">Sanitizer_CallbackFunc</span></a>. The <code class="docutils literal notranslate"><span class="pre">cbdata</span></code> will be this type for <code class="docutils literal notranslate"><span class="pre">domain</span></code> equal to SANITIZER_CB_DOMAIN_DRIVER_API or SANITIZER_CB_DOMAIN_RUNTIME_API. The callback data is valid only within the invocation of the callback function that is passed the data. If you need to retain some data for use outside of the callback, you must make of a copy of that data. For example, if you make a shallow copy of <a class="reference internal" href="#structsanitizer__callbackdata"><span class="std std-ref">Sanitizer_CallbackData</span></a> within a callback, you cannot dereference <code class="docutils literal notranslate"><span class="pre">functionParams</span></code> outside of that callback to access the function parameters. <code class="docutils literal notranslate"><span class="pre">functionName</span></code> is an exception: the string pointed to by <code class="docutils literal notranslate"><span class="pre">functionName</span></code> is a global constant and so may be accessed outside of the callback. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric-h3 rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N22Sanitizer_CallbackData12callbackSiteE">
+<span id="_CPPv3N22Sanitizer_CallbackData12callbackSiteE"></span><span id="_CPPv2N22Sanitizer_CallbackData12callbackSiteE"></span><span id="Sanitizer_CallbackData::callbackSite__Sanitizer_ApiCallbackSite"></span><span class="target" id="structsanitizer__callbackdata_1af1fbd9c50f2714f75ec1de051151124d"></span><a class="reference internal" href="group__SANITIZER__CALLBACK__API.html#_CPPv425Sanitizer_ApiCallbackSite" title="Sanitizer_ApiCallbackSite"><span class="n"><span class="pre">Sanitizer_ApiCallbackSite</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">callbackSite</span></span></span><a class="headerlink" href="#_CPPv4N22Sanitizer_CallbackData12callbackSiteE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Point in the runtime or driver function from where the callback was issued. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N22Sanitizer_CallbackData7contextE">
+<span id="_CPPv3N22Sanitizer_CallbackData7contextE"></span><span id="_CPPv2N22Sanitizer_CallbackData7contextE"></span><span id="Sanitizer_CallbackData::context__CUcontext"></span><span class="target" id="structsanitizer__callbackdata_1a6952454cc861e5a97c40d9e459a90351"></span><span class="n"><span class="pre">CUcontext</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">context</span></span></span><a class="headerlink" href="#_CPPv4N22Sanitizer_CallbackData7contextE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Driver context current to the thread, or null if no context is current. </p>
+<p>This value can change from the entry to exit callback of a runtime API function if the runtime initialized a context. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N22Sanitizer_CallbackData12functionNameE">
+<span id="_CPPv3N22Sanitizer_CallbackData12functionNameE"></span><span id="_CPPv2N22Sanitizer_CallbackData12functionNameE"></span><span id="Sanitizer_CallbackData::functionName__cCP"></span><span class="target" id="structsanitizer__callbackdata_1acffbfadfe4c7af894d8e39407595efd2"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">functionName</span></span></span><a class="headerlink" href="#_CPPv4N22Sanitizer_CallbackData12functionNameE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Name of the runtime or driver API function which issued the callback. </p>
+<p>This string is a global constant and so may be accessed outside of the callback. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N22Sanitizer_CallbackData14functionParamsE">
+<span id="_CPPv3N22Sanitizer_CallbackData14functionParamsE"></span><span id="_CPPv2N22Sanitizer_CallbackData14functionParamsE"></span><span id="Sanitizer_CallbackData::functionParams__voidCP"></span><span class="target" id="structsanitizer__callbackdata_1a3866442ee35daa08d5bbd2eeb366f91f"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">functionParams</span></span></span><a class="headerlink" href="#_CPPv4N22Sanitizer_CallbackData14functionParamsE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Pointer to the arguments passed to the runtime or driver API call. </p>
+<p>See generated_cuda_runtime_api_meta.h and generated_cuda_meta.h for structure definitions for the parameters for each runtime and driver API function. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N22Sanitizer_CallbackData19functionReturnValueE">
+<span id="_CPPv3N22Sanitizer_CallbackData19functionReturnValueE"></span><span id="_CPPv2N22Sanitizer_CallbackData19functionReturnValueE"></span><span id="Sanitizer_CallbackData::functionReturnValue__voidCP"></span><span class="target" id="structsanitizer__callbackdata_1ab523a3af8e202cbbdd706277014041fa"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">functionReturnValue</span></span></span><a class="headerlink" href="#_CPPv4N22Sanitizer_CallbackData19functionReturnValueE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Pointer to the return value of the runtime or driver API call. </p>
+<p>This field is only valid within the SANITIZER_API_EXIT callback. For a runtime API <code class="docutils literal notranslate"><span class="pre">functionReturnValue</span></code> points to a <code class="docutils literal notranslate"><span class="pre">cudaError_t</span></code>. For a driver API <code class="docutils literal notranslate"><span class="pre">functionReturnValue</span></code> points to a <code class="docutils literal notranslate"><span class="pre">CUresult</span></code>. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N22Sanitizer_CallbackData10symbolNameE">
+<span id="_CPPv3N22Sanitizer_CallbackData10symbolNameE"></span><span id="_CPPv2N22Sanitizer_CallbackData10symbolNameE"></span><span id="Sanitizer_CallbackData::symbolName__cCP"></span><span class="target" id="structsanitizer__callbackdata_1a1ee030118e093f440f953d896ee80be6"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">symbolName</span></span></span><a class="headerlink" href="#_CPPv4N22Sanitizer_CallbackData10symbolNameE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Name of the symbol operated on by the runtime or driver API function which issued the callback. </p>
+<p>This entry is valid only for driver and runtime launch callbacks, where it returns the name of the kernel. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+<img src="../_static/NVIDIA-LogoBlack.svg" class="only-light"/>
+<img src="../_static/NVIDIA-LogoWhite.svg" class="only-dark"/>
+
+<p class="notices">
+<a href="https://www.nvidia.com/en-us/about-nvidia/privacy-policy/" target="_blank">Privacy Policy</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/privacy-center/" target="_blank">Manage My Privacy</a>
+|
+<a href="https://www.nvidia.com/en-us/preferences/start/" target="_blank">Do Not Sell or Share My Data</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/terms-of-service/" target="_blank">Terms of Service</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/accessibility/" target="_blank">Accessibility</a>
+|
+<a href="https://www.nvidia.com/en-us/about-nvidia/company-policies/" target="_blank">Corporate Policies</a>
+|
+<a href="https://www.nvidia.com/en-us/product-security/" target="_blank">Product Security</a>
+|
+<a href="https://www.nvidia.com/en-us/contact/" target="_blank">Contact</a>
+</p>
+
+<p>
+  Copyright &#169; 2019-2024, NVIDIA Corporation &amp; Affiliates. All rights reserved.
+</p>
+
+    <p>
+      <span class="lastupdated">Last updated on Jul 11, 2024.
+      </span></p>
+
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+ 
+
+
+
+</body>
+</html>

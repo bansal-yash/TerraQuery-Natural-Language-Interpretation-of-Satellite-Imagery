@@ -1,0 +1,68 @@
+{
+  "image": "P2802_0011.png",
+  "boxes": [
+    {
+      "label": "aircraft",
+      "x1": 6,
+      "y1": 300,
+      "x2": 267,
+      "y2": 391
+    },
+    {
+      "label": "large building",
+      "x1": 260,
+      "y1": 272,
+      "x2": 362,
+      "y2": 495
+    },
+    {
+      "label": "small vehicles",
+      "x1": 37,
+      "y1": 402,
+      "x2": 54,
+      "y2": 425
+    },
+    {
+      "label": "small vehicles",
+      "x1": 59,
+      "y1": 441,
+      "x2": 87,
+      "y2": 460
+    },
+    {
+      "label": "small vehicles",
+      "x1": 209,
+      "y1": 381,
+      "x2": 223,
+      "y2": 402
+    },
+    {
+      "label": "small vehicles",
+      "x1": 472,
+      "y1": 329,
+      "x2": 490,
+      "y2": 351
+    },
+    {
+      "label": "small vehicles",
+      "x1": 479,
+      "y1": 305,
+      "x2": 500,
+      "y2": 329
+    },
+    {
+      "label": "small vehicles",
+      "x1": 479,
+      "y1": 282,
+      "x2": 500,
+      "y2": 305
+    },
+    {
+      "label": "small vehicles",
+      "x1": 479,
+      "y1": 263,
+      "x2": 500,
+      "y2": 282
+    }
+  ]
+}

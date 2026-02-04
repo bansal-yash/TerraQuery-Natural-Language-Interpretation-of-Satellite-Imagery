@@ -1,0 +1,19 @@
+{
+  "image": "P1854_0059.png",
+  "boxes": [
+    {
+      "label": "terminal building roofing",
+      "x1": 0,
+      "y1": 0,
+      "x2": 279,
+      "y2": 510
+    },
+    {
+      "label": "designated parking area",
+      "x1": 326,
+      "y1": 234,
+      "x2": 510,
+      "y2": 510
+    }
+  ]
+}

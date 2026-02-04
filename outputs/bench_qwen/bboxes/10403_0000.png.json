@@ -1,0 +1,33 @@
+{
+  "image": "10403_0000.png",
+  "boxes": [
+    {
+      "label": "vehicle on the bridge",
+      "x1": 84,
+      "y1": 216,
+      "x2": 115,
+      "y2": 247
+    },
+    {
+      "label": "vehicle under the overpass",
+      "x1": 228,
+      "y1": 482,
+      "x2": 263,
+      "y2": 506
+    },
+    {
+      "label": "vehicle under the overpass",
+      "x1": 328,
+      "y1": 445,
+      "x2": 365,
+      "y2": 471
+    },
+    {
+      "label": "vehicle under the overpass",
+      "x1": 439,
+      "y1": 459,
+      "x2": 474,
+      "y2": 487
+    }
+  ]
+}

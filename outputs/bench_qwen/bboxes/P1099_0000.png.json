@@ -1,0 +1,12 @@
+{
+  "image": "P1099_0000.png",
+  "boxes": [
+    {
+      "label": "The high-resolution image from GoogleEarth features a small tennis court with clear white lines marking the playing area.",
+      "x1": 109,
+      "y1": 221,
+      "x2": 256,
+      "y2": 492
+    }
+  ]
+}

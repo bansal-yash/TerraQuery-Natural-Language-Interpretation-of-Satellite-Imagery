@@ -1,0 +1,12 @@
+{
+  "image": "P0962_0009.png",
+  "boxes": [
+    {
+      "label": "harbor installations",
+      "x1": 0,
+      "y1": 0,
+      "x2": 269,
+      "y2": 510
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "image": "P1179_0107.png",
+  "boxes": [
+    {
+      "label": "central storage tank",
+      "x1": 167,
+      "y1": 213,
+      "x2": 295,
+      "y2": 334
+    }
+  ]
+}

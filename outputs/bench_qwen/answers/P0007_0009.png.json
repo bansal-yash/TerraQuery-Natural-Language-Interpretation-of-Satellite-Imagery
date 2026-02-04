@@ -1,0 +1,30 @@
+{
+  "image": "P0007_0009.png",
+  "answers": [
+    {
+      "question_id": 23,
+      "question": "What type of vehicles are mainly visible in the image?",
+      "answer": "trucks"
+    },
+    {
+      "question_id": 24,
+      "question": "What is the predominant color of the large vehicles in the image?",
+      "answer": "white"
+    },
+    {
+      "question_id": 25,
+      "question": "Is there vegetation visible in the image?",
+      "answer": "yes"
+    },
+    {
+      "question_id": 26,
+      "question": "How many large vehicles are visible in the top row?",
+      "answer": "3"
+    },
+    {
+      "question_id": 27,
+      "question": "Is there a large vehicle at the far right in the top row?",
+      "answer": "yes"
+    }
+  ]
+}

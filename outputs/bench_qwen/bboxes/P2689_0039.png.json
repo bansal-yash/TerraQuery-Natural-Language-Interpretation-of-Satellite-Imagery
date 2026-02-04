@@ -1,0 +1,12 @@
+{
+  "image": "P2689_0039.png",
+  "boxes": [
+    {
+      "label": "A high-resolution GoogleEarth image captures an area of an airport, showing a small airplane parked in the top-left corner of the frame.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 89,
+      "y2": 146
+    }
+  ]
+}

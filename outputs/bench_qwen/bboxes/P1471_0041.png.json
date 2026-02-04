@@ -1,0 +1,19 @@
+{
+  "image": "P1471_0041.png",
+  "boxes": [
+    {
+      "label": "ground track field",
+      "x1": 182,
+      "y1": 269,
+      "x2": 432,
+      "y2": 510
+    },
+    {
+      "label": "basketball courts",
+      "x1": 182,
+      "y1": 0,
+      "x2": 510,
+      "y2": 218
+    }
+  ]
+}

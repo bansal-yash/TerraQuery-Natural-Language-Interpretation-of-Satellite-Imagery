@@ -1,0 +1,47 @@
+{
+  "image": "P1854_0207.png",
+  "boxes": [
+    {
+      "label": "large vehicle",
+      "x1": 162,
+      "y1": 454,
+      "x2": 195,
+      "y2": 510
+    },
+    {
+      "label": "small vehicles",
+      "x1": 256,
+      "y1": 449,
+      "x2": 269,
+      "y2": 479
+    },
+    {
+      "label": "small vehicles",
+      "x1": 274,
+      "y1": 449,
+      "x2": 291,
+      "y2": 479
+    },
+    {
+      "label": "small vehicles",
+      "x1": 355,
+      "y1": 449,
+      "x2": 369,
+      "y2": 479
+    },
+    {
+      "label": "small vehicles",
+      "x1": 406,
+      "y1": 484,
+      "x2": 431,
+      "y2": 500
+    },
+    {
+      "label": "small vehicles",
+      "x1": 355,
+      "y1": 500,
+      "x2": 369,
+      "y2": 510
+    }
+  ]
+}

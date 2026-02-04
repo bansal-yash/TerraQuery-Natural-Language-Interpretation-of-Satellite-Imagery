@@ -1,0 +1,12 @@
+{
+  "image": "P2230_0001.png",
+  "boxes": [
+    {
+      "label": "A high-resolution Google Earth image showing a segment of an airport, with a curved taxiway lined by yellow parking lines and a small vehicle positioned at the top-middle area near the taxiway. Additionally, there is a red and white airplane parked near boarding bridges in the top-right area of the image.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    }
+  ]
+}

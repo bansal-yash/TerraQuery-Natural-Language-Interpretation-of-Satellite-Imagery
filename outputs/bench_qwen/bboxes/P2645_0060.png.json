@@ -1,0 +1,26 @@
+{
+  "image": "P2645_0060.png",
+  "boxes": [
+    {
+      "label": "storage tanks",
+      "x1": 116,
+      "y1": 0,
+      "x2": 287,
+      "y2": 100
+    },
+    {
+      "label": "storage tanks",
+      "x1": 0,
+      "y1": 384,
+      "x2": 98,
+      "y2": 499
+    },
+    {
+      "label": "large vehicle",
+      "x1": 29,
+      "y1": 381,
+      "x2": 61,
+      "y2": 396
+    }
+  ]
+}

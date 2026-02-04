@@ -1,0 +1,12 @@
+{
+  "image": "P0968_0008.png",
+  "boxes": [
+    {
+      "label": "The high-resolution image from GoogleEarth features a small harbor jutting into the water.",
+      "x1": 128,
+      "y1": 279,
+      "x2": 241,
+      "y2": 510
+    }
+  ]
+}

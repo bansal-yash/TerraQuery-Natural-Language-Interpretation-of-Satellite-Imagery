@@ -1,0 +1,12 @@
+{
+  "image": "08094_0000.png",
+  "boxes": [
+    {
+      "label": "An overhead view of a green space from GoogleEarth consisting of two baseball fields.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    }
+  ]
+}

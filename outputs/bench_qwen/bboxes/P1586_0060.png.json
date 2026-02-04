@@ -1,0 +1,12 @@
+{
+  "image": "P1586_0060.png",
+  "boxes": [
+    {
+      "label": "A high-resolution aerial grayscale image from JL featuring a small ground track and field area at the top. The track is characterized by its distinct oval shape with interior field sections.",
+      "x1": 39,
+      "y1": 0,
+      "x2": 198,
+      "y2": 151
+    }
+  ]
+}

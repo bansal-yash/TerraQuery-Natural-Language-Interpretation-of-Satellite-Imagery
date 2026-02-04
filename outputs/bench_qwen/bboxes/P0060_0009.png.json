@@ -1,0 +1,68 @@
+{
+  "image": "P0060_0009.png",
+  "boxes": [
+    {
+      "label": "houses",
+      "x1": 1,
+      "y1": 7,
+      "x2": 510,
+      "y2": 136
+    },
+    {
+      "label": "swimming pool",
+      "x1": 290,
+      "y1": 287,
+      "x2": 308,
+      "y2": 315
+    },
+    {
+      "label": "small vehicles",
+      "x1": 203,
+      "y1": 287,
+      "x2": 221,
+      "y2": 301
+    },
+    {
+      "label": "small vehicles",
+      "x1": 187,
+      "y1": 374,
+      "x2": 206,
+      "y2": 387
+    },
+    {
+      "label": "small vehicles",
+      "x1": 12,
+      "y1": 321,
+      "x2": 28,
+      "y2": 343
+    },
+    {
+      "label": "small vehicles",
+      "x1": 12,
+      "y1": 354,
+      "x2": 25,
+      "y2": 374
+    },
+    {
+      "label": "small vehicles",
+      "x1": 37,
+      "y1": 348,
+      "x2": 55,
+      "y2": 369
+    },
+    {
+      "label": "small vehicles",
+      "x1": 12,
+      "y1": 321,
+      "x2": 28,
+      "y2": 343
+    },
+    {
+      "label": "small vehicles",
+      "x1": 12,
+      "y1": 354,
+      "x2": 25,
+      "y2": 374
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "image": "P0007_0006.png",
+  "answers": [
+    {
+      "question_id": 18,
+      "question": "How many large vehicles are in the image?",
+      "answer": "system You"
+    },
+    {
+      "question_id": 19,
+      "question": "Is there a small vehicle present in the image?",
+      "answer": "system You"
+    },
+    {
+      "question_id": 18,
+      "question": "How many large vehicles are in the image?",
+      "answer": "5"
+    },
+    {
+      "question_id": 19,
+      "question": "Is there a small vehicle present in the image?",
+      "answer": "yes"
+    },
+    {
+      "question_id": 20,
+      "question": "Where is the small vehicle located?",
+      "answer": "top left"
+    },
+    {
+      "question_id": 21,
+      "question": "Which vehicle is the right-most among all?",
+      "answer": "truck"
+    },
+    {
+      "question_id": 22,
+      "question": "Which vehicle is the largest in the image?",
+      "answer": "truck"
+    }
+  ]
+}

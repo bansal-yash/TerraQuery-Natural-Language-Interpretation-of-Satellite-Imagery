@@ -1,0 +1,26 @@
+{
+  "image": "P0261_0008.png",
+  "boxes": [
+    {
+      "label": "maritime vessel",
+      "x1": 0,
+      "y1": 0,
+      "x2": 450,
+      "y2": 362
+    },
+    {
+      "label": "small vehicle",
+      "x1": 19,
+      "y1": 272,
+      "x2": 42,
+      "y2": 294
+    },
+    {
+      "label": "large vehicle",
+      "x1": 197,
+      "y1": 446,
+      "x2": 220,
+      "y2": 468
+    }
+  ]
+}

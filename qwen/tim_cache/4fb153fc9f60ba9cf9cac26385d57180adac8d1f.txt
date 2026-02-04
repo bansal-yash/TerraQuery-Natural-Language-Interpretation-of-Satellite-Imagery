@@ -1,0 +1,1 @@
+RGB:Dark green water with small landmass and structures visible. || SAR:SAR image shows textured grayscale terrain with faint linear features and noise.

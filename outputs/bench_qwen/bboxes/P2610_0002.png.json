@@ -1,0 +1,19 @@
+{
+  "image": "P2610_0002.png",
+  "boxes": [
+    {
+      "label": "large yellow vehicle",
+      "x1": 95,
+      "y1": 146,
+      "x2": 146,
+      "y2": 177
+    },
+    {
+      "label": "multiple small vehicles",
+      "x1": 29,
+      "y1": 418,
+      "x2": 236,
+      "y2": 512
+    }
+  ]
+}

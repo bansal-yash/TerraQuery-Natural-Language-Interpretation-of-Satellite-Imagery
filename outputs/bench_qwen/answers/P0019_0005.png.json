@@ -1,0 +1,20 @@
+{
+  "image": "P0019_0005.png",
+  "answers": [
+    {
+      "question_id": 46,
+      "question": "How many small vehicles can be seen in the image?",
+      "answer": "2"
+    },
+    {
+      "question_id": 47,
+      "question": "What is the main type of surrounding greenery around the house?",
+      "answer": "tree"
+    },
+    {
+      "question_id": 48,
+      "question": "Where is the house located in relation to the vehicles?",
+      "answer": "south"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "image": "P2481_0010.png",
+  "boxes": [
+    {
+      "label": "buildings with brown rooftops",
+      "x1": 238,
+      "y1": 38,
+      "x2": 491,
+      "y2": 466
+    }
+  ]
+}

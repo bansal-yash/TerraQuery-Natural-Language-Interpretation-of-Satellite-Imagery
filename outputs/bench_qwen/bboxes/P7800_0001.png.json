@@ -1,0 +1,19 @@
+{
+  "image": "P7800_0001.png",
+  "boxes": [
+    {
+      "label": "baseball diamonds",
+      "x1": 40,
+      "y1": 385,
+      "x2": 82,
+      "y2": 436
+    },
+    {
+      "label": "roundabout",
+      "x1": 474,
+      "y1": 260,
+      "x2": 501,
+      "y2": 282
+    }
+  ]
+}

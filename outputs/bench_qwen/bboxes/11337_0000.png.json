@@ -1,0 +1,54 @@
+{
+  "image": "11337_0000.png",
+  "boxes": [
+    {
+      "label": "small vehicle",
+      "x1": 285,
+      "y1": 198,
+      "x2": 303,
+      "y2": 221
+    },
+    {
+      "label": "small vehicle",
+      "x1": 298,
+      "y1": 221,
+      "x2": 313,
+      "y2": 242
+    },
+    {
+      "label": "small vehicle",
+      "x1": 324,
+      "y1": 402,
+      "x2": 349,
+      "y2": 441
+    },
+    {
+      "label": "small vehicle",
+      "x1": 354,
+      "y1": 441,
+      "x2": 372,
+      "y2": 467
+    },
+    {
+      "label": "small vehicle",
+      "x1": 477,
+      "y1": 413,
+      "x2": 503,
+      "y2": 441
+    },
+    {
+      "label": "small vehicle",
+      "x1": 477,
+      "y1": 441,
+      "x2": 503,
+      "y2": 467
+    },
+    {
+      "label": "small vehicle",
+      "x1": 285,
+      "y1": 489,
+      "x2": 303,
+      "y2": 510
+    }
+  ]
+}

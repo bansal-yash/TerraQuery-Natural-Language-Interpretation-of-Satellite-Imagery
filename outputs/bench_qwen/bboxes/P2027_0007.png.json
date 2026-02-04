@@ -1,0 +1,68 @@
+{
+  "image": "P2027_0007.png",
+  "boxes": [
+    {
+      "label": "large vehicle",
+      "x1": 0,
+      "y1": 11,
+      "x2": 26,
+      "y2": 117
+    },
+    {
+      "label": "large vehicle",
+      "x1": 26,
+      "y1": 11,
+      "x2": 70,
+      "y2": 111
+    },
+    {
+      "label": "large vehicle",
+      "x1": 70,
+      "y1": 11,
+      "x2": 91,
+      "y2": 111
+    },
+    {
+      "label": "large vehicle",
+      "x1": 0,
+      "y1": 117,
+      "x2": 31,
+      "y2": 217
+    },
+    {
+      "label": "large vehicle",
+      "x1": 0,
+      "y1": 217,
+      "x2": 31,
+      "y2": 317
+    },
+    {
+      "label": "large vehicle",
+      "x1": 0,
+      "y1": 317,
+      "x2": 31,
+      "y2": 417
+    },
+    {
+      "label": "large vehicle",
+      "x1": 0,
+      "y1": 417,
+      "x2": 31,
+      "y2": 512
+    },
+    {
+      "label": "large vehicle",
+      "x1": 101,
+      "y1": 103,
+      "x2": 134,
+      "y2": 203
+    },
+    {
+      "label": "large vehicle",
+      "x1": 321,
+      "y1": 236,
+      "x2": 364,
+      "y2": 341
+    }
+  ]
+}

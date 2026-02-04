@@ -1,0 +1,12 @@
+{
+  "image": "P1581_0013.png",
+  "boxes": [
+    {
+      "label": "A high-resolution grayscale image provided by JL, featuring urban infrastructure. At the top left, a small, uniquely shaped roundabout is visible, serving as a traffic management feature within the area surrounded by multiple buildings and roadways.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    }
+  ]
+}

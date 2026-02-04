@@ -1,0 +1,12 @@
+{
+  "image": "P0970_0008.png",
+  "boxes": [
+    {
+      "label": "A high-resolution GoogleEarth image displaying a residential area with a small swimming pool. The pool located at the center of the image.",
+      "x1": 128,
+      "y1": 310,
+      "x2": 223,
+      "y2": 382
+    }
+  ]
+}

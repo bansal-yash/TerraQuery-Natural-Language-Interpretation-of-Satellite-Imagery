@@ -1,0 +1,68 @@
+{
+  "image": "P1854_0086.png",
+  "boxes": [
+    {
+      "label": "aircraft",
+      "x1": 0,
+      "y1": 0,
+      "x2": 221,
+      "y2": 192
+    },
+    {
+      "label": "aircraft",
+      "x1": 0,
+      "y1": 251,
+      "x2": 229,
+      "y2": 437
+    },
+    {
+      "label": "boarding bridge",
+      "x1": 231,
+      "y1": 192,
+      "x2": 360,
+      "y2": 290
+    },
+    {
+      "label": "boarding bridge",
+      "x1": 266,
+      "y1": 381,
+      "x2": 369,
+      "y2": 510
+    },
+    {
+      "label": "small vehicles",
+      "x1": 24,
+      "y1": 239,
+      "x2": 58,
+      "y2": 262
+    },
+    {
+      "label": "small vehicles",
+      "x1": 53,
+      "y1": 185,
+      "x2": 78,
+      "y2": 205
+    },
+    {
+      "label": "small vehicles",
+      "x1": 243,
+      "y1": 89,
+      "x2": 281,
+      "y2": 114
+    },
+    {
+      "label": "small vehicles",
+      "x1": 254,
+      "y1": 295,
+      "x2": 279,
+      "y2": 314
+    },
+    {
+      "label": "small vehicles",
+      "x1": 247,
+      "y1": 437,
+      "x2": 281,
+      "y2": 481
+    }
+  ]
+}

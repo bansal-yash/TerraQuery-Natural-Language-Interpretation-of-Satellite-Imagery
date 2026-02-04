@@ -1,0 +1,19 @@
+{
+  "image": "P2593_0011.png",
+  "boxes": [
+    {
+      "label": "building with white roof and solar panels",
+      "x1": 8,
+      "y1": 93,
+      "x2": 279,
+      "y2": 357
+    },
+    {
+      "label": "small vehicle in top-right area",
+      "x1": 313,
+      "y1": 128,
+      "x2": 338,
+      "y2": 143
+    }
+  ]
+}

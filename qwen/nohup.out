@@ -1,0 +1,10 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading model: unsloth/Qwen3-VL-8B-Instruct (local dir: small_spandan/)
+Loading model and processor from local dir: small_spandan/
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  8.03it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 20.42it/s]
+The module name  (originally ) is not a valid Python identifier. Please rename the original module to avoid import issues.
+The model is already on multiple devices. Skipping the move to device specified in `args`.
+Traceback (most recent call last):
+  File "/15tb_scratch_data/spandan/interiit/qwen/finetune_qwen_all.py", line 20, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'

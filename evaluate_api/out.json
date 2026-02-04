@@ -1,0 +1,62 @@
+{
+    "input_image": {
+        "image_id": "sample1.png",
+        "image_url": "https://bit.ly/4ouV45l",
+        "metadata": {
+            "width": 512,
+            "height": 512,
+            "spatial_resolution_m": 1.57
+        }
+    },
+    "queries": {
+        "caption_query": {
+            "instruction": "Describe key features in this image?",
+            "response": "The high-resolution image shows a section of an airport with two planes positioned near each other at the top-middle part of the frame. The surrounding area includes various taxiways intersecting around the aircraft."
+        },
+        "grounding_query": {
+            "instruction": "For each instance of the airplane in the image, provide the oriented bounding box.",
+            "response": [
+                {
+                    "object-id": "1",
+                    "obbox": [
+                        0.409165,
+                        0.161901,
+                        0.459173,
+                        0.1042,
+                        0.39173,
+                        0.04575,
+                        0.341722,
+                        0.103451
+                    ]
+                },
+                {
+                    "object-id": "2",
+                    "obbox": [
+                        0.523133,
+                        0.213662,
+                        0.537452,
+                        0.146837,
+                        0.480097,
+                        0.134547,
+                        0.465777,
+                        0.201372
+                    ]
+                }
+            ]
+        },
+        "attribute_query": {
+            "binary": {
+                "instruction": "Is there any digit present in the bottom right corner of the scene?",
+                "response": "No"
+            },
+            "numeric": {
+                "instruction": "How many storage tanks are present in the scene?",
+                "response": "1"
+            },
+            "semantic": {
+                "instruction": "What is the color of the digit painted on the landing strip?",
+                "response": "Unknown"
+            }
+        }
+    }
+}

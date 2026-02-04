@@ -1,0 +1,19 @@
+{
+  "image": "P2802_0129.png",
+  "boxes": [
+    {
+      "label": "airplane",
+      "x1": 0,
+      "y1": 210,
+      "x2": 156,
+      "y2": 415
+    },
+    {
+      "label": "small vehicle</ref><ref>vehicle",
+      "x1": 165,
+      "y1": 273,
+      "x2": 192,
+      "y2": 310
+    }
+  ]
+}

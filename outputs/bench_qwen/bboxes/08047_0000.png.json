@@ -1,0 +1,12 @@
+{
+  "image": "08047_0000.png",
+  "boxes": [
+    {
+      "label": "A color aerial image from GoogleEarth depicts a small airplane positioned on an airport area parked on a tarmac.",
+      "x1": 252,
+      "y1": 336,
+      "x2": 469,
+      "y2": 510
+    }
+  ]
+}

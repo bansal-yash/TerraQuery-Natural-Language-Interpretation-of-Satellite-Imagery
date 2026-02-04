@@ -1,0 +1,19 @@
+{
+  "image": "06183_0000.png",
+  "boxes": [
+    {
+      "label": "baseball field",
+      "x1": 0,
+      "y1": 100,
+      "x2": 419,
+      "y2": 506
+    },
+    {
+      "label": "basketball court",
+      "x1": 0,
+      "y1": 433,
+      "x2": 128,
+      "y2": 512
+    }
+  ]
+}

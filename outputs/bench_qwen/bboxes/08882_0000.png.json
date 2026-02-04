@@ -1,0 +1,33 @@
+{
+  "image": "08882_0000.png",
+  "boxes": [
+    {
+      "label": "ground track field",
+      "x1": 176,
+      "y1": 86,
+      "x2": 234,
+      "y2": 179
+    },
+    {
+      "label": "ground track field",
+      "x1": 84,
+      "y1": 438,
+      "x2": 192,
+      "y2": 505
+    },
+    {
+      "label": "ground track field",
+      "x1": 457,
+      "y1": 423,
+      "x2": 505,
+      "y2": 483
+    },
+    {
+      "label": "ground track field",
+      "x1": 443,
+      "y1": 224,
+      "x2": 474,
+      "y2": 256
+    }
+  ]
+}

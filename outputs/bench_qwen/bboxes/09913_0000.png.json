@@ -1,0 +1,26 @@
+{
+  "image": "09913_0000.png",
+  "boxes": [
+    {
+      "label": "agricultural fields",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 510
+    },
+    {
+      "label": "buildings",
+      "x1": 159,
+      "y1": 93,
+      "x2": 512,
+      "y2": 510
+    },
+    {
+      "label": "expressway toll station",
+      "x1": 300,
+      "y1": 300,
+      "x2": 512,
+      "y2": 510
+    }
+  ]
+}

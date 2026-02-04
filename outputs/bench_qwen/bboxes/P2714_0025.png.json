@@ -1,0 +1,12 @@
+{
+  "image": "P2714_0025.png",
+  "boxes": [
+    {
+      "label": "urban landscape with a mix of green areas and buildings",
+      "x1": 0,
+      "y1": 0,
+      "x2": 510,
+      "y2": 510
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "prompt": "swimming pool",
+  "detections": [
+    {
+      "label": "swimming pool",
+      "x1": 605,
+      "y1": 144,
+      "x2": 725,
+      "y2": 228
+    }
+  ],
+  "model1_count": 2,
+  "model2_count": 1,
+  "merged_count": 1,
+  "model1_boxes": [
+    [
+      0.6875,
+      0.1953125,
+      0.724609375,
+      0.234375
+    ],
+    [
+      0.6171875,
+      0.15625,
+      0.681640625,
+      0.20703125
+    ]
+  ],
+  "model2_boxes": [
+    [
+      0.61328125,
+      0.150390625,
+      0.72265625,
+      0.228515625
+    ]
+  ],
+  "masks": [
+    {
+      "id": 0,
+      "box": [
+        0.61328125,
+        0.150390625,
+        0.72265625,
+        0.228515625
+      ],
+      "png": "iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAAAAADRE4smAAACRUlEQVR4nO3cSY7CQBAEQHv+/+eewywCCWNLtiHTRFxYxKFUlXQ36zQBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALBofncBFzCm4j7WFh5j/Fy0NrK17hjj/1pnKzurDjJubxR28+vdBVzKWH9IGgHYZzy9WUAAjlWXAAE42CiLgADs8mjaXQkoPLcGWZp1UVetAB9OAD6cAJyh6CRYtFvleTrmks6WlJlo9Vle0VtbwHkq9gEBOFFDAiqWqVTrA85vb36FyTY8xdMbnF5fvPYMOAPstGG60UcBAdirPAHRy1ORhRnP8d8ZjS2szcMEzHf3R/baFnCQ+fF4x8L1GJGpLFX5giCvomaFEUirp9yWVT6r5VnVXEHZ+8MOgUeLGu86AThcVwIE4HgrCcgKiACcIGvEzzXVWmXxLBjWcSvAScLmvKilzkZjmm4+DvqV1vC0eq4o+j8kbAHnS5v5nejiruNvEchrtxXgJfIGz8sV/WAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOMk3pMEpN55EA1UAAAAASUVORK5CYII=",
+      "source": "model2",
+      "area": 992,
+      "reason": "root_without_good_leaves"
+    }
+  ],
+  "image_size": {
+    "width": 512,
+    "height": 512
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "image": "P1854_0161.png",
+  "boxes": [
+    {
+      "label": "small plane with a white fuselage and red engines parked on the tarmac",
+      "x1": 258,
+      "y1": 0,
+      "x2": 512,
+      "y2": 261
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "image": "06807_0000.png",
+  "boxes": [
+    {
+      "label": "recreational and possibly residential facilities",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    }
+  ]
+}

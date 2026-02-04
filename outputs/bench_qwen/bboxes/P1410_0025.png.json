@@ -1,0 +1,19 @@
+{
+  "image": "P1410_0025.png",
+  "boxes": [
+    {
+      "label": "soccer ball field",
+      "x1": 0,
+      "y1": 0,
+      "x2": 483,
+      "y2": 351
+    },
+    {
+      "label": "small-vehicle",
+      "x1": 0,
+      "y1": 454,
+      "x2": 29,
+      "y2": 486
+    }
+  ]
+}

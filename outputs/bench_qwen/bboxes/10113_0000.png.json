@@ -1,0 +1,47 @@
+{
+  "image": "10113_0000.png",
+  "boxes": [
+    {
+      "label": "house",
+      "x1": 0,
+      "y1": 0,
+      "x2": 268,
+      "y2": 335
+    },
+    {
+      "label": "swimming pool",
+      "x1": 0,
+      "y1": 281,
+      "x2": 66,
+      "y2": 358
+    },
+    {
+      "label": "swimming pool",
+      "x1": 256,
+      "y1": 0,
+      "x2": 358,
+      "y2": 51
+    },
+    {
+      "label": "swimming pool",
+      "x1": 0,
+      "y1": 452,
+      "x2": 41,
+      "y2": 512
+    },
+    {
+      "label": "garden",
+      "x1": 0,
+      "y1": 0,
+      "x2": 510,
+      "y2": 512
+    },
+    {
+      "label": "small basketball court",
+      "x1": 227,
+      "y1": 381,
+      "x2": 392,
+      "y2": 495
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "image": "10816_0000.png",
+  "boxes": [
+    {
+      "label": "small storage tank with a distinctive blue dome",
+      "x1": 384,
+      "y1": 371,
+      "x2": 495,
+      "y2": 473
+    }
+  ]
+}

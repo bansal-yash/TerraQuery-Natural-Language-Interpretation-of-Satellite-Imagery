@@ -1,0 +1,12 @@
+{
+  "image": "07358_0000.png",
+  "boxes": [
+    {
+      "label": "The image, sourced from GoogleEarth, appears to be a high-resolution aerial view featuring a small basketball court on a green surface with line markings. The court is distinguishable by the presence of painted boundaries and a visible half-court circle.",
+      "x1": 267,
+      "y1": 317,
+      "x2": 428,
+      "y2": 510
+    }
+  ]
+}

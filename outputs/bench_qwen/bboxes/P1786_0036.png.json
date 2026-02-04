@@ -1,0 +1,47 @@
+{
+  "image": "P1786_0036.png",
+  "boxes": [
+    {
+      "label": "lush green landscape",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    },
+    {
+      "label": "deep green body of water",
+      "x1": 0,
+      "y1": 0,
+      "x2": 256,
+      "y2": 448
+    },
+    {
+      "label": "park area",
+      "x1": 182,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    },
+    {
+      "label": "sandy patch",
+      "x1": 428,
+      "y1": 162,
+      "x2": 510,
+      "y2": 305
+    },
+    {
+      "label": "playground",
+      "x1": 428,
+      "y1": 162,
+      "x2": 510,
+      "y2": 305
+    },
+    {
+      "label": "tennis court",
+      "x1": 413,
+      "y1": 0,
+      "x2": 512,
+      "y2": 128
+    }
+  ]
+}

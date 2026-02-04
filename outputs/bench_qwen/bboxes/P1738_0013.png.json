@@ -1,0 +1,33 @@
+{
+  "image": "P1738_0013.png",
+  "boxes": [
+    {
+      "label": "baseball diamond",
+      "x1": 159,
+      "y1": 218,
+      "x2": 218,
+      "y2": 294
+    },
+    {
+      "label": "baseball diamond",
+      "x1": 218,
+      "y1": 294,
+      "x2": 272,
+      "y2": 370
+    },
+    {
+      "label": "baseball diamond",
+      "x1": 159,
+      "y1": 336,
+      "x2": 218,
+      "y2": 395
+    },
+    {
+      "label": "baseball diamond",
+      "x1": 218,
+      "y1": 370,
+      "x2": 272,
+      "y2": 429
+    }
+  ]
+}

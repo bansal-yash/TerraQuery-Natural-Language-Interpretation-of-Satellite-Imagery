@@ -1,0 +1,19 @@
+{
+  "image": "P0589_0001.png",
+  "boxes": [
+    {
+      "label": "harbor structure at top",
+      "x1": 79,
+      "y1": 0,
+      "x2": 363,
+      "y2": 64
+    },
+    {
+      "label": "harbor structure at bottom",
+      "x1": 134,
+      "y1": 346,
+      "x2": 505,
+      "y2": 445
+    }
+  ]
+}

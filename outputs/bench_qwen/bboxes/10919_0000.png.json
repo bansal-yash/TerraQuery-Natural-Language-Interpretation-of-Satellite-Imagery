@@ -1,0 +1,33 @@
+{
+  "image": "10919_0000.png",
+  "boxes": [
+    {
+      "label": "football field",
+      "x1": 111,
+      "y1": 105,
+      "x2": 424,
+      "y2": 265
+    },
+    {
+      "label": "track",
+      "x1": 29,
+      "y1": 66,
+      "x2": 505,
+      "y2": 307
+    },
+    {
+      "label": "tiered spectator seating",
+      "x1": 172,
+      "y1": 29,
+      "x2": 384,
+      "y2": 86
+    },
+    {
+      "label": "greenery",
+      "x1": 0,
+      "y1": 256,
+      "x2": 512,
+      "y2": 506
+    }
+  ]
+}

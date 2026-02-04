@@ -1,0 +1,1 @@
+RGB:Mountainous terrain with winding rivers and scattered snow patches. || SAR:SAR image shows textured, high-contrast patterns with speckle noise and structural details.

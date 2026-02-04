@@ -1,0 +1,10 @@
+{
+  "out.json": {
+    "caption_bert_blue_4": 0.8127644836394858,
+    "grounding_cp_meanIoU": 0.6360102112898234,
+    "binary_exact_match": 0.0,
+    "numeric_score_exp_neg_abs_diff": 1.013009359863071e-05,
+    "attribute_bert_blue_4": 0.7549026112420655,
+    "final_weighted_score": 0.504338508381977
+  }
+}

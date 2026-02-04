@@ -1,0 +1,19 @@
+{
+  "image": "08540_0000.png",
+  "boxes": [
+    {
+      "label": "baseball field",
+      "x1": 0,
+      "y1": 14,
+      "x2": 264,
+      "y2": 285
+    },
+    {
+      "label": "athletics track",
+      "x1": 358,
+      "y1": 123,
+      "x2": 512,
+      "y2": 506
+    }
+  ]
+}

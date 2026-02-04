@@ -1,0 +1,26 @@
+{
+  "image": "P0079_0003.png",
+  "boxes": [
+    {
+      "label": "small roundabout",
+      "x1": 87,
+      "y1": 210,
+      "x2": 213,
+      "y2": 335
+    },
+    {
+      "label": "small vehicles",
+      "x1": 324,
+      "y1": 236,
+      "x2": 344,
+      "y2": 271
+    },
+    {
+      "label": "swimming pool",
+      "x1": 397,
+      "y1": 355,
+      "x2": 459,
+      "y2": 397
+    }
+  ]
+}

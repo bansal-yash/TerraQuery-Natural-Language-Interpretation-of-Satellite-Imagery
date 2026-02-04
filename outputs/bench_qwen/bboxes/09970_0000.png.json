@@ -1,0 +1,19 @@
+{
+  "image": "09970_0000.png",
+  "boxes": [
+    {
+      "label": "Aerial view from Google Earth displaying a pair of small airplanes on a tarmac area with no visible resolution information. The airplanes are white with dark accents, oriented in a similar direction, and they are approximately equal in size, with one positioned closer to the top edge of the image and another closer to the bottom edge.",
+      "x1": 208,
+      "y1": 131,
+      "x2": 376,
+      "y2": 301
+    },
+    {
+      "label": "Aerial view from Google Earth displaying a pair of small airplanes on a tarmac area with no visible resolution information. The airplanes are white with dark accents, oriented in a similar direction, and they are approximately equal in size, with one positioned closer to the top edge of the image and another closer to the bottom edge.",
+      "x1": 208,
+      "y1": 301,
+      "x2": 376,
+      "y2": 470
+    }
+  ]
+}

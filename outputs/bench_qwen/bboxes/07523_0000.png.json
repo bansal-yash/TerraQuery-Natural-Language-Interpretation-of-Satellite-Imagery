@@ -1,0 +1,33 @@
+{
+  "image": "07523_0000.png",
+  "boxes": [
+    {
+      "label": "building with gray rooftops",
+      "x1": 0,
+      "y1": 307,
+      "x2": 241,
+      "y2": 512
+    },
+    {
+      "label": "circular parking lot with lined parking spaces",
+      "x1": 53,
+      "y1": 102,
+      "x2": 320,
+      "y2": 286
+    },
+    {
+      "label": "green rectangular areas that likely represent grass",
+      "x1": 320,
+      "y1": 61,
+      "x2": 512,
+      "y2": 435
+    },
+    {
+      "label": "small baseball field with a distinct sandy area and the rest is grassy field",
+      "x1": 335,
+      "y1": 266,
+      "x2": 510,
+      "y2": 435
+    }
+  ]
+}

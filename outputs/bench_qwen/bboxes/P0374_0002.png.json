@@ -1,0 +1,68 @@
+{
+  "image": "P0374_0002.png",
+  "boxes": [
+    {
+      "label": "baseball diamond",
+      "x1": 176,
+      "y1": 15,
+      "x2": 454,
+      "y2": 264
+    },
+    {
+      "label": "playground",
+      "x1": 123,
+      "y1": 244,
+      "x2": 340,
+      "y2": 510
+    },
+    {
+      "label": "small vehicles",
+      "x1": 8,
+      "y1": 202,
+      "x2": 53,
+      "y2": 358
+    },
+    {
+      "label": "small vehicles",
+      "x1": 8,
+      "y1": 310,
+      "x2": 33,
+      "y2": 358
+    },
+    {
+      "label": "small vehicles",
+      "x1": 8,
+      "y1": 305,
+      "x2": 33,
+      "y2": 348
+    },
+    {
+      "label": "small vehicles",
+      "x1": 8,
+      "y1": 300,
+      "x2": 33,
+      "y2": 343
+    },
+    {
+      "label": "small vehicles",
+      "x1": 8,
+      "y1": 295,
+      "x2": 33,
+      "y2": 337
+    },
+    {
+      "label": "small vehicles",
+      "x1": 8,
+      "y1": 290,
+      "x2": 33,
+      "y2": 332
+    },
+    {
+      "label": "small vehicles",
+      "x1": 8,
+      "y1": 285,
+      "x2": 33,
+      "y2": 327
+    }
+  ]
+}

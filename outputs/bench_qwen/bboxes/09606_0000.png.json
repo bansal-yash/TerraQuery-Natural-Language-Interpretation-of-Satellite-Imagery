@@ -1,0 +1,54 @@
+{
+  "image": "09606_0000.png",
+  "boxes": [
+    {
+      "label": "parking lot",
+      "x1": 326,
+      "y1": 79,
+      "x2": 510,
+      "y2": 187
+    },
+    {
+      "label": "vehicles",
+      "x1": 376,
+      "y1": 94,
+      "x2": 412,
+      "y2": 159
+    },
+    {
+      "label": "vehicles",
+      "x1": 412,
+      "y1": 75,
+      "x2": 453,
+      "y2": 151
+    },
+    {
+      "label": "dirt ground surface",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    },
+    {
+      "label": "basketball court",
+      "x1": 313,
+      "y1": 377,
+      "x2": 510,
+      "y2": 510
+    },
+    {
+      "label": "greenery and trees",
+      "x1": 146,
+      "y1": 0,
+      "x2": 207,
+      "y2": 31
+    },
+    {
+      "label": "greenery and trees",
+      "x1": 279,
+      "y1": 0,
+      "x2": 392,
+      "y2": 79
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "image": "P2779_0009.png",
+  "boxes": [
+    {
+      "label": "large vehicle",
+      "x1": 24,
+      "y1": 244,
+      "x2": 88,
+      "y2": 326
+    },
+    {
+      "label": "large vehicle",
+      "x1": 54,
+      "y1": 218,
+      "x2": 95,
+      "y2": 294
+    },
+    {
+      "label": "large vehicle",
+      "x1": 103,
+      "y1": 193,
+      "x2": 152,
+      "y2": 272
+    }
+  ]
+}

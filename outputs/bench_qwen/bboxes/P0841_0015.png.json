@@ -1,0 +1,40 @@
+{
+  "image": "P0841_0015.png",
+  "boxes": [
+    {
+      "label": "small plane",
+      "x1": 0,
+      "y1": 159,
+      "x2": 86,
+      "y2": 372
+    },
+    {
+      "label": "large unique vehicle",
+      "x1": 86,
+      "y1": 159,
+      "x2": 134,
+      "y2": 218
+    },
+    {
+      "label": "small unique plane",
+      "x1": 457,
+      "y1": 392,
+      "x2": 512,
+      "y2": 500
+    },
+    {
+      "label": "two small vehicles",
+      "x1": 263,
+      "y1": 261,
+      "x2": 284,
+      "y2": 287
+    },
+    {
+      "label": "two small vehicles",
+      "x1": 297,
+      "y1": 287,
+      "x2": 310,
+      "y2": 315
+    }
+  ]
+}

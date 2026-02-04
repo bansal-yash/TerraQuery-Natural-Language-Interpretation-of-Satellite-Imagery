@@ -1,0 +1,26 @@
+{
+  "image": "P1410_0099.png",
+  "boxes": [
+    {
+      "label": "soccer-ball field",
+      "x1": 198,
+      "y1": 12,
+      "x2": 495,
+      "y2": 287
+    },
+    {
+      "label": "small basketball court",
+      "x1": 29,
+      "y1": 78,
+      "x2": 82,
+      "y2": 157
+    },
+    {
+      "label": "baseball diamond",
+      "x1": 471,
+      "y1": 300,
+      "x2": 512,
+      "y2": 408
+    }
+  ]
+}

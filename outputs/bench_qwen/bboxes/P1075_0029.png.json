@@ -1,0 +1,54 @@
+{
+  "image": "P1075_0029.png",
+  "boxes": [
+    {
+      "label": "residential area",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    },
+    {
+      "label": "curved roads",
+      "x1": 203,
+      "y1": 0,
+      "x2": 358,
+      "y2": 512
+    },
+    {
+      "label": "parking area",
+      "x1": 0,
+      "y1": 111,
+      "x2": 193,
+      "y2": 297
+    },
+    {
+      "label": "small vehicles",
+      "x1": 48,
+      "y1": 141,
+      "x2": 66,
+      "y2": 159
+    },
+    {
+      "label": "small vehicles",
+      "x1": 74,
+      "y1": 137,
+      "x2": 89,
+      "y2": 154
+    },
+    {
+      "label": "small vehicles",
+      "x1": 66,
+      "y1": 251,
+      "x2": 89,
+      "y2": 274
+    },
+    {
+      "label": "small vehicles",
+      "x1": 40,
+      "y1": 189,
+      "x2": 58,
+      "y2": 207
+    }
+  ]
+}

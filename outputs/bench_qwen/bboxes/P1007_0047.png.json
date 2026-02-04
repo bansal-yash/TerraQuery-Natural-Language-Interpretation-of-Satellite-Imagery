@@ -1,0 +1,26 @@
+{
+  "image": "P1007_0047.png",
+  "boxes": [
+    {
+      "label": "harbor structure",
+      "x1": 13,
+      "y1": 297,
+      "x2": 59,
+      "y2": 510
+    },
+    {
+      "label": "harbor structure",
+      "x1": 218,
+      "y1": 267,
+      "x2": 259,
+      "y2": 422
+    },
+    {
+      "label": "harbor structure",
+      "x1": 290,
+      "y1": 263,
+      "x2": 326,
+      "y2": 422
+    }
+  ]
+}

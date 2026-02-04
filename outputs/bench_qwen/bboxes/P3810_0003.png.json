@@ -1,0 +1,12 @@
+{
+  "image": "P3810_0003.png",
+  "boxes": [
+    {
+      "label": "agricultural fields",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 510
+    }
+  ]
+}

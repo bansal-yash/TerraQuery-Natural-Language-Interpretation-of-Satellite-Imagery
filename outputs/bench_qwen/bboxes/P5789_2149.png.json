@@ -1,0 +1,26 @@
+{
+  "image": "P5789_2149.png",
+  "boxes": [
+    {
+      "label": "baseball diamond",
+      "x1": 236,
+      "y1": 0,
+      "x2": 346,
+      "y2": 79
+    },
+    {
+      "label": "ground track field",
+      "x1": 236,
+      "y1": 0,
+      "x2": 346,
+      "y2": 79
+    },
+    {
+      "label": "circular storage tanks",
+      "x1": 397,
+      "y1": 70,
+      "x2": 479,
+      "y2": 149
+    }
+  ]
+}

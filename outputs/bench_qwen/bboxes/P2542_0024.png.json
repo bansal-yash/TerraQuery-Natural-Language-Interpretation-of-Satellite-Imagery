@@ -1,0 +1,12 @@
+{
+  "image": "P2542_0024.png",
+  "boxes": [
+    {
+      "label": "The image, sourced from Google Earth and with high resolution, displays an area that consist of a large green space with dense trees, surrounded by infrastructure and buildings. To the top left of the image is a small roundabout connected to the surrounding roads.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    }
+  ]
+}

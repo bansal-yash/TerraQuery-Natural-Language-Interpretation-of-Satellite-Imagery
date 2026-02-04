@@ -1,0 +1,61 @@
+{
+  "image": "P2011_0003.png",
+  "boxes": [
+    {
+      "label": "tennis courts",
+      "x1": 187,
+      "y1": 264,
+      "x2": 350,
+      "y2": 362
+    },
+    {
+      "label": "tennis courts",
+      "x1": 187,
+      "y1": 403,
+      "x2": 350,
+      "y2": 500
+    },
+    {
+      "label": "houses",
+      "x1": 0,
+      "y1": 0,
+      "x2": 510,
+      "y2": 210
+    },
+    {
+      "label": "street",
+      "x1": 0,
+      "y1": 172,
+      "x2": 510,
+      "y2": 510
+    },
+    {
+      "label": "small-vehicles",
+      "x1": 374,
+      "y1": 167,
+      "x2": 396,
+      "y2": 182
+    },
+    {
+      "label": "small-vehicles",
+      "x1": 408,
+      "y1": 252,
+      "x2": 421,
+      "y2": 274
+    },
+    {
+      "label": "sports field with track lines",
+      "x1": 0,
+      "y1": 269,
+      "x2": 102,
+      "y2": 510
+    },
+    {
+      "label": "trees",
+      "x1": 0,
+      "y1": 0,
+      "x2": 510,
+      "y2": 510
+    }
+  ]
+}

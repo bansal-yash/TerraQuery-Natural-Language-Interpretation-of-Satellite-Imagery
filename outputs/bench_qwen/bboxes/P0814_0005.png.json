@@ -1,0 +1,68 @@
+{
+  "image": "P0814_0005.png",
+  "boxes": [
+    {
+      "label": "tennis court",
+      "x1": 28,
+      "y1": 92,
+      "x2": 134,
+      "y2": 293
+    },
+    {
+      "label": "tennis court",
+      "x1": 174,
+      "y1": 105,
+      "x2": 281,
+      "y2": 304
+    },
+    {
+      "label": "parking lot",
+      "x1": 0,
+      "y1": 340,
+      "x2": 320,
+      "y2": 512
+    },
+    {
+      "label": "small vehicle",
+      "x1": 38,
+      "y1": 355,
+      "x2": 64,
+      "y2": 397
+    },
+    {
+      "label": "small vehicle",
+      "x1": 82,
+      "y1": 464,
+      "x2": 108,
+      "y2": 507
+    },
+    {
+      "label": "small vehicle",
+      "x1": 102,
+      "y1": 464,
+      "x2": 128,
+      "y2": 507
+    },
+    {
+      "label": "small vehicle",
+      "x1": 126,
+      "y1": 464,
+      "x2": 153,
+      "y2": 507
+    },
+    {
+      "label": "small vehicle",
+      "x1": 171,
+      "y1": 468,
+      "x2": 197,
+      "y2": 510
+    },
+    {
+      "label": "small vehicle",
+      "x1": 192,
+      "y1": 468,
+      "x2": 217,
+      "y2": 510
+    }
+  ]
+}

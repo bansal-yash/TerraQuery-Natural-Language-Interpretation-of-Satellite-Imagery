@@ -1,0 +1,1 @@
+RGB:Brownish terrain with winding rivers and scattered white patches. || SAR:SAR image shows textured, distorted patterns with speckle noise and wave-like structures.

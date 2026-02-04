@@ -1,0 +1,26 @@
+{
+  "image": "P0249_0000.png",
+  "boxes": [
+    {
+      "label": "small-sized planes",
+      "x1": 317,
+      "y1": 338,
+      "x2": 482,
+      "y2": 477
+    },
+    {
+      "label": "large building with a gray rooftop",
+      "x1": 0,
+      "y1": 193,
+      "x2": 221,
+      "y2": 506
+    },
+    {
+      "label": "trees with and without leaves on a brown terrain",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 428
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "image": "P2802_0027.png",
+  "boxes": [
+    {
+      "label": "boarding bridge",
+      "x1": 182,
+      "y1": 59,
+      "x2": 399,
+      "y2": 449
+    },
+    {
+      "label": "ground support equipment",
+      "x1": 107,
+      "y1": 392,
+      "x2": 146,
+      "y2": 416
+    },
+    {
+      "label": "ground support equipment",
+      "x1": 132,
+      "y1": 210,
+      "x2": 160,
+      "y2": 243
+    },
+    {
+      "label": "ground support equipment",
+      "x1": 107,
+      "y1": 254,
+      "x2": 150,
+      "y2": 277
+    }
+  ]
+}

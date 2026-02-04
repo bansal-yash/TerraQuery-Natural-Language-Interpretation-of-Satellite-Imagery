@@ -1,0 +1,47 @@
+{
+  "image": "P2539_0007.png",
+  "boxes": [
+    {
+      "label": "commercial buildings",
+      "x1": 0,
+      "y1": 79,
+      "x2": 478,
+      "y2": 369
+    },
+    {
+      "label": "roundabout",
+      "x1": 269,
+      "y1": 310,
+      "x2": 307,
+      "y2": 349
+    },
+    {
+      "label": "residential houses",
+      "x1": 0,
+      "y1": 384,
+      "x2": 512,
+      "y2": 512
+    },
+    {
+      "label": "buildings",
+      "x1": 0,
+      "y1": 79,
+      "x2": 478,
+      "y2": 369
+    },
+    {
+      "label": "paved roads",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    },
+    {
+      "label": "parking areas",
+      "x1": 182,
+      "y1": 247,
+      "x2": 256,
+      "y2": 322
+    }
+  ]
+}

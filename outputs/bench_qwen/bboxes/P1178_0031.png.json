@@ -1,0 +1,12 @@
+{
+  "image": "P1178_0031.png",
+  "boxes": [
+    {
+      "label": "building with a large blue rooftop",
+      "x1": 136,
+      "y1": 0,
+      "x2": 510,
+      "y2": 510
+    }
+  ]
+}

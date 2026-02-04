@@ -1,0 +1,1 @@
+RGB:Forest, rivers, roads, and urban areas visible from above. || SAR:SAR image shows textured terrain with linear features and bright spots.

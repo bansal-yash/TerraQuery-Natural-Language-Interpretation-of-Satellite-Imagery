@@ -1,0 +1,40 @@
+{
+  "image": "P2462_0002.png",
+  "boxes": [
+    {
+      "label": "curvy dirt track",
+      "x1": 0,
+      "y1": 203,
+      "x2": 283,
+      "y2": 438
+    },
+    {
+      "label": "cluster of trees",
+      "x1": 283,
+      "y1": 134,
+      "x2": 386,
+      "y2": 299
+    },
+    {
+      "label": "straight parallel green spaces",
+      "x1": 425,
+      "y1": 82,
+      "x2": 510,
+      "y2": 348
+    },
+    {
+      "label": "arranged small vehicles",
+      "x1": 465,
+      "y1": 167,
+      "x2": 500,
+      "y2": 287
+    },
+    {
+      "label": "single large vehicle",
+      "x1": 447,
+      "y1": 413,
+      "x2": 510,
+      "y2": 512
+    }
+  ]
+}

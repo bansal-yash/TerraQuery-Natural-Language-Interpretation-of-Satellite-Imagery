@@ -1,0 +1,19 @@
+{
+  "image": "10678_0000.png",
+  "boxes": [
+    {
+      "label": "residential buildings with dark rooftops",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 510
+    },
+    {
+      "label": "basketball court with red surface and white markings",
+      "x1": 221,
+      "y1": 256,
+      "x2": 448,
+      "y2": 510
+    }
+  ]
+}

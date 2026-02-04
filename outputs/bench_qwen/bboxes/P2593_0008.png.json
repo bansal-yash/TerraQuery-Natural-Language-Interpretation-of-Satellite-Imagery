@@ -1,0 +1,26 @@
+{
+  "image": "P2593_0008.png",
+  "boxes": [
+    {
+      "label": "baseball diamond",
+      "x1": 218,
+      "y1": 385,
+      "x2": 384,
+      "y2": 510
+    },
+    {
+      "label": "soccer ball field",
+      "x1": 0,
+      "y1": 152,
+      "x2": 159,
+      "y2": 510
+    },
+    {
+      "label": "small vehicle",
+      "x1": 60,
+      "y1": 7,
+      "x2": 87,
+      "y2": 18
+    }
+  ]
+}

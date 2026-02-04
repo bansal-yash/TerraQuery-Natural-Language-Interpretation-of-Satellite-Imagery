@@ -1,0 +1,12 @@
+{
+  "image": "P2714_0032.png",
+  "boxes": [
+    {
+      "label": "small ground track and field",
+      "x1": 176,
+      "y1": 443,
+      "x2": 214,
+      "y2": 487
+    }
+  ]
+}

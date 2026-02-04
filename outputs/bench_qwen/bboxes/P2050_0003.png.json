@@ -1,0 +1,26 @@
+{
+  "image": "P2050_0003.png",
+  "boxes": [
+    {
+      "label": "tennis courts",
+      "x1": 53,
+      "y1": 29,
+      "x2": 198,
+      "y2": 310
+    },
+    {
+      "label": "small vehicles",
+      "x1": 221,
+      "y1": 258,
+      "x2": 233,
+      "y2": 282
+    },
+    {
+      "label": "small vehicles",
+      "x1": 379,
+      "y1": 221,
+      "x2": 414,
+      "y2": 244
+    }
+  ]
+}

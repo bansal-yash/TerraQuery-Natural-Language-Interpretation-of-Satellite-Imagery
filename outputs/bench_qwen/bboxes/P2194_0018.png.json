@@ -1,0 +1,12 @@
+{
+  "image": "P2194_0018.png",
+  "boxes": [
+    {
+      "label": "A high-resolution satellite image from GoogleEarth featuring a soccer field. The field is marked with white lines delineating the boundaries and the center circle. Surrounding the soccer field is a dense vegetation with trees.",
+      "x1": 193,
+      "y1": 17,
+      "x2": 452,
+      "y2": 407
+    }
+  ]
+}

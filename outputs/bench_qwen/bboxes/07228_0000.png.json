@@ -1,0 +1,12 @@
+{
+  "image": "07228_0000.png",
+  "boxes": [
+    {
+      "label": "Aerial view from Google Earth showing an overpass adjacent to a road lined with trees and buildings. The overpass stretches along the right-hand side of the image, connecting a developed area with trees on the left to a more open, concrete-covered space on the right.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "image": "P2477_0002.png",
+  "boxes": [
+    {
+      "label": "cluster of buildings",
+      "x1": 0,
+      "y1": 83,
+      "x2": 197,
+      "y2": 384
+    },
+    {
+      "label": "roundabout",
+      "x1": 120,
+      "y1": 19,
+      "x2": 159,
+      "y2": 58
+    }
+  ]
+}

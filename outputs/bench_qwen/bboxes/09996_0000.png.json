@@ -1,0 +1,33 @@
+{
+  "image": "09996_0000.png",
+  "boxes": [
+    {
+      "label": "small expressway-service-area",
+      "x1": 168,
+      "y1": 109,
+      "x2": 510,
+      "y2": 510
+    },
+    {
+      "label": "sizable brownish body of water",
+      "x1": 87,
+      "y1": 50,
+      "x2": 368,
+      "y2": 296
+    },
+    {
+      "label": "vehicles",
+      "x1": 303,
+      "y1": 352,
+      "x2": 454,
+      "y2": 510
+    },
+    {
+      "label": "isolated vehicle",
+      "x1": 394,
+      "y1": 480,
+      "x2": 419,
+      "y2": 510
+    }
+  ]
+}

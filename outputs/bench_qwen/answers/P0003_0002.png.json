@@ -1,0 +1,45 @@
+{
+  "image": "P0003_0002.png",
+  "answers": [
+    {
+      "question_id": 0,
+      "question": "What color are the large vehicles seen in the image?",
+      "answer": "system You"
+    },
+    {
+      "question_id": 1,
+      "question": "How many small vehicles are visible in the image?",
+      "answer": "system You"
+    },
+    {
+      "question_id": 2,
+      "question": "Is there a vehicle located at the top-most position in the provided image?",
+      "answer": "system You"
+    },
+    {
+      "question_id": 3,
+      "question": "What is the orientation of the road in the image?",
+      "answer": "system You"
+    },
+    {
+      "question_id": 0,
+      "question": "What color are the large vehicles seen in the image?",
+      "answer": "yellow"
+    },
+    {
+      "question_id": 1,
+      "question": "How many small vehicles are visible in the image?",
+      "answer": "2"
+    },
+    {
+      "question_id": 2,
+      "question": "Is there a vehicle located at the top-most position in the provided image?",
+      "answer": "no"
+    },
+    {
+      "question_id": 3,
+      "question": "What is the orientation of the road in the image?",
+      "answer": "diagonal"
+    }
+  ]
+}

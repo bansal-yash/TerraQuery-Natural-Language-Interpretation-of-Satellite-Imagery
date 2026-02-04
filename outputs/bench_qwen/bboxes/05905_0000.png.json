@@ -1,0 +1,19 @@
+{
+  "image": "05905_0000.png",
+  "boxes": [
+    {
+      "label": "pair of adjacent basketball courts",
+      "x1": 203,
+      "y1": 146,
+      "x2": 457,
+      "y2": 361
+    },
+    {
+      "label": "white-roofed building",
+      "x1": 0,
+      "y1": 100,
+      "x2": 151,
+      "y2": 301
+    }
+  ]
+}

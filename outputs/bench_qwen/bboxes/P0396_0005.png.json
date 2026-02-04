@@ -1,0 +1,26 @@
+{
+  "image": "P0396_0005.png",
+  "boxes": [
+    {
+      "label": "tennis courts",
+      "x1": 0,
+      "y1": 0,
+      "x2": 136,
+      "y2": 159
+    },
+    {
+      "label": "tennis courts",
+      "x1": 254,
+      "y1": 0,
+      "x2": 409,
+      "y2": 134
+    },
+    {
+      "label": "running track",
+      "x1": 340,
+      "y1": 269,
+      "x2": 512,
+      "y2": 506
+    }
+  ]
+}

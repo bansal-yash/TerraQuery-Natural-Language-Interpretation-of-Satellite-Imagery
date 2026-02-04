@@ -1,0 +1,19 @@
+{
+  "image": "P6687_0082.png",
+  "boxes": [
+    {
+      "label": "commercial building",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 448
+    },
+    {
+      "label": "small vehicles",
+      "x1": 0,
+      "y1": 364,
+      "x2": 478,
+      "y2": 512
+    }
+  ]
+}

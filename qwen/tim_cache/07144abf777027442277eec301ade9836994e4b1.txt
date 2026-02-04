@@ -1,0 +1,1 @@
+RGB:Aerial view of urban neighborhood with trees, roads, and buildings partially obscured by fog. || SAR:SAR image shows textured urban grid with bright linear features and speckle noise.

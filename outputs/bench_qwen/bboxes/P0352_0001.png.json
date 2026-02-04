@@ -1,0 +1,26 @@
+{
+  "image": "P0352_0001.png",
+  "boxes": [
+    {
+      "label": "red small-vehicle",
+      "x1": 258,
+      "y1": 248,
+      "x2": 291,
+      "y2": 271
+    },
+    {
+      "label": "gray vehicle",
+      "x1": 384,
+      "y1": 479,
+      "x2": 438,
+      "y2": 512
+    },
+    {
+      "label": "small-vehicle",
+      "x1": 384,
+      "y1": 402,
+      "x2": 418,
+      "y2": 430
+    }
+  ]
+}

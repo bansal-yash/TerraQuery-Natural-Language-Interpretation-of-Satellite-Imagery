@@ -1,0 +1,1 @@
+RGB:Aerial view of coastal area with water, docks, and adjacent land structures. || SAR:SAR image shows textured ground with bright linear features and speckle noise.

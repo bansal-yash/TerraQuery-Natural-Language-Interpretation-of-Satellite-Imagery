@@ -1,0 +1,40 @@
+{
+  "image": "P1483_0012.png",
+  "boxes": [
+    {
+      "label": "two large yellow vehicles",
+      "x1": 279,
+      "y1": 144,
+      "x2": 330,
+      "y2": 239
+    },
+    {
+      "label": "one small black vehicle",
+      "x1": 451,
+      "y1": 267,
+      "x2": 468,
+      "y2": 309
+    },
+    {
+      "label": "large structure with a blue roof",
+      "x1": 326,
+      "y1": 15,
+      "x2": 510,
+      "y2": 198
+    },
+    {
+      "label": "green space",
+      "x1": 346,
+      "y1": 223,
+      "x2": 448,
+      "y2": 313
+    },
+    {
+      "label": "another building with a dark roof",
+      "x1": 346,
+      "y1": 367,
+      "x2": 510,
+      "y2": 510
+    }
+  ]
+}

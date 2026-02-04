@@ -1,0 +1,12 @@
+{
+  "image": "08696_0000.png",
+  "boxes": [
+    {
+      "label": "An overhead view from GoogleEarth showing a set of tennis courts. There are three distinct courts parallel to each other.",
+      "x1": 75,
+      "y1": 59,
+      "x2": 510,
+      "y2": 373
+    }
+  ]
+}

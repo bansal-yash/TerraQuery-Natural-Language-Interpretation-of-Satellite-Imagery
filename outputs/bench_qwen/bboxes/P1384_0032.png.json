@@ -1,0 +1,47 @@
+{
+  "image": "P1384_0032.png",
+  "boxes": [
+    {
+      "label": "swimming pool",
+      "x1": 118,
+      "y1": 212,
+      "x2": 128,
+      "y2": 227
+    },
+    {
+      "label": "swimming pool",
+      "x1": 118,
+      "y1": 165,
+      "x2": 135,
+      "y2": 177
+    },
+    {
+      "label": "swimming pool",
+      "x1": 210,
+      "y1": 261,
+      "x2": 227,
+      "y2": 274
+    },
+    {
+      "label": "swimming pool",
+      "x1": 252,
+      "y1": 271,
+      "x2": 272,
+      "y2": 287
+    },
+    {
+      "label": "swimming pool",
+      "x1": 269,
+      "y1": 319,
+      "x2": 289,
+      "y2": 333
+    },
+    {
+      "label": "swimming pool",
+      "x1": 386,
+      "y1": 349,
+      "x2": 404,
+      "y2": 364
+    }
+  ]
+}

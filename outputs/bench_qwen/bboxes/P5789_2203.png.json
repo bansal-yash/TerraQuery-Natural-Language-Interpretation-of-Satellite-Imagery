@@ -1,0 +1,12 @@
+{
+  "image": "P5789_2203.png",
+  "boxes": [
+    {
+      "label": "small storage tank",
+      "x1": 315,
+      "y1": 83,
+      "x2": 349,
+      "y2": 116
+    }
+  ]
+}

@@ -1,0 +1,2952 @@
+[
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a boat?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822162621_20190822162906_tile_5652.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain an airplane?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822073257_20190822073557_tile_2425.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a speedboat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822133333_20190822133635_tile_7760.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a boat?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822083256_20190822083600_tile_10916.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain containers?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822155502_20190822155747_tile_4660.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a crane?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822163021_20190822163304_tile_8465.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a car?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804130928_20190804131204_tile_5135.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a red house?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822102427_20190822102736_tile_6099.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a car?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822160239_20190822160529_tile_3883.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a truck?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823130736_20190823131054_tile_4274.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a boat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822094025_20190822094322_tile_5862.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a speedboat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823071743_20190823072036_tile_2637.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain shipping containers?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823085011_20190823085317_tile_6936.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a car?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822145832_20190822150114_tile_9606.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain boats?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822072817_20190822073109_tile_10149.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a speedboat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822100953_20190822101249_tile_8845.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a boat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822072404_20190822072642_tile_6775.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a speedboat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822153558_20190822153835_tile_2529.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a red house?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822075657_20190822080002_tile_10713.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a factory building?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822162246_20190822162529_tile_7641.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain containers?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822074720_20190822075013_tile_10031.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a speedboat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822091156_20190822091502_tile_110.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a boat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822071025_20190822071321_tile_720.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain storage tanks?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822071924_20190822072224_tile_8630.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a speedboat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823125228_20190823125530_tile_8573.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a lake?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822095638_20190822095937_tile_7438.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a boat?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822163425_20190822163708_tile_6299.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain containers?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804142149_20190804142420_tile_9114.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a car?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804130422_20190804130643_tile_3170.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain the Red Boat?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822092149_20190822092450_tile_1705.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a lawn?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804134228_20190804134450_tile_1865.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a forest?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822084703_20190822085003_tile_1377.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain storage tanks?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823133754_20190823134101_tile_280.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain storage tanks?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804141038_20190804141312_tile_9052.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a red house?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823074026_20190823074323_tile_2211.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain boats?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804141608_20190804141830_tile_5323.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a car?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823161251_20190823161546_tile_8295.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a car?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822092635_20190822092926_tile_8350.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a boat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822075219_20190822075510_tile_8139.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain solar panels?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823081159_20190823081456_tile_5224.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a truck?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823154802_20190823155103_tile_9767.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a gray house?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822155502_20190822155747_tile_4656.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain storage tanks?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823075755_20190823080053_tile_10756.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a chimney?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823075755_20190823080053_tile_10757.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a car?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822083256_20190822083600_tile_10921.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a cargo ship?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823100628_20190823100943_tile_5435.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a train?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823070415_20190823070716_tile_6360.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain the sea?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822094025_20190822094322_tile_5880.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a crane?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823072627_20190823072925_tile_10485.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain boats?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804134228_20190804134450_tile_1872.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain containers?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822142505_20190822142747_tile_6839.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a speedboat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804132031_20190804132301_tile_9500.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain containers?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822095638_20190822095937_tile_7439.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain containers?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823094552_20190823094850_tile_10596.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a chimney?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823123151_20190823123459_tile_2307.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a boat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822101452_20190822101748_tile_4377.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain storage tanks?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823144405_20190823144711_tile_3333.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain storage tanks?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822153558_20190822153835_tile_2528.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain boats?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804133131_20190804133356_tile_782.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a boat?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822101929_20190822102224_tile_10381.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a chimney?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823090554_20190823090904_tile_5015.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a boat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822160641_20190822160923_tile_4055.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain an overpass?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823071743_20190823072036_tile_2636.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain containers?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823140636_20190823140937_tile_10432.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a forest?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804125251_20190804125541_tile_6883.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain containers?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823125228_20190823125530_tile_8568.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain yellow containers?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822141103_20190822141406_tile_4959.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a bridge?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822160239_20190822160529_tile_3894.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain an airplane?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822151523_20190822151826_tile_2909.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a lawn?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822085151_20190822085445_tile_562.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain storage tanks?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822092149_20190822092450_tile_1708.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain an overpass?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822162621_20190822162906_tile_5653.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a chimney?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823143102_20190823143400_tile_5991.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a red house?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822091156_20190822091502_tile_120.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a gray house?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804144353_20190804144627_tile_9925.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a car?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822094025_20190822094322_tile_5868.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a red house?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804125251_20190804125541_tile_6888.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a tower crane?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823161806_20190823162129_tile_2729.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain containers?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823081159_20190823081456_tile_5218.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain an airplane?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804140510_20190804140727_tile_4701.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain containers?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822153149_20190822153444_tile_1050.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain containers?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822065725_20190822065959_tile_7266.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a boat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822092635_20190822092926_tile_8356.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain trees?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804135937_20190804140208_tile_6565.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain chimneys?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823130239_20190823130540_tile_3617.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a crane?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823125228_20190823125530_tile_8579.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a boat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804142736_20190804142950_tile_1157.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain boats?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822073746_20190822074042_tile_5386.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain an airplane?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822164304_20190822164613_tile_3399.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain tracks?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822151944_20190822152215_tile_6994.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain containers?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823080230_20190823080526_tile_1976.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain tracks?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804130422_20190804130643_tile_3183.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain storage tanks?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822163834_20190822164115_tile_7705.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a boat?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823065021_20190823065333_tile_9165.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain trees?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804124148_20190804124417_tile_1330.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a speedboat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823094036_20190823094408_tile_10265.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a lake?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822091719_20190822092011_tile_9712.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a car?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804123547_20190804123823_tile_6161.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain farmland?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823065505_20190823065800_tile_389.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a truck?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804141038_20190804141312_tile_9062.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a red house?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804121331_20190804121610_tile_1661.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a boat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822151108_20190822151351_tile_8075.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a speedboat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822075657_20190822080002_tile_10715.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a boat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823073047_20190823073350_tile_7977.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain boats?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804135937_20190804140208_tile_6569.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a truck?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823141123_20190823141407_tile_3117.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a car?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822082538_20190822082826_tile_4158.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain storage tanks?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823071743_20190823072036_tile_2626.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a speedboat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822070610_20190822070846_tile_3718.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a boat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822072404_20190822072642_tile_6772.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a speedboat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822091719_20190822092011_tile_9705.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain boats?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804133131_20190804133356_tile_784.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a cargo ship?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823153025_20190823153316_tile_5077.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain containers?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822091719_20190822092011_tile_9713.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain tracks?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822101929_20190822102224_tile_10368.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a speedboat?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823150417_20190823150712_tile_10309.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a train?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822084226_20190822084526_tile_3231.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain an airplane?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822073257_20190822073557_tile_2418.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain storage tanks?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822145832_20190822150114_tile_9601.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain boats?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804125251_20190804125541_tile_6885.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain tracks?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822141600_20190822141831_tile_8907.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain trees?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804111224_20190804111453_tile_8695.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain gray factory buildings?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822095638_20190822095937_tile_7425.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a red house?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822145028_20190822145325_tile_9230.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain storage tanks?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823065938_20190823070236_tile_2138.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a speedboat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822142505_20190822142747_tile_6833.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain storage tanks?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823145306_20190823145612_tile_7211.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a car?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822134328_20190822134645_tile_7057.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain containers?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804125251_20190804125541_tile_6893.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a speedboat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823142111_20190823142355_tile_3946.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a chimney?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823151153_20190823151440_tile_6041.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a boat?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822154325_20190822154559_tile_9323.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a bridge?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804111224_20190804111453_tile_8683.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain boats?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804115720_20190804115941_tile_9554.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a chimney?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823160819_20190823161113_tile_11033.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain boats?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804135937_20190804140208_tile_6564.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a gray house?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823075318_20190823075613_tile_5276.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a bridge?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823065505_20190823065800_tile_392.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a lawn?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804141608_20190804141830_tile_5324.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a car?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822083256_20190822083600_tile_10927.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a forest?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823100628_20190823100943_tile_5448.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a speedboat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822144546_20190822144829_tile_7601.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a bridge?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823071331_20190823071608_tile_827.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain containers?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823091132_20190823091448_tile_7927.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a chimney?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823091635_20190823091951_tile_8786.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain an overpass?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823072207_20190823072458_tile_5756.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain streetlights?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823130736_20190823131054_tile_4269.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain containers?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822071924_20190822072224_tile_8640.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain containers?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822084226_20190822084526_tile_3228.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a car?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822071924_20190822072224_tile_8638.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain boats?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822085151_20190822085445_tile_547.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a boat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822153558_20190822153835_tile_2537.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a bridge?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822153931_20190822154218_tile_4587.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a swamp?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823142603_20190823142913_tile_3556.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain an airplane?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822162621_20190822162906_tile_5660.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a bridge?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822155502_20190822155747_tile_4644.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a red house?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822085638_20190822085935_tile_10658.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a lane?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804140510_20190804140727_tile_4703.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a boat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804121331_20190804121610_tile_1655.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a speedboat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823075755_20190823080053_tile_10768.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a boat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822164304_20190822164613_tile_3397.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a cargo ship?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823090554_20190823090904_tile_5026.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain boats?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804132547_20190804132826_tile_10872.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain containers?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823074455_20190823074758_tile_10207.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain storage tanks?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823151153_20190823151440_tile_6039.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a boat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822084226_20190822084526_tile_3224.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a bridge?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823130239_20190823130540_tile_3619.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a river?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823075318_20190823075613_tile_5279.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain storage tanks?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823095600_20190823095931_tile_10975.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a bridge?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822152355_20190822152652_tile_3985.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a boat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822133830_20190822134118_tile_3779.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a lake?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822084226_20190822084526_tile_3232.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a speedboat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822145832_20190822150114_tile_9602.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a car?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822162246_20190822162529_tile_7653.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a boat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822070610_20190822070846_tile_3721.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain containers?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804130422_20190804130643_tile_3181.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain an airplane?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804121331_20190804121610_tile_1659.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain containers?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804145216_20190804145445_tile_6521.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain containers?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822150641_20190822150929_tile_9989.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a forest?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822094509_20190822094813_tile_167.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain storage tanks?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804135332_20190804135556_tile_7172.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a boat?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822085151_20190822085445_tile_567.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain containers?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822161045_20190822161339_tile_2480.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a boat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804124749_20190804125033_tile_3664.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain an airplane?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804142736_20190804142950_tile_1155.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a boat?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822094025_20190822094322_tile_5870.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain boats?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804125251_20190804125541_tile_6890.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain shipping containers?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823142111_20190823142355_tile_3945.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain trees?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804125251_20190804125541_tile_6891.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain storage tanks?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822073257_20190822073557_tile_2420.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain containers?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823123717_20190823124038_tile_2690.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a red house?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822083256_20190822083600_tile_10913.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain containers?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822085151_20190822085445_tile_566.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a chimney?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823145306_20190823145612_tile_7213.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a lawn?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822093552_20190822093843_tile_9664.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain storage tanks?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804130928_20190804131204_tile_5130.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a boat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822155902_20190822160145_tile_875.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a boat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822094025_20190822094322_tile_5867.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain trees?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822163425_20190822163708_tile_6300.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain boats?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822080151_20190822080440_tile_606.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a bridge?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823140636_20190823140937_tile_10420.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain storage tanks?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823084056_20190823084400_tile_3450.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a bridge?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823094552_20190823094850_tile_10592.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain storage tanks?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822092149_20190822092450_tile_1700.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a tent?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823082625_20190823082938_tile_452.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain boats?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804124148_20190804124417_tile_1313.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a boat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804120805_20190804121023_tile_6205.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain boats?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822085638_20190822085935_tile_10659.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a speedboat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823160819_20190823161113_tile_11027.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain containers?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822072817_20190822073109_tile_10140.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a car?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822101929_20190822102224_tile_10366.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a boat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823065505_20190823065800_tile_390.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain boats?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804132031_20190804132301_tile_9494.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a boat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822153558_20190822153835_tile_2536.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a chimney?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823095600_20190823095931_tile_10978.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a speedboat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804113605_20190804113825_tile_9003.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain an empty space?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804145216_20190804145445_tile_6516.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a crane?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822085638_20190822085935_tile_10644.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a bridge?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822162246_20190822162529_tile_7643.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a boat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822155502_20190822155747_tile_4658.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain storage tanks?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804133131_20190804133356_tile_778.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain boats?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804132031_20190804132301_tile_9489.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain containers?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822141103_20190822141406_tile_4960.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a car?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822091156_20190822091502_tile_104.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a car?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822070143_20190822070439_tile_7113.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a speedboat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823151153_20190823151440_tile_6052.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a bridge?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804125251_20190804125541_tile_6880.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain an airplane?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804140510_20190804140727_tile_4709.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain storage tanks?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804115720_20190804115941_tile_9547.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a factory building?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804123547_20190804123823_tile_6149.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a boat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804114647_20190804114904_tile_6264.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a green canopy?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822163021_20190822163304_tile_8467.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain an airplane?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822143107_20190822143418_tile_1538.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a speedboat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823075755_20190823080053_tile_10762.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a river?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823071331_20190823071608_tile_838.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a boat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822081617_20190822081907_tile_9817.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain storage tanks?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822075657_20190822080002_tile_10697.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a boat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822094025_20190822094322_tile_5876.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a crane?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823142111_20190823142355_tile_3943.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain storage tanks?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822154325_20190822154559_tile_9326.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain containers?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804141608_20190804141830_tile_5340.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a purple house?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804135937_20190804140208_tile_6561.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain containers?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823074026_20190823074323_tile_2205.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a car?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823070853_20190823071152_tile_2039.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain storage tanks?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804132031_20190804132301_tile_9493.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain containers?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823131240_20190823131533_tile_7541.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a boat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804124749_20190804125033_tile_3678.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a chimney?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823133754_20190823134101_tile_282.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a gray house?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804121331_20190804121610_tile_1645.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a chimney?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823080717_20190823081024_tile_3064.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain an airplane?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804142149_20190804142420_tile_9116.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain containers?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823085011_20190823085317_tile_6955.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a chimney?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823152057_20190823152354_tile_1263.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain storage tanks?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823152057_20190823152354_tile_1262.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain boats?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804132031_20190804132301_tile_9502.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a bridge?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822151523_20190822151826_tile_2907.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a chimney?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823083119_20190823083425_tile_2091.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain containers?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823074455_20190823074758_tile_10191.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a boat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822134328_20190822134645_tile_7049.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a car?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823143529_20190823143813_tile_4439.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain storage tanks?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822065241_20190822065541_tile_2568.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a factory building?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822151523_20190822151826_tile_2911.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a truck?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823151559_20190823151919_tile_5609.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a chimney?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804113009_20190804113242_tile_4799.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain containers?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822083256_20190822083600_tile_10923.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a car?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822080619_20190822080931_tile_233.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain containers?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822072817_20190822073109_tile_10146.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a lawn?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823065505_20190823065800_tile_396.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a car?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804113605_20190804113825_tile_9013.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain trees?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804120223_20190804120456_tile_67.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain trees?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822090458_20190822090745_tile_6620.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain chimneys?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823075755_20190823080053_tile_10755.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a boat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822155502_20190822155747_tile_4655.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a speedboat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823160819_20190823161113_tile_11037.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain an overpass?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822095638_20190822095937_tile_7437.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a boat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822094025_20190822094322_tile_5877.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a truck?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823080717_20190823081024_tile_3069.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain an airplane?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804143251_20190804143533_tile_333.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain an overpass?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822152811_20190822153054_tile_12.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain farmland?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822164803_20190822165101_tile_4217.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a lane?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822161458_20190822161736_tile_8419.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a car?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822134328_20190822134645_tile_7045.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain boats?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804130422_20190804130643_tile_3169.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a ship?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822082538_20190822082826_tile_4166.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a red house?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822072817_20190822073109_tile_10131.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a truck?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823143529_20190823143813_tile_4435.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a train?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822163834_20190822164115_tile_7700.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain containers?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190822084226_20190822084526_tile_3235.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a forest?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190804114647_20190804114904_tile_6249.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a boat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823082145_20190823082444_tile_7815.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a speedboat?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "SPACE6_20190823142111_20190823142355_tile_3939.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a pool?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "dfc2025_TrainArea_091.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a house?",
+    "answer": "A",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "dfc2025_TrainArea_003.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain a playground?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "dfc2025_TrainArea_329.json"
+  },
+  {
+    "task_type": "hallucination detection",
+    "question": "Does the image contain flowers?",
+    "answer": "B",
+    "candidate": [
+      "A. Yes",
+      "B. No"
+    ],
+    "file_name": "dfc2025_TrainArea_011.json"
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "image": "P2504_0010.png",
+  "boxes": [
+    {
+      "label": "residential neighborhoods",
+      "x1": 0,
+      "y1": 0,
+      "x2": 403,
+      "y2": 223
+    },
+    {
+      "label": "commercial buildings",
+      "x1": 256,
+      "y1": 0,
+      "x2": 510,
+      "y2": 113
+    },
+    {
+      "label": "small soccer field",
+      "x1": 273,
+      "y1": 362,
+      "x2": 364,
+      "y2": 479
+    },
+    {
+      "label": "significant roadway",
+      "x1": 0,
+      "y1": 90,
+      "x2": 510,
+      "y2": 274
+    }
+  ]
+}

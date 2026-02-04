@@ -1,0 +1,19 @@
+{
+  "image": "P3032_0002.png",
+  "boxes": [
+    {
+      "label": "baseball diamond",
+      "x1": 305,
+      "y1": 33,
+      "x2": 321,
+      "y2": 47
+    },
+    {
+      "label": "ground-track field",
+      "x1": 256,
+      "y1": 8,
+      "x2": 287,
+      "y2": 47
+    }
+  ]
+}

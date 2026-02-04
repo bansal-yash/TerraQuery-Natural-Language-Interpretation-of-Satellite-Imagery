@@ -1,0 +1,12 @@
+{
+  "image": "06495_0000.png",
+  "boxes": [
+    {
+      "label": "An aerial image from GoogleEarth with unclear resolution captures a large structure protruding from the bottom center towards the middle of the frame, surrounded by buildings and greeneries.",
+      "x1": 176,
+      "y1": 0,
+      "x2": 512,
+      "y2": 506
+    }
+  ]
+}

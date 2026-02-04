@@ -1,0 +1,26 @@
+{
+  "image": "P1432_0029.png",
+  "boxes": [
+    {
+      "label": "small ground track field",
+      "x1": 42,
+      "y1": 0,
+      "x2": 227,
+      "y2": 280
+    },
+    {
+      "label": "small soccer ball field",
+      "x1": 69,
+      "y1": 0,
+      "x2": 193,
+      "y2": 128
+    },
+    {
+      "label": "two small adjacent basketball courts",
+      "x1": 214,
+      "y1": 0,
+      "x2": 336,
+      "y2": 159
+    }
+  ]
+}

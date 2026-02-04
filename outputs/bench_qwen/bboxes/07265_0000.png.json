@@ -1,0 +1,26 @@
+{
+  "image": "07265_0000.png",
+  "boxes": [
+    {
+      "label": "large circular storage tank",
+      "x1": 104,
+      "y1": 241,
+      "x2": 303,
+      "y2": 502
+    },
+    {
+      "label": "building",
+      "x1": 15,
+      "y1": 29,
+      "x2": 181,
+      "y2": 230
+    },
+    {
+      "label": "building",
+      "x1": 264,
+      "y1": 77,
+      "x2": 349,
+      "y2": 215
+    }
+  ]
+}

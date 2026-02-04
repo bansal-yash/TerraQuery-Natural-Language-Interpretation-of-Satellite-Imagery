@@ -1,0 +1,33 @@
+{
+  "image": "10978_0000.png",
+  "boxes": [
+    {
+      "label": "track and field",
+      "x1": 247,
+      "y1": 34,
+      "x2": 510,
+      "y2": 510
+    },
+    {
+      "label": "rectangular building",
+      "x1": 0,
+      "y1": 111,
+      "x2": 163,
+      "y2": 379
+    },
+    {
+      "label": "parking lot",
+      "x1": 163,
+      "y1": 0,
+      "x2": 205,
+      "y2": 379
+    },
+    {
+      "label": "small vehicle",
+      "x1": 120,
+      "y1": 411,
+      "x2": 153,
+      "y2": 430
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "image": "07337_0000.png",
+  "boxes": [
+    {
+      "label": "stadium",
+      "x1": 262,
+      "y1": 248,
+      "x2": 454,
+      "y2": 489
+    },
+    {
+      "label": "green soccer field",
+      "x1": 300,
+      "y1": 312,
+      "x2": 402,
+      "y2": 465
+    },
+    {
+      "label": "surrounding tracks",
+      "x1": 262,
+      "y1": 248,
+      "x2": 454,
+      "y2": 489
+    },
+    {
+      "label": "roads",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    },
+    {
+      "label": "buildings",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    },
+    {
+      "label": "houses with varying rooftop colors and sizes",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    },
+    {
+      "label": "red roofs",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    },
+    {
+      "label": "vegetation",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    }
+  ]
+}

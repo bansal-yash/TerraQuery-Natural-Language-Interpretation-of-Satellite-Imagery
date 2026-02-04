@@ -1,0 +1,52 @@
+(qwen) samyak@user:/home/scratch/samyak/interiit/qwen$ python bbscore_all.py --test-json /home/samyak/scratch/interiit/EarthMind-Bench/json/caption_all_unmatched.json --checkpoint /home/samyak/scratch/interiit/qwen/benchmarking_checkpoints/sar/final --image-dir /home/samyak/s
+cratch/interiit/EarthMind-Bench/img/test/sar_quads/img
+/home/scratch/samyak/micromamba/envs/qwen/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Skipping import of cpp extensions due to incompatible torch version 2.7.0+cu126 for torchao version 0.14.1             Please see https://github.com/pytorch/ao/issues/2919 for more info
+/home/scratch/samyak/micromamba/envs/qwen/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/scratch/samyak/interiit/qwen/bbscore_all.py:19: UserWarning: WARNING: Unsloth should be imported before transformers to ensure all optimizations are applied. Your code may run slower or encounter memory issues without these optimizations.
+
+Please restructure your imports with 'import unsloth' at the top of your file.
+  from unsloth import FastVisionModel
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+🦥 Unsloth Zoo will now patch everything to make training faster!
+   Loading finetuned model with 4-bit quantization: /home/samyak/scratch/interiit/qwen/models--unsloth--Qwen3-VL-8B-Instruct/snapshots/11d38e30f7b6dec7545b704d119dc6fbecbbd639
+==((====))==  Unsloth 2025.11.4: Fast Qwen3_Vl patching. Transformers: 4.57.3.
+   \\   /|    NVIDIA L40S. Num GPUs = 1. Max memory: 44.392 GB. Platform: Linux.
+O^O/ \_/ \    Torch: 2.7.0+cu126. CUDA: 8.9. CUDA Toolkit: 12.6. Triton: 3.3.0
+\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.30. FA2 = True]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+Unsloth: QLoRA and full finetuning all not selected. Switching to 16bit LoRA.
+Loading checkpoint shards: 100%|████████████████████████████████████████████████████████████████████████████| 4/4 [00:03<00:00,  1.31it/s]
+   Loading LoRA adapters from: /home/samyak/scratch/interiit/qwen/benchmarking_checkpoints/sar/final
+   Merging LoRA adapters into base model...
+   Loading base model with 4-bit quantization
+==((====))==  Unsloth 2025.11.4: Fast Qwen3_Vl patching. Transformers: 4.57.3.
+   \\   /|    NVIDIA L40S. Num GPUs = 1. Max memory: 44.392 GB. Platform: Linux.
+O^O/ \_/ \    Torch: 2.7.0+cu126. CUDA: 8.9. CUDA Toolkit: 12.6. Triton: 3.3.0
+\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.30. FA2 = True]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+Unsloth: QLoRA and full finetuning all not selected. Switching to 16bit LoRA.
+Loading checkpoint shards: 100%|████████████████████████████████████████████████████████████████████████████| 4/4 [00:03<00:00,  1.31it/s]
+
+📄 Loading test data: /home/samyak/scratch/interiit/EarthMind-Bench/json/caption_all_unmatched.json
+✅ Total samples: 258
+
+🎨 Generating answers in batches...
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████| 17/17 [09:56<00:00, 35.07s/it]
+
+📊 Computing metrics (BERTScore / BERT-BLEU)...
+
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-large and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-large and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+🔹 Fine-tuned BERT-BLEU: 0.9411290838287085
+🔸 Base       BERT-BLEU: 0.9052994229558531
+
+🎉 Done!

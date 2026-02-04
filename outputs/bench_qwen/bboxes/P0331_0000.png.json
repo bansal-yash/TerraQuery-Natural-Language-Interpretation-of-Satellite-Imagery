@@ -1,0 +1,12 @@
+{
+  "image": "P0331_0000.png",
+  "boxes": [
+    {
+      "label": "harbor structure",
+      "x1": 116,
+      "y1": 162,
+      "x2": 466,
+      "y2": 510
+    }
+  ]
+}

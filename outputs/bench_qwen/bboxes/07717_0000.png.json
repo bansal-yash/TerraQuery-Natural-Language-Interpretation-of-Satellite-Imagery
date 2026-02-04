@@ -1,0 +1,12 @@
+{
+  "image": "07717_0000.png",
+  "boxes": [
+    {
+      "label": "An aerial image of a sports facility from Google Earth showcasing a series of tennis courts, each marked with clear white lines on a blue surface. In total, there are six small-sized courts, with one being positioned to the left, one distinctly at the top, another on the right side, and the remaining three grouped closer to the center of the image.",
+      "x1": 1,
+      "y1": 36,
+      "x2": 510,
+      "y2": 506
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "image": "P2598_0008.png",
+  "boxes": [
+    {
+      "label": "tennis court",
+      "x1": 0,
+      "y1": 0,
+      "x2": 297,
+      "y2": 100
+    },
+    {
+      "label": "tennis court",
+      "x1": 0,
+      "y1": 102,
+      "x2": 179,
+      "y2": 256
+    },
+    {
+      "label": "building with metallic roof",
+      "x1": 268,
+      "y1": 159,
+      "x2": 512,
+      "y2": 510
+    },
+    {
+      "label": "building with metallic roof",
+      "x1": 297,
+      "y1": 0,
+      "x2": 512,
+      "y2": 168
+    },
+    {
+      "label": "small vehicle",
+      "x1": 230,
+      "y1": 419,
+      "x2": 273,
+      "y2": 442
+    },
+    {
+      "label": "small vehicle",
+      "x1": 156,
+      "y1": 392,
+      "x2": 194,
+      "y2": 426
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "image": "06748_0000.png",
+  "boxes": [
+    {
+      "label": "tennis courts",
+      "x1": 269,
+      "y1": 264,
+      "x2": 464,
+      "y2": 499
+    },
+    {
+      "label": "line of vehicles",
+      "x1": 443,
+      "y1": 303,
+      "x2": 510,
+      "y2": 407
+    },
+    {
+      "label": "parking lot",
+      "x1": 424,
+      "y1": 244,
+      "x2": 510,
+      "y2": 432
+    },
+    {
+      "label": "recreational area",
+      "x1": 0,
+      "y1": 0,
+      "x2": 510,
+      "y2": 510
+    }
+  ]
+}

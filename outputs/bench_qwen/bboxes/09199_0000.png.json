@@ -1,0 +1,19 @@
+{
+  "image": "09199_0000.png",
+  "boxes": [
+    {
+      "label": "baseball field",
+      "x1": 151,
+      "y1": 53,
+      "x2": 366,
+      "y2": 272
+    },
+    {
+      "label": "small vehicle",
+      "x1": 43,
+      "y1": 8,
+      "x2": 80,
+      "y2": 36
+    }
+  ]
+}

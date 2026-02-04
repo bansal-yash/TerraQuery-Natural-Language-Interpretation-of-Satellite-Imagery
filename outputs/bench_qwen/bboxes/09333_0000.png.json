@@ -1,0 +1,12 @@
+{
+  "image": "09333_0000.png",
+  "boxes": [
+    {
+      "label": "An aerial view of an industrial area from GoogleEarth. Prominently, the image shows a large chimney towering.",
+      "x1": 99,
+      "y1": 344,
+      "x2": 402,
+      "y2": 510
+    }
+  ]
+}

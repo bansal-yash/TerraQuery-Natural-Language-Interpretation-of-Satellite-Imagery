@@ -1,0 +1,33 @@
+{
+  "image": "P2625_0017.png",
+  "boxes": [
+    {
+      "label": "large vehicle",
+      "x1": 12,
+      "y1": 346,
+      "x2": 149,
+      "y2": 441
+    },
+    {
+      "label": "large vehicle",
+      "x1": 48,
+      "y1": 374,
+      "x2": 192,
+      "y2": 479
+    },
+    {
+      "label": "large vehicle",
+      "x1": 86,
+      "y1": 449,
+      "x2": 234,
+      "y2": 512
+    },
+    {
+      "label": "large vehicle",
+      "x1": 422,
+      "y1": 249,
+      "x2": 510,
+      "y2": 346
+    }
+  ]
+}

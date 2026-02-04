@@ -1,0 +1,12 @@
+{
+  "image": "P5070_0124.png",
+  "boxes": [
+    {
+      "label": "tractor with a trailer",
+      "x1": 89,
+      "y1": 18,
+      "x2": 277,
+      "y2": 83
+    }
+  ]
+}

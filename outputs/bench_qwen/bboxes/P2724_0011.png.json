@@ -1,0 +1,26 @@
+{
+  "image": "P2724_0011.png",
+  "boxes": [
+    {
+      "label": "building",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    },
+    {
+      "label": "ground track field",
+      "x1": 73,
+      "y1": 285,
+      "x2": 123,
+      "y2": 330
+    },
+    {
+      "label": "ground track field",
+      "x1": 69,
+      "y1": 460,
+      "x2": 103,
+      "y2": 510
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "image": "10533_0000.png",
+  "boxes": [
+    {
+      "label": "baseball field",
+      "x1": 10,
+      "y1": 49,
+      "x2": 162,
+      "y2": 202
+    },
+    {
+      "label": "baseball field",
+      "x1": 28,
+      "y1": 374,
+      "x2": 147,
+      "y2": 499
+    },
+    {
+      "label": "basketball court",
+      "x1": 214,
+      "y1": 32,
+      "x2": 280,
+      "y2": 141
+    }
+  ]
+}

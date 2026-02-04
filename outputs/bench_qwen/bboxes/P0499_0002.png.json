@@ -1,0 +1,33 @@
+{
+  "image": "P0499_0002.png",
+  "boxes": [
+    {
+      "label": "small vehicle",
+      "x1": 262,
+      "y1": 405,
+      "x2": 301,
+      "y2": 446
+    },
+    {
+      "label": "tennis courts",
+      "x1": 223,
+      "y1": 157,
+      "x2": 426,
+      "y2": 358
+    },
+    {
+      "label": "tennis courts",
+      "x1": 309,
+      "y1": 70,
+      "x2": 510,
+      "y2": 234
+    },
+    {
+      "label": "tennis courts",
+      "x1": 392,
+      "y1": 0,
+      "x2": 512,
+      "y2": 109
+    }
+  ]
+}

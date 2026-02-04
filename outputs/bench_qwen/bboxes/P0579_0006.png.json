@@ -1,0 +1,19 @@
+{
+  "image": "P0579_0006.png",
+  "boxes": [
+    {
+      "label": "harbor with red rooftop",
+      "x1": 346,
+      "y1": 182,
+      "x2": 510,
+      "y2": 510
+    },
+    {
+      "label": "second harbor",
+      "x1": 110,
+      "y1": 273,
+      "x2": 269,
+      "y2": 510
+    }
+  ]
+}

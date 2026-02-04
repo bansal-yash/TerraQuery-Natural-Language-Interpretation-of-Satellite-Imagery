@@ -1,0 +1,33 @@
+{
+  "image": "P8287_0022.png",
+  "boxes": [
+    {
+      "label": "small vehicle at the bottom of the image",
+      "x1": 233,
+      "y1": 479,
+      "x2": 285,
+      "y2": 505
+    },
+    {
+      "label": "small vehicle close to the street corner at the bottom right of the image",
+      "x1": 354,
+      "y1": 496,
+      "x2": 409,
+      "y2": 512
+    },
+    {
+      "label": "additional vehicles situated along the street edges",
+      "x1": 408,
+      "y1": 98,
+      "x2": 472,
+      "y2": 131
+    },
+    {
+      "label": "additional vehicles situated along the street edges",
+      "x1": 477,
+      "y1": 75,
+      "x2": 512,
+      "y2": 115
+    }
+  ]
+}

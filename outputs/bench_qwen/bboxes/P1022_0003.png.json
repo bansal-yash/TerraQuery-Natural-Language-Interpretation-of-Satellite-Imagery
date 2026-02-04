@@ -1,0 +1,12 @@
+{
+  "image": "P1022_0003.png",
+  "boxes": [
+    {
+      "label": "The high-resolution image from GoogleEarth displays a segment of land bordered by water to the left, where a small harbor is situated along the shoreline.",
+      "x1": 0,
+      "y1": 159,
+      "x2": 185,
+      "y2": 510
+    }
+  ]
+}

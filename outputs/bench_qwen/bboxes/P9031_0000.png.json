@@ -1,0 +1,19 @@
+{
+  "image": "P9031_0000.png",
+  "boxes": [
+    {
+      "label": "urban area with blue roofs",
+      "x1": 1,
+      "y1": 0,
+      "x2": 427,
+      "y2": 510
+    },
+    {
+      "label": "airport with runways and taxiways",
+      "x1": 422,
+      "y1": 31,
+      "x2": 512,
+      "y2": 510
+    }
+  ]
+}

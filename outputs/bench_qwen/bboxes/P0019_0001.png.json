@@ -1,0 +1,26 @@
+{
+  "image": "P0019_0001.png",
+  "boxes": [
+    {
+      "label": "large house with a complex roof structure",
+      "x1": 90,
+      "y1": 119,
+      "x2": 344,
+      "y2": 382
+    },
+    {
+      "label": "well-manicured lawn with landscaping features",
+      "x1": 78,
+      "y1": 382,
+      "x2": 432,
+      "y2": 510
+    },
+    {
+      "label": "large vehicle parked on the left side",
+      "x1": 94,
+      "y1": 210,
+      "x2": 121,
+      "y2": 277
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "image": "P0368_0001.png",
+  "boxes": [
+    {
+      "label": "parking area",
+      "x1": 0,
+      "y1": 304,
+      "x2": 182,
+      "y2": 510
+    },
+    {
+      "label": "small soccer-ball field",
+      "x1": 172,
+      "y1": 147,
+      "x2": 512,
+      "y2": 510
+    },
+    {
+      "label": "vehicles</ref><ref>three small vehicles",
+      "x1": 57,
+      "y1": 371,
+      "x2": 174,
+      "y2": 487
+    }
+  ]
+}

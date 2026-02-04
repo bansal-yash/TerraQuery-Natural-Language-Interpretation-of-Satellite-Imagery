@@ -1,0 +1,26 @@
+{
+  "image": "P2242_0002.png",
+  "boxes": [
+    {
+      "label": "small planes",
+      "x1": 321,
+      "y1": 0,
+      "x2": 358,
+      "y2": 299
+    },
+    {
+      "label": "small vehicles",
+      "x1": 202,
+      "y1": 82,
+      "x2": 213,
+      "y2": 108
+    },
+    {
+      "label": "small vehicles",
+      "x1": 136,
+      "y1": 399,
+      "x2": 159,
+      "y2": 412
+    }
+  ]
+}

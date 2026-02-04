@@ -1,0 +1,33 @@
+{
+  "image": "P0998_0018.png",
+  "boxes": [
+    {
+      "label": "suburban area with homes surrounded by vegetation",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    },
+    {
+      "label": "small ship",
+      "x1": 336,
+      "y1": 392,
+      "x2": 362,
+      "y2": 441
+    },
+    {
+      "label": "small vehicle near a driveway",
+      "x1": 182,
+      "y1": 317,
+      "x2": 207,
+      "y2": 366
+    },
+    {
+      "label": "small vehicle on a road or driveway surrounded by greenery",
+      "x1": 427,
+      "y1": 170,
+      "x2": 453,
+      "y2": 219
+    }
+  ]
+}

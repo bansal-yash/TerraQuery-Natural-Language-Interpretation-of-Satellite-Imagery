@@ -1,0 +1,33 @@
+{
+  "image": "P0175_0001.png",
+  "boxes": [
+    {
+      "label": "tennis courts",
+      "x1": 170,
+      "y1": 0,
+      "x2": 510,
+      "y2": 271
+    },
+    {
+      "label": "small vehicle",
+      "x1": 33,
+      "y1": 367,
+      "x2": 67,
+      "y2": 401
+    },
+    {
+      "label": "grass areas",
+      "x1": 0,
+      "y1": 271,
+      "x2": 510,
+      "y2": 510
+    },
+    {
+      "label": "patches of trees",
+      "x1": 0,
+      "y1": 0,
+      "x2": 436,
+      "y2": 510
+    }
+  ]
+}

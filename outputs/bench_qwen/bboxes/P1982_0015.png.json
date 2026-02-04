@@ -1,0 +1,12 @@
+{
+  "image": "P1982_0015.png",
+  "boxes": [
+    {
+      "label": "High resolution image from GoogleEarth showing a section of a parking lot adjacent to a multi-lane road. There are several small vehicles parked in the lot, with one of them positioned towards the bottom-left of the image.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 512
+    }
+  ]
+}

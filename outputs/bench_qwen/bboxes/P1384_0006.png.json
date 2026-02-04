@@ -1,0 +1,68 @@
+{
+  "image": "P1384_0006.png",
+  "boxes": [
+    {
+      "label": "houses",
+      "x1": 26,
+      "y1": 0,
+      "x2": 510,
+      "y2": 512
+    },
+    {
+      "label": "winding roads",
+      "x1": 26,
+      "y1": 0,
+      "x2": 510,
+      "y2": 512
+    },
+    {
+      "label": "soccer ball field",
+      "x1": 369,
+      "y1": 73,
+      "x2": 510,
+      "y2": 164
+    },
+    {
+      "label": "small swimming pools",
+      "x1": 73,
+      "y1": 295,
+      "x2": 98,
+      "y2": 312
+    },
+    {
+      "label": "small swimming pools",
+      "x1": 151,
+      "y1": 310,
+      "x2": 172,
+      "y2": 329
+    },
+    {
+      "label": "small swimming pools",
+      "x1": 134,
+      "y1": 452,
+      "x2": 153,
+      "y2": 467
+    },
+    {
+      "label": "small swimming pools",
+      "x1": 73,
+      "y1": 463,
+      "x2": 103,
+      "y2": 483
+    },
+    {
+      "label": "small swimming pools",
+      "x1": 132,
+      "y1": 477,
+      "x2": 151,
+      "y2": 500
+    },
+    {
+      "label": "small swimming pools",
+      "x1": 153,
+      "y1": 269,
+      "x2": 176,
+      "y2": 287
+    }
+  ]
+}

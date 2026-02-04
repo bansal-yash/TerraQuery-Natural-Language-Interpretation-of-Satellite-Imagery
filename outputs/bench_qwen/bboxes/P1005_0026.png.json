@@ -1,0 +1,26 @@
+{
+  "image": "P1005_0026.png",
+  "boxes": [
+    {
+      "label": "harbor",
+      "x1": 0,
+      "y1": 448,
+      "x2": 358,
+      "y2": 510
+    },
+    {
+      "label": "small vehicle</ref><ref>vehicle",
+      "x1": 377,
+      "y1": 425,
+      "x2": 418,
+      "y2": 453
+    },
+    {
+      "label": "swimming pool",
+      "x1": 413,
+      "y1": 317,
+      "x2": 473,
+      "y2": 364
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "image": "08305_0000.png",
+  "boxes": [
+    {
+      "label": "two basketball courts with visible court boundaries and playing lines",
+      "x1": 198,
+      "y1": 241,
+      "x2": 510,
+      "y2": 510
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+from pathlib import Path
+from typing import Any, Dict, List, Tuple
+import re
+
+import qwen_mtmd
+from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel, Field
+
+
+class BBoxRequest(BaseModel):
+    model_path: Path
+    mmproj_path: Path
+    image_path: Path
+    object_name: str = Field(..., min_length=1)
+    n_batch: int = 64
+    max_new_tokens: int = 128
+
+
+class CaptionRequest(BaseModel):
+    model_path: Path
+    mmproj_path: Path
+    image_path: Path
+    n_batch: int = 64
+    max_new_tokens: int = 256
+
+
+class FeaturesRequest(BaseModel):
+    model_path: Path
+    mmproj_path: Path
+    image_path: Path
+    describer: str = Field(..., min_length=1, max_length=64)
+    n_batch: int = 64
+    max_new_tokens: int = 128
+
+
+app = FastAPI(title="qwen_mtmd_api")
+
+HANDLE_CACHE: Dict[Tuple[str, str], Any] = {}
+
+
+def open_handle(model_path: Path, mmproj_path: Path, n_threads: int = 8) -> Any:
+    key = (str(model_path), str(mmproj_path))
+    if key not in HANDLE_CACHE:
+        if not model_path.exists() or not mmproj_path.exists():
+            raise HTTPException(status_code=422, detail="model or mmproj path does not exist")
+        HANDLE_CACHE[key] = qwen_mtmd.load(str(model_path), str(mmproj_path), -1, n_threads, False)
+    return HANDLE_CACHE[key]
+
+
+@app.on_event("shutdown")
+def _shutdown():
+    for handle in HANDLE_CACHE.values():
+        qwen_mtmd.free_handle(handle)
+    HANDLE_CACHE.clear()
+
+
+def _run_chat(handle: Any, messages: List[dict], n_batch: int, max_new_tokens: int) -> str:
+    return qwen_mtmd.infer_chat(handle, messages, n_batch, max_new_tokens)
+
+
+BOX_PATTERN = re.compile(
+    r"<ref>\s*(?P<label>.*?)\s*</ref>\s*<box>\s*\(\s*(?P<x1>\d+)\s*,\s*(?P<y1>\d+)\s*\)\s*,\s*\(\s*(?P<x2>\d+)\s*,\s*(?P<y2>\d+)\s*\)\s*(?:</box>|<\|box_end\|>)",
+    flags=re.IGNORECASE,
+)
+
+
+BOX_JSON_PATTERN = re.compile(
+    r'"bbox_2d"\s*:\s*\[\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*\]\s*,\s*"label"\s*:\s*"([^\"]+)"',
+    flags=re.IGNORECASE,
+)
+
+
+def _parse_boxes(reply: str) -> List[dict]:
+    boxes: List[dict] = []
+    for match in BOX_PATTERN.finditer(reply):
+        boxes.append({
+            "label": match.group("label").strip(),
+            "x1": int(match.group("x1")),
+            "y1": int(match.group("y1")),
+            "x2": int(match.group("x2")),
+            "y2": int(match.group("y2")),
+        })
+    for match in BOX_JSON_PATTERN.finditer(reply):
+        x1, y1, x2, y2, label = match.groups()
+        boxes.append({
+            "label": label,
+            "x1": int(x1),
+            "y1": int(y1),
+            "x2": int(x2),
+            "y2": int(y2),
+        })
+    return boxes
+
+
+@app.post("/bbox")
+def bbox_endpoint(req: BBoxRequest):
+    handle = open_handle(req.model_path, req.mmproj_path)
+    messages = [
+        {"role": "system", "content": [{"type": "text", "text": (
+            "You are Qwen3-VL, a multimodal assistant that reports bounding boxes concisely without extra text. "
+            "When you describe an object, use the <ref>/<box> markup exactly once per object."
+        )}]},
+        {"role": "user", "content": [
+            {"type": "image", "image": str(req.image_path)},
+            {"type": "text", "text": (
+                f"Locate every {req.object_name} that is fully visible. "
+                "If several instances overlap or are adjacent, merge them into the smallest enclosing box. "
+                "If no objects exist, reply with 'none'."
+            )}
+        ]}
+    ]
+    reply = _run_chat(handle, messages, req.n_batch, req.max_new_tokens)
+    boxes = _parse_boxes(reply)
+    return {"boxes": boxes, "raw": reply}
+
+
+@app.post("/caption")
+def caption_endpoint(req: CaptionRequest):
+    handle = open_handle(req.model_path, req.mmproj_path)
+    system = (
+        "You are Qwen3-VL, a multimodal assistant. Provide a fluent, multi-sentence description that highlights the major features, materials, actions, mood, and any objects occupying the center of the scene. "
+        "Keep the reply under 120 words and cite the most distinctive attributes."
+    )
+    user_text = (
+        "Describe the visible scene focusing on the most prominent subjects, textures, and spatial relationships. "
+        "Include ground type, objects, lighting, and any notable activity."
+    )
+    messages = [
+        {"role": "system", "content": [{"type": "text", "text": system}]},
+        {"role": "user", "content": [
+            {"type": "image", "image": str(req.image_path)},
+            {"type": "text", "text": user_text}
+        ]}
+    ]
+    reply = _run_chat(handle, messages, req.n_batch, req.max_new_tokens)
+    text = reply.strip()
+    return {"caption": text}
+
+
+@app.post("/features")
+def features_endpoint(req: FeaturesRequest):
+    handle = open_handle(req.model_path, req.mmproj_path)
+    user_text = (
+        f"List every feature that matches the description '{req.describer}'. "
+        "Return the answer as a comma-separated list of plural nouns. Do not include extra explanation."
+    )
+    messages = [
+        {"role": "system", "content": [{"type": "text", "text": (
+            "You are Qwen3-VL, a multimodal assistant focused on inventory. "
+            "Only report names that appear in the image and keep them plural."
+        )}]},
+        {"role": "user", "content": [
+            {"type": "image", "image": str(req.image_path)},
+            {"type": "text", "text": user_text}
+        ]}
+    ]
+    reply = _run_chat(handle, messages, req.n_batch, req.max_new_tokens)
+    cleaned = [item.strip().rstrip('.') for item in reply.replace('\n', ',').split(',') if item.strip()]
+    return {"features": cleaned}

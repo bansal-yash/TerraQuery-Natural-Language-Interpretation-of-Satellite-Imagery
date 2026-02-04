@@ -1,0 +1,19 @@
+{
+  "image": "10948_0000.png",
+  "boxes": [
+    {
+      "label": "industrial facilities with various structures",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 510
+    },
+    {
+      "label": "chimney",
+      "x1": 305,
+      "y1": 218,
+      "x2": 512,
+      "y2": 510
+    }
+  ]
+}

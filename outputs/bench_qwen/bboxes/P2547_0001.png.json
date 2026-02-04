@@ -1,0 +1,26 @@
+{
+  "image": "P2547_0001.png",
+  "boxes": [
+    {
+      "label": "roundabout",
+      "x1": 419,
+      "y1": 384,
+      "x2": 464,
+      "y2": 441
+    },
+    {
+      "label": "large building with a white roof",
+      "x1": 317,
+      "y1": 162,
+      "x2": 432,
+      "y2": 269
+    },
+    {
+      "label": "straight road",
+      "x1": 0,
+      "y1": 18,
+      "x2": 510,
+      "y2": 162
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "image": "P1384_0130.png",
+  "boxes": [
+    {
+      "label": "An aerial view of an industrial area from GoogleEarth with high resolution, featuring numerous large buildings, presumably warehouses or factories, organized in rows. There are multiple parking lots filled with cars and roads weaving through the area. Prominently in the middle-right portion of the image, there is a small is seen situated near larger structures.",
+      "x1": 0,
+      "y1": 0,
+      "x2": 510,
+      "y2": 512
+    }
+  ]
+}

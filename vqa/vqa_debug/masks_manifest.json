@@ -1,0 +1,18 @@
+{
+  "image_path": "/tmp/tmp37gj2wyq.jpg",
+  "tried_fileobj_fallback": false,
+  "items": [
+    {
+      "index": 0,
+      "mask_path": "/home/scratch/samyak/interiit/vqa/vqa_outputs/mask_0.png",
+      "bbox_normalized": [
+        0.61328125,
+        0.150390625,
+        0.72265625,
+        0.228515625
+      ],
+      "sam_index": 0,
+      "score": 1.0
+    }
+  ]
+}

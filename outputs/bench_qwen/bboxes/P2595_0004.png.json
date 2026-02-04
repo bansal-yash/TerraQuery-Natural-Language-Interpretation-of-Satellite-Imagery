@@ -1,0 +1,40 @@
+{
+  "image": "P2595_0004.png",
+  "boxes": [
+    {
+      "label": "building with a gray roof",
+      "x1": 223,
+      "y1": 0,
+      "x2": 462,
+      "y2": 176
+    },
+    {
+      "label": "red running track",
+      "x1": 112,
+      "y1": 259,
+      "x2": 479,
+      "y2": 510
+    },
+    {
+      "label": "green areas with several trees",
+      "x1": 0,
+      "y1": 0,
+      "x2": 512,
+      "y2": 510
+    },
+    {
+      "label": "vehicle on the track's top-left area",
+      "x1": 129,
+      "y1": 49,
+      "x2": 149,
+      "y2": 66
+    },
+    {
+      "label": "vehicle on the top-middle section of the image near the edge of the track",
+      "x1": 203,
+      "y1": 147,
+      "x2": 223,
+      "y2": 164
+    }
+  ]
+}
